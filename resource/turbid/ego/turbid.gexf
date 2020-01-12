@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<gexf version="1.2" xmlns="http://www.gexf.net/1.2draft">
+ <graph mode="static" defaultedgetype="undirected">
+  <nodes>
+   <node id="18" label="George Brecht"/>
+   <node id="151" label="Ben Vautier"/>
+   <node id="316" label="Donna Jo Brewer"/>
+   <node id="479" label="Paul-Armand Gette"/>
+   <node id="480" label="Bernard Heidsick"/>
+   <node id="481" label="Turbid"/>
+  </nodes>
+  <edges>
+   <edge source="18" target="151"/>
+   <edge source="18" target="316"/>
+   <edge source="18" target="479"/>
+   <edge source="18" target="480"/>
+   <edge source="18" target="481"/>
+   <edge source="151" target="316"/>
+   <edge source="151" target="479"/>
+   <edge source="151" target="480"/>
+   <edge source="151" target="481"/>
+   <edge source="316" target="479"/>
+   <edge source="316" target="480"/>
+   <edge source="316" target="481"/>
+   <edge source="479" target="480"/>
+   <edge source="479" target="481"/>
+   <edge source="480" target="481"/>
+  </edges>
+ </graph>
+</gexf>

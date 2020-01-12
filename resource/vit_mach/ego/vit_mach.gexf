@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<gexf version="1.2" xmlns="http://www.gexf.net/1.2draft">
+ <graph mode="static" defaultedgetype="undirected">
+  <nodes>
+   <node id="254" label="Milan Kn&#xED;&#x9E;&#xE1;k"/>
+   <node id="330" label="S Kn&#xED;&#x9E;&#xE1;k"/>
+   <node id="331" label="Vit Mach"/>
+   <node id="332" label="Jan Trtilek"/>
+  </nodes>
+  <edges>
+   <edge source="254" target="330"/>
+   <edge source="254" target="331"/>
+   <edge source="254" target="332"/>
+   <edge source="330" target="331"/>
+   <edge source="330" target="332"/>
+   <edge source="331" target="332"/>
+  </edges>
+ </graph>
+</gexf>

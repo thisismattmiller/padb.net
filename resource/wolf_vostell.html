@@ -1,0 +1,559 @@
+<!doctype html>
+<html>
+
+<!-- Mirrored from padb.net/resource/wolf_vostell by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 11 Jan 2020 22:16:56 GMT -->
+<head>
+<meta charset="UTF-8">
+<title>padb.net</title>
+
+
+<link rel="stylesheet" href="../css/bootstrap.css">
+<link rel="stylesheet" href="../css/font-awesome.css">
+<link rel="stylesheet" href="../css/site.css">
+<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+<link rel="icon" type="image/png" href="../img/favicon.png">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/bootstrap-modal.js"></script>
+<script src="../js/bootstrap-modalmanager.js"></script>
+
+<script src="../js/d3.min.js"></script>
+<script src="../js/html5slider.js"></script>
+<script src="../js/topojson.js"></script>
+<script src="../js/padb.js"></script>
+
+
+</head>
+<body>
+    
+    
+	<div style="position:relative;">        
+
+ 		<div style=" border-bottom:solid 1px #ccc;">
+        	<div class="container">
+                
+                 <div id="header">
+                 	
+                     <div class="logo"><a href="../index.html"><span>|||</span>padb</a> </div>
+                    
+                      
+						 <div id="resourceName">Wolf Vostell</div>
+					 
+                 </div>
+                
+                
+        	</div>
+            
+    	</div>
+ 
+   </div>
+<script src="../js/countriesData.js"></script>
+
+<script type="text/javascript">
+	//preloaded json from the server
+
+	var dataSameAs = [
+  {
+    "uri": "http://wikidata.dbpedia.org/resource/Q326226",
+    "numDuplicates": "43",
+    "duplicates": [
+      "http://dbpedia.org/resource/Wolf_Vostell",
+      "http://als.dbpedia.org/resource/Wolf_Vostell",
+      "http://bnb.data.bl.uk/id/person/VostellWolf1932-1998",
+      "http://br.dbpedia.org/resource/Wolf_Vostell",
+      "http://ca.dbpedia.org/resource/Wolf_Vostell",
+      "http://d-nb.info/gnd/118627988",
+      "http://d-nb.info/gnd/187962316",
+      "http://d-nb.info/gnd/118627988/about/rdf",
+      "http://da.dbpedia.org/resource/Wolf_Vostell",
+      "http://data.bibsys.no/data/notrbib/authorityentry/x90371053",
+      "http://data.bnf.fr/11957482",
+      "http://data.bnf.fr/11957482#foaf:Person",
+      "http://data.bnf.fr/11957482#skos:Concept",
+      "http://datos.bne.es/resource/XX961220",
+      "http://dbpedialite.org/things/144051#id",
+      "http://de.dbpedia.org/resource/Wolf_Vostell",
+      "http://eo.dbpedia.org/resource/Wolf_Vostell",
+      "http://es.dbpedia.org/resource/Wolf_Vostell",
+      "http://fr.dbpedia.org/resource/Wolf_Vostell",
+      "http://freebase.com//m/012741",
+      "http://gl.dbpedia.org/resource/Wolf_Vostell",
+      "http://id.loc.gov/authorities/names/n50025331",
+      "http://isni-url.oclc.nl/isni/0000000108160453",
+      "http://it.dbpedia.org/resource/Wolf_Vostell",
+      "http://libris.kb.se/resource/auth/303233",
+      "http://mpii.de/yago/resource/Wolf_Vostell",
+      "http://nl.dbpedia.org/resource/Wolf_Vostell",
+      "http://no.dbpedia.org/resource/Wolf_Vostell",
+      "http://pl.dbpedia.org/resource/Wolf_Vostell",
+      "http://pt.dbpedia.org/resource/Wolf_Vostell",
+      "http://rdf.freebase.com/ns/m.012741",
+      "http://rdf.freebase.com/ns/en.wolf_vostell",
+      "http://rdf.freebase.com/ns/guid.9202a8c04000641f8000000000111c81",
+      "http://ru.dbpedia.org/resource/\u0424\u043E\u0448\u0442\u0435\u043B\u043B,_\u0412\u043E\u043B\u044C\u0444",
+      "http://simple.dbpedia.org/resource/Wolf_Vostell",
+      "http://sv.dbpedia.org/resource/Wolf_Vostell",
+      "http://viaf.org/viaf/14778734",
+      "http://viaf.org/viaf/98285556",
+      "http://viaf.org/viaf/117660178",
+      "http://wikidata.dbpedia.org/resource/Q326226",
+      "http://www.idref.fr/058993061",
+      "http://www.wikidata.org/entity/Q326226",
+      "http://yago-knowledge.org/resource/Wolf_Vostell"
+    ]
+  }
+]
+;
+	var dataDbpedia = {
+  "http://en.wikipedia.org/wiki/Wolf_Vostell" : { "http://xmlns.com/foaf/0.1/primaryTopic" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Wolf_Vostell" } ] } ,
+  "http://dbpedia.org/resource/Wolf_Vostell" : { "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { "type" : "uri", "value" : "http://dbpedia.org/class/yago/YagoLegalActor" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/YagoLegalActorGeo" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Person100007846" } ,
+      { "type" : "uri", "value" : "http://www.wikidata.org/entity/Q5" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Object100002684" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/PhysicalEntity100001930" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Sculptor110566072" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatInstallationArtists" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Wikicat20th-centuryGermanPainters" } ,
+      { "type" : "uri", "value" : "http://www.wikidata.org/entity/Q24229398" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatGermanVideoArtists" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatGermanArtists" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatGermanPainters" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Cartoonist109898346" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Draftsman110029068" } ,
+      { "type" : "uri", "value" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent" } ,
+      { "type" : "uri", "value" : "http://www.wikidata.org/entity/Q215627" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Painter110391653" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatPerformanceArtists" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatPeopleFromLeverkusen" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/ontology/Artist" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatContemporaryArtists" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatVideoArtists" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatNoiseMusicians" } ,
+      { "type" : "uri", "value" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#NaturalPerson" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/ontology/Agent" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Musician110339966" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatGermanSculptors" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Artist109812338" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Creator109614315" } ,
+      { "type" : "uri", "value" : "http://xmlns.com/foaf/0.1/Person" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Intellectual109621545" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Organism100004475" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/ontology/Person" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Whole100003553" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Alumnus109786338" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/LivingThing100004258" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/CausalAgent100007347" } ,
+      { "type" : "uri", "value" : "http://www.w3.org/2002/07/owl#Thing" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Scholar110557854" } ,
+      { "type" : "uri", "value" : "http://schema.org/Person" } ,
+      { "type" : "uri", "value" : "http://www.wikidata.org/entity/Q483501" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatKunstakademieD\u00FCsseldorfAlumni" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatCartoonists" } ] ,
+    "http://www.w3.org/2000/01/rdf-schema#label" : [ { "type" : "literal", "value" : "Wolf Vostell" , "lang" : "es" } ,
+      { "type" : "literal", "value" : "Wolf Vostell" , "lang" : "nl" } ,
+      { "type" : "literal", "value" : "Wolf Vostell" , "lang" : "de" } ,
+      { "type" : "literal", "value" : "Wolf Vostell" , "lang" : "en" } ,
+      { "type" : "literal", "value" : "Wolf Vostell" , "lang" : "pt" } ,
+      { "type" : "literal", "value" : "Wolf Vostell" , "lang" : "fr" } ,
+      { "type" : "literal", "value" : "\u0424\u043E\u0441\u0442\u0435\u043B\u044C, \u0412\u043E\u043B\u044C\u0444" , "lang" : "ru" } ,
+      { "type" : "literal", "value" : "Wolf Vostell" , "lang" : "it" } ,
+      { "type" : "literal", "value" : "Wolf Vostell" , "lang" : "pl" } ] ,
+    "http://www.w3.org/2000/01/rdf-schema#comment" : [ { "type" : "literal", "value" : "Wolf Vostell est un artiste allemand n\u00E9 \u00E0 Leverkusen en 1932, mort \u00E0 Berlin en 1998. Il est l'un des principaux repr\u00E9sentants allemands de la peinture, de la sculpture dans la deuxi\u00E8me moiti\u00E9 du XXe si\u00E8cle. Il est \u00E9galement consid\u00E9r\u00E9 un des pionniers de l\u2019installation, de l\u2019Art vid\u00E9o, de l\u2019Happening et du mouvement Fluxus. Des techniques comme l\u2019estompage ou le D\u00E9-coll/age sont des caract\u00E9ristiques de ses \u0153uvres, de m\u00EAme que l\u2019encastrement dans du b\u00E9ton." , "lang" : "fr" } ,
+      { "type" : "literal", "value" : "Wolf Vostell (14 October 1932 \u2013 3 April 1998) was a German painter and sculptor, considered one of the early adopters of video art and installation art and pioneer of Happening and Fluxus. Techniques such as blurring and D\u00E9-collage are characteristic of his work, as is embedding objects in concrete and the use of television sets in his works." , "lang" : "en" } ,
+      { "type" : "literal", "value" : "Wolf Vostell (Leverkusen, 14 de outubro de 1932 - Berlim, 3 de abril de 1998) foi um pintor e escultor alem\u00E3o e uma figura fundamental da arte na segunda metade do s\u00E9culo XX. Foi um dos pioneiros da Instala\u00E7\u00E3o, Videoarte, do Happening e do Fluxus." , "lang" : "pt" } ,
+      { "type" : "literal", "value" : "Wolf Vostell (*14 de octubre de 1932 en Leverkusen, \u2020 3 de abril de 1998 en Berl\u00EDn), fue un artista alem\u00E1n de los m\u00E1s representativos de la segunda mitad del siglo XX, que trabaj\u00F3 con varios medios y t\u00E9cnicas como la pintura la escultura, la Instalaci\u00F3n, el Decollage, el Videoarte, el Happening, y el Fluxus." , "lang" : "es" } ,
+      { "type" : "literal", "value" : "Fu un pioniere della videoarte e delle installazioni, nonch\u00E9 una figura di riferimento all'interno del movimento Fluxus. Pur non essendo, in questa fase, in contatto con l'ambiente statunitense, egli introdusse in Europa una forma d'arte simile a quella che negli stessi anni veniva elaborata da Allan Kaprow: l'happening." , "lang" : "it" } ,
+      { "type" : "literal", "value" : "Wolf Vostell (ur. 14 pa\u017Adziernika 1932 w Leverkusen, zm. 3 kwietnia 1998 w Berlinie) \u2013 niemiecki malarz, rze\u017Abiarz, tworzy\u0142 tak\u017Ce muzyk\u0119 oraz zajmowa\u0142 si\u0119 happeningiem \u2013 g\u0142\u00F3wnie w drugiej po\u0142owie XX stulecia. Jest uznany za jednego z pionier\u00F3w video artu, rze\u017Aby \u201Eenvironment\u201D, happeningu oraz ruchu Fluxus. Charakterystyczn\u0105 dla jego prac technik\u0105 by\u0142o zamazywanie, decollage, a tak\u017Ce zakorzenianie obiekt\u00F3w w bry\u0142ach betonu." , "lang" : "pl" } ,
+      { "type" : "literal", "value" : "Wolf Vostell (* 14. Oktober 1932 in Leverkusen; \u2020 3. April 1998 in Berlin) war ein deutscher Maler, Bildhauer und Happeningk\u00FCnstler der zweiten H\u00E4lfte des 20. Jahrhunderts. Wolf Vostell gilt als einer der Wegbereiter des Environments, der Installation, der Videokunst, des Happenings und der Fluxus-Bewegung. Techniken wie die Verwischung, die D\u00E9-coll/age oder das Einbetonieren sind Kennzeichen seiner Werke." , "lang" : "de" } ,
+      { "type" : "literal", "value" : "Wolf Vostell (Leverkusen, 14 oktober 1932 \u2013 Berlijn, 3 april 1998) was een vooraanstaand Duits kunstschilder, beeldhouwer en performancekunstenaar, actief in de tweede helft van de twintigste eeuw. Hij wordt gezien als een pionier van de installatie, van de videokunst, van de environmentkunst, van de d\u00E9collage, van de happening en van de Fluxusbeweging. Hij gebruikte in zijn werk verschillende methoden om tot een beeld te komen, zoals 'D\u00E9-coll/age', Verwischung (vervaging), assemblage en betongieten." , "lang" : "nl" } ,
+      { "type" : "literal", "value" : "\u0412\u043E\u043B\u044C\u0444 \u0424\u043E\u0301\u0441\u0442\u0435\u043B\u044C (\u043D\u0435\u043C. Wolf Vostell; 14 \u043E\u043A\u0442\u044F\u0431\u0440\u044F 1932, \u041B\u0435\u0432\u0435\u0440\u043A\u0443\u0437\u0435\u043D \u2014 3 \u0430\u043F\u0440\u0435\u043B\u044F 1998, \u0411\u0435\u0440\u043B\u0438\u043D) \u2014 \u043D\u0435\u043C\u0435\u0446\u043A\u0438\u0439 \u0441\u043A\u0443\u043B\u044C\u043F\u0442\u043E\u0440 \u0438 \u0445\u0443\u0434\u043E\u0436\u043D\u0438\u043A." , "lang" : "ru" } ] ,
+    "http://www.w3.org/2002/07/owl#sameAs" : [ { "type" : "uri", "value" : "http://nl.dbpedia.org/resource/Wolf_Vostell" } ,
+      { "type" : "uri", "value" : "http://cs.dbpedia.org/resource/Wolf_Vostell" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Wolf_Vostell" } ,
+      { "type" : "uri", "value" : "http://eu.dbpedia.org/resource/Wolf_Vostell" } ,
+      { "type" : "uri", "value" : "http://de.dbpedia.org/resource/Wolf_Vostell" } ,
+      { "type" : "uri", "value" : "http://rdf.freebase.com/ns/m.012741" } ,
+      { "type" : "uri", "value" : "http://es.dbpedia.org/resource/Wolf_Vostell" } ,
+      { "type" : "uri", "value" : "http://pl.dbpedia.org/resource/Wolf_Vostell" } ,
+      { "type" : "uri", "value" : "http://wikidata.dbpedia.org/resource/Q326226" } ,
+      { "type" : "uri", "value" : "http://d-nb.info/gnd/118627988" } ,
+      { "type" : "uri", "value" : "http://yago-knowledge.org/resource/Wolf_Vostell" } ,
+      { "type" : "uri", "value" : "http://pt.dbpedia.org/resource/Wolf_Vostell" } ,
+      { "type" : "uri", "value" : "http://fr.dbpedia.org/resource/Wolf_Vostell" } ,
+      { "type" : "uri", "value" : "http://www.wikidata.org/entity/Q326226" } ,
+      { "type" : "uri", "value" : "http://data.europa.eu/euodp/jrc-names/Wolf_Vostell" } ,
+      { "type" : "uri", "value" : "http://it.dbpedia.org/resource/Wolf_Vostell" } ] ,
+    "http://purl.org/dc/terms/subject" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Postmodern_artists" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:20th-century_German_painters" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Political_artists" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:20th-century_German_printmakers" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:German_pacifists" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Media_theorists" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Kunstakademie_D\u00FCsseldorf_alumni" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:People_from_Leverkusen" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Fluxus" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:German_artists" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Contemporary_artists" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Noise_musicians" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:German_video_artists" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:1998_deaths" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Modern_sculptors" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:20th-century_German_sculptors" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:1932_births" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Modern_artists" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Installation_artists" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Video_artists" } ] ,
+    "http://xmlns.com/foaf/0.1/name" : [ { "type" : "literal", "value" : "Wolf Vostell" , "lang" : "en" } ] ,
+    "http://xmlns.com/foaf/0.1/depiction" : [ { "type" : "uri", "value" : "http://commons.wikimedia.org/wiki/Special:FilePath/Wolf_Vostell,_1980_in_Spain.jpg" } ] ,
+    "http://purl.org/dc/terms/description" : [ { "type" : "literal", "value" : "German painter and sculptor" , "lang" : "en" } ] ,
+    "http://xmlns.com/foaf/0.1/givenName" : [ { "type" : "literal", "value" : "Wolf" , "lang" : "en" } ] ,
+    "http://xmlns.com/foaf/0.1/gender" : [ { "type" : "literal", "value" : "male" , "lang" : "en" } ] ,
+    "http://xmlns.com/foaf/0.1/isPrimaryTopicOf" : [ { "type" : "uri", "value" : "http://en.wikipedia.org/wiki/Wolf_Vostell" } ] ,
+    "http://xmlns.com/foaf/0.1/surname" : [ { "type" : "literal", "value" : "Vostell" , "lang" : "en" } ] ,
+    "http://dbpedia.org/property/bgcolour" : [ { "type" : "literal", "value" : "#6495ED" , "datatype" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString" } ] ,
+    "http://www.w3.org/ns/prov#wasDerivedFrom" : [ { "type" : "uri", "value" : "http://en.wikipedia.org/wiki/Wolf_Vostell?oldid=745138832" } ] ,
+    "http://dbpedia.org/ontology/wikiPageExternalLink" : [ { "type" : "uri", "value" : "http://www.kunstaspekte.de/index.php?action=webpages&k=303" } ,
+      { "type" : "uri", "value" : "http://www.artnet.com/magazine/features/moore/moore6-12-01.asp" } ,
+      { "type" : "uri", "value" : "http://infowolfvostell.blogspot.com" } ,
+      { "type" : "uri", "value" : "http://www.nrw-museum.de/en/#/more/biographies/details/details/artists///wolf-vostell.html" } ,
+      { "type" : "uri", "value" : "http://www.medienkunstnetz.de/search/?qt=vostell" } ,
+      { "type" : "uri", "value" : "http://museovostell.gobex.es" } ,
+      { "type" : "uri", "value" : "http://kuenstlerdatenbank.ifa.de/datenblatt.php3?TOPIC=beteiligung&NAME=vostell&GRUPPE=&GESCHLECHT=&ZEITRAUM_VON=&ZEITRAUM_BIS=&ORT=&ACTION=kuenstler&SUB_ACTION=1%7C8&ID=77&RANGE=&GID=" } ,
+      { "type" : "uri", "value" : "http://www.primaryinformation.org/product/fantastic-architecture/" } ] ,
+    "http://dbpedia.org/property/caption" : [ { "type" : "literal", "value" : "Wolf Vostell, 1980" , "datatype" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString" } ] ,
+    "http://dbpedia.org/property/nationality" : [ { "type" : "literal", "value" : "German" , "datatype" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString" } ] ,
+    "http://dbpedia.org/ontology/training" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Kunstakademie_D\u00FCsseldorf" } ] ,
+    "http://dbpedia.org/ontology/movement" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Happening" } ] ,
+    "http://dbpedia.org/ontology/abstract" : [ { "type" : "literal", "value" : "Wolf Vostell (*14 de octubre de 1932 en Leverkusen, \u2020 3 de abril de 1998 en Berl\u00EDn), fue un artista alem\u00E1n de los m\u00E1s representativos de la segunda mitad del siglo XX, que trabaj\u00F3 con varios medios y t\u00E9cnicas como la pintura la escultura, la Instalaci\u00F3n, el Decollage, el Videoarte, el Happening, y el Fluxus." , "lang" : "es" } ,
+      { "type" : "literal", "value" : "Wolf Vostell (Leverkusen, 14 de outubro de 1932 - Berlim, 3 de abril de 1998) foi um pintor e escultor alem\u00E3o e uma figura fundamental da arte na segunda metade do s\u00E9culo XX. Foi um dos pioneiros da Instala\u00E7\u00E3o, Videoarte, do Happening e do Fluxus." , "lang" : "pt" } ,
+      { "type" : "literal", "value" : "Wolf Vostell (* 14. Oktober 1932 in Leverkusen; \u2020 3. April 1998 in Berlin) war ein deutscher Maler, Bildhauer und Happeningk\u00FCnstler der zweiten H\u00E4lfte des 20. Jahrhunderts. Wolf Vostell gilt als einer der Wegbereiter des Environments, der Installation, der Videokunst, des Happenings und der Fluxus-Bewegung. Techniken wie die Verwischung, die D\u00E9-coll/age oder das Einbetonieren sind Kennzeichen seiner Werke." , "lang" : "de" } ,
+      { "type" : "literal", "value" : "Wolf Vostell est un artiste allemand n\u00E9 \u00E0 Leverkusen en 1932, mort \u00E0 Berlin en 1998. Il est l'un des principaux repr\u00E9sentants allemands de la peinture, de la sculpture dans la deuxi\u00E8me moiti\u00E9 du XXe si\u00E8cle. Il est \u00E9galement consid\u00E9r\u00E9 un des pionniers de l\u2019installation, de l\u2019Art vid\u00E9o, de l\u2019Happening et du mouvement Fluxus. Des techniques comme l\u2019estompage ou le D\u00E9-coll/age sont des caract\u00E9ristiques de ses \u0153uvres, de m\u00EAme que l\u2019encastrement dans du b\u00E9ton." , "lang" : "fr" } ,
+      { "type" : "literal", "value" : "Wolf Vostell (ur. 14 pa\u017Adziernika 1932 w Leverkusen, zm. 3 kwietnia 1998 w Berlinie) \u2013 niemiecki malarz, rze\u017Abiarz, tworzy\u0142 tak\u017Ce muzyk\u0119 oraz zajmowa\u0142 si\u0119 happeningiem \u2013 g\u0142\u00F3wnie w drugiej po\u0142owie XX stulecia. Jest uznany za jednego z pionier\u00F3w video artu, rze\u017Aby \u201Eenvironment\u201D, happeningu oraz ruchu Fluxus. Charakterystyczn\u0105 dla jego prac technik\u0105 by\u0142o zamazywanie, decollage, a tak\u017Ce zakorzenianie obiekt\u00F3w w bry\u0142ach betonu." , "lang" : "pl" } ,
+      { "type" : "literal", "value" : "\u0412\u043E\u043B\u044C\u0444 \u0424\u043E\u0301\u0441\u0442\u0435\u043B\u044C (\u043D\u0435\u043C. Wolf Vostell; 14 \u043E\u043A\u0442\u044F\u0431\u0440\u044F 1932, \u041B\u0435\u0432\u0435\u0440\u043A\u0443\u0437\u0435\u043D \u2014 3 \u0430\u043F\u0440\u0435\u043B\u044F 1998, \u0411\u0435\u0440\u043B\u0438\u043D) \u2014 \u043D\u0435\u043C\u0435\u0446\u043A\u0438\u0439 \u0441\u043A\u0443\u043B\u044C\u043F\u0442\u043E\u0440 \u0438 \u0445\u0443\u0434\u043E\u0436\u043D\u0438\u043A." , "lang" : "ru" } ,
+      { "type" : "literal", "value" : "Fu un pioniere della videoarte e delle installazioni, nonch\u00E9 una figura di riferimento all'interno del movimento Fluxus. Pur non essendo, in questa fase, in contatto con l'ambiente statunitense, egli introdusse in Europa una forma d'arte simile a quella che negli stessi anni veniva elaborata da Allan Kaprow: l'happening." , "lang" : "it" } ,
+      { "type" : "literal", "value" : "Wolf Vostell (Leverkusen, 14 oktober 1932 \u2013 Berlijn, 3 april 1998) was een vooraanstaand Duits kunstschilder, beeldhouwer en performancekunstenaar, actief in de tweede helft van de twintigste eeuw. Hij wordt gezien als een pionier van de installatie, van de videokunst, van de environmentkunst, van de d\u00E9collage, van de happening en van de Fluxusbeweging. Hij gebruikte in zijn werk verschillende methoden om tot een beeld te komen, zoals 'D\u00E9-coll/age', Verwischung (vervaging), assemblage en betongieten." , "lang" : "nl" } ,
+      { "type" : "literal", "value" : "Wolf Vostell (14 October 1932 \u2013 3 April 1998) was a German painter and sculptor, considered one of the early adopters of video art and installation art and pioneer of Happening and Fluxus. Techniques such as blurring and D\u00E9-collage are characteristic of his work, as is embedding objects in concrete and the use of television sets in his works." , "lang" : "en" } ] ,
+    "http://dbpedia.org/ontology/thumbnail" : [ { "type" : "uri", "value" : "http://commons.wikimedia.org/wiki/Special:FilePath/Wolf_Vostell,_1980_in_Spain.jpg?width=300" } ] ,
+    "http://dbpedia.org/ontology/birthDate" : [ { "type" : "literal", "value" : "1932-10-14" , "datatype" : "http://www.w3.org/2001/XMLSchema#date" } ] ,
+    "http://dbpedia.org/ontology/deathDate" : [ { "type" : "literal", "value" : "1998-4-3" , "datatype" : "http://www.w3.org/2001/XMLSchema#date" } ,
+      { "type" : "literal", "value" : "1998-04-03" , "datatype" : "http://www.w3.org/2001/XMLSchema#date" } ] ,
+    "http://dbpedia.org/ontology/deathPlace" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Berlin" } ] ,
+    "http://dbpedia.org/ontology/wikiPageRevisionID" : [ { "type" : "literal", "value" : 745138832 , "datatype" : "http://www.w3.org/2001/XMLSchema#integer" } ] ,
+    "http://dbpedia.org/ontology/birthPlace" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Leverkusen" } ] ,
+    "http://dbpedia.org/ontology/wikiPageID" : [ { "type" : "literal", "value" : 144051 , "datatype" : "http://www.w3.org/2001/XMLSchema#integer" } ] ,
+    "http://purl.org/linguistics/gold/hypernym" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Painter" } ] ,
+    "http://dbpedia.org/ontology/field" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Painting" } ] } ,
+  "http://dbpedia.org/resource/Vostell" : { "http://dbpedia.org/ontology/wikiPageDisambiguates" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Wolf_Vostell" } ] }
+}
+;
+	var dataAuth = "http://dbpedia.org/resource/Wolf_Vostell";
+	var dataUrl = "wolf_vostell.html";
+	var dataResourceType = "participant";
+	var dataName = "Wolf Vostell";
+ 	
+</script>
+
+
+
+
+
+<script type="text/javascript">
+
+
+	
+	
+	
+
+	$(document).ready(function($) {
+		
+		
+		padb.resource.initialize();
+			 
+		$( '.scrollable' ).
+		bind( 'mousewheel DOMMouseScroll', function ( e ) {
+			
+			if( e.originalEvent ) e = e.originalEvent;
+			
+			var delta = e.wheelDelta || -e.detail;
+			this.scrollTop += ( delta < 0 ? 1 : -1 ) * 30;
+			e.preventDefault();
+		});		 
+		
+		
+				
+		$.ajaxSetup ({
+			// Disable caching of AJAX responses
+			cache: false
+		});		
+		
+	});
+	
+
+	
+	
+	
+	
+	
+</script>
+
+
+
+
+ 
+<br />
+<div class="container"  style="position:relative;">
+	   
+      <div id="resourceLinks"></div> 
+       
+       
+       
+       
+              
+       
+           
+           
+           
+          <div class="row addSection">
+              <div class="span1 addSectionIconHolder">
+              
+                <i class="icon-user"></i>
+              
+              </div>
+          
+              <div class="span11">
+                <span>Performer</span>
+                <hr>
+                <br />
+              </div>
+        </div>
+        <div class="row">
+            <div class="span1">
+            </div>
+            <div class="span11" style="position:relative">
+                
+                
+                
+                
+               <div>
+                                       <div class="pull-right vignette">
+                            <img  src="../cache/media/wolf_vostell.jpg" />
+                            
+                        </div>
+                        
+                                           
+                <div class="pull-left" style="width:80%;">
+                     
+                     <h5 id="resourceLDName">Wolf Vostell</h5>
+                     <h5 id="resourceLDAbstract"></h5>
+                     
+                     
+                     <div id="resourceSameAs">
+                        <h5>External Data:</h5>
+                        
+                        
+                     </div>
+                
+                </div>   
+                
+                <br style="clear:both;" />
+            </div>
+            
+            
+                
+            </div>
+        </div>    
+         
+    
+    
+    
+    
+    
+    
+       <div class="row addSection">
+			<div class="span1 addSectionIconHolder">              
+                <i class="icon-asterisk"></i>
+              
+              </div>
+          
+              <div class="span11">
+                <span>Events </span><span id="resourceEventCount"></span>
+                <hr>
+              </div>
+        </div>
+    
+    
+    
+    
+    
+    
+    
+        <div class="row">
+            <div class="span1"></div>
+            <div class="span11" style="position:relative">
+                  
+                 <div class="">
+                    <div id="resourceEventsEvents" class="scrollable">
+                           <table class="table table-condensed table-hover table-striped">
+                               <thead>
+                                <tr>
+                                  <th>Date</th>
+                                  
+                                  <th>Title</th>
+                                  <th>Location</th>
+                                  <th></th>
+                                </tr>
+                              </thead>
+                              <tbody id="resourceEventsEventsRows"> 
+                              </tbody>
+                            </table>
+                     
+                    </div>
+                    
+                    <div id="resourceEventsExport">
+                    
+                    	<input  name="resourceEventsSearch" class="span3" id="resourceEventsSearch"  type="text" placeholder="Filter: names, places, dates">
+                    	<button class="btn btn-mini btn-danger" id="resourceEventsClearFilter"><i class="icon-remove">&nbsp;Clear Filter</i></button>
+                   		<button class="btn btn-mini btn-info" title="Render the currently filitered data as a network" id="resourceRenderEventNetwork"> <img src="../img/icon-network-white.png" style="height:15px; width:auto" /> Two-Mode Event Network</button>
+                   		<button class="btn btn-mini btn-info" title="Render the currently filitered data as a network" id="resourceRenderEventMap"> <i class="icon-globe"></i> Map Event Locations</button>
+                   		<button class="btn btn-mini btn-success" title="Download network as Gephi File" id="resourceDownloadEventGephi"> <img src="../img/icon-gephi.png" style="height:15px; width:auto" /> Donwload Gephi Network</button>
+
+                 
+                    </div>                 
+                </div>
+                <br style="clear:both;" />
+            </div>
+            
+            
+                
+         </div>    
+    
+     
+       <div class="row addSection">
+              <div class="span1">
+              
+                <img src="../img/social-network.png" style=" margin-left:25px; margin-bottom:10px;" />
+              
+              </div>
+          
+              <div class="span11">
+                <span>Performance Network</span> 
+                <hr>
+              </div>
+        </div>
+        
+        <div class="row">
+            <div class="span1">
+            </div>
+            <div class="span11" style="position:relative">
+                
+               	<div style="width: 100%; height:500px;" id="egoNetwork">
+            
+                
+             	</div> 
+                <div class="well pull-left well-small" id="egoNetworkControls">
+                    <span class="rangeLabels">Node Charge</span>
+                    <input type="range" id="resourceEgoNetworkCharge" min="-1000" max="100" value="-120" data-def="-700" />
+                    <br /><span class="rangeLabels">Gravity</span>
+                    <input type="range" id="resourceEgoNetworkGravity" min="0" max="1" value="0.1" step="0.01" data-def="0.3" /> 
+                    <br /><span class="rangeLabels">Edge Length</span>
+                    <input type="range" id="resourceEgoNetworkDistance" min="0" max="300" value="50" data-def="50"  />      
+                    <br /><span class="rangeLabels">Edge Strength</span>
+                    <input type="range" id="resourceEgoNetworkStrength" min="0" max="3" value="1" data-def="0.15" step="0.1"  /> 
+                    <br /><br />
+                    <button type="button" id="resourceEgoNetworkLabelsButton" class="btn btn-mini" title="Show node labels." data-toggle="button">Show Labels</button>  
+                    <button type="button" id="resourceEgoNetworkLiveButton" class="btn btn-mini" title="Show realtime network rendering" data-toggle="button">Live Rendering</button>                     
+                </div>
+                
+                <div class="well pull-left well-small egoNetworkControls span7" style="margin-left:20px;" >
+                
+                	<input  name="resourceEgoNetworkSearch" class="span3" id="resourceEgoNetworkSearch"  type="text" placeholder="Filter: names, places, dates">
+					<button class="btn btn-mini btn-danger" id="resourceEgoClearFilter"><i class="icon-remove">&nbsp;Clear Filter</i></button>
+                    <button class="btn btn-mini btn-success" title="Download network as Gephi File" id="resourceDownloadEgoGephi"> <img src="../img/icon-gephi.png" style="height:15px; width:auto" /> Donwload Gephi Network</button>
+
+                </div>
+                
+            </div>
+        </div>           
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+	
+
+	
+
+
+	
+
+
+</div>
+
+
+
+
+    <div id="resourceEventNetworkModal" class="modal container hide fade" style="min-height:500px" tabindex="-1">
+ 
+      <div class="modal-body">
+      	
+        <div id="eventNetwork" style="height:400px; width:100%">
+        
+        </div>
+      
+      </div>
+      <div class="modal-footer" style="height:20px;">
+      	
+        <div class="well pull-left well-small">
+        	<span class="rangeLabels">Node Charge</span>
+        	<input type="range" id="resourceEventNetworkCharge" min="-800" max="200" value="-120" data-def="-120" />
+            <span class="rangeLabels">Gravity</span>
+        	<input type="range" id="resourceEventNetworkGravity" min="0" max="1" value="0.1" step="0.01" data-def="0.1" /> 
+            <span class="rangeLabels">Edge Length</span>
+        	<input type="range" id="resourceEventNetworkDistance" min="0" max="300" value="50" data-def="50"  />      
+            <span class="rangeLabels">Edge Strength</span>
+        	<input type="range" id="resourceEventNetworkStrength" min="0" max="5" value="1" data-def="1" step="0.1"  />    
+            <button type="button" id="resourceEventNetworkLabelsButton" class="btn btn-mini" data-toggle="button">Show Labels</button>                     
+		</div>
+        <div class="pull-right">
+        <button type="button" data-dismiss="modal" class="btn">Close</button>
+       	</div>
+       </div>
+    </div>
+    
+    
+    
+    
+     <div id="resourceEventMapModal" class="modal container hide fade" style="min-height:500px" tabindex="-1">
+ 
+      <div class="modal-body">
+      	
+        <div id="eventMap" style="height:400px; width:100%">
+        
+        </div>
+      
+      </div>
+      <div class="modal-footer" style="height:20px;">
+      	
+        <div class="well pull-left well-small">                  
+		</div>
+        <div class="pull-right">
+        <button type="button" data-dismiss="modal" class="btn">Close</button>
+       	</div>
+       </div>
+    </div>
+
+<br /><br /><br /><br /><br /><br />
+
+<script type="text/javascript">    var _gaq = _gaq || [];   _gaq.push(['_setAccount', 'UA-10371295-7']);   _gaq.push(['_trackPageview']);    (function() {     var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);   })();  </script>
+
+</body>
+
+<!-- Mirrored from padb.net/resource/wolf_vostell by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 11 Jan 2020 22:16:57 GMT -->
+</html>

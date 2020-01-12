@@ -1,0 +1,563 @@
+<!doctype html>
+<html>
+
+<!-- Mirrored from padb.net/resource/yves_klein by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 11 Jan 2020 22:22:15 GMT -->
+<head>
+<meta charset="UTF-8">
+<title>padb.net</title>
+
+
+<link rel="stylesheet" href="../css/bootstrap.css">
+<link rel="stylesheet" href="../css/font-awesome.css">
+<link rel="stylesheet" href="../css/site.css">
+<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+<link rel="icon" type="image/png" href="../img/favicon.png">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/bootstrap-modal.js"></script>
+<script src="../js/bootstrap-modalmanager.js"></script>
+
+<script src="../js/d3.min.js"></script>
+<script src="../js/html5slider.js"></script>
+<script src="../js/topojson.js"></script>
+<script src="../js/padb.js"></script>
+
+
+</head>
+<body>
+    
+    
+	<div style="position:relative;">        
+
+ 		<div style=" border-bottom:solid 1px #ccc;">
+        	<div class="container">
+                
+                 <div id="header">
+                 	
+                     <div class="logo"><a href="../index.html"><span>|||</span>padb</a> </div>
+                    
+                      
+						 <div id="resourceName">Yves Klein</div>
+					 
+                 </div>
+                
+                
+        	</div>
+            
+    	</div>
+ 
+   </div>
+<script src="../js/countriesData.js"></script>
+
+<script type="text/javascript">
+	//preloaded json from the server
+
+	var dataSameAs = [
+  {
+    "uri": "http://wikidata.dbpedia.org/resource/Q154335",
+    "numDuplicates": "52",
+    "duplicates": [
+      "http://dbpedia.org/resource/Yves_Klein",
+      "http://dbpedia.org/resource/The_Void_(artwork)",
+      "http://dbpedia.org/resource/The_Void_(artwork)",
+      "http://bg.dbpedia.org/resource/\u0418\u0432_\u041A\u043B\u0430\u0439\u043D",
+      "http://bnb.data.bl.uk/id/person/KleinYves1928-1962",
+      "http://ca.dbpedia.org/resource/Yves_Klein",
+      "http://cs.dbpedia.org/resource/Yves_Klein",
+      "http://d-nb.info/gnd/118562967",
+      "http://d-nb.info/gnd/118562967/about/rdf",
+      "http://da.dbpedia.org/resource/Yves_Klein",
+      "http://data.bibsys.no/data/notrbib/authorityentry/x97013281",
+      "http://data.bnf.fr/12047163#foaf:Person",
+      "http://data.bnf.fr/12047163#skos:Concept",
+      "http://dbpedialite.org/things/217749#id",
+      "http://dbpedialite.org/things/7842709#id",
+      "http://de.dbpedia.org/resource/Yves_Klein",
+      "http://el.dbpedia.org/resource/\u03A5\u03B2_\u039A\u03BB\u03AC\u03B9\u03BD",
+      "http://eo.dbpedia.org/resource/Yves_Klein",
+      "http://es.dbpedia.org/resource/Yves_Klein",
+      "http://fa.dbpedia.org/resource/\u0627\u06CC\u0648_\u06A9\u0644\u06CC\u0646",
+      "http://fi.dbpedia.org/resource/Yves_Klein",
+      "http://fr.dbpedia.org/resource/Yves_Klein",
+      "http://freebase.com//m/01fwty",
+      "http://he.dbpedia.org/resource/\u05D0\u05D9\u05D1_\u05E7\u05DC\u05D9\u05D9\u05DF",
+      "http://hu.dbpedia.org/resource/Yves_Klein",
+      "http://id.loc.gov/authorities/names/n50044185",
+      "http://id.ndl.go.jp/auth/ndla/00445865",
+      "http://it.dbpedia.org/resource/Yves_Klein",
+      "http://ja.dbpedia.org/resource/\u30A4\u30F4\u30FB\u30AF\u30E9\u30A4\u30F3",
+      "http://mpii.de/yago/resource/Yves_Klein",
+      "http://nl.dbpedia.org/resource/Yves_Klein",
+      "http://no.dbpedia.org/resource/Yves_Klein",
+      "http://pl.dbpedia.org/resource/Yves_Klein",
+      "http://pms.dbpedia.org/resource/Yves_Klein",
+      "http://pt.dbpedia.org/resource/Yves_Klein",
+      "http://rdf.freebase.com/ns/m.01fwty",
+      "http://rdf.freebase.com/ns/en.yves_klein",
+      "http://rdf.freebase.com/ns/guid.9202a8c04000641f800000000016ef3d",
+      "http://ro.dbpedia.org/resource/Yves_Klein",
+      "http://ru.dbpedia.org/resource/\u041A\u043B\u044F\u0439\u043D,_\u0418\u0432",
+      "http://sh.dbpedia.org/resource/Yves_Klein",
+      "http://sk.dbpedia.org/resource/Yves_Klein",
+      "http://sr.dbpedia.org/resource/\u0418\u0432_\u041A\u043B\u0430\u0458\u043D",
+      "http://sv.dbpedia.org/resource/Yves_Klein",
+      "http://tr.dbpedia.org/resource/Yves_Klein",
+      "http://uk.dbpedia.org/resource/\u0406\u0432_\u041A\u043B\u044F\u0439\u043D",
+      "http://viaf.org/viaf/19696000",
+      "http://viaf.org/viaf/70174713",
+      "http://wikidata.dbpedia.org/resource/Q154335",
+      "http://www.wikidata.org/entity/Q154335",
+      "http://yago-knowledge.org/resource/Yves_Klein",
+      "http://zh.dbpedia.org/resource/\u4F0A\u592B\u00B7\u514B\u83B1\u56E0"
+    ]
+  }
+]
+;
+	var dataDbpedia = {
+  "http://en.wikipedia.org/wiki/Yves_Klein" : { "http://xmlns.com/foaf/0.1/primaryTopic" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Yves_Klein" } ] } ,
+  "http://dbpedia.org/resource/Paul_McCarthy" : { "http://dbpedia.org/ontology/influencedBy" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Yves_Klein" } ] } ,
+  "http://dbpedia.org/resource/Steven_Parrino" : { "http://dbpedia.org/ontology/influencedBy" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Yves_Klein" } ] } ,
+  "http://dbpedia.org/resource/Jacques_Villegl\u00E9" : { "http://dbpedia.org/ontology/influencedBy" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Yves_Klein" } ] } ,
+  "http://dbpedia.org/resource/Yves_Klein" : { "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { "type" : "uri", "value" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#NaturalPerson" } ,
+      { "type" : "uri", "value" : "http://schema.org/Person" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Artist109812338" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Creator109614315" } ,
+      { "type" : "uri", "value" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent" } ,
+      { "type" : "uri", "value" : "http://www.wikidata.org/entity/Q215627" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Painter110391653" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatPerformanceArtists" } ,
+      { "type" : "uri", "value" : "http://www.wikidata.org/entity/Q24229398" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/ontology/Artist" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/ontology/Agent" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/CausalAgent100007347" } ,
+      { "type" : "uri", "value" : "http://www.wikidata.org/entity/Q5" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Whole100003553" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/LivingThing100004258" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Organism100004475" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatNouveauR\u00E9alismeArtists" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/ontology/Person" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/PhysicalEntity100001930" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Person100007846" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Object100002684" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/YagoLegalActor" } ,
+      { "type" : "uri", "value" : "http://www.wikidata.org/entity/Q483501" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/YagoLegalActorGeo" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatContemporaryPainters" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Sculptor110566072" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatContemporaryArtists" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatPeopleFromNice" } ,
+      { "type" : "uri", "value" : "http://xmlns.com/foaf/0.1/Person" } ,
+      { "type" : "uri", "value" : "http://www.w3.org/2002/07/owl#Thing" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatFrenchSculptors" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Wikicat20th-centuryFrenchPainters" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatFrenchPainters" } ] ,
+    "http://www.w3.org/2000/01/rdf-schema#label" : [ { "type" : "literal", "value" : "Yves Klein" , "lang" : "nl" } ,
+      { "type" : "literal", "value" : "Yves Klein" , "lang" : "es" } ,
+      { "type" : "literal", "value" : "Yves Klein" , "lang" : "pl" } ,
+      { "type" : "literal", "value" : "Yves Klein" , "lang" : "en" } ,
+      { "type" : "literal", "value" : "Yves Klein" , "lang" : "pt" } ,
+      { "type" : "literal", "value" : "\u041A\u043B\u044F\u0439\u043D, \u0418\u0432" , "lang" : "ru" } ,
+      { "type" : "literal", "value" : "Yves Klein" , "lang" : "it" } ,
+      { "type" : "literal", "value" : "Yves Klein" , "lang" : "de" } ,
+      { "type" : "literal", "value" : "\u4F0A\u592B\u00B7\u514B\u83B1\u56E0" , "lang" : "zh" } ,
+      { "type" : "literal", "value" : "Yves Klein" , "lang" : "fr" } ,
+      { "type" : "literal", "value" : "\u30A4\u30F4\u30FB\u30AF\u30E9\u30A4\u30F3" , "lang" : "ja" } ] ,
+    "http://www.w3.org/2000/01/rdf-schema#comment" : [ { "type" : "literal", "value" : "\u0418\u0432 \u041A\u043B\u044F\u0439\u043D (\u0444\u0440. Yves Klein; 28 \u0430\u043F\u0440\u0435\u043B\u044F 1928, \u041D\u0438\u0446\u0446\u0430, \u2014 6 \u0438\u044E\u043D\u044F 1962, \u041F\u0430\u0440\u0438\u0436, \u0424\u0440\u0430\u043D\u0446\u0438\u044F) \u2014 \u0444\u0440\u0430\u043D\u0446\u0443\u0437\u0441\u043A\u0438\u0439 \u0445\u0443\u0434\u043E\u0436\u043D\u0438\u043A-\u043D\u043E\u0432\u0430\u0442\u043E\u0440, \u043E\u0434\u043D\u0430 \u0438\u0437 \u043D\u0430\u0438\u0431\u043E\u043B\u0435\u0435 \u0437\u043D\u0430\u0447\u0438\u0442\u0435\u043B\u044C\u043D\u044B\u0445 \u0444\u0438\u0433\u0443\u0440 \u043F\u043E\u0441\u043B\u0435\u0432\u043E\u0435\u043D\u043D\u043E\u0433\u043E \u0435\u0432\u0440\u043E\u043F\u0435\u0439\u0441\u043A\u043E\u0433\u043E \u0438\u0441\u043A\u0443\u0441\u0441\u0442\u0432\u0430." , "lang" : "ru" } ,
+      { "type" : "literal", "value" : "\u4F0A\u592B\u00B7\u514B\u83B1\u56E0 (Yves Klein,\u6CD5\u8BED\u53D1\u97F3\uFF1A[iv kl\u025B\u0303]; 1928\u5E744\u670828\u65E5\uFF0D1962\u5E746\u67086\u65E5)\uFF0C\u6CD5\u56FD\u827A\u672F\u5BB6\uFF0C\u662F\u6218\u540E\u6B27\u6D32\u827A\u672F\u754C\u7684\u4E00\u4F4D\u91CD\u8981\u4EBA\u7269\u30021960\u5E74\uFF0C\u827A\u672F\u6279\u8BC4\u5BB6\u76AE\u57C3\u5C14\u00B7\u96F7\u65AF\u5854\u5C3C\u63D0\u51FA\u65B0\u73FE\u5BE6\u4E3B\u7FA9\uFF0C\u800C\u514B\u83B1\u56E0\u5C31\u662F\u8BE5\u8FD0\u52A8\u7684\u9886\u5148\u4EBA\u7269\u3002\u4ED6\u662F\u884C\u4E3A\u827A\u672F\u6700\u65E9\u7684\u63A8\u52A8\u8005\uFF0C\u540C\u65F6\u4E5F\u88AB\u89C6\u4E3A\u6975\u7C21\u4E3B\u7FA9\u548C\u666E\u666E\u827A\u672F\u7684\u5148\u9A71\u3002" , "lang" : "zh" } ,
+      { "type" : "literal", "value" : "Yves Klein (Nice, 28 april 1928 \u2013 Parijs, 6 juni 1962) was een Frans kunstschilder. Hij werd bekend als de Franse monochromist." , "lang" : "nl" } ,
+      { "type" : "literal", "value" : "Yves Klein (French pronunciation: \u200B[iv kl\u025B\u0303]; 28 April 1928 \u2013 6 June 1962) was a French artist considered an important figure in post-war European art. He is the leading member of the French artistic movement of Nouveau r\u00E9alisme founded in 1960 by art critic Pierre Restany. Klein was a pioneer in the development of performance art, and is seen as an inspiration to, and as a forerunner of, Minimal art, as well as Pop art." , "lang" : "en" } ,
+      { "type" : "literal", "value" : "Yves Klein, n\u00E9 \u00E0 Nice le 28 avril 1928, mort \u00E0 Paris le 6 juin 1962, est un plasticien fran\u00E7ais. Malgr\u00E9 une carri\u00E8re artistique assez courte (1954-1962), il est consid\u00E9r\u00E9 comme l'un des plus importants protagonistes de l'avant-garde picturale de l'apr\u00E8s-guerre. Il est notamment connu pour son bleu (IKB pour International Klein Blue), qu'il a appliqu\u00E9 sur de nombreuses \u0153uvres." , "lang" : "fr" } ,
+      { "type" : "literal", "value" : "Yves Klein (28 de abril de 1928 - 6 de junio de 1962) fue un artista franc\u00E9s considerado como una importante figura dentro del movimiento neodada\u00EDsmo." , "lang" : "es" } ,
+      { "type" : "literal", "value" : "Yves Klein (Nice, 28 de abril de 1928 - 6 de junho de 1962) foi um artista franc\u00EAs e \u00E9 considerado uma figura importante da arte europ\u00E9ia ap\u00F3s a Segunda Guerra Mundial. Cr\u00EDticos da \u00E9poca o classificavam como neodada\u00EDsta, embora outros cr\u00EDticos importantes discordassem, tal como Thomas McEvilley, em um ensaio publicado pela revista Artforum em 1982, que o classifica como um precursor da arte contempor\u00E2nea, embora \u201Cenigm\u00E1tico\u201D." , "lang" : "pt" } ,
+      { "type" : "literal", "value" : "Yves Klein (ur. 28 kwietnia 1928 w Nicei, zm. 6 czerwca 1962 w Pary\u017Cu), francuski artysta intermedialny, malarz i rze\u017Abiarz. Oboje rodzice byli malarzami. Pomimo kr\u00F3tkiej \u2013 trwaj\u0105cej zaledwie osiem lat (1954 do 1962) \u2013 kariery artystycznej, nale\u017Cy dzi\u015B do najwa\u017Cniejszych protagonist\u00F3w powojennej awangardy. Tworzy\u0142 obrazy, rze\u017Aby, instalacje, fotografie, scenografie teatralne i filmowe, napisa\u0142 kilka wa\u017Cnych tekst\u00F3w, w kt\u00F3rych zakwestionowa\u0142 tradycyjn\u0105 koncepcj\u0119 sztuki, jej tworzenia i prezentacji. Mi\u0119dzynarodowe uznanie zdoby\u0142 jako pierwszy tw\u00F3rca monochrom\u00F3w. Klein sw\u00F3j ulubiony malarski kolor \u2013 ultramaryn\u0119 opatentowa\u0142 pod nazw\u0105 International Klein Blue. IKB to niezwykle intensywny, ja\u015Bniej\u0105cy b\u0142\u0119kit, uzyskany wed\u0142ug receptury, kt\u00F3r\u0105 Klein opracowa\u0142 samodzielnie." , "lang" : "pl" } ,
+      { "type" : "literal", "value" : "Yves Klein (franz\u00F6sische Aussprache: [iv kl\u025B\u0303], * 28. April 1928 in Nizza; \u2020 6. Juni 1962 in Paris) war ein franz\u00F6sischer Maler, Bildhauer und Performancek\u00FCnstler. Er war Mitbegr\u00FCnder und f\u00FChrender Vertreter der Nouveau R\u00E9alisme genannten Kunststr\u00F6mung in Frankreich." , "lang" : "de" } ,
+      { "type" : "literal", "value" : "\u30A4\u30F4\u30FB\u30AF\u30E9\u30A4\u30F3\uFF08Yves Klein, 1928\u5E744\u670828\u65E5 - 1962\u5E746\u67086\u65E5\uFF09\u306F\u3001\u5358\u8272\u306E\u4F5C\u54C1\u3092\u5236\u4F5C\u3059\u308B\u30E2\u30CE\u30AF\u30ED\u30CB\u30BA\u30E0\u3092\u4EE3\u8868\u3059\u308B\u30D5\u30E9\u30F3\u30B9\u306E\u753B\u5BB6\u3002\u30A2\u30FC\u30C6\u30A3\u30B9\u30C8\u3068\u3057\u3066\u306E\u6D3B\u52D5\u306F\u6669\u5E74\u306E\u3054\u304F\u6570\u5E74\u3067\u3042\u308B\u3002" , "lang" : "ja" } ] ,
+    "http://www.w3.org/2002/07/owl#sameAs" : [ { "type" : "uri", "value" : "http://data.europa.eu/euodp/jrc-names/Yves_Klein" } ,
+      { "type" : "uri", "value" : "http://www.wikidata.org/entity/Q154335" } ,
+      { "type" : "uri", "value" : "http://cs.dbpedia.org/resource/Yves_Klein" } ,
+      { "type" : "uri", "value" : "http://it.dbpedia.org/resource/Yves_Klein" } ,
+      { "type" : "uri", "value" : "http://wikidata.dbpedia.org/resource/Q154335" } ,
+      { "type" : "uri", "value" : "http://viaf.org/viaf/70174713" } ,
+      { "type" : "uri", "value" : "http://es.dbpedia.org/resource/Yves_Klein" } ,
+      { "type" : "uri", "value" : "http://el.dbpedia.org/resource/\u03A5\u03B2_\u039A\u03BB\u03AC\u03B9\u03BD" } ,
+      { "type" : "uri", "value" : "http://d-nb.info/gnd/118562967" } ,
+      { "type" : "uri", "value" : "http://fr.dbpedia.org/resource/Yves_Klein" } ,
+      { "type" : "uri", "value" : "http://ja.dbpedia.org/resource/\u30A4\u30F4\u30FB\u30AF\u30E9\u30A4\u30F3" } ,
+      { "type" : "uri", "value" : "http://de.dbpedia.org/resource/Yves_Klein" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Yves_Klein" } ,
+      { "type" : "uri", "value" : "http://nl.dbpedia.org/resource/Yves_Klein" } ,
+      { "type" : "uri", "value" : "http://rdf.freebase.com/ns/m.01fwty" } ,
+      { "type" : "uri", "value" : "http://pt.dbpedia.org/resource/Yves_Klein" } ,
+      { "type" : "uri", "value" : "http://pl.dbpedia.org/resource/Yves_Klein" } ,
+      { "type" : "uri", "value" : "http://yago-knowledge.org/resource/Yves_Klein" } ] ,
+    "http://purl.org/dc/terms/subject" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:French_contemporary_artists" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Contemporary_painters" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Nouveau_r\u00E9alisme_artists" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:1962_deaths" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:French_male_painters" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:People_from_Nice" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:20th-century_French_painters" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Abstract_painters" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:1928_births" } ] ,
+    "http://xmlns.com/foaf/0.1/name" : [ { "type" : "literal", "value" : "Yves Klein" , "lang" : "en" } ] ,
+    "http://xmlns.com/foaf/0.1/homepage" : [ { "type" : "uri", "value" : "https://web.archive.org/web/20071014041423/http:/members.aol.com/mindwebart3/page30.htm" } ] ,
+    "http://purl.org/dc/terms/description" : [ { "type" : "literal", "value" : "French artist" , "lang" : "en" } ] ,
+    "http://xmlns.com/foaf/0.1/givenName" : [ { "type" : "literal", "value" : "Yves" , "lang" : "en" } ] ,
+    "http://xmlns.com/foaf/0.1/gender" : [ { "type" : "literal", "value" : "male" , "lang" : "en" } ] ,
+    "http://xmlns.com/foaf/0.1/isPrimaryTopicOf" : [ { "type" : "uri", "value" : "http://en.wikipedia.org/wiki/Yves_Klein" } ] ,
+    "http://xmlns.com/foaf/0.1/surname" : [ { "type" : "literal", "value" : "Klein" , "lang" : "en" } ] ,
+    "http://dbpedia.org/ontology/field" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Performance_art" } ] ,
+    "http://dbpedia.org/ontology/movement" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Nouveau_r\u00E9alisme" } ] ,
+    "http://dbpedia.org/property/title" : [ { "type" : "literal", "value" : "Klein at Art Minimal & Conceptual Only" , "datatype" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString" } ] ,
+    "http://www.w3.org/ns/prov#wasDerivedFrom" : [ { "type" : "uri", "value" : "http://en.wikipedia.org/wiki/Yves_Klein?oldid=743567774" } ] ,
+    "http://dbpedia.org/property/date" : [ { "type" : "literal", "value" : 20071014041423 , "datatype" : "http://www.w3.org/2001/XMLSchema#decimal" } ] ,
+    "http://dbpedia.org/property/deathPlace" : [ { "type" : "literal", "value" : "Paris, France" , "datatype" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString" } ] ,
+    "http://dbpedia.org/property/url" : [ { "type" : "uri", "value" : "http://members.aol.com/mindwebart3/page30.htm" } ] ,
+    "http://dbpedia.org/property/df" : [ { "type" : "literal", "value" : "yes" , "datatype" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString" } ] ,
+    "http://dbpedia.org/ontology/wikiPageExternalLink" : [ { "type" : "uri", "value" : "http://www.yvesklein.de/" } ,
+      { "type" : "uri", "value" : "http://www.international-klein-blue.com/" } ,
+      { "type" : "uri", "value" : "http://www.eyewithwings.net/nechvatal/Klein/Klein.htm" } ,
+      { "type" : "uri", "value" : "http://x-traonline.org/past_articles.php?articleID=69" } ,
+      { "type" : "uri", "value" : "http://members.aol.com/mindwebart3/page30.htm" } ,
+      { "type" : "uri", "value" : "http://www.cosmopolis.ch/english/art/yves_klein_e00012100.htm" } ,
+      { "type" : "uri", "value" : "http://obsart.blogspot.com/2012/01/zone-de-sensibilite-picturale.html" } ,
+      { "type" : "uri", "value" : "https://web.archive.org/web/20071014041423/http:/members.aol.com/mindwebart3/page30.htm" } ,
+      { "type" : "uri", "value" : "http://www.purpose.fr/index6.html" } ] ,
+    "http://dbpedia.org/ontology/abstract" : [ { "type" : "literal", "value" : "Yves Klein (Nice, 28 de abril de 1928 - 6 de junho de 1962) foi um artista franc\u00EAs e \u00E9 considerado uma figura importante da arte europ\u00E9ia ap\u00F3s a Segunda Guerra Mundial. Cr\u00EDticos da \u00E9poca o classificavam como neodada\u00EDsta, embora outros cr\u00EDticos importantes discordassem, tal como Thomas McEvilley, em um ensaio publicado pela revista Artforum em 1982, que o classifica como um precursor da arte contempor\u00E2nea, embora \u201Cenigm\u00E1tico\u201D." , "lang" : "pt" } ,
+      { "type" : "literal", "value" : "Yves Klein (French pronunciation: \u200B[iv kl\u025B\u0303]; 28 April 1928 \u2013 6 June 1962) was a French artist considered an important figure in post-war European art. He is the leading member of the French artistic movement of Nouveau r\u00E9alisme founded in 1960 by art critic Pierre Restany. Klein was a pioneer in the development of performance art, and is seen as an inspiration to, and as a forerunner of, Minimal art, as well as Pop art." , "lang" : "en" } ,
+      { "type" : "literal", "value" : "\u30A4\u30F4\u30FB\u30AF\u30E9\u30A4\u30F3\uFF08Yves Klein, 1928\u5E744\u670828\u65E5 - 1962\u5E746\u67086\u65E5\uFF09\u306F\u3001\u5358\u8272\u306E\u4F5C\u54C1\u3092\u5236\u4F5C\u3059\u308B\u30E2\u30CE\u30AF\u30ED\u30CB\u30BA\u30E0\u3092\u4EE3\u8868\u3059\u308B\u30D5\u30E9\u30F3\u30B9\u306E\u753B\u5BB6\u3002\u30A2\u30FC\u30C6\u30A3\u30B9\u30C8\u3068\u3057\u3066\u306E\u6D3B\u52D5\u306F\u6669\u5E74\u306E\u3054\u304F\u6570\u5E74\u3067\u3042\u308B\u3002" , "lang" : "ja" } ,
+      { "type" : "literal", "value" : "Yves Klein (franz\u00F6sische Aussprache: [iv kl\u025B\u0303], * 28. April 1928 in Nizza; \u2020 6. Juni 1962 in Paris) war ein franz\u00F6sischer Maler, Bildhauer und Performancek\u00FCnstler. Er war Mitbegr\u00FCnder und f\u00FChrender Vertreter der Nouveau R\u00E9alisme genannten Kunststr\u00F6mung in Frankreich." , "lang" : "de" } ,
+      { "type" : "literal", "value" : "Yves Klein (28 de abril de 1928 - 6 de junio de 1962) fue un artista franc\u00E9s considerado como una importante figura dentro del movimiento neodada\u00EDsmo." , "lang" : "es" } ,
+      { "type" : "literal", "value" : "\u0418\u0432 \u041A\u043B\u044F\u0439\u043D (\u0444\u0440. Yves Klein; 28 \u0430\u043F\u0440\u0435\u043B\u044F 1928, \u041D\u0438\u0446\u0446\u0430, \u2014 6 \u0438\u044E\u043D\u044F 1962, \u041F\u0430\u0440\u0438\u0436, \u0424\u0440\u0430\u043D\u0446\u0438\u044F) \u2014 \u0444\u0440\u0430\u043D\u0446\u0443\u0437\u0441\u043A\u0438\u0439 \u0445\u0443\u0434\u043E\u0436\u043D\u0438\u043A-\u043D\u043E\u0432\u0430\u0442\u043E\u0440, \u043E\u0434\u043D\u0430 \u0438\u0437 \u043D\u0430\u0438\u0431\u043E\u043B\u0435\u0435 \u0437\u043D\u0430\u0447\u0438\u0442\u0435\u043B\u044C\u043D\u044B\u0445 \u0444\u0438\u0433\u0443\u0440 \u043F\u043E\u0441\u043B\u0435\u0432\u043E\u0435\u043D\u043D\u043E\u0433\u043E \u0435\u0432\u0440\u043E\u043F\u0435\u0439\u0441\u043A\u043E\u0433\u043E \u0438\u0441\u043A\u0443\u0441\u0441\u0442\u0432\u0430." , "lang" : "ru" } ,
+      { "type" : "literal", "value" : "Yves Klein (ur. 28 kwietnia 1928 w Nicei, zm. 6 czerwca 1962 w Pary\u017Cu), francuski artysta intermedialny, malarz i rze\u017Abiarz. Oboje rodzice byli malarzami. Pomimo kr\u00F3tkiej \u2013 trwaj\u0105cej zaledwie osiem lat (1954 do 1962) \u2013 kariery artystycznej, nale\u017Cy dzi\u015B do najwa\u017Cniejszych protagonist\u00F3w powojennej awangardy. Tworzy\u0142 obrazy, rze\u017Aby, instalacje, fotografie, scenografie teatralne i filmowe, napisa\u0142 kilka wa\u017Cnych tekst\u00F3w, w kt\u00F3rych zakwestionowa\u0142 tradycyjn\u0105 koncepcj\u0119 sztuki, jej tworzenia i prezentacji. Mi\u0119dzynarodowe uznanie zdoby\u0142 jako pierwszy tw\u00F3rca monochrom\u00F3w. Klein sw\u00F3j ulubiony malarski kolor \u2013 ultramaryn\u0119 opatentowa\u0142 pod nazw\u0105 International Klein Blue. IKB to niezwykle intensywny, ja\u015Bniej\u0105cy b\u0142\u0119kit, uzyskany wed\u0142ug receptury, kt\u00F3r\u0105 Klein opracowa\u0142 samodzielnie." , "lang" : "pl" } ,
+      { "type" : "literal", "value" : "Yves Klein, n\u00E9 \u00E0 Nice le 28 avril 1928, mort \u00E0 Paris le 6 juin 1962, est un plasticien fran\u00E7ais. Malgr\u00E9 une carri\u00E8re artistique assez courte (1954-1962), il est consid\u00E9r\u00E9 comme l'un des plus importants protagonistes de l'avant-garde picturale de l'apr\u00E8s-guerre. Il est notamment connu pour son bleu (IKB pour International Klein Blue), qu'il a appliqu\u00E9 sur de nombreuses \u0153uvres. Il recherche toute sa vie un travail pictural d'ordre spirituel, ce qui l'amena \u00E0 intervenir dans l'espace public. Selon lui la peinture est \u00AB comme la fen\u00EAtre d'une prison, o\u00F9 les lignes, les contours, les formes et la composition sont d\u00E9termin\u00E9s par les barreaux \u00BB. Ses tableaux monochromes l'ont lib\u00E9r\u00E9 de ces contraintes." , "lang" : "fr" } ,
+      { "type" : "literal", "value" : "Yves Klein (Nice, 28 april 1928 \u2013 Parijs, 6 juni 1962) was een Frans kunstschilder. Hij werd bekend als de Franse monochromist." , "lang" : "nl" } ,
+      { "type" : "literal", "value" : "\u4F0A\u592B\u00B7\u514B\u83B1\u56E0 (Yves Klein,\u6CD5\u8BED\u53D1\u97F3\uFF1A[iv kl\u025B\u0303]; 1928\u5E744\u670828\u65E5\uFF0D1962\u5E746\u67086\u65E5)\uFF0C\u6CD5\u56FD\u827A\u672F\u5BB6\uFF0C\u662F\u6218\u540E\u6B27\u6D32\u827A\u672F\u754C\u7684\u4E00\u4F4D\u91CD\u8981\u4EBA\u7269\u30021960\u5E74\uFF0C\u827A\u672F\u6279\u8BC4\u5BB6\u76AE\u57C3\u5C14\u00B7\u96F7\u65AF\u5854\u5C3C\u63D0\u51FA\u65B0\u73FE\u5BE6\u4E3B\u7FA9\uFF0C\u800C\u514B\u83B1\u56E0\u5C31\u662F\u8BE5\u8FD0\u52A8\u7684\u9886\u5148\u4EBA\u7269\u3002\u4ED6\u662F\u884C\u4E3A\u827A\u672F\u6700\u65E9\u7684\u63A8\u52A8\u8005\uFF0C\u540C\u65F6\u4E5F\u88AB\u89C6\u4E3A\u6975\u7C21\u4E3B\u7FA9\u548C\u666E\u666E\u827A\u672F\u7684\u5148\u9A71\u3002" , "lang" : "zh" } ] ,
+    "http://dbpedia.org/ontology/birthDate" : [ { "type" : "literal", "value" : "1928-4-28" , "datatype" : "http://www.w3.org/2001/XMLSchema#date" } ,
+      { "type" : "literal", "value" : "1928-04-28" , "datatype" : "http://www.w3.org/2001/XMLSchema#date" } ] ,
+    "http://dbpedia.org/ontology/deathDate" : [ { "type" : "literal", "value" : "1962-6-6" , "datatype" : "http://www.w3.org/2001/XMLSchema#date" } ,
+      { "type" : "literal", "value" : "1962-06-06" , "datatype" : "http://www.w3.org/2001/XMLSchema#date" } ] ,
+    "http://dbpedia.org/ontology/deathPlace" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Paris" } ] ,
+    "http://dbpedia.org/ontology/wikiPageRevisionID" : [ { "type" : "literal", "value" : 743567774 , "datatype" : "http://www.w3.org/2001/XMLSchema#integer" } ] ,
+    "http://dbpedia.org/ontology/birthPlace" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Nice" } ] ,
+    "http://dbpedia.org/ontology/wikiPageID" : [ { "type" : "literal", "value" : 217749 , "datatype" : "http://www.w3.org/2001/XMLSchema#integer" } ] ,
+    "http://dbpedia.org/property/wordnet_type" : [ { "type" : "uri", "value" : "http://www.w3.org/2006/03/wn/wn20/instances/synset-artist-noun-1" } ] ,
+    "http://purl.org/linguistics/gold/hypernym" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Artist" } ] ,
+    "http://dbpedia.org/property/nationality" : [ { "type" : "literal", "value" : "French" , "datatype" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString" } ] ,
+    "http://dbpedia.org/property/works" : [ { "type" : "literal", "value" : "Monotone Symphony" , "datatype" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString" } ,
+      { "type" : "literal", "value" : "IKB 191" , "datatype" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString" } ] } ,
+  "http://dbpedia.org/resource/Jay_Batlle" : { "http://dbpedia.org/ontology/influencedBy" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Yves_Klein" } ] } ,
+  "http://dbpedia.org/resource/The_Void_(artwork)" : { "http://dbpedia.org/ontology/wikiPageRedirects" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Yves_Klein" } ] } ,
+  "http://dbpedia.org/resource/Istv\u00E1n_Cs._Bartos" : { "http://dbpedia.org/ontology/influencedBy" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Yves_Klein" } ] }
+}
+;
+	var dataAuth = "http://dbpedia.org/resource/Yves_Klein";
+	var dataUrl = "yves_klein.html";
+	var dataResourceType = "participant";
+	var dataName = "Yves Klein";
+ 	
+</script>
+
+
+
+
+
+<script type="text/javascript">
+
+
+	
+	
+	
+
+	$(document).ready(function($) {
+		
+		
+		padb.resource.initialize();
+			 
+		$( '.scrollable' ).
+		bind( 'mousewheel DOMMouseScroll', function ( e ) {
+			
+			if( e.originalEvent ) e = e.originalEvent;
+			
+			var delta = e.wheelDelta || -e.detail;
+			this.scrollTop += ( delta < 0 ? 1 : -1 ) * 30;
+			e.preventDefault();
+		});		 
+		
+		
+				
+		$.ajaxSetup ({
+			// Disable caching of AJAX responses
+			cache: false
+		});		
+		
+	});
+	
+
+	
+	
+	
+	
+	
+</script>
+
+
+
+
+ 
+<br />
+<div class="container"  style="position:relative;">
+	   
+      <div id="resourceLinks"></div> 
+       
+       
+       
+       
+              
+       
+           
+           
+           
+          <div class="row addSection">
+              <div class="span1 addSectionIconHolder">
+              
+                <i class="icon-user"></i>
+              
+              </div>
+          
+              <div class="span11">
+                <span>Performer</span>
+                <hr>
+                <br />
+              </div>
+        </div>
+        <div class="row">
+            <div class="span1">
+            </div>
+            <div class="span11" style="position:relative">
+                
+                
+                
+                
+               <div>
+                                       <div class="pull-right vignette">
+                            <img  src="../cache/media/yves_klein.jpg" />
+                            
+                        </div>
+                        
+                                           
+                <div class="pull-left" style="width:80%;">
+                     
+                     <h5 id="resourceLDName">Yves Klein</h5>
+                     <h5 id="resourceLDAbstract"></h5>
+                     
+                     
+                     <div id="resourceSameAs">
+                        <h5>External Data:</h5>
+                        
+                        
+                     </div>
+                
+                </div>   
+                
+                <br style="clear:both;" />
+            </div>
+            
+            
+                
+            </div>
+        </div>    
+         
+    
+    
+    
+    
+    
+    
+       <div class="row addSection">
+			<div class="span1 addSectionIconHolder">              
+                <i class="icon-asterisk"></i>
+              
+              </div>
+          
+              <div class="span11">
+                <span>Events </span><span id="resourceEventCount"></span>
+                <hr>
+              </div>
+        </div>
+    
+    
+    
+    
+    
+    
+    
+        <div class="row">
+            <div class="span1"></div>
+            <div class="span11" style="position:relative">
+                  
+                 <div class="">
+                    <div id="resourceEventsEvents" class="scrollable">
+                           <table class="table table-condensed table-hover table-striped">
+                               <thead>
+                                <tr>
+                                  <th>Date</th>
+                                  
+                                  <th>Title</th>
+                                  <th>Location</th>
+                                  <th></th>
+                                </tr>
+                              </thead>
+                              <tbody id="resourceEventsEventsRows"> 
+                              </tbody>
+                            </table>
+                     
+                    </div>
+                    
+                    <div id="resourceEventsExport">
+                    
+                    	<input  name="resourceEventsSearch" class="span3" id="resourceEventsSearch"  type="text" placeholder="Filter: names, places, dates">
+                    	<button class="btn btn-mini btn-danger" id="resourceEventsClearFilter"><i class="icon-remove">&nbsp;Clear Filter</i></button>
+                   		<button class="btn btn-mini btn-info" title="Render the currently filitered data as a network" id="resourceRenderEventNetwork"> <img src="../img/icon-network-white.png" style="height:15px; width:auto" /> Two-Mode Event Network</button>
+                   		<button class="btn btn-mini btn-info" title="Render the currently filitered data as a network" id="resourceRenderEventMap"> <i class="icon-globe"></i> Map Event Locations</button>
+                   		<button class="btn btn-mini btn-success" title="Download network as Gephi File" id="resourceDownloadEventGephi"> <img src="../img/icon-gephi.png" style="height:15px; width:auto" /> Donwload Gephi Network</button>
+
+                 
+                    </div>                 
+                </div>
+                <br style="clear:both;" />
+            </div>
+            
+            
+                
+         </div>    
+    
+     
+       <div class="row addSection">
+              <div class="span1">
+              
+                <img src="../img/social-network.png" style=" margin-left:25px; margin-bottom:10px;" />
+              
+              </div>
+          
+              <div class="span11">
+                <span>Performance Network</span> 
+                <hr>
+              </div>
+        </div>
+        
+        <div class="row">
+            <div class="span1">
+            </div>
+            <div class="span11" style="position:relative">
+                
+               	<div style="width: 100%; height:500px;" id="egoNetwork">
+            
+                
+             	</div> 
+                <div class="well pull-left well-small" id="egoNetworkControls">
+                    <span class="rangeLabels">Node Charge</span>
+                    <input type="range" id="resourceEgoNetworkCharge" min="-1000" max="100" value="-120" data-def="-700" />
+                    <br /><span class="rangeLabels">Gravity</span>
+                    <input type="range" id="resourceEgoNetworkGravity" min="0" max="1" value="0.1" step="0.01" data-def="0.3" /> 
+                    <br /><span class="rangeLabels">Edge Length</span>
+                    <input type="range" id="resourceEgoNetworkDistance" min="0" max="300" value="50" data-def="50"  />      
+                    <br /><span class="rangeLabels">Edge Strength</span>
+                    <input type="range" id="resourceEgoNetworkStrength" min="0" max="3" value="1" data-def="0.15" step="0.1"  /> 
+                    <br /><br />
+                    <button type="button" id="resourceEgoNetworkLabelsButton" class="btn btn-mini" title="Show node labels." data-toggle="button">Show Labels</button>  
+                    <button type="button" id="resourceEgoNetworkLiveButton" class="btn btn-mini" title="Show realtime network rendering" data-toggle="button">Live Rendering</button>                     
+                </div>
+                
+                <div class="well pull-left well-small egoNetworkControls span7" style="margin-left:20px;" >
+                
+                	<input  name="resourceEgoNetworkSearch" class="span3" id="resourceEgoNetworkSearch"  type="text" placeholder="Filter: names, places, dates">
+					<button class="btn btn-mini btn-danger" id="resourceEgoClearFilter"><i class="icon-remove">&nbsp;Clear Filter</i></button>
+                    <button class="btn btn-mini btn-success" title="Download network as Gephi File" id="resourceDownloadEgoGephi"> <img src="../img/icon-gephi.png" style="height:15px; width:auto" /> Donwload Gephi Network</button>
+
+                </div>
+                
+            </div>
+        </div>           
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+	
+
+	
+
+
+	
+
+
+</div>
+
+
+
+
+    <div id="resourceEventNetworkModal" class="modal container hide fade" style="min-height:500px" tabindex="-1">
+ 
+      <div class="modal-body">
+      	
+        <div id="eventNetwork" style="height:400px; width:100%">
+        
+        </div>
+      
+      </div>
+      <div class="modal-footer" style="height:20px;">
+      	
+        <div class="well pull-left well-small">
+        	<span class="rangeLabels">Node Charge</span>
+        	<input type="range" id="resourceEventNetworkCharge" min="-800" max="200" value="-120" data-def="-120" />
+            <span class="rangeLabels">Gravity</span>
+        	<input type="range" id="resourceEventNetworkGravity" min="0" max="1" value="0.1" step="0.01" data-def="0.1" /> 
+            <span class="rangeLabels">Edge Length</span>
+        	<input type="range" id="resourceEventNetworkDistance" min="0" max="300" value="50" data-def="50"  />      
+            <span class="rangeLabels">Edge Strength</span>
+        	<input type="range" id="resourceEventNetworkStrength" min="0" max="5" value="1" data-def="1" step="0.1"  />    
+            <button type="button" id="resourceEventNetworkLabelsButton" class="btn btn-mini" data-toggle="button">Show Labels</button>                     
+		</div>
+        <div class="pull-right">
+        <button type="button" data-dismiss="modal" class="btn">Close</button>
+       	</div>
+       </div>
+    </div>
+    
+    
+    
+    
+     <div id="resourceEventMapModal" class="modal container hide fade" style="min-height:500px" tabindex="-1">
+ 
+      <div class="modal-body">
+      	
+        <div id="eventMap" style="height:400px; width:100%">
+        
+        </div>
+      
+      </div>
+      <div class="modal-footer" style="height:20px;">
+      	
+        <div class="well pull-left well-small">                  
+		</div>
+        <div class="pull-right">
+        <button type="button" data-dismiss="modal" class="btn">Close</button>
+       	</div>
+       </div>
+    </div>
+
+<br /><br /><br /><br /><br /><br />
+
+<script type="text/javascript">    var _gaq = _gaq || [];   _gaq.push(['_setAccount', 'UA-10371295-7']);   _gaq.push(['_trackPageview']);    (function() {     var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);   })();  </script>
+
+</body>
+
+<!-- Mirrored from padb.net/resource/yves_klein by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 11 Jan 2020 22:22:16 GMT -->
+</html>

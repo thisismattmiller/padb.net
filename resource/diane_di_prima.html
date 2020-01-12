@@ -1,0 +1,562 @@
+<!doctype html>
+<html>
+
+<!-- Mirrored from padb.net/resource/diane_di_prima by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 11 Jan 2020 22:19:42 GMT -->
+<head>
+<meta charset="UTF-8">
+<title>padb.net</title>
+
+
+<link rel="stylesheet" href="../css/bootstrap.css">
+<link rel="stylesheet" href="../css/font-awesome.css">
+<link rel="stylesheet" href="../css/site.css">
+<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+<link rel="icon" type="image/png" href="../img/favicon.png">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/bootstrap-modal.js"></script>
+<script src="../js/bootstrap-modalmanager.js"></script>
+
+<script src="../js/d3.min.js"></script>
+<script src="../js/html5slider.js"></script>
+<script src="../js/topojson.js"></script>
+<script src="../js/padb.js"></script>
+
+
+</head>
+<body>
+    
+    
+	<div style="position:relative;">        
+
+ 		<div style=" border-bottom:solid 1px #ccc;">
+        	<div class="container">
+                
+                 <div id="header">
+                 	
+                     <div class="logo"><a href="../index.html"><span>|||</span>padb</a> </div>
+                    
+                      
+						 <div id="resourceName">Diane di Prima</div>
+					 
+                 </div>
+                
+                
+        	</div>
+            
+    	</div>
+ 
+   </div>
+<script src="../js/countriesData.js"></script>
+
+<script type="text/javascript">
+	//preloaded json from the server
+
+	var dataSameAs = [
+  {
+    "uri": "http://wikidata.dbpedia.org/resource/Q438891",
+    "numDuplicates": "39",
+    "duplicates": [
+      "http://dbpedia.org/resource/Diane_DiPrima",
+      "http://dbpedia.org/resource/Diane_Di_Prima",
+      "http://dbpedia.org/resource/Diane_di_Prima",
+      "http://dbpedia.org/resource/Diane_di_prima",
+      "http://bnb.data.bl.uk/id/person/DiPrimaDiane",
+      "http://cs.dbpedia.org/resource/Diane_di_Prima",
+      "http://d-nb.info/gnd/119313545",
+      "http://d-nb.info/gnd/119313545/about/rdf",
+      "http://da.dbpedia.org/resource/Diane_Di_Prima",
+      "http://data.bibsys.no/data/notrbib/authorityentry/x07024016",
+      "http://dbpedialite.org/things/404230#id",
+      "http://dbpedialite.org/things/4269500#id",
+      "http://dbpedialite.org/things/4269511#id",
+      "http://dbpedialite.org/things/14363316#id",
+      "http://de.dbpedia.org/resource/Diane_DiPrima",
+      "http://fr.dbpedia.org/resource/Diane_di_Prima",
+      "http://freebase.com//m/0246wf",
+      "http://id.loc.gov/authorities/names/n79026861",
+      "http://it.dbpedia.org/resource/Diane_di_Prima",
+      "http://mpii.de/yago/resource/Diane_di_Prima",
+      "http://pl.dbpedia.org/resource/Diane_di_Prima",
+      "http://rdf.freebase.com/ns/m.0246wf",
+      "http://rdf.freebase.com/ns/en.diane_di_prima",
+      "http://rdf.freebase.com/ns/guid.9202a8c04000641f8000000000221b6d",
+      "http://ru.dbpedia.org/resource/\u0414\u0438_\u041F\u0440\u0438\u043C\u0430,_\u0414\u0438\u0430\u043D\u0430",
+      "http://sk.dbpedia.org/resource/Diane_di_Prima",
+      "http://sw.cyc.com/concept/Mx4rvvjRUpwpEbGdrcN5Y29ycA",
+      "http://sw.opencyc.org/2008/06/10/concept/en/DianeDiPrima",
+      "http://sw.opencyc.org/2009/04/07/concept/en/DianeDiPrima",
+      "http://sw.opencyc.org/concept/Mx4rvvjRUpwpEbGdrcN5Y29ycA",
+      "http://sw.opencyc.org/2008/06/10/concept/Mx4rvvjRUpwpEbGdrcN5Y29ycA",
+      "http://sw.opencyc.org/2009/04/07/concept/Mx4rvvjRUpwpEbGdrcN5Y29ycA",
+      "http://umbel.org/umbel/ne/wikipedia/Diane_di_Prima",
+      "http://viaf.org/viaf/36964954",
+      "http://viaf.org/viaf/83981636",
+      "http://wikidata.dbpedia.org/resource/Q438891",
+      "http://www.idref.fr/078066328/id",
+      "http://www.wikidata.org/entity/Q438891",
+      "http://yago-knowledge.org/resource/Diane_di_Prima"
+    ]
+  }
+]
+;
+	var dataDbpedia = {
+  "http://dbpedia.org/resource/Diane_DiPrima" : { "http://dbpedia.org/ontology/wikiPageRedirects" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Diane_di_Prima" } ] } ,
+  "http://dbpedia.org/resource/Diane_Di_Prima" : { "http://dbpedia.org/ontology/wikiPageRedirects" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Diane_di_Prima" } ] } ,
+  "http://dbpedia.org/resource/Diane_di_prima" : { "http://dbpedia.org/ontology/wikiPageRedirects" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Diane_di_Prima" } ] } ,
+  "http://en.wikipedia.org/wiki/Diane_di_Prima" : { "http://xmlns.com/foaf/0.1/primaryTopic" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Diane_di_Prima" } ] } ,
+  "http://dbpedia.org/resource/Diane_di_Prima" : { "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatHunterCollegeHighSchoolAlumni" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/PhysicalEntity100001930" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatBeatGenerationWriters" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Adult109605289" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Person100007846" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Object100002684" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/YagoLegalActor" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatAmericanPeopleOfSicilianDescent" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/YagoLegalActorGeo" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/ontology/Agent" } ,
+      { "type" : "uri", "value" : "http://schema.org/Person" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatAmericanAnarchists" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Anarchist109791816" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/CausalAgent100007347" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Whole100003553" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatAmericanWriters" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/LivingThing100004258" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Organism100004475" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatWriters" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/ontology/Person" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatWomen" } ,
+      { "type" : "uri", "value" : "http://www.wikidata.org/entity/Q215627" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatOutlawPoets" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatSwarthmoreCollegeAlumni" } ,
+      { "type" : "uri", "value" : "http://xmlns.com/foaf/0.1/Person" } ,
+      { "type" : "uri", "value" : "http://www.wikidata.org/entity/Q24229398" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatPeopleFromNewYorkCity" } ,
+      { "type" : "uri", "value" : "http://www.wikidata.org/entity/Q5" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Poet110444194" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Communicator109610660" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/ontology/Writer" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Writer110794014" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatLivingPeople" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Scholar110557854" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Woman110787470" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatAmericanPoets" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Radical110503452" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Alumnus109786338" } ,
+      { "type" : "uri", "value" : "http://www.w3.org/2002/07/owl#Thing" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Female109619168" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Disputant109615465" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Intellectual109621545" } ,
+      { "type" : "uri", "value" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#NaturalPerson" } ,
+      { "type" : "uri", "value" : "http://www.wikidata.org/entity/Q36180" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Obstructionist110349243" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatAmericanWomenWriters" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatAmericanTaxResisters" } ,
+      { "type" : "uri", "value" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatAmericanPeople" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatModernistWomenWriters" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatWritersFromTheSanFranciscoBayArea" } ] ,
+    "http://www.w3.org/2000/01/rdf-schema#label" : [ { "type" : "literal", "value" : "Diane di Prima" , "lang" : "es" } ,
+      { "type" : "literal", "value" : "Diane di Prima" , "lang" : "pl" } ,
+      { "type" : "literal", "value" : "Diane di Prima" , "lang" : "en" } ,
+      { "type" : "literal", "value" : "\u0414\u0438 \u041F\u0440\u0438\u043C\u0430, \u0414\u0438\u0430\u043D\u0430" , "lang" : "ru" } ,
+      { "type" : "literal", "value" : "Diane di Prima" , "lang" : "pt" } ,
+      { "type" : "literal", "value" : "Diane di Prima" , "lang" : "fr" } ,
+      { "type" : "literal", "value" : "Diane DiPrima" , "lang" : "de" } ,
+      { "type" : "literal", "value" : "Diane di Prima" , "lang" : "it" } ] ,
+    "http://www.w3.org/2000/01/rdf-schema#comment" : [ { "type" : "literal", "value" : "Diane di Prima est une po\u00E9tesse am\u00E9ricaine n\u00E9e le 6 ao\u00FBt 1934 \u00E0 New York. Elle est consid\u00E9r\u00E9e comme la femme la plus importante de la Beat generation[r\u00E9f. n\u00E9cessaire]. D\u00E8s son plus jeune \u00E2ge, Diane di Prima d\u00E9cide de consacrer sa vie \u00E0 la po\u00E9sie. Elle fonde une maison d'\u00E9dition, The Poet Press avec son mari Alan Marlowe qui publie des po\u00E8tes beat comme Gregory Corso et Herbert Huncke, puis co-fonde un magazine po\u00E9tique avec Amiri Baraka, The Floating Bear, qui existera pendant dix ans et qu'elle \u00E9ditera seule pour une large part. Elle quitte New York pour rencontrer Timothy Leary, parcourt les \u00C9tats-Unis \u00E0 bord de son combi Volkswagen puis s'installe \u00E0 San Francisco avec ses cinq enfants et \u00E9tudie le bouddhisme, le sanscrit, le gnosticisme et l'alchimie. Elle s'int\u00E9resse \u00E0 la magie." , "lang" : "fr" } ,
+      { "type" : "literal", "value" : "Diane di Prima (Brooklyn, Nova York, 5 de agosto de 1934) \u00E9 uma poeta e escritora norte-americana, parte da chamada Gera\u00E7\u00E3o Beat, e tamb\u00E9m uma militante feminista e ativista dos direitos humanos." , "lang" : "pt" } ,
+      { "type" : "literal", "value" : "Diane DiPrima (* 6. August 1934 in Brooklyn, New York City) ist eine US-amerikanische Schriftstellerin der Beat Generation." , "lang" : "de" } ,
+      { "type" : "literal", "value" : "Diane di Prima naci\u00F3 el 6 de agosto de 1934. Es una poeta estadounidense." , "lang" : "es" } ,
+      { "type" : "literal", "value" : "Diane di Prima (ur. 6 sierpnia 1934 w Brooklynie, Nowy Jork) \u2013 poetka ameryka\u0144ska. Zacz\u0119\u0142a pisa\u0107 w wieku siedmiu lat, jako nastolatka korespondowa\u0142a m.in. z Ezr\u0105 Poundem. Przez wiele lat mieszka\u0142a na Manhattanie, gdzie znana by\u0142a jako czo\u0142owa przedstawicielka ruchu bitnik\u00F3w. Za\u0142o\u017Cycielka Nowojorskiego Teatru Poetyckiego oraz wydawnictwa Poets Press, razem z Amirim Barak\u0105 redagowa\u0142a literacki biuletyn \"The Floating Bear\". W 1966 przenios\u0142a si\u0119 do Millbrook (Nowy Jork) i przez kilka lat mieszka\u0142a w psychodelicznej spo\u0142eczno\u015Bci Timothy'ego Leary'ego." , "lang" : "pl" } ,
+      { "type" : "literal", "value" : "Diane di Prima (born August 6, 1934) is an American poet and artist." , "lang" : "en" } ,
+      { "type" : "literal", "value" : "\u0414\u0438\u0430\u043D\u0430 \u0414\u0438 \u041F\u0440\u0438\u043C\u0430 (\u0430\u043D\u0433\u043B. Diane di Prima; 6 \u0430\u0432\u0433\u0443\u0441\u0442\u0430 1934) \u2014 \u0430\u043C\u0435\u0440\u0438\u043A\u0430\u043D\u0441\u043A\u0430\u044F \u043F\u043E\u044D\u0442\u0435\u0441\u0441\u0430, \u0438\u0437\u0434\u0430\u0442\u0435\u043B\u044C. \u041E\u0442\u043D\u043E\u0441\u0438\u0442\u0441\u044F \u043A \u043F\u043E\u043A\u043E\u043B\u0435\u043D\u0438\u044E \u0431\u0438\u0442\u043D\u0438\u043A\u043E\u0432, \u044F\u0432\u043B\u044F\u044F\u0441\u044C \u0441\u0430\u043C\u043E\u0439 \u0438\u0437\u0432\u0435\u0441\u0442\u043D\u043E\u0439 \u0436\u0435\u043D\u0449\u0438\u043D\u043E\u0439 \u0432 \u0434\u0430\u043D\u043D\u043E\u043C \u043B\u0438\u0442\u0435\u0440\u0430\u0442\u0443\u0440\u043D\u043E\u043C \u043D\u0430\u043F\u0440\u0430\u0432\u043B\u0435\u043D\u0438\u0438." , "lang" : "ru" } ] ,
+    "http://www.w3.org/2002/07/owl#sameAs" : [ { "type" : "uri", "value" : "http://pl.dbpedia.org/resource/Diane_di_Prima" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Diane_di_Prima" } ,
+      { "type" : "uri", "value" : "http://pt.dbpedia.org/resource/Diane_di_Prima" } ,
+      { "type" : "uri", "value" : "http://wikidata.dbpedia.org/resource/Q438891" } ,
+      { "type" : "uri", "value" : "http://fr.dbpedia.org/resource/Diane_di_Prima" } ,
+      { "type" : "uri", "value" : "http://it.dbpedia.org/resource/Diane_di_Prima" } ,
+      { "type" : "uri", "value" : "http://d-nb.info/gnd/119313545" } ,
+      { "type" : "uri", "value" : "http://rdf.freebase.com/ns/m.0246wf" } ,
+      { "type" : "uri", "value" : "http://de.dbpedia.org/resource/Diane_DiPrima" } ,
+      { "type" : "uri", "value" : "http://viaf.org/viaf/83981636" } ,
+      { "type" : "uri", "value" : "http://yago-knowledge.org/resource/Diane_di_Prima" } ,
+      { "type" : "uri", "value" : "http://sw.cyc.com/concept/Mx4rvvjRUpwpEbGdrcN5Y29ycA" } ,
+      { "type" : "uri", "value" : "http://es.dbpedia.org/resource/Diane_di_Prima" } ,
+      { "type" : "uri", "value" : "http://cs.dbpedia.org/resource/Diane_di_Prima" } ,
+      { "type" : "uri", "value" : "http://www.wikidata.org/entity/Q438891" } ] ,
+    "http://purl.org/dc/terms/subject" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Beat_Generation_writers" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:American_anarchists" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Modernist_women_writers" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:American_Buddhists" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:American_tax_resisters" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Poets_Laureate_of_San_Francisco" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Diggers_(theater)" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:1934_births" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Living_people" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:American_women_poets" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Outlaw_poets" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:American_people_of_Sicilian_descent" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Writers_from_the_San_Francisco_Bay_Area" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Swarthmore_College_alumni" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Hunter_College_High_School_alumni" } ] ,
+    "http://xmlns.com/foaf/0.1/name" : [ { "type" : "literal", "value" : "Diane di Prima" , "lang" : "en" } ] ,
+    "http://xmlns.com/foaf/0.1/homepage" : [ { "type" : "uri", "value" : "https://web.archive.org/web/20130307183607/http:/dianediprima.com/" } ] ,
+    "http://xmlns.com/foaf/0.1/depiction" : [ { "type" : "uri", "value" : "http://commons.wikimedia.org/wiki/Special:FilePath/Gloria_Graham_Diane_di_Prima.jpg" } ] ,
+    "http://purl.org/dc/terms/description" : [ { "type" : "literal", "value" : "American writer" , "lang" : "en" } ] ,
+    "http://xmlns.com/foaf/0.1/givenName" : [ { "type" : "literal", "value" : "Diane" , "lang" : "en" } ] ,
+    "http://xmlns.com/foaf/0.1/gender" : [ { "type" : "literal", "value" : "female" , "lang" : "en" } ] ,
+    "http://xmlns.com/foaf/0.1/isPrimaryTopicOf" : [ { "type" : "uri", "value" : "http://en.wikipedia.org/wiki/Diane_di_Prima" } ] ,
+    "http://dbpedia.org/ontology/movement" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Beat_generation" } ] ,
+    "http://dbpedia.org/ontology/language" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/American_English" } ] ,
+    "http://dbpedia.org/ontology/nationality" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/United_States" } ] ,
+    "http://dbpedia.org/property/portaldisp" : [ { "type" : "literal", "value" : "yes" , "datatype" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString" } ] ,
+    "http://www.w3.org/ns/prov#wasDerivedFrom" : [ { "type" : "uri", "value" : "http://en.wikipedia.org/wiki/Diane_di_Prima?oldid=743716921" } ] ,
+    "http://dbpedia.org/ontology/education" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Hunter_College_High_School" } ] ,
+    "http://dbpedia.org/property/relatives" : [ { "type" : "literal", "value" : "Domenico Mallozzi" , "datatype" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString" } ] ,
+    "http://dbpedia.org/ontology/wikiPageExternalLink" : [ { "type" : "uri", "value" : "https://web.archive.org/web/20130307183607/http:/dianediprima.com/" } ,
+      { "type" : "uri", "value" : "http://www.arsint.com/2006/d_d_7.html" } ,
+      { "type" : "uri", "value" : "http://www.verbicidemagazine.com/2010/07/29/interview-diane-di-prima/" } ,
+      { "type" : "uri", "value" : "http://www.citylights.com/book/?GCOI=87286100643970&fa=author&person_id=4899#content" } ,
+      { "type" : "uri", "value" : "http://dianediprimadocumentary.com/" } ,
+      { "type" : "uri", "value" : "http://www.sfsu.edu/~poetry/" } ,
+      { "type" : "uri", "value" : "http://www.lib.unc.edu/mss/inv/d/Di_Prima,Diane.html" } ,
+      { "type" : "uri", "value" : "http://www.add-verse.info" } ,
+      { "type" : "uri", "value" : "http://www.researchpubs.com/books/mpex_ddiprima.php" } ,
+      { "type" : "uri", "value" : "http://www.louisville.edu/library/uarc/diprima.html" } ,
+      { "type" : "uri", "value" : "https://web.archive.org/web/20120204114146/http:/joseph.matheny.com/diprima.html" } ,
+      { "type" : "uri", "value" : "http://www.wmm.com/filmcatalog/pages/c831.shtml" } ] ,
+    "http://dbpedia.org/ontology/occupation" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Author" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Poet" } ] ,
+    "http://dbpedia.org/property/caption" : [ { "type" : "literal", "value" : "Diane di Prima, photo by Gloria Graham during the video taping of Add-Verse, 2004" , "datatype" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString" } ] ,
+    "http://dbpedia.org/ontology/abstract" : [ { "type" : "literal", "value" : "Diane di Prima (born August 6, 1934) is an American poet and artist." , "lang" : "en" } ,
+      { "type" : "literal", "value" : "Diane di Prima (ur. 6 sierpnia 1934 w Brooklynie, Nowy Jork) \u2013 poetka ameryka\u0144ska. Zacz\u0119\u0142a pisa\u0107 w wieku siedmiu lat, jako nastolatka korespondowa\u0142a m.in. z Ezr\u0105 Poundem. Przez wiele lat mieszka\u0142a na Manhattanie, gdzie znana by\u0142a jako czo\u0142owa przedstawicielka ruchu bitnik\u00F3w. Za\u0142o\u017Cycielka Nowojorskiego Teatru Poetyckiego oraz wydawnictwa Poets Press, razem z Amirim Barak\u0105 redagowa\u0142a literacki biuletyn \"The Floating Bear\". W 1966 przenios\u0142a si\u0119 do Millbrook (Nowy Jork) i przez kilka lat mieszka\u0142a w psychodelicznej spo\u0142eczno\u015Bci Timothy'ego Leary'ego. Dwadzie\u015Bcia lat mieszka\u0142a i pracowa\u0142a w p\u00F3\u0142nocnej Kalifornii, gdzie uczestniczy\u0142a w politycznej dzia\u0142alno\u015Bci ruchu Diggers, \u017Cy\u0142a w komunie p\u00F3\u017Anych lat sze\u015B\u0107dziesi\u0105tych, studiowa\u0142a buddyzm Zen, sanskryt i alchemi\u0119. Urodzi\u0142a pi\u0119cioro dzieci. Od 1980 do 1986 naucza\u0142a hermetycznych i ezoterycznych tradycji w poezji, w kr\u00F3tkotrwa\u0142ym ale znacz\u0105cym programie w New College of California. Jej prace zosta\u0142y przet\u0142umaczone na dwadzie\u015Bcia j\u0119zyk\u00F3w. W San Francisco wyk\u0142ada w Institute of Magical and Healing Arts. Wyda\u0142a ponad trzydzie\u015Bci zbior\u00F3w poetyckich oraz wspomnienia Recollections of My Life as a Woman (2001)." , "lang" : "pl" } ,
+      { "type" : "literal", "value" : "Diane di Prima naci\u00F3 el 6 de agosto de 1934. Es una poeta estadounidense." , "lang" : "es" } ,
+      { "type" : "literal", "value" : "Diane di Prima (Brooklyn, Nova York, 5 de agosto de 1934) \u00E9 uma poeta e escritora norte-americana, parte da chamada Gera\u00E7\u00E3o Beat, e tamb\u00E9m uma militante feminista e ativista dos direitos humanos." , "lang" : "pt" } ,
+      { "type" : "literal", "value" : "Diane di Prima est une po\u00E9tesse am\u00E9ricaine n\u00E9e le 6 ao\u00FBt 1934 \u00E0 New York. Elle est consid\u00E9r\u00E9e comme la femme la plus importante de la Beat generation[r\u00E9f. n\u00E9cessaire]. D\u00E8s son plus jeune \u00E2ge, Diane di Prima d\u00E9cide de consacrer sa vie \u00E0 la po\u00E9sie. Elle fonde une maison d'\u00E9dition, The Poet Press avec son mari Alan Marlowe qui publie des po\u00E8tes beat comme Gregory Corso et Herbert Huncke, puis co-fonde un magazine po\u00E9tique avec Amiri Baraka, The Floating Bear, qui existera pendant dix ans et qu'elle \u00E9ditera seule pour une large part. Elle quitte New York pour rencontrer Timothy Leary, parcourt les \u00C9tats-Unis \u00E0 bord de son combi Volkswagen puis s'installe \u00E0 San Francisco avec ses cinq enfants et \u00E9tudie le bouddhisme, le sanscrit, le gnosticisme et l'alchimie. Elle s'int\u00E9resse \u00E0 la magie." , "lang" : "fr" } ,
+      { "type" : "literal", "value" : "\u0414\u0438\u0430\u043D\u0430 \u0414\u0438 \u041F\u0440\u0438\u043C\u0430 (\u0430\u043D\u0433\u043B. Diane di Prima; 6 \u0430\u0432\u0433\u0443\u0441\u0442\u0430 1934) \u2014 \u0430\u043C\u0435\u0440\u0438\u043A\u0430\u043D\u0441\u043A\u0430\u044F \u043F\u043E\u044D\u0442\u0435\u0441\u0441\u0430, \u0438\u0437\u0434\u0430\u0442\u0435\u043B\u044C. \u041E\u0442\u043D\u043E\u0441\u0438\u0442\u0441\u044F \u043A \u043F\u043E\u043A\u043E\u043B\u0435\u043D\u0438\u044E \u0431\u0438\u0442\u043D\u0438\u043A\u043E\u0432, \u044F\u0432\u043B\u044F\u044F\u0441\u044C \u0441\u0430\u043C\u043E\u0439 \u0438\u0437\u0432\u0435\u0441\u0442\u043D\u043E\u0439 \u0436\u0435\u043D\u0449\u0438\u043D\u043E\u0439 \u0432 \u0434\u0430\u043D\u043D\u043E\u043C \u043B\u0438\u0442\u0435\u0440\u0430\u0442\u0443\u0440\u043D\u043E\u043C \u043D\u0430\u043F\u0440\u0430\u0432\u043B\u0435\u043D\u0438\u0438." , "lang" : "ru" } ,
+      { "type" : "literal", "value" : "Diane DiPrima (* 6. August 1934 in Brooklyn, New York City) ist eine US-amerikanische Schriftstellerin der Beat Generation." , "lang" : "de" } ] ,
+    "http://dbpedia.org/ontology/thumbnail" : [ { "type" : "uri", "value" : "http://commons.wikimedia.org/wiki/Special:FilePath/Gloria_Graham_Diane_di_Prima.jpg?width=300" } ] ,
+    "http://dbpedia.org/ontology/birthDate" : [ { "type" : "literal", "value" : "1934-08-06" , "datatype" : "http://www.w3.org/2001/XMLSchema#date" } ,
+      { "type" : "literal", "value" : "1934-8-6" , "datatype" : "http://www.w3.org/2001/XMLSchema#date" } ] ,
+    "http://dbpedia.org/ontology/wikiPageRevisionID" : [ { "type" : "literal", "value" : 743716921 , "datatype" : "http://www.w3.org/2001/XMLSchema#integer" } ] ,
+    "http://dbpedia.org/ontology/birthPlace" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Brooklyn,_New_York" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Brooklyn" } ] ,
+    "http://dbpedia.org/ontology/wikiPageID" : [ { "type" : "literal", "value" : 404230 , "datatype" : "http://www.w3.org/2001/XMLSchema#integer" } ] ,
+    "http://dbpedia.org/property/yearsActive" : [ { "type" : "literal", "value" : "-present" , "datatype" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString" } ] ,
+    "http://dbpedia.org/ontology/almaMater" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Swarthmore_College" } ] ,
+    "http://dbpedia.org/property/imageSize" : [ { "type" : "literal", "value" : 200 , "datatype" : "http://www.w3.org/2001/XMLSchema#integer" } ] ,
+    "http://purl.org/linguistics/gold/hypernym" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Poet" } ] }
+}
+;
+	var dataAuth = "http://dbpedia.org/resource/Diane_di_Prima";
+	var dataUrl = "diane_di_prima.html";
+	var dataResourceType = "participant";
+	var dataName = "Diane di Prima";
+ 	
+</script>
+
+
+
+
+
+<script type="text/javascript">
+
+
+	
+	
+	
+
+	$(document).ready(function($) {
+		
+		
+		padb.resource.initialize();
+			 
+		$( '.scrollable' ).
+		bind( 'mousewheel DOMMouseScroll', function ( e ) {
+			
+			if( e.originalEvent ) e = e.originalEvent;
+			
+			var delta = e.wheelDelta || -e.detail;
+			this.scrollTop += ( delta < 0 ? 1 : -1 ) * 30;
+			e.preventDefault();
+		});		 
+		
+		
+				
+		$.ajaxSetup ({
+			// Disable caching of AJAX responses
+			cache: false
+		});		
+		
+	});
+	
+
+	
+	
+	
+	
+	
+</script>
+
+
+
+
+ 
+<br />
+<div class="container"  style="position:relative;">
+	   
+      <div id="resourceLinks"></div> 
+       
+       
+       
+       
+              
+       
+           
+           
+           
+          <div class="row addSection">
+              <div class="span1 addSectionIconHolder">
+              
+                <i class="icon-user"></i>
+              
+              </div>
+          
+              <div class="span11">
+                <span>Performer</span>
+                <hr>
+                <br />
+              </div>
+        </div>
+        <div class="row">
+            <div class="span1">
+            </div>
+            <div class="span11" style="position:relative">
+                
+                
+                
+                
+               <div>
+                                       <div class="pull-right vignette">
+                            <img  src="../cache/media/diane_di_prima.jpg" />
+                            
+                        </div>
+                        
+                                           
+                <div class="pull-left" style="width:80%;">
+                     
+                     <h5 id="resourceLDName">Diane di Prima</h5>
+                     <h5 id="resourceLDAbstract"></h5>
+                     
+                     
+                     <div id="resourceSameAs">
+                        <h5>External Data:</h5>
+                        
+                        
+                     </div>
+                
+                </div>   
+                
+                <br style="clear:both;" />
+            </div>
+            
+            
+                
+            </div>
+        </div>    
+         
+    
+    
+    
+    
+    
+    
+       <div class="row addSection">
+			<div class="span1 addSectionIconHolder">              
+                <i class="icon-asterisk"></i>
+              
+              </div>
+          
+              <div class="span11">
+                <span>Events </span><span id="resourceEventCount"></span>
+                <hr>
+              </div>
+        </div>
+    
+    
+    
+    
+    
+    
+    
+        <div class="row">
+            <div class="span1"></div>
+            <div class="span11" style="position:relative">
+                  
+                 <div class="">
+                    <div id="resourceEventsEvents" class="scrollable">
+                           <table class="table table-condensed table-hover table-striped">
+                               <thead>
+                                <tr>
+                                  <th>Date</th>
+                                  
+                                  <th>Title</th>
+                                  <th>Location</th>
+                                  <th></th>
+                                </tr>
+                              </thead>
+                              <tbody id="resourceEventsEventsRows"> 
+                              </tbody>
+                            </table>
+                     
+                    </div>
+                    
+                    <div id="resourceEventsExport">
+                    
+                    	<input  name="resourceEventsSearch" class="span3" id="resourceEventsSearch"  type="text" placeholder="Filter: names, places, dates">
+                    	<button class="btn btn-mini btn-danger" id="resourceEventsClearFilter"><i class="icon-remove">&nbsp;Clear Filter</i></button>
+                   		<button class="btn btn-mini btn-info" title="Render the currently filitered data as a network" id="resourceRenderEventNetwork"> <img src="../img/icon-network-white.png" style="height:15px; width:auto" /> Two-Mode Event Network</button>
+                   		<button class="btn btn-mini btn-info" title="Render the currently filitered data as a network" id="resourceRenderEventMap"> <i class="icon-globe"></i> Map Event Locations</button>
+                   		<button class="btn btn-mini btn-success" title="Download network as Gephi File" id="resourceDownloadEventGephi"> <img src="../img/icon-gephi.png" style="height:15px; width:auto" /> Donwload Gephi Network</button>
+
+                 
+                    </div>                 
+                </div>
+                <br style="clear:both;" />
+            </div>
+            
+            
+                
+         </div>    
+    
+     
+       <div class="row addSection">
+              <div class="span1">
+              
+                <img src="../img/social-network.png" style=" margin-left:25px; margin-bottom:10px;" />
+              
+              </div>
+          
+              <div class="span11">
+                <span>Performance Network</span> 
+                <hr>
+              </div>
+        </div>
+        
+        <div class="row">
+            <div class="span1">
+            </div>
+            <div class="span11" style="position:relative">
+                
+               	<div style="width: 100%; height:500px;" id="egoNetwork">
+            
+                
+             	</div> 
+                <div class="well pull-left well-small" id="egoNetworkControls">
+                    <span class="rangeLabels">Node Charge</span>
+                    <input type="range" id="resourceEgoNetworkCharge" min="-1000" max="100" value="-120" data-def="-700" />
+                    <br /><span class="rangeLabels">Gravity</span>
+                    <input type="range" id="resourceEgoNetworkGravity" min="0" max="1" value="0.1" step="0.01" data-def="0.3" /> 
+                    <br /><span class="rangeLabels">Edge Length</span>
+                    <input type="range" id="resourceEgoNetworkDistance" min="0" max="300" value="50" data-def="50"  />      
+                    <br /><span class="rangeLabels">Edge Strength</span>
+                    <input type="range" id="resourceEgoNetworkStrength" min="0" max="3" value="1" data-def="0.15" step="0.1"  /> 
+                    <br /><br />
+                    <button type="button" id="resourceEgoNetworkLabelsButton" class="btn btn-mini" title="Show node labels." data-toggle="button">Show Labels</button>  
+                    <button type="button" id="resourceEgoNetworkLiveButton" class="btn btn-mini" title="Show realtime network rendering" data-toggle="button">Live Rendering</button>                     
+                </div>
+                
+                <div class="well pull-left well-small egoNetworkControls span7" style="margin-left:20px;" >
+                
+                	<input  name="resourceEgoNetworkSearch" class="span3" id="resourceEgoNetworkSearch"  type="text" placeholder="Filter: names, places, dates">
+					<button class="btn btn-mini btn-danger" id="resourceEgoClearFilter"><i class="icon-remove">&nbsp;Clear Filter</i></button>
+                    <button class="btn btn-mini btn-success" title="Download network as Gephi File" id="resourceDownloadEgoGephi"> <img src="../img/icon-gephi.png" style="height:15px; width:auto" /> Donwload Gephi Network</button>
+
+                </div>
+                
+            </div>
+        </div>           
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+	
+
+	
+
+
+	
+
+
+</div>
+
+
+
+
+    <div id="resourceEventNetworkModal" class="modal container hide fade" style="min-height:500px" tabindex="-1">
+ 
+      <div class="modal-body">
+      	
+        <div id="eventNetwork" style="height:400px; width:100%">
+        
+        </div>
+      
+      </div>
+      <div class="modal-footer" style="height:20px;">
+      	
+        <div class="well pull-left well-small">
+        	<span class="rangeLabels">Node Charge</span>
+        	<input type="range" id="resourceEventNetworkCharge" min="-800" max="200" value="-120" data-def="-120" />
+            <span class="rangeLabels">Gravity</span>
+        	<input type="range" id="resourceEventNetworkGravity" min="0" max="1" value="0.1" step="0.01" data-def="0.1" /> 
+            <span class="rangeLabels">Edge Length</span>
+        	<input type="range" id="resourceEventNetworkDistance" min="0" max="300" value="50" data-def="50"  />      
+            <span class="rangeLabels">Edge Strength</span>
+        	<input type="range" id="resourceEventNetworkStrength" min="0" max="5" value="1" data-def="1" step="0.1"  />    
+            <button type="button" id="resourceEventNetworkLabelsButton" class="btn btn-mini" data-toggle="button">Show Labels</button>                     
+		</div>
+        <div class="pull-right">
+        <button type="button" data-dismiss="modal" class="btn">Close</button>
+       	</div>
+       </div>
+    </div>
+    
+    
+    
+    
+     <div id="resourceEventMapModal" class="modal container hide fade" style="min-height:500px" tabindex="-1">
+ 
+      <div class="modal-body">
+      	
+        <div id="eventMap" style="height:400px; width:100%">
+        
+        </div>
+      
+      </div>
+      <div class="modal-footer" style="height:20px;">
+      	
+        <div class="well pull-left well-small">                  
+		</div>
+        <div class="pull-right">
+        <button type="button" data-dismiss="modal" class="btn">Close</button>
+       	</div>
+       </div>
+    </div>
+
+<br /><br /><br /><br /><br /><br />
+
+<script type="text/javascript">    var _gaq = _gaq || [];   _gaq.push(['_setAccount', 'UA-10371295-7']);   _gaq.push(['_trackPageview']);    (function() {     var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);   })();  </script>
+
+</body>
+
+<!-- Mirrored from padb.net/resource/diane_di_prima by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 11 Jan 2020 22:19:43 GMT -->
+</html>

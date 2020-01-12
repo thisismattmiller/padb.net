@@ -1,0 +1,506 @@
+<!doctype html>
+<html>
+
+<!-- Mirrored from padb.net/resource/yvind_fahlstrm by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 11 Jan 2020 22:20:48 GMT -->
+<head>
+<meta charset="UTF-8">
+<title>padb.net</title>
+
+
+<link rel="stylesheet" href="../css/bootstrap.css">
+<link rel="stylesheet" href="../css/font-awesome.css">
+<link rel="stylesheet" href="../css/site.css">
+<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+<link rel="icon" type="image/png" href="../img/favicon.png">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/bootstrap-modal.js"></script>
+<script src="../js/bootstrap-modalmanager.js"></script>
+
+<script src="../js/d3.min.js"></script>
+<script src="../js/html5slider.js"></script>
+<script src="../js/topojson.js"></script>
+<script src="../js/padb.js"></script>
+
+
+</head>
+<body>
+    
+    
+	<div style="position:relative;">        
+
+ 		<div style=" border-bottom:solid 1px #ccc;">
+        	<div class="container">
+                
+                 <div id="header">
+                 	
+                     <div class="logo"><a href="../index.html"><span>|||</span>padb</a> </div>
+                    
+                     						<div id="resourceName" style="font-size:2em">Öyvind Fahlström</div>
+					
+                 </div>
+                
+                
+        	</div>
+            
+    	</div>
+ 
+   </div>
+<script src="../js/countriesData.js"></script>
+
+<script type="text/javascript">
+	//preloaded json from the server
+
+	var dataSameAs = [
+  {
+    "uri": "http://wikidata.dbpedia.org/resource/Q307693",
+    "numDuplicates": "28",
+    "duplicates": [
+      "http://dbpedia.org/resource/Oyvind_Fahlstrom",
+      "http://dbpedia.org/resource/Ãyvind_FahlstrÃ¶m",
+      "http://dbpedia.org/resource/Öjvind_Fahlström",
+      "http://dbpedia.org/resource/Öjvind_fahlström",
+      "http://dbpedia.org/resource/Öyvind_Fahlström",
+      "http://ca.dbpedia.org/resource/\u00D6yvind_Fahlstr\u00F6m",
+      "http://d-nb.info/gnd/119306867",
+      "http://d-nb.info/gnd/119306867/about/rdf",
+      "http://dbpedialite.org/things/18755361#id",
+      "http://dbpedialite.org/things/29900802#id",
+      "http://de.dbpedia.org/resource/\u00D6yvind_Fahlstr\u00F6m",
+      "http://es.dbpedia.org/resource/\u00D6yvind_Fahlstr\u00F6m",
+      "http://fr.dbpedia.org/resource/\u00D6yvind_Fahlstr\u00F6m",
+      "http://freebase.com//m/04grcq3",
+      "http://id.loc.gov/authorities/names/n80164374",
+      "http://it.dbpedia.org/resource/\u00D6yvind_Fahlstr\u00F6m",
+      "http://libris.kb.se/resource/auth/186586",
+      "http://mpii.de/yago/resource/Öyvind_Fahlström",
+      "http://pt.dbpedia.org/resource/\u00D6yvind_Fahlstr\u00F6m",
+      "http://rdf.freebase.com/ns/m.04grcq3",
+      "http://rdf.freebase.com/ns/en.ojvind_fahlstrom",
+      "http://rdf.freebase.com/ns/guid.9202a8c04000641f8000000008ebaec3",
+      "http://ru.dbpedia.org/resource/\u0424\u0430\u043B\u044C\u0441\u0442\u0440\u0451\u043C,_\u042D\u0439\u0432\u0438\u043D\u0434",
+      "http://sv.dbpedia.org/resource/\u00D6yvind_Fahlstr\u00F6m",
+      "http://viaf.org/viaf/29748578",
+      "http://wikidata.dbpedia.org/resource/Q307693",
+      "http://www.wikidata.org/entity/Q307693",
+      "http://yago-knowledge.org/resource/Ãyvind_FahlstrÃ¶m"
+    ]
+  }
+]
+;
+	var dataDbpedia = {
+  "http://en.wikipedia.org/wiki/\u00D6yvind_Fahlstr\u00F6m" : { "http://xmlns.com/foaf/0.1/primaryTopic" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/\u00D6yvind_Fahlstr\u00F6m" } ] } ,
+  "http://dbpedia.org/resource/\u00D6jvind_fahlstr\u00F6m" : { "http://dbpedia.org/ontology/wikiPageRedirects" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/\u00D6yvind_Fahlstr\u00F6m" } ] } ,
+  "http://dbpedia.org/resource/\u00D6yvind_Fahlstr\u00F6m" : { "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Scholar110557854" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Painter110391653" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Artist109812338" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Creator109614315" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/ontology/Artist" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatSwedishWriters" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Alumnus109786338" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Intellectual109621545" } ,
+      { "type" : "uri", "value" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#NaturalPerson" } ,
+      { "type" : "uri", "value" : "http://xmlns.com/foaf/0.1/Person" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Writer110794014" } ,
+      { "type" : "uri", "value" : "http://www.wikidata.org/entity/Q215627" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatPeopleFromS\u00E3oPaulo(city)" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatSwedishPoets" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/ontology/Agent" } ,
+      { "type" : "uri", "value" : "http://www.wikidata.org/entity/Q24229398" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatBrazilianPoets" } ,
+      { "type" : "uri", "value" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Communicator109610660" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/PhysicalEntity100001930" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/YagoLegalActor" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/YagoLegalActorGeo" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Person100007846" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Object100002684" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Poet110444194" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Whole100003553" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/LivingThing100004258" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/CausalAgent100007347" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatBrazilianPainters" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatSwedishArtists" } ,
+      { "type" : "uri", "value" : "http://schema.org/Person" } ,
+      { "type" : "uri", "value" : "http://www.wikidata.org/entity/Q5" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatSwedishPainters" } ,
+      { "type" : "uri", "value" : "http://www.w3.org/2002/07/owl#Thing" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Organism100004475" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/ontology/Person" } ,
+      { "type" : "uri", "value" : "http://www.wikidata.org/entity/Q483501" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatStockholmUniversityAlumni" } ] ,
+    "http://www.w3.org/2000/01/rdf-schema#label" : [ { "type" : "literal", "value" : "\u00D6yvind Fahlstr\u00F6m" , "lang" : "es" } ,
+      { "type" : "literal", "value" : "\u0424\u0430\u043B\u044C\u0441\u0442\u0440\u0451\u043C, \u042D\u0439\u0432\u0438\u043D\u0434" , "lang" : "ru" } ,
+      { "type" : "literal", "value" : "\u00D6yvind Fahlstr\u00F6m" , "lang" : "en" } ,
+      { "type" : "literal", "value" : "\u00D6yvind Fahlstr\u00F6m" , "lang" : "it" } ,
+      { "type" : "literal", "value" : "\u00D6yvind Fahlstr\u00F6m" , "lang" : "pt" } ,
+      { "type" : "literal", "value" : "\u00D6yvind Fahlstr\u00F6m" , "lang" : "fr" } ,
+      { "type" : "literal", "value" : "\u00D6yvind Fahlstr\u00F6m" , "lang" : "de" } ] ,
+    "http://www.w3.org/2000/01/rdf-schema#comment" : [ { "type" : "literal", "value" : "\u042D\u0439\u0432\u0438\u043D\u0434 \u0424\u0430\u043B\u044C\u0441\u0442\u0440\u0451\u043C (\u0448\u0432\u0435\u0434. \u00D6yvind Fahlstr\u00F6m; 28 \u0434\u0435\u043A\u0430\u0431\u0440\u044F 1928, \u0421\u0430\u043D-\u041F\u0430\u0443\u043B\u0443, \u0411\u0440\u0430\u0437\u0438\u043B\u0438\u044F \u2014 9 \u043D\u043E\u044F\u0431\u0440\u044F 1976, \u0421\u0442\u043E\u043A\u0433\u043E\u043B\u044C\u043C, \u0428\u0432\u0435\u0446\u0438\u044F) \u2014 \u0448\u0432\u0435\u0434\u0441\u043A\u0438\u0439 \u0445\u0443\u0434\u043E\u0436\u043D\u0438\u043A." , "lang" : "ru" } ,
+      { "type" : "literal", "value" : "\u00D6yvind Axel Christian Fahlstr\u00F6m (S\u00E3o Paulo, el 28 de diciembre de 1928; Estocolmo, Suecia, 9 de noviembre de 1976), fue un pintor y poeta brasile\u00F1o. Hijo de inmigrantes suecos, pas\u00F3 su infancia entre S\u00E3o Paulo, Niter\u00F3i y Rio de Janeiro. En 1939, va a Suecia a pasar las vacaciones con la familia de sus padres, poco antes del comienzo de la invasi\u00F3n alemana a Polonia. El estallido de la Segunda Guerra Mundial impide que Falhstr\u00F6m viaje de forma segura de retorno a Brasil, y permanece en el pa\u00EDs hasta el fin de la guerra. En este per\u00EDodo, Fahlstr\u00F6m adopta la nacionalidad sueca por las exigencias del gobierno para prestar servicio militar." , "lang" : "es" } ,
+      { "type" : "literal", "value" : "\u00D6yvind Axel Christian Fahlstr\u00F6m (Aussprache: [\u02CC\u0153\u029D\u02D0vind \u02C8f\u0251\u02D0lst\u0279\u0153m], * 28. Dezember 1928 in S\u00E3o Paulo; \u2020 9. November 1976 in Stockholm) war ein schwedischer K\u00FCnstler." , "lang" : "de" } ,
+      { "type" : "literal", "value" : "\u00D6yvind Axel Christian Fahlstr\u00F6m (1928\u20131976) was a Swedish Multimedia artist." , "lang" : "en" } ,
+      { "type" : "literal", "value" : "\u00C8 considerato il fondatore del Concretismo letterario.Nacque in Brasile da Frithjof Fahlstr\u00F6m, norvegese, e Karin Fahlstr\u00F6m, svedese. Per ius soli divenne cittadino brasiliano trascorrendo la sua infanzia tra San Paolo, Niteroi e Rio de Janeiro, studiando in portoghese e in inglese alla Escuola Brittanica de S\u00E3o Paulo.Nel 1948 rinunci\u00F2 al passaporto brasiliano e si trasfer\u00EC definitivamente in Europa viaggiando tra Italia, Svezia e Francia." , "lang" : "it" } ,
+      { "type" : "literal", "value" : "\u00D6yvind Axel Christian Fahlstr\u00F6m (S\u00E3o Paulo, 28 de dezembro de 1928 \u2014 Estocolmo, 9 de novembro de 1976) foi um artista da pop art que, em muitas de suas obras, chamou a aten\u00E7\u00E3o para os problemas dos pa\u00EDses de terceiro mundo. Fahlstr\u00F6m era filho de imigrantes suecos, mas passou sua inf\u00E2ncia no Rio de Janeiro, onde foi educado em duas l\u00EDnguas, Portugu\u00EAs e Ingl\u00EAs. O artista deixou o Brasil no ano de 1948 e nunca mais voltou a morar nesse pa\u00EDs. Embora conhecido no meio acad\u00EAmico das artes pl\u00E1sticas, Fahlstr\u00F6m \u00E9 pouco conhecido no Brasil e a literatura a respeito de sua obra \u00E9 bastante escassa. Artista por forma\u00E7\u00E3o, mas tendo atuado tamb\u00E9m como jornalista, \u00D6yvind foi um artista muito vers\u00E1til, reunindo em sua obra: poesia concretista, instala\u00E7\u00F5es, pinturas, desenhos, r\u00E1dio-novelas, pe\u00E7as de teat" , "lang" : "pt" } ,
+      { "type" : "literal", "value" : "\u00D6yvind Axel Christian Fahlstr\u00F6m, n\u00E9 le 28 d\u00E9cembre 1928 \u00E0 S\u00E3o Paulo (Br\u00E9sil) et mort le 9 novembre 1976 \u00E0 Stockholm, est un peintre, \u00E9crivain et po\u00E8te su\u00E9dois." , "lang" : "fr" } ] ,
+    "http://dbpedia.org/property/birthDate" : [ { "type" : "literal", "value" : 1928 , "datatype" : "http://www.w3.org/2001/XMLSchema#integer" } ] ,
+    "http://www.w3.org/2002/07/owl#sameAs" : [ { "type" : "uri", "value" : "http://viaf.org/viaf/29748578" } ,
+      { "type" : "uri", "value" : "http://es.dbpedia.org/resource/\u00D6yvind_Fahlstr\u00F6m" } ,
+      { "type" : "uri", "value" : "http://pt.dbpedia.org/resource/\u00D6yvind_Fahlstr\u00F6m" } ,
+      { "type" : "uri", "value" : "http://wikidata.dbpedia.org/resource/Q307693" } ,
+      { "type" : "uri", "value" : "http://fr.dbpedia.org/resource/\u00D6yvind_Fahlstr\u00F6m" } ,
+      { "type" : "uri", "value" : "http://yago-knowledge.org/resource/\u00D6yvind_Fahlstr\u00F6m" } ,
+      { "type" : "uri", "value" : "http://it.dbpedia.org/resource/\u00D6yvind_Fahlstr\u00F6m" } ,
+      { "type" : "uri", "value" : "http://rdf.freebase.com/ns/m.04grcq3" } ,
+      { "type" : "uri", "value" : "http://www.wikidata.org/entity/Q307693" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/\u00D6yvind_Fahlstr\u00F6m" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/\u00D6yvind_Fahlstr\u00F6m" } ,
+      { "type" : "uri", "value" : "http://de.dbpedia.org/resource/\u00D6yvind_Fahlstr\u00F6m" } ,
+      { "type" : "uri", "value" : "http://d-nb.info/gnd/119306867" } ] ,
+    "http://purl.org/dc/terms/subject" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:1976_deaths" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Swedish_artists" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:1928_births" } ] ,
+    "http://xmlns.com/foaf/0.1/name" : [ { "type" : "literal", "value" : "\u00D6yvind Fahlstr\u00F6m" , "lang" : "en" } ] ,
+    "http://xmlns.com/foaf/0.1/depiction" : [ { "type" : "uri", "value" : "http://commons.wikimedia.org/wiki/Special:FilePath/Fahlstro.JPG" } ] ,
+    "http://purl.org/dc/terms/description" : [ { "type" : "literal", "value" : "Swedish multimedia artist" , "lang" : "en" } ] ,
+    "http://xmlns.com/foaf/0.1/givenName" : [ { "type" : "literal", "value" : "\u00D6yvind" , "lang" : "en" } ] ,
+    "http://xmlns.com/foaf/0.1/gender" : [ { "type" : "literal", "value" : "male" , "lang" : "en" } ] ,
+    "http://xmlns.com/foaf/0.1/isPrimaryTopicOf" : [ { "type" : "uri", "value" : "http://en.wikipedia.org/wiki/\u00D6yvind_Fahlstr\u00F6m" } ] ,
+    "http://xmlns.com/foaf/0.1/surname" : [ { "type" : "literal", "value" : "Fahlstr\u00F6m" , "lang" : "en" } ] ,
+    "http://www.w3.org/ns/prov#wasDerivedFrom" : [ { "type" : "uri", "value" : "http://en.wikipedia.org/wiki/\u00D6yvind_Fahlstr\u00F6m?oldid=737044195" } ] ,
+    "http://dbpedia.org/ontology/wikiPageExternalLink" : [ { "type" : "uri", "value" : "http://www.fahlstrom.com" } ,
+      { "type" : "uri", "value" : "http://www.artnet.de/artist/660764/oyvind-fahlstrom.html" } ,
+      { "type" : "uri", "value" : "http://www.aurelscheibler.com/artists-represented/\u00F6yvind-fahlstr\u00F6m" } ] ,
+    "http://dbpedia.org/property/imageSize" : [ { "type" : "literal", "value" : 220 , "datatype" : "http://www.w3.org/2001/XMLSchema#integer" } ] ,
+    "http://dbpedia.org/ontology/movement" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Fluxus" } ] ,
+    "http://dbpedia.org/ontology/abstract" : [ { "type" : "literal", "value" : "\u00D6yvind Axel Christian Fahlstr\u00F6m, n\u00E9 le 28 d\u00E9cembre 1928 \u00E0 S\u00E3o Paulo (Br\u00E9sil) et mort le 9 novembre 1976 \u00E0 Stockholm, est un peintre, \u00E9crivain et po\u00E8te su\u00E9dois." , "lang" : "fr" } ,
+      { "type" : "literal", "value" : "\u00D6yvind Axel Christian Fahlstr\u00F6m (S\u00E3o Paulo, 28 de dezembro de 1928 \u2014 Estocolmo, 9 de novembro de 1976) foi um artista da pop art que, em muitas de suas obras, chamou a aten\u00E7\u00E3o para os problemas dos pa\u00EDses de terceiro mundo. Fahlstr\u00F6m era filho de imigrantes suecos, mas passou sua inf\u00E2ncia no Rio de Janeiro, onde foi educado em duas l\u00EDnguas, Portugu\u00EAs e Ingl\u00EAs. O artista deixou o Brasil no ano de 1948 e nunca mais voltou a morar nesse pa\u00EDs. Embora conhecido no meio acad\u00EAmico das artes pl\u00E1sticas, Fahlstr\u00F6m \u00E9 pouco conhecido no Brasil e a literatura a respeito de sua obra \u00E9 bastante escassa. Artista por forma\u00E7\u00E3o, mas tendo atuado tamb\u00E9m como jornalista, \u00D6yvind foi um artista muito vers\u00E1til, reunindo em sua obra: poesia concretista, instala\u00E7\u00F5es, pinturas, desenhos, r\u00E1dio-novelas, pe\u00E7as de teatro, v\u00EDdeos, gravuras e pain\u00E9is." , "lang" : "pt" } ,
+      { "type" : "literal", "value" : "\u00C8 considerato il fondatore del Concretismo letterario.Nacque in Brasile da Frithjof Fahlstr\u00F6m, norvegese, e Karin Fahlstr\u00F6m, svedese. Per ius soli divenne cittadino brasiliano trascorrendo la sua infanzia tra San Paolo, Niteroi e Rio de Janeiro, studiando in portoghese e in inglese alla Escuola Brittanica de S\u00E3o Paulo.Nel 1948 rinunci\u00F2 al passaporto brasiliano e si trasfer\u00EC definitivamente in Europa viaggiando tra Italia, Svezia e Francia." , "lang" : "it" } ,
+      { "type" : "literal", "value" : "\u00D6yvind Axel Christian Fahlstr\u00F6m (S\u00E3o Paulo, el 28 de diciembre de 1928; Estocolmo, Suecia, 9 de noviembre de 1976), fue un pintor y poeta brasile\u00F1o. Hijo de inmigrantes suecos, pas\u00F3 su infancia entre S\u00E3o Paulo, Niter\u00F3i y Rio de Janeiro. En 1939, va a Suecia a pasar las vacaciones con la familia de sus padres, poco antes del comienzo de la invasi\u00F3n alemana a Polonia. El estallido de la Segunda Guerra Mundial impide que Falhstr\u00F6m viaje de forma segura de retorno a Brasil, y permanece en el pa\u00EDs hasta el fin de la guerra. En este per\u00EDodo, Fahlstr\u00F6m adopta la nacionalidad sueca por las exigencias del gobierno para prestar servicio militar. Al terminar sus estudios superiores en la Universidad de Estocolmo en 1952, Falhstr\u00F6m comienza a viajar por Europa, y a producir teatro y poes\u00EDa, adem\u00E1s de trabajar en traducciones, y periodismo para la prensa sueca. Sus obras pict\u00F3ricas consiguieron su primera exposici\u00F3n exclusiva en 1953 en Florencia, Italia. Entre este a\u00F1o y hasta el final de su vida, las obras de Fahlstr\u00F6m ser\u00EDan expuestas en museos y galer\u00EDas de todo el mundo, destacando Francia, Italia, Estados Unidos, Brasil y Suecia. En 1961, se muda a Nueva York, donde incursiona en la producci\u00F3n de documentales." , "lang" : "es" } ,
+      { "type" : "literal", "value" : "\u042D\u0439\u0432\u0438\u043D\u0434 \u0424\u0430\u043B\u044C\u0441\u0442\u0440\u0451\u043C (\u0448\u0432\u0435\u0434. \u00D6yvind Fahlstr\u00F6m; 28 \u0434\u0435\u043A\u0430\u0431\u0440\u044F 1928, \u0421\u0430\u043D-\u041F\u0430\u0443\u043B\u0443, \u0411\u0440\u0430\u0437\u0438\u043B\u0438\u044F \u2014 9 \u043D\u043E\u044F\u0431\u0440\u044F 1976, \u0421\u0442\u043E\u043A\u0433\u043E\u043B\u044C\u043C, \u0428\u0432\u0435\u0446\u0438\u044F) \u2014 \u0448\u0432\u0435\u0434\u0441\u043A\u0438\u0439 \u0445\u0443\u0434\u043E\u0436\u043D\u0438\u043A." , "lang" : "ru" } ,
+      { "type" : "literal", "value" : "\u00D6yvind Axel Christian Fahlstr\u00F6m (Aussprache: [\u02CC\u0153\u029D\u02D0vind \u02C8f\u0251\u02D0lst\u0279\u0153m], * 28. Dezember 1928 in S\u00E3o Paulo; \u2020 9. November 1976 in Stockholm) war ein schwedischer K\u00FCnstler." , "lang" : "de" } ,
+      { "type" : "literal", "value" : "\u00D6yvind Axel Christian Fahlstr\u00F6m (1928\u20131976) was a Swedish Multimedia artist." , "lang" : "en" } ] ,
+    "http://dbpedia.org/ontology/thumbnail" : [ { "type" : "uri", "value" : "http://commons.wikimedia.org/wiki/Special:FilePath/Fahlstro.JPG?width=300" } ] ,
+    "http://dbpedia.org/ontology/birthDate" : [ { "type" : "literal", "value" : "1928-12-28" , "datatype" : "http://www.w3.org/2001/XMLSchema#date" } ] ,
+    "http://dbpedia.org/ontology/deathDate" : [ { "type" : "literal", "value" : "1976-11-9" , "datatype" : "http://www.w3.org/2001/XMLSchema#date" } ] ,
+    "http://dbpedia.org/ontology/deathPlace" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Stockholm" } ] ,
+    "http://dbpedia.org/ontology/wikiPageRevisionID" : [ { "type" : "literal", "value" : 737044195 , "datatype" : "http://www.w3.org/2001/XMLSchema#integer" } ] ,
+    "http://dbpedia.org/ontology/birthPlace" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Sao_Paulo,_Brazil" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/S\u00E3o_Paulo" } ] ,
+    "http://dbpedia.org/ontology/wikiPageID" : [ { "type" : "literal", "value" : 18755361 , "datatype" : "http://www.w3.org/2001/XMLSchema#integer" } ] ,
+    "http://dbpedia.org/ontology/nationality" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Sweden" } ] ,
+    "http://purl.org/linguistics/gold/hypernym" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Artist" } ] } ,
+  "http://dbpedia.org/resource/\u00D6jvind_Fahlstr\u00F6m" : { "http://dbpedia.org/ontology/wikiPageRedirects" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/\u00D6yvind_Fahlstr\u00F6m" } ] } ,
+  "http://dbpedia.org/resource/Oyvind_Fahlstrom" : { "http://dbpedia.org/ontology/wikiPageRedirects" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/\u00D6yvind_Fahlstr\u00F6m" } ] }
+}
+;
+	var dataAuth = "http://dbpedia.org/resource/Öyvind_Fahlström";
+	var dataUrl = "yvind_fahlstrm.html";
+	var dataResourceType = "participant";
+	var dataName = "Öyvind Fahlström";
+ 	
+</script>
+
+
+
+
+
+<script type="text/javascript">
+
+
+	
+	
+	
+
+	$(document).ready(function($) {
+		
+		
+		padb.resource.initialize();
+			 
+		$( '.scrollable' ).
+		bind( 'mousewheel DOMMouseScroll', function ( e ) {
+			
+			if( e.originalEvent ) e = e.originalEvent;
+			
+			var delta = e.wheelDelta || -e.detail;
+			this.scrollTop += ( delta < 0 ? 1 : -1 ) * 30;
+			e.preventDefault();
+		});		 
+		
+		
+				
+		$.ajaxSetup ({
+			// Disable caching of AJAX responses
+			cache: false
+		});		
+		
+	});
+	
+
+	
+	
+	
+	
+	
+</script>
+
+
+
+
+ 
+<br />
+<div class="container"  style="position:relative;">
+	   
+      <div id="resourceLinks"></div> 
+       
+       
+       
+       
+              
+       
+           
+           
+           
+          <div class="row addSection">
+              <div class="span1 addSectionIconHolder">
+              
+                <i class="icon-user"></i>
+              
+              </div>
+          
+              <div class="span11">
+                <span>Performer</span>
+                <hr>
+                <br />
+              </div>
+        </div>
+        <div class="row">
+            <div class="span1">
+            </div>
+            <div class="span11" style="position:relative">
+                
+                
+                
+                
+               <div>
+                                       <div class="pull-right vignette">
+                            <img  src="../cache/media/yvind_fahlstrm.jpg" />
+                            
+                        </div>
+                        
+                                           
+                <div class="pull-left" style="width:80%;">
+                     
+                     <h5 id="resourceLDName">Öyvind Fahlström</h5>
+                     <h5 id="resourceLDAbstract"></h5>
+                     
+                     
+                     <div id="resourceSameAs">
+                        <h5>External Data:</h5>
+                        
+                        
+                     </div>
+                
+                </div>   
+                
+                <br style="clear:both;" />
+            </div>
+            
+            
+                
+            </div>
+        </div>    
+         
+    
+    
+    
+    
+    
+    
+       <div class="row addSection">
+			<div class="span1 addSectionIconHolder">              
+                <i class="icon-asterisk"></i>
+              
+              </div>
+          
+              <div class="span11">
+                <span>Events </span><span id="resourceEventCount"></span>
+                <hr>
+              </div>
+        </div>
+    
+    
+    
+    
+    
+    
+    
+        <div class="row">
+            <div class="span1"></div>
+            <div class="span11" style="position:relative">
+                  
+                 <div class="">
+                    <div id="resourceEventsEvents" class="scrollable">
+                           <table class="table table-condensed table-hover table-striped">
+                               <thead>
+                                <tr>
+                                  <th>Date</th>
+                                  
+                                  <th>Title</th>
+                                  <th>Location</th>
+                                  <th></th>
+                                </tr>
+                              </thead>
+                              <tbody id="resourceEventsEventsRows"> 
+                              </tbody>
+                            </table>
+                     
+                    </div>
+                    
+                    <div id="resourceEventsExport">
+                    
+                    	<input  name="resourceEventsSearch" class="span3" id="resourceEventsSearch"  type="text" placeholder="Filter: names, places, dates">
+                    	<button class="btn btn-mini btn-danger" id="resourceEventsClearFilter"><i class="icon-remove">&nbsp;Clear Filter</i></button>
+                   		<button class="btn btn-mini btn-info" title="Render the currently filitered data as a network" id="resourceRenderEventNetwork"> <img src="../img/icon-network-white.png" style="height:15px; width:auto" /> Two-Mode Event Network</button>
+                   		<button class="btn btn-mini btn-info" title="Render the currently filitered data as a network" id="resourceRenderEventMap"> <i class="icon-globe"></i> Map Event Locations</button>
+                   		<button class="btn btn-mini btn-success" title="Download network as Gephi File" id="resourceDownloadEventGephi"> <img src="../img/icon-gephi.png" style="height:15px; width:auto" /> Donwload Gephi Network</button>
+
+                 
+                    </div>                 
+                </div>
+                <br style="clear:both;" />
+            </div>
+            
+            
+                
+         </div>    
+    
+     
+       <div class="row addSection">
+              <div class="span1">
+              
+                <img src="../img/social-network.png" style=" margin-left:25px; margin-bottom:10px;" />
+              
+              </div>
+          
+              <div class="span11">
+                <span>Performance Network</span> 
+                <hr>
+              </div>
+        </div>
+        
+        <div class="row">
+            <div class="span1">
+            </div>
+            <div class="span11" style="position:relative">
+                
+               	<div style="width: 100%; height:500px;" id="egoNetwork">
+            
+                
+             	</div> 
+                <div class="well pull-left well-small" id="egoNetworkControls">
+                    <span class="rangeLabels">Node Charge</span>
+                    <input type="range" id="resourceEgoNetworkCharge" min="-1000" max="100" value="-120" data-def="-700" />
+                    <br /><span class="rangeLabels">Gravity</span>
+                    <input type="range" id="resourceEgoNetworkGravity" min="0" max="1" value="0.1" step="0.01" data-def="0.3" /> 
+                    <br /><span class="rangeLabels">Edge Length</span>
+                    <input type="range" id="resourceEgoNetworkDistance" min="0" max="300" value="50" data-def="50"  />      
+                    <br /><span class="rangeLabels">Edge Strength</span>
+                    <input type="range" id="resourceEgoNetworkStrength" min="0" max="3" value="1" data-def="0.15" step="0.1"  /> 
+                    <br /><br />
+                    <button type="button" id="resourceEgoNetworkLabelsButton" class="btn btn-mini" title="Show node labels." data-toggle="button">Show Labels</button>  
+                    <button type="button" id="resourceEgoNetworkLiveButton" class="btn btn-mini" title="Show realtime network rendering" data-toggle="button">Live Rendering</button>                     
+                </div>
+                
+                <div class="well pull-left well-small egoNetworkControls span7" style="margin-left:20px;" >
+                
+                	<input  name="resourceEgoNetworkSearch" class="span3" id="resourceEgoNetworkSearch"  type="text" placeholder="Filter: names, places, dates">
+					<button class="btn btn-mini btn-danger" id="resourceEgoClearFilter"><i class="icon-remove">&nbsp;Clear Filter</i></button>
+                    <button class="btn btn-mini btn-success" title="Download network as Gephi File" id="resourceDownloadEgoGephi"> <img src="../img/icon-gephi.png" style="height:15px; width:auto" /> Donwload Gephi Network</button>
+
+                </div>
+                
+            </div>
+        </div>           
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+	
+
+	
+
+
+	
+
+
+</div>
+
+
+
+
+    <div id="resourceEventNetworkModal" class="modal container hide fade" style="min-height:500px" tabindex="-1">
+ 
+      <div class="modal-body">
+      	
+        <div id="eventNetwork" style="height:400px; width:100%">
+        
+        </div>
+      
+      </div>
+      <div class="modal-footer" style="height:20px;">
+      	
+        <div class="well pull-left well-small">
+        	<span class="rangeLabels">Node Charge</span>
+        	<input type="range" id="resourceEventNetworkCharge" min="-800" max="200" value="-120" data-def="-120" />
+            <span class="rangeLabels">Gravity</span>
+        	<input type="range" id="resourceEventNetworkGravity" min="0" max="1" value="0.1" step="0.01" data-def="0.1" /> 
+            <span class="rangeLabels">Edge Length</span>
+        	<input type="range" id="resourceEventNetworkDistance" min="0" max="300" value="50" data-def="50"  />      
+            <span class="rangeLabels">Edge Strength</span>
+        	<input type="range" id="resourceEventNetworkStrength" min="0" max="5" value="1" data-def="1" step="0.1"  />    
+            <button type="button" id="resourceEventNetworkLabelsButton" class="btn btn-mini" data-toggle="button">Show Labels</button>                     
+		</div>
+        <div class="pull-right">
+        <button type="button" data-dismiss="modal" class="btn">Close</button>
+       	</div>
+       </div>
+    </div>
+    
+    
+    
+    
+     <div id="resourceEventMapModal" class="modal container hide fade" style="min-height:500px" tabindex="-1">
+ 
+      <div class="modal-body">
+      	
+        <div id="eventMap" style="height:400px; width:100%">
+        
+        </div>
+      
+      </div>
+      <div class="modal-footer" style="height:20px;">
+      	
+        <div class="well pull-left well-small">                  
+		</div>
+        <div class="pull-right">
+        <button type="button" data-dismiss="modal" class="btn">Close</button>
+       	</div>
+       </div>
+    </div>
+
+<br /><br /><br /><br /><br /><br />
+
+<script type="text/javascript">    var _gaq = _gaq || [];   _gaq.push(['_setAccount', 'UA-10371295-7']);   _gaq.push(['_trackPageview']);    (function() {     var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);   })();  </script>
+
+</body>
+
+<!-- Mirrored from padb.net/resource/yvind_fahlstrm by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 11 Jan 2020 22:20:49 GMT -->
+</html>

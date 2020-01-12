@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<gexf version="1.2" xmlns="http://www.gexf.net/1.2draft">
+ <graph mode="static" defaultedgetype="undirected">
+  <nodes>
+   <node id="79" label="Toshiro Mayuzumi"/>
+   <node id="96" label="Takehisa Kosugi"/>
+   <node id="97" label="Mieko Shiomi"/>
+   <node id="98" label="Takahishi"/>
+   <node id="99" label="Yasunao Tone"/>
+   <node id="138" label="Natsuyuki Nakanishi"/>
+   <node id="146" label="Hi Red Center"/>
+   <node id="1" label="John Cage"/>
+   <node id="2" label="Yoko Ono"/>
+   <node id="29" label="David Tudor"/>
+   <node id="43" label="Wolf Vostell"/>
+   <node id="88" label="Ay-O"/>
+   <node id="268" label="Kuniharu Akiyama"/>
+   <node id="447" label="Katsuhiro Yamaguchi"/>
+  </nodes>
+  <edges>
+   <edge source="79" target="96"/>
+   <edge source="79" target="97"/>
+   <edge source="79" target="98"/>
+   <edge source="79" target="99"/>
+   <edge source="96" target="97"/>
+   <edge source="96" target="98"/>
+   <edge source="96" target="99"/>
+   <edge source="97" target="98"/>
+   <edge source="97" target="99"/>
+   <edge source="98" target="99"/>
+   <edge source="138" target="146"/>
+   <edge source="1" target="2"/>
+   <edge source="1" target="29"/>
+   <edge source="2" target="29"/>
+   <edge source="43" target="88"/>
+   <edge source="43" target="268"/>
+   <edge source="43" target="447"/>
+   <edge source="88" target="268"/>
+   <edge source="88" target="447"/>
+   <edge source="268" target="447"/>
+  </edges>
+ </graph>
+</gexf>

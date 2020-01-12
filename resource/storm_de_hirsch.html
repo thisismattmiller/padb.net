@@ -1,0 +1,455 @@
+<!doctype html>
+<html>
+
+<!-- Mirrored from padb.net/resource/storm_de_hirsch by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 11 Jan 2020 22:21:43 GMT -->
+<head>
+<meta charset="UTF-8">
+<title>padb.net</title>
+
+
+<link rel="stylesheet" href="../css/bootstrap.css">
+<link rel="stylesheet" href="../css/font-awesome.css">
+<link rel="stylesheet" href="../css/site.css">
+<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+<link rel="icon" type="image/png" href="../img/favicon.png">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/bootstrap-modal.js"></script>
+<script src="../js/bootstrap-modalmanager.js"></script>
+
+<script src="../js/d3.min.js"></script>
+<script src="../js/html5slider.js"></script>
+<script src="../js/topojson.js"></script>
+<script src="../js/padb.js"></script>
+
+
+</head>
+<body>
+    
+    
+	<div style="position:relative;">        
+
+ 		<div style=" border-bottom:solid 1px #ccc;">
+        	<div class="container">
+                
+                 <div id="header">
+                 	
+                     <div class="logo"><a href="../index.html"><span>|||</span>padb</a> </div>
+                    
+                      
+						 <div id="resourceName">Storm de Hirsch</div>
+					 
+                 </div>
+                
+                
+        	</div>
+            
+    	</div>
+ 
+   </div>
+<script src="../js/countriesData.js"></script>
+
+<script type="text/javascript">
+	//preloaded json from the server
+
+	var dataSameAs = [
+  {
+    "uri": "http://www.wikidata.org/entity/Q7620197",
+    "numDuplicates": "10",
+    "duplicates": [
+      "http://dbpedia.org/resource/Storm_De_Hirsch",
+      "http://dbpedia.org/resource/Storm_de_Hirsch",
+      "http://dbpedialite.org/things/19358691#id",
+      "http://dbpedialite.org/things/33723418#id",
+      "http://mpii.de/yago/resource/Storm_de_Hirsch",
+      "http://rdf.freebase.com/ns/m.04m_v20",
+      "http://rdf.freebase.com/ns/en.storm_de_hirsch",
+      "http://rdf.freebase.com/ns/guid.9202a8c04000641f80000000093fe840",
+      "http://www.wikidata.org/entity/Q7620197",
+      "http://yago-knowledge.org/resource/Storm_de_Hirsch"
+    ]
+  }
+]
+;
+	var dataDbpedia = {
+  "http://dbpedia.org/resource/Storm_De_Hirsch" : { "http://dbpedia.org/ontology/wikiPageRedirects" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Storm_de_Hirsch" } ] } ,
+  "http://en.wikipedia.org/wiki/Storm_de_Hirsch" : { "http://xmlns.com/foaf/0.1/primaryTopic" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Storm_de_Hirsch" } ] } ,
+  "http://dbpedia.org/resource/Storm_de_Hirsch" : { "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { "type" : "uri", "value" : "http://www.w3.org/2002/07/owl#Thing" } ,
+      { "type" : "uri", "value" : "http://www.wikidata.org/entity/Q5" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatExperimentalFilmmakers" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/CausalAgent100007347" } ,
+      { "type" : "uri", "value" : "http://www.wikidata.org/entity/Q215627" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Whole100003553" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/LivingThing100004258" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Organism100004475" } ,
+      { "type" : "uri", "value" : "http://www.wikidata.org/entity/Q24229398" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/ontology/Person" } ,
+      { "type" : "uri", "value" : "http://schema.org/Person" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Creator109614315" } ,
+      { "type" : "uri", "value" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/FilmMaker110088390" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Producer110480018" } ,
+      { "type" : "uri", "value" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#NaturalPerson" } ,
+      { "type" : "uri", "value" : "http://xmlns.com/foaf/0.1/Person" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/PhysicalEntity100001930" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/ontology/Agent" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatAmericanExperimentalFilmmakers" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Person100007846" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Object100002684" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/YagoLegalActor" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/YagoLegalActorGeo" } ] ,
+    "http://www.w3.org/2000/01/rdf-schema#label" : [ { "type" : "literal", "value" : "Storm de Hirsch" , "lang" : "en" } ] ,
+    "http://www.w3.org/2000/01/rdf-schema#comment" : [ { "type" : "literal", "value" : "Storm de Hirsch (1912\u20132000) was an American poet and filmmaker. She was a key figure in the New York avant-garde film scene of the 1960s, and one of the founding members of the Film-Makers' Cooperative. Although often overlooked by historians, in recent years she has been recognized as a pioneer of underground cinema." , "lang" : "en" } ] ,
+    "http://www.w3.org/2002/07/owl#sameAs" : [ { "type" : "uri", "value" : "http://www.wikidata.org/entity/Q7620197" } ,
+      { "type" : "uri", "value" : "http://yago-knowledge.org/resource/Storm_de_Hirsch" } ,
+      { "type" : "uri", "value" : "http://rdf.freebase.com/ns/m.04m_v20" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Storm_de_Hirsch" } ,
+      { "type" : "uri", "value" : "http://wikidata.dbpedia.org/resource/Q7620197" } ] ,
+    "http://purl.org/dc/terms/subject" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:1912_births" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:2000_deaths" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:American_women_film_directors" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:American_experimental_filmmakers" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Collage_filmmakers" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Drawn-on-film_animation" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:American_film_directors" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Women_animators" } ] ,
+    "http://xmlns.com/foaf/0.1/name" : [ { "type" : "literal", "value" : "Storm de Hirsch" , "lang" : "en" } ] ,
+    "http://purl.org/dc/terms/description" : [ { "type" : "literal", "value" : "American film director" , "lang" : "en" } ] ,
+    "http://xmlns.com/foaf/0.1/givenName" : [ { "type" : "literal", "value" : "Storm" , "lang" : "en" } ] ,
+    "http://xmlns.com/foaf/0.1/gender" : [ { "type" : "literal", "value" : "female" , "lang" : "en" } ] ,
+    "http://xmlns.com/foaf/0.1/isPrimaryTopicOf" : [ { "type" : "uri", "value" : "http://en.wikipedia.org/wiki/Storm_de_Hirsch" } ] ,
+    "http://www.w3.org/ns/prov#wasDerivedFrom" : [ { "type" : "uri", "value" : "http://en.wikipedia.org/wiki/Storm_de_Hirsch?oldid=742859559" } ] ,
+    "http://dbpedia.org/ontology/wikiPageExternalLink" : [ { "type" : "uri", "value" : "https://books.google.com/books?id=6I1ZAAAAMAAJ&focus=searchwithinvolume&q=Storm+de+Hirsch" } ,
+      { "type" : "uri", "value" : "http://anthologyfilmarchives.org/collections/preserved" } ,
+      { "type" : "uri", "value" : "https://archive.org/stream/introductiontoam00rena/introductiontoam00rena_djvu.txt" } ,
+      { "type" : "uri", "value" : "http://connection.ebscohost.com/c/reference-entries/55505650/de-hirsch-storm" } ,
+      { "type" : "uri", "value" : "http://film-makerscoop.com/rentals-sales/search-results?fmc_alpha=h" } ] ,
+    "http://dbpedia.org/ontology/deathYear" : [ { "type" : "literal", "value" : "2000" , "datatype" : "http://www.w3.org/2001/XMLSchema#gYear" } ] ,
+    "http://dbpedia.org/ontology/birthYear" : [ { "type" : "literal", "value" : "1912" , "datatype" : "http://www.w3.org/2001/XMLSchema#gYear" } ] ,
+    "http://dbpedia.org/ontology/birthName" : [ { "type" : "literal", "value" : "Lillian Malkin" , "lang" : "en" } ] ,
+    "http://dbpedia.org/ontology/occupation" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Storm_de_Hirsch__1" } ] ,
+    "http://dbpedia.org/property/notableWorks" : [ { "type" : "literal", "value" : "Goodbye in the Mirror" , "datatype" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString" } ,
+      { "type" : "literal", "value" : "The Tattooed Man" , "datatype" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString" } ,
+      { "type" : "literal", "value" : "Divinations" , "datatype" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString" } ,
+      { "type" : "literal", "value" : "Peyote Queen" , "datatype" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString" } ] ,
+    "http://dbpedia.org/property/birthPlace" : [ { "type" : "literal", "value" : "New Jersey, U.S." , "datatype" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString" } ] ,
+    "http://dbpedia.org/property/deathPlace" : [ { "type" : "literal", "value" : "New York City, U.S." , "datatype" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString" } ] ,
+    "http://dbpedia.org/ontology/abstract" : [ { "type" : "literal", "value" : "Storm de Hirsch (1912\u20132000) was an American poet and filmmaker. She was a key figure in the New York avant-garde film scene of the 1960s, and one of the founding members of the Film-Makers' Cooperative. Although often overlooked by historians, in recent years she has been recognized as a pioneer of underground cinema." , "lang" : "en" } ] ,
+    "http://dbpedia.org/ontology/birthDate" : [ { "type" : "literal", "value" : "1912-0-0" , "datatype" : "http://www.w3.org/2001/XMLSchema#date" } ] ,
+    "http://dbpedia.org/ontology/deathDate" : [ { "type" : "literal", "value" : "2000-0-0" , "datatype" : "http://www.w3.org/2001/XMLSchema#date" } ] ,
+    "http://dbpedia.org/ontology/wikiPageRevisionID" : [ { "type" : "literal", "value" : 742859559 , "datatype" : "http://www.w3.org/2001/XMLSchema#integer" } ] ,
+    "http://dbpedia.org/ontology/wikiPageID" : [ { "type" : "literal", "value" : 19358691 , "datatype" : "http://www.w3.org/2001/XMLSchema#integer" } ] ,
+    "http://purl.org/linguistics/gold/hypernym" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Poet" } ] } ,
+  "http://dbpedia.org/resource/Goodbye_in_the_Mirror" : { "http://dbpedia.org/ontology/writer" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Storm_de_Hirsch" } ] ,
+    "http://dbpedia.org/ontology/director" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Storm_de_Hirsch" } ] ,
+    "http://dbpedia.org/ontology/editing" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Storm_de_Hirsch" } ] ,
+    "http://dbpedia.org/ontology/producer" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Storm_de_Hirsch" } ] } ,
+  "http://dbpedia.org/resource/Peyote_Queen" : { "http://dbpedia.org/ontology/director" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Storm_de_Hirsch" } ] }
+}
+;
+	var dataAuth = "http://dbpedia.org/resource/Storm_de_Hirsch";
+	var dataUrl = "storm_de_hirsch.html";
+	var dataResourceType = "participant";
+	var dataName = "Storm de Hirsch";
+ 	
+</script>
+
+
+
+
+
+<script type="text/javascript">
+
+
+	
+	
+	
+
+	$(document).ready(function($) {
+		
+		
+		padb.resource.initialize();
+			 
+		$( '.scrollable' ).
+		bind( 'mousewheel DOMMouseScroll', function ( e ) {
+			
+			if( e.originalEvent ) e = e.originalEvent;
+			
+			var delta = e.wheelDelta || -e.detail;
+			this.scrollTop += ( delta < 0 ? 1 : -1 ) * 30;
+			e.preventDefault();
+		});		 
+		
+		
+				
+		$.ajaxSetup ({
+			// Disable caching of AJAX responses
+			cache: false
+		});		
+		
+	});
+	
+
+	
+	
+	
+	
+	
+</script>
+
+
+
+
+ 
+<br />
+<div class="container"  style="position:relative;">
+	   
+      <div id="resourceLinks"></div> 
+       
+       
+       
+       
+              
+       
+           
+           
+           
+          <div class="row addSection">
+              <div class="span1 addSectionIconHolder">
+              
+                <i class="icon-user"></i>
+              
+              </div>
+          
+              <div class="span11">
+                <span>Performer</span>
+                <hr>
+                <br />
+              </div>
+        </div>
+        <div class="row">
+            <div class="span1">
+            </div>
+            <div class="span11" style="position:relative">
+                
+                
+                
+                
+               <div>
+                                       
+                                           
+                <div class="pull-left" style="width:80%;">
+                     
+                     <h5 id="resourceLDName">Storm de Hirsch</h5>
+                     <h5 id="resourceLDAbstract"></h5>
+                     
+                     
+                     <div id="resourceSameAs">
+                        <h5>External Data:</h5>
+                        
+                        
+                     </div>
+                
+                </div>   
+                
+                <br style="clear:both;" />
+            </div>
+            
+            
+                
+            </div>
+        </div>    
+         
+    
+    
+    
+    
+    
+    
+       <div class="row addSection">
+			<div class="span1 addSectionIconHolder">              
+                <i class="icon-asterisk"></i>
+              
+              </div>
+          
+              <div class="span11">
+                <span>Events </span><span id="resourceEventCount"></span>
+                <hr>
+              </div>
+        </div>
+    
+    
+    
+    
+    
+    
+    
+        <div class="row">
+            <div class="span1"></div>
+            <div class="span11" style="position:relative">
+                  
+                 <div class="">
+                    <div id="resourceEventsEvents" class="scrollable">
+                           <table class="table table-condensed table-hover table-striped">
+                               <thead>
+                                <tr>
+                                  <th>Date</th>
+                                  
+                                  <th>Title</th>
+                                  <th>Location</th>
+                                  <th></th>
+                                </tr>
+                              </thead>
+                              <tbody id="resourceEventsEventsRows"> 
+                              </tbody>
+                            </table>
+                     
+                    </div>
+                    
+                    <div id="resourceEventsExport">
+                    
+                    	<input  name="resourceEventsSearch" class="span3" id="resourceEventsSearch"  type="text" placeholder="Filter: names, places, dates">
+                    	<button class="btn btn-mini btn-danger" id="resourceEventsClearFilter"><i class="icon-remove">&nbsp;Clear Filter</i></button>
+                   		<button class="btn btn-mini btn-info" title="Render the currently filitered data as a network" id="resourceRenderEventNetwork"> <img src="../img/icon-network-white.png" style="height:15px; width:auto" /> Two-Mode Event Network</button>
+                   		<button class="btn btn-mini btn-info" title="Render the currently filitered data as a network" id="resourceRenderEventMap"> <i class="icon-globe"></i> Map Event Locations</button>
+                   		<button class="btn btn-mini btn-success" title="Download network as Gephi File" id="resourceDownloadEventGephi"> <img src="../img/icon-gephi.png" style="height:15px; width:auto" /> Donwload Gephi Network</button>
+
+                 
+                    </div>                 
+                </div>
+                <br style="clear:both;" />
+            </div>
+            
+            
+                
+         </div>    
+    
+     
+       <div class="row addSection">
+              <div class="span1">
+              
+                <img src="../img/social-network.png" style=" margin-left:25px; margin-bottom:10px;" />
+              
+              </div>
+          
+              <div class="span11">
+                <span>Performance Network</span> 
+                <hr>
+              </div>
+        </div>
+        
+        <div class="row">
+            <div class="span1">
+            </div>
+            <div class="span11" style="position:relative">
+                
+               	<div style="width: 100%; height:500px;" id="egoNetwork">
+            
+                
+             	</div> 
+                <div class="well pull-left well-small" id="egoNetworkControls">
+                    <span class="rangeLabels">Node Charge</span>
+                    <input type="range" id="resourceEgoNetworkCharge" min="-1000" max="100" value="-120" data-def="-700" />
+                    <br /><span class="rangeLabels">Gravity</span>
+                    <input type="range" id="resourceEgoNetworkGravity" min="0" max="1" value="0.1" step="0.01" data-def="0.3" /> 
+                    <br /><span class="rangeLabels">Edge Length</span>
+                    <input type="range" id="resourceEgoNetworkDistance" min="0" max="300" value="50" data-def="50"  />      
+                    <br /><span class="rangeLabels">Edge Strength</span>
+                    <input type="range" id="resourceEgoNetworkStrength" min="0" max="3" value="1" data-def="0.15" step="0.1"  /> 
+                    <br /><br />
+                    <button type="button" id="resourceEgoNetworkLabelsButton" class="btn btn-mini" title="Show node labels." data-toggle="button">Show Labels</button>  
+                    <button type="button" id="resourceEgoNetworkLiveButton" class="btn btn-mini" title="Show realtime network rendering" data-toggle="button">Live Rendering</button>                     
+                </div>
+                
+                <div class="well pull-left well-small egoNetworkControls span7" style="margin-left:20px;" >
+                
+                	<input  name="resourceEgoNetworkSearch" class="span3" id="resourceEgoNetworkSearch"  type="text" placeholder="Filter: names, places, dates">
+					<button class="btn btn-mini btn-danger" id="resourceEgoClearFilter"><i class="icon-remove">&nbsp;Clear Filter</i></button>
+                    <button class="btn btn-mini btn-success" title="Download network as Gephi File" id="resourceDownloadEgoGephi"> <img src="../img/icon-gephi.png" style="height:15px; width:auto" /> Donwload Gephi Network</button>
+
+                </div>
+                
+            </div>
+        </div>           
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+	
+
+	
+
+
+	
+
+
+</div>
+
+
+
+
+    <div id="resourceEventNetworkModal" class="modal container hide fade" style="min-height:500px" tabindex="-1">
+ 
+      <div class="modal-body">
+      	
+        <div id="eventNetwork" style="height:400px; width:100%">
+        
+        </div>
+      
+      </div>
+      <div class="modal-footer" style="height:20px;">
+      	
+        <div class="well pull-left well-small">
+        	<span class="rangeLabels">Node Charge</span>
+        	<input type="range" id="resourceEventNetworkCharge" min="-800" max="200" value="-120" data-def="-120" />
+            <span class="rangeLabels">Gravity</span>
+        	<input type="range" id="resourceEventNetworkGravity" min="0" max="1" value="0.1" step="0.01" data-def="0.1" /> 
+            <span class="rangeLabels">Edge Length</span>
+        	<input type="range" id="resourceEventNetworkDistance" min="0" max="300" value="50" data-def="50"  />      
+            <span class="rangeLabels">Edge Strength</span>
+        	<input type="range" id="resourceEventNetworkStrength" min="0" max="5" value="1" data-def="1" step="0.1"  />    
+            <button type="button" id="resourceEventNetworkLabelsButton" class="btn btn-mini" data-toggle="button">Show Labels</button>                     
+		</div>
+        <div class="pull-right">
+        <button type="button" data-dismiss="modal" class="btn">Close</button>
+       	</div>
+       </div>
+    </div>
+    
+    
+    
+    
+     <div id="resourceEventMapModal" class="modal container hide fade" style="min-height:500px" tabindex="-1">
+ 
+      <div class="modal-body">
+      	
+        <div id="eventMap" style="height:400px; width:100%">
+        
+        </div>
+      
+      </div>
+      <div class="modal-footer" style="height:20px;">
+      	
+        <div class="well pull-left well-small">                  
+		</div>
+        <div class="pull-right">
+        <button type="button" data-dismiss="modal" class="btn">Close</button>
+       	</div>
+       </div>
+    </div>
+
+<br /><br /><br /><br /><br /><br />
+
+<script type="text/javascript">    var _gaq = _gaq || [];   _gaq.push(['_setAccount', 'UA-10371295-7']);   _gaq.push(['_trackPageview']);    (function() {     var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);   })();  </script>
+
+</body>
+
+<!-- Mirrored from padb.net/resource/storm_de_hirsch by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 11 Jan 2020 22:21:43 GMT -->
+</html>

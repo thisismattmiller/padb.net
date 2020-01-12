@@ -1,0 +1,180 @@
+<?xml version="1.0"?>
+<gexf version="1.2" xmlns="http://www.gexf.net/1.2draft">
+ <graph mode="static" defaultedgetype="undirected">
+  <nodes>
+   <node id="2" label="Yoko Ono"/>
+   <node id="18" label="George Brecht"/>
+   <node id="25" label="La Monte Young"/>
+   <node id="28" label="Jackson Mac Low"/>
+   <node id="52" label="Terry Jennings"/>
+   <node id="55" label="Joseph Byrd"/>
+   <node id="76" label="Jonas Mekas"/>
+   <node id="88" label="Ay-O"/>
+   <node id="89" label="Edward Boagni"/>
+   <node id="90" label="Patricia Brown"/>
+   <node id="91" label="Philip Corner"/>
+   <node id="92" label="Joe Kotzin"/>
+   <node id="93" label="Richard Levine"/>
+   <node id="94" label="Jerome Martin"/>
+   <node id="95" label="Yvonne Rainer"/>
+   <node id="1" label="John Cage"/>
+   <node id="12" label="Al Hansen"/>
+   <node id="21" label="John Herbert McDowell"/>
+   <node id="70" label="Earle Brown"/>
+   <node id="71" label="Pamela Davis"/>
+   <node id="234" label="Malcolm Goldstein"/>
+  </nodes>
+  <edges>
+   <edge source="2" target="18"/>
+   <edge source="2" target="25"/>
+   <edge source="2" target="28"/>
+   <edge source="2" target="52"/>
+   <edge source="2" target="55"/>
+   <edge source="2" target="76"/>
+   <edge source="2" target="88"/>
+   <edge source="2" target="89"/>
+   <edge source="2" target="90"/>
+   <edge source="2" target="91"/>
+   <edge source="2" target="92"/>
+   <edge source="2" target="93"/>
+   <edge source="2" target="94"/>
+   <edge source="2" target="95"/>
+   <edge source="18" target="25"/>
+   <edge source="18" target="28"/>
+   <edge source="18" target="52"/>
+   <edge source="18" target="55"/>
+   <edge source="18" target="76"/>
+   <edge source="18" target="88"/>
+   <edge source="18" target="89"/>
+   <edge source="18" target="90"/>
+   <edge source="18" target="91"/>
+   <edge source="18" target="92"/>
+   <edge source="18" target="93"/>
+   <edge source="18" target="94"/>
+   <edge source="18" target="95"/>
+   <edge source="25" target="28"/>
+   <edge source="25" target="52"/>
+   <edge source="25" target="55"/>
+   <edge source="25" target="76"/>
+   <edge source="25" target="88"/>
+   <edge source="25" target="89"/>
+   <edge source="25" target="90"/>
+   <edge source="25" target="91"/>
+   <edge source="25" target="92"/>
+   <edge source="25" target="93"/>
+   <edge source="25" target="94"/>
+   <edge source="25" target="95"/>
+   <edge source="28" target="52"/>
+   <edge source="28" target="55"/>
+   <edge source="28" target="76"/>
+   <edge source="28" target="88"/>
+   <edge source="28" target="89"/>
+   <edge source="28" target="90"/>
+   <edge source="28" target="91"/>
+   <edge source="28" target="92"/>
+   <edge source="28" target="93"/>
+   <edge source="28" target="94"/>
+   <edge source="28" target="95"/>
+   <edge source="52" target="55"/>
+   <edge source="52" target="76"/>
+   <edge source="52" target="88"/>
+   <edge source="52" target="89"/>
+   <edge source="52" target="90"/>
+   <edge source="52" target="91"/>
+   <edge source="52" target="92"/>
+   <edge source="52" target="93"/>
+   <edge source="52" target="94"/>
+   <edge source="52" target="95"/>
+   <edge source="55" target="76"/>
+   <edge source="55" target="88"/>
+   <edge source="55" target="89"/>
+   <edge source="55" target="90"/>
+   <edge source="55" target="91"/>
+   <edge source="55" target="92"/>
+   <edge source="55" target="93"/>
+   <edge source="55" target="94"/>
+   <edge source="55" target="95"/>
+   <edge source="76" target="88"/>
+   <edge source="76" target="89"/>
+   <edge source="76" target="90"/>
+   <edge source="76" target="91"/>
+   <edge source="76" target="92"/>
+   <edge source="76" target="93"/>
+   <edge source="76" target="94"/>
+   <edge source="76" target="95"/>
+   <edge source="88" target="89"/>
+   <edge source="88" target="90"/>
+   <edge source="88" target="91"/>
+   <edge source="88" target="92"/>
+   <edge source="88" target="93"/>
+   <edge source="88" target="94"/>
+   <edge source="88" target="95"/>
+   <edge source="89" target="90"/>
+   <edge source="89" target="91"/>
+   <edge source="89" target="92"/>
+   <edge source="89" target="93"/>
+   <edge source="89" target="94"/>
+   <edge source="89" target="95"/>
+   <edge source="90" target="91"/>
+   <edge source="90" target="92"/>
+   <edge source="90" target="93"/>
+   <edge source="90" target="94"/>
+   <edge source="90" target="95"/>
+   <edge source="91" target="92"/>
+   <edge source="91" target="93"/>
+   <edge source="91" target="94"/>
+   <edge source="91" target="95"/>
+   <edge source="92" target="93"/>
+   <edge source="92" target="94"/>
+   <edge source="92" target="95"/>
+   <edge source="93" target="94"/>
+   <edge source="93" target="95"/>
+   <edge source="94" target="95"/>
+   <edge source="1" target="12"/>
+   <edge source="1" target="18"/>
+   <edge source="1" target="21"/>
+   <edge source="1" target="25"/>
+   <edge source="1" target="55"/>
+   <edge source="1" target="70"/>
+   <edge source="1" target="71"/>
+   <edge source="1" target="89"/>
+   <edge source="1" target="91"/>
+   <edge source="1" target="234"/>
+   <edge source="12" target="18"/>
+   <edge source="12" target="21"/>
+   <edge source="12" target="25"/>
+   <edge source="12" target="55"/>
+   <edge source="12" target="70"/>
+   <edge source="12" target="71"/>
+   <edge source="12" target="89"/>
+   <edge source="12" target="91"/>
+   <edge source="12" target="234"/>
+   <edge source="18" target="21"/>
+   <edge source="18" target="70"/>
+   <edge source="18" target="71"/>
+   <edge source="18" target="234"/>
+   <edge source="21" target="25"/>
+   <edge source="21" target="55"/>
+   <edge source="21" target="70"/>
+   <edge source="21" target="71"/>
+   <edge source="21" target="89"/>
+   <edge source="21" target="91"/>
+   <edge source="21" target="234"/>
+   <edge source="25" target="70"/>
+   <edge source="25" target="71"/>
+   <edge source="25" target="234"/>
+   <edge source="55" target="70"/>
+   <edge source="55" target="71"/>
+   <edge source="55" target="234"/>
+   <edge source="70" target="71"/>
+   <edge source="70" target="89"/>
+   <edge source="70" target="91"/>
+   <edge source="70" target="234"/>
+   <edge source="71" target="89"/>
+   <edge source="71" target="91"/>
+   <edge source="71" target="234"/>
+   <edge source="89" target="234"/>
+   <edge source="91" target="234"/>
+  </edges>
+ </graph>
+</gexf>

@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<gexf version="1.2" xmlns="http://www.gexf.net/1.2draft">
+ <graph mode="static" defaultedgetype="undirected">
+  <nodes>
+   <node id="13" label="Dick Higgins"/>
+   <node id="25" label="La Monte Young"/>
+   <node id="28" label="Jackson Mac Low"/>
+   <node id="62" label="Emmett Williams"/>
+   <node id="356" label="Udo Kasemets"/>
+  </nodes>
+  <edges>
+   <edge source="13" target="25"/>
+   <edge source="13" target="28"/>
+   <edge source="13" target="62"/>
+   <edge source="13" target="356"/>
+   <edge source="25" target="28"/>
+   <edge source="25" target="62"/>
+   <edge source="25" target="356"/>
+   <edge source="28" target="62"/>
+   <edge source="28" target="356"/>
+   <edge source="62" target="356"/>
+  </edges>
+ </graph>
+</gexf>

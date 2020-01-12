@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<gexf version="1.2" xmlns="http://www.gexf.net/1.2draft">
+ <graph mode="static" defaultedgetype="undirected">
+  <nodes>
+   <node id="10" label="Jim Dine"/>
+   <node id="14" label="Allan Kaprow"/>
+   <node id="16" label="Robert Whitman"/>
+   <node id="18" label="George Brecht"/>
+   <node id="20" label="Richard Maxfield"/>
+  </nodes>
+  <edges>
+   <edge source="10" target="14"/>
+   <edge source="10" target="16"/>
+   <edge source="10" target="18"/>
+   <edge source="10" target="20"/>
+   <edge source="14" target="16"/>
+   <edge source="14" target="18"/>
+   <edge source="14" target="20"/>
+   <edge source="16" target="18"/>
+   <edge source="16" target="20"/>
+   <edge source="18" target="20"/>
+  </edges>
+ </graph>
+</gexf>

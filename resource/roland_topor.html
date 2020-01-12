@@ -1,0 +1,561 @@
+<!doctype html>
+<html>
+
+<!-- Mirrored from padb.net/resource/roland_topor by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 11 Jan 2020 22:20:55 GMT -->
+<head>
+<meta charset="UTF-8">
+<title>padb.net</title>
+
+
+<link rel="stylesheet" href="../css/bootstrap.css">
+<link rel="stylesheet" href="../css/font-awesome.css">
+<link rel="stylesheet" href="../css/site.css">
+<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+<link rel="icon" type="image/png" href="../img/favicon.png">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/bootstrap-modal.js"></script>
+<script src="../js/bootstrap-modalmanager.js"></script>
+
+<script src="../js/d3.min.js"></script>
+<script src="../js/html5slider.js"></script>
+<script src="../js/topojson.js"></script>
+<script src="../js/padb.js"></script>
+
+
+</head>
+<body>
+    
+    
+	<div style="position:relative;">        
+
+ 		<div style=" border-bottom:solid 1px #ccc;">
+        	<div class="container">
+                
+                 <div id="header">
+                 	
+                     <div class="logo"><a href="../index.html"><span>|||</span>padb</a> </div>
+                    
+                      
+						 <div id="resourceName">Roland Topor</div>
+					 
+                 </div>
+                
+                
+        	</div>
+            
+    	</div>
+ 
+   </div>
+<script src="../js/countriesData.js"></script>
+
+<script type="text/javascript">
+	//preloaded json from the server
+
+	var dataSameAs = [
+  {
+    "uri": "http://wikidata.dbpedia.org/resource/Q550806",
+    "numDuplicates": "41",
+    "duplicates": [
+      "http://dbpedia.org/resource/Roland_Topor",
+      "http://d-nb.info/gnd/118623346",
+      "http://d-nb.info/gnd/185830005",
+      "http://d-nb.info/gnd/118623346/about/rdf",
+      "http://data.bibsys.no/data/notrbib/authorityentry/x90249125",
+      "http://data.bnf.fr/11926819",
+      "http://datos.bne.es/resource/XX1097371",
+      "http://dbpedialite.org/things/2288265#id",
+      "http://de.dbpedia.org/resource/Roland_Topor",
+      "http://en.wikipedia.org/wiki/Roland_Topor",
+      "http://es.dbpedia.org/resource/Roland_Topor",
+      "http://eu.dbpedia.org/resource/Roland_Topor",
+      "http://fa.dbpedia.org/resource/\u0631\u0648\u0644\u0627\u0646_\u062A\u0648\u067E\u0648\u0631",
+      "http://fr.dbpedia.org/resource/Roland_Topor",
+      "http://fr.wikipedia.org/wiki/Roland_Topor",
+      "http://freebase.com//m/071358",
+      "http://id.loc.gov/authorities/names/n50014534",
+      "http://id.ndl.go.jp/auth/ndla/00458938",
+      "http://isni-url.oclc.nl/isni/0000000084095254",
+      "http://it.dbpedia.org/resource/Roland_Topor",
+      "http://libris.kb.se/resource/auth/322649",
+      "http://mpii.de/yago/resource/Roland_Topor",
+      "http://musicbrainz.org/artist/f5d6db27-da7c-4bf5-b182-0e61fd56a0cb",
+      "http://pl.dbpedia.org/resource/Roland_Topor",
+      "http://pt.dbpedia.org/resource/Roland_Topor",
+      "http://rdf.freebase.com/ns/m.071358",
+      "http://rdf.freebase.com/ns/en.roland_topor",
+      "http://rdf.freebase.com/ns/guid.9202a8c04000641f8000000000708ca8",
+      "http://ro.dbpedia.org/resource/Roland_Topor",
+      "http://sv.dbpedia.org/resource/Roland_Topor",
+      "http://tr.dbpedia.org/resource/Roland_Topor",
+      "http://viaf.org/viaf/61553118",
+      "http://viaf.org/viaf/112255741",
+      "http://wikidata.dbpedia.org/resource/Q550806",
+      "http://www.bbc.co.uk/music/artists/f5d6db27-da7c-4bf5-b182-0e61fd56a0cb",
+      "http://www.idref.fr/027669769",
+      "http://www.imdb.com/name/nm0867718/",
+      "http://www.wikidata.org/entity/Q550806",
+      "http://yago-knowledge.org/resource/Roland_Topor",
+      "http://zh.dbpedia.org/resource/\u7F57\u5170\u00B7\u6258\u666E",
+      "http://zitgist.com/music/artist/f5d6db27-da7c-4bf5-b182-0e61fd56a0cb"
+    ]
+  }
+]
+;
+	var dataDbpedia = {
+  "http://dbpedia.org/resource/The_Hamburg_Syndrome" : { "http://dbpedia.org/ontology/writer" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Roland_Topor" } ] } ,
+  "http://dbpedia.org/resource/History_of_Shit" : { "http://dbpedia.org/ontology/coverArtist" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Roland_Topor" } ] } ,
+  "http://dbpedia.org/resource/Roland_(disambiguation)" : { "http://dbpedia.org/ontology/wikiPageDisambiguates" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Roland_Topor" } ] } ,
+  "http://dbpedia.org/resource/Fantastic_Planet" : { "http://dbpedia.org/ontology/writer" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Roland_Topor" } ] } ,
+  "http://dbpedia.org/resource/The_Tenant" : { "http://dbpedia.org/ontology/writer" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Roland_Topor" } ] } ,
+  "http://en.wikipedia.org/wiki/Roland_Topor" : { "http://xmlns.com/foaf/0.1/primaryTopic" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Roland_Topor" } ] } ,
+  "http://dbpedia.org/resource/Roland_Topor" : { "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Entertainer109616922" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Creator109614315" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Person100007846" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Object100002684" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Musician110339966" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/YagoLegalActor" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Scriptwriter110564905" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Intellectual109621545" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/YagoLegalActorGeo" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/PhysicalEntity100001930" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Artist109812338" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Alumnus109786338" } ,
+      { "type" : "uri", "value" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatWritersFromParis" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Screenwriter110564400" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Painter110391653" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Performer110415638" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Wikicat20th-centuryFrenchPainters" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/ontology/Agent" } ,
+      { "type" : "uri", "value" : "http://www.wikidata.org/entity/Q36180" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Scholar110557854" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Novelist110363573" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatPeopleFromParis" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Wikicat20th-centuryFrenchWriters" } ,
+      { "type" : "uri", "value" : "http://xmlns.com/foaf/0.1/Person" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatFrenchShortStoryWriters" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Composer109947232" } ,
+      { "type" : "uri", "value" : "http://schema.org/Person" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatAlumniOfThe\u00C9coleDesBeaux-Arts" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatFrenchComposers" } ,
+      { "type" : "uri", "value" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#NaturalPerson" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatFrenchNovelists" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatFrenchFantasyWriters" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatFrenchActors" } ,
+      { "type" : "uri", "value" : "http://www.wikidata.org/entity/Q5" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatEroticArtists" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatFrenchScreenwriters" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatFrenchWriters" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatWriters" } ,
+      { "type" : "uri", "value" : "http://www.w3.org/2002/07/owl#Thing" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/ontology/Writer" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatFrenchDramatistsAndPlaywrights" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Organism100004475" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/ontology/Person" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Dramatist110030277" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/CausalAgent100007347" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Whole100003553" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Writer110794014" } ,
+      { "type" : "uri", "value" : "http://www.wikidata.org/entity/Q24229398" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/LivingThing100004258" } ,
+      { "type" : "uri", "value" : "http://www.wikidata.org/entity/Q215627" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Communicator109610660" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatFrenchPainters" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Illustrator109812068" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatFrenchIllustrators" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Actor109765278" } ] ,
+    "http://www.w3.org/2000/01/rdf-schema#label" : [ { "type" : "literal", "value" : "Roland Topor" , "lang" : "fr" } ,
+      { "type" : "literal", "value" : "Roland Topor" , "lang" : "de" } ,
+      { "type" : "literal", "value" : "Roland Topor" , "lang" : "en" } ,
+      { "type" : "literal", "value" : "Roland Topor" , "lang" : "pt" } ,
+      { "type" : "literal", "value" : "\u7F57\u5170\u00B7\u6258\u666E" , "lang" : "zh" } ,
+      { "type" : "literal", "value" : "Roland Topor" , "lang" : "pl" } ,
+      { "type" : "literal", "value" : "Roland Topor" , "lang" : "it" } ,
+      { "type" : "literal", "value" : "Roland Topor" , "lang" : "es" } ] ,
+    "http://www.w3.org/2000/01/rdf-schema#comment" : [ { "type" : "literal", "value" : "\u7F57\u5170\u00B7\u6258\u666E\uFF08Roland Topor\uFF0C1938\u5E741\u67087\u65E5\uFF0D1997\u5E748\u670816\u65E5\uFF09\uFF0C\u6CD5\u56FD\u63D2\u56FE\u753B\u5BB6\u3001\u94A2\u7434\u5BB6\u3001\u7535\u5F71\u5236\u4F5C\u8005\uFF0C\u4ED6\u7684\u4F5C\u54C1\u4EE5\u8D85\u73B0\u5B9E\u4E3B\u4E49\u98CE\u683C\u77E5\u540D\u3002\u4ED6\u662F\u6CE2\u5170\u72B9\u592A\u4EBA\uFF0C\u5728\u8428\u4F0F\u4F9D\u6E21\u8FC7\u4E86\u7AE5\u5E74\uFF0C\u4ED6\u7684\u5BB6\u4EBA\u5E2E\u4ED6\u8EB2\u8FC7\u4E86\u7EB3\u7CB9\u7684\u641C\u6355\u3002 \u6258\u666E\u4E0E\u8D6B\u5185\u00B7\u62C9\u9C81\u4E00\u8D77\u5408\u4F5C\u4E86\u7535\u5F71\u300ALes Temps morts\u300B\uFF081964\uFF09\u3001\u300ALes Escargots\u300B\uFF081965\uFF09\u4EE5\u53CA\u8457\u540D\u7684\u300A\u5947\u5E7B\u661F\u7403\u300B\uFF081973\uFF09\u3002" , "lang" : "zh" } ,
+      { "type" : "literal", "value" : "Roland Topor (n\u00E9 \u00E0 Paris, le 7 janvier 1938 - mort dans la m\u00EAme ville, le 16 avril 1997) est un illustrateur, dessinateur, peintre, \u00E9crivain, po\u00E8te, metteur en sc\u00E8ne, chansonnier, acteur et cin\u00E9aste fran\u00E7ais." , "lang" : "fr" } ,
+      { "type" : "literal", "value" : "Roland Topor (* 7. Januar 1938 in Paris; \u2020 16. April 1997 ebenda) war ein franz\u00F6sischer K\u00FCnstler und Schriftsteller." , "lang" : "de" } ,
+      { "type" : "literal", "value" : "Roland Topor (Par\u00EDs, 7 de enero de 1938 - 16 de abril de 1997) fue un ilustrador, dibujante, pintor, escritor y cineasta franc\u00E9s, de origen jud\u00EDo polaco, conocido por el humor negro y el car\u00E1cter surrealista y voluntario de sus obras. Perteneci\u00F3 al Grupo P\u00E1nico, junto a Alejandro Jodorowsky y Fernando Arrabal. Su libro m\u00E1s conocido y traducido es la novela El quim\u00E9rico inquilino (Le Locataire chim\u00E9rique,), llevada al cine por Roman Polanski en con el t\u00EDtulo Le locataire (en espa\u00F1ol, se distribuy\u00F3 como El quim\u00E9rico inquilino)." , "lang" : "es" } ,
+      { "type" : "literal", "value" : "Roland Topor (ur. 7 stycznia 1938 w Pary\u017Cu, zm. 16 kwietnia 1997 tam\u017Ce) \u2013 francuski pisarz polskiego pochodzenia, dramaturg, rysownik, grafik, re\u017Cyser teatralny i filmowy, aktor, scenarzysta i scenograf." , "lang" : "pl" } ,
+      { "type" : "literal", "value" : "Roland Topor (7 January 1938 \u2013 16 April 1997) was a French illustrator, painter, writer, filmmaker and actor, known for the surreal nature of his work. He was of Polish-Jewish origin and spent the early years of his life in Savoy where his family hid him from the Nazi peril." , "lang" : "en" } ,
+      { "type" : "literal", "value" : "Roland Topor (Paris, 7 de janeiro de 1938 \u2014 Paris, 16 de abril de 1997) foi um pintor, escritor e ator franc\u00EAs, conhecido pela natureza surrealista de seu trabalho. Ele era descendente de judeus poloneses que se refugiaram na Fran\u00E7a fugindo do nazismo." , "lang" : "pt" } ] ,
+    "http://www.w3.org/2002/07/owl#sameAs" : [ { "type" : "uri", "value" : "http://d-nb.info/gnd/118623346" } ,
+      { "type" : "uri", "value" : "http://wikidata.dbpedia.org/resource/Q550806" } ,
+      { "type" : "uri", "value" : "http://zitgist.com/music/artist/f5d6db27-da7c-4bf5-b182-0e61fd56a0cb" } ,
+      { "type" : "uri", "value" : "http://it.dbpedia.org/resource/Roland_Topor" } ,
+      { "type" : "uri", "value" : "http://viaf.org/viaf/112255741" } ,
+      { "type" : "uri", "value" : "http://yago-knowledge.org/resource/Roland_Topor" } ,
+      { "type" : "uri", "value" : "http://www.wikidata.org/entity/Q550806" } ,
+      { "type" : "uri", "value" : "http://rdf.freebase.com/ns/m.071358" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Roland_Topor" } ,
+      { "type" : "uri", "value" : "http://fr.dbpedia.org/resource/Roland_Topor" } ,
+      { "type" : "uri", "value" : "http://pt.dbpedia.org/resource/Roland_Topor" } ,
+      { "type" : "uri", "value" : "http://eu.dbpedia.org/resource/Roland_Topor" } ,
+      { "type" : "uri", "value" : "http://de.dbpedia.org/resource/Roland_Topor" } ,
+      { "type" : "uri", "value" : "http://cs.dbpedia.org/resource/Roland_Topor" } ,
+      { "type" : "uri", "value" : "http://pl.dbpedia.org/resource/Roland_Topor" } ,
+      { "type" : "uri", "value" : "http://es.dbpedia.org/resource/Roland_Topor" } ] ,
+    "http://purl.org/dc/terms/subject" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:French_screenwriters" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Burials_at_Montparnasse_Cemetery" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:French_male_novelists" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Alumni_of_the_\u00C9cole_des_Beaux-Arts" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:French_fantasy_writers" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:French_people_of_Polish-Jewish_descent" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:20th-century_French_novelists" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Male_screenwriters" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Writers_from_Paris" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:French_illustrators" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:1938_births" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:1997_deaths" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:French_satirists" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Prix_des_Deux_Magots_winners" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:French_cartoonists" } ] ,
+    "http://xmlns.com/foaf/0.1/name" : [ { "type" : "literal", "value" : "Roland Topor" , "lang" : "en" } ] ,
+    "http://purl.org/dc/terms/description" : [ { "type" : "literal", "value" : "French writer, screenwriter, actor and painter" , "lang" : "en" } ] ,
+    "http://xmlns.com/foaf/0.1/givenName" : [ { "type" : "literal", "value" : "Roland" , "lang" : "en" } ] ,
+    "http://xmlns.com/foaf/0.1/gender" : [ { "type" : "literal", "value" : "male" , "lang" : "en" } ] ,
+    "http://xmlns.com/foaf/0.1/isPrimaryTopicOf" : [ { "type" : "uri", "value" : "http://en.wikipedia.org/wiki/Roland_Topor" } ] ,
+    "http://xmlns.com/foaf/0.1/surname" : [ { "type" : "literal", "value" : "Topor" , "lang" : "en" } ] ,
+    "http://dbpedia.org/ontology/notableWork" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/The_Tenant_(novel)" } ] ,
+    "http://www.w3.org/ns/prov#wasDerivedFrom" : [ { "type" : "uri", "value" : "http://en.wikipedia.org/wiki/Roland_Topor?oldid=735547925" } ] ,
+    "http://dbpedia.org/property/birthPlace" : [ { "type" : "literal", "value" : "Paris" , "datatype" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString" } ] ,
+    "http://dbpedia.org/property/deathPlace" : [ { "type" : "literal", "value" : "Paris" , "datatype" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString" } ] ,
+    "http://dbpedia.org/ontology/wikiPageExternalLink" : [ { "type" : "uri", "value" : "http://toporetmoi.over-blog.com/" } ,
+      { "type" : "uri", "value" : "http://www.agoravox.fr/article.php3?id_article=33349" } ,
+      { "type" : "uri", "value" : "http://w3.multimedia.univ-tlse2.fr/topor/" } ] ,
+    "http://dbpedia.org/ontology/activeYearsStartYear" : [ { "type" : "literal", "value" : "1964" , "datatype" : "http://www.w3.org/2001/XMLSchema#gYear" } ] ,
+    "http://dbpedia.org/ontology/genre" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Surrealism" } ] ,
+    "http://dbpedia.org/ontology/abstract" : [ { "type" : "literal", "value" : "Roland Topor (Paris, 7 de janeiro de 1938 \u2014 Paris, 16 de abril de 1997) foi um pintor, escritor e ator franc\u00EAs, conhecido pela natureza surrealista de seu trabalho. Ele era descendente de judeus poloneses que se refugiaram na Fran\u00E7a fugindo do nazismo." , "lang" : "pt" } ,
+      { "type" : "literal", "value" : "\u7F57\u5170\u00B7\u6258\u666E\uFF08Roland Topor\uFF0C1938\u5E741\u67087\u65E5\uFF0D1997\u5E748\u670816\u65E5\uFF09\uFF0C\u6CD5\u56FD\u63D2\u56FE\u753B\u5BB6\u3001\u94A2\u7434\u5BB6\u3001\u7535\u5F71\u5236\u4F5C\u8005\uFF0C\u4ED6\u7684\u4F5C\u54C1\u4EE5\u8D85\u73B0\u5B9E\u4E3B\u4E49\u98CE\u683C\u77E5\u540D\u3002\u4ED6\u662F\u6CE2\u5170\u72B9\u592A\u4EBA\uFF0C\u5728\u8428\u4F0F\u4F9D\u6E21\u8FC7\u4E86\u7AE5\u5E74\uFF0C\u4ED6\u7684\u5BB6\u4EBA\u5E2E\u4ED6\u8EB2\u8FC7\u4E86\u7EB3\u7CB9\u7684\u641C\u6355\u3002 \u6258\u666E\u4E0E\u8D6B\u5185\u00B7\u62C9\u9C81\u4E00\u8D77\u5408\u4F5C\u4E86\u7535\u5F71\u300ALes Temps morts\u300B\uFF081964\uFF09\u3001\u300ALes Escargots\u300B\uFF081965\uFF09\u4EE5\u53CA\u8457\u540D\u7684\u300A\u5947\u5E7B\u661F\u7403\u300B\uFF081973\uFF09\u3002" , "lang" : "zh" } ,
+      { "type" : "literal", "value" : "Roland Topor (Par\u00EDs, 7 de enero de 1938 - 16 de abril de 1997) fue un ilustrador, dibujante, pintor, escritor y cineasta franc\u00E9s, de origen jud\u00EDo polaco, conocido por el humor negro y el car\u00E1cter surrealista y voluntario de sus obras. Perteneci\u00F3 al Grupo P\u00E1nico, junto a Alejandro Jodorowsky y Fernando Arrabal. Su libro m\u00E1s conocido y traducido es la novela El quim\u00E9rico inquilino (Le Locataire chim\u00E9rique,), llevada al cine por Roman Polanski en con el t\u00EDtulo Le locataire (en espa\u00F1ol, se distribuy\u00F3 como El quim\u00E9rico inquilino)." , "lang" : "es" } ,
+      { "type" : "literal", "value" : "Roland Topor (n\u00E9 \u00E0 Paris, le 7 janvier 1938 - mort dans la m\u00EAme ville, le 16 avril 1997) est un illustrateur, dessinateur, peintre, \u00E9crivain, po\u00E8te, metteur en sc\u00E8ne, chansonnier, acteur et cin\u00E9aste fran\u00E7ais." , "lang" : "fr" } ,
+      { "type" : "literal", "value" : "Roland Topor (* 7. Januar 1938 in Paris; \u2020 16. April 1997 ebenda) war ein franz\u00F6sischer K\u00FCnstler und Schriftsteller." , "lang" : "de" } ,
+      { "type" : "literal", "value" : "Roland Topor (7 January 1938 \u2013 16 April 1997) was a French illustrator, painter, writer, filmmaker and actor, known for the surreal nature of his work. He was of Polish-Jewish origin and spent the early years of his life in Savoy where his family hid him from the Nazi peril." , "lang" : "en" } ,
+      { "type" : "literal", "value" : "Roland Topor (ur. 7 stycznia 1938 w Pary\u017Cu, zm. 16 kwietnia 1997 tam\u017Ce) \u2013 francuski pisarz polskiego pochodzenia, dramaturg, rysownik, grafik, re\u017Cyser teatralny i filmowy, aktor, scenarzysta i scenograf." , "lang" : "pl" } ] ,
+    "http://dbpedia.org/ontology/birthDate" : [ { "type" : "literal", "value" : "1938-1-7" , "datatype" : "http://www.w3.org/2001/XMLSchema#date" } ,
+      { "type" : "literal", "value" : "1938-01-07" , "datatype" : "http://www.w3.org/2001/XMLSchema#date" } ] ,
+    "http://dbpedia.org/ontology/deathDate" : [ { "type" : "literal", "value" : "1997-04-16" , "datatype" : "http://www.w3.org/2001/XMLSchema#date" } ,
+      { "type" : "literal", "value" : "1997-4-16" , "datatype" : "http://www.w3.org/2001/XMLSchema#date" } ] ,
+    "http://dbpedia.org/ontology/deathPlace" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Paris" } ] ,
+    "http://dbpedia.org/ontology/wikiPageRevisionID" : [ { "type" : "literal", "value" : 735547925 , "datatype" : "http://www.w3.org/2001/XMLSchema#integer" } ] ,
+    "http://dbpedia.org/ontology/birthPlace" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Paris" } ] ,
+    "http://dbpedia.org/ontology/wikiPageID" : [ { "type" : "literal", "value" : 2288265 , "datatype" : "http://www.w3.org/2001/XMLSchema#integer" } ] ,
+    "http://dbpedia.org/property/wordnet_type" : [ { "type" : "uri", "value" : "http://www.w3.org/2006/03/wn/wn20/instances/synset-writer-noun-1" } ] ,
+    "http://dbpedia.org/ontology/activeYearsEndYear" : [ { "type" : "literal", "value" : "1969" , "datatype" : "http://www.w3.org/2001/XMLSchema#gYear" } ] ,
+    "http://dbpedia.org/property/occupation" : [ { "type" : "literal", "value" : "Designer, painter, fiction writer, actor" , "datatype" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString" } ] ,
+    "http://purl.org/linguistics/gold/hypernym" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Illustrator" } ] ,
+    "http://dbpedia.org/property/nationality" : [ { "type" : "literal", "value" : "French" , "datatype" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString" } ] } ,
+  "http://dbpedia.org/resource/Marquis_(film)" : { "http://dbpedia.org/ontology/writer" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Roland_Topor" } ] }
+}
+;
+	var dataAuth = "http://dbpedia.org/resource/Roland_Topor";
+	var dataUrl = "roland_topor.html";
+	var dataResourceType = "participant";
+	var dataName = "Roland Topor";
+ 	
+</script>
+
+
+
+
+
+<script type="text/javascript">
+
+
+	
+	
+	
+
+	$(document).ready(function($) {
+		
+		
+		padb.resource.initialize();
+			 
+		$( '.scrollable' ).
+		bind( 'mousewheel DOMMouseScroll', function ( e ) {
+			
+			if( e.originalEvent ) e = e.originalEvent;
+			
+			var delta = e.wheelDelta || -e.detail;
+			this.scrollTop += ( delta < 0 ? 1 : -1 ) * 30;
+			e.preventDefault();
+		});		 
+		
+		
+				
+		$.ajaxSetup ({
+			// Disable caching of AJAX responses
+			cache: false
+		});		
+		
+	});
+	
+
+	
+	
+	
+	
+	
+</script>
+
+
+
+
+ 
+<br />
+<div class="container"  style="position:relative;">
+	   
+      <div id="resourceLinks"></div> 
+       
+       
+       
+       
+              
+       
+           
+           
+           
+          <div class="row addSection">
+              <div class="span1 addSectionIconHolder">
+              
+                <i class="icon-user"></i>
+              
+              </div>
+          
+              <div class="span11">
+                <span>Performer</span>
+                <hr>
+                <br />
+              </div>
+        </div>
+        <div class="row">
+            <div class="span1">
+            </div>
+            <div class="span11" style="position:relative">
+                
+                
+                
+                
+               <div>
+                                       <div class="pull-right vignette">
+                            <img  src="../cache/media/roland_topor.jpg" />
+                            
+                        </div>
+                        
+                                           
+                <div class="pull-left" style="width:80%;">
+                     
+                     <h5 id="resourceLDName">Roland Topor</h5>
+                     <h5 id="resourceLDAbstract"></h5>
+                     
+                     
+                     <div id="resourceSameAs">
+                        <h5>External Data:</h5>
+                        
+                        
+                     </div>
+                
+                </div>   
+                
+                <br style="clear:both;" />
+            </div>
+            
+            
+                
+            </div>
+        </div>    
+         
+    
+    
+    
+    
+    
+    
+       <div class="row addSection">
+			<div class="span1 addSectionIconHolder">              
+                <i class="icon-asterisk"></i>
+              
+              </div>
+          
+              <div class="span11">
+                <span>Events </span><span id="resourceEventCount"></span>
+                <hr>
+              </div>
+        </div>
+    
+    
+    
+    
+    
+    
+    
+        <div class="row">
+            <div class="span1"></div>
+            <div class="span11" style="position:relative">
+                  
+                 <div class="">
+                    <div id="resourceEventsEvents" class="scrollable">
+                           <table class="table table-condensed table-hover table-striped">
+                               <thead>
+                                <tr>
+                                  <th>Date</th>
+                                  
+                                  <th>Title</th>
+                                  <th>Location</th>
+                                  <th></th>
+                                </tr>
+                              </thead>
+                              <tbody id="resourceEventsEventsRows"> 
+                              </tbody>
+                            </table>
+                     
+                    </div>
+                    
+                    <div id="resourceEventsExport">
+                    
+                    	<input  name="resourceEventsSearch" class="span3" id="resourceEventsSearch"  type="text" placeholder="Filter: names, places, dates">
+                    	<button class="btn btn-mini btn-danger" id="resourceEventsClearFilter"><i class="icon-remove">&nbsp;Clear Filter</i></button>
+                   		<button class="btn btn-mini btn-info" title="Render the currently filitered data as a network" id="resourceRenderEventNetwork"> <img src="../img/icon-network-white.png" style="height:15px; width:auto" /> Two-Mode Event Network</button>
+                   		<button class="btn btn-mini btn-info" title="Render the currently filitered data as a network" id="resourceRenderEventMap"> <i class="icon-globe"></i> Map Event Locations</button>
+                   		<button class="btn btn-mini btn-success" title="Download network as Gephi File" id="resourceDownloadEventGephi"> <img src="../img/icon-gephi.png" style="height:15px; width:auto" /> Donwload Gephi Network</button>
+
+                 
+                    </div>                 
+                </div>
+                <br style="clear:both;" />
+            </div>
+            
+            
+                
+         </div>    
+    
+     
+       <div class="row addSection">
+              <div class="span1">
+              
+                <img src="../img/social-network.png" style=" margin-left:25px; margin-bottom:10px;" />
+              
+              </div>
+          
+              <div class="span11">
+                <span>Performance Network</span> 
+                <hr>
+              </div>
+        </div>
+        
+        <div class="row">
+            <div class="span1">
+            </div>
+            <div class="span11" style="position:relative">
+                
+               	<div style="width: 100%; height:500px;" id="egoNetwork">
+            
+                
+             	</div> 
+                <div class="well pull-left well-small" id="egoNetworkControls">
+                    <span class="rangeLabels">Node Charge</span>
+                    <input type="range" id="resourceEgoNetworkCharge" min="-1000" max="100" value="-120" data-def="-700" />
+                    <br /><span class="rangeLabels">Gravity</span>
+                    <input type="range" id="resourceEgoNetworkGravity" min="0" max="1" value="0.1" step="0.01" data-def="0.3" /> 
+                    <br /><span class="rangeLabels">Edge Length</span>
+                    <input type="range" id="resourceEgoNetworkDistance" min="0" max="300" value="50" data-def="50"  />      
+                    <br /><span class="rangeLabels">Edge Strength</span>
+                    <input type="range" id="resourceEgoNetworkStrength" min="0" max="3" value="1" data-def="0.15" step="0.1"  /> 
+                    <br /><br />
+                    <button type="button" id="resourceEgoNetworkLabelsButton" class="btn btn-mini" title="Show node labels." data-toggle="button">Show Labels</button>  
+                    <button type="button" id="resourceEgoNetworkLiveButton" class="btn btn-mini" title="Show realtime network rendering" data-toggle="button">Live Rendering</button>                     
+                </div>
+                
+                <div class="well pull-left well-small egoNetworkControls span7" style="margin-left:20px;" >
+                
+                	<input  name="resourceEgoNetworkSearch" class="span3" id="resourceEgoNetworkSearch"  type="text" placeholder="Filter: names, places, dates">
+					<button class="btn btn-mini btn-danger" id="resourceEgoClearFilter"><i class="icon-remove">&nbsp;Clear Filter</i></button>
+                    <button class="btn btn-mini btn-success" title="Download network as Gephi File" id="resourceDownloadEgoGephi"> <img src="../img/icon-gephi.png" style="height:15px; width:auto" /> Donwload Gephi Network</button>
+
+                </div>
+                
+            </div>
+        </div>           
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+	
+
+	
+
+
+	
+
+
+</div>
+
+
+
+
+    <div id="resourceEventNetworkModal" class="modal container hide fade" style="min-height:500px" tabindex="-1">
+ 
+      <div class="modal-body">
+      	
+        <div id="eventNetwork" style="height:400px; width:100%">
+        
+        </div>
+      
+      </div>
+      <div class="modal-footer" style="height:20px;">
+      	
+        <div class="well pull-left well-small">
+        	<span class="rangeLabels">Node Charge</span>
+        	<input type="range" id="resourceEventNetworkCharge" min="-800" max="200" value="-120" data-def="-120" />
+            <span class="rangeLabels">Gravity</span>
+        	<input type="range" id="resourceEventNetworkGravity" min="0" max="1" value="0.1" step="0.01" data-def="0.1" /> 
+            <span class="rangeLabels">Edge Length</span>
+        	<input type="range" id="resourceEventNetworkDistance" min="0" max="300" value="50" data-def="50"  />      
+            <span class="rangeLabels">Edge Strength</span>
+        	<input type="range" id="resourceEventNetworkStrength" min="0" max="5" value="1" data-def="1" step="0.1"  />    
+            <button type="button" id="resourceEventNetworkLabelsButton" class="btn btn-mini" data-toggle="button">Show Labels</button>                     
+		</div>
+        <div class="pull-right">
+        <button type="button" data-dismiss="modal" class="btn">Close</button>
+       	</div>
+       </div>
+    </div>
+    
+    
+    
+    
+     <div id="resourceEventMapModal" class="modal container hide fade" style="min-height:500px" tabindex="-1">
+ 
+      <div class="modal-body">
+      	
+        <div id="eventMap" style="height:400px; width:100%">
+        
+        </div>
+      
+      </div>
+      <div class="modal-footer" style="height:20px;">
+      	
+        <div class="well pull-left well-small">                  
+		</div>
+        <div class="pull-right">
+        <button type="button" data-dismiss="modal" class="btn">Close</button>
+       	</div>
+       </div>
+    </div>
+
+<br /><br /><br /><br /><br /><br />
+
+<script type="text/javascript">    var _gaq = _gaq || [];   _gaq.push(['_setAccount', 'UA-10371295-7']);   _gaq.push(['_trackPageview']);    (function() {     var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);   })();  </script>
+
+</body>
+
+<!-- Mirrored from padb.net/resource/roland_topor by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 11 Jan 2020 22:20:56 GMT -->
+</html>

@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<gexf version="1.2" xmlns="http://www.gexf.net/1.2draft">
+ <graph mode="static" defaultedgetype="undirected">
+  <nodes>
+   <node id="134" label="Tomas Schmit"/>
+   <node id="144" label="Ludwig Gosewitz"/>
+   <node id="378" label="Rene Block"/>
+   <node id="379" label="Gerhard R&#xFC;hm"/>
+   <node id="380" label="Vagelis Tsakiridis"/>
+  </nodes>
+  <edges>
+   <edge source="134" target="144"/>
+   <edge source="134" target="378"/>
+   <edge source="134" target="379"/>
+   <edge source="134" target="380"/>
+   <edge source="144" target="378"/>
+   <edge source="144" target="379"/>
+   <edge source="144" target="380"/>
+   <edge source="378" target="379"/>
+   <edge source="378" target="380"/>
+   <edge source="379" target="380"/>
+  </edges>
+ </graph>
+</gexf>

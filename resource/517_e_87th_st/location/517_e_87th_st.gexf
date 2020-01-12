@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<gexf version="1.2" xmlns="http://www.gexf.net/1.2draft">
+ <graph mode="static" defaultedgetype="undirected">
+  <nodes>
+   <node id="122" label="Alison Knowles"/>
+   <node id="313" label="Gerard Malanga"/>
+   <node id="320" label="Betty Thomas"/>
+  </nodes>
+  <edges>
+   <edge source="122" target="313"/>
+   <edge source="122" target="320"/>
+   <edge source="313" target="320"/>
+  </edges>
+ </graph>
+</gexf>

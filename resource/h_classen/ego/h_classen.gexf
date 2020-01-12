@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<gexf version="1.2" xmlns="http://www.gexf.net/1.2draft">
+ <graph mode="static" defaultedgetype="undirected">
+  <nodes>
+   <node id="18" label="George Brecht"/>
+   <node id="68" label="Eric Andersen"/>
+   <node id="102" label="Louis Andriessen"/>
+   <node id="104" label="Misha Mengelberg"/>
+   <node id="105" label="Willem de Ridder"/>
+   <node id="151" label="Ben Vautier"/>
+   <node id="251" label="Wim T. Schippers"/>
+   <node id="303" label="Bob Lens"/>
+   <node id="307" label="H Classen"/>
+  </nodes>
+  <edges>
+   <edge source="18" target="68"/>
+   <edge source="18" target="102"/>
+   <edge source="18" target="104"/>
+   <edge source="18" target="105"/>
+   <edge source="18" target="151"/>
+   <edge source="18" target="251"/>
+   <edge source="18" target="303"/>
+   <edge source="18" target="307"/>
+   <edge source="68" target="102"/>
+   <edge source="68" target="104"/>
+   <edge source="68" target="105"/>
+   <edge source="68" target="151"/>
+   <edge source="68" target="251"/>
+   <edge source="68" target="303"/>
+   <edge source="68" target="307"/>
+   <edge source="102" target="104"/>
+   <edge source="102" target="105"/>
+   <edge source="102" target="151"/>
+   <edge source="102" target="251"/>
+   <edge source="102" target="303"/>
+   <edge source="102" target="307"/>
+   <edge source="104" target="105"/>
+   <edge source="104" target="151"/>
+   <edge source="104" target="251"/>
+   <edge source="104" target="303"/>
+   <edge source="104" target="307"/>
+   <edge source="105" target="151"/>
+   <edge source="105" target="251"/>
+   <edge source="105" target="303"/>
+   <edge source="105" target="307"/>
+   <edge source="151" target="251"/>
+   <edge source="151" target="303"/>
+   <edge source="151" target="307"/>
+   <edge source="251" target="303"/>
+   <edge source="251" target="307"/>
+   <edge source="303" target="307"/>
+  </edges>
+ </graph>
+</gexf>

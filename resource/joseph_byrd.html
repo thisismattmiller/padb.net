@@ -1,0 +1,512 @@
+<!doctype html>
+<html>
+
+<!-- Mirrored from padb.net/resource/joseph_byrd by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 11 Jan 2020 22:17:44 GMT -->
+<head>
+<meta charset="UTF-8">
+<title>padb.net</title>
+
+
+<link rel="stylesheet" href="../css/bootstrap.css">
+<link rel="stylesheet" href="../css/font-awesome.css">
+<link rel="stylesheet" href="../css/site.css">
+<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+<link rel="icon" type="image/png" href="../img/favicon.png">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/bootstrap-modal.js"></script>
+<script src="../js/bootstrap-modalmanager.js"></script>
+
+<script src="../js/d3.min.js"></script>
+<script src="../js/html5slider.js"></script>
+<script src="../js/topojson.js"></script>
+<script src="../js/padb.js"></script>
+
+
+</head>
+<body>
+    
+    
+	<div style="position:relative;">        
+
+ 		<div style=" border-bottom:solid 1px #ccc;">
+        	<div class="container">
+                
+                 <div id="header">
+                 	
+                     <div class="logo"><a href="../index.html"><span>|||</span>padb</a> </div>
+                    
+                      
+						 <div id="resourceName">Joseph Byrd</div>
+					 
+                 </div>
+                
+                
+        	</div>
+            
+    	</div>
+ 
+   </div>
+<script src="../js/countriesData.js"></script>
+
+<script type="text/javascript">
+	//preloaded json from the server
+
+	var dataSameAs = [
+  {
+    "uri": "http://yago-knowledge.org/resource/Joseph_Byrd",
+    "numDuplicates": "14",
+    "duplicates": [
+      "http://dbpedia.org/resource/Joe_Byrd",
+      "http://dbpedia.org/resource/Joesph_Byrd",
+      "http://dbpedia.org/resource/Joseph_Byrd",
+      "http://dbpedia.org/resource/Joe_Bird_And_The_Field_Hippies",
+      "http://dbpedialite.org/things/763737#id",
+      "http://dbpedialite.org/things/856645#id",
+      "http://dbpedialite.org/things/2663633#id",
+      "http://dbpedialite.org/things/12281932#id",
+      "http://mpii.de/yago/resource/Joseph_Byrd",
+      "http://rdf.freebase.com/ns/m.07w967",
+      "http://rdf.freebase.com/ns/en.joseph_byrd",
+      "http://rdf.freebase.com/ns/guid.9202a8c04000641f80000000007da4c7",
+      "http://umbel.org/umbel/ne/wikipedia/Joseph_Byrd",
+      "http://yago-knowledge.org/resource/Joseph_Byrd"
+    ]
+  }
+]
+;
+	var dataDbpedia = {
+  "http://dbpedia.org/resource/The_United_States_of_America_(band)" : { "http://dbpedia.org/ontology/formerBandMember" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Joseph_Byrd" } ] } ,
+  "http://dbpedia.org/resource/Joesph_Byrd" : { "http://dbpedia.org/ontology/wikiPageRedirects" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Joseph_Byrd" } ] } ,
+  "http://dbpedia.org/resource/Joe_Byrd" : { "http://dbpedia.org/ontology/wikiPageRedirects" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Joseph_Byrd" } ] } ,
+  "http://en.wikipedia.org/wiki/Joseph_Byrd" : { "http://xmlns.com/foaf/0.1/primaryTopic" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Joseph_Byrd" } ] } ,
+  "http://dbpedia.org/resource/Linda_Ronstadt" : { "http://dbpedia.org/ontology/associatedBand" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Joseph_Byrd" } ] ,
+    "http://dbpedia.org/ontology/associatedMusicalArtist" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Joseph_Byrd" } ] } ,
+  "http://dbpedia.org/resource/Joseph_Byrd" : { "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { "type" : "uri", "value" : "http://dbpedia.org/class/yago/YagoLegalActor" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatAmericanTelevisionComposers" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/YagoLegalActorGeo" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatAmericanElectronicMusicians" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Person100007846" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Object100002684" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatSongwritersFromKentucky" } ,
+      { "type" : "uri", "value" : "http://umbel.org/umbel/rc/Artist" } ,
+      { "type" : "uri", "value" : "http://www.w3.org/2002/07/owl#Thing" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/PhysicalEntity100001930" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Keyboardist110229883" } ,
+      { "type" : "uri", "value" : "http://www.wikidata.org/entity/Q24229398" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Songwriter110624540" } ,
+      { "type" : "uri", "value" : "http://www.wikidata.org/entity/Q215627" } ,
+      { "type" : "uri", "value" : "http://schema.org/Person" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatExperimentalComposers" } ,
+      { "type" : "uri", "value" : "http://schema.org/MusicGroup" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatAmericanKeyboardists" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatPeopleFromLouisville,Kentucky" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/ontology/Artist" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/ontology/MusicalArtist" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatAmericanFilmScoreComposers" } ,
+      { "type" : "uri", "value" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#NaturalPerson" } ,
+      { "type" : "uri", "value" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent" } ,
+      { "type" : "uri", "value" : "http://xmlns.com/foaf/0.1/Person" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatLivingPeople" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Performer110415638" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Musician110339966" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatAmericanComposers" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Musician110340312" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Composer109947232" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Entertainer109616922" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Artist109812338" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Organism100004475" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Creator109614315" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/ontology/Person" } ,
+      { "type" : "uri", "value" : "http://www.wikidata.org/entity/Q5" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Whole100003553" } ,
+      { "type" : "uri", "value" : "http://umbel.org/umbel/rc/MusicalPerformer" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/LivingThing100004258" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/ontology/Agent" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/CausalAgent100007347" } ,
+      { "type" : "uri", "value" : "http://www.wikidata.org/entity/Q483501" } ] ,
+    "http://www.w3.org/2000/01/rdf-schema#label" : [ { "type" : "literal", "value" : "Joseph Byrd" , "lang" : "nl" } ,
+      { "type" : "literal", "value" : "Joseph Byrd" , "lang" : "en" } ] ,
+    "http://www.w3.org/2000/01/rdf-schema#comment" : [ { "type" : "literal", "value" : "Joseph (Joe) Byrd (Louisville, 19 december 1937) is een Amerikaans toetsenist en componist. Hij werd bekend als oprichter van de experimentele en psychedelische rockbands The United States of America en Joe Byrd and the Field Hippies, en als componist." , "lang" : "nl" } ,
+      { "type" : "literal", "value" : "Joseph Hunter Byrd (born December 19, 1937) is an American composer, musician and academic. After first becoming known as an experimental composer in New York City and Los Angeles in the early and mid-1960s, he became the leader of The United States of America, an innovative but short-lived band that integrated electronic sound and radical political ideas into rock music. In 1968 he recorded the album The American Metaphysical Circus, credited to Joe Byrd and the Field Hippies. After working as a record producer, arranger, and soundtrack composer, he became a university teacher in music history and theory." , "lang" : "en" } ] ,
+    "http://dbpedia.org/ontology/instrument" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Piano" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Organ_(music)" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Electronic_keyboard" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Synthesizer" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Vocals" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Harp" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Calliope_(music)" } ] ,
+    "http://www.w3.org/2002/07/owl#sameAs" : [ { "type" : "uri", "value" : "http://data.europa.eu/euodp/jrc-names/Joe_Byrd" } ,
+      { "type" : "uri", "value" : "http://wikidata.dbpedia.org/resource/Q15501981" } ,
+      { "type" : "uri", "value" : "http://nl.dbpedia.org/resource/Joseph_Byrd" } ,
+      { "type" : "uri", "value" : "http://rdf.freebase.com/ns/m.07w967" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Joseph_Byrd" } ,
+      { "type" : "uri", "value" : "http://viaf.org/viaf/21017151" } ,
+      { "type" : "uri", "value" : "http://www.wikidata.org/entity/Q15501981" } ,
+      { "type" : "uri", "value" : "http://yago-knowledge.org/resource/Joseph_Byrd" } ] ,
+    "http://purl.org/dc/terms/subject" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Male_film_score_composers" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Experimental_composers" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:20th-century_American_musicians" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Musicians_from_Louisville,_Kentucky" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Songwriters_from_Kentucky" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Fluxus" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Living_people" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:American_television_composers" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:American_electronic_musicians" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:1937_births" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:University_of_Arizona_alumni" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:American_keyboardists" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:American_male_composers" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:American_film_score_composers" } ] ,
+    "http://xmlns.com/foaf/0.1/name" : [ { "type" : "literal", "value" : "Joseph Byrd" , "lang" : "en" } ] ,
+    "http://purl.org/dc/terms/description" : [ { "type" : "literal", "value" : "American musician" , "lang" : "en" } ] ,
+    "http://xmlns.com/foaf/0.1/givenName" : [ { "type" : "literal", "value" : "Joseph Hunter Byrd" , "lang" : "en" } ,
+      { "type" : "literal", "value" : "Joseph" , "lang" : "en" } ] ,
+    "http://xmlns.com/foaf/0.1/gender" : [ { "type" : "literal", "value" : "male" , "lang" : "en" } ] ,
+    "http://xmlns.com/foaf/0.1/isPrimaryTopicOf" : [ { "type" : "uri", "value" : "http://en.wikipedia.org/wiki/Joseph_Byrd" } ] ,
+    "http://xmlns.com/foaf/0.1/surname" : [ { "type" : "literal", "value" : "Byrd" , "lang" : "en" } ] ,
+    "http://dbpedia.org/ontology/background" : [ { "type" : "literal", "value" : "solo_singer" } ] ,
+    "http://dbpedia.org/ontology/genre" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Experimental_music" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Experimental_rock" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Psychedelic_rock" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Parlour_music" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Postmodern_music" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Minimal_music" } ] ,
+    "http://dbpedia.org/ontology/associatedBand" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/The_United_States_of_America_(band)" } ] ,
+    "http://dbpedia.org/ontology/associatedMusicalArtist" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/The_United_States_of_America_(band)" } ] ,
+    "http://www.w3.org/ns/prov#wasDerivedFrom" : [ { "type" : "uri", "value" : "http://en.wikipedia.org/wiki/Joseph_Byrd?oldid=743506343" } ] ,
+    "http://dbpedia.org/ontology/wikiPageExternalLink" : [ { "type" : "uri", "value" : "http://archive.salon.com/tech/feature/2002/04/23/copyright/index.html" } ,
+      { "type" : "uri", "value" : "http://archive.salon.com/tech/letters/2002/04/26/joe_byrd/index.html" } ] ,
+    "http://dbpedia.org/ontology/occupation" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Arrangement" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Record_producer" } ] ,
+    "http://dbpedia.org/ontology/activeYearsStartYear" : [ { "type" : "literal", "value" : "1950" , "datatype" : "http://www.w3.org/2001/XMLSchema#gYear" } ] ,
+    "http://dbpedia.org/ontology/alias" : [ { "type" : "literal", "value" : "Joe Byrd" , "lang" : "en" } ] ,
+    "http://dbpedia.org/ontology/abstract" : [ { "type" : "literal", "value" : "Joseph Hunter Byrd (born December 19, 1937) is an American composer, musician and academic. After first becoming known as an experimental composer in New York City and Los Angeles in the early and mid-1960s, he became the leader of The United States of America, an innovative but short-lived band that integrated electronic sound and radical political ideas into rock music. In 1968 he recorded the album The American Metaphysical Circus, credited to Joe Byrd and the Field Hippies. After working as a record producer, arranger, and soundtrack composer, he became a university teacher in music history and theory." , "lang" : "en" } ,
+      { "type" : "literal", "value" : "Joseph (Joe) Byrd (Louisville, 19 december 1937) is een Amerikaans toetsenist en componist. Hij werd bekend als oprichter van de experimentele en psychedelische rockbands The United States of America en Joe Byrd and the Field Hippies, en als componist." , "lang" : "nl" } ] ,
+    "http://dbpedia.org/ontology/birthDate" : [ { "type" : "literal", "value" : "1937-12-19" , "datatype" : "http://www.w3.org/2001/XMLSchema#date" } ] ,
+    "http://dbpedia.org/ontology/deathDate" : [ { "type" : "literal", "value" : "2012-3-6" , "datatype" : "http://www.w3.org/2001/XMLSchema#date" } ] ,
+    "http://dbpedia.org/ontology/wikiPageRevisionID" : [ { "type" : "literal", "value" : 743506343 , "datatype" : "http://www.w3.org/2001/XMLSchema#integer" } ] ,
+    "http://dbpedia.org/ontology/birthPlace" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Louisville,_Kentucky" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/United_States" } ] ,
+    "http://dbpedia.org/ontology/wikiPageID" : [ { "type" : "literal", "value" : 2663633 , "datatype" : "http://www.w3.org/2001/XMLSchema#integer" } ] ,
+    "http://dbpedia.org/property/wordnet_type" : [ { "type" : "uri", "value" : "http://www.w3.org/2006/03/wn/wn20/instances/synset-musician-noun-1" } ] ,
+    "http://purl.org/linguistics/gold/hypernym" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Composer" } ] } ,
+  "http://dbpedia.org/resource/Joe_Bird_And_The_Field_Hippies" : { "http://dbpedia.org/ontology/wikiPageRedirects" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Joseph_Byrd" } ] } ,
+  "http://dbpedia.org/resource/Jazz_(Ry_Cooder_album)" : { "http://dbpedia.org/ontology/producer" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Joseph_Byrd" } ] } ,
+  "http://dbpedia.org/resource/Health_(film)" : { "http://dbpedia.org/ontology/musicComposer" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Joseph_Byrd" } ] } ,
+  "http://dbpedia.org/resource/The_American_Metaphysical_Circus" : { "http://dbpedia.org/ontology/producer" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Joseph_Byrd" } ] } ,
+  "http://dbpedia.org/resource/Yankee_Transcendoodle" : { "http://dbpedia.org/ontology/artist" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Joseph_Byrd" } ] } ,
+  "http://dbpedia.org/resource/Joseph_Byrd_(disambiguation)" : { "http://dbpedia.org/ontology/wikiPageDisambiguates" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Joseph_Byrd" } ] } ,
+  "http://dbpedia.org/resource/Byrd,_Joseph" : { "http://dbpedia.org/ontology/wikiPageRedirects" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Joseph_Byrd" } ] }
+}
+;
+	var dataAuth = "http://dbpedia.org/resource/Joseph_Byrd";
+	var dataUrl = "joseph_byrd.html";
+	var dataResourceType = "participant";
+	var dataName = "Joseph Byrd";
+ 	
+</script>
+
+
+
+
+
+<script type="text/javascript">
+
+
+	
+	
+	
+
+	$(document).ready(function($) {
+		
+		
+		padb.resource.initialize();
+			 
+		$( '.scrollable' ).
+		bind( 'mousewheel DOMMouseScroll', function ( e ) {
+			
+			if( e.originalEvent ) e = e.originalEvent;
+			
+			var delta = e.wheelDelta || -e.detail;
+			this.scrollTop += ( delta < 0 ? 1 : -1 ) * 30;
+			e.preventDefault();
+		});		 
+		
+		
+				
+		$.ajaxSetup ({
+			// Disable caching of AJAX responses
+			cache: false
+		});		
+		
+	});
+	
+
+	
+	
+	
+	
+	
+</script>
+
+
+
+
+ 
+<br />
+<div class="container"  style="position:relative;">
+	   
+      <div id="resourceLinks"></div> 
+       
+       
+       
+       
+              
+       
+           
+           
+           
+          <div class="row addSection">
+              <div class="span1 addSectionIconHolder">
+              
+                <i class="icon-user"></i>
+              
+              </div>
+          
+              <div class="span11">
+                <span>Performer</span>
+                <hr>
+                <br />
+              </div>
+        </div>
+        <div class="row">
+            <div class="span1">
+            </div>
+            <div class="span11" style="position:relative">
+                
+                
+                
+                
+               <div>
+                                       <div class="pull-right vignette">
+                            <img  src="../cache/media/joseph_byrd.jpg" />
+                            
+                        </div>
+                        
+                                           
+                <div class="pull-left" style="width:80%;">
+                     
+                     <h5 id="resourceLDName">Joseph Byrd</h5>
+                     <h5 id="resourceLDAbstract"></h5>
+                     
+                     
+                     <div id="resourceSameAs">
+                        <h5>External Data:</h5>
+                        
+                        
+                     </div>
+                
+                </div>   
+                
+                <br style="clear:both;" />
+            </div>
+            
+            
+                
+            </div>
+        </div>    
+         
+    
+    
+    
+    
+    
+    
+       <div class="row addSection">
+			<div class="span1 addSectionIconHolder">              
+                <i class="icon-asterisk"></i>
+              
+              </div>
+          
+              <div class="span11">
+                <span>Events </span><span id="resourceEventCount"></span>
+                <hr>
+              </div>
+        </div>
+    
+    
+    
+    
+    
+    
+    
+        <div class="row">
+            <div class="span1"></div>
+            <div class="span11" style="position:relative">
+                  
+                 <div class="">
+                    <div id="resourceEventsEvents" class="scrollable">
+                           <table class="table table-condensed table-hover table-striped">
+                               <thead>
+                                <tr>
+                                  <th>Date</th>
+                                  
+                                  <th>Title</th>
+                                  <th>Location</th>
+                                  <th></th>
+                                </tr>
+                              </thead>
+                              <tbody id="resourceEventsEventsRows"> 
+                              </tbody>
+                            </table>
+                     
+                    </div>
+                    
+                    <div id="resourceEventsExport">
+                    
+                    	<input  name="resourceEventsSearch" class="span3" id="resourceEventsSearch"  type="text" placeholder="Filter: names, places, dates">
+                    	<button class="btn btn-mini btn-danger" id="resourceEventsClearFilter"><i class="icon-remove">&nbsp;Clear Filter</i></button>
+                   		<button class="btn btn-mini btn-info" title="Render the currently filitered data as a network" id="resourceRenderEventNetwork"> <img src="../img/icon-network-white.png" style="height:15px; width:auto" /> Two-Mode Event Network</button>
+                   		<button class="btn btn-mini btn-info" title="Render the currently filitered data as a network" id="resourceRenderEventMap"> <i class="icon-globe"></i> Map Event Locations</button>
+                   		<button class="btn btn-mini btn-success" title="Download network as Gephi File" id="resourceDownloadEventGephi"> <img src="../img/icon-gephi.png" style="height:15px; width:auto" /> Donwload Gephi Network</button>
+
+                 
+                    </div>                 
+                </div>
+                <br style="clear:both;" />
+            </div>
+            
+            
+                
+         </div>    
+    
+     
+       <div class="row addSection">
+              <div class="span1">
+              
+                <img src="../img/social-network.png" style=" margin-left:25px; margin-bottom:10px;" />
+              
+              </div>
+          
+              <div class="span11">
+                <span>Performance Network</span> 
+                <hr>
+              </div>
+        </div>
+        
+        <div class="row">
+            <div class="span1">
+            </div>
+            <div class="span11" style="position:relative">
+                
+               	<div style="width: 100%; height:500px;" id="egoNetwork">
+            
+                
+             	</div> 
+                <div class="well pull-left well-small" id="egoNetworkControls">
+                    <span class="rangeLabels">Node Charge</span>
+                    <input type="range" id="resourceEgoNetworkCharge" min="-1000" max="100" value="-120" data-def="-700" />
+                    <br /><span class="rangeLabels">Gravity</span>
+                    <input type="range" id="resourceEgoNetworkGravity" min="0" max="1" value="0.1" step="0.01" data-def="0.3" /> 
+                    <br /><span class="rangeLabels">Edge Length</span>
+                    <input type="range" id="resourceEgoNetworkDistance" min="0" max="300" value="50" data-def="50"  />      
+                    <br /><span class="rangeLabels">Edge Strength</span>
+                    <input type="range" id="resourceEgoNetworkStrength" min="0" max="3" value="1" data-def="0.15" step="0.1"  /> 
+                    <br /><br />
+                    <button type="button" id="resourceEgoNetworkLabelsButton" class="btn btn-mini" title="Show node labels." data-toggle="button">Show Labels</button>  
+                    <button type="button" id="resourceEgoNetworkLiveButton" class="btn btn-mini" title="Show realtime network rendering" data-toggle="button">Live Rendering</button>                     
+                </div>
+                
+                <div class="well pull-left well-small egoNetworkControls span7" style="margin-left:20px;" >
+                
+                	<input  name="resourceEgoNetworkSearch" class="span3" id="resourceEgoNetworkSearch"  type="text" placeholder="Filter: names, places, dates">
+					<button class="btn btn-mini btn-danger" id="resourceEgoClearFilter"><i class="icon-remove">&nbsp;Clear Filter</i></button>
+                    <button class="btn btn-mini btn-success" title="Download network as Gephi File" id="resourceDownloadEgoGephi"> <img src="../img/icon-gephi.png" style="height:15px; width:auto" /> Donwload Gephi Network</button>
+
+                </div>
+                
+            </div>
+        </div>           
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+	
+
+	
+
+
+	
+
+
+</div>
+
+
+
+
+    <div id="resourceEventNetworkModal" class="modal container hide fade" style="min-height:500px" tabindex="-1">
+ 
+      <div class="modal-body">
+      	
+        <div id="eventNetwork" style="height:400px; width:100%">
+        
+        </div>
+      
+      </div>
+      <div class="modal-footer" style="height:20px;">
+      	
+        <div class="well pull-left well-small">
+        	<span class="rangeLabels">Node Charge</span>
+        	<input type="range" id="resourceEventNetworkCharge" min="-800" max="200" value="-120" data-def="-120" />
+            <span class="rangeLabels">Gravity</span>
+        	<input type="range" id="resourceEventNetworkGravity" min="0" max="1" value="0.1" step="0.01" data-def="0.1" /> 
+            <span class="rangeLabels">Edge Length</span>
+        	<input type="range" id="resourceEventNetworkDistance" min="0" max="300" value="50" data-def="50"  />      
+            <span class="rangeLabels">Edge Strength</span>
+        	<input type="range" id="resourceEventNetworkStrength" min="0" max="5" value="1" data-def="1" step="0.1"  />    
+            <button type="button" id="resourceEventNetworkLabelsButton" class="btn btn-mini" data-toggle="button">Show Labels</button>                     
+		</div>
+        <div class="pull-right">
+        <button type="button" data-dismiss="modal" class="btn">Close</button>
+       	</div>
+       </div>
+    </div>
+    
+    
+    
+    
+     <div id="resourceEventMapModal" class="modal container hide fade" style="min-height:500px" tabindex="-1">
+ 
+      <div class="modal-body">
+      	
+        <div id="eventMap" style="height:400px; width:100%">
+        
+        </div>
+      
+      </div>
+      <div class="modal-footer" style="height:20px;">
+      	
+        <div class="well pull-left well-small">                  
+		</div>
+        <div class="pull-right">
+        <button type="button" data-dismiss="modal" class="btn">Close</button>
+       	</div>
+       </div>
+    </div>
+
+<br /><br /><br /><br /><br /><br />
+
+<script type="text/javascript">    var _gaq = _gaq || [];   _gaq.push(['_setAccount', 'UA-10371295-7']);   _gaq.push(['_trackPageview']);    (function() {     var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);   })();  </script>
+
+</body>
+
+<!-- Mirrored from padb.net/resource/joseph_byrd by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 11 Jan 2020 22:17:45 GMT -->
+</html>

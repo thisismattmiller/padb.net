@@ -1,0 +1,565 @@
+<!doctype html>
+<html>
+
+<!-- Mirrored from padb.net/resource/jean_tinguely by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 11 Jan 2020 22:23:54 GMT -->
+<head>
+<meta charset="UTF-8">
+<title>padb.net</title>
+
+
+<link rel="stylesheet" href="../css/bootstrap.css">
+<link rel="stylesheet" href="../css/font-awesome.css">
+<link rel="stylesheet" href="../css/site.css">
+<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+<link rel="icon" type="image/png" href="../img/favicon.png">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/bootstrap-modal.js"></script>
+<script src="../js/bootstrap-modalmanager.js"></script>
+
+<script src="../js/d3.min.js"></script>
+<script src="../js/html5slider.js"></script>
+<script src="../js/topojson.js"></script>
+<script src="../js/padb.js"></script>
+
+
+</head>
+<body>
+    
+    
+	<div style="position:relative;">        
+
+ 		<div style=" border-bottom:solid 1px #ccc;">
+        	<div class="container">
+                
+                 <div id="header">
+                 	
+                     <div class="logo"><a href="../index.html"><span>|||</span>padb</a> </div>
+                    
+                      
+						 <div id="resourceName">Jean Tinguely</div>
+					 
+                 </div>
+                
+                
+        	</div>
+            
+    	</div>
+ 
+   </div>
+<script src="../js/countriesData.js"></script>
+
+<script type="text/javascript">
+	//preloaded json from the server
+
+	var dataSameAs = [
+  {
+    "uri": "http://wikidata.dbpedia.org/resource/Q163938",
+    "numDuplicates": "45",
+    "duplicates": [
+      "http://dbpedia.org/resource/Tinguely",
+      "http://dbpedia.org/resource/Jean_Tinguely",
+      "http://dbpedia.org/resource/Tinguely_family",
+      "http://als.dbpedia.org/resource/Jean_Tinguely",
+      "http://be.dbpedia.org/resource/\u0416\u0430\u043D_\u0422\u044D\u043D\u0433\u043B\u0456",
+      "http://bnb.data.bl.uk/id/person/TinguelyJean1925-1991",
+      "http://d-nb.info/gnd/118622838",
+      "http://d-nb.info/gnd/118622838/about/rdf",
+      "http://data.bibsys.no/data/notrbib/authorityentry/x97027801",
+      "http://data.bnf.fr/12108295#foaf:Person",
+      "http://data.bnf.fr/12108295#skos:Concept",
+      "http://dbpedialite.org/things/5637740#id",
+      "http://dbpedialite.org/things/6416135#id",
+      "http://dbpedialite.org/things/7328346#id",
+      "http://de.dbpedia.org/resource/Jean_Tinguely",
+      "http://eo.dbpedia.org/resource/Jean_Tinguely",
+      "http://es.dbpedia.org/resource/Jean_Tinguely",
+      "http://eu.dbpedia.org/resource/Jean_Tinguely",
+      "http://fi.dbpedia.org/resource/Jean_Tinguely",
+      "http://fr.dbpedia.org/resource/Jean_Tinguely",
+      "http://freebase.com//m/025zb2n",
+      "http://he.dbpedia.org/resource/\u05D6'\u05D0\u05DF_\u05D8\u05D9\u05E0\u05D2\u05DC\u05D9",
+      "http://id.loc.gov/authorities/names/n50011850",
+      "http://it.dbpedia.org/resource/Jean_Tinguely",
+      "http://ja.dbpedia.org/resource/\u30B8\u30E3\u30F3\u30FB\u30C6\u30A3\u30F3\u30B2\u30EA\u30FC",
+      "http://ko.dbpedia.org/resource/\uC7A5_\uD305\uAC94\uB9AC",
+      "http://la.dbpedia.org/resource/Ioannes_Tinguely",
+      "http://mpii.de/yago/resource/Jean_Tinguely",
+      "http://mpii.de/yago/resource/Tinguely_family",
+      "http://nl.dbpedia.org/resource/Jean_Tinguely",
+      "http://pl.dbpedia.org/resource/Jean_Tinguely",
+      "http://pt.dbpedia.org/resource/Jean_Tinguely",
+      "http://rdf.freebase.com/ns/m.025zb2n",
+      "http://rdf.freebase.com/ns/en.jean_tinguely",
+      "http://rdf.freebase.com/ns/en.jean_tinguely_1925",
+      "http://rdf.freebase.com/ns/guid.9202a8c04000641f80000000045f2854",
+      "http://ru.dbpedia.org/resource/\u0422\u044D\u043D\u0433\u043B\u0438,_\u0416\u0430\u043D",
+      "http://sv.dbpedia.org/resource/Jean_Tinguely",
+      "http://umbel.org/umbel/ne/wikipedia/Jean_Tinguely",
+      "http://viaf.org/viaf/12338336",
+      "http://wikidata.dbpedia.org/resource/Q163938",
+      "http://www.idref.fr/029460301/id",
+      "http://www.wikidata.org/entity/Q163938",
+      "http://yago-knowledge.org/resource/Jean_Tinguely",
+      "http://zh.dbpedia.org/resource/\u5C1A\u00B7\u4E01\u683C\u5229"
+    ]
+  }
+]
+;
+	var dataDbpedia = {
+  "http://dbpedia.org/resource/Ubermorgen" : { "http://dbpedia.org/ontology/influencedBy" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Jean_Tinguely" } ] } ,
+  "http://dbpedia.org/resource/List_of_public_art_in_Israel" : { "http://dbpedia.org/property/artist" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Jean_Tinguely" } ] } ,
+  "http://dbpedia.org/resource/Jean_Tinguely" : { "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Organism100004475" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/ontology/Person" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatPeopleFromFribourg" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/CausalAgent100007347" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Whole100003553" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/LivingThing100004258" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Sculptor110566072" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/ontology/Agent" } ,
+      { "type" : "uri", "value" : "http://xmlns.com/foaf/0.1/Person" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatSwissArtists" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Person100007846" } ,
+      { "type" : "uri", "value" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Object100002684" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/YagoLegalActor" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/YagoLegalActorGeo" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/PhysicalEntity100001930" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatSwissPainters" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatNouveauR\u00E9alismeArtists" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatSwissPeople" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Painter110391653" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatSwissSculptors" } ,
+      { "type" : "uri", "value" : "http://www.w3.org/2002/07/owl#Thing" } ,
+      { "type" : "uri", "value" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#NaturalPerson" } ,
+      { "type" : "uri", "value" : "http://www.wikidata.org/entity/Q483501" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatPeopleFromTheCantonOfFribourg" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatModernSculptors" } ,
+      { "type" : "uri", "value" : "http://www.wikidata.org/entity/Q5" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Wikicat20th-centuryPainters" } ,
+      { "type" : "uri", "value" : "http://www.wikidata.org/entity/Q24229398" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/ontology/Artist" } ,
+      { "type" : "uri", "value" : "http://www.wikidata.org/entity/Q215627" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatSwissContemporaryArtists" } ,
+      { "type" : "uri", "value" : "http://schema.org/Person" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Artist109812338" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Creator109614315" } ] ,
+    "http://www.w3.org/2000/01/rdf-schema#label" : [ { "type" : "literal", "value" : "Jean Tinguely" , "lang" : "fr" } ,
+      { "type" : "literal", "value" : "Jean Tinguely" , "lang" : "de" } ,
+      { "type" : "literal", "value" : "\u0422\u044D\u043D\u0433\u043B\u0438, \u0416\u0430\u043D" , "lang" : "ru" } ,
+      { "type" : "literal", "value" : "Jean Tinguely" , "lang" : "es" } ,
+      { "type" : "literal", "value" : "Jean Tinguely" , "lang" : "pl" } ,
+      { "type" : "literal", "value" : "Jean Tinguely" , "lang" : "nl" } ,
+      { "type" : "literal", "value" : "Jean Tinguely" , "lang" : "it" } ,
+      { "type" : "literal", "value" : "\u30B8\u30E3\u30F3\u30FB\u30C6\u30A3\u30F3\u30B2\u30EA\u30FC" , "lang" : "ja" } ,
+      { "type" : "literal", "value" : "Jean Tinguely" , "lang" : "pt" } ,
+      { "type" : "literal", "value" : "\u5C1A\u00B7\u4E01\u683C\u5229" , "lang" : "zh" } ,
+      { "type" : "literal", "value" : "Jean Tinguely" , "lang" : "en" } ] ,
+    "http://www.w3.org/2000/01/rdf-schema#comment" : [ { "type" : "literal", "value" : "Jean Tinguely, n\u00E9 le 22 mai 1925 \u00E0 Fribourg et mort le 30 ao\u00FBt 1991 \u00E0 Berne, est un sculpteur, peintre et dessinateur suisse. Parmi ses inventions les plus originales, on compte les M\u00E9ta Matics ou sculptures anim\u00E9es dont il a commenc\u00E9 la r\u00E9alisation en 1954 sous le nom de M\u00E9ta-mecaniques qui \u00E9taient alors des tableaux anim\u00E9s \u00E9lectriquement. Les M\u00E9ta Matics sont des machines \u00E0 dessiner. Avec sa deuxi\u00E8me \u00E9pouse, Niki de Saint Phalle, il a cr\u00E9\u00E9 de gigantesques sculptures, dans des parcs de sculptures, notamment le Jardin des tarots en Toscane." , "lang" : "fr" } ,
+      { "type" : "literal", "value" : "Jean Tinguely (auch: Jeannot; * 22. Mai 1925 in Freiburg/Fribourg; \u2020 30. August 1991 in Bern) war ein Schweizer Maler und Bildhauer des Nouveau R\u00E9alisme. Er gilt als einer der Hauptvertreter der kinetischen Kunst. Tinguely wurde vor allem durch seine beweglichen, maschinen\u00E4hnlichen Skulpturen bekannt." , "lang" : "de" } ,
+      { "type" : "literal", "value" : "Jean Tinguely (22 May 1925 \u2013 30 August 1991) was a Swiss painter and sculptor. He is best known for his sculptural machines or kinetic art, in the Dada tradition; known officially as metamechanics. Tinguely's art satirized the mindless overproduction of material goods in advanced industrial society." , "lang" : "en" } ,
+      { "type" : "literal", "value" : "\u0416\u0430\u043D \u0422\u044D\u043D\u0433\u043B\u0438 (\u0444\u0440. Jean Tinguely, 22 \u043C\u0430\u044F 1925, \u0424\u0440\u0438\u0431\u0443\u0440, \u0428\u0432\u0435\u0439\u0446\u0430\u0440\u0438\u044F \u2014 30 \u0430\u0432\u0433\u0443\u0441\u0442\u0430 1991, \u0411\u0435\u0440\u043D, \u0428\u0432\u0435\u0439\u0446\u0430\u0440\u0438\u044F) \u2014 \u0448\u0432\u0435\u0439\u0446\u0430\u0440\u0441\u043A\u0438\u0439 \u0441\u043A\u0443\u043B\u044C\u043F\u0442\u043E\u0440, \u043F\u0440\u0435\u0434\u0441\u0442\u0430\u0432\u0438\u0442\u0435\u043B\u044C \u043A\u0438\u043D\u0435\u0442\u0438\u0447\u0435\u0441\u043A\u043E\u0433\u043E \u0438\u0441\u043A\u0443\u0441\u0441\u0442\u0432\u0430, \u0432\u0434\u043E\u0445\u043D\u043E\u0432\u043B\u0451\u043D\u043D\u043E\u0433\u043E \u0434\u0430\u0434\u0430\u0438\u0437\u043C\u043E\u043C. \u0415\u0433\u043E \u0444\u0430\u043D\u0442\u0430\u0441\u0442\u0438\u0447\u0435\u0441\u043A\u0438\u0435 \u043C\u0430\u0448\u0438\u043D\u044B \u0438 \u0433\u0438\u0433\u0430\u043D\u0442\u0441\u043A\u0438\u0435 \u0441\u0430\u043C\u043E\u0440\u0430\u0437\u0440\u0443\u0448\u0430\u044E\u0449\u0438\u0435\u0441\u044F \u043A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0446\u0438\u0438 \u0438\u043D\u043E\u0433\u0434\u0430 \u043D\u0430\u0437\u044B\u0432\u0430\u044E\u0442 \u043C\u0435\u0442\u0430\u043C\u0435\u0445\u0430\u043D\u0438\u043A\u043E\u0439." , "lang" : "ru" } ,
+      { "type" : "literal", "value" : "Jean Tinguely (Friburgo, Suiza, 22 de mayo de 1925\u2013Berna, 30 de agosto de 1991) fue un pintor y escultor suizo. Es famoso por sus \"m\u00E1quinas escultura\" o arte cin\u00E9tico, entroncado en la tradici\u00F3n Dada; conocido oficialmente como metamec\u00E1nica. A trav\u00E9s de su arte Tinguely satiriz\u00F3 la sobreproducci\u00F3n sin sentido de bienes materiales por parte de la sociedad industrial avanzada. En 1971, Tinguely se cas\u00F3 con la artista francesa Niki de Saint Phalle." , "lang" : "es" } ,
+      { "type" : "literal", "value" : "Jean Tinguely (ur. 4 maja 1925 we Fryburgu, zm. 30 sierpnia 1991 w Bernie) \u2212 szwajcarski malarz i rze\u017Abiarz. Wi\u0119ksz\u0105 cz\u0119\u015B\u0107 doros\u0142ego \u017Cycia sp\u0119dzi\u0142 w Pary\u017Cu (gdzie zamieszka\u0142 w 1952) i by\u0142 czo\u0142ow\u0105 postaci\u0105 francuskiej awangardy lat 50. oraz 60. XX wieku. Nale\u017Ca\u0142 do ruchu Nouveau r\u00E9alisme (nowy realizm). Zas\u0142yn\u0105\u0142 jako tw\u00F3rca ruchomych rze\u017Ab-machin i instalacji. Dzi\u0119ki nim jest uwa\u017Cany za przedstawiciela tzw. sztuki kinetycznej." , "lang" : "pl" } ,
+      { "type" : "literal", "value" : "Jean Tinguely (Fribourg, 22 mei 1925 \u2013 Bern, 30 augustus 1991) was een Zwitserse schilder en beeldhouwer." , "lang" : "nl" } ,
+      { "type" : "literal", "value" : "\u30B8\u30E3\u30F3\u30FB\u30C6\u30A3\u30F3\u30B2\u30EA\u30FC\uFF08Jean Tinguely, 1925\u5E745\u670822\u65E5 - 1991\u5E748\u670830\u65E5\uFF09\u306F\u30B9\u30A4\u30B9\u306E\u73FE\u4EE3\u7F8E\u8853\u3001\u753B\u5BB6\u3001\u5F6B\u523B\u5BB6\u3067\u3042\u308B\u3002 \u5F7C\u306F\u5EC3\u7269\u3092\u5229\u7528\u3057\u3066\u6A5F\u68B0\u306E\u3088\u3046\u306B\u52D5\u304F\u5F6B\u523B\u3092\u5236\u4F5C\u3059\u308B\u3053\u3068\u3067\u77E5\u3089\u308C\u3066\u304A\u308A\u3001\u30AD\u30CD\u30C6\u30A3\u30C3\u30AF\u30FB\u30A2\u30FC\u30C8\uFF08\u52D5\u304F\u7F8E\u8853\u4F5C\u54C1\uFF09\u306E\u4EE3\u8868\u7684\u306A\u4F5C\u5BB6\u3067\u3042\u308B\u3002\u307E\u305F\u30C0\u30C0\u30A4\u30B9\u30E0\u306E\u5F71\u97FF\u3092\u6FC3\u304F\u53D7\u3051\u3066\u304A\u308A\u3001\u7B2C\u4E8C\u6B21\u4E16\u754C\u5927\u6226\u5F8C\u306E\u30D5\u30E9\u30F3\u30B9\u3067\u8A95\u751F\u3057\u305F\u7F8E\u8853\u904B\u52D5\u3001\u30CC\u30FC\u30F4\u30A9\u30FC\u30FB\u30EC\u30A2\u30EA\u30B9\u30E0\u306E\u30E1\u30F3\u30D0\u30FC\u3067\u3082\u3042\u3063\u305F\u3002\u4EE3\u8868\u7684\u306A\u30B7\u30EA\u30FC\u30BA\u306B\u300C\u30E1\u30BF\u30E1\u30AB\u30CB\u30C3\u30AF\u300D(metamechanics) \u304C\u3001\u305D\u306E\u4ED6\u300C\u30E1\u30BF\u30FB\u30CF\u30FC\u30E2\u30CB\u30FC\u300D\u30B7\u30EA\u30FC\u30BA\u3001\u300C\u6B7B\u306E\u821E\u8E0F\u300D\u30B7\u30EA\u30FC\u30BA\u3001\u300C\u54F2\u5B66\u8005\u300D\u30B7\u30EA\u30FC\u30BA\u306A\u3069\u304C\u3042\u308B\u3002" , "lang" : "ja" } ,
+      { "type" : "literal", "value" : "\u5C1A\u00B7\u4E01\u683C\u5229\uFF08Jean Tinguely\uFF0C1925\u5E745\u670822\u65E5\uFF0C\u745E\u58EB\u4F5B\u7ACB\u5821\u751F\uFF0D1991\u5E748\u670830\u65E5\uFF0C\u4F2F\u6069\u5352\uFF09\uFF0C\u53E6\u8B6F\u5091\u6602\u00B7\u5510\u683C\u91CC\uFF0C\u745E\u58EB\u9054\u9054\u4E3B\u7FA9\u756B\u5BB6\u8207\u96D5\u523B\u5BB6\uFF0C\u4EE5\u6A5F\u52D5\u85DD\u8853\u5275\u4F5C\u805E\u540D\u3002\u4ED6\u4EE5\u4F5C\u54C1\u4F86\u6697\u8AF7\u6587\u660E\u5DE5\u696D\u793E\u6703\u4E2D\u76F2\u76EE\u751F\u7522\u904E\u5269\u7684\u73FE\u8C61\u3002 \u4E01\u683C\u5229\u5728\u745E\u58EB\u5DF4\u585E\u723E\u6210\u9577\uFF0C\u66FE\u5C31\u8B80\u65BC\u5DF4\u585E\u723E\u85DD\u8853\u8207\u5DE5\u85DD\u5B78\u6821\uFF08Basel School Of Arts And Crafts\uFF09\uFF1B\u70BA\u4E86\u767C\u5C55\u85DD\u8853\u751F\u6DAF\uFF0C\u4ED6\u65BC1952\u5E74\u8207\u7B2C\u4E00\u4EFB\u914D\u5076\u2014\u2014\u745E\u58EB\u85DD\u8853\u5BB6\u4F0A\u5A03\u00B7\u57C3\u666E\u8389\uFF08Eva Aeppli\uFF09\u9077\u5C45\u6CD5\u570B\u3002\u4ED6\u7684\u9996\u6B21\u5C55\u89BD\u65BC1954\u5E74\u4E94\u6708\u5728\u5DF4\u9ECE\u963F\u8CC0\u8AFE\u756B\u5ECA\uFF08Galerie Arnaud\uFF09\u8209\u8FA6\u3002\u4E01\u683C\u5229\u88AB\u8996\u70BA\u4E8C\u5341\u4E16\u7D00\u4E2D\u671F\u5DF4\u9ECE\u7684\u524D\u885B\u85DD\u8853\u5BB6\u30021995\u5E74\uFF0C\u4E01\u683C\u5229\u8207\u591A\u4F4D\u85DD\u8853\u5BB6\uFF0C\u5305\u542B\u675C\u8C61\uFF08Duchamp\uFF09\u8207\u5361\u723E\u9054\uFF08Calder\uFF09\uFF0C\u5171\u540C\u53C3\u8207\u540D\u70BA\u300C\u904B\u52D5\u300D\uFF08Le Mouvement\uFF09\u7684\u5C55\u89BD\uFF0C\u9019\u4E5F\u662F\u6A5F\u52D5\u85DD\u8853\u9996\u6B21\u5728\u85DD\u8853\u4E2D\u7372\u5F97\u91CD\u8981\u5730\u4F4D\u3002\u4E01\u683C\u5229\u4EA6\u662F1960\u5E74\u6642\u5728\u65B0\u5BEB\u5BE6\u4E3B\u7FA9\u5BA3\u8A00\u4E2D\u7C3D\u7F72\u7684\u85DD\u8853\u5BB6\u4E4B\u4E00\u3002 \u4E01\u683C\u5229\u65BC1971\u5E74\u8207\u6CD5\u570B\u85DD\u8853\u5BB6\u59AE\u57FA\u00B7\u6851\u6CD5\u52D2\u7D50\u5A5A\u3002\u5169\u4EBA\u7684\u5171\u540C\u5275\u4F5C\u5305\u62EC\u5DF4\u9ECE\u7684\u300A\u53F2\u7279\u62C9\u6587\u65AF\u57FA\u5674\u6CC9\u300B\uFF08Fontaine Igor Stravinsky\uFF0C1983\u5E74\uFF09\u4EE5\u53CA\u300A\u8A69\u8FB2\u5821\u5674\u6CC9\u300B\uFF08Fontaine de Ch\u00E2teau-Chinon\uFF0C1988\u5E74\uFF09\u3002" , "lang" : "zh" } ,
+      { "type" : "literal", "value" : "Jean Tinguely (Friburgo, Su\u00ED\u00E7a, 1925 - Berna, 1991) foi um escultor su\u00ED\u00E7o. Foi um dos fundadores do Nouveau r\u00E9alisme (Novo Realismo), um movimento art\u00EDstico que elege os materiais e elementos derivados da realidade cotidiana, como os desperd\u00EDcios da sociedade de consumo, transformando-os em obras de arte. A sua obra denuncia uma est\u00E9tica e uma conceptualiza\u00E7\u00E3o pr\u00F3ximas do dada\u00EDsmo. As esculturas, numa esp\u00E9cie de celebra\u00E7\u00E3o da ci\u00EAncia e do progresso tecnol\u00F3gico que marcou o ap\u00F3s-guerra, s\u00E3o m\u00E1quinas sat\u00EDricas com fun\u00E7\u00F5es e formas diversas, normalmente in\u00FAteis e absurdas, com movimentos descoordenados." , "lang" : "pt" } ] ,
+    "http://www.w3.org/2002/07/owl#sameAs" : [ { "type" : "uri", "value" : "http://it.dbpedia.org/resource/Jean_Tinguely" } ,
+      { "type" : "uri", "value" : "http://data.europa.eu/euodp/jrc-names/Jean_Tinguely" } ,
+      { "type" : "uri", "value" : "http://yago-knowledge.org/resource/Jean_Tinguely" } ,
+      { "type" : "uri", "value" : "http://de.dbpedia.org/resource/Jean_Tinguely" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Jean_Tinguely" } ,
+      { "type" : "uri", "value" : "http://nl.dbpedia.org/resource/Jean_Tinguely" } ,
+      { "type" : "uri", "value" : "http://cs.dbpedia.org/resource/Jean_Tinguely" } ,
+      { "type" : "uri", "value" : "http://fr.dbpedia.org/resource/Jean_Tinguely" } ,
+      { "type" : "uri", "value" : "http://viaf.org/viaf/12338336" } ,
+      { "type" : "uri", "value" : "http://es.dbpedia.org/resource/Jean_Tinguely" } ,
+      { "type" : "uri", "value" : "http://rdf.freebase.com/ns/m.025zb2n" } ,
+      { "type" : "uri", "value" : "http://wikidata.dbpedia.org/resource/Q163938" } ,
+      { "type" : "uri", "value" : "http://ja.dbpedia.org/resource/\u30B8\u30E3\u30F3\u30FB\u30C6\u30A3\u30F3\u30B2\u30EA\u30FC" } ,
+      { "type" : "uri", "value" : "http://eu.dbpedia.org/resource/Jean_Tinguely" } ,
+      { "type" : "uri", "value" : "http://d-nb.info/gnd/118622838" } ,
+      { "type" : "uri", "value" : "http://www.wikidata.org/entity/Q163938" } ,
+      { "type" : "uri", "value" : "http://pl.dbpedia.org/resource/Jean_Tinguely" } ,
+      { "type" : "uri", "value" : "http://pt.dbpedia.org/resource/Jean_Tinguely" } ,
+      { "type" : "uri", "value" : "http://ko.dbpedia.org/resource/\uC7A5_\uD305\uAC94\uB9AC" } ] ,
+    "http://purl.org/dc/terms/subject" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Swiss_artists" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:1925_births" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:1991_deaths" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:20th-century_Swiss_painters" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:20th-century_sculptors" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Swiss_contemporary_artists" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Swiss_sculptors" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Swiss_painters" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Jean_Tinguely" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:People_from_Fribourg" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Modern_sculptors" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Neo-Dada" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Nouveau_r\u00E9alisme_artists" } ] ,
+    "http://xmlns.com/foaf/0.1/name" : [ { "type" : "literal", "value" : "Jean Tinguely" , "lang" : "en" } ] ,
+    "http://xmlns.com/foaf/0.1/depiction" : [ { "type" : "uri", "value" : "http://commons.wikimedia.org/wiki/Special:FilePath/Tinguely_by_Wolleh.jpg" } ] ,
+    "http://purl.org/dc/terms/description" : [ { "type" : "literal", "value" : "Swiss painter and sculptor" , "lang" : "en" } ] ,
+    "http://xmlns.com/foaf/0.1/givenName" : [ { "type" : "literal", "value" : "Jean" , "lang" : "en" } ] ,
+    "http://xmlns.com/foaf/0.1/gender" : [ { "type" : "literal", "value" : "male" , "lang" : "en" } ] ,
+    "http://xmlns.com/foaf/0.1/isPrimaryTopicOf" : [ { "type" : "uri", "value" : "http://en.wikipedia.org/wiki/Jean_Tinguely" } ] ,
+    "http://xmlns.com/foaf/0.1/surname" : [ { "type" : "literal", "value" : "Tinguely" , "lang" : "en" } ] ,
+    "http://dbpedia.org/property/bgcolour" : [ { "type" : "literal", "value" : "#6495ED" , "datatype" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString" } ] ,
+    "http://www.w3.org/ns/prov#wasDerivedFrom" : [ { "type" : "uri", "value" : "http://en.wikipedia.org/wiki/Jean_Tinguely?oldid=740636131" } ] ,
+    "http://dbpedia.org/ontology/wikiPageExternalLink" : [ { "type" : "uri", "value" : "http://www.youtube.com/view_play_list?p=416EB8B223125DBF" } ,
+      { "type" : "uri", "value" : "http://www.artcyclopedia.com/artists/tinguely_jean.html" } ,
+      { "type" : "uri", "value" : "http://www.tinguely.ch/en/museum/jean_tinguely_follow.html" } ,
+      { "type" : "uri", "value" : "http://www.art-public.com/cyclop/cyclop_g.htm" } ,
+      { "type" : "uri", "value" : "http://www.moma.org/explore/multimedia/audios/11/467" } ,
+      { "type" : "uri", "value" : "http://www.tinguely.ch/en.html" } ,
+      { "type" : "uri", "value" : "http://www.metamaticresearch.info" } ,
+      { "type" : "uri", "value" : "http://www.youtube.com/view_play_list?p=44C0A9508767B74A" } ] ,
+    "http://dbpedia.org/property/caption" : [ { "type" : "literal", "value" : "Jean Tinguely portrait by Lothar Wolleh" , "datatype" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString" } ] ,
+    "http://dbpedia.org/property/imagesize" : [ { "type" : "literal", "value" : 250 , "datatype" : "http://www.w3.org/2001/XMLSchema#integer" } ] ,
+    "http://dbpedia.org/ontology/abstract" : [ { "type" : "literal", "value" : "Jean Tinguely (ur. 4 maja 1925 we Fryburgu, zm. 30 sierpnia 1991 w Bernie) \u2212 szwajcarski malarz i rze\u017Abiarz. Wi\u0119ksz\u0105 cz\u0119\u015B\u0107 doros\u0142ego \u017Cycia sp\u0119dzi\u0142 w Pary\u017Cu (gdzie zamieszka\u0142 w 1952) i by\u0142 czo\u0142ow\u0105 postaci\u0105 francuskiej awangardy lat 50. oraz 60. XX wieku. Nale\u017Ca\u0142 do ruchu Nouveau r\u00E9alisme (nowy realizm). Zas\u0142yn\u0105\u0142 jako tw\u00F3rca ruchomych rze\u017Ab-machin i instalacji. Dzi\u0119ki nim jest uwa\u017Cany za przedstawiciela tzw. sztuki kinetycznej. Przez wiele lat jego \u017Cyciow\u0105 i artystyczn\u0105 partnerk\u0105 by\u0142a Niki de Saint Phalle. Razem stworzyli m.in. Fontann\u0119 Strawi\u0144skiego przed Centrum Pompidou w Pary\u017Cu. W 1996 w Bazylei zosta\u0142o otwarte muzeum jego imienia. Kolekcj\u0119 prac Jeana Tinguely oraz Niki de Saint Phalle mo\u017Cna znale\u017A\u0107 r\u00F3wnie\u017C we fryburskim \"Espace Jean Tinguely - Niki de Saint Phalle\"." , "lang" : "pl" } ,
+      { "type" : "literal", "value" : "\u5C1A\u00B7\u4E01\u683C\u5229\uFF08Jean Tinguely\uFF0C1925\u5E745\u670822\u65E5\uFF0C\u745E\u58EB\u4F5B\u7ACB\u5821\u751F\uFF0D1991\u5E748\u670830\u65E5\uFF0C\u4F2F\u6069\u5352\uFF09\uFF0C\u53E6\u8B6F\u5091\u6602\u00B7\u5510\u683C\u91CC\uFF0C\u745E\u58EB\u9054\u9054\u4E3B\u7FA9\u756B\u5BB6\u8207\u96D5\u523B\u5BB6\uFF0C\u4EE5\u6A5F\u52D5\u85DD\u8853\u5275\u4F5C\u805E\u540D\u3002\u4ED6\u4EE5\u4F5C\u54C1\u4F86\u6697\u8AF7\u6587\u660E\u5DE5\u696D\u793E\u6703\u4E2D\u76F2\u76EE\u751F\u7522\u904E\u5269\u7684\u73FE\u8C61\u3002 \u4E01\u683C\u5229\u5728\u745E\u58EB\u5DF4\u585E\u723E\u6210\u9577\uFF0C\u66FE\u5C31\u8B80\u65BC\u5DF4\u585E\u723E\u85DD\u8853\u8207\u5DE5\u85DD\u5B78\u6821\uFF08Basel School Of Arts And Crafts\uFF09\uFF1B\u70BA\u4E86\u767C\u5C55\u85DD\u8853\u751F\u6DAF\uFF0C\u4ED6\u65BC1952\u5E74\u8207\u7B2C\u4E00\u4EFB\u914D\u5076\u2014\u2014\u745E\u58EB\u85DD\u8853\u5BB6\u4F0A\u5A03\u00B7\u57C3\u666E\u8389\uFF08Eva Aeppli\uFF09\u9077\u5C45\u6CD5\u570B\u3002\u4ED6\u7684\u9996\u6B21\u5C55\u89BD\u65BC1954\u5E74\u4E94\u6708\u5728\u5DF4\u9ECE\u963F\u8CC0\u8AFE\u756B\u5ECA\uFF08Galerie Arnaud\uFF09\u8209\u8FA6\u3002\u4E01\u683C\u5229\u88AB\u8996\u70BA\u4E8C\u5341\u4E16\u7D00\u4E2D\u671F\u5DF4\u9ECE\u7684\u524D\u885B\u85DD\u8853\u5BB6\u30021995\u5E74\uFF0C\u4E01\u683C\u5229\u8207\u591A\u4F4D\u85DD\u8853\u5BB6\uFF0C\u5305\u542B\u675C\u8C61\uFF08Duchamp\uFF09\u8207\u5361\u723E\u9054\uFF08Calder\uFF09\uFF0C\u5171\u540C\u53C3\u8207\u540D\u70BA\u300C\u904B\u52D5\u300D\uFF08Le Mouvement\uFF09\u7684\u5C55\u89BD\uFF0C\u9019\u4E5F\u662F\u6A5F\u52D5\u85DD\u8853\u9996\u6B21\u5728\u85DD\u8853\u4E2D\u7372\u5F97\u91CD\u8981\u5730\u4F4D\u3002\u4E01\u683C\u5229\u4EA6\u662F1960\u5E74\u6642\u5728\u65B0\u5BEB\u5BE6\u4E3B\u7FA9\u5BA3\u8A00\u4E2D\u7C3D\u7F72\u7684\u85DD\u8853\u5BB6\u4E4B\u4E00\u3002 \u4E01\u683C\u5229\u65BC1971\u5E74\u8207\u6CD5\u570B\u85DD\u8853\u5BB6\u59AE\u57FA\u00B7\u6851\u6CD5\u52D2\u7D50\u5A5A\u3002\u5169\u4EBA\u7684\u5171\u540C\u5275\u4F5C\u5305\u62EC\u5DF4\u9ECE\u7684\u300A\u53F2\u7279\u62C9\u6587\u65AF\u57FA\u5674\u6CC9\u300B\uFF08Fontaine Igor Stravinsky\uFF0C1983\u5E74\uFF09\u4EE5\u53CA\u300A\u8A69\u8FB2\u5821\u5674\u6CC9\u300B\uFF08Fontaine de Ch\u00E2teau-Chinon\uFF0C1988\u5E74\uFF09\u3002 \u4E01\u683C\u5229\u6700\u8457\u540D\u7684\u4F5C\u54C1\u5305\u62EC\u300A\u5411\u7EBD\u7EA6\u81F4\u656C\u300B\uFF08Homage to New York\uFF09\uFF0C\u662F\u4ED6\u65BC1960\u5E74\u63A5\u53D7\u7D10\u7D04\u73FE\u4EE3\u85DD\u8853\u535A\u7269\u9928\u9080\u8ACB\u6240\u5275\u4F5C\u7684\u4F5C\u54C1\u3002\u300A\u5411\u7EBD\u7EA6\u81F4\u656C\u300B\u662F\u4E00\u67B6\u81EA\u6BC0\u5F0F\u6A5F\u5668\uFF0C\u66FE\u5728\u5C55\u89BD\u4E2D\u904B\u8F4927\u5206\u9418\uFF0C\u4F46\u9019\u6B21\u8868\u6F14\u4E26\u672A\u6210\u529F\u5C07\u4F5C\u54C1\u5B8C\u5168\u6467\u6BC0\uFF0C\u800C\u8868\u6F14\u4E2D\u88AB\u7834\u58DE\u7684\u6A5F\u68B0\u6B98\u9AB8\u5247\u6210\u70BA\u89C0\u773E\u7684\u7D00\u5FF5\u54C1\u3002\u5169\u5E74\u5F8C\uFF0C\u4ED6\u53D7\u7F8E\u570B\u570B\u5BB6\u5EE3\u64AD\u516C\u53F8\u4E4B\u9080\u5275\u4F5C\u4E86\u300A\u4E16\u754C\u76E1\u982D\u7814\u7A76\u4E8C\u865F\u6A5F\u300B\uFF08Study for an End of the World No. 2\uFF09\uFF0C\u5728\u7F8E\u570B\u62C9\u65AF\u7DAD\u52A0\u65AF\u8FD1\u90CA\u6C99\u6F20\u4E2D\u6210\u529F\u5F15\u7206\u3002" , "lang" : "zh" } ,
+      { "type" : "literal", "value" : "Jean Tinguely (Friburgo, Suiza, 22 de mayo de 1925\u2013Berna, 30 de agosto de 1991) fue un pintor y escultor suizo. Es famoso por sus \"m\u00E1quinas escultura\" o arte cin\u00E9tico, entroncado en la tradici\u00F3n Dada; conocido oficialmente como metamec\u00E1nica. A trav\u00E9s de su arte Tinguely satiriz\u00F3 la sobreproducci\u00F3n sin sentido de bienes materiales por parte de la sociedad industrial avanzada. Tinguely creci\u00F3 en Basilea, pero se mud\u00F3 a Francia en su juventud para desarrollar su carrera art\u00EDstica. Perteneci\u00F3 al movimiento de avantgarde (vanguardia) parisino de mediados del siglo XX y fue uno de los artistas que firm\u00F3 el manifiesto Neorrealista (Nouveau r\u00E9alisme) en 1960. Su obra m\u00E1s famosa es una escultura que se autodestruye, llamada Homenaje a Nueva York (1960), se autodestruy\u00F3 en forma parcial en el Museum of Modern Art, de Nueva York, aunque su obra posterior, Estudio No.2 para un fin del mundo (1962), deton\u00F3 de forma exitosa enfrente del p\u00FAblico reunido en el desierto cerca de Las Vegas. En 1971, Tinguely se cas\u00F3 con la artista francesa Niki de Saint Phalle." , "lang" : "es" } ,
+      { "type" : "literal", "value" : "Jean Tinguely (auch: Jeannot; * 22. Mai 1925 in Freiburg/Fribourg; \u2020 30. August 1991 in Bern) war ein Schweizer Maler und Bildhauer des Nouveau R\u00E9alisme. Er gilt als einer der Hauptvertreter der kinetischen Kunst. Tinguely wurde vor allem durch seine beweglichen, maschinen\u00E4hnlichen Skulpturen bekannt." , "lang" : "de" } ,
+      { "type" : "literal", "value" : "Jean Tinguely (Fribourg, 22 mei 1925 \u2013 Bern, 30 augustus 1991) was een Zwitserse schilder en beeldhouwer." , "lang" : "nl" } ,
+      { "type" : "literal", "value" : "Jean Tinguely, n\u00E9 le 22 mai 1925 \u00E0 Fribourg et mort le 30 ao\u00FBt 1991 \u00E0 Berne, est un sculpteur, peintre et dessinateur suisse. Parmi ses inventions les plus originales, on compte les M\u00E9ta Matics ou sculptures anim\u00E9es dont il a commenc\u00E9 la r\u00E9alisation en 1954 sous le nom de M\u00E9ta-mecaniques qui \u00E9taient alors des tableaux anim\u00E9s \u00E9lectriquement. Les M\u00E9ta Matics sont des machines \u00E0 dessiner. Avec sa deuxi\u00E8me \u00E9pouse, Niki de Saint Phalle, il a cr\u00E9\u00E9 de gigantesques sculptures, dans des parcs de sculptures, notamment le Jardin des tarots en Toscane. Tinguely poss\u00E9dait le don d'attirer l\u2019attention et d\u2019\u00E9tablir ainsi une communication avec ses m\u00E9canismes d\u00E9tourn\u00E9s de leur sens et de leur finalit\u00E9. Avec Eur\u00E9ka, une \u00E9norme machine con\u00E7ue pour l\u2019exposition nationale suisse de 1964, cette particularit\u00E9 est apparue comme une caract\u00E9ristique essentielle de son art. Impr\u00E9gn\u00E9 des \u0153uvres de Marcel Duchamp (Ready-made ou objets usuels ironiquement promus \u0153uvres d\u2019art), il s\u2019inscrit dans l\u2019esprit dada\u00EFste qui se manifeste par la provocation et la d\u00E9rision souvent au cours de manifestations publiques. En 1959, son premier triomphe public a lieu lors de la Biennale de Paris, inaugur\u00E9e par Andr\u00E9 Malraux, au mus\u00E9e d'art moderne de la ville de Paris, avec des machines produisant des peintures en s\u00E9rie dont il a pu faire la d\u00E9monstration devant le public. Il remet en question l\u2019acad\u00E9misme de l\u2019art cr\u00E9ant des machines construites en partie avec des objets de r\u00E9cup\u00E9ration, sciemment imparfaites, s'opposant au culte de l'objet neuf et pratiquant le recyclage d\u00E9j\u00E0 utilis\u00E9 avant lui par l'art brut. Ces mat\u00E9riaux de r\u00E9cup\u00E9ration auxquels il redonne vie en les animant avec des moteurs comptent parmi les innovations les plus vivantes de la sculpture du XXe si\u00E8cle. Le 2 mai en 1941 il commence un apprentissage de d\u00E9corateur." , "lang" : "fr" } ,
+      { "type" : "literal", "value" : "Jean Tinguely (Friburgo, Su\u00ED\u00E7a, 1925 - Berna, 1991) foi um escultor su\u00ED\u00E7o. Foi um dos fundadores do Nouveau r\u00E9alisme (Novo Realismo), um movimento art\u00EDstico que elege os materiais e elementos derivados da realidade cotidiana, como os desperd\u00EDcios da sociedade de consumo, transformando-os em obras de arte. A sua obra denuncia uma est\u00E9tica e uma conceptualiza\u00E7\u00E3o pr\u00F3ximas do dada\u00EDsmo. As esculturas, numa esp\u00E9cie de celebra\u00E7\u00E3o da ci\u00EAncia e do progresso tecnol\u00F3gico que marcou o ap\u00F3s-guerra, s\u00E3o m\u00E1quinas sat\u00EDricas com fun\u00E7\u00F5es e formas diversas, normalmente in\u00FAteis e absurdas, com movimentos descoordenados. Paradigm\u00E1tico da sua obra, a escultura Chariot MK IV , 1966, constitu\u00EDda por um conjunto de rodas e de engrenagens assamblados para produzir uma m\u00E1quina que simula ter uma fun\u00E7\u00E3o. Em trabalhos anteriores, estas m\u00E1quinas eram realizadas para produzir desenhos abstractos, numa cr\u00EDtica ao expressionismo abstrato que se valia do gesto espont\u00E2neo e de certa forma gratuito e vulgarizado. Outra obra famosa foi a escultura que apresentou no Museu de Arte Moderna de Nova Iorque, cuja fun\u00E7\u00E3o foi a de se auto-destruir.Mais tarde, produz eventos multim\u00E9dia de grande escala, exteriores, nos quais o espectador \u00E9 encorajado a interagir com as suas grandes esculturas. A introdu\u00E7\u00E3o de movimento f\u00EDsico real nas obras de arte, que se tornava mais frequente na d\u00E9cada de 50, na produ\u00E7\u00E3o criativa de alguns autores, entre os quais Tinguely, permitiu a constitui\u00E7\u00E3o de uma corrente art\u00EDstica, designado por arte cin\u00E9tica. Umas das mais famosas obras de Jean Tinguely \u00B4\u00B4A Dan\u00E7a Macabra\u00B4\u00B4, no Museu Jean Tinguely, na Basileia, Su\u00ED\u00E7a. Ap\u00F3s pesquisas e testes de esculturas sonoras cin\u00E9ticos, mostrou a natureza puramente mec\u00E2nica do seu trabalho ou seus revestidores Metamatics (1959). Em 1960 ele se juntou ao novo realismo e empreendeu grandes m\u00E1quinas em movimento, edif\u00EDcios de lazer que convidam os visitantes a participar (Rotozazas, 1967-1969) ou verdadeiras Environnements (Krokodrome, criado em 1977 para o Centro Georges Pompidou, em Paris). Entre seus trabalhos mais recentes incluem a Fontaine Stravinsky (1983), instalada perto do Centro Pompidou. A dan\u00E7a macabra era um tema muito comum na Idade M\u00E9dia, tanto na pintura como na escultura. A morte, representada por um esqueleto com uma rabeca (instrumento musical) e um osso como arco desse instrumento, dan\u00E7a com os mortais de todas as idades e condi\u00E7\u00F5es enquanto os arrasta para sepultura. O artista Jean Tinguely criou a escultura Dan\u00E7a Macabra com material inusitados para provocar sons e movimentos. As esculturas s\u00E3o compostas por objetos recolhidos de uma ru\u00EDna incendiada pr\u00F3xima ao ateli\u00EA do artista. O artista cria as suas esculturas para expressar a ess\u00EAncia da arte e da vida e despertar o interesse do espectador para o estranho, o l\u00FAdico e o assustador. Assim o artista produz a arte cin\u00E9tica (din\u00E2mica). No Brasil, Abraham Palatnik \u00E9 um grande expoente desse tipo de arte. As obras de Jean Tinguely est\u00E3o no museu que leva seu nome na Su\u00ED\u00E7a." , "lang" : "pt" } ,
+      { "type" : "literal", "value" : "\u30B8\u30E3\u30F3\u30FB\u30C6\u30A3\u30F3\u30B2\u30EA\u30FC\uFF08Jean Tinguely, 1925\u5E745\u670822\u65E5 - 1991\u5E748\u670830\u65E5\uFF09\u306F\u30B9\u30A4\u30B9\u306E\u73FE\u4EE3\u7F8E\u8853\u3001\u753B\u5BB6\u3001\u5F6B\u523B\u5BB6\u3067\u3042\u308B\u3002 \u5F7C\u306F\u5EC3\u7269\u3092\u5229\u7528\u3057\u3066\u6A5F\u68B0\u306E\u3088\u3046\u306B\u52D5\u304F\u5F6B\u523B\u3092\u5236\u4F5C\u3059\u308B\u3053\u3068\u3067\u77E5\u3089\u308C\u3066\u304A\u308A\u3001\u30AD\u30CD\u30C6\u30A3\u30C3\u30AF\u30FB\u30A2\u30FC\u30C8\uFF08\u52D5\u304F\u7F8E\u8853\u4F5C\u54C1\uFF09\u306E\u4EE3\u8868\u7684\u306A\u4F5C\u5BB6\u3067\u3042\u308B\u3002\u307E\u305F\u30C0\u30C0\u30A4\u30B9\u30E0\u306E\u5F71\u97FF\u3092\u6FC3\u304F\u53D7\u3051\u3066\u304A\u308A\u3001\u7B2C\u4E8C\u6B21\u4E16\u754C\u5927\u6226\u5F8C\u306E\u30D5\u30E9\u30F3\u30B9\u3067\u8A95\u751F\u3057\u305F\u7F8E\u8853\u904B\u52D5\u3001\u30CC\u30FC\u30F4\u30A9\u30FC\u30FB\u30EC\u30A2\u30EA\u30B9\u30E0\u306E\u30E1\u30F3\u30D0\u30FC\u3067\u3082\u3042\u3063\u305F\u3002\u4EE3\u8868\u7684\u306A\u30B7\u30EA\u30FC\u30BA\u306B\u300C\u30E1\u30BF\u30E1\u30AB\u30CB\u30C3\u30AF\u300D(metamechanics) \u304C\u3001\u305D\u306E\u4ED6\u300C\u30E1\u30BF\u30FB\u30CF\u30FC\u30E2\u30CB\u30FC\u300D\u30B7\u30EA\u30FC\u30BA\u3001\u300C\u6B7B\u306E\u821E\u8E0F\u300D\u30B7\u30EA\u30FC\u30BA\u3001\u300C\u54F2\u5B66\u8005\u300D\u30B7\u30EA\u30FC\u30BA\u306A\u3069\u304C\u3042\u308B\u3002" , "lang" : "ja" } ,
+      { "type" : "literal", "value" : "\u0416\u0430\u043D \u0422\u044D\u043D\u0433\u043B\u0438 (\u0444\u0440. Jean Tinguely, 22 \u043C\u0430\u044F 1925, \u0424\u0440\u0438\u0431\u0443\u0440, \u0428\u0432\u0435\u0439\u0446\u0430\u0440\u0438\u044F \u2014 30 \u0430\u0432\u0433\u0443\u0441\u0442\u0430 1991, \u0411\u0435\u0440\u043D, \u0428\u0432\u0435\u0439\u0446\u0430\u0440\u0438\u044F) \u2014 \u0448\u0432\u0435\u0439\u0446\u0430\u0440\u0441\u043A\u0438\u0439 \u0441\u043A\u0443\u043B\u044C\u043F\u0442\u043E\u0440, \u043F\u0440\u0435\u0434\u0441\u0442\u0430\u0432\u0438\u0442\u0435\u043B\u044C \u043A\u0438\u043D\u0435\u0442\u0438\u0447\u0435\u0441\u043A\u043E\u0433\u043E \u0438\u0441\u043A\u0443\u0441\u0441\u0442\u0432\u0430, \u0432\u0434\u043E\u0445\u043D\u043E\u0432\u043B\u0451\u043D\u043D\u043E\u0433\u043E \u0434\u0430\u0434\u0430\u0438\u0437\u043C\u043E\u043C. \u0415\u0433\u043E \u0444\u0430\u043D\u0442\u0430\u0441\u0442\u0438\u0447\u0435\u0441\u043A\u0438\u0435 \u043C\u0430\u0448\u0438\u043D\u044B \u0438 \u0433\u0438\u0433\u0430\u043D\u0442\u0441\u043A\u0438\u0435 \u0441\u0430\u043C\u043E\u0440\u0430\u0437\u0440\u0443\u0448\u0430\u044E\u0449\u0438\u0435\u0441\u044F \u043A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0446\u0438\u0438 \u0438\u043D\u043E\u0433\u0434\u0430 \u043D\u0430\u0437\u044B\u0432\u0430\u044E\u0442 \u043C\u0435\u0442\u0430\u043C\u0435\u0445\u0430\u043D\u0438\u043A\u043E\u0439." , "lang" : "ru" } ,
+      { "type" : "literal", "value" : "Jean Tinguely (22 May 1925 \u2013 30 August 1991) was a Swiss painter and sculptor. He is best known for his sculptural machines or kinetic art, in the Dada tradition; known officially as metamechanics. Tinguely's art satirized the mindless overproduction of material goods in advanced industrial society." , "lang" : "en" } ] ,
+    "http://dbpedia.org/ontology/thumbnail" : [ { "type" : "uri", "value" : "http://commons.wikimedia.org/wiki/Special:FilePath/Tinguely_by_Wolleh.jpg?width=300" } ] ,
+    "http://dbpedia.org/ontology/birthDate" : [ { "type" : "literal", "value" : "1925-05-22" , "datatype" : "http://www.w3.org/2001/XMLSchema#date" } ,
+      { "type" : "literal", "value" : "1925-5-22" , "datatype" : "http://www.w3.org/2001/XMLSchema#date" } ] ,
+    "http://dbpedia.org/ontology/deathDate" : [ { "type" : "literal", "value" : "1991-08-30" , "datatype" : "http://www.w3.org/2001/XMLSchema#date" } ,
+      { "type" : "literal", "value" : "1991-8-30" , "datatype" : "http://www.w3.org/2001/XMLSchema#date" } ] ,
+    "http://dbpedia.org/ontology/deathPlace" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Bern,_Switzerland" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Bern" } ] ,
+    "http://dbpedia.org/ontology/wikiPageRevisionID" : [ { "type" : "literal", "value" : 740636131 , "datatype" : "http://www.w3.org/2001/XMLSchema#integer" } ] ,
+    "http://dbpedia.org/ontology/birthPlace" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Fribourg" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Fribourg,_Switzerland" } ] ,
+    "http://dbpedia.org/ontology/wikiPageID" : [ { "type" : "literal", "value" : 7328346 , "datatype" : "http://www.w3.org/2001/XMLSchema#integer" } ] ,
+    "http://dbpedia.org/ontology/nationality" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Switzerland" } ] ,
+    "http://purl.org/linguistics/gold/hypernym" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Painter" } ] ,
+    "http://dbpedia.org/ontology/influenced" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/David_Shrigley" } ] ,
+    "http://dbpedia.org/ontology/field" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Sculpture" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Painting" } ] } ,
+  "http://dbpedia.org/resource/Stravinsky_Fountain" : { "http://dbpedia.org/ontology/author" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Jean_Tinguely" } ] } ,
+  "http://en.wikipedia.org/wiki/Jean_Tinguely" : { "http://xmlns.com/foaf/0.1/primaryTopic" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Jean_Tinguely" } ] } ,
+  "http://dbpedia.org/resource/Brose_Partington" : { "http://dbpedia.org/ontology/influencedBy" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Jean_Tinguely" } ] } ,
+  "http://dbpedia.org/resource/Patrice_Stellest" : { "http://dbpedia.org/ontology/influencedBy" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Jean_Tinguely" } ] } ,
+  "http://dbpedia.org/resource/Eva_Aeppli" : { "http://dbpedia.org/ontology/spouse" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Jean_Tinguely" } ] } ,
+  "http://dbpedia.org/resource/David_Shrigley" : { "http://dbpedia.org/ontology/influencedBy" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Jean_Tinguely" } ] } ,
+  "http://dbpedia.org/resource/Arthur_Ganson" : { "http://dbpedia.org/ontology/influencedBy" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Jean_Tinguely" } ] } ,
+  "http://dbpedia.org/resource/Tinguely_family" : { "http://dbpedia.org/ontology/wikiPageRedirects" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Jean_Tinguely" } ] } ,
+  "http://dbpedia.org/resource/Tinguely" : { "http://dbpedia.org/ontology/wikiPageRedirects" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Jean_Tinguely" } ] }
+}
+;
+	var dataAuth = "http://dbpedia.org/resource/Jean_Tinguely";
+	var dataUrl = "jean_tinguely.html";
+	var dataResourceType = "participant";
+	var dataName = "Jean Tinguely";
+ 	
+</script>
+
+
+
+
+
+<script type="text/javascript">
+
+
+	
+	
+	
+
+	$(document).ready(function($) {
+		
+		
+		padb.resource.initialize();
+			 
+		$( '.scrollable' ).
+		bind( 'mousewheel DOMMouseScroll', function ( e ) {
+			
+			if( e.originalEvent ) e = e.originalEvent;
+			
+			var delta = e.wheelDelta || -e.detail;
+			this.scrollTop += ( delta < 0 ? 1 : -1 ) * 30;
+			e.preventDefault();
+		});		 
+		
+		
+				
+		$.ajaxSetup ({
+			// Disable caching of AJAX responses
+			cache: false
+		});		
+		
+	});
+	
+
+	
+	
+	
+	
+	
+</script>
+
+
+
+
+ 
+<br />
+<div class="container"  style="position:relative;">
+	   
+      <div id="resourceLinks"></div> 
+       
+       
+       
+       
+              
+       
+           
+           
+           
+          <div class="row addSection">
+              <div class="span1 addSectionIconHolder">
+              
+                <i class="icon-user"></i>
+              
+              </div>
+          
+              <div class="span11">
+                <span>Performer</span>
+                <hr>
+                <br />
+              </div>
+        </div>
+        <div class="row">
+            <div class="span1">
+            </div>
+            <div class="span11" style="position:relative">
+                
+                
+                
+                
+               <div>
+                                       <div class="pull-right vignette">
+                            <img  src="../cache/media/jean_tinguely.jpg" />
+                            
+                        </div>
+                        
+                                           
+                <div class="pull-left" style="width:80%;">
+                     
+                     <h5 id="resourceLDName">Jean Tinguely</h5>
+                     <h5 id="resourceLDAbstract"></h5>
+                     
+                     
+                     <div id="resourceSameAs">
+                        <h5>External Data:</h5>
+                        
+                        
+                     </div>
+                
+                </div>   
+                
+                <br style="clear:both;" />
+            </div>
+            
+            
+                
+            </div>
+        </div>    
+         
+    
+    
+    
+    
+    
+    
+       <div class="row addSection">
+			<div class="span1 addSectionIconHolder">              
+                <i class="icon-asterisk"></i>
+              
+              </div>
+          
+              <div class="span11">
+                <span>Events </span><span id="resourceEventCount"></span>
+                <hr>
+              </div>
+        </div>
+    
+    
+    
+    
+    
+    
+    
+        <div class="row">
+            <div class="span1"></div>
+            <div class="span11" style="position:relative">
+                  
+                 <div class="">
+                    <div id="resourceEventsEvents" class="scrollable">
+                           <table class="table table-condensed table-hover table-striped">
+                               <thead>
+                                <tr>
+                                  <th>Date</th>
+                                  
+                                  <th>Title</th>
+                                  <th>Location</th>
+                                  <th></th>
+                                </tr>
+                              </thead>
+                              <tbody id="resourceEventsEventsRows"> 
+                              </tbody>
+                            </table>
+                     
+                    </div>
+                    
+                    <div id="resourceEventsExport">
+                    
+                    	<input  name="resourceEventsSearch" class="span3" id="resourceEventsSearch"  type="text" placeholder="Filter: names, places, dates">
+                    	<button class="btn btn-mini btn-danger" id="resourceEventsClearFilter"><i class="icon-remove">&nbsp;Clear Filter</i></button>
+                   		<button class="btn btn-mini btn-info" title="Render the currently filitered data as a network" id="resourceRenderEventNetwork"> <img src="../img/icon-network-white.png" style="height:15px; width:auto" /> Two-Mode Event Network</button>
+                   		<button class="btn btn-mini btn-info" title="Render the currently filitered data as a network" id="resourceRenderEventMap"> <i class="icon-globe"></i> Map Event Locations</button>
+                   		<button class="btn btn-mini btn-success" title="Download network as Gephi File" id="resourceDownloadEventGephi"> <img src="../img/icon-gephi.png" style="height:15px; width:auto" /> Donwload Gephi Network</button>
+
+                 
+                    </div>                 
+                </div>
+                <br style="clear:both;" />
+            </div>
+            
+            
+                
+         </div>    
+    
+     
+       <div class="row addSection">
+              <div class="span1">
+              
+                <img src="../img/social-network.png" style=" margin-left:25px; margin-bottom:10px;" />
+              
+              </div>
+          
+              <div class="span11">
+                <span>Performance Network</span> 
+                <hr>
+              </div>
+        </div>
+        
+        <div class="row">
+            <div class="span1">
+            </div>
+            <div class="span11" style="position:relative">
+                
+               	<div style="width: 100%; height:500px;" id="egoNetwork">
+            
+                
+             	</div> 
+                <div class="well pull-left well-small" id="egoNetworkControls">
+                    <span class="rangeLabels">Node Charge</span>
+                    <input type="range" id="resourceEgoNetworkCharge" min="-1000" max="100" value="-120" data-def="-700" />
+                    <br /><span class="rangeLabels">Gravity</span>
+                    <input type="range" id="resourceEgoNetworkGravity" min="0" max="1" value="0.1" step="0.01" data-def="0.3" /> 
+                    <br /><span class="rangeLabels">Edge Length</span>
+                    <input type="range" id="resourceEgoNetworkDistance" min="0" max="300" value="50" data-def="50"  />      
+                    <br /><span class="rangeLabels">Edge Strength</span>
+                    <input type="range" id="resourceEgoNetworkStrength" min="0" max="3" value="1" data-def="0.15" step="0.1"  /> 
+                    <br /><br />
+                    <button type="button" id="resourceEgoNetworkLabelsButton" class="btn btn-mini" title="Show node labels." data-toggle="button">Show Labels</button>  
+                    <button type="button" id="resourceEgoNetworkLiveButton" class="btn btn-mini" title="Show realtime network rendering" data-toggle="button">Live Rendering</button>                     
+                </div>
+                
+                <div class="well pull-left well-small egoNetworkControls span7" style="margin-left:20px;" >
+                
+                	<input  name="resourceEgoNetworkSearch" class="span3" id="resourceEgoNetworkSearch"  type="text" placeholder="Filter: names, places, dates">
+					<button class="btn btn-mini btn-danger" id="resourceEgoClearFilter"><i class="icon-remove">&nbsp;Clear Filter</i></button>
+                    <button class="btn btn-mini btn-success" title="Download network as Gephi File" id="resourceDownloadEgoGephi"> <img src="../img/icon-gephi.png" style="height:15px; width:auto" /> Donwload Gephi Network</button>
+
+                </div>
+                
+            </div>
+        </div>           
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+	
+
+	
+
+
+	
+
+
+</div>
+
+
+
+
+    <div id="resourceEventNetworkModal" class="modal container hide fade" style="min-height:500px" tabindex="-1">
+ 
+      <div class="modal-body">
+      	
+        <div id="eventNetwork" style="height:400px; width:100%">
+        
+        </div>
+      
+      </div>
+      <div class="modal-footer" style="height:20px;">
+      	
+        <div class="well pull-left well-small">
+        	<span class="rangeLabels">Node Charge</span>
+        	<input type="range" id="resourceEventNetworkCharge" min="-800" max="200" value="-120" data-def="-120" />
+            <span class="rangeLabels">Gravity</span>
+        	<input type="range" id="resourceEventNetworkGravity" min="0" max="1" value="0.1" step="0.01" data-def="0.1" /> 
+            <span class="rangeLabels">Edge Length</span>
+        	<input type="range" id="resourceEventNetworkDistance" min="0" max="300" value="50" data-def="50"  />      
+            <span class="rangeLabels">Edge Strength</span>
+        	<input type="range" id="resourceEventNetworkStrength" min="0" max="5" value="1" data-def="1" step="0.1"  />    
+            <button type="button" id="resourceEventNetworkLabelsButton" class="btn btn-mini" data-toggle="button">Show Labels</button>                     
+		</div>
+        <div class="pull-right">
+        <button type="button" data-dismiss="modal" class="btn">Close</button>
+       	</div>
+       </div>
+    </div>
+    
+    
+    
+    
+     <div id="resourceEventMapModal" class="modal container hide fade" style="min-height:500px" tabindex="-1">
+ 
+      <div class="modal-body">
+      	
+        <div id="eventMap" style="height:400px; width:100%">
+        
+        </div>
+      
+      </div>
+      <div class="modal-footer" style="height:20px;">
+      	
+        <div class="well pull-left well-small">                  
+		</div>
+        <div class="pull-right">
+        <button type="button" data-dismiss="modal" class="btn">Close</button>
+       	</div>
+       </div>
+    </div>
+
+<br /><br /><br /><br /><br /><br />
+
+<script type="text/javascript">    var _gaq = _gaq || [];   _gaq.push(['_setAccount', 'UA-10371295-7']);   _gaq.push(['_trackPageview']);    (function() {     var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);   })();  </script>
+
+</body>
+
+<!-- Mirrored from padb.net/resource/jean_tinguely by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 11 Jan 2020 22:23:55 GMT -->
+</html>

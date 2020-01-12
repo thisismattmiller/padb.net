@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<gexf version="1.2" xmlns="http://www.gexf.net/1.2draft">
+ <graph mode="static" defaultedgetype="undirected">
+  <nodes>
+   <node id="54" label="Henry Flynt"/>
+   <node id="88" label="Ay-O"/>
+   <node id="123" label="George Maciunas"/>
+   <node id="151" label="Ben Vautier"/>
+   <node id="165" label="Tony Conrad"/>
+   <node id="281" label="Takako Saito"/>
+   <node id="290" label="Allen Ginsberg"/>
+   <node id="291" label="Abdallah Schleifer"/>
+  </nodes>
+  <edges>
+   <edge source="54" target="88"/>
+   <edge source="54" target="123"/>
+   <edge source="54" target="151"/>
+   <edge source="54" target="165"/>
+   <edge source="54" target="281"/>
+   <edge source="54" target="290"/>
+   <edge source="54" target="291"/>
+   <edge source="88" target="123"/>
+   <edge source="88" target="151"/>
+   <edge source="88" target="165"/>
+   <edge source="88" target="281"/>
+   <edge source="88" target="290"/>
+   <edge source="88" target="291"/>
+   <edge source="123" target="151"/>
+   <edge source="123" target="165"/>
+   <edge source="123" target="281"/>
+   <edge source="123" target="290"/>
+   <edge source="123" target="291"/>
+   <edge source="151" target="165"/>
+   <edge source="151" target="281"/>
+   <edge source="151" target="290"/>
+   <edge source="151" target="291"/>
+   <edge source="165" target="281"/>
+   <edge source="165" target="290"/>
+   <edge source="165" target="291"/>
+   <edge source="281" target="290"/>
+   <edge source="281" target="291"/>
+   <edge source="290" target="291"/>
+  </edges>
+ </graph>
+</gexf>

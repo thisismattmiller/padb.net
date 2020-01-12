@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<gexf version="1.2" xmlns="http://www.gexf.net/1.2draft">
+ <graph mode="static" defaultedgetype="undirected">
+  <nodes>
+   <node id="151" label="Ben Vautier"/>
+   <node id="255" label="Dany Gobert"/>
+   <node id="256" label="Serge Oldenbourg"/>
+   <node id="260" label="Bilious"/>
+   <node id="261" label="Annie Vautier"/>
+  </nodes>
+  <edges>
+   <edge source="151" target="255"/>
+   <edge source="151" target="256"/>
+   <edge source="151" target="260"/>
+   <edge source="151" target="261"/>
+   <edge source="255" target="256"/>
+   <edge source="255" target="260"/>
+   <edge source="255" target="261"/>
+   <edge source="256" target="260"/>
+   <edge source="256" target="261"/>
+   <edge source="260" target="261"/>
+  </edges>
+ </graph>
+</gexf>

@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<gexf version="1.2" xmlns="http://www.gexf.net/1.2draft">
+ <graph mode="static" defaultedgetype="undirected">
+  <nodes>
+   <node id="161" label="Joseph Beuys"/>
+   <node id="550" label="Joachim Druckwitz"/>
+   <node id="551" label="Anatol Herzfeld"/>
+   <node id="552" label="Ulrich Meister"/>
+   <node id="553" label="Johannes Stuttgen"/>
+  </nodes>
+  <edges>
+   <edge source="161" target="550"/>
+   <edge source="161" target="551"/>
+   <edge source="161" target="552"/>
+   <edge source="161" target="553"/>
+   <edge source="550" target="551"/>
+   <edge source="550" target="552"/>
+   <edge source="550" target="553"/>
+   <edge source="551" target="552"/>
+   <edge source="551" target="553"/>
+   <edge source="552" target="553"/>
+  </edges>
+ </graph>
+</gexf>

@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<gexf version="1.2" xmlns="http://www.gexf.net/1.2draft">
+ <graph mode="static" defaultedgetype="undirected">
+  <nodes>
+   <node id="5" label="Armando"/>
+   <node id="6" label="Kees Van Bohemen"/>
+   <node id="7" label="Jan Henderikse"/>
+   <node id="8" label="Henk Peeters"/>
+   <node id="9" label="Jan Schoonhoven"/>
+   <node id="17" label="Irene Weitz"/>
+   <node id="31" label="Piero Manzoni"/>
+   <node id="46" label="Arthur Koepcke"/>
+   <node id="47" label="Silvano Lora"/>
+   <node id="48" label="Christian Megert"/>
+   <node id="64" label="Bram Bogart"/>
+   <node id="65" label="Victor Vasarely"/>
+   <node id="66" label="Richard Winther"/>
+   <node id="67" label="Dieter Roth"/>
+   <node id="68" label="Eric Andersen"/>
+   <node id="49" label="Robert Filliou"/>
+   <node id="85" label="Hans Staudacher"/>
+   <node id="86" label="Niki de Saint Phalle"/>
+   <node id="87" label="Wilhelm Frederik Christian Freddie"/>
+   <node id="101" label="Eric Bonne"/>
+   <node id="111" label="Bamse Kragh-Jacobsen"/>
+   <node id="61" label="Daniel Spoerri"/>
+   <node id="62" label="Emmett Williams"/>
+   <node id="120" label="Otto Olsen"/>
+   <node id="142" label="Borge Sornum"/>
+  </nodes>
+  <edges>
+   <edge source="5" target="6"/>
+   <edge source="5" target="7"/>
+   <edge source="5" target="8"/>
+   <edge source="5" target="9"/>
+   <edge source="6" target="7"/>
+   <edge source="6" target="8"/>
+   <edge source="6" target="9"/>
+   <edge source="7" target="8"/>
+   <edge source="7" target="9"/>
+   <edge source="8" target="9"/>
+   <edge source="46" target="47"/>
+   <edge source="46" target="48"/>
+   <edge source="47" target="48"/>
+   <edge source="6" target="64"/>
+   <edge source="6" target="65"/>
+   <edge source="6" target="66"/>
+   <edge source="64" target="65"/>
+   <edge source="64" target="66"/>
+   <edge source="65" target="66"/>
+   <edge source="48" target="67"/>
+  </edges>
+ </graph>
+</gexf>

@@ -1,0 +1,544 @@
+<!doctype html>
+<html>
+
+<!-- Mirrored from padb.net/resource/louis_andriessen by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 11 Jan 2020 22:17:55 GMT -->
+<head>
+<meta charset="UTF-8">
+<title>padb.net</title>
+
+
+<link rel="stylesheet" href="../css/bootstrap.css">
+<link rel="stylesheet" href="../css/font-awesome.css">
+<link rel="stylesheet" href="../css/site.css">
+<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+<link rel="icon" type="image/png" href="../img/favicon.png">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/bootstrap-modal.js"></script>
+<script src="../js/bootstrap-modalmanager.js"></script>
+
+<script src="../js/d3.min.js"></script>
+<script src="../js/html5slider.js"></script>
+<script src="../js/topojson.js"></script>
+<script src="../js/padb.js"></script>
+
+
+</head>
+<body>
+    
+    
+	<div style="position:relative;">        
+
+ 		<div style=" border-bottom:solid 1px #ccc;">
+        	<div class="container">
+                
+                 <div id="header">
+                 	
+                     <div class="logo"><a href="../index.html"><span>|||</span>padb</a> </div>
+                    
+                     						<div id="resourceName" style="font-size:2em">Louis Andriessen</div>
+					
+                 </div>
+                
+                
+        	</div>
+            
+    	</div>
+ 
+   </div>
+<script src="../js/countriesData.js"></script>
+
+<script type="text/javascript">
+	//preloaded json from the server
+
+	var dataSameAs = [
+  {
+    "uri": "http://wikidata.dbpedia.org/resource/Q504743",
+    "numDuplicates": "47",
+    "duplicates": [
+      "http://dbpedia.org/resource/Louis_Andriessen",
+      "http://bbc.co.uk/music/artists/4b5e4dc5-2544-405c-a568-d2021b5be16c#artist",
+      "http://bnb.data.bl.uk/id/person/AndriessenLouis1939-",
+      "http://ca.dbpedia.org/resource/Louis_Andriessen",
+      "http://d-nb.info/gnd/118503022",
+      "http://d-nb.info/gnd/118503022/about/rdf",
+      "http://da.dbpedia.org/resource/Louis_Andriessen",
+      "http://data.bibsys.no/data/notrbib/authorityentry/x90364765",
+      "http://data.bnf.fr/13944260",
+      "http://datos.bne.es/resource/XX966818",
+      "http://dbpedialite.org/things/18214#id",
+      "http://dbtune.org/classical/resource/composer/andriessen_louis",
+      "http://dbtune.org/musicbrainz/resource/artist/4b5e4dc5-2544-405c-a568-d2021b5be16c",
+      "http://de.dbpedia.org/resource/Louis_Andriessen",
+      "http://en.wikipedia.org/wiki/Louis_Andriessen",
+      "http://es.dbpedia.org/resource/Louis_Andriessen",
+      "http://et.dbpedia.org/resource/Louis_Andriessen",
+      "http://fi.dbpedia.org/resource/Louis_Andriessen",
+      "http://fr.dbpedia.org/resource/Louis_Andriessen",
+      "http://freebase.com//m/01kc38c",
+      "http://id.loc.gov/authorities/names/n81067980",
+      "http://isni-url.oclc.nl/isni/0000000114800920",
+      "http://it.dbpedia.org/resource/Louis_Andriessen",
+      "http://ja.dbpedia.org/resource/\u30EB\u30A4\u30FB\u30A2\u30F3\u30C9\u30EA\u30FC\u30BB\u30F3",
+      "http://mpii.de/yago/resource/Louis_Andriessen",
+      "http://musicbrainz.org/artist/4b5e4dc5-2544-405c-a568-d2021b5be16c",
+      "http://nl.dbpedia.org/resource/Louis_Andriessen",
+      "http://nl.wikipedia.org/wiki/Louis_Andriessen",
+      "http://no.dbpedia.org/resource/Louis_Andriessen",
+      "http://pl.dbpedia.org/resource/Louis_Andriessen",
+      "http://rdf.freebase.com/ns/m.01kc38c",
+      "http://rdf.freebase.com/ns/en.louis_andriessen",
+      "http://rdf.freebase.com/ns/guid.9202a8c04000641f8000000003158d0b",
+      "http://ru.dbpedia.org/resource/\u0410\u043D\u0434\u0440\u0438\u0441\u0441\u0435\u043D,_\u041B\u0443\u0438",
+      "http://sv.dbpedia.org/resource/Louis_Andriessen",
+      "http://umbel.org/umbel/ne/wikipedia/Louis_Andriessen",
+      "http://viaf.org/viaf/5123096",
+      "http://viaf.org/viaf/97625048",
+      "http://viaf.org/viaf/104843087",
+      "http://viaf.org/viaf/111315943",
+      "http://wikidata.dbpedia.org/resource/Q504743",
+      "http://www.bbc.co.uk/music/artists/4b5e4dc5-2544-405c-a568-d2021b5be16c",
+      "http://www.bbc.co.uk/music/artists/4b5e4dc5-2544-405c-a568-d2021b5be16c#artist",
+      "http://www.discogs.com/artist/Louis+Andriessen",
+      "http://www.idref.fr/069181527",
+      "http://www.wikidata.org/entity/Q504743",
+      "http://yago-knowledge.org/resource/Louis_Andriessen"
+    ]
+  }
+]
+;
+	var dataDbpedia = {
+  "http://dbpedia.org/resource/Andriessen" : { "http://dbpedia.org/ontology/wikiPageDisambiguates" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Louis_Andriessen" } ] } ,
+  "http://dbpedia.org/resource/Louis_Andriessen" : { "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { "type" : "uri", "value" : "http://dbpedia.org/class/yago/PhysicalEntity100001930" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Person100007846" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Object100002684" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/YagoLegalActor" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/YagoLegalActorGeo" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Composer109947232" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Wikicat20th-centuryClassicalComposers" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Wikicat21st-centuryClassicalComposers" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatDutchComposers" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatPeopleFromBerlin" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatPupilsOfLucianoBerio" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatAnarchists" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatDutchAnarchists" } ,
+      { "type" : "uri", "value" : "http://www.w3.org/2002/07/owl#Thing" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Entertainer109616922" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Artist109812338" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Creator109614315" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Performer110415638" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Musician110339966" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Musician110340312" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Enrollee110059162" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatLivingPeople" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Student110665698" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Anarchist109791816" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Pianist110430665" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Radical110503452" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatPostmodernComposers" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatNonesuchRecordsArtists" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatOperaComposers" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatContemporaryClassicalMusicPerformers" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/CausalAgent100007347" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Whole100003553" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Wikicat20th-centuryComposers" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/LivingThing100004258" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Organism100004475" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/ontology/Person" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatPeopleFromUtrecht(city)" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatPeopleFromMilan" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatMinimalistComposers" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatDutchClassicalPianists" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatDutchClassicalComposers" } ] ,
+    "http://www.w3.org/2000/01/rdf-schema#label" : [ { "type" : "literal", "value" : "Louis Andriessen" , "lang" : "fr" } ,
+      { "type" : "literal", "value" : "Louis Andriessen" , "lang" : "nl" } ,
+      { "type" : "literal", "value" : "Louis Andriessen" , "lang" : "en" } ,
+      { "type" : "literal", "value" : "Louis Andriessen" , "lang" : "de" } ,
+      { "type" : "literal", "value" : "Louis Andriessen" , "lang" : "es" } ,
+      { "type" : "literal", "value" : "\u0410\u043D\u0434\u0440\u0438\u0441\u0441\u0435\u043D, \u041B\u0443\u0438" , "lang" : "ru" } ,
+      { "type" : "literal", "value" : "Louis Andriessen" , "lang" : "pl" } ,
+      { "type" : "literal", "value" : "\u8DEF\u6613\u65AF\u00B7\u5B89\u5FB7\u91CC\u68EE" , "lang" : "zh" } ,
+      { "type" : "literal", "value" : "\u30EB\u30A4\u30FB\u30A2\u30F3\u30C9\u30EA\u30FC\u30BB\u30F3" , "lang" : "ja" } ,
+      { "type" : "literal", "value" : "Louis Andriessen" , "lang" : "it" } ] ,
+    "http://www.w3.org/2000/01/rdf-schema#comment" : [ { "type" : "literal", "value" : "Louis Joseph Andriessen (Utrecht, 6 juni 1939) is een Nederlands componist." , "lang" : "nl" } ,
+      { "type" : "literal", "value" : "\u8DEF\u6613\u65AF\u00B7\u5B89\u5FB7\u91CC\u68EE\uFF08\u82F1\u8BED\uFF1ALouis Andriessen\uFF0C1939\u5E746\u67086\u65E5-\uFF09\uFF0C \u662F\u4E00\u540D\u8377\u862D\u4F5C\u66F2\u5BB6\u8207\u92FC\u7434\u5BB6\uFF0C\u4F4F\u5728\u963F\u59C6\u65AF\u7279\u4E39\u3002\u4ED6\u662F\u6D77\u7259\u7687\u5BB6\u97F3\u6A02\u5B78\u9662\u7684\u4F5C\u66F2\u7CFB\u6559\u6388\u3002" , "lang" : "zh" } ,
+      { "type" : "literal", "value" : "Louis AndriessenFichier:Louis Andriessen 1983.jpg Louis Andriessen en 1983. \u0152uvres principales De StaatDe MaterieWriting to Vermeer . Louis Andriessen, n\u00E9 le 6 juin 1939 \u00E0 Utrecht aux Pays-Bas, est un compositeur n\u00E9erlandais." , "lang" : "fr" } ,
+      { "type" : "literal", "value" : "Louis Joseph Andriessen (* 6. Juni 1939 in Utrecht) ist ein niederl\u00E4ndischer Komponist. Er gilt \u201Eals Schl\u00FCsselfigur der zeitgen\u00F6ssischen niederl\u00E4ndischen Kunstszene.\u201C" , "lang" : "de" } ,
+      { "type" : "literal", "value" : "Louis Andriessen (Utrecht, 6 de junio de 1939), es un compositor neerland\u00E9s de m\u00FAsica contempor\u00E1nea." , "lang" : "es" } ,
+      { "type" : "literal", "value" : "\u041B\u0443\u0438 \u0410\u043D\u0434\u0440\u0438\u0441\u0441\u0435\u043D (\u043D\u0438\u0434\u0435\u0440\u043B. Louis Andriessen; \u0440\u043E\u0434. 6 \u0438\u044E\u043D\u044F 1939, \u0423\u0442\u0440\u0435\u0445\u0442) \u2014 \u043D\u0438\u0434\u0435\u0440\u043B\u0430\u043D\u0434\u0441\u043A\u0438\u0439 \u043A\u043E\u043C\u043F\u043E\u0437\u0438\u0442\u043E\u0440, \u0438\u0441\u0442\u043E\u0440\u0438\u043A \u0438 \u0442\u0435\u043E\u0440\u0435\u0442\u0438\u043A \u043C\u0443\u0437\u044B\u043A\u0438. \u0410\u043D\u0434\u0440\u0438\u0441\u0441\u0435\u043D\u0430 \u043D\u0430\u0437\u044B\u0432\u0430\u044E\u0442 \u0441\u0430\u043C\u044B\u043C \u0438\u0437\u0432\u0435\u0441\u0442\u043D\u044B\u043C \u0432 \u043C\u0438\u0440\u0435 \u043D\u0438\u0434\u0435\u0440\u043B\u0430\u043D\u0434\u0441\u043A\u0438\u043C \u043A\u043E\u043C\u043F\u043E\u0437\u0438\u0442\u043E\u0440\u043E\u043C, \u0441\u0430\u043C\u044B\u043C \u0432\u043B\u0438\u044F\u0442\u0435\u043B\u044C\u043D\u044B\u043C \u043C\u0443\u0437\u044B\u043A\u0430\u043B\u044C\u043D\u044B\u043C \u0434\u0435\u044F\u0442\u0435\u043B\u0435\u043C XX \u0432\u0435\u043A\u0430 \u0432 \u0441\u0442\u0440\u0430\u043D\u0435." , "lang" : "ru" } ,
+      { "type" : "literal", "value" : "Louis Andriessen (Dutch pronunciation: [lu\u02C8i \u02C8\u0251ndris\u0259(n)]; born 6 June 1939) is a Dutch composer and pianist based in Amsterdam. He is a lecturer at the Royal Conservatory of The Hague. He was recipient of the Gaudeamus International Composers Award in 1959." , "lang" : "en" } ,
+      { "type" : "literal", "value" : "Louis Joseph Andriessen (ur. 6 czerwca 1939 w Utrechcie) \u2013 holenderski kompozytor i pianista mieszkaj\u0105cy w Amsterdamie. Wyk\u0142ada kompozycj\u0119 w Kr\u00F3lewskim Konserwatorium w Hadze. By\u0142 laureatem Mi\u0119dzynarodowej Nagrody Gaudeamus Kompozytor\u00F3w w 1959 roku. Pochodzi\u0142 z rodziny o tradycjach muzycznych. Zar\u00F3wno jego ojciec, Hendrik jak i stryj, Willem byli instrumentalistami i nauczycielami muzyki. Jego starszy brat, Juriaan te\u017C by\u0142 kompozytorem." , "lang" : "pl" } ,
+      { "type" : "literal", "value" : "\u30EB\u30A4\u30FB\u30A2\u30F3\u30C9\u30EA\u30FC\u30BB\u30F3\uFF08Louis Andriessen, 1939\u5E746\u67086\u65E5 - \uFF09\u306F\u3001\u30A2\u30E0\u30B9\u30C6\u30EB\u30C0\u30E0\u306B\u62E0\u70B9\u3092\u7F6E\u304F\u30AA\u30E9\u30F3\u30C0\u306E\u4F5C\u66F2\u5BB6\u3001\u30D4\u30A2\u30CB\u30B9\u30C8\u3002" , "lang" : "ja" } ] ,
+    "http://www.w3.org/2002/07/owl#sameAs" : [ { "type" : "uri", "value" : "http://it.dbpedia.org/resource/Louis_Andriessen" } ,
+      { "type" : "uri", "value" : "http://pl.dbpedia.org/resource/Louis_Andriessen" } ,
+      { "type" : "uri", "value" : "http://yago-knowledge.org/resource/Louis_Andriessen" } ,
+      { "type" : "uri", "value" : "http://www.wikidata.org/entity/Q504743" } ,
+      { "type" : "uri", "value" : "http://wikidata.dbpedia.org/resource/Q504743" } ,
+      { "type" : "uri", "value" : "http://es.dbpedia.org/resource/Louis_Andriessen" } ,
+      { "type" : "uri", "value" : "http://d-nb.info/gnd/118503022" } ,
+      { "type" : "uri", "value" : "http://fr.dbpedia.org/resource/Louis_Andriessen" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Louis_Andriessen" } ,
+      { "type" : "uri", "value" : "http://ja.dbpedia.org/resource/\u30EB\u30A4\u30FB\u30A2\u30F3\u30C9\u30EA\u30FC\u30BB\u30F3" } ,
+      { "type" : "uri", "value" : "http://nl.dbpedia.org/resource/Louis_Andriessen" } ,
+      { "type" : "uri", "value" : "http://de.dbpedia.org/resource/Louis_Andriessen" } ,
+      { "type" : "uri", "value" : "http://rdf.freebase.com/ns/m.01kc38c" } ,
+      { "type" : "uri", "value" : "http://data.europa.eu/euodp/jrc-names/Louis_Andriessen" } ] ,
+    "http://purl.org/dc/terms/subject" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Gaudeamus_Composition_Competition_prize-winners" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Nonesuch_Records_artists" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Postmodern_composers" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Dutch_anarchists" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Pupils_of_Luciano_Berio" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:International_Rostrum_of_Composers_prize-winners" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:1939_births" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:People_from_Utrecht_(city)" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Dutch_male_classical_composers" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Dutch_classical_pianists" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Royal_Conservatory_of_The_Hague_faculty" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Contemporary_classical_music_performers" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Royal_Conservatory_of_The_Hague_alumni" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Living_people" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:21st-century_classical_composers" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:20th-century_classical_composers" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Grawemeyer_Award_winners" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Minimalist_composers" } ] ,
+    "http://xmlns.com/foaf/0.1/name" : [ { "type" : "literal", "value" : "Louis Andriessen" , "lang" : "en" } ] ,
+    "http://xmlns.com/foaf/0.1/depiction" : [ { "type" : "uri", "value" : "http://commons.wikimedia.org/wiki/Special:FilePath/Louis_Andriessen_1983.jpg" } ] ,
+    "http://purl.org/dc/terms/description" : [ { "type" : "literal", "value" : "Dutch composer and pianist" , "lang" : "en" } ] ,
+    "http://xmlns.com/foaf/0.1/givenName" : [ { "type" : "literal", "value" : "Louis" , "lang" : "en" } ] ,
+    "http://xmlns.com/foaf/0.1/gender" : [ { "type" : "literal", "value" : "male" , "lang" : "en" } ] ,
+    "http://xmlns.com/foaf/0.1/isPrimaryTopicOf" : [ { "type" : "uri", "value" : "http://en.wikipedia.org/wiki/Louis_Andriessen" } ] ,
+    "http://xmlns.com/foaf/0.1/surname" : [ { "type" : "literal", "value" : "Andriessen" , "lang" : "en" } ] ,
+    "http://www.w3.org/ns/prov#wasDerivedFrom" : [ { "type" : "uri", "value" : "http://en.wikipedia.org/wiki/Louis_Andriessen?oldid=740822596" } ] ,
+    "http://dbpedia.org/ontology/wikiPageExternalLink" : [ { "type" : "uri", "value" : "http://www.boosey.com/pages/cr/composer/composer_main.asp?composerid=2690" } ,
+      { "type" : "uri", "value" : "http://www.boosey.com/podcast/Louis-Andriessen-Andriessen-on-Andriessen/12868" } ,
+      { "type" : "uri", "value" : "https://web.archive.org/web/20060721191103/http:/www.topologymusic.com/comment.php?comment.news.54" } ,
+      { "type" : "uri", "value" : "https://web.archive.org/web/20101114211145/http:/www.londonsinfonietta.org.uk/artist/louis-andriessen" } ] ,
+    "http://dbpedia.org/ontology/abstract" : [ { "type" : "literal", "value" : "Louis AndriessenFichier:Louis Andriessen 1983.jpg Louis Andriessen en 1983. \u0152uvres principales De StaatDe MaterieWriting to Vermeer . Louis Andriessen, n\u00E9 le 6 juin 1939 \u00E0 Utrecht aux Pays-Bas, est un compositeur n\u00E9erlandais." , "lang" : "fr" } ,
+      { "type" : "literal", "value" : "\u041B\u0443\u0438 \u0410\u043D\u0434\u0440\u0438\u0441\u0441\u0435\u043D (\u043D\u0438\u0434\u0435\u0440\u043B. Louis Andriessen; \u0440\u043E\u0434. 6 \u0438\u044E\u043D\u044F 1939, \u0423\u0442\u0440\u0435\u0445\u0442) \u2014 \u043D\u0438\u0434\u0435\u0440\u043B\u0430\u043D\u0434\u0441\u043A\u0438\u0439 \u043A\u043E\u043C\u043F\u043E\u0437\u0438\u0442\u043E\u0440, \u0438\u0441\u0442\u043E\u0440\u0438\u043A \u0438 \u0442\u0435\u043E\u0440\u0435\u0442\u0438\u043A \u043C\u0443\u0437\u044B\u043A\u0438. \u0410\u043D\u0434\u0440\u0438\u0441\u0441\u0435\u043D\u0430 \u043D\u0430\u0437\u044B\u0432\u0430\u044E\u0442 \u0441\u0430\u043C\u044B\u043C \u0438\u0437\u0432\u0435\u0441\u0442\u043D\u044B\u043C \u0432 \u043C\u0438\u0440\u0435 \u043D\u0438\u0434\u0435\u0440\u043B\u0430\u043D\u0434\u0441\u043A\u0438\u043C \u043A\u043E\u043C\u043F\u043E\u0437\u0438\u0442\u043E\u0440\u043E\u043C, \u0441\u0430\u043C\u044B\u043C \u0432\u043B\u0438\u044F\u0442\u0435\u043B\u044C\u043D\u044B\u043C \u043C\u0443\u0437\u044B\u043A\u0430\u043B\u044C\u043D\u044B\u043C \u0434\u0435\u044F\u0442\u0435\u043B\u0435\u043C XX \u0432\u0435\u043A\u0430 \u0432 \u0441\u0442\u0440\u0430\u043D\u0435." , "lang" : "ru" } ,
+      { "type" : "literal", "value" : "Louis Andriessen (Utrecht, 6 de junio de 1939), es un compositor neerland\u00E9s de m\u00FAsica contempor\u00E1nea." , "lang" : "es" } ,
+      { "type" : "literal", "value" : "\u30EB\u30A4\u30FB\u30A2\u30F3\u30C9\u30EA\u30FC\u30BB\u30F3\uFF08Louis Andriessen, 1939\u5E746\u67086\u65E5 - \uFF09\u306F\u3001\u30A2\u30E0\u30B9\u30C6\u30EB\u30C0\u30E0\u306B\u62E0\u70B9\u3092\u7F6E\u304F\u30AA\u30E9\u30F3\u30C0\u306E\u4F5C\u66F2\u5BB6\u3001\u30D4\u30A2\u30CB\u30B9\u30C8\u3002" , "lang" : "ja" } ,
+      { "type" : "literal", "value" : "Louis Andriessen (Dutch pronunciation: [lu\u02C8i \u02C8\u0251ndris\u0259(n)]; born 6 June 1939) is a Dutch composer and pianist based in Amsterdam. He is a lecturer at the Royal Conservatory of The Hague. He was recipient of the Gaudeamus International Composers Award in 1959." , "lang" : "en" } ,
+      { "type" : "literal", "value" : "Louis Joseph Andriessen (ur. 6 czerwca 1939 w Utrechcie) \u2013 holenderski kompozytor i pianista mieszkaj\u0105cy w Amsterdamie. Wyk\u0142ada kompozycj\u0119 w Kr\u00F3lewskim Konserwatorium w Hadze. By\u0142 laureatem Mi\u0119dzynarodowej Nagrody Gaudeamus Kompozytor\u00F3w w 1959 roku. Pochodzi\u0142 z rodziny o tradycjach muzycznych. Zar\u00F3wno jego ojciec, Hendrik jak i stryj, Willem byli instrumentalistami i nauczycielami muzyki. Jego starszy brat, Juriaan te\u017C by\u0142 kompozytorem. Andriessen rozpocz\u0105\u0142 nauk\u0119 muzyki w 1953 r. u swojego ojca. W latach 1957-1962 studiowa\u0142 w Konserwatorium Kr\u00F3lewskim w Hadze. Kompozycji uczy\u0142 si\u0119 u ojca i Keesa van Baarena. Przez nast\u0119pne dwa lata studia te kontynuowa\u0142 u Luciana Beria w Mediolanie, a nast\u0119pnie w Berlinie (do 1965 r.)" , "lang" : "pl" } ,
+      { "type" : "literal", "value" : "Louis Joseph Andriessen (Utrecht, 6 juni 1939) is een Nederlands componist." , "lang" : "nl" } ,
+      { "type" : "literal", "value" : "\u8DEF\u6613\u65AF\u00B7\u5B89\u5FB7\u91CC\u68EE\uFF08\u82F1\u8BED\uFF1ALouis Andriessen\uFF0C1939\u5E746\u67086\u65E5-\uFF09\uFF0C \u662F\u4E00\u540D\u8377\u862D\u4F5C\u66F2\u5BB6\u8207\u92FC\u7434\u5BB6\uFF0C\u4F4F\u5728\u963F\u59C6\u65AF\u7279\u4E39\u3002\u4ED6\u662F\u6D77\u7259\u7687\u5BB6\u97F3\u6A02\u5B78\u9662\u7684\u4F5C\u66F2\u7CFB\u6559\u6388\u3002" , "lang" : "zh" } ,
+      { "type" : "literal", "value" : "Louis Joseph Andriessen (* 6. Juni 1939 in Utrecht) ist ein niederl\u00E4ndischer Komponist. Er gilt \u201Eals Schl\u00FCsselfigur der zeitgen\u00F6ssischen niederl\u00E4ndischen Kunstszene.\u201C" , "lang" : "de" } ] ,
+    "http://dbpedia.org/ontology/thumbnail" : [ { "type" : "uri", "value" : "http://commons.wikimedia.org/wiki/Special:FilePath/Louis_Andriessen_1983.jpg?width=300" } ] ,
+    "http://dbpedia.org/ontology/birthDate" : [ { "type" : "literal", "value" : "1939-6-6" , "datatype" : "http://www.w3.org/2001/XMLSchema#date" } ] ,
+    "http://dbpedia.org/ontology/wikiPageRevisionID" : [ { "type" : "literal", "value" : 740822596 , "datatype" : "http://www.w3.org/2001/XMLSchema#integer" } ] ,
+    "http://dbpedia.org/ontology/birthPlace" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Utrecht" } ] ,
+    "http://dbpedia.org/ontology/wikiPageID" : [ { "type" : "literal", "value" : 18214 , "datatype" : "http://www.w3.org/2001/XMLSchema#integer" } ] ,
+    "http://purl.org/linguistics/gold/hypernym" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Composer" } ] } ,
+  "http://dbpedia.org/resource/Allison_Cameron_(composer)" : { "http://dbpedia.org/ontology/influencedBy" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Louis_Andriessen" } ] } ,
+  "http://en.wikipedia.org/wiki/Louis_Andriessen" : { "http://xmlns.com/foaf/0.1/primaryTopic" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Louis_Andriessen" } ] }
+}
+;
+	var dataAuth = "http://dbpedia.org/resource/Louis_Andriessen";
+	var dataUrl = "louis_andriessen.html";
+	var dataResourceType = "participant";
+	var dataName = "Louis Andriessen";
+ 	
+</script>
+
+
+
+
+
+<script type="text/javascript">
+
+
+	
+	
+	
+
+	$(document).ready(function($) {
+		
+		
+		padb.resource.initialize();
+			 
+		$( '.scrollable' ).
+		bind( 'mousewheel DOMMouseScroll', function ( e ) {
+			
+			if( e.originalEvent ) e = e.originalEvent;
+			
+			var delta = e.wheelDelta || -e.detail;
+			this.scrollTop += ( delta < 0 ? 1 : -1 ) * 30;
+			e.preventDefault();
+		});		 
+		
+		
+				
+		$.ajaxSetup ({
+			// Disable caching of AJAX responses
+			cache: false
+		});		
+		
+	});
+	
+
+	
+	
+	
+	
+	
+</script>
+
+
+
+
+ 
+<br />
+<div class="container"  style="position:relative;">
+	   
+      <div id="resourceLinks"></div> 
+       
+       
+       
+       
+              
+       
+           
+           
+           
+          <div class="row addSection">
+              <div class="span1 addSectionIconHolder">
+              
+                <i class="icon-user"></i>
+              
+              </div>
+          
+              <div class="span11">
+                <span>Performer</span>
+                <hr>
+                <br />
+              </div>
+        </div>
+        <div class="row">
+            <div class="span1">
+            </div>
+            <div class="span11" style="position:relative">
+                
+                
+                
+                
+               <div>
+                                       <div class="pull-right vignette">
+                            <img  src="../cache/media/louis_andriessen.jpg" />
+                            
+                        </div>
+                        
+                                           
+                <div class="pull-left" style="width:80%;">
+                     
+                     <h5 id="resourceLDName">Louis Andriessen</h5>
+                     <h5 id="resourceLDAbstract"></h5>
+                     
+                     
+                     <div id="resourceSameAs">
+                        <h5>External Data:</h5>
+                        
+                        
+                     </div>
+                
+                </div>   
+                
+                <br style="clear:both;" />
+            </div>
+            
+            
+                
+            </div>
+        </div>    
+         
+    
+    
+    
+    
+    
+    
+       <div class="row addSection">
+			<div class="span1 addSectionIconHolder">              
+                <i class="icon-asterisk"></i>
+              
+              </div>
+          
+              <div class="span11">
+                <span>Events </span><span id="resourceEventCount"></span>
+                <hr>
+              </div>
+        </div>
+    
+    
+    
+    
+    
+    
+    
+        <div class="row">
+            <div class="span1"></div>
+            <div class="span11" style="position:relative">
+                  
+                 <div class="">
+                    <div id="resourceEventsEvents" class="scrollable">
+                           <table class="table table-condensed table-hover table-striped">
+                               <thead>
+                                <tr>
+                                  <th>Date</th>
+                                  
+                                  <th>Title</th>
+                                  <th>Location</th>
+                                  <th></th>
+                                </tr>
+                              </thead>
+                              <tbody id="resourceEventsEventsRows"> 
+                              </tbody>
+                            </table>
+                     
+                    </div>
+                    
+                    <div id="resourceEventsExport">
+                    
+                    	<input  name="resourceEventsSearch" class="span3" id="resourceEventsSearch"  type="text" placeholder="Filter: names, places, dates">
+                    	<button class="btn btn-mini btn-danger" id="resourceEventsClearFilter"><i class="icon-remove">&nbsp;Clear Filter</i></button>
+                   		<button class="btn btn-mini btn-info" title="Render the currently filitered data as a network" id="resourceRenderEventNetwork"> <img src="../img/icon-network-white.png" style="height:15px; width:auto" /> Two-Mode Event Network</button>
+                   		<button class="btn btn-mini btn-info" title="Render the currently filitered data as a network" id="resourceRenderEventMap"> <i class="icon-globe"></i> Map Event Locations</button>
+                   		<button class="btn btn-mini btn-success" title="Download network as Gephi File" id="resourceDownloadEventGephi"> <img src="../img/icon-gephi.png" style="height:15px; width:auto" /> Donwload Gephi Network</button>
+
+                 
+                    </div>                 
+                </div>
+                <br style="clear:both;" />
+            </div>
+            
+            
+                
+         </div>    
+    
+     
+       <div class="row addSection">
+              <div class="span1">
+              
+                <img src="../img/social-network.png" style=" margin-left:25px; margin-bottom:10px;" />
+              
+              </div>
+          
+              <div class="span11">
+                <span>Performance Network</span> 
+                <hr>
+              </div>
+        </div>
+        
+        <div class="row">
+            <div class="span1">
+            </div>
+            <div class="span11" style="position:relative">
+                
+               	<div style="width: 100%; height:500px;" id="egoNetwork">
+            
+                
+             	</div> 
+                <div class="well pull-left well-small" id="egoNetworkControls">
+                    <span class="rangeLabels">Node Charge</span>
+                    <input type="range" id="resourceEgoNetworkCharge" min="-1000" max="100" value="-120" data-def="-700" />
+                    <br /><span class="rangeLabels">Gravity</span>
+                    <input type="range" id="resourceEgoNetworkGravity" min="0" max="1" value="0.1" step="0.01" data-def="0.3" /> 
+                    <br /><span class="rangeLabels">Edge Length</span>
+                    <input type="range" id="resourceEgoNetworkDistance" min="0" max="300" value="50" data-def="50"  />      
+                    <br /><span class="rangeLabels">Edge Strength</span>
+                    <input type="range" id="resourceEgoNetworkStrength" min="0" max="3" value="1" data-def="0.15" step="0.1"  /> 
+                    <br /><br />
+                    <button type="button" id="resourceEgoNetworkLabelsButton" class="btn btn-mini" title="Show node labels." data-toggle="button">Show Labels</button>  
+                    <button type="button" id="resourceEgoNetworkLiveButton" class="btn btn-mini" title="Show realtime network rendering" data-toggle="button">Live Rendering</button>                     
+                </div>
+                
+                <div class="well pull-left well-small egoNetworkControls span7" style="margin-left:20px;" >
+                
+                	<input  name="resourceEgoNetworkSearch" class="span3" id="resourceEgoNetworkSearch"  type="text" placeholder="Filter: names, places, dates">
+					<button class="btn btn-mini btn-danger" id="resourceEgoClearFilter"><i class="icon-remove">&nbsp;Clear Filter</i></button>
+                    <button class="btn btn-mini btn-success" title="Download network as Gephi File" id="resourceDownloadEgoGephi"> <img src="../img/icon-gephi.png" style="height:15px; width:auto" /> Donwload Gephi Network</button>
+
+                </div>
+                
+            </div>
+        </div>           
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+	
+
+	
+
+
+	
+
+
+</div>
+
+
+
+
+    <div id="resourceEventNetworkModal" class="modal container hide fade" style="min-height:500px" tabindex="-1">
+ 
+      <div class="modal-body">
+      	
+        <div id="eventNetwork" style="height:400px; width:100%">
+        
+        </div>
+      
+      </div>
+      <div class="modal-footer" style="height:20px;">
+      	
+        <div class="well pull-left well-small">
+        	<span class="rangeLabels">Node Charge</span>
+        	<input type="range" id="resourceEventNetworkCharge" min="-800" max="200" value="-120" data-def="-120" />
+            <span class="rangeLabels">Gravity</span>
+        	<input type="range" id="resourceEventNetworkGravity" min="0" max="1" value="0.1" step="0.01" data-def="0.1" /> 
+            <span class="rangeLabels">Edge Length</span>
+        	<input type="range" id="resourceEventNetworkDistance" min="0" max="300" value="50" data-def="50"  />      
+            <span class="rangeLabels">Edge Strength</span>
+        	<input type="range" id="resourceEventNetworkStrength" min="0" max="5" value="1" data-def="1" step="0.1"  />    
+            <button type="button" id="resourceEventNetworkLabelsButton" class="btn btn-mini" data-toggle="button">Show Labels</button>                     
+		</div>
+        <div class="pull-right">
+        <button type="button" data-dismiss="modal" class="btn">Close</button>
+       	</div>
+       </div>
+    </div>
+    
+    
+    
+    
+     <div id="resourceEventMapModal" class="modal container hide fade" style="min-height:500px" tabindex="-1">
+ 
+      <div class="modal-body">
+      	
+        <div id="eventMap" style="height:400px; width:100%">
+        
+        </div>
+      
+      </div>
+      <div class="modal-footer" style="height:20px;">
+      	
+        <div class="well pull-left well-small">                  
+		</div>
+        <div class="pull-right">
+        <button type="button" data-dismiss="modal" class="btn">Close</button>
+       	</div>
+       </div>
+    </div>
+
+<br /><br /><br /><br /><br /><br />
+
+<script type="text/javascript">    var _gaq = _gaq || [];   _gaq.push(['_setAccount', 'UA-10371295-7']);   _gaq.push(['_trackPageview']);    (function() {     var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);   })();  </script>
+
+</body>
+
+<!-- Mirrored from padb.net/resource/louis_andriessen by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 11 Jan 2020 22:17:56 GMT -->
+</html>

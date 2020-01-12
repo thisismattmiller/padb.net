@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<gexf version="1.2" xmlns="http://www.gexf.net/1.2draft">
+ <graph mode="static" defaultedgetype="undirected">
+  <nodes>
+   <node id="1" label="John Cage"/>
+   <node id="16" label="Robert Whitman"/>
+   <node id="22" label="Robert Rauschenberg"/>
+   <node id="29" label="David Tudor"/>
+   <node id="95" label="Yvonne Rainer"/>
+   <node id="113" label="Deborah Hay"/>
+   <node id="189" label="Lucinda Childs"/>
+   <node id="191" label="Steve Paxton"/>
+   <node id="438" label="&#xD6;yvind Fahlstr&#xF6;m"/>
+  </nodes>
+  <edges>
+   <edge source="1" target="16"/>
+   <edge source="1" target="22"/>
+   <edge source="1" target="29"/>
+   <edge source="1" target="95"/>
+   <edge source="1" target="113"/>
+   <edge source="1" target="189"/>
+   <edge source="1" target="191"/>
+   <edge source="1" target="438"/>
+   <edge source="16" target="22"/>
+   <edge source="16" target="29"/>
+   <edge source="16" target="95"/>
+   <edge source="16" target="113"/>
+   <edge source="16" target="189"/>
+   <edge source="16" target="191"/>
+   <edge source="16" target="438"/>
+   <edge source="22" target="29"/>
+   <edge source="22" target="95"/>
+   <edge source="22" target="113"/>
+   <edge source="22" target="189"/>
+   <edge source="22" target="191"/>
+   <edge source="22" target="438"/>
+   <edge source="29" target="95"/>
+   <edge source="29" target="113"/>
+   <edge source="29" target="189"/>
+   <edge source="29" target="191"/>
+   <edge source="29" target="438"/>
+   <edge source="95" target="113"/>
+   <edge source="95" target="189"/>
+   <edge source="95" target="191"/>
+   <edge source="95" target="438"/>
+   <edge source="113" target="189"/>
+   <edge source="113" target="191"/>
+   <edge source="113" target="438"/>
+   <edge source="189" target="191"/>
+   <edge source="189" target="438"/>
+   <edge source="191" target="438"/>
+  </edges>
+ </graph>
+</gexf>

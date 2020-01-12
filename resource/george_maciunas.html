@@ -1,0 +1,568 @@
+<!doctype html>
+<html>
+
+<!-- Mirrored from padb.net/resource/george_maciunas by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 11 Jan 2020 22:17:10 GMT -->
+<head>
+<meta charset="UTF-8">
+<title>padb.net</title>
+
+
+<link rel="stylesheet" href="../css/bootstrap.css">
+<link rel="stylesheet" href="../css/font-awesome.css">
+<link rel="stylesheet" href="../css/site.css">
+<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+<link rel="icon" type="image/png" href="../img/favicon.png">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/bootstrap-modal.js"></script>
+<script src="../js/bootstrap-modalmanager.js"></script>
+
+<script src="../js/d3.min.js"></script>
+<script src="../js/html5slider.js"></script>
+<script src="../js/topojson.js"></script>
+<script src="../js/padb.js"></script>
+
+
+</head>
+<body>
+    
+    
+	<div style="position:relative;">        
+
+ 		<div style=" border-bottom:solid 1px #ccc;">
+        	<div class="container">
+                
+                 <div id="header">
+                 	
+                     <div class="logo"><a href="../index.html"><span>|||</span>padb</a> </div>
+                    
+                      
+						 <div id="resourceName">George Maciunas</div>
+					 
+                 </div>
+                
+                
+        	</div>
+            
+    	</div>
+ 
+   </div>
+<script src="../js/countriesData.js"></script>
+
+<script type="text/javascript">
+	//preloaded json from the server
+
+	var dataSameAs = [
+  {
+    "uri": "http://wikidata.dbpedia.org/resource/Q455931",
+    "numDuplicates": "35",
+    "duplicates": [
+      "http://dbpedia.org/resource/George_Maciunas",
+      "http://dbpedia.org/resource/Jurgis_Maciunas",
+      "http://dbpedia.org/resource/Jurgis_Mačiūnas",
+      "http://bnb.data.bl.uk/id/person/MaciunasGeorge1931-1978",
+      "http://ca.dbpedia.org/resource/George_Maciunas",
+      "http://d-nb.info/gnd/119081784",
+      "http://d-nb.info/gnd/119081784/about/rdf",
+      "http://data.bibsys.no/data/notrbib/authorityentry/x90568232",
+      "http://dbpedialite.org/things/932126#id",
+      "http://dbpedialite.org/things/6244908#id",
+      "http://de.dbpedia.org/resource/George_Maciunas",
+      "http://es.dbpedia.org/resource/George_Maciunas",
+      "http://eu.dbpedia.org/resource/George_Maciunas",
+      "http://fr.dbpedia.org/resource/George_Maciunas",
+      "http://freebase.com//m/03r61d",
+      "http://hu.dbpedia.org/resource/George_Maciunas",
+      "http://id.loc.gov/authorities/names/n85173011",
+      "http://it.dbpedia.org/resource/George_Maciunas",
+      "http://ja.dbpedia.org/resource/\u30B8\u30E7\u30FC\u30B8\u30FB\u30DE\u30C1\u30E5\u30FC\u30CA\u30B9",
+      "http://lt.dbpedia.org/resource/Jurgis_Ma\u010Di\u016Bnas",
+      "http://mpii.de/yago/resource/George_Maciunas",
+      "http://nl.dbpedia.org/resource/George_Maciunas",
+      "http://pl.dbpedia.org/resource/George_Maciunas",
+      "http://pt.dbpedia.org/resource/George_Maciunas",
+      "http://rdf.freebase.com/ns/m.03r61d",
+      "http://rdf.freebase.com/ns/en.george_maciunas",
+      "http://rdf.freebase.com/ns/guid.9202a8c04000641f80000000003b982c",
+      "http://ru.dbpedia.org/resource/\u041C\u0430\u0446\u0438\u044E\u043D\u0430\u0441,_\u0414\u0436\u043E\u0440\u0434\u0436",
+      "http://sv.dbpedia.org/resource/George_Maciunas",
+      "http://umbel.org/umbel/ne/wikipedia/George_Maciunas",
+      "http://viaf.org/viaf/36975044",
+      "http://wikidata.dbpedia.org/resource/Q455931",
+      "http://www.idref.fr/031325688/id",
+      "http://www.wikidata.org/entity/Q455931",
+      "http://yago-knowledge.org/resource/George_Maciunas"
+    ]
+  }
+]
+;
+	var dataDbpedia = {
+  "http://en.wikipedia.org/wiki/George_Maciunas" : { "http://xmlns.com/foaf/0.1/primaryTopic" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/George_Maciunas" } ] } ,
+  "http://dbpedia.org/resource/SYR4:_Goodbye_20th_Century" : { "http://dbpedia.org/property/writer" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/George_Maciunas" } ] } ,
+  "http://dbpedia.org/resource/Nick_Vernier_Band" : { "http://dbpedia.org/ontology/associatedBand" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/George_Maciunas" } ] ,
+    "http://dbpedia.org/ontology/associatedMusicalArtist" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/George_Maciunas" } ] } ,
+  "http://dbpedia.org/resource/George_Maciunas" : { "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { "type" : "uri", "value" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent" } ,
+      { "type" : "uri", "value" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#NaturalPerson" } ,
+      { "type" : "uri", "value" : "http://www.wikidata.org/entity/Q483501" } ,
+      { "type" : "uri", "value" : "http://xmlns.com/foaf/0.1/Person" } ,
+      { "type" : "uri", "value" : "http://schema.org/Person" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatAmericanArtists" } ,
+      { "type" : "uri", "value" : "http://www.wikidata.org/entity/Q5" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatArtDealers" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatPerformanceArtists" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Whole100003553" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/LivingThing100004258" } ,
+      { "type" : "uri", "value" : "http://www.wikidata.org/entity/Q215627" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/CausalAgent100007347" } ,
+      { "type" : "uri", "value" : "http://www.wikidata.org/entity/Q24229398" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatContemporaryArtists" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Organism100004475" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/ontology/Person" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatLithuanianArtists" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/ArtDealer109810983" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Merchant110309896" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Trader110720453" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Businessperson109882716" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Capitalist109609232" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatPeopleFromKaunas" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/PhysicalEntity100001930" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/YagoLegalActor" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/YagoLegalActorGeo" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/ontology/Artist" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Person100007846" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Object100002684" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Artist109812338" } ,
+      { "type" : "uri", "value" : "http://www.w3.org/2002/07/owl#Thing" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/ontology/Agent" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Creator109614315" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatAmericanPeopleOfLithuanianDescent" } ] ,
+    "http://www.w3.org/2000/01/rdf-schema#label" : [ { "type" : "literal", "value" : "George Maciunas" , "lang" : "pt" } ,
+      { "type" : "literal", "value" : "\u30B8\u30E7\u30FC\u30B8\u30FB\u30DE\u30C1\u30E5\u30FC\u30CA\u30B9" , "lang" : "ja" } ,
+      { "type" : "literal", "value" : "George Maciunas" , "lang" : "nl" } ,
+      { "type" : "literal", "value" : "George Maciunas" , "lang" : "es" } ,
+      { "type" : "literal", "value" : "George Maciunas" , "lang" : "en" } ,
+      { "type" : "literal", "value" : "\u041C\u0430\u0446\u0438\u044E\u043D\u0430\u0441, \u0414\u0436\u043E\u0440\u0434\u0436" , "lang" : "ru" } ,
+      { "type" : "literal", "value" : "George Maciunas" , "lang" : "fr" } ,
+      { "type" : "literal", "value" : "George Maciunas" , "lang" : "de" } ,
+      { "type" : "literal", "value" : "George Maciunas" , "lang" : "pl" } ,
+      { "type" : "literal", "value" : "George Maciunas" , "lang" : "it" } ] ,
+    "http://www.w3.org/2000/01/rdf-schema#comment" : [ { "type" : "literal", "value" : "George Maciunas (lituano: Jurgis Ma\u010Di\u016Bnas; 8 de noviembre de 1931, Kaunas, Kaunas, Lituania - 9 de mayo de 1978, Boston, Massachusetts, Estados Unidos) fue un artista, empresario y galerista estadounidense de origen lituano. Fue miembro fundador de Fluxus, una comunidad internacional de artistas, arquitectos, compositores y dise\u00F1adores. Otros destacados miembros reunidos por este movimiento fueron Yoko Ono, Joseph Beuys, George Brecht, Nam June Paik, Charlotte Moorman, Wolf Vostell y Dick Higgins." , "lang" : "es" } ,
+      { "type" : "literal", "value" : "George Maciunas, originalmente Jurgis Ma\u010Di\u016Bnas, (Kaunas, 8 de Novembro de 1931 \u2014 Boston, 9 de maio de 1978) Artista nascido na Litu\u00E2nia, migrou para os Estados Unidos e foi um dos fundadores do movimento art\u00EDstico Fluxus." , "lang" : "pt" } ,
+      { "type" : "literal", "value" : "\u30B8\u30E7\u30FC\u30B8\u30FB\u30DE\u30C1\u30E5\u30FC\u30CA\u30B9\uFF08George Maciunas\u30011931\u5E7411\u67088\u65E5 - 1978\u5E745\u67089\u65E5\uFF09\u306F\u30A2\u30E1\u30EA\u30AB\u306E\u73FE\u4EE3\u7F8E\u8853\u5BB6\u3002\u30D5\u30EB\u30AF\u30B5\u30B9\u306E\u5275\u59CB\u8005\u3068\u3057\u3066\u77E5\u3089\u308C\u308B\u3002\u30EA\u30C8\u30A2\u30CB\u30A2\u8A9E\u540D\u3001\u30E6\u30EB\u30AE\u30B9\u30FB\u30DE\u30C1\u30E5\u30FC\u30CA\u30B9\uFF08Jurgis Ma\u010Di\u016Bnas\uFF09\u3002 \u65E5\u672C\u8A9E\u3067\u306F\u300C\u30DE\u30C1\u30E5\u30CA\u30B9\u300D\u300C\u30DE\u30C1\u30A6\u30CA\u30B9\u300D\u3068\u8868\u8A18\u3055\u308C\u308B\u3053\u3068\u304C\u3042\u308B\u3002" , "lang" : "ja" } ,
+      { "type" : "literal", "value" : "\u00C8 considerato uno dei fondatori del Fluxus, movimento artistico internazionale di artisti, architetti, compositori e designers. L'invenzione del nome del movimento artistico viene attribuito proprio a Maciunas.George Maciunas \u00E8 nato a Kaunas, Lituania, da padre lituano e madre russa. Da giovane, emigr\u00F2 negli Stati Uniti, dove studi\u00F2 architettura al Carnegie Mellon University. Successivamente, si rifugi\u00F2 in Germania, per fuggire ai suoi creditori. Proprio in Germania, nel 1962 a Wiesbaden, Maciunas, Dick Higgins, Nam June Paik, Wolf Vostell, Emmett Williams, Alison Knowles, e Ben Patterson organizzarono il primo festival del movimento Fluxus.Maciunas realizz\u00F2 la costruzione di diversi attici a New York ed una fattoria a Great Barrington, nel Massachusetts. Maciunas ha reso SoHo un rifugio p" , "lang" : "it" } ,
+      { "type" : "literal", "value" : "George Maciunas (English pronunciation: /m\u0259\u02C8t\u0283u\u02D0n\u0259s/; Lithuanian: Jurgis Ma\u010Di\u016Bnas; November 8, 1931 \u2013 May 9, 1978) was a Lithuanian-American artist. He was a founding member and the central coordinator of Fluxus, an international community of artists, architects, composers, and designers. Other leading members brought together by this movement included Ay-O, Joseph Beuys, George Brecht, Dick Higgins, Yoko Ono, Nam June Paik, and Wolf Vostell. He is most famous for organising and performing early happenings and for assembling a series of highly influential artists' multiples." , "lang" : "en" } ,
+      { "type" : "literal", "value" : "George (Litouws: Jurgis) Maciunas (Kaunas, 8 november 1931 - Boston, 9 mei 1978) was een Amerikaans kunstenaar van Litouwse afkomst. Hij werd geboren in Kaunas in Litouwen, maar woonde vanaf 1948 in de Verenigde Staten, waar hij aan de Cooper Union School of Art studeerde. Hij werd bekend als \u00E9\u00E9n van de oprichters van de Fluxus-beweging. Hij propageerde Fluxus in New York, en later in Europa, door happenings en concerten te organiseren. In Europa initieerde hij de geruchtmakende Fluxus-concerten in Wiesbaden, Parijs, D\u00FCsseldorf (Festum Fluxus Fluxorum in de Staatliche Kunstakademie), Amsterdam, Den Haag en Kopenhagen." , "lang" : "nl" } ,
+      { "type" : "literal", "value" : "\u0414\u0436\u043E\u0440\u0434\u0436 \u041C\u0430\u0446\u0438\u044E\u043D\u0430\u0441, \u043F\u0435\u0440\u0432\u043E\u043D\u0430\u0447. \u042E\u0440\u0433\u0438\u0441 \u041C\u0430\u0447\u044E\u043D\u0430\u0441 (\u0430\u043D\u0433\u043B. George Maciunas; 8 \u043D\u043E\u044F\u0431\u0440\u044F 1931, \u041A\u0430\u0443\u043D\u0430\u0441 \u2014 9 \u043C\u0430\u044F 1978, \u0411\u043E\u0441\u0442\u043E\u043D) \u2014 \u043B\u0438\u0442\u043E\u0432\u0441\u043A\u043E\u0433\u043E \u043F\u0440\u043E\u0438\u0441\u0445\u043E\u0436\u0434\u0435\u043D\u0438\u044F \u0430\u043C\u0435\u0440\u0438\u043A\u0430\u043D\u0441\u043A\u0438\u0439 \u0445\u0443\u0434\u043E\u0436\u043D\u0438\u043A \u0438 \u043A\u043E\u043C\u043F\u043E\u0437\u0438\u0442\u043E\u0440, \u043E\u0434\u0438\u043D \u0438\u0437 \u043E\u0441\u043D\u043E\u0432\u0430\u0442\u0435\u043B\u0435\u0439 \u0438 \u0442\u0435\u043E\u0440\u0435\u0442\u0438\u043A\u043E\u0432 \u0445\u0443\u0434\u043E\u0436\u0435\u0441\u0442\u0432\u0435\u043D\u043D\u043E\u0433\u043E \u043D\u0430\u043F\u0440\u0430\u0432\u043B\u0435\u043D\u0438\u044F \u0424\u043B\u0443\u043A\u0441\u0443\u0441. \u0421\u043E\u0437\u0434\u0430\u0442\u0435\u043B\u044C \u0437\u043D\u0430\u043C\u0435\u043D\u0438\u0442\u043E\u0433\u043E \u0421\u043E\u043B\u043E \u0434\u043B\u044F \u0441\u043A\u0440\u0438\u043F\u043A\u0438 (1962)" , "lang" : "ru" } ,
+      { "type" : "literal", "value" : "George Maciunas (Jurgis Ma\u010Di\u016Bnas) (* 8. November 1931 in Kaunas; \u2020 9. Mai 1978 in Boston) war ein US-amerikanischer K\u00FCnstler litauischer Abstammung. Er war Mitbegr\u00FCnder, Theoretiker und Propagandist der Fluxusbewegung." , "lang" : "de" } ,
+      { "type" : "literal", "value" : "George Maciunas, w\u0142a\u015Bc. Jurgis Ma\u010Di\u016Bnas (ur. 8 listopada 1931 w Kownie, zm. 9 maja 1978 w Bostonie) \u2013 ameryka\u0144ski artysta litewskiego pochodzenia. Za\u0142o\u017Cyciel Fluxusu, zwi\u0105zku aktor\u00F3w, architekt\u00F3w i kompozytor\u00F3w, kt\u00F3rego cz\u0142onkami byli mi\u0119dzy innymi Yoko Ono, Joseph Beuys, Nam June Paik, Dick Higgins, Wolf Vostell, Charlotte Moorman i Allan Kaprow." , "lang" : "pl" } ,
+      { "type" : "literal", "value" : "George (Jurgis) Maciunas est un artiste, galeriste et \u00E9diteur am\u00E9ricain d'origine lituanienne, n\u00E9 \u00E0 Kaunas (Lituanie) le 8 novembre 1931 et mort \u00E0 Boston (Massachusetts) le 9 mai 1978). Il est le principal fondateur du mouvement Fluxus." , "lang" : "fr" } ] ,
+    "http://www.w3.org/2002/07/owl#sameAs" : [ { "type" : "uri", "value" : "http://cs.dbpedia.org/resource/George_Maciunas" } ,
+      { "type" : "uri", "value" : "http://es.dbpedia.org/resource/George_Maciunas" } ,
+      { "type" : "uri", "value" : "http://viaf.org/viaf/36975044" } ,
+      { "type" : "uri", "value" : "http://yago-knowledge.org/resource/George_Maciunas" } ,
+      { "type" : "uri", "value" : "http://eu.dbpedia.org/resource/George_Maciunas" } ,
+      { "type" : "uri", "value" : "http://fr.dbpedia.org/resource/George_Maciunas" } ,
+      { "type" : "uri", "value" : "http://pl.dbpedia.org/resource/George_Maciunas" } ,
+      { "type" : "uri", "value" : "http://rdf.freebase.com/ns/m.03r61d" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/George_Maciunas" } ,
+      { "type" : "uri", "value" : "http://wikidata.dbpedia.org/resource/Q455931" } ,
+      { "type" : "uri", "value" : "http://pt.dbpedia.org/resource/George_Maciunas" } ,
+      { "type" : "uri", "value" : "http://de.dbpedia.org/resource/George_Maciunas" } ,
+      { "type" : "uri", "value" : "http://www.wikidata.org/entity/Q455931" } ,
+      { "type" : "uri", "value" : "http://it.dbpedia.org/resource/George_Maciunas" } ,
+      { "type" : "uri", "value" : "http://d-nb.info/gnd/119081784" } ,
+      { "type" : "uri", "value" : "http://nl.dbpedia.org/resource/George_Maciunas" } ,
+      { "type" : "uri", "value" : "http://ja.dbpedia.org/resource/\u30B8\u30E7\u30FC\u30B8\u30FB\u30DE\u30C1\u30E5\u30FC\u30CA\u30B9" } ] ,
+    "http://purl.org/dc/terms/subject" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:People_from_Kaunas" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:1931_births" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Neo-Dada" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Lithuanian_emigrants_to_the_United_States" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:American_people_of_Lithuanian_descent" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Fluxus" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Deaths_from_cancer_in_Massachusetts" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Deaths_from_pancreatic_cancer" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Lithuanian_artists" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Deaths_from_liver_cancer" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:1978_deaths" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:American_artists" } ] ,
+    "http://xmlns.com/foaf/0.1/name" : [ { "type" : "literal", "value" : "George Maciunas" , "lang" : "en" } ] ,
+    "http://purl.org/dc/terms/description" : [ { "type" : "literal", "value" : "Lithuanian artist" , "lang" : "en" } ] ,
+    "http://xmlns.com/foaf/0.1/givenName" : [ { "type" : "literal", "value" : "George" , "lang" : "en" } ] ,
+    "http://xmlns.com/foaf/0.1/gender" : [ { "type" : "literal", "value" : "male" , "lang" : "en" } ] ,
+    "http://xmlns.com/foaf/0.1/isPrimaryTopicOf" : [ { "type" : "uri", "value" : "http://en.wikipedia.org/wiki/George_Maciunas" } ] ,
+    "http://xmlns.com/foaf/0.1/surname" : [ { "type" : "literal", "value" : "Maciunas" , "lang" : "en" } ] ,
+    "http://dbpedia.org/ontology/field" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Visual_Art" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Aesthetics" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Mail_Art" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Music" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Sculpture" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Installation_art" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Performance" } ] ,
+    "http://dbpedia.org/ontology/movement" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Fluxus" } ] ,
+    "http://dbpedia.org/ontology/spouse" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Billie_Hutching" } ] ,
+    "http://dbpedia.org/property/imagesize" : [ { "type" : "literal", "value" : 200 , "datatype" : "http://www.w3.org/2001/XMLSchema#integer" } ] ,
+    "http://www.w3.org/ns/prov#wasDerivedFrom" : [ { "type" : "uri", "value" : "http://en.wikipedia.org/wiki/George_Maciunas?oldid=737342479" } ] ,
+    "http://dbpedia.org/ontology/birthName" : [ { "type" : "literal", "value" : "Jurgis Ma\u010Di\u016Bnas" , "lang" : "en" } ] ,
+    "http://dbpedia.org/ontology/wikiPageExternalLink" : [ { "type" : "uri", "value" : "http://colophon.com/umbrella/emmet.html" } ,
+      { "type" : "uri", "value" : "http://www.fluxus.org/FLUXLIST/maciunas/" } ,
+      { "type" : "uri", "value" : "http://www.wiesbaden.de/en/culture/events/fluxus-50.php" } ,
+      { "type" : "uri", "value" : "http://www.machunas.com" } ,
+      { "type" : "uri", "value" : "http://www.thing.net/~grist/ld/fluxus.htm" } ,
+      { "type" : "uri", "value" : "http://rwm.macba.cat/en/specials?id_capsula=614" } ,
+      { "type" : "uri", "value" : "http://www.mayastendhalgallery.com/maciunas_building-CV.html" } ,
+      { "type" : "uri", "value" : "http://printedmatter.org/catalogue/search.cfm?page=1&search=fluxus%20box&search_type=&sec=1&rows=10&search_recent=m1&search_sort=rz&email=&cookie1=DF2BCF39-1C42-ECEB-78DE499BCC6748B5&list_id=&list_id2=&Partists=&Ptitle=&Pcategory=&Pbook_type=&Psubtitle=&Pvol=&Ppages=&Pbook_cover=&Pbinding=&Pfeatures=&Pprocess=&Pcolor=&Pbook_signed=&Ppub=&Ppubcity=&Ppubloc=&Ppubdate1=&Psynopsis=&Pgenre=&Psubject=&Pretail1=&Pretail2=" } ,
+      { "type" : "uri", "value" : "https://secure.flickr.com/photos/yokoonoofficial/2892211895/" } ,
+      { "type" : "uri", "value" : "http://www.ubu.com/aspen/aspen8/index.html" } ,
+      { "type" : "uri", "value" : "http://www.StendhalGallery.com" } ,
+      { "type" : "uri", "value" : "http://georgemaciunas.com/?page_id=3673" } ,
+      { "type" : "uri", "value" : "http://www.medienkunstnetz.de/works/traitor/images/2/" } ,
+      { "type" : "uri", "value" : "http://www.medienkunstnetz.de/search/keyword:fluxus" } ,
+      { "type" : "uri", "value" : "http://www.museovostell.org/colecciones.htm" } ,
+      { "type" : "uri", "value" : "http://i6.photobucket.com/albums/y212/paverpol/Argusvlinder2007/Juni/GeorgeMaciunasUSASurpassesAllTheGen.jpg" } ,
+      { "type" : "uri", "value" : "http://www.georgemaciunasfoundation.com" } ,
+      { "type" : "uri", "value" : "http://www.fluxus-plus.de/" } ,
+      { "type" : "uri", "value" : "http://www.mac-lyon.com/static/moca/contenu/images/collection/fluxus/fluxus.jpg" } ,
+      { "type" : "uri", "value" : "http://www.avelas.net/ficheiros/word_event/George%20Brecht_event%20card_def.jpg.jpg" } ,
+      { "type" : "uri", "value" : "http://www.artpool.hu/lehetetlen/real-kiall/nevek/maciunas_smile.html" } ,
+      { "type" : "uri", "value" : "http://www.artpool.hu/Fluxusbibliography/Maciunas_bib.html" } ,
+      { "type" : "uri", "value" : "http://www.stewarthomesociety.org/ass/fluxone.htm" } ,
+      { "type" : "uri", "value" : "http://www.ubu.com/film/fluxfilm.html" } ] ,
+    "http://dbpedia.org/property/caption" : [ { "type" : "literal", "value" : "George Maciunas Self Portrait" , "datatype" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString" } ] ,
+    "http://dbpedia.org/property/training" : [ { "type" : "literal", "value" : "Architecture and Graphic Design" , "datatype" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString" } ] ,
+    "http://dbpedia.org/ontology/abstract" : [ { "type" : "literal", "value" : "\u00C8 considerato uno dei fondatori del Fluxus, movimento artistico internazionale di artisti, architetti, compositori e designers. L'invenzione del nome del movimento artistico viene attribuito proprio a Maciunas.George Maciunas \u00E8 nato a Kaunas, Lituania, da padre lituano e madre russa. Da giovane, emigr\u00F2 negli Stati Uniti, dove studi\u00F2 architettura al Carnegie Mellon University. Successivamente, si rifugi\u00F2 in Germania, per fuggire ai suoi creditori. Proprio in Germania, nel 1962 a Wiesbaden, Maciunas, Dick Higgins, Nam June Paik, Wolf Vostell, Emmett Williams, Alison Knowles, e Ben Patterson organizzarono il primo festival del movimento Fluxus.Maciunas realizz\u00F2 la costruzione di diversi attici a New York ed una fattoria a Great Barrington, nel Massachusetts. Maciunas ha reso SoHo un rifugio per artisti, convertendo edifici fatiscenti in attici e luoghi vivibili. Nel 1975 rimase seriamente ferito durante un assalto da parte di alcuni creditori. Questo attacco lo rese cieco ad un occhio. Dopo aver sofferto di cancro mor\u00EC a Boston nel 1978. Era amico di molti artisti, tra i quali Jonas Mekas, La Monte Young, Nam June Paik, e Yoko Ono, e fece molto per l'avanzamento delle loro carriere." , "lang" : "it" } ,
+      { "type" : "literal", "value" : "\u0414\u0436\u043E\u0440\u0434\u0436 \u041C\u0430\u0446\u0438\u044E\u043D\u0430\u0441, \u043F\u0435\u0440\u0432\u043E\u043D\u0430\u0447. \u042E\u0440\u0433\u0438\u0441 \u041C\u0430\u0447\u044E\u043D\u0430\u0441 (\u0430\u043D\u0433\u043B. George Maciunas; 8 \u043D\u043E\u044F\u0431\u0440\u044F 1931, \u041A\u0430\u0443\u043D\u0430\u0441 \u2014 9 \u043C\u0430\u044F 1978, \u0411\u043E\u0441\u0442\u043E\u043D) \u2014 \u043B\u0438\u0442\u043E\u0432\u0441\u043A\u043E\u0433\u043E \u043F\u0440\u043E\u0438\u0441\u0445\u043E\u0436\u0434\u0435\u043D\u0438\u044F \u0430\u043C\u0435\u0440\u0438\u043A\u0430\u043D\u0441\u043A\u0438\u0439 \u0445\u0443\u0434\u043E\u0436\u043D\u0438\u043A \u0438 \u043A\u043E\u043C\u043F\u043E\u0437\u0438\u0442\u043E\u0440, \u043E\u0434\u0438\u043D \u0438\u0437 \u043E\u0441\u043D\u043E\u0432\u0430\u0442\u0435\u043B\u0435\u0439 \u0438 \u0442\u0435\u043E\u0440\u0435\u0442\u0438\u043A\u043E\u0432 \u0445\u0443\u0434\u043E\u0436\u0435\u0441\u0442\u0432\u0435\u043D\u043D\u043E\u0433\u043E \u043D\u0430\u043F\u0440\u0430\u0432\u043B\u0435\u043D\u0438\u044F \u0424\u043B\u0443\u043A\u0441\u0443\u0441. \u0421\u043E\u0437\u0434\u0430\u0442\u0435\u043B\u044C \u0437\u043D\u0430\u043C\u0435\u043D\u0438\u0442\u043E\u0433\u043E \u0421\u043E\u043B\u043E \u0434\u043B\u044F \u0441\u043A\u0440\u0438\u043F\u043A\u0438 (1962)" , "lang" : "ru" } ,
+      { "type" : "literal", "value" : "George Maciunas (English pronunciation: /m\u0259\u02C8t\u0283u\u02D0n\u0259s/; Lithuanian: Jurgis Ma\u010Di\u016Bnas; November 8, 1931 \u2013 May 9, 1978) was a Lithuanian-American artist. He was a founding member and the central coordinator of Fluxus, an international community of artists, architects, composers, and designers. Other leading members brought together by this movement included Ay-O, Joseph Beuys, George Brecht, Dick Higgins, Yoko Ono, Nam June Paik, and Wolf Vostell. He is most famous for organising and performing early happenings and for assembling a series of highly influential artists' multiples." , "lang" : "en" } ,
+      { "type" : "literal", "value" : "\u30B8\u30E7\u30FC\u30B8\u30FB\u30DE\u30C1\u30E5\u30FC\u30CA\u30B9\uFF08George Maciunas\u30011931\u5E7411\u67088\u65E5 - 1978\u5E745\u67089\u65E5\uFF09\u306F\u30A2\u30E1\u30EA\u30AB\u306E\u73FE\u4EE3\u7F8E\u8853\u5BB6\u3002\u30D5\u30EB\u30AF\u30B5\u30B9\u306E\u5275\u59CB\u8005\u3068\u3057\u3066\u77E5\u3089\u308C\u308B\u3002\u30EA\u30C8\u30A2\u30CB\u30A2\u8A9E\u540D\u3001\u30E6\u30EB\u30AE\u30B9\u30FB\u30DE\u30C1\u30E5\u30FC\u30CA\u30B9\uFF08Jurgis Ma\u010Di\u016Bnas\uFF09\u3002 \u65E5\u672C\u8A9E\u3067\u306F\u300C\u30DE\u30C1\u30E5\u30CA\u30B9\u300D\u300C\u30DE\u30C1\u30A6\u30CA\u30B9\u300D\u3068\u8868\u8A18\u3055\u308C\u308B\u3053\u3068\u304C\u3042\u308B\u3002" , "lang" : "ja" } ,
+      { "type" : "literal", "value" : "George Maciunas (lituano: Jurgis Ma\u010Di\u016Bnas; 8 de noviembre de 1931, Kaunas, Kaunas, Lituania - 9 de mayo de 1978, Boston, Massachusetts, Estados Unidos) fue un artista, empresario y galerista estadounidense de origen lituano. Fue miembro fundador de Fluxus, una comunidad internacional de artistas, arquitectos, compositores y dise\u00F1adores. Otros destacados miembros reunidos por este movimiento fueron Yoko Ono, Joseph Beuys, George Brecht, Nam June Paik, Charlotte Moorman, Wolf Vostell y Dick Higgins." , "lang" : "es" } ,
+      { "type" : "literal", "value" : "George Maciunas, originalmente Jurgis Ma\u010Di\u016Bnas, (Kaunas, 8 de Novembro de 1931 \u2014 Boston, 9 de maio de 1978) Artista nascido na Litu\u00E2nia, migrou para os Estados Unidos e foi um dos fundadores do movimento art\u00EDstico Fluxus." , "lang" : "pt" } ,
+      { "type" : "literal", "value" : "George (Litouws: Jurgis) Maciunas (Kaunas, 8 november 1931 - Boston, 9 mei 1978) was een Amerikaans kunstenaar van Litouwse afkomst. Hij werd geboren in Kaunas in Litouwen, maar woonde vanaf 1948 in de Verenigde Staten, waar hij aan de Cooper Union School of Art studeerde. Hij werd bekend als \u00E9\u00E9n van de oprichters van de Fluxus-beweging. Hij propageerde Fluxus in New York, en later in Europa, door happenings en concerten te organiseren. In Europa initieerde hij de geruchtmakende Fluxus-concerten in Wiesbaden, Parijs, D\u00FCsseldorf (Festum Fluxus Fluxorum in de Staatliche Kunstakademie), Amsterdam, Den Haag en Kopenhagen. Fluxus wilde als tegenbeweging tegen het abstract expressionisme de beeldende kunst uit zijn ivoren toren halen; mengvormen ontwikkelen en demystificeren, zoals John Cage dit in de muziek had gedaan. 'Fluxus-composities' zijn vaak speels, meestal tijdgebonden (soms zeer kort) en eigenlijk steeds z\u00E9\u00E9r onorthodox." , "lang" : "nl" } ,
+      { "type" : "literal", "value" : "George Maciunas (Jurgis Ma\u010Di\u016Bnas) (* 8. November 1931 in Kaunas; \u2020 9. Mai 1978 in Boston) war ein US-amerikanischer K\u00FCnstler litauischer Abstammung. Er war Mitbegr\u00FCnder, Theoretiker und Propagandist der Fluxusbewegung." , "lang" : "de" } ,
+      { "type" : "literal", "value" : "George Maciunas, w\u0142a\u015Bc. Jurgis Ma\u010Di\u016Bnas (ur. 8 listopada 1931 w Kownie, zm. 9 maja 1978 w Bostonie) \u2013 ameryka\u0144ski artysta litewskiego pochodzenia. Za\u0142o\u017Cyciel Fluxusu, zwi\u0105zku aktor\u00F3w, architekt\u00F3w i kompozytor\u00F3w, kt\u00F3rego cz\u0142onkami byli mi\u0119dzy innymi Yoko Ono, Joseph Beuys, Nam June Paik, Dick Higgins, Wolf Vostell, Charlotte Moorman i Allan Kaprow." , "lang" : "pl" } ,
+      { "type" : "literal", "value" : "George (Jurgis) Maciunas est un artiste, galeriste et \u00E9diteur am\u00E9ricain d'origine lituanienne, n\u00E9 \u00E0 Kaunas (Lituanie) le 8 novembre 1931 et mort \u00E0 Boston (Massachusetts) le 9 mai 1978). Il est le principal fondateur du mouvement Fluxus." , "lang" : "fr" } ] ,
+    "http://dbpedia.org/ontology/birthDate" : [ { "type" : "literal", "value" : "1931-11-8" , "datatype" : "http://www.w3.org/2001/XMLSchema#date" } ,
+      { "type" : "literal", "value" : "1931-11-08" , "datatype" : "http://www.w3.org/2001/XMLSchema#date" } ] ,
+    "http://dbpedia.org/ontology/deathDate" : [ { "type" : "literal", "value" : "1978-05-09" , "datatype" : "http://www.w3.org/2001/XMLSchema#date" } ,
+      { "type" : "literal", "value" : "1978-5-9" , "datatype" : "http://www.w3.org/2001/XMLSchema#date" } ] ,
+    "http://dbpedia.org/ontology/deathPlace" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Boston" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Boston,_Massachusetts" } ] ,
+    "http://dbpedia.org/ontology/wikiPageRevisionID" : [ { "type" : "literal", "value" : 737342479 , "datatype" : "http://www.w3.org/2001/XMLSchema#integer" } ] ,
+    "http://dbpedia.org/ontology/birthPlace" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Lithuania" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Kaunas" } ] ,
+    "http://dbpedia.org/ontology/wikiPageID" : [ { "type" : "literal", "value" : 932126 , "datatype" : "http://www.w3.org/2001/XMLSchema#integer" } ] ,
+    "http://purl.org/linguistics/gold/hypernym" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Artist" } ] ,
+    "http://dbpedia.org/property/nationality" : [ { "type" : "literal", "value" : "Lithuanian-American" , "datatype" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString" } ] ,
+    "http://dbpedia.org/property/bgcolour" : [ { "type" : "literal", "value" : "#6495ED" , "datatype" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString" } ] } ,
+  "http://dbpedia.org/resource/Jurgis_Maciunas" : { "http://dbpedia.org/ontology/wikiPageRedirects" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/George_Maciunas" } ] } ,
+  "http://dbpedia.org/resource/Jurgis_Ma\u010Di\u016Bnas" : { "http://dbpedia.org/ontology/wikiPageRedirects" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/George_Maciunas" } ] }
+}
+;
+	var dataAuth = "http://dbpedia.org/resource/George_Maciunas";
+	var dataUrl = "george_maciunas.html";
+	var dataResourceType = "participant";
+	var dataName = "George Maciunas";
+ 	
+</script>
+
+
+
+
+
+<script type="text/javascript">
+
+
+	
+	
+	
+
+	$(document).ready(function($) {
+		
+		
+		padb.resource.initialize();
+			 
+		$( '.scrollable' ).
+		bind( 'mousewheel DOMMouseScroll', function ( e ) {
+			
+			if( e.originalEvent ) e = e.originalEvent;
+			
+			var delta = e.wheelDelta || -e.detail;
+			this.scrollTop += ( delta < 0 ? 1 : -1 ) * 30;
+			e.preventDefault();
+		});		 
+		
+		
+				
+		$.ajaxSetup ({
+			// Disable caching of AJAX responses
+			cache: false
+		});		
+		
+	});
+	
+
+	
+	
+	
+	
+	
+</script>
+
+
+
+
+ 
+<br />
+<div class="container"  style="position:relative;">
+	   
+      <div id="resourceLinks"></div> 
+       
+       
+       
+       
+              
+       
+           
+           
+           
+          <div class="row addSection">
+              <div class="span1 addSectionIconHolder">
+              
+                <i class="icon-user"></i>
+              
+              </div>
+          
+              <div class="span11">
+                <span>Performer</span>
+                <hr>
+                <br />
+              </div>
+        </div>
+        <div class="row">
+            <div class="span1">
+            </div>
+            <div class="span11" style="position:relative">
+                
+                
+                
+                
+               <div>
+                                       <div class="pull-right vignette">
+                            <img  src="../cache/media/george_maciunas.jpg" />
+                            
+                        </div>
+                        
+                                           
+                <div class="pull-left" style="width:80%;">
+                     
+                     <h5 id="resourceLDName">George Maciunas</h5>
+                     <h5 id="resourceLDAbstract"></h5>
+                     
+                     
+                     <div id="resourceSameAs">
+                        <h5>External Data:</h5>
+                        
+                        
+                     </div>
+                
+                </div>   
+                
+                <br style="clear:both;" />
+            </div>
+            
+            
+                
+            </div>
+        </div>    
+         
+    
+    
+    
+    
+    
+    
+       <div class="row addSection">
+			<div class="span1 addSectionIconHolder">              
+                <i class="icon-asterisk"></i>
+              
+              </div>
+          
+              <div class="span11">
+                <span>Events </span><span id="resourceEventCount"></span>
+                <hr>
+              </div>
+        </div>
+    
+    
+    
+    
+    
+    
+    
+        <div class="row">
+            <div class="span1"></div>
+            <div class="span11" style="position:relative">
+                  
+                 <div class="">
+                    <div id="resourceEventsEvents" class="scrollable">
+                           <table class="table table-condensed table-hover table-striped">
+                               <thead>
+                                <tr>
+                                  <th>Date</th>
+                                  
+                                  <th>Title</th>
+                                  <th>Location</th>
+                                  <th></th>
+                                </tr>
+                              </thead>
+                              <tbody id="resourceEventsEventsRows"> 
+                              </tbody>
+                            </table>
+                     
+                    </div>
+                    
+                    <div id="resourceEventsExport">
+                    
+                    	<input  name="resourceEventsSearch" class="span3" id="resourceEventsSearch"  type="text" placeholder="Filter: names, places, dates">
+                    	<button class="btn btn-mini btn-danger" id="resourceEventsClearFilter"><i class="icon-remove">&nbsp;Clear Filter</i></button>
+                   		<button class="btn btn-mini btn-info" title="Render the currently filitered data as a network" id="resourceRenderEventNetwork"> <img src="../img/icon-network-white.png" style="height:15px; width:auto" /> Two-Mode Event Network</button>
+                   		<button class="btn btn-mini btn-info" title="Render the currently filitered data as a network" id="resourceRenderEventMap"> <i class="icon-globe"></i> Map Event Locations</button>
+                   		<button class="btn btn-mini btn-success" title="Download network as Gephi File" id="resourceDownloadEventGephi"> <img src="../img/icon-gephi.png" style="height:15px; width:auto" /> Donwload Gephi Network</button>
+
+                 
+                    </div>                 
+                </div>
+                <br style="clear:both;" />
+            </div>
+            
+            
+                
+         </div>    
+    
+     
+       <div class="row addSection">
+              <div class="span1">
+              
+                <img src="../img/social-network.png" style=" margin-left:25px; margin-bottom:10px;" />
+              
+              </div>
+          
+              <div class="span11">
+                <span>Performance Network</span> 
+                <hr>
+              </div>
+        </div>
+        
+        <div class="row">
+            <div class="span1">
+            </div>
+            <div class="span11" style="position:relative">
+                
+               	<div style="width: 100%; height:500px;" id="egoNetwork">
+            
+                
+             	</div> 
+                <div class="well pull-left well-small" id="egoNetworkControls">
+                    <span class="rangeLabels">Node Charge</span>
+                    <input type="range" id="resourceEgoNetworkCharge" min="-1000" max="100" value="-120" data-def="-700" />
+                    <br /><span class="rangeLabels">Gravity</span>
+                    <input type="range" id="resourceEgoNetworkGravity" min="0" max="1" value="0.1" step="0.01" data-def="0.3" /> 
+                    <br /><span class="rangeLabels">Edge Length</span>
+                    <input type="range" id="resourceEgoNetworkDistance" min="0" max="300" value="50" data-def="50"  />      
+                    <br /><span class="rangeLabels">Edge Strength</span>
+                    <input type="range" id="resourceEgoNetworkStrength" min="0" max="3" value="1" data-def="0.15" step="0.1"  /> 
+                    <br /><br />
+                    <button type="button" id="resourceEgoNetworkLabelsButton" class="btn btn-mini" title="Show node labels." data-toggle="button">Show Labels</button>  
+                    <button type="button" id="resourceEgoNetworkLiveButton" class="btn btn-mini" title="Show realtime network rendering" data-toggle="button">Live Rendering</button>                     
+                </div>
+                
+                <div class="well pull-left well-small egoNetworkControls span7" style="margin-left:20px;" >
+                
+                	<input  name="resourceEgoNetworkSearch" class="span3" id="resourceEgoNetworkSearch"  type="text" placeholder="Filter: names, places, dates">
+					<button class="btn btn-mini btn-danger" id="resourceEgoClearFilter"><i class="icon-remove">&nbsp;Clear Filter</i></button>
+                    <button class="btn btn-mini btn-success" title="Download network as Gephi File" id="resourceDownloadEgoGephi"> <img src="../img/icon-gephi.png" style="height:15px; width:auto" /> Donwload Gephi Network</button>
+
+                </div>
+                
+            </div>
+        </div>           
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+	
+
+	
+
+
+	
+
+
+</div>
+
+
+
+
+    <div id="resourceEventNetworkModal" class="modal container hide fade" style="min-height:500px" tabindex="-1">
+ 
+      <div class="modal-body">
+      	
+        <div id="eventNetwork" style="height:400px; width:100%">
+        
+        </div>
+      
+      </div>
+      <div class="modal-footer" style="height:20px;">
+      	
+        <div class="well pull-left well-small">
+        	<span class="rangeLabels">Node Charge</span>
+        	<input type="range" id="resourceEventNetworkCharge" min="-800" max="200" value="-120" data-def="-120" />
+            <span class="rangeLabels">Gravity</span>
+        	<input type="range" id="resourceEventNetworkGravity" min="0" max="1" value="0.1" step="0.01" data-def="0.1" /> 
+            <span class="rangeLabels">Edge Length</span>
+        	<input type="range" id="resourceEventNetworkDistance" min="0" max="300" value="50" data-def="50"  />      
+            <span class="rangeLabels">Edge Strength</span>
+        	<input type="range" id="resourceEventNetworkStrength" min="0" max="5" value="1" data-def="1" step="0.1"  />    
+            <button type="button" id="resourceEventNetworkLabelsButton" class="btn btn-mini" data-toggle="button">Show Labels</button>                     
+		</div>
+        <div class="pull-right">
+        <button type="button" data-dismiss="modal" class="btn">Close</button>
+       	</div>
+       </div>
+    </div>
+    
+    
+    
+    
+     <div id="resourceEventMapModal" class="modal container hide fade" style="min-height:500px" tabindex="-1">
+ 
+      <div class="modal-body">
+      	
+        <div id="eventMap" style="height:400px; width:100%">
+        
+        </div>
+      
+      </div>
+      <div class="modal-footer" style="height:20px;">
+      	
+        <div class="well pull-left well-small">                  
+		</div>
+        <div class="pull-right">
+        <button type="button" data-dismiss="modal" class="btn">Close</button>
+       	</div>
+       </div>
+    </div>
+
+<br /><br /><br /><br /><br /><br />
+
+<script type="text/javascript">    var _gaq = _gaq || [];   _gaq.push(['_setAccount', 'UA-10371295-7']);   _gaq.push(['_trackPageview']);    (function() {     var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);   })();  </script>
+
+</body>
+
+<!-- Mirrored from padb.net/resource/george_maciunas by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 11 Jan 2020 22:17:11 GMT -->
+</html>

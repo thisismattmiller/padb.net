@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<gexf version="1.2" xmlns="http://www.gexf.net/1.2draft">
+ <graph mode="static" defaultedgetype="undirected">
+  <nodes>
+   <node id="67" label="Dieter Roth"/>
+   <node id="100" label="J&#xEE807;unnar &#x72;nason"/>
+  </nodes>
+  <edges>
+   <edge source="67" target="100"/>
+  </edges>
+ </graph>
+</gexf>

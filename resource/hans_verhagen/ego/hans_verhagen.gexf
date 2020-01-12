@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<gexf version="1.2" xmlns="http://www.gexf.net/1.2draft">
+ <graph mode="static" defaultedgetype="undirected">
+  <nodes>
+   <node id="105" label="Willem de Ridder"/>
+   <node id="251" label="Wim T. Schippers"/>
+   <node id="318" label="Wim van der Linden"/>
+   <node id="540" label="Hans Verhagen"/>
+   <node id="541" label="Phil Bloom"/>
+  </nodes>
+  <edges>
+   <edge source="105" target="251"/>
+   <edge source="105" target="318"/>
+   <edge source="105" target="540"/>
+   <edge source="105" target="541"/>
+   <edge source="251" target="318"/>
+   <edge source="251" target="540"/>
+   <edge source="251" target="541"/>
+   <edge source="318" target="540"/>
+   <edge source="318" target="541"/>
+   <edge source="540" target="541"/>
+  </edges>
+ </graph>
+</gexf>

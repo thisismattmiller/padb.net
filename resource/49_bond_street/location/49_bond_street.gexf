@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<gexf version="1.2" xmlns="http://www.gexf.net/1.2draft">
+ <graph mode="static" defaultedgetype="undirected">
+  <nodes>
+   <node id="54" label="Henry Flynt"/>
+   <node id="165" label="Tony Conrad"/>
+   <node id="166" label="Jack Smith"/>
+  </nodes>
+  <edges>
+   <edge source="54" target="165"/>
+   <edge source="54" target="166"/>
+   <edge source="165" target="166"/>
+  </edges>
+ </graph>
+</gexf>

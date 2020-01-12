@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<gexf version="1.2" xmlns="http://www.gexf.net/1.2draft">
+ <graph mode="static" defaultedgetype="undirected">
+  <nodes>
+   <node id="1" label="John Cage"/>
+   <node id="13" label="Dick Higgins"/>
+   <node id="122" label="Alison Knowles"/>
+  </nodes>
+  <edges>
+   <edge source="1" target="13"/>
+   <edge source="1" target="122"/>
+   <edge source="13" target="122"/>
+  </edges>
+ </graph>
+</gexf>

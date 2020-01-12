@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<gexf version="1.2" xmlns="http://www.gexf.net/1.2draft">
+ <graph mode="static" defaultedgetype="undirected">
+  <nodes>
+   <node id="46" label="Arthur Koepcke"/>
+   <node id="68" label="Eric Andersen"/>
+  </nodes>
+  <edges>
+   <edge source="46" target="68"/>
+  </edges>
+ </graph>
+</gexf>

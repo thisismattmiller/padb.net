@@ -1,0 +1,511 @@
+<!doctype html>
+<html>
+
+<!-- Mirrored from padb.net/resource/peter_weibel by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 11 Jan 2020 22:22:10 GMT -->
+<head>
+<meta charset="UTF-8">
+<title>padb.net</title>
+
+
+<link rel="stylesheet" href="../css/bootstrap.css">
+<link rel="stylesheet" href="../css/font-awesome.css">
+<link rel="stylesheet" href="../css/site.css">
+<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+<link rel="icon" type="image/png" href="../img/favicon.png">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/bootstrap-modal.js"></script>
+<script src="../js/bootstrap-modalmanager.js"></script>
+
+<script src="../js/d3.min.js"></script>
+<script src="../js/html5slider.js"></script>
+<script src="../js/topojson.js"></script>
+<script src="../js/padb.js"></script>
+
+
+</head>
+<body>
+    
+    
+	<div style="position:relative;">        
+
+ 		<div style=" border-bottom:solid 1px #ccc;">
+        	<div class="container">
+                
+                 <div id="header">
+                 	
+                     <div class="logo"><a href="../index.html"><span>|||</span>padb</a> </div>
+                    
+                      
+						 <div id="resourceName">Peter Weibel</div>
+					 
+                 </div>
+                
+                
+        	</div>
+            
+    	</div>
+ 
+   </div>
+<script src="../js/countriesData.js"></script>
+
+<script type="text/javascript">
+	//preloaded json from the server
+
+	var dataSameAs = [
+  {
+    "uri": "http://wikidata.dbpedia.org/resource/Q313991",
+    "numDuplicates": "32",
+    "duplicates": [
+      "http://dbpedia.org/resource/Peter_Weibel",
+      "http://bnb.data.bl.uk/id/person/WeibelPeter",
+      "http://bnb.data.bl.uk/id/person/WeibelPeter1947-",
+      "http://d-nb.info/gnd/118943014",
+      "http://d-nb.info/gnd/133343642",
+      "http://d-nb.info/gnd/118943014/about/rdf",
+      "http://data.bibsys.no/data/notrbib/authorityentry/x90507115",
+      "http://dbpedialite.org/things/917024#id",
+      "http://de.dbpedia.org/resource/Peter_Weibel_(K\u00FCnstler)",
+      "http://fr.dbpedia.org/resource/Peter_Weibel",
+      "http://freebase.com//m/03pq5y",
+      "http://id.loc.gov/authorities/names/nb2006024797",
+      "http://mpii.de/yago/resource/Peter_Weibel",
+      "http://musicbrainz.org/artist/f9d7e5fe-0005-4978-881d-597f61c26a83",
+      "http://rdf.freebase.com/ns/m.03pq5y",
+      "http://rdf.freebase.com/ns/en.peter_weibel",
+      "http://rdf.freebase.com/ns/guid.9202a8c04000641f80000000003ad8bd",
+      "http://ru.dbpedia.org/resource/\u0412\u0430\u0439\u0431\u0435\u043B\u044C,_\u041F\u0435\u0442\u0435\u0440",
+      "http://umbel.org/umbel/ne/wikipedia/Peter_Weibel",
+      "http://viaf.org/viaf/4952296",
+      "http://viaf.org/viaf/61601946",
+      "http://viaf.org/viaf/92602092",
+      "http://viaf.org/viaf/96219728",
+      "http://viaf.org/viaf/100283704",
+      "http://viaf.org/viaf/103217556",
+      "http://viaf.org/viaf/107027884",
+      "http://viaf.org/viaf/107027897",
+      "http://viaf.org/viaf/107620932",
+      "http://viaf.org/viaf/226958500",
+      "http://wikidata.dbpedia.org/resource/Q313991",
+      "http://www.wikidata.org/entity/Q313991",
+      "http://yago-knowledge.org/resource/Peter_Weibel"
+    ]
+  }
+]
+;
+	var dataDbpedia = {
+  "http://dbpedia.org/resource/Ubermorgen" : { "http://dbpedia.org/ontology/influencedBy" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Peter_Weibel" } ] } ,
+  "http://en.wikipedia.org/wiki/Peter_Weibel" : { "http://xmlns.com/foaf/0.1/primaryTopic" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Peter_Weibel" } ] } ,
+  "http://dbpedia.org/resource/Center_for_Art_and_Media_Karlsruhe" : { "http://dbpedia.org/ontology/director" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Peter_Weibel" } ] } ,
+  "http://dbpedia.org/resource/Invisible_Adversaries" : { "http://dbpedia.org/ontology/writer" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Peter_Weibel" } ] } ,
+  "http://dbpedia.org/resource/Peter_Weibel" : { "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Director110014939" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatLivingPeople" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/FilmMaker110088390" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatConceptualArtists" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Producer110480018" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/FilmDirector110088200" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatAustrianFilmDirectors" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatPeopleFromOdessa" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatAustrianPeople" } ,
+      { "type" : "uri", "value" : "http://xmlns.com/foaf/0.1/Person" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Leader109623038" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/CausalAgent100007347" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Whole100003553" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/LivingThing100004258" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Organism100004475" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/ontology/Person" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatAustrianPeopleOfUkrainianDescent" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/ontology/Agent" } ,
+      { "type" : "uri", "value" : "http://www.w3.org/2002/07/owl#Thing" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatPerformanceArtists" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatTelevisionDirectors" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/PhysicalEntity100001930" } ,
+      { "type" : "uri", "value" : "http://www.wikidata.org/entity/Q5" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Head110162991" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatVideoArtists" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Person100007846" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Object100002684" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/YagoLegalActor" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/YagoLegalActorGeo" } ,
+      { "type" : "uri", "value" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatGerman-languageFilmDirectors" } ,
+      { "type" : "uri", "value" : "http://www.wikidata.org/entity/Q215627" } ,
+      { "type" : "uri", "value" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#NaturalPerson" } ,
+      { "type" : "uri", "value" : "http://www.wikidata.org/entity/Q24229398" } ,
+      { "type" : "uri", "value" : "http://schema.org/Person" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Artist109812338" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Creator109614315" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Administrator109770949" } ] ,
+    "http://www.w3.org/2000/01/rdf-schema#label" : [ { "type" : "literal", "value" : "Peter Weibel (K\u00FCnstler)" , "lang" : "de" } ,
+      { "type" : "literal", "value" : "\u0412\u0430\u0439\u0431\u0435\u043B\u044C, \u041F\u0435\u0442\u0435\u0440" , "lang" : "ru" } ,
+      { "type" : "literal", "value" : "Peter Weibel" , "lang" : "en" } ,
+      { "type" : "literal", "value" : "Peter Weibel" , "lang" : "fr" } ] ,
+    "http://www.w3.org/2000/01/rdf-schema#comment" : [ { "type" : "literal", "value" : "\u041F\u0435\u0442\u0435\u0440 \u0412\u0430\u0439\u0431\u0435\u043B\u044C (5 \u043C\u0430\u0440\u0442\u0430 1944, \u041E\u0434\u0435\u0441\u0441\u0430, \u0421\u0421\u0421\u0420) \u2014 \u0430\u0432\u0441\u0442\u0440\u0438\u0439\u0441\u043A\u0438\u0439 \u0445\u0443\u0434\u043E\u0436\u043D\u0438\u043A, \u043A\u0443\u0440\u0430\u0442\u043E\u0440 \u0438 \u0442\u0435\u043E\u0440\u0435\u0442\u0438\u043A \u043C\u0435\u0434\u0438\u0430-\u0438\u0441\u043A\u0443\u0441\u0441\u0442\u0432\u0430." , "lang" : "ru" } ,
+      { "type" : "literal", "value" : "Peter Weibel est un artiste autrichien n\u00E9 le 5 mars 1944 \u00E0 Odessa en Ukraine." , "lang" : "fr" } ,
+      { "type" : "literal", "value" : "Peter Weibel (* 5. M\u00E4rz 1944 in Odessa, Ukrainische SSR) ist \u00F6sterreichischer K\u00FCnstler, Ausstellungskurator, Kunst- und Medientheoretiker." , "lang" : "de" } ,
+      { "type" : "literal", "value" : "Peter Weibel (German: [\u02C8va\u026Ab\u0259l]; born 5 March 1944 in Odessa, USSR) is an Austrian artist, curator and theoretician." , "lang" : "en" } ] ,
+    "http://www.w3.org/2002/07/owl#sameAs" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Peter_Weibel" } ,
+      { "type" : "uri", "value" : "http://d-nb.info/gnd/118943014" } ,
+      { "type" : "uri", "value" : "http://viaf.org/viaf/107620932" } ,
+      { "type" : "uri", "value" : "http://data.europa.eu/euodp/jrc-names/Peter_Weibel" } ,
+      { "type" : "uri", "value" : "http://www.wikidata.org/entity/Q313991" } ,
+      { "type" : "uri", "value" : "http://wikidata.dbpedia.org/resource/Q313991" } ,
+      { "type" : "uri", "value" : "http://fr.dbpedia.org/resource/Peter_Weibel" } ,
+      { "type" : "uri", "value" : "http://yago-knowledge.org/resource/Peter_Weibel" } ,
+      { "type" : "uri", "value" : "http://rdf.freebase.com/ns/m.03pq5y" } ,
+      { "type" : "uri", "value" : "http://de.dbpedia.org/resource/Peter_Weibel_(K\u00FCnstler)" } ] ,
+    "http://purl.org/dc/terms/subject" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Living_people" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:NSCAD_University_faculty" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Video_artists" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Recipients_of_the_Grand_Decoration_for_Services_to_the_Republic_of_Austria" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Austrian_experimental_filmmakers" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Ukrainian_experimental_filmmakers" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:German-language_film_directors" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Officiers_of_the_Ordre_des_Arts_et_des_Lettres" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Austrian_film_directors" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:1944_births" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:People_from_Odessa" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:University_at_Buffalo_alumni" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Recipients_of_the_Order_of_Merit_of_Baden-W\u00FCrttemberg" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Austrian_people_of_Ukrainian_descent" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Recipients_of_the_Austrian_Cross_of_Honour_for_Science_and_Art,_1st_class" } ] ,
+    "http://xmlns.com/foaf/0.1/name" : [ { "type" : "literal", "value" : "Peter Weibel" , "lang" : "en" } ] ,
+    "http://xmlns.com/foaf/0.1/depiction" : [ { "type" : "uri", "value" : "http://commons.wikimedia.org/wiki/Special:FilePath/Peter_Weibel.png" } ] ,
+    "http://purl.org/dc/terms/description" : [ { "type" : "literal", "value" : "Austrian artist" , "lang" : "en" } ] ,
+    "http://xmlns.com/foaf/0.1/givenName" : [ { "type" : "literal", "value" : "Peter" , "lang" : "en" } ] ,
+    "http://xmlns.com/foaf/0.1/gender" : [ { "type" : "literal", "value" : "male" , "lang" : "en" } ] ,
+    "http://xmlns.com/foaf/0.1/isPrimaryTopicOf" : [ { "type" : "uri", "value" : "http://en.wikipedia.org/wiki/Peter_Weibel" } ] ,
+    "http://xmlns.com/foaf/0.1/surname" : [ { "type" : "literal", "value" : "Weibel" , "lang" : "en" } ] ,
+    "http://www.w3.org/ns/prov#wasDerivedFrom" : [ { "type" : "uri", "value" : "http://en.wikipedia.org/wiki/Peter_Weibel?oldid=729825066" } ] ,
+    "http://dbpedia.org/ontology/wikiPageExternalLink" : [ { "type" : "uri", "value" : "http://dreher.netzliteratur.net/2_Export.pdf" } ,
+      { "type" : "uri", "value" : "http://dreher.netzliteratur.net/4_Medienkunst_Weibel.pdf" } ,
+      { "type" : "uri", "value" : "http://www.on1.zkm.de/zkm/stories/storyReader$975" } ,
+      { "type" : "uri", "value" : "http://www.c3.hu/scca/butterfly/Weibel/cv.html" } ,
+      { "type" : "uri", "value" : "http://www.whenwherewh.at/blog/changing-a%C3%ADsthesis" } ,
+      { "type" : "uri", "value" : "http://www.peter-weibel.at" } ] ,
+    "http://dbpedia.org/ontology/birthYear" : [ { "type" : "literal", "value" : "1944" , "datatype" : "http://www.w3.org/2001/XMLSchema#gYear" } ] ,
+    "http://dbpedia.org/ontology/occupation" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Peter_Weibel__1" } ] ,
+    "http://dbpedia.org/ontology/abstract" : [ { "type" : "literal", "value" : "\u041F\u0435\u0442\u0435\u0440 \u0412\u0430\u0439\u0431\u0435\u043B\u044C (5 \u043C\u0430\u0440\u0442\u0430 1944, \u041E\u0434\u0435\u0441\u0441\u0430, \u0421\u0421\u0421\u0420) \u2014 \u0430\u0432\u0441\u0442\u0440\u0438\u0439\u0441\u043A\u0438\u0439 \u0445\u0443\u0434\u043E\u0436\u043D\u0438\u043A, \u043A\u0443\u0440\u0430\u0442\u043E\u0440 \u0438 \u0442\u0435\u043E\u0440\u0435\u0442\u0438\u043A \u043C\u0435\u0434\u0438\u0430-\u0438\u0441\u043A\u0443\u0441\u0441\u0442\u0432\u0430." , "lang" : "ru" } ,
+      { "type" : "literal", "value" : "Peter Weibel est un artiste autrichien n\u00E9 le 5 mars 1944 \u00E0 Odessa en Ukraine." , "lang" : "fr" } ,
+      { "type" : "literal", "value" : "Peter Weibel (German: [\u02C8va\u026Ab\u0259l]; born 5 March 1944 in Odessa, USSR) is an Austrian artist, curator and theoretician." , "lang" : "en" } ,
+      { "type" : "literal", "value" : "Peter Weibel (* 5. M\u00E4rz 1944 in Odessa, Ukrainische SSR) ist \u00F6sterreichischer K\u00FCnstler, Ausstellungskurator, Kunst- und Medientheoretiker." , "lang" : "de" } ] ,
+    "http://dbpedia.org/ontology/thumbnail" : [ { "type" : "uri", "value" : "http://commons.wikimedia.org/wiki/Special:FilePath/Peter_Weibel.png?width=300" } ] ,
+    "http://dbpedia.org/ontology/birthDate" : [ { "type" : "literal", "value" : "1944-3-5" , "datatype" : "http://www.w3.org/2001/XMLSchema#date" } ,
+      { "type" : "literal", "value" : "1944-03-05" , "datatype" : "http://www.w3.org/2001/XMLSchema#date" } ] ,
+    "http://dbpedia.org/ontology/wikiPageRevisionID" : [ { "type" : "literal", "value" : 729825066 , "datatype" : "http://www.w3.org/2001/XMLSchema#integer" } ] ,
+    "http://dbpedia.org/ontology/birthPlace" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Odessa" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/USSR" } ] ,
+    "http://dbpedia.org/ontology/wikiPageID" : [ { "type" : "literal", "value" : 917024 , "datatype" : "http://www.w3.org/2001/XMLSchema#integer" } ] ,
+    "http://purl.org/linguistics/gold/hypernym" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Artist" } ] }
+}
+;
+	var dataAuth = "http://dbpedia.org/resource/Peter_Weibel";
+	var dataUrl = "peter_weibel.html";
+	var dataResourceType = "participant";
+	var dataName = "Peter Weibel";
+ 	
+</script>
+
+
+
+
+
+<script type="text/javascript">
+
+
+	
+	
+	
+
+	$(document).ready(function($) {
+		
+		
+		padb.resource.initialize();
+			 
+		$( '.scrollable' ).
+		bind( 'mousewheel DOMMouseScroll', function ( e ) {
+			
+			if( e.originalEvent ) e = e.originalEvent;
+			
+			var delta = e.wheelDelta || -e.detail;
+			this.scrollTop += ( delta < 0 ? 1 : -1 ) * 30;
+			e.preventDefault();
+		});		 
+		
+		
+				
+		$.ajaxSetup ({
+			// Disable caching of AJAX responses
+			cache: false
+		});		
+		
+	});
+	
+
+	
+	
+	
+	
+	
+</script>
+
+
+
+
+ 
+<br />
+<div class="container"  style="position:relative;">
+	   
+      <div id="resourceLinks"></div> 
+       
+       
+       
+       
+              
+       
+           
+           
+           
+          <div class="row addSection">
+              <div class="span1 addSectionIconHolder">
+              
+                <i class="icon-user"></i>
+              
+              </div>
+          
+              <div class="span11">
+                <span>Performer</span>
+                <hr>
+                <br />
+              </div>
+        </div>
+        <div class="row">
+            <div class="span1">
+            </div>
+            <div class="span11" style="position:relative">
+                
+                
+                
+                
+               <div>
+                                       <div class="pull-right vignette">
+                            <img  src="../cache/media/peter_weibel.jpg" />
+                            
+                        </div>
+                        
+                                           
+                <div class="pull-left" style="width:80%;">
+                     
+                     <h5 id="resourceLDName">Peter Weibel</h5>
+                     <h5 id="resourceLDAbstract"></h5>
+                     
+                     
+                     <div id="resourceSameAs">
+                        <h5>External Data:</h5>
+                        
+                        
+                     </div>
+                
+                </div>   
+                
+                <br style="clear:both;" />
+            </div>
+            
+            
+                
+            </div>
+        </div>    
+         
+    
+    
+    
+    
+    
+    
+       <div class="row addSection">
+			<div class="span1 addSectionIconHolder">              
+                <i class="icon-asterisk"></i>
+              
+              </div>
+          
+              <div class="span11">
+                <span>Events </span><span id="resourceEventCount"></span>
+                <hr>
+              </div>
+        </div>
+    
+    
+    
+    
+    
+    
+    
+        <div class="row">
+            <div class="span1"></div>
+            <div class="span11" style="position:relative">
+                  
+                 <div class="">
+                    <div id="resourceEventsEvents" class="scrollable">
+                           <table class="table table-condensed table-hover table-striped">
+                               <thead>
+                                <tr>
+                                  <th>Date</th>
+                                  
+                                  <th>Title</th>
+                                  <th>Location</th>
+                                  <th></th>
+                                </tr>
+                              </thead>
+                              <tbody id="resourceEventsEventsRows"> 
+                              </tbody>
+                            </table>
+                     
+                    </div>
+                    
+                    <div id="resourceEventsExport">
+                    
+                    	<input  name="resourceEventsSearch" class="span3" id="resourceEventsSearch"  type="text" placeholder="Filter: names, places, dates">
+                    	<button class="btn btn-mini btn-danger" id="resourceEventsClearFilter"><i class="icon-remove">&nbsp;Clear Filter</i></button>
+                   		<button class="btn btn-mini btn-info" title="Render the currently filitered data as a network" id="resourceRenderEventNetwork"> <img src="../img/icon-network-white.png" style="height:15px; width:auto" /> Two-Mode Event Network</button>
+                   		<button class="btn btn-mini btn-info" title="Render the currently filitered data as a network" id="resourceRenderEventMap"> <i class="icon-globe"></i> Map Event Locations</button>
+                   		<button class="btn btn-mini btn-success" title="Download network as Gephi File" id="resourceDownloadEventGephi"> <img src="../img/icon-gephi.png" style="height:15px; width:auto" /> Donwload Gephi Network</button>
+
+                 
+                    </div>                 
+                </div>
+                <br style="clear:both;" />
+            </div>
+            
+            
+                
+         </div>    
+    
+     
+       <div class="row addSection">
+              <div class="span1">
+              
+                <img src="../img/social-network.png" style=" margin-left:25px; margin-bottom:10px;" />
+              
+              </div>
+          
+              <div class="span11">
+                <span>Performance Network</span> 
+                <hr>
+              </div>
+        </div>
+        
+        <div class="row">
+            <div class="span1">
+            </div>
+            <div class="span11" style="position:relative">
+                
+               	<div style="width: 100%; height:500px;" id="egoNetwork">
+            
+                
+             	</div> 
+                <div class="well pull-left well-small" id="egoNetworkControls">
+                    <span class="rangeLabels">Node Charge</span>
+                    <input type="range" id="resourceEgoNetworkCharge" min="-1000" max="100" value="-120" data-def="-700" />
+                    <br /><span class="rangeLabels">Gravity</span>
+                    <input type="range" id="resourceEgoNetworkGravity" min="0" max="1" value="0.1" step="0.01" data-def="0.3" /> 
+                    <br /><span class="rangeLabels">Edge Length</span>
+                    <input type="range" id="resourceEgoNetworkDistance" min="0" max="300" value="50" data-def="50"  />      
+                    <br /><span class="rangeLabels">Edge Strength</span>
+                    <input type="range" id="resourceEgoNetworkStrength" min="0" max="3" value="1" data-def="0.15" step="0.1"  /> 
+                    <br /><br />
+                    <button type="button" id="resourceEgoNetworkLabelsButton" class="btn btn-mini" title="Show node labels." data-toggle="button">Show Labels</button>  
+                    <button type="button" id="resourceEgoNetworkLiveButton" class="btn btn-mini" title="Show realtime network rendering" data-toggle="button">Live Rendering</button>                     
+                </div>
+                
+                <div class="well pull-left well-small egoNetworkControls span7" style="margin-left:20px;" >
+                
+                	<input  name="resourceEgoNetworkSearch" class="span3" id="resourceEgoNetworkSearch"  type="text" placeholder="Filter: names, places, dates">
+					<button class="btn btn-mini btn-danger" id="resourceEgoClearFilter"><i class="icon-remove">&nbsp;Clear Filter</i></button>
+                    <button class="btn btn-mini btn-success" title="Download network as Gephi File" id="resourceDownloadEgoGephi"> <img src="../img/icon-gephi.png" style="height:15px; width:auto" /> Donwload Gephi Network</button>
+
+                </div>
+                
+            </div>
+        </div>           
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+	
+
+	
+
+
+	
+
+
+</div>
+
+
+
+
+    <div id="resourceEventNetworkModal" class="modal container hide fade" style="min-height:500px" tabindex="-1">
+ 
+      <div class="modal-body">
+      	
+        <div id="eventNetwork" style="height:400px; width:100%">
+        
+        </div>
+      
+      </div>
+      <div class="modal-footer" style="height:20px;">
+      	
+        <div class="well pull-left well-small">
+        	<span class="rangeLabels">Node Charge</span>
+        	<input type="range" id="resourceEventNetworkCharge" min="-800" max="200" value="-120" data-def="-120" />
+            <span class="rangeLabels">Gravity</span>
+        	<input type="range" id="resourceEventNetworkGravity" min="0" max="1" value="0.1" step="0.01" data-def="0.1" /> 
+            <span class="rangeLabels">Edge Length</span>
+        	<input type="range" id="resourceEventNetworkDistance" min="0" max="300" value="50" data-def="50"  />      
+            <span class="rangeLabels">Edge Strength</span>
+        	<input type="range" id="resourceEventNetworkStrength" min="0" max="5" value="1" data-def="1" step="0.1"  />    
+            <button type="button" id="resourceEventNetworkLabelsButton" class="btn btn-mini" data-toggle="button">Show Labels</button>                     
+		</div>
+        <div class="pull-right">
+        <button type="button" data-dismiss="modal" class="btn">Close</button>
+       	</div>
+       </div>
+    </div>
+    
+    
+    
+    
+     <div id="resourceEventMapModal" class="modal container hide fade" style="min-height:500px" tabindex="-1">
+ 
+      <div class="modal-body">
+      	
+        <div id="eventMap" style="height:400px; width:100%">
+        
+        </div>
+      
+      </div>
+      <div class="modal-footer" style="height:20px;">
+      	
+        <div class="well pull-left well-small">                  
+		</div>
+        <div class="pull-right">
+        <button type="button" data-dismiss="modal" class="btn">Close</button>
+       	</div>
+       </div>
+    </div>
+
+<br /><br /><br /><br /><br /><br />
+
+<script type="text/javascript">    var _gaq = _gaq || [];   _gaq.push(['_setAccount', 'UA-10371295-7']);   _gaq.push(['_trackPageview']);    (function() {     var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);   })();  </script>
+
+</body>
+
+<!-- Mirrored from padb.net/resource/peter_weibel by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 11 Jan 2020 22:22:11 GMT -->
+</html>

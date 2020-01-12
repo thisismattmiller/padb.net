@@ -1,0 +1,1 @@
+{"nodes": [{"name": "Performance Pice for a Lonely Person in a Public Place", "type": "event", "year": "1960", "id": 0, "x": 100, "y": 100}, {"name": "Peter Cohen", "type": "person", "id": 1, "x": 100, "y": 100}, {"name": "Robert Filliou", "type": "person", "id": 2, "x": 100, "y": 100}], "edges": [{"source": 1, "target": 0, "value": 1}, {"source": 2, "target": 0, "value": 1}]}

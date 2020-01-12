@@ -1,0 +1,520 @@
+<!doctype html>
+<html>
+
+<!-- Mirrored from padb.net/resource/dick_higgins by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 11 Jan 2020 22:16:51 GMT -->
+<head>
+<meta charset="UTF-8">
+<title>padb.net</title>
+
+
+<link rel="stylesheet" href="../css/bootstrap.css">
+<link rel="stylesheet" href="../css/font-awesome.css">
+<link rel="stylesheet" href="../css/site.css">
+<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+<link rel="icon" type="image/png" href="../img/favicon.png">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/bootstrap-modal.js"></script>
+<script src="../js/bootstrap-modalmanager.js"></script>
+
+<script src="../js/d3.min.js"></script>
+<script src="../js/html5slider.js"></script>
+<script src="../js/topojson.js"></script>
+<script src="../js/padb.js"></script>
+
+
+</head>
+<body>
+    
+    
+	<div style="position:relative;">        
+
+ 		<div style=" border-bottom:solid 1px #ccc;">
+        	<div class="container">
+                
+                 <div id="header">
+                 	
+                     <div class="logo"><a href="../index.html"><span>|||</span>padb</a> </div>
+                    
+                      
+						 <div id="resourceName">Dick Higgins</div>
+					 
+                 </div>
+                
+                
+        	</div>
+            
+    	</div>
+ 
+   </div>
+<script src="../js/countriesData.js"></script>
+
+<script type="text/javascript">
+	//preloaded json from the server
+
+	var dataSameAs = [
+  {
+    "uri": "http://wikidata.dbpedia.org/resource/Q1209700",
+    "numDuplicates": "28",
+    "duplicates": [
+      "http://dbpedia.org/resource/Dick_Higgins",
+      "http://d-nb.info/gnd/121184854",
+      "http://d-nb.info/gnd/121184854/about/rdf",
+      "http://data.bibsys.no/data/notrbib/authorityentry/x90623248",
+      "http://data.bnf.fr/12100002",
+      "http://datos.bne.es/resource/XX1092142",
+      "http://dbpedialite.org/things/228594#id",
+      "http://de.dbpedia.org/resource/Dick_Higgins",
+      "http://discogs.dataincubator.org/artist/dick-higgins",
+      "http://fr.dbpedia.org/resource/Dick_Higgins",
+      "http://freebase.com//m/01h8qc",
+      "http://id.loc.gov/authorities/names/n80004369",
+      "http://isni-url.oclc.nl/isni/0000000110282257",
+      "http://it.dbpedia.org/resource/Dick_Higgins",
+      "http://mpii.de/yago/resource/Dick_Higgins",
+      "http://nl.dbpedia.org/resource/Dick_Higgins",
+      "http://pl.dbpedia.org/resource/Dick_Higgins",
+      "http://pt.dbpedia.org/resource/Dick_Higgins",
+      "http://rdf.freebase.com/ns/m.01h8qc",
+      "http://rdf.freebase.com/ns/en.dick_higgins",
+      "http://rdf.freebase.com/ns/guid.9202a8c04000641f800000000017a2cb",
+      "http://viaf.org/viaf/64035028",
+      "http://viaf.org/viaf/105116089",
+      "http://wikidata.dbpedia.org/resource/Q1209700",
+      "http://www.idref.fr/035799625",
+      "http://www.idref.fr/035799625/id",
+      "http://www.wikidata.org/entity/Q1209700",
+      "http://yago-knowledge.org/resource/Dick_Higgins"
+    ]
+  }
+]
+;
+	var dataDbpedia = {
+  "http://en.wikipedia.org/wiki/Dick_Higgins" : { "http://xmlns.com/foaf/0.1/primaryTopic" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Dick_Higgins" } ] } ,
+  "http://dbpedia.org/resource/Dick_Higgins" : { "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatEnglishPoets" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Artist109812338" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatAmericanPeopleOfEnglishDescent" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Creator109614315" } ,
+      { "type" : "uri", "value" : "http://xmlns.com/foaf/0.1/Person" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Intellectual109621545" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/ontology/Artist" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Theorist110706812" } ,
+      { "type" : "uri", "value" : "http://schema.org/Person" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatContemporaryArtists" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatLanguagePoets" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatMediaTheorists" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Writer110794014" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Communicator109610660" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/YagoLegalActor" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/ontology/Agent" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/YagoLegalActorGeo" } ,
+      { "type" : "uri", "value" : "http://www.wikidata.org/entity/Q24229398" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Person100007846" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Object100002684" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Poet110444194" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Organism100004475" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/PhysicalEntity100001930" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/ontology/Person" } ,
+      { "type" : "uri", "value" : "http://www.wikidata.org/entity/Q215627" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Whole100003553" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/LivingThing100004258" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/CausalAgent100007347" } ,
+      { "type" : "uri", "value" : "http://www.wikidata.org/entity/Q5" } ,
+      { "type" : "uri", "value" : "http://www.w3.org/2002/07/owl#Thing" } ,
+      { "type" : "uri", "value" : "http://www.wikidata.org/entity/Q483501" } ,
+      { "type" : "uri", "value" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#NaturalPerson" } ,
+      { "type" : "uri", "value" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatPeopleFromCambridge" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatAmericanArtists" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatBritishArtists" } ] ,
+    "http://www.w3.org/2000/01/rdf-schema#label" : [ { "type" : "literal", "value" : "Dick Higgins" , "lang" : "pl" } ,
+      { "type" : "literal", "value" : "Dick Higgins" , "lang" : "nl" } ,
+      { "type" : "literal", "value" : "Dick Higgins" , "lang" : "de" } ,
+      { "type" : "literal", "value" : "Dick Higgins" , "lang" : "it" } ,
+      { "type" : "literal", "value" : "Dick Higgins" , "lang" : "fr" } ,
+      { "type" : "literal", "value" : "Dick Higgins" , "lang" : "pt" } ,
+      { "type" : "literal", "value" : "Dick Higgins" , "lang" : "en" } ] ,
+    "http://www.w3.org/2000/01/rdf-schema#comment" : [ { "type" : "literal", "value" : "Dick Higgins (Cambridge, Inglaterra,15 de mar\u00E7o de 1938 - Quebec, Canada, 25 de outubro de 1998) foi um compositor, poeta, tip\u00F3grafo e um dos primeiros artistas do grupo Fluxus, criador do conceito de Interm\u00EDdia. Teorizou tamb\u00E9m sobre literatura, incluindo a Poesia concreta. Sua poesia tem rela\u00E7\u00E3o com a Language poetry." , "lang" : "pt" } ,
+      { "type" : "literal", "value" : "Dick Higgins, b\u00FCrgerlicher Name Richard Carter Higgins (* 15. M\u00E4rz 1938 in Cambridge, England; \u2020 25. Oktober 1998 in Qu\u00E9bec, Qu\u00E9bec, Kanada) war ein Komponist, Dramatiker, Fluxus-K\u00FCnstler, Autor und Verleger." , "lang" : "de" } ,
+      { "type" : "literal", "value" : "Dick Higgins (Cambridge, 15 maart 1938 \u2013 Quebec, 25 oktober 1998) was een experimenteel kunstenaar en een van de medeoprichters van Fluxus. Zijn werk bestrijkt veel gebieden, waaronder schilderkunst, performance, dichtkunst, happening, film, typografie en boekdrukkunst. Hij was de bedenker van de term intermedia. Net als sommige andere Fluxus kunstenaars studeerde Higgins compositieleer bij John Cage. In 1960 trouwde hij met de kunstenares Alison Knowles. Hij overleed in Quebec, Canada aan een hartaanval." , "lang" : "nl" } ,
+      { "type" : "literal", "value" : "Dick Higgins (1938-1998) est un \u00E9crivain et artiste am\u00E9ricain." , "lang" : "fr" } ,
+      { "type" : "literal", "value" : "Si \u00E8 occupato dei fenomeni di interrelazione tra le arti fin dal 1957." , "lang" : "it" } ,
+      { "type" : "literal", "value" : "Dick Higgins (March 15, 1938 \u2013 October 25, 1998) was a British composer, poet, printmaker, and early Fluxus artist." , "lang" : "en" } ,
+      { "type" : "literal", "value" : "Dick Higgins (ur. w 1938 w Cambridge, zm. w 1998) \u2013 ameryka\u0144ski artysta intermedialny. Poeta, kompozytor i teoretyk sztuki, grafik, tw\u00F3rca happening\u00F3w. Jeden z za\u0142o\u017Cycieli grupy Fluxus. Tw\u00F3rca terminu  intermedia, odnosz\u0105cego si\u0119 do tw\u00F3rczo\u015Bci z pogranicza muzyki, plastyki czy literatury. W swojej tw\u00F3rczo\u015B\u0107i zainteresowany formami rozbijaj\u0105cymi pozorne granice pomi\u0119dzy sztukami. Szczeg\u00F3lnie zainteresowany poezj\u0105 wizualn\u0105. Zmar\u0142 na zawa\u0142 serca w trakcie uczestnictwa w imprezie w Quebec w Kanadzie. Wydawnictwa w j\u0119zyku polskim:" , "lang" : "pl" } ] ,
+    "http://www.w3.org/2002/07/owl#sameAs" : [ { "type" : "uri", "value" : "http://wikidata.dbpedia.org/resource/Q1209700" } ,
+      { "type" : "uri", "value" : "http://de.dbpedia.org/resource/Dick_Higgins" } ,
+      { "type" : "uri", "value" : "http://yago-knowledge.org/resource/Dick_Higgins" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Dick_Higgins" } ,
+      { "type" : "uri", "value" : "http://fr.dbpedia.org/resource/Dick_Higgins" } ,
+      { "type" : "uri", "value" : "http://pl.dbpedia.org/resource/Dick_Higgins" } ,
+      { "type" : "uri", "value" : "http://d-nb.info/gnd/121184854" } ,
+      { "type" : "uri", "value" : "http://rdf.freebase.com/ns/m.01h8qc" } ,
+      { "type" : "uri", "value" : "http://cs.dbpedia.org/resource/Dick_Higgins" } ,
+      { "type" : "uri", "value" : "http://nl.dbpedia.org/resource/Dick_Higgins" } ,
+      { "type" : "uri", "value" : "http://www.wikidata.org/entity/Q1209700" } ,
+      { "type" : "uri", "value" : "http://pt.dbpedia.org/resource/Dick_Higgins" } ,
+      { "type" : "uri", "value" : "http://it.dbpedia.org/resource/Dick_Higgins" } ] ,
+    "http://purl.org/dc/terms/subject" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:1938_births" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Media_theorists" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:20th-century_English_poets" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:People_from_Cambridge" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:1998_deaths" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Fluxus" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Signalism" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Language_poets" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:British_emigrants_to_the_United_States" } ] ,
+    "http://xmlns.com/foaf/0.1/name" : [ { "type" : "literal", "value" : "Dick Higgins" , "lang" : "en" } ] ,
+    "http://purl.org/dc/terms/description" : [ { "type" : "literal", "value" : "English composer and poet" , "lang" : "en" } ] ,
+    "http://xmlns.com/foaf/0.1/givenName" : [ { "type" : "literal", "value" : "Dick" , "lang" : "en" } ] ,
+    "http://xmlns.com/foaf/0.1/gender" : [ { "type" : "literal", "value" : "male" , "lang" : "en" } ] ,
+    "http://xmlns.com/foaf/0.1/isPrimaryTopicOf" : [ { "type" : "uri", "value" : "http://en.wikipedia.org/wiki/Dick_Higgins" } ] ,
+    "http://xmlns.com/foaf/0.1/surname" : [ { "type" : "literal", "value" : "Higgins" , "lang" : "en" } ] ,
+    "http://dbpedia.org/property/bgcolour" : [ { "type" : "literal", "value" : "#6495ED" , "datatype" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString" } ] ,
+    "http://www.w3.org/ns/prov#wasDerivedFrom" : [ { "type" : "uri", "value" : "http://en.wikipedia.org/wiki/Dick_Higgins?oldid=739186866" } ] ,
+    "http://dbpedia.org/ontology/wikiPageExternalLink" : [ { "type" : "uri", "value" : "http://aok2.lib.umbc.edu/specoll/Higgins/index.php" } ,
+      { "type" : "uri", "value" : "http://www.ubu.com/historical/higgins/index.html" } ,
+      { "type" : "uri", "value" : "http://www.ubu.com/sound/tellus_24.html" } ,
+      { "type" : "uri", "value" : "http://www.sylvie-ferre.com/higgins/higieng.html" } ,
+      { "type" : "uri", "value" : "http://www.fluxusheidelberg.org/dhint.html" } ,
+      { "type" : "uri", "value" : "http://archives2.getty.edu:8082/xtf/view?docId=ead/870613/870613.xml" } ,
+      { "type" : "uri", "value" : "http://www.thing.net/~grist/ld/fluxus.htm" } ,
+      { "type" : "uri", "value" : "http://www.thing.net/~grist/l&d/lhiggins.htm" } ,
+      { "type" : "uri", "value" : "http://www.lib.uiowa.edu/spec-coll/MSC/ToMsC800/MsC790/MsC790.htm" } ,
+      { "type" : "uri", "value" : "http://sdsupress.sdsu.edu/newtitles.html" } ,
+      { "type" : "uri", "value" : "http://www.artpool.hu/Fluxus/Higgins/intermedia2.html" } ,
+      { "type" : "uri", "value" : "http://colophon.com/umbrella/higgins_21.3_4.html" } ] ,
+    "http://dbpedia.org/property/caption" : [ { "type" : "literal", "value" : "Dick Higgins" , "datatype" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString" } ] ,
+    "http://dbpedia.org/property/imagesize" : [ { "type" : "literal", "value" : 150 , "datatype" : "http://www.w3.org/2001/XMLSchema#integer" } ] ,
+    "http://dbpedia.org/ontology/abstract" : [ { "type" : "literal", "value" : "Dick Higgins (ur. w 1938 w Cambridge, zm. w 1998) \u2013 ameryka\u0144ski artysta intermedialny. Poeta, kompozytor i teoretyk sztuki, grafik, tw\u00F3rca happening\u00F3w. Jeden z za\u0142o\u017Cycieli grupy Fluxus. Tw\u00F3rca terminu  intermedia, odnosz\u0105cego si\u0119 do tw\u00F3rczo\u015Bci z pogranicza muzyki, plastyki czy literatury. W swojej tw\u00F3rczo\u015B\u0107i zainteresowany formami rozbijaj\u0105cymi pozorne granice pomi\u0119dzy sztukami. Szczeg\u00F3lnie zainteresowany poezj\u0105 wizualn\u0105. Higgins urodzi\u0142 si\u0119 w Cambridge w Anglii. Jak wielu artyst\u00F3w Fluxusu, studiowa\u0142 kompozycj\u0119 wraz z Johnem Cage'em. Po\u015Blubi\u0142 artystk\u0119 Alison Knowles w 1960 r. Za\u0142o\u017Cy\u0142 wydawnictwo Something Else Press w 1963 r., w kt\u00F3rym publikowano wiele wa\u017Cnych tekst\u00F3w artyst\u00F3w takich jak m.in. : Gertrude Stein, Marshal McLuhan, Emmett Williams, Claes Oldenburg, George Brecht, Daniel Spoerri, Diter Rot, Wolf Vostell, Bern Porter, Ray Johnson, Ken Friedman i innych. Jego c\u00F3rka, Hannah Higgins jest autork\u0105 ksi\u0105\u017Cki Fluxus Experience, b\u0119d\u0105cej autorytatywn\u0105 pozycj\u0105 dot. ruchu Fluxus. Jej siostra bli\u017Aniaczka, Jessica Higgins, jest r\u00F3wnie\u017C artystk\u0105 intermedialn\u0105, tworz\u0105c\u0105 w Nowym Jorku. Higgins wynalaz\u0142 termin intermedia, aby opisa\u0107 swoje artystyczne dokonania, definiuj\u0105c je w 1965 r. w swoim eseju o tej samej nazwie, opublikowanym w Something Else Newsletter (cho\u0107 wynalezienie terminu, w tym samym eseju, przypisuje Samuelowi Taylorowi Coleridge-owi). Najbardziej znanymi osi\u0105gni\u0119ciami s\u0105: sukces Danger Music, oraz wprowadzenie do u\u017Cycia terminu Intermedia jako definicji nieopisanych wcze\u015Bniej, interdyscyplinarnych zdarze\u0144 w sztuce, popularnych w latach 60. By\u0142 prekursorem u\u017Cytkowania komputera jako narz\u0119dzia do tworzenia sztuki marketingowej, datowanej w po\u0142owie lat 60. Opublikowa\u0142 czterdzie\u015Bci siedem ksi\u0105\u017Cek, w tym t\u0142umaczenie ksi\u0105\u017Cki Giordano Bruno \"On the Composition of Signs and Images\", kt\u00F3re mog\u0142o by\u0107 uwa\u017Cane za wczesny tekst o multimediach. \"The Book of Love & War & Death\", opublikowana w 1972 r. by\u0142a wynikiem przypadku, poniewa\u017C ca\u0142y tekst zosta\u0142 wygenerowany przez komputer. We wprowadzeniu Higgins opisuje FORTRAN IV czyli program do tworzenia przypadkowych linijek tekstu w jednym z wers\u00F3w frazesu. \"A Dialectic of Centuries: Notes towards a Theory of the New Arts\" zebrane w wielu jego esejach i pracach teoretycznych w 1976 r. Higgins r\u00F3wnie\u017C by\u0142 za\u0142o\u017Cycielem \"Unpublished Editions\", kt\u00F3re zmieni\u0142y p\u00F3\u017Aniej nazw\u0119 na \"Printed Editions\". Zmar\u0142 na zawa\u0142 serca w trakcie uczestnictwa w imprezie w Quebec w Kanadzie. Wydawnictwa w j\u0119zyku polskim: \n*  Dick Higgins Nowoczesno\u015B\u0107 od czasu postmodernizmu oraz inne eseje, Wyd. s\u0142owo/obraz terytoria, Gda\u0144sk 2000, ISBN 83-87316-68-7." , "lang" : "pl" } ,
+      { "type" : "literal", "value" : "Dick Higgins (March 15, 1938 \u2013 October 25, 1998) was a British composer, poet, printmaker, and early Fluxus artist." , "lang" : "en" } ,
+      { "type" : "literal", "value" : "Dick Higgins (Cambridge, 15 maart 1938 \u2013 Quebec, 25 oktober 1998) was een experimenteel kunstenaar en een van de medeoprichters van Fluxus. Zijn werk bestrijkt veel gebieden, waaronder schilderkunst, performance, dichtkunst, happening, film, typografie en boekdrukkunst. Hij was de bedenker van de term intermedia. Net als sommige andere Fluxus kunstenaars studeerde Higgins compositieleer bij John Cage. In 1960 trouwde hij met de kunstenares Alison Knowles. In 1963 richtte hij een uitgeverij op met de naam Something Else Press. Deze uitgeverij publiceerde vele teksten van kunstenaars als Gertrude Stein, George Brecht, Daniel Spoerri, Bern Porter, Ray Johnson, Ken Friedman, en anderen. Zijn dochter Hannah Higgins is de auteur van \"The Fluxus Experience\", wat als een standaardwerk over de Fluxusbeweging gezien wordt. Voor zijn interdisciplinaire activiteiten als beeldend en dichtend kunstenaar bedacht Higgins het woord \"intermedia\" en beschreef in 1965 de betekenis ervan in een essay met dezelfde naam. Tot zijn meest interessante bijdragen behoren \"Danger Music\" composities. Hij behoorde rond 1965 tot de eersten die het gebruik van computers introduceerden als gereedschap om kunst mee te vervaardigen. Higgins publiceerde vierenzeventig boeken, waaronder een vertaling van een tekst van Giordano Bruno (On the Composition of Signs and Images) die als een vroege verhandeling over multimedia gezien kan worden. The Book of Love & War & Death uit 1972 is een gedicht dat een heel boek beslaat, en een van de eerste door een computer gegenereerde teksten. In het voorwoord beschrijft Higgins hoe hij een programma schreef om de zinnen van een van de coupletten van het gedicht op toevallige wijze door elkaar te husselen. In de in 1976 verschenen bloemlezing A Dialectic of Centuries: Notes towards a Theory of the New Arts zijn vele van zijn theoretische werken en essays verzameld. Hij overleed in Quebec, Canada aan een hartaanval." , "lang" : "nl" } ,
+      { "type" : "literal", "value" : "Dick Higgins, b\u00FCrgerlicher Name Richard Carter Higgins (* 15. M\u00E4rz 1938 in Cambridge, England; \u2020 25. Oktober 1998 in Qu\u00E9bec, Qu\u00E9bec, Kanada) war ein Komponist, Dramatiker, Fluxus-K\u00FCnstler, Autor und Verleger." , "lang" : "de" } ,
+      { "type" : "literal", "value" : "Dick Higgins (Cambridge, Inglaterra,15 de mar\u00E7o de 1938 - Quebec, Canada, 25 de outubro de 1998) foi um compositor, poeta, tip\u00F3grafo e um dos primeiros artistas do grupo Fluxus, criador do conceito de Interm\u00EDdia. Teorizou tamb\u00E9m sobre literatura, incluindo a Poesia concreta. Sua poesia tem rela\u00E7\u00E3o com a Language poetry." , "lang" : "pt" } ,
+      { "type" : "literal", "value" : "Dick Higgins (1938-1998) est un \u00E9crivain et artiste am\u00E9ricain." , "lang" : "fr" } ,
+      { "type" : "literal", "value" : "Si \u00E8 occupato dei fenomeni di interrelazione tra le arti fin dal 1957." , "lang" : "it" } ] ,
+    "http://dbpedia.org/ontology/birthDate" : [ { "type" : "literal", "value" : "1938-3-15" , "datatype" : "http://www.w3.org/2001/XMLSchema#date" } ,
+      { "type" : "literal", "value" : "1938-03-15" , "datatype" : "http://www.w3.org/2001/XMLSchema#date" } ] ,
+    "http://dbpedia.org/ontology/deathDate" : [ { "type" : "literal", "value" : "1998-10-25" , "datatype" : "http://www.w3.org/2001/XMLSchema#date" } ] ,
+    "http://dbpedia.org/ontology/deathPlace" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Quebec" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Quebec,_Canada" } ] ,
+    "http://dbpedia.org/ontology/wikiPageRevisionID" : [ { "type" : "literal", "value" : 739186866 , "datatype" : "http://www.w3.org/2001/XMLSchema#integer" } ] ,
+    "http://dbpedia.org/ontology/birthPlace" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Cambridge" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Cambridge,_England" } ] ,
+    "http://dbpedia.org/ontology/wikiPageID" : [ { "type" : "literal", "value" : 228594 , "datatype" : "http://www.w3.org/2001/XMLSchema#integer" } ] ,
+    "http://purl.org/linguistics/gold/hypernym" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Composer" } ] ,
+    "http://dbpedia.org/ontology/influenced" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Language_poets" } ] ,
+    "http://dbpedia.org/ontology/field" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Printmaking" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Poetry" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Composition_(language)" } ] }
+}
+;
+	var dataAuth = "http://dbpedia.org/resource/Dick_Higgins";
+	var dataUrl = "dick_higgins.html";
+	var dataResourceType = "participant";
+	var dataName = "Dick Higgins";
+ 	
+</script>
+
+
+
+
+
+<script type="text/javascript">
+
+
+	
+	
+	
+
+	$(document).ready(function($) {
+		
+		
+		padb.resource.initialize();
+			 
+		$( '.scrollable' ).
+		bind( 'mousewheel DOMMouseScroll', function ( e ) {
+			
+			if( e.originalEvent ) e = e.originalEvent;
+			
+			var delta = e.wheelDelta || -e.detail;
+			this.scrollTop += ( delta < 0 ? 1 : -1 ) * 30;
+			e.preventDefault();
+		});		 
+		
+		
+				
+		$.ajaxSetup ({
+			// Disable caching of AJAX responses
+			cache: false
+		});		
+		
+	});
+	
+
+	
+	
+	
+	
+	
+</script>
+
+
+
+
+ 
+<br />
+<div class="container"  style="position:relative;">
+	   
+      <div id="resourceLinks"></div> 
+       
+       
+       
+       
+              
+       
+           
+           
+           
+          <div class="row addSection">
+              <div class="span1 addSectionIconHolder">
+              
+                <i class="icon-user"></i>
+              
+              </div>
+          
+              <div class="span11">
+                <span>Performer</span>
+                <hr>
+                <br />
+              </div>
+        </div>
+        <div class="row">
+            <div class="span1">
+            </div>
+            <div class="span11" style="position:relative">
+                
+                
+                
+                
+               <div>
+                                       <div class="pull-right vignette">
+                            <img  src="../cache/media/dick_higgins.jpg" />
+                            
+                        </div>
+                        
+                                           
+                <div class="pull-left" style="width:80%;">
+                     
+                     <h5 id="resourceLDName">Dick Higgins</h5>
+                     <h5 id="resourceLDAbstract"></h5>
+                     
+                     
+                     <div id="resourceSameAs">
+                        <h5>External Data:</h5>
+                        
+                        
+                     </div>
+                
+                </div>   
+                
+                <br style="clear:both;" />
+            </div>
+            
+            
+                
+            </div>
+        </div>    
+         
+    
+    
+    
+    
+    
+    
+       <div class="row addSection">
+			<div class="span1 addSectionIconHolder">              
+                <i class="icon-asterisk"></i>
+              
+              </div>
+          
+              <div class="span11">
+                <span>Events </span><span id="resourceEventCount"></span>
+                <hr>
+              </div>
+        </div>
+    
+    
+    
+    
+    
+    
+    
+        <div class="row">
+            <div class="span1"></div>
+            <div class="span11" style="position:relative">
+                  
+                 <div class="">
+                    <div id="resourceEventsEvents" class="scrollable">
+                           <table class="table table-condensed table-hover table-striped">
+                               <thead>
+                                <tr>
+                                  <th>Date</th>
+                                  
+                                  <th>Title</th>
+                                  <th>Location</th>
+                                  <th></th>
+                                </tr>
+                              </thead>
+                              <tbody id="resourceEventsEventsRows"> 
+                              </tbody>
+                            </table>
+                     
+                    </div>
+                    
+                    <div id="resourceEventsExport">
+                    
+                    	<input  name="resourceEventsSearch" class="span3" id="resourceEventsSearch"  type="text" placeholder="Filter: names, places, dates">
+                    	<button class="btn btn-mini btn-danger" id="resourceEventsClearFilter"><i class="icon-remove">&nbsp;Clear Filter</i></button>
+                   		<button class="btn btn-mini btn-info" title="Render the currently filitered data as a network" id="resourceRenderEventNetwork"> <img src="../img/icon-network-white.png" style="height:15px; width:auto" /> Two-Mode Event Network</button>
+                   		<button class="btn btn-mini btn-info" title="Render the currently filitered data as a network" id="resourceRenderEventMap"> <i class="icon-globe"></i> Map Event Locations</button>
+                   		<button class="btn btn-mini btn-success" title="Download network as Gephi File" id="resourceDownloadEventGephi"> <img src="../img/icon-gephi.png" style="height:15px; width:auto" /> Donwload Gephi Network</button>
+
+                 
+                    </div>                 
+                </div>
+                <br style="clear:both;" />
+            </div>
+            
+            
+                
+         </div>    
+    
+     
+       <div class="row addSection">
+              <div class="span1">
+              
+                <img src="../img/social-network.png" style=" margin-left:25px; margin-bottom:10px;" />
+              
+              </div>
+          
+              <div class="span11">
+                <span>Performance Network</span> 
+                <hr>
+              </div>
+        </div>
+        
+        <div class="row">
+            <div class="span1">
+            </div>
+            <div class="span11" style="position:relative">
+                
+               	<div style="width: 100%; height:500px;" id="egoNetwork">
+            
+                
+             	</div> 
+                <div class="well pull-left well-small" id="egoNetworkControls">
+                    <span class="rangeLabels">Node Charge</span>
+                    <input type="range" id="resourceEgoNetworkCharge" min="-1000" max="100" value="-120" data-def="-700" />
+                    <br /><span class="rangeLabels">Gravity</span>
+                    <input type="range" id="resourceEgoNetworkGravity" min="0" max="1" value="0.1" step="0.01" data-def="0.3" /> 
+                    <br /><span class="rangeLabels">Edge Length</span>
+                    <input type="range" id="resourceEgoNetworkDistance" min="0" max="300" value="50" data-def="50"  />      
+                    <br /><span class="rangeLabels">Edge Strength</span>
+                    <input type="range" id="resourceEgoNetworkStrength" min="0" max="3" value="1" data-def="0.15" step="0.1"  /> 
+                    <br /><br />
+                    <button type="button" id="resourceEgoNetworkLabelsButton" class="btn btn-mini" title="Show node labels." data-toggle="button">Show Labels</button>  
+                    <button type="button" id="resourceEgoNetworkLiveButton" class="btn btn-mini" title="Show realtime network rendering" data-toggle="button">Live Rendering</button>                     
+                </div>
+                
+                <div class="well pull-left well-small egoNetworkControls span7" style="margin-left:20px;" >
+                
+                	<input  name="resourceEgoNetworkSearch" class="span3" id="resourceEgoNetworkSearch"  type="text" placeholder="Filter: names, places, dates">
+					<button class="btn btn-mini btn-danger" id="resourceEgoClearFilter"><i class="icon-remove">&nbsp;Clear Filter</i></button>
+                    <button class="btn btn-mini btn-success" title="Download network as Gephi File" id="resourceDownloadEgoGephi"> <img src="../img/icon-gephi.png" style="height:15px; width:auto" /> Donwload Gephi Network</button>
+
+                </div>
+                
+            </div>
+        </div>           
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+	
+
+	
+
+
+	
+
+
+</div>
+
+
+
+
+    <div id="resourceEventNetworkModal" class="modal container hide fade" style="min-height:500px" tabindex="-1">
+ 
+      <div class="modal-body">
+      	
+        <div id="eventNetwork" style="height:400px; width:100%">
+        
+        </div>
+      
+      </div>
+      <div class="modal-footer" style="height:20px;">
+      	
+        <div class="well pull-left well-small">
+        	<span class="rangeLabels">Node Charge</span>
+        	<input type="range" id="resourceEventNetworkCharge" min="-800" max="200" value="-120" data-def="-120" />
+            <span class="rangeLabels">Gravity</span>
+        	<input type="range" id="resourceEventNetworkGravity" min="0" max="1" value="0.1" step="0.01" data-def="0.1" /> 
+            <span class="rangeLabels">Edge Length</span>
+        	<input type="range" id="resourceEventNetworkDistance" min="0" max="300" value="50" data-def="50"  />      
+            <span class="rangeLabels">Edge Strength</span>
+        	<input type="range" id="resourceEventNetworkStrength" min="0" max="5" value="1" data-def="1" step="0.1"  />    
+            <button type="button" id="resourceEventNetworkLabelsButton" class="btn btn-mini" data-toggle="button">Show Labels</button>                     
+		</div>
+        <div class="pull-right">
+        <button type="button" data-dismiss="modal" class="btn">Close</button>
+       	</div>
+       </div>
+    </div>
+    
+    
+    
+    
+     <div id="resourceEventMapModal" class="modal container hide fade" style="min-height:500px" tabindex="-1">
+ 
+      <div class="modal-body">
+      	
+        <div id="eventMap" style="height:400px; width:100%">
+        
+        </div>
+      
+      </div>
+      <div class="modal-footer" style="height:20px;">
+      	
+        <div class="well pull-left well-small">                  
+		</div>
+        <div class="pull-right">
+        <button type="button" data-dismiss="modal" class="btn">Close</button>
+       	</div>
+       </div>
+    </div>
+
+<br /><br /><br /><br /><br /><br />
+
+<script type="text/javascript">    var _gaq = _gaq || [];   _gaq.push(['_setAccount', 'UA-10371295-7']);   _gaq.push(['_trackPageview']);    (function() {     var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);   })();  </script>
+
+</body>
+
+<!-- Mirrored from padb.net/resource/dick_higgins by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 11 Jan 2020 22:16:55 GMT -->
+</html>

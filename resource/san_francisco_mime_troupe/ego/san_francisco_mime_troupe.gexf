@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<gexf version="1.2" xmlns="http://www.gexf.net/1.2draft">
+ <graph mode="static" defaultedgetype="undirected">
+  <nodes>
+   <node id="435" label="Jeff Berner"/>
+   <node id="482" label="Larry Baldwin"/>
+   <node id="483" label="San Francisco Mime Troupe"/>
+   <node id="484" label="Flux orchestra"/>
+   <node id="485" label="Quicksilver Messenger Service"/>
+  </nodes>
+  <edges>
+   <edge source="435" target="482"/>
+   <edge source="435" target="483"/>
+   <edge source="435" target="484"/>
+   <edge source="435" target="485"/>
+   <edge source="482" target="483"/>
+   <edge source="482" target="484"/>
+   <edge source="482" target="485"/>
+   <edge source="483" target="484"/>
+   <edge source="483" target="485"/>
+   <edge source="484" target="485"/>
+  </edges>
+ </graph>
+</gexf>

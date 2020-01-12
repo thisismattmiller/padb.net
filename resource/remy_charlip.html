@@ -1,0 +1,464 @@
+<!doctype html>
+<html>
+
+<!-- Mirrored from padb.net/resource/remy_charlip by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 11 Jan 2020 22:21:16 GMT -->
+<head>
+<meta charset="UTF-8">
+<title>padb.net</title>
+
+
+<link rel="stylesheet" href="../css/bootstrap.css">
+<link rel="stylesheet" href="../css/font-awesome.css">
+<link rel="stylesheet" href="../css/site.css">
+<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+<link rel="icon" type="image/png" href="../img/favicon.png">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/bootstrap-modal.js"></script>
+<script src="../js/bootstrap-modalmanager.js"></script>
+
+<script src="../js/d3.min.js"></script>
+<script src="../js/html5slider.js"></script>
+<script src="../js/topojson.js"></script>
+<script src="../js/padb.js"></script>
+
+
+</head>
+<body>
+    
+    
+	<div style="position:relative;">        
+
+ 		<div style=" border-bottom:solid 1px #ccc;">
+        	<div class="container">
+                
+                 <div id="header">
+                 	
+                     <div class="logo"><a href="../index.html"><span>|||</span>padb</a> </div>
+                    
+                      
+						 <div id="resourceName">Remy Charlip</div>
+					 
+                 </div>
+                
+                
+        	</div>
+            
+    	</div>
+ 
+   </div>
+<script src="../js/countriesData.js"></script>
+
+<script type="text/javascript">
+	//preloaded json from the server
+
+	var dataSameAs = [
+  {
+    "uri": "http://www.wikidata.org/entity/Q7312257",
+    "numDuplicates": "8",
+    "duplicates": [
+      "http://dbpedia.org/resource/Remy_Charlip",
+      "http://dbpedialite.org/things/3296453#id",
+      "http://mpii.de/yago/resource/Remy_Charlip",
+      "http://rdf.freebase.com/ns/m.09401y",
+      "http://rdf.freebase.com/ns/en.remy_charlip",
+      "http://rdf.freebase.com/ns/guid.9202a8c04000641f800000000092003d",
+      "http://www.wikidata.org/entity/Q7312257",
+      "http://yago-knowledge.org/resource/Remy_Charlip"
+    ]
+  }
+]
+;
+	var dataDbpedia = {
+  "http://dbpedia.org/resource/Remy_Charlip" : { "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatAmericanChoreographers" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Choreographer109920283" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Scholar110557854" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatWritersFromSanFrancisco,California" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatCooperUnionAlumni" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Artist109812338" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Creator109614315" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Illustrator109812068" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Person100007846" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Object100002684" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/YagoLegalActor" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/YagoLegalActorGeo" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Writer110794014" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/PhysicalEntity100001930" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Intellectual109621545" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Alumnus109786338" } ,
+      { "type" : "uri", "value" : "http://www.w3.org/2002/07/owl#Thing" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Peer109626238" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Colleague109935990" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Associate109816771" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatArtistsFromSanFrancisco,California" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Wikicat20th-centuryAmericanWriters" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Communicator109610660" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatArtistsFromNewYorkCity" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatGuggenheimFellows" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Organism100004475" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/ontology/Person" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatWritersFromNewYorkCity" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatAmericanMaleWriters" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/CausalAgent100007347" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Whole100003553" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Wikicat21st-centuryAmericanWriters" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/LivingThing100004258" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatAmericanArtists" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatChildren'sBookIllustrators" } ] ,
+    "http://www.w3.org/2000/01/rdf-schema#label" : [ { "type" : "literal", "value" : "Remy Charlip" , "lang" : "fr" } ,
+      { "type" : "literal", "value" : "Remy Charlip" , "lang" : "en" } ] ,
+    "http://www.w3.org/2000/01/rdf-schema#comment" : [ { "type" : "literal", "value" : "Abraham Remy Charlip (10 janvier 1929 - 14 ao\u00FBt 2012) \u00E9tait un artiste am\u00E9ricain, danseur, chor\u00E9graphe, illustrateur, metteur en sc\u00E8ne, graphiste ainsi que professeur. Il a \u00E9crit ou illustr\u00E9 de nombreux livres pour enfant, et re\u00E7u plusieurs r\u00E9compenses." , "lang" : "fr" } ,
+      { "type" : "literal", "value" : "Abraham Remy Charlip (January 10, 1929 \u2013 August 14, 2012) was an American artist, writer, choreographer, theatre director, theatrical designer, and teacher. He wrote or illustrated 29 children's books." , "lang" : "en" } ] ,
+    "http://www.w3.org/2002/07/owl#sameAs" : [ { "type" : "uri", "value" : "http://rdf.freebase.com/ns/m.09401y" } ,
+      { "type" : "uri", "value" : "http://yago-knowledge.org/resource/Remy_Charlip" } ,
+      { "type" : "uri", "value" : "http://wikidata.dbpedia.org/resource/Q7312257" } ,
+      { "type" : "uri", "value" : "http://www.wikidata.org/entity/Q7312257" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Remy_Charlip" } ,
+      { "type" : "uri", "value" : "http://fr.dbpedia.org/resource/Remy_Charlip" } ] ,
+    "http://purl.org/dc/terms/subject" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Writers_from_San_Francisco" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Writers_from_New_York_City" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:American_choreographers" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:2012_deaths" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Artists_from_San_Francisco" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Artists_from_New_York_City" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Cooper_Union_alumni" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Guggenheim_Fellows" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:American_male_writers" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:American_artists" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:American_children's_book_illustrators" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:20th-century_American_writers" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:21st-century_American_writers" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:1929_births" } ] ,
+    "http://xmlns.com/foaf/0.1/name" : [ { "type" : "literal", "value" : "Remy Charlip" , "lang" : "en" } ] ,
+    "http://xmlns.com/foaf/0.1/homepage" : [ { "type" : "uri", "value" : "http://www.remycharlip.org/" } ] ,
+    "http://purl.org/dc/terms/description" : [ { "type" : "literal", "value" : "American artist and children's writer" , "lang" : "en" } ] ,
+    "http://xmlns.com/foaf/0.1/givenName" : [ { "type" : "literal", "value" : "Remy" , "lang" : "en" } ] ,
+    "http://xmlns.com/foaf/0.1/gender" : [ { "type" : "literal", "value" : "male" , "lang" : "en" } ] ,
+    "http://xmlns.com/foaf/0.1/isPrimaryTopicOf" : [ { "type" : "uri", "value" : "http://en.wikipedia.org/wiki/Remy_Charlip" } ] ,
+    "http://xmlns.com/foaf/0.1/surname" : [ { "type" : "literal", "value" : "Charlip" , "lang" : "en" } ] ,
+    "http://www.w3.org/ns/prov#wasDerivedFrom" : [ { "type" : "uri", "value" : "http://en.wikipedia.org/wiki/Remy_Charlip?oldid=743715739" } ] ,
+    "http://dbpedia.org/ontology/wikiPageExternalLink" : [ { "type" : "uri", "value" : "http://www.worldcat.org/search?q=au%3ARemy+Charlip&qt=hot_author" } ,
+      { "type" : "uri", "value" : "http://www.loc.gov/loc/lcib/970623/charlip.html" } ,
+      { "type" : "uri", "value" : "http://www.remycharlip.org/" } ,
+      { "type" : "uri", "value" : "http://www.paperbagplayers.org/" } ,
+      { "type" : "uri", "value" : "http://lccn.loc.gov/n80063049" } ] ,
+    "http://dbpedia.org/ontology/imdbId" : [ { "type" : "literal", "value" : "1158634" } ] ,
+    "http://dbpedia.org/ontology/abstract" : [ { "type" : "literal", "value" : "Abraham Remy Charlip (January 10, 1929 \u2013 August 14, 2012) was an American artist, writer, choreographer, theatre director, theatrical designer, and teacher. He wrote or illustrated 29 children's books." , "lang" : "en" } ,
+      { "type" : "literal", "value" : "Abraham Remy Charlip (10 janvier 1929 - 14 ao\u00FBt 2012) \u00E9tait un artiste am\u00E9ricain, danseur, chor\u00E9graphe, illustrateur, metteur en sc\u00E8ne, graphiste ainsi que professeur. Il a \u00E9crit ou illustr\u00E9 de nombreux livres pour enfant, et re\u00E7u plusieurs r\u00E9compenses." , "lang" : "fr" } ] ,
+    "http://dbpedia.org/ontology/birthDate" : [ { "type" : "literal", "value" : "1929-1-10" , "datatype" : "http://www.w3.org/2001/XMLSchema#date" } ] ,
+    "http://dbpedia.org/ontology/deathDate" : [ { "type" : "literal", "value" : "2012-8-14" , "datatype" : "http://www.w3.org/2001/XMLSchema#date" } ] ,
+    "http://dbpedia.org/ontology/deathPlace" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/San_Francisco" } ] ,
+    "http://dbpedia.org/ontology/wikiPageRevisionID" : [ { "type" : "literal", "value" : 743715739 , "datatype" : "http://www.w3.org/2001/XMLSchema#integer" } ] ,
+    "http://dbpedia.org/ontology/birthPlace" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Brooklyn" } ] ,
+    "http://dbpedia.org/ontology/wikiPageID" : [ { "type" : "literal", "value" : 3296453 , "datatype" : "http://www.w3.org/2001/XMLSchema#integer" } ] ,
+    "http://purl.org/linguistics/gold/hypernym" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Artist" } ] } ,
+  "http://en.wikipedia.org/wiki/Remy_Charlip" : { "http://xmlns.com/foaf/0.1/primaryTopic" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Remy_Charlip" } ] } ,
+  "http://dbpedia.org/resource/A_Mile_Beyond_the_Moon" : { "http://dbpedia.org/ontology/illustrator" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Remy_Charlip" } ] }
+}
+;
+	var dataAuth = "http://dbpedia.org/resource/Remy_Charlip";
+	var dataUrl = "remy_charlip.html";
+	var dataResourceType = "participant";
+	var dataName = "Remy Charlip";
+ 	
+</script>
+
+
+
+
+
+<script type="text/javascript">
+
+
+	
+	
+	
+
+	$(document).ready(function($) {
+		
+		
+		padb.resource.initialize();
+			 
+		$( '.scrollable' ).
+		bind( 'mousewheel DOMMouseScroll', function ( e ) {
+			
+			if( e.originalEvent ) e = e.originalEvent;
+			
+			var delta = e.wheelDelta || -e.detail;
+			this.scrollTop += ( delta < 0 ? 1 : -1 ) * 30;
+			e.preventDefault();
+		});		 
+		
+		
+				
+		$.ajaxSetup ({
+			// Disable caching of AJAX responses
+			cache: false
+		});		
+		
+	});
+	
+
+	
+	
+	
+	
+	
+</script>
+
+
+
+
+ 
+<br />
+<div class="container"  style="position:relative;">
+	   
+      <div id="resourceLinks"></div> 
+       
+       
+       
+       
+              
+       
+           
+           
+           
+          <div class="row addSection">
+              <div class="span1 addSectionIconHolder">
+              
+                <i class="icon-user"></i>
+              
+              </div>
+          
+              <div class="span11">
+                <span>Performer</span>
+                <hr>
+                <br />
+              </div>
+        </div>
+        <div class="row">
+            <div class="span1">
+            </div>
+            <div class="span11" style="position:relative">
+                
+                
+                
+                
+               <div>
+                                       
+                                           
+                <div class="pull-left" style="width:80%;">
+                     
+                     <h5 id="resourceLDName">Remy Charlip</h5>
+                     <h5 id="resourceLDAbstract"></h5>
+                     
+                     
+                     <div id="resourceSameAs">
+                        <h5>External Data:</h5>
+                        
+                        
+                     </div>
+                
+                </div>   
+                
+                <br style="clear:both;" />
+            </div>
+            
+            
+                
+            </div>
+        </div>    
+         
+    
+    
+    
+    
+    
+    
+       <div class="row addSection">
+			<div class="span1 addSectionIconHolder">              
+                <i class="icon-asterisk"></i>
+              
+              </div>
+          
+              <div class="span11">
+                <span>Events </span><span id="resourceEventCount"></span>
+                <hr>
+              </div>
+        </div>
+    
+    
+    
+    
+    
+    
+    
+        <div class="row">
+            <div class="span1"></div>
+            <div class="span11" style="position:relative">
+                  
+                 <div class="">
+                    <div id="resourceEventsEvents" class="scrollable">
+                           <table class="table table-condensed table-hover table-striped">
+                               <thead>
+                                <tr>
+                                  <th>Date</th>
+                                  
+                                  <th>Title</th>
+                                  <th>Location</th>
+                                  <th></th>
+                                </tr>
+                              </thead>
+                              <tbody id="resourceEventsEventsRows"> 
+                              </tbody>
+                            </table>
+                     
+                    </div>
+                    
+                    <div id="resourceEventsExport">
+                    
+                    	<input  name="resourceEventsSearch" class="span3" id="resourceEventsSearch"  type="text" placeholder="Filter: names, places, dates">
+                    	<button class="btn btn-mini btn-danger" id="resourceEventsClearFilter"><i class="icon-remove">&nbsp;Clear Filter</i></button>
+                   		<button class="btn btn-mini btn-info" title="Render the currently filitered data as a network" id="resourceRenderEventNetwork"> <img src="../img/icon-network-white.png" style="height:15px; width:auto" /> Two-Mode Event Network</button>
+                   		<button class="btn btn-mini btn-info" title="Render the currently filitered data as a network" id="resourceRenderEventMap"> <i class="icon-globe"></i> Map Event Locations</button>
+                   		<button class="btn btn-mini btn-success" title="Download network as Gephi File" id="resourceDownloadEventGephi"> <img src="../img/icon-gephi.png" style="height:15px; width:auto" /> Donwload Gephi Network</button>
+
+                 
+                    </div>                 
+                </div>
+                <br style="clear:both;" />
+            </div>
+            
+            
+                
+         </div>    
+    
+     
+       <div class="row addSection">
+              <div class="span1">
+              
+                <img src="../img/social-network.png" style=" margin-left:25px; margin-bottom:10px;" />
+              
+              </div>
+          
+              <div class="span11">
+                <span>Performance Network</span> 
+                <hr>
+              </div>
+        </div>
+        
+        <div class="row">
+            <div class="span1">
+            </div>
+            <div class="span11" style="position:relative">
+                
+               	<div style="width: 100%; height:500px;" id="egoNetwork">
+            
+                
+             	</div> 
+                <div class="well pull-left well-small" id="egoNetworkControls">
+                    <span class="rangeLabels">Node Charge</span>
+                    <input type="range" id="resourceEgoNetworkCharge" min="-1000" max="100" value="-120" data-def="-700" />
+                    <br /><span class="rangeLabels">Gravity</span>
+                    <input type="range" id="resourceEgoNetworkGravity" min="0" max="1" value="0.1" step="0.01" data-def="0.3" /> 
+                    <br /><span class="rangeLabels">Edge Length</span>
+                    <input type="range" id="resourceEgoNetworkDistance" min="0" max="300" value="50" data-def="50"  />      
+                    <br /><span class="rangeLabels">Edge Strength</span>
+                    <input type="range" id="resourceEgoNetworkStrength" min="0" max="3" value="1" data-def="0.15" step="0.1"  /> 
+                    <br /><br />
+                    <button type="button" id="resourceEgoNetworkLabelsButton" class="btn btn-mini" title="Show node labels." data-toggle="button">Show Labels</button>  
+                    <button type="button" id="resourceEgoNetworkLiveButton" class="btn btn-mini" title="Show realtime network rendering" data-toggle="button">Live Rendering</button>                     
+                </div>
+                
+                <div class="well pull-left well-small egoNetworkControls span7" style="margin-left:20px;" >
+                
+                	<input  name="resourceEgoNetworkSearch" class="span3" id="resourceEgoNetworkSearch"  type="text" placeholder="Filter: names, places, dates">
+					<button class="btn btn-mini btn-danger" id="resourceEgoClearFilter"><i class="icon-remove">&nbsp;Clear Filter</i></button>
+                    <button class="btn btn-mini btn-success" title="Download network as Gephi File" id="resourceDownloadEgoGephi"> <img src="../img/icon-gephi.png" style="height:15px; width:auto" /> Donwload Gephi Network</button>
+
+                </div>
+                
+            </div>
+        </div>           
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+	
+
+	
+
+
+	
+
+
+</div>
+
+
+
+
+    <div id="resourceEventNetworkModal" class="modal container hide fade" style="min-height:500px" tabindex="-1">
+ 
+      <div class="modal-body">
+      	
+        <div id="eventNetwork" style="height:400px; width:100%">
+        
+        </div>
+      
+      </div>
+      <div class="modal-footer" style="height:20px;">
+      	
+        <div class="well pull-left well-small">
+        	<span class="rangeLabels">Node Charge</span>
+        	<input type="range" id="resourceEventNetworkCharge" min="-800" max="200" value="-120" data-def="-120" />
+            <span class="rangeLabels">Gravity</span>
+        	<input type="range" id="resourceEventNetworkGravity" min="0" max="1" value="0.1" step="0.01" data-def="0.1" /> 
+            <span class="rangeLabels">Edge Length</span>
+        	<input type="range" id="resourceEventNetworkDistance" min="0" max="300" value="50" data-def="50"  />      
+            <span class="rangeLabels">Edge Strength</span>
+        	<input type="range" id="resourceEventNetworkStrength" min="0" max="5" value="1" data-def="1" step="0.1"  />    
+            <button type="button" id="resourceEventNetworkLabelsButton" class="btn btn-mini" data-toggle="button">Show Labels</button>                     
+		</div>
+        <div class="pull-right">
+        <button type="button" data-dismiss="modal" class="btn">Close</button>
+       	</div>
+       </div>
+    </div>
+    
+    
+    
+    
+     <div id="resourceEventMapModal" class="modal container hide fade" style="min-height:500px" tabindex="-1">
+ 
+      <div class="modal-body">
+      	
+        <div id="eventMap" style="height:400px; width:100%">
+        
+        </div>
+      
+      </div>
+      <div class="modal-footer" style="height:20px;">
+      	
+        <div class="well pull-left well-small">                  
+		</div>
+        <div class="pull-right">
+        <button type="button" data-dismiss="modal" class="btn">Close</button>
+       	</div>
+       </div>
+    </div>
+
+<br /><br /><br /><br /><br /><br />
+
+<script type="text/javascript">    var _gaq = _gaq || [];   _gaq.push(['_setAccount', 'UA-10371295-7']);   _gaq.push(['_trackPageview']);    (function() {     var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);   })();  </script>
+
+</body>
+
+<!-- Mirrored from padb.net/resource/remy_charlip by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 11 Jan 2020 22:21:16 GMT -->
+</html>

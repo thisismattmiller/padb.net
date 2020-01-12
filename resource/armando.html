@@ -1,0 +1,502 @@
+<!doctype html>
+<html>
+
+<!-- Mirrored from padb.net/resource/armando by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 11 Jan 2020 22:18:30 GMT -->
+<head>
+<meta charset="UTF-8">
+<title>padb.net</title>
+
+
+<link rel="stylesheet" href="../css/bootstrap.css">
+<link rel="stylesheet" href="../css/font-awesome.css">
+<link rel="stylesheet" href="../css/site.css">
+<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+<link rel="icon" type="image/png" href="../img/favicon.png">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/bootstrap-modal.js"></script>
+<script src="../js/bootstrap-modalmanager.js"></script>
+
+<script src="../js/d3.min.js"></script>
+<script src="../js/html5slider.js"></script>
+<script src="../js/topojson.js"></script>
+<script src="../js/padb.js"></script>
+
+
+</head>
+<body>
+    
+    
+	<div style="position:relative;">        
+
+ 		<div style=" border-bottom:solid 1px #ccc;">
+        	<div class="container">
+                
+                 <div id="header">
+                 	
+                     <div class="logo"><a href="../index.html"><span>|||</span>padb</a> </div>
+                    
+                      
+						 <div id="resourceName">Armando</div>
+					 
+                 </div>
+                
+                
+        	</div>
+            
+    	</div>
+ 
+   </div>
+<script src="../js/countriesData.js"></script>
+
+<script type="text/javascript">
+	//preloaded json from the server
+
+	var dataSameAs = [
+  {
+    "uri": "http://wikidata.dbpedia.org/resource/Q678099",
+    "numDuplicates": "42",
+    "duplicates": [
+      "http://dbpedia.org/resource/Armando",
+      "http://dbpedia.org/resource/Armando_(artist)",
+      "http://dbpedia.org/resource/Armando_(artist)",
+      "http://dbpedia.org/resource/Armando_(disambiguation)",
+      "http://dbpedia.org/resource/Armando_(disambiguation)",
+      "http://bnb.data.bl.uk/id/person/Armando1929-",
+      "http://d-nb.info/gnd/118650173",
+      "http://d-nb.info/gnd/118650173/about/rdf",
+      "http://da.dbpedia.org/resource/Armando",
+      "http://data.bibsys.no/data/notrbib/authorityentry/x90578863",
+      "http://data.bnf.fr/12152409",
+      "http://datos.bne.es/resource/XX1005448",
+      "http://dbpedialite.org/things/262400#id",
+      "http://dbpedialite.org/things/5761682#id",
+      "http://dbpedialite.org/things/19698326#id",
+      "http://de.dbpedia.org/resource/Armando",
+      "http://de.dbpedia.org/resource/Armando_(Vorname)",
+      "http://es.dbpedia.org/resource/Armando",
+      "http://fr.dbpedia.org/resource/Armando_(homonymie)",
+      "http://freebase.com//m/01myf8",
+      "http://id.loc.gov/authorities/names/n79103581",
+      "http://isni-url.oclc.nl/isni/0000000120171892",
+      "http://it.dbpedia.org/resource/Armando",
+      "http://la.dbpedia.org/resource/Armandus",
+      "http://mpii.de/yago/resource/Armando_(artist)",
+      "http://mpii.de/yago/resource/Armando_(artist)",
+      "http://nl.dbpedia.org/resource/Armando",
+      "http://no.dbpedia.org/resource/Armando",
+      "http://rdf.freebase.com/ns/m.01myf8",
+      "http://rdf.freebase.com/ns/en.armando",
+      "http://rdf.freebase.com/ns/guid.9202a8c04000641f800000000019f5a8",
+      "http://sl.dbpedia.org/resource/Armando",
+      "http://umbel.org/umbel/ne/wikipedia/Armando_(artist)",
+      "http://viaf.org/viaf/9885610",
+      "http://viaf.org/viaf/86531034",
+      "http://viaf.org/viaf/96093878",
+      "http://wikidata.dbpedia.org/resource/Q678099",
+      "http://www.idref.fr/030022851",
+      "http://www.idref.fr/030022851/id",
+      "http://www.wikidata.org/entity/Q678099",
+      "http://www.wikidata.org/entity/Q6394196",
+      "http://yago-knowledge.org/resource/Armando_(artist)"
+    ]
+  }
+]
+;
+	var dataDbpedia = {
+  "http://dbpedia.org/resource/Armando" : { "http://dbpedia.org/ontology/wikiPageDisambiguates" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Armando_(artist)" } ] } ,
+  "http://dbpedia.org/resource/Armando_(artist)" : { "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Artist109812338" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Gambler110118844" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Musician110339966" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Sculptor110566072" } ,
+      { "type" : "uri", "value" : "http://www.w3.org/2002/07/owl#Thing" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Entertainer109616922" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Creator109614315" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Winner110782791" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Performer110415638" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Poet110444194" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Musician110340312" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatArtistsFromAmsterdam" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatKnightsOfTheOrderOfTheNetherlandsLion" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Knight110238375" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatDutchPainters" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatDutchArtists" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/PrizeWinner109627807" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatModernArtists" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Violinist110754578" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Aristocrat109807754" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Leader109623038" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatDutchViolinists" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/MaleAristocrat110285135" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Communicator109610660" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatFerdinandBordewijkPrizeWinners" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Writer110794014" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatDutchWriters" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatLivingPeople" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatDutchSculptors" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/PhysicalEntity100001930" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/YagoLegalActor" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/YagoLegalActorGeo" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Whole100003553" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Person100007846" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatDutchPoets" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Object100002684" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/LivingThing100004258" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/CausalAgent100007347" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Painter110391653" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Organism100004475" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/ontology/Person" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatKnightsOfTheOrderOfOrange-Nassau" } ] ,
+    "http://www.w3.org/2000/01/rdf-schema#label" : [ { "type" : "literal", "value" : "Armando" , "lang" : "de" } ,
+      { "type" : "literal", "value" : "Armando" , "lang" : "nl" } ,
+      { "type" : "literal", "value" : "Armando (artist)" , "lang" : "en" } ] ,
+    "http://www.w3.org/2000/01/rdf-schema#comment" : [ { "type" : "literal", "value" : "Armando (eigentlich Herman Dirk van Dodeweerd, * 18. September 1929 in Amsterdam) ist ein niederl\u00E4ndischer K\u00FCnstler." , "lang" : "de" } ,
+      { "type" : "literal", "value" : "Armando, geboren als Herman Dirk van Dodeweerd (Amsterdam, 18 september 1929) is een Nederlandse kunstschilder, beeldhouwer, dichter, schrijver, violist, acteur, journalist, film-, televisie- en theatermaker. Armando is zijn offici\u00EBle naam; zijn geboortenaam, het pseudoniem zoals hij het noemt, bestaat voor hem niet meer. Later heeft hij zijn oorspronkelijke naam in het register van de burgerlijke stand laten vervangen door Armando, een Italiaanse versie van de naam Herman, die hij te danken heeft aan zijn Italiaanse grootmoeder. Betekenissen als 'zich wapenend', zoals de literaire analisten in zijn naam zien, zijn dus toevallig. Zelf ziet hij zijn werk als 'Gesamtkunstwerk', waarvoor zijn ervaringen uit de Tweede Wereldoorlog in de omgeving van Kamp Amersfoort de basis vormen." , "lang" : "nl" } ,
+      { "type" : "literal", "value" : "Herman Dirk van Dodeweerd  (born 18 September 1929), known as Armando, is a Dutch painter, sculptor and writer." , "lang" : "en" } ] ,
+    "http://www.w3.org/2002/07/owl#sameAs" : [ { "type" : "uri", "value" : "http://d-nb.info/gnd/118650173" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Armando_(artist)" } ,
+      { "type" : "uri", "value" : "http://wikidata.dbpedia.org/resource/Q678099" } ,
+      { "type" : "uri", "value" : "http://yago-knowledge.org/resource/Armando_(artist)" } ,
+      { "type" : "uri", "value" : "http://de.dbpedia.org/resource/Armando" } ,
+      { "type" : "uri", "value" : "http://www.wikidata.org/entity/Q678099" } ,
+      { "type" : "uri", "value" : "http://nl.dbpedia.org/resource/Armando" } ,
+      { "type" : "uri", "value" : "http://rdf.freebase.com/ns/m.01myf8" } ] ,
+    "http://purl.org/dc/terms/subject" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Modern_artists" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Living_people" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Knights_of_the_Order_of_Orange-Nassau" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Artists_from_Amsterdam" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Recipients_of_the_Order_of_the_House_of_Orange" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Dutch_artists" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:1929_births" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Members_of_the_Academy_of_the_Arts,_Berlin" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Knights_of_the_Order_of_the_Netherlands_Lion" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Ferdinand_Bordewijk_Prize_winners" } ] ,
+    "http://xmlns.com/foaf/0.1/name" : [ { "type" : "literal", "value" : "Armando" , "lang" : "en" } ] ,
+    "http://xmlns.com/foaf/0.1/depiction" : [ { "type" : "uri", "value" : "http://commons.wikimedia.org/wiki/Special:FilePath/Armando-1024px.jpg" } ] ,
+    "http://purl.org/dc/terms/description" : [ { "type" : "literal", "value" : "Dutch artist" , "lang" : "en" } ] ,
+    "http://xmlns.com/foaf/0.1/givenName" : [ { "type" : "literal", "value" : "Herman" , "lang" : "en" } ] ,
+    "http://xmlns.com/foaf/0.1/gender" : [ { "type" : "literal", "value" : "male" , "lang" : "en" } ] ,
+    "http://xmlns.com/foaf/0.1/isPrimaryTopicOf" : [ { "type" : "uri", "value" : "http://en.wikipedia.org/wiki/Armando_(artist)" } ] ,
+    "http://www.w3.org/ns/prov#wasDerivedFrom" : [ { "type" : "uri", "value" : "http://en.wikipedia.org/wiki/Armando_(artist)?oldid=732484505" } ] ,
+    "http://dbpedia.org/ontology/abstract" : [ { "type" : "literal", "value" : "Armando (eigentlich Herman Dirk van Dodeweerd, * 18. September 1929 in Amsterdam) ist ein niederl\u00E4ndischer K\u00FCnstler." , "lang" : "de" } ,
+      { "type" : "literal", "value" : "Herman Dirk van Dodeweerd  (born 18 September 1929), known as Armando, is a Dutch painter, sculptor and writer." , "lang" : "en" } ,
+      { "type" : "literal", "value" : "Armando, geboren als Herman Dirk van Dodeweerd (Amsterdam, 18 september 1929) is een Nederlandse kunstschilder, beeldhouwer, dichter, schrijver, violist, acteur, journalist, film-, televisie- en theatermaker. Armando is zijn offici\u00EBle naam; zijn geboortenaam, het pseudoniem zoals hij het noemt, bestaat voor hem niet meer. Later heeft hij zijn oorspronkelijke naam in het register van de burgerlijke stand laten vervangen door Armando, een Italiaanse versie van de naam Herman, die hij te danken heeft aan zijn Italiaanse grootmoeder. Betekenissen als 'zich wapenend', zoals de literaire analisten in zijn naam zien, zijn dus toevallig. Zelf ziet hij zijn werk als 'Gesamtkunstwerk', waarvoor zijn ervaringen uit de Tweede Wereldoorlog in de omgeving van Kamp Amersfoort de basis vormen." , "lang" : "nl" } ] ,
+    "http://dbpedia.org/ontology/thumbnail" : [ { "type" : "uri", "value" : "http://commons.wikimedia.org/wiki/Special:FilePath/Armando-1024px.jpg?width=300" } ] ,
+    "http://dbpedia.org/ontology/birthDate" : [ { "type" : "literal", "value" : "1929-9-18" , "datatype" : "http://www.w3.org/2001/XMLSchema#date" } ] ,
+    "http://dbpedia.org/ontology/wikiPageRevisionID" : [ { "type" : "literal", "value" : 732484505 , "datatype" : "http://www.w3.org/2001/XMLSchema#integer" } ] ,
+    "http://dbpedia.org/ontology/birthPlace" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Amsterdam" } ] ,
+    "http://dbpedia.org/ontology/wikiPageID" : [ { "type" : "literal", "value" : 262400 , "datatype" : "http://www.w3.org/2001/XMLSchema#integer" } ] ,
+    "http://purl.org/linguistics/gold/hypernym" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Painter" } ] } ,
+  "http://en.wikipedia.org/wiki/Armando_(artist)" : { "http://xmlns.com/foaf/0.1/primaryTopic" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Armando_(artist)" } ] }
+}
+;
+	var dataAuth = "http://dbpedia.org/resource/Armando_(artist)";
+	var dataUrl = "armando.html";
+	var dataResourceType = "participant";
+	var dataName = "Armando";
+ 	
+</script>
+
+
+
+
+
+<script type="text/javascript">
+
+
+	
+	
+	
+
+	$(document).ready(function($) {
+		
+		
+		padb.resource.initialize();
+			 
+		$( '.scrollable' ).
+		bind( 'mousewheel DOMMouseScroll', function ( e ) {
+			
+			if( e.originalEvent ) e = e.originalEvent;
+			
+			var delta = e.wheelDelta || -e.detail;
+			this.scrollTop += ( delta < 0 ? 1 : -1 ) * 30;
+			e.preventDefault();
+		});		 
+		
+		
+				
+		$.ajaxSetup ({
+			// Disable caching of AJAX responses
+			cache: false
+		});		
+		
+	});
+	
+
+	
+	
+	
+	
+	
+</script>
+
+
+
+
+ 
+<br />
+<div class="container"  style="position:relative;">
+	   
+      <div id="resourceLinks"></div> 
+       
+       
+       
+       
+              
+       
+           
+           
+           
+          <div class="row addSection">
+              <div class="span1 addSectionIconHolder">
+              
+                <i class="icon-user"></i>
+              
+              </div>
+          
+              <div class="span11">
+                <span>Performer</span>
+                <hr>
+                <br />
+              </div>
+        </div>
+        <div class="row">
+            <div class="span1">
+            </div>
+            <div class="span11" style="position:relative">
+                
+                
+                
+                
+               <div>
+                                       <div class="pull-right vignette">
+                            <img  src="../cache/media/armando.jpg" />
+                            
+                        </div>
+                        
+                                           
+                <div class="pull-left" style="width:80%;">
+                     
+                     <h5 id="resourceLDName">Armando</h5>
+                     <h5 id="resourceLDAbstract"></h5>
+                     
+                     
+                     <div id="resourceSameAs">
+                        <h5>External Data:</h5>
+                        
+                        
+                     </div>
+                
+                </div>   
+                
+                <br style="clear:both;" />
+            </div>
+            
+            
+                
+            </div>
+        </div>    
+         
+    
+    
+    
+    
+    
+    
+       <div class="row addSection">
+			<div class="span1 addSectionIconHolder">              
+                <i class="icon-asterisk"></i>
+              
+              </div>
+          
+              <div class="span11">
+                <span>Events </span><span id="resourceEventCount"></span>
+                <hr>
+              </div>
+        </div>
+    
+    
+    
+    
+    
+    
+    
+        <div class="row">
+            <div class="span1"></div>
+            <div class="span11" style="position:relative">
+                  
+                 <div class="">
+                    <div id="resourceEventsEvents" class="scrollable">
+                           <table class="table table-condensed table-hover table-striped">
+                               <thead>
+                                <tr>
+                                  <th>Date</th>
+                                  
+                                  <th>Title</th>
+                                  <th>Location</th>
+                                  <th></th>
+                                </tr>
+                              </thead>
+                              <tbody id="resourceEventsEventsRows"> 
+                              </tbody>
+                            </table>
+                     
+                    </div>
+                    
+                    <div id="resourceEventsExport">
+                    
+                    	<input  name="resourceEventsSearch" class="span3" id="resourceEventsSearch"  type="text" placeholder="Filter: names, places, dates">
+                    	<button class="btn btn-mini btn-danger" id="resourceEventsClearFilter"><i class="icon-remove">&nbsp;Clear Filter</i></button>
+                   		<button class="btn btn-mini btn-info" title="Render the currently filitered data as a network" id="resourceRenderEventNetwork"> <img src="../img/icon-network-white.png" style="height:15px; width:auto" /> Two-Mode Event Network</button>
+                   		<button class="btn btn-mini btn-info" title="Render the currently filitered data as a network" id="resourceRenderEventMap"> <i class="icon-globe"></i> Map Event Locations</button>
+                   		<button class="btn btn-mini btn-success" title="Download network as Gephi File" id="resourceDownloadEventGephi"> <img src="../img/icon-gephi.png" style="height:15px; width:auto" /> Donwload Gephi Network</button>
+
+                 
+                    </div>                 
+                </div>
+                <br style="clear:both;" />
+            </div>
+            
+            
+                
+         </div>    
+    
+     
+       <div class="row addSection">
+              <div class="span1">
+              
+                <img src="../img/social-network.png" style=" margin-left:25px; margin-bottom:10px;" />
+              
+              </div>
+          
+              <div class="span11">
+                <span>Performance Network</span> 
+                <hr>
+              </div>
+        </div>
+        
+        <div class="row">
+            <div class="span1">
+            </div>
+            <div class="span11" style="position:relative">
+                
+               	<div style="width: 100%; height:500px;" id="egoNetwork">
+            
+                
+             	</div> 
+                <div class="well pull-left well-small" id="egoNetworkControls">
+                    <span class="rangeLabels">Node Charge</span>
+                    <input type="range" id="resourceEgoNetworkCharge" min="-1000" max="100" value="-120" data-def="-700" />
+                    <br /><span class="rangeLabels">Gravity</span>
+                    <input type="range" id="resourceEgoNetworkGravity" min="0" max="1" value="0.1" step="0.01" data-def="0.3" /> 
+                    <br /><span class="rangeLabels">Edge Length</span>
+                    <input type="range" id="resourceEgoNetworkDistance" min="0" max="300" value="50" data-def="50"  />      
+                    <br /><span class="rangeLabels">Edge Strength</span>
+                    <input type="range" id="resourceEgoNetworkStrength" min="0" max="3" value="1" data-def="0.15" step="0.1"  /> 
+                    <br /><br />
+                    <button type="button" id="resourceEgoNetworkLabelsButton" class="btn btn-mini" title="Show node labels." data-toggle="button">Show Labels</button>  
+                    <button type="button" id="resourceEgoNetworkLiveButton" class="btn btn-mini" title="Show realtime network rendering" data-toggle="button">Live Rendering</button>                     
+                </div>
+                
+                <div class="well pull-left well-small egoNetworkControls span7" style="margin-left:20px;" >
+                
+                	<input  name="resourceEgoNetworkSearch" class="span3" id="resourceEgoNetworkSearch"  type="text" placeholder="Filter: names, places, dates">
+					<button class="btn btn-mini btn-danger" id="resourceEgoClearFilter"><i class="icon-remove">&nbsp;Clear Filter</i></button>
+                    <button class="btn btn-mini btn-success" title="Download network as Gephi File" id="resourceDownloadEgoGephi"> <img src="../img/icon-gephi.png" style="height:15px; width:auto" /> Donwload Gephi Network</button>
+
+                </div>
+                
+            </div>
+        </div>           
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+	
+
+	
+
+
+	
+
+
+</div>
+
+
+
+
+    <div id="resourceEventNetworkModal" class="modal container hide fade" style="min-height:500px" tabindex="-1">
+ 
+      <div class="modal-body">
+      	
+        <div id="eventNetwork" style="height:400px; width:100%">
+        
+        </div>
+      
+      </div>
+      <div class="modal-footer" style="height:20px;">
+      	
+        <div class="well pull-left well-small">
+        	<span class="rangeLabels">Node Charge</span>
+        	<input type="range" id="resourceEventNetworkCharge" min="-800" max="200" value="-120" data-def="-120" />
+            <span class="rangeLabels">Gravity</span>
+        	<input type="range" id="resourceEventNetworkGravity" min="0" max="1" value="0.1" step="0.01" data-def="0.1" /> 
+            <span class="rangeLabels">Edge Length</span>
+        	<input type="range" id="resourceEventNetworkDistance" min="0" max="300" value="50" data-def="50"  />      
+            <span class="rangeLabels">Edge Strength</span>
+        	<input type="range" id="resourceEventNetworkStrength" min="0" max="5" value="1" data-def="1" step="0.1"  />    
+            <button type="button" id="resourceEventNetworkLabelsButton" class="btn btn-mini" data-toggle="button">Show Labels</button>                     
+		</div>
+        <div class="pull-right">
+        <button type="button" data-dismiss="modal" class="btn">Close</button>
+       	</div>
+       </div>
+    </div>
+    
+    
+    
+    
+     <div id="resourceEventMapModal" class="modal container hide fade" style="min-height:500px" tabindex="-1">
+ 
+      <div class="modal-body">
+      	
+        <div id="eventMap" style="height:400px; width:100%">
+        
+        </div>
+      
+      </div>
+      <div class="modal-footer" style="height:20px;">
+      	
+        <div class="well pull-left well-small">                  
+		</div>
+        <div class="pull-right">
+        <button type="button" data-dismiss="modal" class="btn">Close</button>
+       	</div>
+       </div>
+    </div>
+
+<br /><br /><br /><br /><br /><br />
+
+<script type="text/javascript">    var _gaq = _gaq || [];   _gaq.push(['_setAccount', 'UA-10371295-7']);   _gaq.push(['_trackPageview']);    (function() {     var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);   })();  </script>
+
+</body>
+
+<!-- Mirrored from padb.net/resource/armando by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 11 Jan 2020 22:18:31 GMT -->
+</html>

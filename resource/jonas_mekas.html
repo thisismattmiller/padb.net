@@ -1,0 +1,600 @@
+<!doctype html>
+<html>
+
+<!-- Mirrored from padb.net/resource/jonas_mekas by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 11 Jan 2020 22:17:49 GMT -->
+<head>
+<meta charset="UTF-8">
+<title>padb.net</title>
+
+
+<link rel="stylesheet" href="../css/bootstrap.css">
+<link rel="stylesheet" href="../css/font-awesome.css">
+<link rel="stylesheet" href="../css/site.css">
+<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+<link rel="icon" type="image/png" href="../img/favicon.png">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/bootstrap-modal.js"></script>
+<script src="../js/bootstrap-modalmanager.js"></script>
+
+<script src="../js/d3.min.js"></script>
+<script src="../js/html5slider.js"></script>
+<script src="../js/topojson.js"></script>
+<script src="../js/padb.js"></script>
+
+
+</head>
+<body>
+    
+    
+	<div style="position:relative;">        
+
+ 		<div style=" border-bottom:solid 1px #ccc;">
+        	<div class="container">
+                
+                 <div id="header">
+                 	
+                     <div class="logo"><a href="../index.html"><span>|||</span>padb</a> </div>
+                    
+                      
+						 <div id="resourceName">Jonas Mekas</div>
+					 
+                 </div>
+                
+                
+        	</div>
+            
+    	</div>
+ 
+   </div>
+<script src="../js/countriesData.js"></script>
+
+<script type="text/javascript">
+	//preloaded json from the server
+
+	var dataSameAs = [
+  {
+    "uri": "http://wikidata.dbpedia.org/resource/Q699702",
+    "numDuplicates": "42",
+    "duplicates": [
+      "http://dbpedia.org/resource/Mekas",
+      "http://dbpedia.org/resource/Jonas_Mekas",
+      "http://cs.dbpedia.org/resource/Jonas_Mekas",
+      "http://d-nb.info/gnd/11909293X",
+      "http://d-nb.info/gnd/176754792",
+      "http://d-nb.info/gnd/11909293X/about/rdf",
+      "http://data.bibsys.no/data/notrbib/authorityentry/x90059443",
+      "http://data.bnf.fr/12175099",
+      "http://datos.bne.es/resource/XX1362777",
+      "http://dbpedialite.org/things/570660#id",
+      "http://dbpedialite.org/things/20256522#id",
+      "http://de.dbpedia.org/resource/Mekas",
+      "http://de.dbpedia.org/resource/Jonas_Mekas",
+      "http://es.dbpedia.org/resource/Jonas_Mekas",
+      "http://fi.dbpedia.org/resource/Jonas_Mekas",
+      "http://fr.dbpedia.org/resource/Jonas_Mekas",
+      "http://freebase.com//m/02r4s5",
+      "http://id.loc.gov/authorities/names/n90680030",
+      "http://id.ndl.go.jp/auth/ndla/00471496",
+      "http://isni-url.oclc.nl/isni/0000000116907270",
+      "http://ja.dbpedia.org/resource/\u30B8\u30E7\u30CA\u30B9\u30FB\u30E1\u30AB\u30B9",
+      "http://libris.kb.se/resource/auth/265921",
+      "http://lt.dbpedia.org/resource/Mekas",
+      "http://lt.dbpedia.org/resource/Jonas_Mekas",
+      "http://mpii.de/yago/resource/Jonas_Mekas",
+      "http://pl.dbpedia.org/resource/Jonas_Mekas",
+      "http://rdf.freebase.com/ns/m.02r4s5",
+      "http://rdf.freebase.com/ns/m.0r1wd_9",
+      "http://rdf.freebase.com/ns/en.jonas_mekas",
+      "http://rdf.freebase.com/ns/guid.9202a8c04000641f80000000002b9305",
+      "http://ru.dbpedia.org/resource/\u041C\u0435\u043A\u0430\u0441,_\u0419\u043E\u043D\u0430\u0441",
+      "http://sv.dbpedia.org/resource/Jonas_Mekas",
+      "http://uk.dbpedia.org/resource/\u0419\u043E\u043D\u0430\u0441_\u041C\u0435\u043A\u0430\u0441",
+      "http://umbel.org/umbel/ne/wikipedia/Jonas_Mekas",
+      "http://viaf.org/viaf/22183636",
+      "http://viaf.org/viaf/96371026",
+      "http://viaf.org/viaf/105712553",
+      "http://wikidata.dbpedia.org/resource/Q699702",
+      "http://www.idref.fr/030308445",
+      "http://www.wikidata.org/entity/Q699702",
+      "http://www.wikidata.org/entity/Q1457911",
+      "http://yago-knowledge.org/resource/Jonas_Mekas"
+    ]
+  }
+]
+;
+	var dataDbpedia = {
+  "http://dbpedia.org/resource/Empire_(1964_film)" : { "http://dbpedia.org/ontology/cinematography" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Jonas_Mekas" } ] } ,
+  "http://en.wikipedia.org/wiki/Jonas_Mekas" : { "http://xmlns.com/foaf/0.1/primaryTopic" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Jonas_Mekas" } ] } ,
+  "http://dbpedia.org/resource/Jonas_Mekas" : { "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatExperimentalFilmmakers" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatWriters" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatAmericanWriters" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatPeopleFromWilliamsburg,Brooklyn" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatLithuanianWriters" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatLithuanianRefugees" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatLithuanianResistancePartisans" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Wikicat20th-centuryLithuanianPeople" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatLithuanianFilmDirectors" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatLithuanianPeople" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Theorist110706812" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Organism100004475" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatLithuanianEmigrantsToTheUnitedStates" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/ontology/Person" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Whole100003553" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/LivingThing100004258" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/CausalAgent100007347" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Refugee110516016" } ,
+      { "type" : "uri", "value" : "http://www.w3.org/2002/07/owl#Thing" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatPeopleFromBir\u017Eai" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Wikicat20th-centuryPoets" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Partisan110402086" } ,
+      { "type" : "uri", "value" : "http://www.wikidata.org/entity/Q24229398" } ,
+      { "type" : "uri", "value" : "http://www.wikidata.org/entity/Q215627" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatFilmTheorists" } ,
+      { "type" : "uri", "value" : "http://schema.org/Person" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatPeopleFromPanev\u0117\u017EysCounty" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Producer110480018" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Screenwriter110564400" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/FilmDirector110088200" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/FilmMaker110088390" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/YagoLegalActor" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/YagoLegalActorGeo" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Absentee109757653" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Person100007846" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Object100002684" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/PhysicalEntity100001930" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Writer110794014" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatLivingPeople" } ,
+      { "type" : "uri", "value" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Communicator109610660" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Traveler109629752" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Emigrant110051975" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Migrant110314952" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/ontology/Agent" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Advocate109774783" } ,
+      { "type" : "uri", "value" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#NaturalPerson" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/ontology/Artist" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatLithuanianExpatriatesInAustria" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Peer109626238" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Intellectual109621545" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Colleague109935990" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Creator109614315" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Associate109816771" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Artist109812338" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Exile110071332" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatAmericanScreenwriters" } ,
+      { "type" : "uri", "value" : "http://www.wikidata.org/entity/Q483501" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatAmericanPoets" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatAmericanFilmDirectors" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Scriptwriter110564905" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatLithuanianArtists" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatLithuanianExpatriatesInGermany" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Poet110444194" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatLithuanianPoets" } ,
+      { "type" : "uri", "value" : "http://www.wikidata.org/entity/Q5" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatGuggenheimFellows" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatAmericanPeopleOfLithuanianDescent" } ,
+      { "type" : "uri", "value" : "http://xmlns.com/foaf/0.1/Person" } ] ,
+    "http://www.w3.org/2000/01/rdf-schema#label" : [ { "type" : "literal", "value" : "Jonas Mekas" , "lang" : "pl" } ,
+      { "type" : "literal", "value" : "\u041C\u0435\u043A\u0430\u0441, \u0419\u043E\u043D\u0430\u0441" , "lang" : "ru" } ,
+      { "type" : "literal", "value" : "Jonas Mekas" , "lang" : "en" } ,
+      { "type" : "literal", "value" : "Jonas Mekas" , "lang" : "fr" } ,
+      { "type" : "literal", "value" : "Jonas Mekas" , "lang" : "de" } ,
+      { "type" : "literal", "value" : "\u30B8\u30E7\u30CA\u30B9\u30FB\u30E1\u30AB\u30B9" , "lang" : "ja" } ,
+      { "type" : "literal", "value" : "Jonas Mekas" , "lang" : "es" } ,
+      { "type" : "literal", "value" : "Jonas Mekas" , "lang" : "it" } ] ,
+    "http://www.w3.org/2000/01/rdf-schema#comment" : [ { "type" : "literal", "value" : "Jonas Mekas (Lithuanian: [\u02C8jon\u0250s \u02C8m\u00E6k\u0250s]; born December 24, 1922) is a Lithuanian-American filmmaker, poet and artist who has often been called \"the godfather of American avant-garde cinema.\" His work has been exhibited in museums and festivals worldwide." , "lang" : "en" } ,
+      { "type" : "literal", "value" : "\u30B8\u30E7\u30CA\u30B9\u30FB\u30E1\u30AB\u30B9\uFF08Jonas Mekas\u3001\u30EA\u30C8\u30A2\u30CB\u30A2\u8A9E\u3067\u306F\u30E8\u30CA\u30B9\u30FB\u30E1\u30AB\u30B9\u30011922\u5E7412\u670823\u65E5 - \uFF09\u306F\u3001\u30EA\u30C8\u30A2\u30CB\u30A2\u306E\u6620\u753B\u76E3\u7763\u3001\u4F5C\u5BB6\u3001\u30AD\u30E5\u30EC\u30FC\u30BF\u30FC\u3002\u30D3\u30EB\u30B8\u30E3\u30A4\u8FD1\u90CA\u30BB\u30E1\u30CB\u30B7\u30E5\u30B1\u30A4\u51FA\u8EAB\u3002\u300C\u30A2\u30E1\u30EA\u30AB\u5B9F\u9A13\u6620\u753B\u306E\u30B4\u30C3\u30C9\u30D5\u30A1\u30FC\u30B6\u30FC\u300D\u3068\u547C\u3070\u308C\u308B\u3002" , "lang" : "ja" } ,
+      { "type" : "literal", "value" : "\u0419\u043E\u043D\u0430\u0441 \u041C\u0435\u043A\u0430\u0441 (\u0430\u043D\u0433\u043B. Jonas Mekas, 24 \u0434\u0435\u043A\u0430\u0431\u0440\u044F 1922) \u2014 \u0430\u043C\u0435\u0440\u0438\u043A\u0430\u043D\u0441\u043A\u0438\u0439 \u043F\u043E\u044D\u0442 \u0438 \u043A\u0438\u043D\u043E\u0440\u0435\u0436\u0438\u0441\u0441\u0451\u0440 \u043B\u0438\u0442\u043E\u0432\u0441\u043A\u043E\u0433\u043E \u043F\u0440\u043E\u0438\u0441\u0445\u043E\u0436\u0434\u0435\u043D\u0438\u044F, \u043E\u0434\u0438\u043D \u0438\u0437 \u043B\u0438\u0434\u0435\u0440\u043E\u0432 \u043D\u043E\u0432\u043E\u0433\u043E \u0430\u043C\u0435\u0440\u0438\u043A\u0430\u043D\u0441\u043A\u043E\u0433\u043E \u043A\u0438\u043D\u043E, \u043A\u0440\u0435\u0441\u0442\u043D\u044B\u0439 \u043E\u0442\u0435\u0446 \u043D\u044C\u044E-\u0439\u043E\u0440\u043A\u0441\u043A\u043E\u0433\u043E \u043A\u0438\u043D\u043E\u0430\u0432\u0430\u043D\u0433\u0430\u0440\u0434\u0430." , "lang" : "ru" } ,
+      { "type" : "literal", "value" : "Jonas Mekas (* 24. Dezember 1922 in Semeni\u0161kiai bei Bir\u017Eai, Litauen) ist ein litauischer Filmregisseur, Schriftsteller und Kurator. Er wurde oft \u201Eder Pate des amerikanischen Avantgardekinos\u201C genannt." , "lang" : "de" } ,
+      { "type" : "literal", "value" : "Jonas Mekas (Semeni\u0161kiai, Lituania, 23 de diciembre de 1922) es un cineasta lituano, emigrado en 1949. Es uno de los m\u00E1ximos exponentes del cine experimental estadounidense." , "lang" : "es" } ,
+      { "type" : "literal", "value" : "Jonas Mekas, n\u00E9 le 24 d\u00E9cembre 1922 dans le village de Semeni\u0161kiai, pr\u00E8s de Bir\u017Eai, Lituanie, est un \u00E9crivain et r\u00E9alisateur. Figure du cin\u00E9ma underground, il est aussi critique et enseignant de cin\u00E9ma. Il a popularis\u00E9 le journal film\u00E9." , "lang" : "fr" } ,
+      { "type" : "literal", "value" : "Jonas Mekas (ur. 24 grudnia 1922 w wiosce Semeni\u0161kiai, w pobli\u017Cu Bir\u017Eai) \u2013 pochodz\u0105cy z Litwy tw\u00F3rca filmowy, pisarz i kustosz, cz\u0119sto nazywany \u201Eojcem chrzestnym ameryka\u0144skiej awangardy filmowej\u201D. Aktualnie mieszka i pracuje w Nowym Jorku." , "lang" : "pl" } ,
+      { "type" : "literal", "value" : "\u00C8 il fondatore, assieme al fratello Adolfas Mekas, della rivista Film Culture, e cofondatore dell'Anthology Film Archives. Trasferitosi a New York alla fine del 1949, \u00E8 noto per i suoi film sperimentali riconducibili al movimento del New American Cinema." , "lang" : "it" } ] ,
+    "http://www.w3.org/2002/07/owl#sameAs" : [ { "type" : "uri", "value" : "http://pl.dbpedia.org/resource/Jonas_Mekas" } ,
+      { "type" : "uri", "value" : "http://rdf.freebase.com/ns/m.02r4s5" } ,
+      { "type" : "uri", "value" : "http://it.dbpedia.org/resource/Jonas_Mekas" } ,
+      { "type" : "uri", "value" : "http://cs.dbpedia.org/resource/Jonas_Mekas" } ,
+      { "type" : "uri", "value" : "http://de.dbpedia.org/resource/Jonas_Mekas" } ,
+      { "type" : "uri", "value" : "http://d-nb.info/gnd/11909293X" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Jonas_Mekas" } ,
+      { "type" : "uri", "value" : "http://www.wikidata.org/entity/Q699702" } ,
+      { "type" : "uri", "value" : "http://fr.dbpedia.org/resource/Jonas_Mekas" } ,
+      { "type" : "uri", "value" : "http://yago-knowledge.org/resource/Jonas_Mekas" } ,
+      { "type" : "uri", "value" : "http://es.dbpedia.org/resource/Jonas_Mekas" } ,
+      { "type" : "uri", "value" : "http://ja.dbpedia.org/resource/\u30B8\u30E7\u30CA\u30B9\u30FB\u30E1\u30AB\u30B9" } ,
+      { "type" : "uri", "value" : "http://wikidata.dbpedia.org/resource/Q699702" } ] ,
+    "http://purl.org/dc/terms/subject" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:University_of_Mainz_alumni" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:20th-century_American_poets" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Lithuanian_resistance_partisans" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Lithuanian_expatriates_in_Germany" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Lithuanian_film_directors" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:20th-century_Lithuanian_people" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Lithuanian_expatriates_in_Austria" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Lithuanian_experimental_filmmakers" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Recipients_of_the_Austrian_Decoration_for_Science_and_Art" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:1922_births" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Chevaliers_of_the_Ordre_des_Arts_et_des_Lettres" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Lithuanian_emigrants_to_the_United_States" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Lithuanian_writers" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:The_Village_Voice_people" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Guggenheim_Fellows" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:American_experimental_filmmakers" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:American_film_directors" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:People_from_Panev\u0117\u017Eys_County" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Lithuanian_refugees" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:People_from_Williamsburg,_Brooklyn" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Lithuanian_poets" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Living_people" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Fluxus" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Recipients_of_the_Lithuanian_National_Prize" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:American_people_of_Lithuanian_descent" } ] ,
+    "http://xmlns.com/foaf/0.1/name" : [ { "type" : "literal", "value" : "Jonas Mekas" , "lang" : "en" } ] ,
+    "http://xmlns.com/foaf/0.1/depiction" : [ { "type" : "uri", "value" : "http://commons.wikimedia.org/wiki/Special:FilePath/Jonas_Mekas.jpg" } ] ,
+    "http://purl.org/dc/terms/description" : [ { "type" : "literal", "value" : "Lithuanian filmmaker" , "lang" : "en" } ] ,
+    "http://xmlns.com/foaf/0.1/givenName" : [ { "type" : "literal", "value" : "Jonas" , "lang" : "en" } ] ,
+    "http://xmlns.com/foaf/0.1/gender" : [ { "type" : "literal", "value" : "male" , "lang" : "en" } ] ,
+    "http://xmlns.com/foaf/0.1/isPrimaryTopicOf" : [ { "type" : "uri", "value" : "http://en.wikipedia.org/wiki/Jonas_Mekas" } ] ,
+    "http://xmlns.com/foaf/0.1/surname" : [ { "type" : "literal", "value" : "Mekas" , "lang" : "en" } ] ,
+    "http://dbpedia.org/ontology/field" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Film" } ] ,
+    "http://dbpedia.org/ontology/movement" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Experimental_film" } ] ,
+    "http://dbpedia.org/ontology/nationality" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Lithuania" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/United_States" } ] ,
+    "http://www.w3.org/ns/prov#wasDerivedFrom" : [ { "type" : "uri", "value" : "http://en.wikipedia.org/wiki/Jonas_Mekas?oldid=744976504" } ] ,
+    "http://dbpedia.org/ontology/wikiPageExternalLink" : [ { "type" : "uri", "value" : "http://jonasmekas.com/40/film.php?film=32" } ,
+      { "type" : "uri", "value" : "http://www.re-voir.com/boutique/category.php?id_category=47" } ,
+      { "type" : "uri", "value" : "http://www.nytimes.com/2015/10/18/nyregion/jonas-mekas-refuses-to-fade.html?_r=0" } ,
+      { "type" : "uri", "value" : "http://www.mekas.lt/" } ,
+      { "type" : "uri", "value" : "http://brooklynrail.org/2010/11/art/in-conversation-with-jonas-mekas" } ,
+      { "type" : "uri", "value" : "http://fashionfilmfestivalmilano.com/it/jonas-mekas/" } ,
+      { "type" : "uri", "value" : "http://www.logosjournal.com/brakhage_mekas.htm" } ,
+      { "type" : "uri", "value" : "http://www.serpentinegalleries.org/exhibitions-events/jonas-mekas" } ,
+      { "type" : "uri", "value" : "http://www.webofstories.com/people/jonas.mekas/1" } ,
+      { "type" : "uri", "value" : "http://www.efn.org/~valdas/mekas.html" } ,
+      { "type" : "uri", "value" : "http://www.anthologyfilmarchives.org/" } ,
+      { "type" : "uri", "value" : "http://www.jonasmekasfilms.com/" } ,
+      { "type" : "uri", "value" : "http://www.kidam.tv/videos/videos.php?idtrack=68&keepThis=true&" } ,
+      { "type" : "uri", "value" : "http://www.3ammagazine.com/artarchives/2005/jul/interview_jonas_mekas.shtml" } ,
+      { "type" : "uri", "value" : "http://www.interviewmagazine.com/art/jonas-mekas-zuecca-project-space-venice-beinnale" } ,
+      { "type" : "uri", "value" : "http://moussemagazine.it/mekas-palazzo-contarini-2015/" } ,
+      { "type" : "uri", "value" : "http://www.sensesofcinema.com/2005/great-directors/mekas/" } ] ,
+    "http://dbpedia.org/ontology/abstract" : [ { "type" : "literal", "value" : "Jonas Mekas (* 24. Dezember 1922 in Semeni\u0161kiai bei Bir\u017Eai, Litauen) ist ein litauischer Filmregisseur, Schriftsteller und Kurator. Er wurde oft \u201Eder Pate des amerikanischen Avantgardekinos\u201C genannt." , "lang" : "de" } ,
+      { "type" : "literal", "value" : "\u0419\u043E\u043D\u0430\u0441 \u041C\u0435\u043A\u0430\u0441 (\u0430\u043D\u0433\u043B. Jonas Mekas, 24 \u0434\u0435\u043A\u0430\u0431\u0440\u044F 1922) \u2014 \u0430\u043C\u0435\u0440\u0438\u043A\u0430\u043D\u0441\u043A\u0438\u0439 \u043F\u043E\u044D\u0442 \u0438 \u043A\u0438\u043D\u043E\u0440\u0435\u0436\u0438\u0441\u0441\u0451\u0440 \u043B\u0438\u0442\u043E\u0432\u0441\u043A\u043E\u0433\u043E \u043F\u0440\u043E\u0438\u0441\u0445\u043E\u0436\u0434\u0435\u043D\u0438\u044F, \u043E\u0434\u0438\u043D \u0438\u0437 \u043B\u0438\u0434\u0435\u0440\u043E\u0432 \u043D\u043E\u0432\u043E\u0433\u043E \u0430\u043C\u0435\u0440\u0438\u043A\u0430\u043D\u0441\u043A\u043E\u0433\u043E \u043A\u0438\u043D\u043E, \u043A\u0440\u0435\u0441\u0442\u043D\u044B\u0439 \u043E\u0442\u0435\u0446 \u043D\u044C\u044E-\u0439\u043E\u0440\u043A\u0441\u043A\u043E\u0433\u043E \u043A\u0438\u043D\u043E\u0430\u0432\u0430\u043D\u0433\u0430\u0440\u0434\u0430." , "lang" : "ru" } ,
+      { "type" : "literal", "value" : "Jonas Mekas, n\u00E9 le 24 d\u00E9cembre 1922 dans le village de Semeni\u0161kiai, pr\u00E8s de Bir\u017Eai, Lituanie, est un \u00E9crivain et r\u00E9alisateur. Figure du cin\u00E9ma underground, il est aussi critique et enseignant de cin\u00E9ma. Il a popularis\u00E9 le journal film\u00E9." , "lang" : "fr" } ,
+      { "type" : "literal", "value" : "Jonas Mekas (Lithuanian: [\u02C8jon\u0250s \u02C8m\u00E6k\u0250s]; born December 24, 1922) is a Lithuanian-American filmmaker, poet and artist who has often been called \"the godfather of American avant-garde cinema.\" His work has been exhibited in museums and festivals worldwide." , "lang" : "en" } ,
+      { "type" : "literal", "value" : "\u00C8 il fondatore, assieme al fratello Adolfas Mekas, della rivista Film Culture, e cofondatore dell'Anthology Film Archives. Trasferitosi a New York alla fine del 1949, \u00E8 noto per i suoi film sperimentali riconducibili al movimento del New American Cinema." , "lang" : "it" } ,
+      { "type" : "literal", "value" : "Jonas Mekas (ur. 24 grudnia 1922 w wiosce Semeni\u0161kiai, w pobli\u017Cu Bir\u017Eai) \u2013 pochodz\u0105cy z Litwy tw\u00F3rca filmowy, pisarz i kustosz, cz\u0119sto nazywany \u201Eojcem chrzestnym ameryka\u0144skiej awangardy filmowej\u201D. Aktualnie mieszka i pracuje w Nowym Jorku." , "lang" : "pl" } ,
+      { "type" : "literal", "value" : "\u30B8\u30E7\u30CA\u30B9\u30FB\u30E1\u30AB\u30B9\uFF08Jonas Mekas\u3001\u30EA\u30C8\u30A2\u30CB\u30A2\u8A9E\u3067\u306F\u30E8\u30CA\u30B9\u30FB\u30E1\u30AB\u30B9\u30011922\u5E7412\u670823\u65E5 - \uFF09\u306F\u3001\u30EA\u30C8\u30A2\u30CB\u30A2\u306E\u6620\u753B\u76E3\u7763\u3001\u4F5C\u5BB6\u3001\u30AD\u30E5\u30EC\u30FC\u30BF\u30FC\u3002\u30D3\u30EB\u30B8\u30E3\u30A4\u8FD1\u90CA\u30BB\u30E1\u30CB\u30B7\u30E5\u30B1\u30A4\u51FA\u8EAB\u3002\u300C\u30A2\u30E1\u30EA\u30AB\u5B9F\u9A13\u6620\u753B\u306E\u30B4\u30C3\u30C9\u30D5\u30A1\u30FC\u30B6\u30FC\u300D\u3068\u547C\u3070\u308C\u308B\u3002" , "lang" : "ja" } ,
+      { "type" : "literal", "value" : "Jonas Mekas (Semeni\u0161kiai, Lituania, 23 de diciembre de 1922) es un cineasta lituano, emigrado en 1949. Es uno de los m\u00E1ximos exponentes del cine experimental estadounidense." , "lang" : "es" } ] ,
+    "http://dbpedia.org/ontology/thumbnail" : [ { "type" : "uri", "value" : "http://commons.wikimedia.org/wiki/Special:FilePath/Jonas_Mekas.jpg?width=300" } ] ,
+    "http://dbpedia.org/ontology/birthDate" : [ { "type" : "literal", "value" : "1922-12-24" , "datatype" : "http://www.w3.org/2001/XMLSchema#date" } ] ,
+    "http://dbpedia.org/ontology/wikiPageRevisionID" : [ { "type" : "literal", "value" : 744976504 , "datatype" : "http://www.w3.org/2001/XMLSchema#integer" } ] ,
+    "http://dbpedia.org/ontology/birthPlace" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Republic_of_Lithuania_(1918\u20131940)" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Semeni\u0161kiai" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Bir\u017Eai" } ] ,
+    "http://dbpedia.org/ontology/wikiPageID" : [ { "type" : "literal", "value" : 570660 , "datatype" : "http://www.w3.org/2001/XMLSchema#integer" } ] ,
+    "http://dbpedia.org/property/wordnet_type" : [ { "type" : "uri", "value" : "http://www.w3.org/2006/03/wn/wn20/instances/synset-artist-noun-1" } ] ,
+    "http://purl.org/linguistics/gold/hypernym" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Filmmaker" } ] } ,
+  "http://dbpedia.org/resource/As_I_Was_Moving_Ahead_Occasionally_I_Saw_Brief_Glimpses_of_Beauty" : { "http://dbpedia.org/ontology/producer" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Jonas_Mekas" } ] ,
+    "http://dbpedia.org/ontology/writer" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Jonas_Mekas" } ] ,
+    "http://dbpedia.org/ontology/cinematography" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Jonas_Mekas" } ] ,
+    "http://dbpedia.org/ontology/director" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Jonas_Mekas" } ] ,
+    "http://dbpedia.org/ontology/editing" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Jonas_Mekas" } ] } ,
+  "http://dbpedia.org/resource/Reminiscences_of_a_Journey_to_Lithuania" : { "http://dbpedia.org/ontology/cinematography" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Jonas_Mekas" } ] ,
+    "http://dbpedia.org/ontology/director" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Jonas_Mekas" } ] ,
+    "http://dbpedia.org/ontology/editing" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Jonas_Mekas" } ] } ,
+  "http://dbpedia.org/resource/Mekas" : { "http://dbpedia.org/ontology/wikiPageDisambiguates" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Jonas_Mekas" } ] } ,
+  "http://dbpedia.org/resource/Jack_Smith_and_the_Destruction_of_Atlantis" : { "http://dbpedia.org/ontology/starring" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Jonas_Mekas" } ] } ,
+  "http://dbpedia.org/resource/Jonas_in_the_Jungle" : { "http://dbpedia.org/ontology/starring" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Jonas_Mekas" } ] }
+}
+;
+	var dataAuth = "http://dbpedia.org/resource/Jonas_Mekas";
+	var dataUrl = "jonas_mekas.html";
+	var dataResourceType = "participant";
+	var dataName = "Jonas Mekas";
+ 	
+</script>
+
+
+
+
+
+<script type="text/javascript">
+
+
+	
+	
+	
+
+	$(document).ready(function($) {
+		
+		
+		padb.resource.initialize();
+			 
+		$( '.scrollable' ).
+		bind( 'mousewheel DOMMouseScroll', function ( e ) {
+			
+			if( e.originalEvent ) e = e.originalEvent;
+			
+			var delta = e.wheelDelta || -e.detail;
+			this.scrollTop += ( delta < 0 ? 1 : -1 ) * 30;
+			e.preventDefault();
+		});		 
+		
+		
+				
+		$.ajaxSetup ({
+			// Disable caching of AJAX responses
+			cache: false
+		});		
+		
+	});
+	
+
+	
+	
+	
+	
+	
+</script>
+
+
+
+
+ 
+<br />
+<div class="container"  style="position:relative;">
+	   
+      <div id="resourceLinks"></div> 
+       
+       
+       
+       
+              
+       
+           
+           
+           
+          <div class="row addSection">
+              <div class="span1 addSectionIconHolder">
+              
+                <i class="icon-user"></i>
+              
+              </div>
+          
+              <div class="span11">
+                <span>Performer</span>
+                <hr>
+                <br />
+              </div>
+        </div>
+        <div class="row">
+            <div class="span1">
+            </div>
+            <div class="span11" style="position:relative">
+                
+                
+                
+                
+               <div>
+                                       <div class="pull-right vignette">
+                            <img  src="../cache/media/jonas_mekas.jpg" />
+                            
+                        </div>
+                        
+                                           
+                <div class="pull-left" style="width:80%;">
+                     
+                     <h5 id="resourceLDName">Jonas Mekas</h5>
+                     <h5 id="resourceLDAbstract"></h5>
+                     
+                     
+                     <div id="resourceSameAs">
+                        <h5>External Data:</h5>
+                        
+                        
+                     </div>
+                
+                </div>   
+                
+                <br style="clear:both;" />
+            </div>
+            
+            
+                
+            </div>
+        </div>    
+         
+    
+    
+    
+    
+    
+    
+       <div class="row addSection">
+			<div class="span1 addSectionIconHolder">              
+                <i class="icon-asterisk"></i>
+              
+              </div>
+          
+              <div class="span11">
+                <span>Events </span><span id="resourceEventCount"></span>
+                <hr>
+              </div>
+        </div>
+    
+    
+    
+    
+    
+    
+    
+        <div class="row">
+            <div class="span1"></div>
+            <div class="span11" style="position:relative">
+                  
+                 <div class="">
+                    <div id="resourceEventsEvents" class="scrollable">
+                           <table class="table table-condensed table-hover table-striped">
+                               <thead>
+                                <tr>
+                                  <th>Date</th>
+                                  
+                                  <th>Title</th>
+                                  <th>Location</th>
+                                  <th></th>
+                                </tr>
+                              </thead>
+                              <tbody id="resourceEventsEventsRows"> 
+                              </tbody>
+                            </table>
+                     
+                    </div>
+                    
+                    <div id="resourceEventsExport">
+                    
+                    	<input  name="resourceEventsSearch" class="span3" id="resourceEventsSearch"  type="text" placeholder="Filter: names, places, dates">
+                    	<button class="btn btn-mini btn-danger" id="resourceEventsClearFilter"><i class="icon-remove">&nbsp;Clear Filter</i></button>
+                   		<button class="btn btn-mini btn-info" title="Render the currently filitered data as a network" id="resourceRenderEventNetwork"> <img src="../img/icon-network-white.png" style="height:15px; width:auto" /> Two-Mode Event Network</button>
+                   		<button class="btn btn-mini btn-info" title="Render the currently filitered data as a network" id="resourceRenderEventMap"> <i class="icon-globe"></i> Map Event Locations</button>
+                   		<button class="btn btn-mini btn-success" title="Download network as Gephi File" id="resourceDownloadEventGephi"> <img src="../img/icon-gephi.png" style="height:15px; width:auto" /> Donwload Gephi Network</button>
+
+                 
+                    </div>                 
+                </div>
+                <br style="clear:both;" />
+            </div>
+            
+            
+                
+         </div>    
+    
+     
+       <div class="row addSection">
+              <div class="span1">
+              
+                <img src="../img/social-network.png" style=" margin-left:25px; margin-bottom:10px;" />
+              
+              </div>
+          
+              <div class="span11">
+                <span>Performance Network</span> 
+                <hr>
+              </div>
+        </div>
+        
+        <div class="row">
+            <div class="span1">
+            </div>
+            <div class="span11" style="position:relative">
+                
+               	<div style="width: 100%; height:500px;" id="egoNetwork">
+            
+                
+             	</div> 
+                <div class="well pull-left well-small" id="egoNetworkControls">
+                    <span class="rangeLabels">Node Charge</span>
+                    <input type="range" id="resourceEgoNetworkCharge" min="-1000" max="100" value="-120" data-def="-700" />
+                    <br /><span class="rangeLabels">Gravity</span>
+                    <input type="range" id="resourceEgoNetworkGravity" min="0" max="1" value="0.1" step="0.01" data-def="0.3" /> 
+                    <br /><span class="rangeLabels">Edge Length</span>
+                    <input type="range" id="resourceEgoNetworkDistance" min="0" max="300" value="50" data-def="50"  />      
+                    <br /><span class="rangeLabels">Edge Strength</span>
+                    <input type="range" id="resourceEgoNetworkStrength" min="0" max="3" value="1" data-def="0.15" step="0.1"  /> 
+                    <br /><br />
+                    <button type="button" id="resourceEgoNetworkLabelsButton" class="btn btn-mini" title="Show node labels." data-toggle="button">Show Labels</button>  
+                    <button type="button" id="resourceEgoNetworkLiveButton" class="btn btn-mini" title="Show realtime network rendering" data-toggle="button">Live Rendering</button>                     
+                </div>
+                
+                <div class="well pull-left well-small egoNetworkControls span7" style="margin-left:20px;" >
+                
+                	<input  name="resourceEgoNetworkSearch" class="span3" id="resourceEgoNetworkSearch"  type="text" placeholder="Filter: names, places, dates">
+					<button class="btn btn-mini btn-danger" id="resourceEgoClearFilter"><i class="icon-remove">&nbsp;Clear Filter</i></button>
+                    <button class="btn btn-mini btn-success" title="Download network as Gephi File" id="resourceDownloadEgoGephi"> <img src="../img/icon-gephi.png" style="height:15px; width:auto" /> Donwload Gephi Network</button>
+
+                </div>
+                
+            </div>
+        </div>           
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+	
+
+	
+
+
+	
+
+
+</div>
+
+
+
+
+    <div id="resourceEventNetworkModal" class="modal container hide fade" style="min-height:500px" tabindex="-1">
+ 
+      <div class="modal-body">
+      	
+        <div id="eventNetwork" style="height:400px; width:100%">
+        
+        </div>
+      
+      </div>
+      <div class="modal-footer" style="height:20px;">
+      	
+        <div class="well pull-left well-small">
+        	<span class="rangeLabels">Node Charge</span>
+        	<input type="range" id="resourceEventNetworkCharge" min="-800" max="200" value="-120" data-def="-120" />
+            <span class="rangeLabels">Gravity</span>
+        	<input type="range" id="resourceEventNetworkGravity" min="0" max="1" value="0.1" step="0.01" data-def="0.1" /> 
+            <span class="rangeLabels">Edge Length</span>
+        	<input type="range" id="resourceEventNetworkDistance" min="0" max="300" value="50" data-def="50"  />      
+            <span class="rangeLabels">Edge Strength</span>
+        	<input type="range" id="resourceEventNetworkStrength" min="0" max="5" value="1" data-def="1" step="0.1"  />    
+            <button type="button" id="resourceEventNetworkLabelsButton" class="btn btn-mini" data-toggle="button">Show Labels</button>                     
+		</div>
+        <div class="pull-right">
+        <button type="button" data-dismiss="modal" class="btn">Close</button>
+       	</div>
+       </div>
+    </div>
+    
+    
+    
+    
+     <div id="resourceEventMapModal" class="modal container hide fade" style="min-height:500px" tabindex="-1">
+ 
+      <div class="modal-body">
+      	
+        <div id="eventMap" style="height:400px; width:100%">
+        
+        </div>
+      
+      </div>
+      <div class="modal-footer" style="height:20px;">
+      	
+        <div class="well pull-left well-small">                  
+		</div>
+        <div class="pull-right">
+        <button type="button" data-dismiss="modal" class="btn">Close</button>
+       	</div>
+       </div>
+    </div>
+
+<br /><br /><br /><br /><br /><br />
+
+<script type="text/javascript">    var _gaq = _gaq || [];   _gaq.push(['_setAccount', 'UA-10371295-7']);   _gaq.push(['_trackPageview']);    (function() {     var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);   })();  </script>
+
+</body>
+
+<!-- Mirrored from padb.net/resource/jonas_mekas by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 11 Jan 2020 22:17:50 GMT -->
+</html>

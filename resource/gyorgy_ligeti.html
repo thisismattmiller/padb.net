@@ -1,0 +1,686 @@
+<!doctype html>
+<html>
+
+<!-- Mirrored from padb.net/resource/gyorgy_ligeti by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 11 Jan 2020 22:18:21 GMT -->
+<head>
+<meta charset="UTF-8">
+<title>padb.net</title>
+
+
+<link rel="stylesheet" href="../css/bootstrap.css">
+<link rel="stylesheet" href="../css/font-awesome.css">
+<link rel="stylesheet" href="../css/site.css">
+<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+<link rel="icon" type="image/png" href="../img/favicon.png">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/bootstrap-modal.js"></script>
+<script src="../js/bootstrap-modalmanager.js"></script>
+
+<script src="../js/d3.min.js"></script>
+<script src="../js/html5slider.js"></script>
+<script src="../js/topojson.js"></script>
+<script src="../js/padb.js"></script>
+
+
+</head>
+<body>
+    
+    
+	<div style="position:relative;">        
+
+ 		<div style=" border-bottom:solid 1px #ccc;">
+        	<div class="container">
+                
+                 <div id="header">
+                 	
+                     <div class="logo"><a href="../index.html"><span>|||</span>padb</a> </div>
+                    
+                      
+						 <div id="resourceName">György Ligeti</div>
+					 
+                 </div>
+                
+                
+        	</div>
+            
+    	</div>
+ 
+   </div>
+<script src="../js/countriesData.js"></script>
+
+<script type="text/javascript">
+	//preloaded json from the server
+
+	var dataSameAs = [
+  {
+    "uri": "http://wikidata.dbpedia.org/resource/Q154331",
+    "numDuplicates": "93",
+    "duplicates": [
+      "http://dbpedia.org/resource/Ligeti",
+      "http://dbpedia.org/resource/Ligiti",
+      "http://dbpedia.org/resource/Giorgy_Ligeti",
+      "http://dbpedia.org/resource/Gyorgi_Ligeti",
+      "http://dbpedia.org/resource/Gyorgy_Ligeti",
+      "http://dbpedia.org/resource/Gyoergy_Ligeti",
+      "http://dbpedia.org/resource/Gyorgyi_Ligeti",
+      "http://dbpedia.org/resource/GyÃ¶rgy_Ligeti",
+      "http://dbpedia.org/resource/Ligeti_GyÃ¶rgy",
+      "http://dbpedia.org/resource/György_Ligeti",
+      "http://dbpedia.org/resource/Ligeti_György",
+      "http://dbpedia.org/resource/Gyorgy_Sandor_Ligeti",
+      "http://dbpedia.org/resource/Gyoergy_Sandor_Ligeti",
+      "http://dbpedia.org/resource/GyÃ¶rgy_SÃ¡ndor_Ligeti",
+      "http://dbpedia.org/resource/György_Sándor_Ligeti",
+      "http://br.dbpedia.org/resource/Gy\u00F6rgy_Ligeti",
+      "http://ca.dbpedia.org/resource/Gy\u00F6rgy_Ligeti",
+      "http://cs.dbpedia.org/resource/Gy\u00F6rgy_Ligeti",
+      "http://cy.dbpedia.org/resource/Gy\u00F6rgy_Ligeti",
+      "http://d-nb.info/gnd/118572911",
+      "http://d-nb.info/gnd/118572911/about/rdf",
+      "http://da.dbpedia.org/resource/Gy\u00F6rgy_Ligeti",
+      "http://data.bnf.fr/13896652",
+      "http://data.nytimes.com/ligeti_gyorgy_per",
+      "http://data.nytimes.com/60200592481459471973",
+      "http://datos.bne.es/resource/XX1000052",
+      "http://dbpedialite.org/things/145255#id",
+      "http://dbpedialite.org/things/2320903#id",
+      "http://dbpedialite.org/things/12070313#id",
+      "http://dbpedialite.org/things/15380981#id",
+      "http://dbpedialite.org/things/16218000#id",
+      "http://dbpedialite.org/things/16491549#id",
+      "http://dbpedialite.org/things/16595657#id",
+      "http://dbpedialite.org/things/16601780#id",
+      "http://dbpedialite.org/things/24224260#id",
+      "http://de.dbpedia.org/resource/Gy\u00F6rgy_Ligeti",
+      "http://el.dbpedia.org/resource/\u0393\u03BA\u03B9\u03AD\u03C1\u03B3\u03BA\u03B9_\u039B\u03AF\u03B3\u03BA\u03B5\u03C4\u03B9",
+      "http://eo.dbpedia.org/resource/Gy\u00F6rgy_Ligeti",
+      "http://es.dbpedia.org/resource/Gy\u00F6rgy_Ligeti",
+      "http://et.dbpedia.org/resource/Gy\u00F6rgy_Ligeti",
+      "http://eu.dbpedia.org/resource/Gy\u00F6rgy_Ligeti",
+      "http://fa.dbpedia.org/resource/\u062C\u0648\u0631\u062C_\u0644\u06CC\u06AF\u062A\u06CC",
+      "http://fi.dbpedia.org/resource/Gy\u00F6rgy_Ligeti",
+      "http://fr.dbpedia.org/resource/Gy\u00F6rgy_Ligeti",
+      "http://freebase.com//m/012fxj",
+      "http://gl.dbpedia.org/resource/Gy\u00F6rgy_Ligeti",
+      "http://he.dbpedia.org/resource/\u05D2'\u05E8\u05D2'_\u05DC\u05D9\u05D2\u05D8\u05D9",
+      "http://hr.dbpedia.org/resource/Gy\u00F6rgy_Ligeti",
+      "http://hu.dbpedia.org/resource/Ligeti_Gy\u00F6rgy",
+      "http://id.dbpedia.org/resource/Gy\u00F6rgy_Ligeti",
+      "http://id.loc.gov/authorities/names/n80021715",
+      "http://id.ndl.go.jp/auth/ndla/00911217",
+      "http://isni-url.oclc.nl/isni/0000000121358907",
+      "http://it.dbpedia.org/resource/Gy\u00F6rgy_Ligeti",
+      "http://ja.dbpedia.org/resource/\u30EA\u30B2\u30C6\u30A3\u30FB\u30B8\u30A7\u30EB\u30B8\u30E5",
+      "http://ko.dbpedia.org/resource/\uB9AC\uAC8C\uD2F0_\uC8C4\uB974\uC9C0",
+      "http://lb.dbpedia.org/resource/Gy\u00F6rgy_S\u00E1ndor_Ligeti",
+      "http://libris.kb.se/resource/auth/71371",
+      "http://mk.dbpedia.org/resource/\u0416\u0435\u0440\u0436_\u041B\u0438\u0433\u0435\u0442\u0438",
+      "http://mpii.de/yago/resource/György_Ligeti",
+      "http://musicbrainz.org/artist/da5e774b-026a-4117-82a4-11d246c05a8b",
+      "http://nl.dbpedia.org/resource/Gy\u00F6rgy_Ligeti",
+      "http://nn.dbpedia.org/resource/Gy\u00F6rgy_Ligeti",
+      "http://no.dbpedia.org/resource/Gy\u00F6rgy_Ligeti",
+      "http://pl.dbpedia.org/resource/Gy\u00F6rgy_Ligeti",
+      "http://pms.dbpedia.org/resource/Gy\u00F6rgy_Ligeti",
+      "http://pt.dbpedia.org/resource/Gy\u00F6rgy_Ligeti",
+      "http://rdf.freebase.com/ns/m.012fxj",
+      "http://rdf.freebase.com/ns/m.0qpyfhn",
+      "http://rdf.freebase.com/ns/en.gyorgy_ligeti",
+      "http://rdf.freebase.com/ns/guid.9202a8c04000641f8000000000113790",
+      "http://ro.dbpedia.org/resource/Gy\u00F6rgy_Ligeti",
+      "http://ru.dbpedia.org/resource/\u041B\u0438\u0433\u0435\u0442\u0438,_\u0414\u044C\u0451\u0440\u0434\u044C",
+      "http://sl.dbpedia.org/resource/Gy\u00F6rgy_Ligeti",
+      "http://sv.dbpedia.org/resource/Gy\u00F6rgy_Ligeti",
+      "http://tr.dbpedia.org/resource/Gy\u00F6rgy_Ligeti",
+      "http://uk.dbpedia.org/resource/\u041B\u0456\u0433\u0435\u0442\u0456_\u0414\u044C\u043E\u0440\u0434\u044C",
+      "http://viaf.org/viaf/61732409",
+      "http://wikidata.dbpedia.org/resource/Q154331",
+      "http://www.bbc.co.uk/music/artists/da5e774b-026a-4117-82a4-11d246c05a8b#artist",
+      "http://www.idref.fr/02804052X",
+      "http://www.idref.fr/02804052X/id",
+      "http://www.wikidata.org/entity/Q154331",
+      "http://www4.wiwiss.fu-berlin.de/flickrwrappr/photos/Ligeti",
+      "http://www4.wiwiss.fu-berlin.de/flickrwrappr/photos/Ligiti",
+      "http://www4.wiwiss.fu-berlin.de/flickrwrappr/photos/Giorgy_Ligeti",
+      "http://www4.wiwiss.fu-berlin.de/flickrwrappr/photos/Gyorgy_Ligeti",
+      "http://www4.wiwiss.fu-berlin.de/flickrwrappr/photos/Gyoergy_Ligeti",
+      "http://www4.wiwiss.fu-berlin.de/flickrwrappr/photos/György_Ligeti",
+      "http://www4.wiwiss.fu-berlin.de/flickrwrappr/photos/Gyorgy_Sandor_Ligeti",
+      "http://www4.wiwiss.fu-berlin.de/flickrwrappr/photos/Gyoergy_Sandor_Ligeti",
+      "http://yago-knowledge.org/resource/GyÃ¶rgy_Ligeti",
+      "http://zh.dbpedia.org/resource/\u5229\u76D6\u8482\u00B7\u6377\u5C14\u5409"
+    ]
+  }
+]
+;
+	var dataDbpedia = {
+  "http://dbpedia.org/resource/Gy\u00F6rgy_S\u00E1ndor_Ligeti" : { "http://dbpedia.org/ontology/wikiPageRedirects" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Gy\u00F6rgy_Ligeti" } ] } ,
+  "http://dbpedia.org/resource/Gy\u00F6rgy_Ligeti_(musician)" : { "http://www.w3.org/2002/07/owl#differentFrom" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Gy\u00F6rgy_Ligeti" } ] } ,
+  "http://dbpedia.org/resource/Over_Your_Cities_Grass_Will_Grow" : { "http://dbpedia.org/ontology/musicComposer" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Gy\u00F6rgy_Ligeti" } ] } ,
+  "http://dbpedia.org/resource/Ligeti" : { "http://dbpedia.org/ontology/wikiPageRedirects" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Gy\u00F6rgy_Ligeti" } ] } ,
+  "http://dbpedia.org/resource/Gy\u00F6rgy" : { "http://dbpedia.org/ontology/wikiPageDisambiguates" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Gy\u00F6rgy_Ligeti" } ] } ,
+  "http://dbpedia.org/resource/Gyoergy_Sandor_Ligeti" : { "http://dbpedia.org/ontology/wikiPageRedirects" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Gy\u00F6rgy_Ligeti" } ] } ,
+  "http://dbpedia.org/resource/Ligiti" : { "http://dbpedia.org/ontology/wikiPageRedirects" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Gy\u00F6rgy_Ligeti" } ] } ,
+  "http://en.wikipedia.org/wiki/Gy\u00F6rgy_Ligeti" : { "http://xmlns.com/foaf/0.1/primaryTopic" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Gy\u00F6rgy_Ligeti" } ] } ,
+  "http://dbpedia.org/resource/Gyorgy_Sandor_Ligeti" : { "http://dbpedia.org/ontology/wikiPageRedirects" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Gy\u00F6rgy_Ligeti" } ] } ,
+  "http://dbpedia.org/resource/Gyorgy_Ligeti" : { "http://dbpedia.org/ontology/wikiPageRedirects" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Gy\u00F6rgy_Ligeti" } ] } ,
+  "http://dbpedia.org/resource/Giorgy_Ligeti" : { "http://dbpedia.org/ontology/wikiPageRedirects" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Gy\u00F6rgy_Ligeti" } ] } ,
+  "http://dbpedia.org/resource/Gy\u00F6rgy_Ligeti" : { "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { "type" : "uri", "value" : "http://www.w3.org/2002/07/owl#Thing" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Enrollee110059162" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Student110665698" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatPeopleFromT\u00E2rn\u0103veni" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/National109625401" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Citizen109923673" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatJewishComposersAndSongwriters" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatRomanianPeopleOfHungarianDescent" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatRomanianExpatriatesInHungary" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatRoyalPhilharmonicSocietyGoldMedallists" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatAustrianComposers" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Wikicat20th-centuryComposers" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Wikicat21st-centuryComposers" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Recipient109627906" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Acquirer109764201" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Honoree110183757" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatPeopleFromMure\u0219County" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatRolfSchockPrizeLaureates" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatNaturalisedCitizensOfAustria" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatHungarianComposers" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatHungarianClassicalComposers" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Laureate110249011" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatComposersForViolin" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Contestant109613191" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Organism100004475" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/ontology/Person" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Whole100003553" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/LivingThing100004258" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/CausalAgent100007347" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Musician110339966" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Artist109812338" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Creator109614315" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatJewishClassicalComposers" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatHungarianExiles" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatRomanianComposers" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatJewishClassicalMusicians" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatHungarianEmigrantsToAustria" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatPupilsOfZolt\u00E1nKod\u00E1ly" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatOperaComposers" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatRomanianExpatriatesInAustria" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/YagoLegalActor" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/YagoLegalActorGeo" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatExperimentalMusicians" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Person100007846" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Object100002684" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Migrant110314952" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatAustrianPeopleOfRomanian-JewishDescent" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Winner110782940" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/PhysicalEntity100001930" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Medalist110305062" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Composer109947232" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Wikicat20th-centuryClassicalComposers" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Emigrant110051975" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatComposersForPipeOrgan" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatComposersForCello" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatRomanianExpatriatesInGermany" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Absentee109757653" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Exile110071332" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Traveler109629752" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatComposersForPiano" } ] ,
+    "http://www.w3.org/2000/01/rdf-schema#label" : [ { "type" : "literal", "value" : "Gy\u00F6rgy Ligeti" , "lang" : "nl" } ,
+      { "type" : "literal", "value" : "Gy\u00F6rgy Ligeti" , "lang" : "fr" } ,
+      { "type" : "literal", "value" : "Gy\u00F6rgy Ligeti" , "lang" : "de" } ,
+      { "type" : "literal", "value" : "Gy\u00F6rgy Ligeti" , "lang" : "es" } ,
+      { "type" : "literal", "value" : "\u30EA\u30B2\u30C6\u30A3\u30FB\u30B8\u30A7\u30EB\u30B8\u30E5" , "lang" : "ja" } ,
+      { "type" : "literal", "value" : "\u5229\u76D6\u8482\u00B7\u6377\u5C14\u5409" , "lang" : "zh" } ,
+      { "type" : "literal", "value" : "Gy\u00F6rgy Ligeti" , "lang" : "en" } ,
+      { "type" : "literal", "value" : "\u041B\u0438\u0433\u0435\u0442\u0438, \u0414\u044C\u0451\u0440\u0434\u044C" , "lang" : "ru" } ,
+      { "type" : "literal", "value" : "Gy\u00F6rgy Ligeti" , "lang" : "pt" } ,
+      { "type" : "literal", "value" : "Gy\u00F6rgy Ligeti" , "lang" : "pl" } ,
+      { "type" : "literal", "value" : "Gy\u00F6rgy Ligeti" , "lang" : "it" } ] ,
+    "http://www.w3.org/2000/01/rdf-schema#comment" : [ { "type" : "literal", "value" : "\u0414\u044C\u0451\u0440\u0434\u044C \u0428\u0430\u0301\u043D\u0434\u043E\u0440 \u041B\u0438\u0301\u0433\u0435\u0442\u0438 (\u0432\u0435\u043D\u0433. Ligeti Gy\u00F6rgy S\u00E1ndor; 28 \u043C\u0430\u044F 1923, \u0414\u0438\u0447\u0451\u0441\u0435\u043D\u0442\u043C\u0430\u0440\u0442\u043E\u043D, \u0420\u0443\u043C\u044B\u043D\u0438\u044F \u2014 12 \u0438\u044E\u043D\u044F 2006, \u0412\u0435\u043D\u0430, \u0410\u0432\u0441\u0442\u0440\u0438\u044F) \u2014 \u0432\u0435\u043D\u0433\u0435\u0440\u0441\u043A\u0438\u0439 \u0438 \u0430\u0432\u0441\u0442\u0440\u0438\u0439\u0441\u043A\u0438\u0439 \u043A\u043E\u043C\u043F\u043E\u0437\u0438\u0442\u043E\u0440-\u0430\u0432\u0430\u043D\u0433\u0430\u0440\u0434\u0438\u0441\u0442, \u043F\u0435\u0434\u0430\u0433\u043E\u0433. \u0428\u0438\u0440\u043E\u043A\u043E\u0439 \u043F\u0443\u0431\u043B\u0438\u043A\u0435 \u043E\u043D \u0441\u0442\u0430\u043B \u0438\u0437\u0432\u0435\u0441\u0442\u0435\u043D \u0431\u043B\u0430\u0433\u043E\u0434\u0430\u0440\u044F \u0438\u0441\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u043D\u0438\u044E \u0435\u0433\u043E \u043C\u0443\u0437\u044B\u043A\u0438 \u0432 \u0444\u0438\u043B\u044C\u043C\u0435 \u0421\u0442\u044D\u043D\u043B\u0438 \u041A\u0443\u0431\u0440\u0438\u043A\u0430 \u00AB\u041A\u043E\u0441\u043C\u0438\u0447\u0435\u0441\u043A\u0430\u044F \u043E\u0434\u0438\u0441\u0441\u0435\u044F 2001 \u0433\u043E\u0434\u0430\u00BB." , "lang" : "ru" } ,
+      { "type" : "literal", "value" : "\u30EA\u30B2\u30C6\u30A3\u30FB\u30B8\u30A7\u30EB\u30B8\u30E5\u30FB\u30B7\u30E3\u30FC\u30F3\u30C9\u30EB\uFF08Ligeti Gy\u00F6rgy S\u00E1ndor [\u02C8lig\u025Bti \u02CC\u025F\u00F8r\u025F \u02CC\u0283\u0251\u0308\u02D0ndor]\u30011923\u5E745\u670828\u65E5 - 2006\u5E746\u670812\u65E5\uFF09\u306F\u3001\u30CF\u30F3\u30AC\u30EA\u30FC\u306E\u73FE\u4EE3\u97F3\u697D\u306E\u4F5C\u66F2\u5BB6\u3002\u30AF\u30E9\u30B7\u30C3\u30AF\u97F3\u697D\u3067\u5B9F\u9A13\u7684\u306A\u4F5C\u54C1\u3092\u591A\u304F\u6B8B\u3057\u305F\u307B\u304B\u3001\u30B9\u30BF\u30F3\u30EA\u30FC\u30FB\u30AD\u30E5\u30FC\u30D6\u30EA\u30C3\u30AF\u76E3\u7763\u4F5C\u300C2001\u5E74\u5B87\u5B99\u306E\u65C5\u300D\u3084\u300C\u30B7\u30E3\u30A4\u30CB\u30F3\u30B0\u300D\u306A\u3069\u306B\u97F3\u697D\u304C\u4F7F\u7528\u3055\u308C\u305F\u3053\u3068\u3067\u3082\u77E5\u3089\u308C\u308B\u3002\u30B8\u30A7\u30EB\u30B8\u30FB\u30EA\u30B2\u30C6\u30A3\u3068\u3082\u8868\u8A18\u3055\u308C\u308B\u3002" , "lang" : "ja" } ,
+      { "type" : "literal", "value" : "La sua produzione va essenzialmente annoverata nell'ambito della musica contemporanea, ma al grande pubblico \u00E8 probabilmente pi\u00F9 noto per vari suoi brani che caratterizzano in modo rilevante i film di Stanley Kubrick come 2001: Odissea nello spazio, Shining e Eyes Wide Shut." , "lang" : "it" } ,
+      { "type" : "literal", "value" : "Gy\u00F6rgy S\u00E1ndor Ligeti [\u02C8\u025F\u00F8r\u025F \u02C8li\u0261\u025Bti] (ur. 28 maja 1923 w Dics\u0151szentm\u00E1rtonie, obecnie T\u00E2rn\u0103veni, Siedmiogr\u00F3d, zm. 12 czerwca 2006 w Wiedniu) \u2013 kompozytor w\u0119gierski pochodzenia \u017Cydowskiego, r\u00F3wnie\u017C obywatel Austrii. Uznawany za jednego z czo\u0142owych kompozytor\u00F3w muzyki wsp\u00F3\u0142czesnej XX w. W powszechnej \u015Bwiadomo\u015Bci znany przede wszystkim jako tw\u00F3rca utwor\u00F3w, kt\u00F3re (we fragmentach) zosta\u0142y wykorzystane jako muzyka do filmu Kubricka 2001: Odyseja kosmiczna (zob. Muzyka filmowa)" , "lang" : "pl" } ,
+      { "type" : "literal", "value" : "Gy\u00F6rgy S\u00E1ndor Ligeti [\u025F\u0361\u029D\u00F8r\u025F\u0361\u029D \u02C8\u0283a\u02D0ndor \u02C8lig\u025Bti]? (T\u00E2rn\u0103veni (Hongaars: Dics\u0151szentm\u00E1rton), Roemeni\u00EB, 28 mei 1923 - Wenen, 12 juni 2006) was een Hongaars-Oostenrijks componist. Geboren in Roemeni\u00EB vestigde hij zich als componist in Hongarije, maar vluchtte daarvandaan na de Hongaarse Opstand van 1956." , "lang" : "nl" } ,
+      { "type" : "literal", "value" : "Gy\u00F6rgy S\u00E1ndor Ligeti [\u02C8\u025F\u00F8r\u025F \u0283a\u02D0ndor \u02C8li\u0261\u025Bti] (Georg Alexander Ligeti; 28. Mai 1923 in T\u00E2rn\u0103veni, Siebenb\u00FCrgen, Rum\u00E4nien \u2013 12. Juni 2006 in Wien) war ein \u00F6sterreichisch-ungarischer Komponist. Er gilt als einer der bedeutenden Komponisten des 20. Jahrhunderts und als Repr\u00E4sentant der Neuen Musik. Einer breiteren \u00D6ffentlichkeit bekannt wurde Ligeti durch die Verwendung seines Orchesterwerks Atmosph\u00E8res im Film 2001: Odyssee im Weltraum von Stanley Kubrick. Der Regisseur setzte weitere Werke Ligetis in seinen Filmen Shining und Eyes Wide Shut zur musikalischen Untermalung ein." , "lang" : "de" } ,
+      { "type" : "literal", "value" : "Gy\u00F6rgy Ligeti est un compositeur de citoyennet\u00E9 roumaine et hongroise, naturalis\u00E9 autrichien, n\u00E9 en Roumanie \u00E0 Dicios\u00E2nmartin (aujourd\u2019hui T\u00E2rn\u0103veni) le 28 mai 1923 et mort le 12 juin 2006 \u00E0 Vienne." , "lang" : "fr" } ,
+      { "type" : "literal", "value" : "\u5229\u76D6\u8482\u00B7\u6377\u5C14\u5409\u00B7\u5C71\u591A\u5C14\uFF08\u5308\u7259\u5229\u8BED\uFF1ALigeti Gy\u00F6rgy S\u00E1ndor\uFF0C1923\u5E745\u670828\u65E5\uFF0D2006\u5E746\u670812\u65E5\uFF09\uFF0C\u5F53\u4EE3\u53E4\u5178\u97F3\u4E50\u5148\u950B\u6D3E\u4F5C\u66F2\u5BB6\u3002 \u539F\u7C4D\u5308\u7259\u5229\uFF0C1956\u5E74\u79BB\u5F00\u5308\u7259\u5229\uFF0C\u5148\u5728\u79D1\u9686\u4F5C\u7535\u5B50\u97F3\u4E50\u5B9E\u9A8C\uFF0C1967\u5E74\u5165\u5965\u5730\u5229\u7C4D\u3002\u5229\u76D6\u8482\u867D\u7136\u53D7\u7535\u5B50\u97F3\u4E50\u7684\u542F\u53D1\uFF0C\u4F46\u662F\u5B83\u4E3B\u8981\u8FD8\u662F\u521B\u4F5C\u7528\u4F20\u7EDF\u4E50\u5668\u6F14\u594F\u7684\u4F5C\u54C1\u3002" , "lang" : "zh" } ,
+      { "type" : "literal", "value" : "Gy\u00F6rgy S\u00E1ndor Ligeti (Dics\u0151szentm\u00E1rton, 28 de maio de 1923 \u2014 Viena, 12 de junho de 2006) foi um compositor judeu h\u00FAngaro, amplamente considerado como um dos mais not\u00E1veis compositores de m\u00FAsica erudita do s\u00E9culo XX. Sua obra mais famosa \u00E9 a \u00F3pera Le Grand Macabre, mas tamb\u00E9m pe\u00E7as para grande orquestra como Lontano e Atmosph\u00E9res. Tamb\u00E9m \u00E9 conhecido por algumas m\u00FAsicas das trilhas sonoras de filmes como 2001: Uma Odiss\u00E9ia no Espa\u00E7o e Eyes Wide Shut. \u00C9 preciso que se esclare\u00E7a que Ligeti n\u00E3o comp\u00F4s tais m\u00FAsicas como trilhas desses filmes, mas elas foram utilizadas por Stanley Kubrick pelo seu apre\u00E7o pelo compositor e a extrema adequa\u00E7\u00E3o entre suas linguagens." , "lang" : "pt" } ,
+      { "type" : "literal", "value" : "Gy\u00F6rgy S\u00E1ndor Ligeti -pronunciado l\u00EDgueti- (Dics\u0151szentm\u00E1rton, Rumania, 28 de mayo de 1923 - Viena, 12 de junio de 2006) fue un compositor h\u00FAngaro de origen jud\u00EDo (que residi\u00F3 en Austria y luego se naturaliz\u00F3), considerado uno de los m\u00E1s grandes compositores del siglo XX." , "lang" : "es" } ,
+      { "type" : "literal", "value" : "Gy\u00F6rgy S\u00E1ndor Ligeti (/\u02C8l\u026A\u0261\u0259ti/; Hungarian: Ligeti Gy\u00F6rgy S\u00E1ndor, pronounced [\u02C8li\u0261\u025Bti \u02C8\u025F\u00F8r\u025F \u02C8\u0283a\u02D0ndor]; 28 May 1923 \u2013 12 June 2006) was a Hungarian composer of contemporary classical music. He has been described as \"one of the most important avant-garde composers in the latter half of the twentieth century\" and \"one of the most innovative and influential among progressive figures of his time\"." , "lang" : "en" } ] ,
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/List_of_compositions_by_Gy\u00F6rgy_Ligeti" } ] ,
+    "http://www.w3.org/2002/07/owl#sameAs" : [ { "type" : "uri", "value" : "http://ko.dbpedia.org/resource/\uB9AC\uAC8C\uD2F0_\uC8C4\uB974\uC9C0" } ,
+      { "type" : "uri", "value" : "http://ja.dbpedia.org/resource/\u30EA\u30B2\u30C6\u30A3\u30FB\u30B8\u30A7\u30EB\u30B8\u30E5" } ,
+      { "type" : "uri", "value" : "http://fr.dbpedia.org/resource/Gy\u00F6rgy_Ligeti" } ,
+      { "type" : "uri", "value" : "http://eu.dbpedia.org/resource/Gy\u00F6rgy_Ligeti" } ,
+      { "type" : "uri", "value" : "http://cs.dbpedia.org/resource/Gy\u00F6rgy_Ligeti" } ,
+      { "type" : "uri", "value" : "http://de.dbpedia.org/resource/Gy\u00F6rgy_Ligeti" } ,
+      { "type" : "uri", "value" : "http://el.dbpedia.org/resource/\u0393\u03BA\u03B9\u03AD\u03C1\u03B3\u03BA\u03B9_\u039B\u03AF\u03B3\u03BA\u03B5\u03C4\u03B9" } ,
+      { "type" : "uri", "value" : "http://id.dbpedia.org/resource/Gy\u00F6rgy_Ligeti" } ,
+      { "type" : "uri", "value" : "http://it.dbpedia.org/resource/Gy\u00F6rgy_Ligeti" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Gy\u00F6rgy_Ligeti" } ,
+      { "type" : "uri", "value" : "http://nl.dbpedia.org/resource/Gy\u00F6rgy_Ligeti" } ,
+      { "type" : "uri", "value" : "http://data.europa.eu/euodp/jrc-names/Gy%C3%B6rgy_Ligeti" } ,
+      { "type" : "uri", "value" : "http://es.dbpedia.org/resource/Gy\u00F6rgy_Ligeti" } ,
+      { "type" : "uri", "value" : "http://data.nytimes.com/60200592481459471973" } ,
+      { "type" : "uri", "value" : "http://viaf.org/viaf/61732409" } ,
+      { "type" : "uri", "value" : "http://pl.dbpedia.org/resource/Gy\u00F6rgy_Ligeti" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Gy\u00F6rgy_Ligeti" } ,
+      { "type" : "uri", "value" : "http://d-nb.info/gnd/118572911" } ,
+      { "type" : "uri", "value" : "http://wikidata.dbpedia.org/resource/Q154331" } ,
+      { "type" : "uri", "value" : "http://pt.dbpedia.org/resource/Gy\u00F6rgy_Ligeti" } ,
+      { "type" : "uri", "value" : "http://rdf.freebase.com/ns/m.012fxj" } ,
+      { "type" : "uri", "value" : "http://yago-knowledge.org/resource/Gy\u00F6rgy_Ligeti" } ,
+      { "type" : "uri", "value" : "http://www.wikidata.org/entity/Q154331" } ] ,
+    "http://purl.org/dc/terms/subject" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Composers_for_violin" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Naturalised_citizens_of_Austria" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Jewish_classical_musicians" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Jewish_classical_pianists" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Composers_for_piano" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Hungarian_exiles" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Franz_Liszt_Academy_of_Music_alumni" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Pupils_of_Zolt\u00E1n_Kod\u00E1ly" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Hungarian_Jews" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Hungarian_emigrants_to_Austria" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Male_classical_composers" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Hochschule_f\u00FCr_Musik_und_Theater_Hamburg_faculty" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Hungarian_classical_composers" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Recipients_of_the_Praemium_Imperiale" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Recipients_of_the_Grand_Austrian_State_Prize" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Rolf_Schock_Prize_laureates" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Deutsche_Grammophon_artists" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Composers_for_pipe_organ" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Composers_for_cello" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Members_of_the_European_Academy_of_Sciences_and_Arts" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Jewish_classical_composers" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Austrian_male_classical_composers" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Austrian_classical_composers" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Commandeurs_of_the_Ordre_des_Arts_et_des_Lettres" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Royal_Philharmonic_Society_Gold_Medallists" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:People_from_Mure\u0219_County" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:International_Rostrum_of_Composers_prize-winners" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Honorary_Members_of_the_Royal_Academy_of_Music" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Honorary_Members_of_the_Royal_Philharmonic_Society" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Wolf_Prize_in_Arts_laureates" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:1923_births" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Grawemeyer_Award_winners" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Recipients_of_the_Austrian_Decoration_for_Science_and_Art" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Romanian_Jews" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:20th-century_classical_composers" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Recipients_of_the_L\u00E9onie_Sonning_Music_Prize" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:2006_deaths" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Austrian_people_of_Romanian-Jewish_descent" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Austrian_Jews" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:People_from_T\u00E2rn\u0103veni" } ] ,
+    "http://xmlns.com/foaf/0.1/name" : [ { "type" : "literal", "value" : "Gy\u00F6rgy Ligeti" , "lang" : "en" } ] ,
+    "http://xmlns.com/foaf/0.1/homepage" : [ { "type" : "uri", "value" : "http://www.gyorgy-ligeti.com" } ] ,
+    "http://xmlns.com/foaf/0.1/depiction" : [ { "type" : "uri", "value" : "http://commons.wikimedia.org/wiki/Special:FilePath/Gy\u00F6rgy_Ligeti_(1984).jpg" } ] ,
+    "http://purl.org/dc/terms/description" : [ { "type" : "literal", "value" : "Austrian composer" , "lang" : "en" } ] ,
+    "http://xmlns.com/foaf/0.1/givenName" : [ { "type" : "literal", "value" : "Gy\u00F6rgy" , "lang" : "en" } ] ,
+    "http://xmlns.com/foaf/0.1/gender" : [ { "type" : "literal", "value" : "male" , "lang" : "en" } ] ,
+    "http://xmlns.com/foaf/0.1/isPrimaryTopicOf" : [ { "type" : "uri", "value" : "http://en.wikipedia.org/wiki/Gy\u00F6rgy_Ligeti" } ] ,
+    "http://xmlns.com/foaf/0.1/surname" : [ { "type" : "literal", "value" : "Ligeti" , "lang" : "en" } ] ,
+    "http://www.w3.org/ns/prov#wasDerivedFrom" : [ { "type" : "uri", "value" : "http://en.wikipedia.org/wiki/Gy\u00F6rgy_Ligeti?oldid=741551846" } ] ,
+    "http://dbpedia.org/ontology/wikiPageExternalLink" : [ { "type" : "uri", "value" : "http://www.theguardian.com/music/tomserviceblog/2015/jul/20/pierre-laurent-aimard-ligeti-piano-music-etudes" } ,
+      { "type" : "uri", "value" : "http://www.essentialsofmusic.com/composer/ligeti.html" } ,
+      { "type" : "uri", "value" : "http://www.nytimes.com/2006/06/13/arts/music/13ligeti.html" } ,
+      { "type" : "uri", "value" : "http://www.nytimes.com/2005/11/14/arts/music/14lige.html" } ,
+      { "type" : "uri", "value" : "http://repositories.lib.utexas.edu/handle/2152/6905" } ,
+      { "type" : "uri", "value" : "http://www.theworld.org/2012/01/mohammed-fairouz-tahrir" } ,
+      { "type" : "uri", "value" : "http://www.gyorgy-ligeti.com" } ,
+      { "type" : "uri", "value" : "http://www.schott-music.com/shop/persons/featured/11540/" } ,
+      { "type" : "uri", "value" : "http://www.schott-music.com/shop/persons/featured/11540/vitae/" } ,
+      { "type" : "uri", "value" : "http://www.allmusic.com/artist/gy\u00F6rgy-ligeti-mn0001319058/biography" } ,
+      { "type" : "uri", "value" : "http://www.wihurinrahasto.fi/prizes.html" } ,
+      { "type" : "uri", "value" : "https://sites.google.com/site/ligeticomposer/home" } ,
+      { "type" : "uri", "value" : "http://arts.guardian.co.uk/news/obituary/0,,1796976,00.html" } ,
+      { "type" : "uri", "value" : "http://www.allegro-c.de/formate/cmm.htm" } ,
+      { "type" : "uri", "value" : "http://arts.guardian.co.uk/filmandmusic/story/0,,2018705,00.html" } ,
+      { "type" : "uri", "value" : "http://www.stephenandrewtaylor.net/taylor-ligeti,africa.pdf" } ,
+      { "type" : "uri", "value" : "http://www.compositiontoday.com/articles/ligeti.asp" } ,
+      { "type" : "uri", "value" : "http://www.bbc.co.uk/programmes/p00nc1k8" } ,
+      { "type" : "uri", "value" : "http://news.bbc.co.uk/2/hi/entertainment/292812.stm" } ,
+      { "type" : "uri", "value" : "https://www.mphil.de/personen/gyoergy-ligeti.html" } ,
+      { "type" : "uri", "value" : "http://www.gyoergy-ligeti.de/" } ,
+      { "type" : "uri", "value" : "http://www.pytheasmusic.org/ligeti.html" } ,
+      { "type" : "uri", "value" : "http://homepages.sover.net/~foodsong/ligeti.htm" } ,
+      { "type" : "uri", "value" : "https://courses.candelalearning.com/musicx15xmaster/chapter/micropolyphony/" } ] ,
+    "http://dbpedia.org/ontology/abstract" : [ { "type" : "literal", "value" : "Gy\u00F6rgy S\u00E1ndor Ligeti (/\u02C8l\u026A\u0261\u0259ti/; Hungarian: Ligeti Gy\u00F6rgy S\u00E1ndor, pronounced [\u02C8li\u0261\u025Bti \u02C8\u025F\u00F8r\u025F \u02C8\u0283a\u02D0ndor]; 28 May 1923 \u2013 12 June 2006) was a Hungarian composer of contemporary classical music. He has been described as \"one of the most important avant-garde composers in the latter half of the twentieth century\" and \"one of the most innovative and influential among progressive figures of his time\". Born in Transylvania, Romania, he lived in Hungary before emigrating to Austria in 1956, and became an Austrian citizen in 1968. In 1973 he became professor of composition at the Hamburg Hochschule f\u00FCr Musik und Theater until he retired in 1989. He died in Vienna in 2006. Restricted by the authorities of Communist Hungary, only when he reached the west in 1956 could he fully realise his passion for avant-garde music and develop new compositional techniques. After experimenting with electronic music in Cologne, his breakthrough came with orchestral works such as Atmosph\u00E8res, for which he used a technique he later dubbed micropolyphony. After writing his \"anti-opera\" Le Grand Macabre, Ligeti shifted away from chromaticism and towards polyrhythm for his later works. He is best known by the public for the use of his music in film soundtracks. Although he did not directly compose any film scores, excerpts of pieces composed by him were taken and adapted for film use. Most famously this occurred in the films of Stanley Kubrick, particularly with the music from 2001: A Space Odyssey, which also contained pieces from other classical composers." , "lang" : "en" } ,
+      { "type" : "literal", "value" : "Gy\u00F6rgy Ligeti est un compositeur de citoyennet\u00E9 roumaine et hongroise, naturalis\u00E9 autrichien, n\u00E9 en Roumanie \u00E0 Dicios\u00E2nmartin (aujourd\u2019hui T\u00E2rn\u0103veni) le 28 mai 1923 et mort le 12 juin 2006 \u00E0 Vienne." , "lang" : "fr" } ,
+      { "type" : "literal", "value" : "La sua produzione va essenzialmente annoverata nell'ambito della musica contemporanea, ma al grande pubblico \u00E8 probabilmente pi\u00F9 noto per vari suoi brani che caratterizzano in modo rilevante i film di Stanley Kubrick come 2001: Odissea nello spazio, Shining e Eyes Wide Shut." , "lang" : "it" } ,
+      { "type" : "literal", "value" : "Gy\u00F6rgy S\u00E1ndor Ligeti [\u02C8\u025F\u00F8r\u025F \u0283a\u02D0ndor \u02C8li\u0261\u025Bti] (Georg Alexander Ligeti; 28. Mai 1923 in T\u00E2rn\u0103veni, Siebenb\u00FCrgen, Rum\u00E4nien \u2013 12. Juni 2006 in Wien) war ein \u00F6sterreichisch-ungarischer Komponist. Er gilt als einer der bedeutenden Komponisten des 20. Jahrhunderts und als Repr\u00E4sentant der Neuen Musik. Einer breiteren \u00D6ffentlichkeit bekannt wurde Ligeti durch die Verwendung seines Orchesterwerks Atmosph\u00E8res im Film 2001: Odyssee im Weltraum von Stanley Kubrick. Der Regisseur setzte weitere Werke Ligetis in seinen Filmen Shining und Eyes Wide Shut zur musikalischen Untermalung ein." , "lang" : "de" } ,
+      { "type" : "literal", "value" : "Gy\u00F6rgy S\u00E1ndor Ligeti -pronunciado l\u00EDgueti- (Dics\u0151szentm\u00E1rton, Rumania, 28 de mayo de 1923 - Viena, 12 de junio de 2006) fue un compositor h\u00FAngaro de origen jud\u00EDo (que residi\u00F3 en Austria y luego se naturaliz\u00F3), considerado uno de los m\u00E1s grandes compositores del siglo XX. No s\u00F3lo es conocido en los c\u00EDrculos musicales cl\u00E1sicos, sino tambi\u00E9n por el gran p\u00FAblico, sobre todo gracias a que el director de cine Stanley Kubrick us\u00F3 sus obras como parte de la banda sonora de varias de sus pel\u00EDculas: 2001: Una odisea en el espacio, El resplandor y Eyes Wide Shut. Tambi\u00E9n es conocida su \u00F3pera Le Grand Macabre." , "lang" : "es" } ,
+      { "type" : "literal", "value" : "Gy\u00F6rgy S\u00E1ndor Ligeti (Dics\u0151szentm\u00E1rton, 28 de maio de 1923 \u2014 Viena, 12 de junho de 2006) foi um compositor judeu h\u00FAngaro, amplamente considerado como um dos mais not\u00E1veis compositores de m\u00FAsica erudita do s\u00E9culo XX. Sua obra mais famosa \u00E9 a \u00F3pera Le Grand Macabre, mas tamb\u00E9m pe\u00E7as para grande orquestra como Lontano e Atmosph\u00E9res. Tamb\u00E9m \u00E9 conhecido por algumas m\u00FAsicas das trilhas sonoras de filmes como 2001: Uma Odiss\u00E9ia no Espa\u00E7o e Eyes Wide Shut. \u00C9 preciso que se esclare\u00E7a que Ligeti n\u00E3o comp\u00F4s tais m\u00FAsicas como trilhas desses filmes, mas elas foram utilizadas por Stanley Kubrick pelo seu apre\u00E7o pelo compositor e a extrema adequa\u00E7\u00E3o entre suas linguagens." , "lang" : "pt" } ,
+      { "type" : "literal", "value" : "\u0414\u044C\u0451\u0440\u0434\u044C \u0428\u0430\u0301\u043D\u0434\u043E\u0440 \u041B\u0438\u0301\u0433\u0435\u0442\u0438 (\u0432\u0435\u043D\u0433. Ligeti Gy\u00F6rgy S\u00E1ndor; 28 \u043C\u0430\u044F 1923, \u0414\u0438\u0447\u0451\u0441\u0435\u043D\u0442\u043C\u0430\u0440\u0442\u043E\u043D, \u0420\u0443\u043C\u044B\u043D\u0438\u044F \u2014 12 \u0438\u044E\u043D\u044F 2006, \u0412\u0435\u043D\u0430, \u0410\u0432\u0441\u0442\u0440\u0438\u044F) \u2014 \u0432\u0435\u043D\u0433\u0435\u0440\u0441\u043A\u0438\u0439 \u0438 \u0430\u0432\u0441\u0442\u0440\u0438\u0439\u0441\u043A\u0438\u0439 \u043A\u043E\u043C\u043F\u043E\u0437\u0438\u0442\u043E\u0440-\u0430\u0432\u0430\u043D\u0433\u0430\u0440\u0434\u0438\u0441\u0442, \u043F\u0435\u0434\u0430\u0433\u043E\u0433. \u0428\u0438\u0440\u043E\u043A\u043E\u0439 \u043F\u0443\u0431\u043B\u0438\u043A\u0435 \u043E\u043D \u0441\u0442\u0430\u043B \u0438\u0437\u0432\u0435\u0441\u0442\u0435\u043D \u0431\u043B\u0430\u0433\u043E\u0434\u0430\u0440\u044F \u0438\u0441\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u043D\u0438\u044E \u0435\u0433\u043E \u043C\u0443\u0437\u044B\u043A\u0438 \u0432 \u0444\u0438\u043B\u044C\u043C\u0435 \u0421\u0442\u044D\u043D\u043B\u0438 \u041A\u0443\u0431\u0440\u0438\u043A\u0430 \u00AB\u041A\u043E\u0441\u043C\u0438\u0447\u0435\u0441\u043A\u0430\u044F \u043E\u0434\u0438\u0441\u0441\u0435\u044F 2001 \u0433\u043E\u0434\u0430\u00BB." , "lang" : "ru" } ,
+      { "type" : "literal", "value" : "Gy\u00F6rgy S\u00E1ndor Ligeti [\u02C8\u025F\u00F8r\u025F \u02C8li\u0261\u025Bti] (ur. 28 maja 1923 w Dics\u0151szentm\u00E1rtonie, obecnie T\u00E2rn\u0103veni, Siedmiogr\u00F3d, zm. 12 czerwca 2006 w Wiedniu) \u2013 kompozytor w\u0119gierski pochodzenia \u017Cydowskiego, r\u00F3wnie\u017C obywatel Austrii. Uznawany za jednego z czo\u0142owych kompozytor\u00F3w muzyki wsp\u00F3\u0142czesnej XX w. W powszechnej \u015Bwiadomo\u015Bci znany przede wszystkim jako tw\u00F3rca utwor\u00F3w, kt\u00F3re (we fragmentach) zosta\u0142y wykorzystane jako muzyka do filmu Kubricka 2001: Odyseja kosmiczna (zob. Muzyka filmowa)" , "lang" : "pl" } ,
+      { "type" : "literal", "value" : "\u5229\u76D6\u8482\u00B7\u6377\u5C14\u5409\u00B7\u5C71\u591A\u5C14\uFF08\u5308\u7259\u5229\u8BED\uFF1ALigeti Gy\u00F6rgy S\u00E1ndor\uFF0C1923\u5E745\u670828\u65E5\uFF0D2006\u5E746\u670812\u65E5\uFF09\uFF0C\u5F53\u4EE3\u53E4\u5178\u97F3\u4E50\u5148\u950B\u6D3E\u4F5C\u66F2\u5BB6\u3002 \u539F\u7C4D\u5308\u7259\u5229\uFF0C1956\u5E74\u79BB\u5F00\u5308\u7259\u5229\uFF0C\u5148\u5728\u79D1\u9686\u4F5C\u7535\u5B50\u97F3\u4E50\u5B9E\u9A8C\uFF0C1967\u5E74\u5165\u5965\u5730\u5229\u7C4D\u3002\u5229\u76D6\u8482\u867D\u7136\u53D7\u7535\u5B50\u97F3\u4E50\u7684\u542F\u53D1\uFF0C\u4F46\u662F\u5B83\u4E3B\u8981\u8FD8\u662F\u521B\u4F5C\u7528\u4F20\u7EDF\u4E50\u5668\u6F14\u594F\u7684\u4F5C\u54C1\u3002" , "lang" : "zh" } ,
+      { "type" : "literal", "value" : "\u30EA\u30B2\u30C6\u30A3\u30FB\u30B8\u30A7\u30EB\u30B8\u30E5\u30FB\u30B7\u30E3\u30FC\u30F3\u30C9\u30EB\uFF08Ligeti Gy\u00F6rgy S\u00E1ndor [\u02C8lig\u025Bti \u02CC\u025F\u00F8r\u025F \u02CC\u0283\u0251\u0308\u02D0ndor]\u30011923\u5E745\u670828\u65E5 - 2006\u5E746\u670812\u65E5\uFF09\u306F\u3001\u30CF\u30F3\u30AC\u30EA\u30FC\u306E\u73FE\u4EE3\u97F3\u697D\u306E\u4F5C\u66F2\u5BB6\u3002\u30AF\u30E9\u30B7\u30C3\u30AF\u97F3\u697D\u3067\u5B9F\u9A13\u7684\u306A\u4F5C\u54C1\u3092\u591A\u304F\u6B8B\u3057\u305F\u307B\u304B\u3001\u30B9\u30BF\u30F3\u30EA\u30FC\u30FB\u30AD\u30E5\u30FC\u30D6\u30EA\u30C3\u30AF\u76E3\u7763\u4F5C\u300C2001\u5E74\u5B87\u5B99\u306E\u65C5\u300D\u3084\u300C\u30B7\u30E3\u30A4\u30CB\u30F3\u30B0\u300D\u306A\u3069\u306B\u97F3\u697D\u304C\u4F7F\u7528\u3055\u308C\u305F\u3053\u3068\u3067\u3082\u77E5\u3089\u308C\u308B\u3002\u30B8\u30A7\u30EB\u30B8\u30FB\u30EA\u30B2\u30C6\u30A3\u3068\u3082\u8868\u8A18\u3055\u308C\u308B\u3002" , "lang" : "ja" } ,
+      { "type" : "literal", "value" : "Gy\u00F6rgy S\u00E1ndor Ligeti [\u025F\u0361\u029D\u00F8r\u025F\u0361\u029D \u02C8\u0283a\u02D0ndor \u02C8lig\u025Bti]? (T\u00E2rn\u0103veni (Hongaars: Dics\u0151szentm\u00E1rton), Roemeni\u00EB, 28 mei 1923 - Wenen, 12 juni 2006) was een Hongaars-Oostenrijks componist. Geboren in Roemeni\u00EB vestigde hij zich als componist in Hongarije, maar vluchtte daarvandaan na de Hongaarse Opstand van 1956. Ligeti was \u00E9\u00E9n van de toonaangevende figuren van de Europese avant-garde, bijvoorbeeld door het stuk Po\u00E8me Symphonique uit 1962. Als resultaat van zijn studie van de seri\u00EBle muziek ontwikkelde Ligeti de zogenaamde \"klankvlakkencompositie\" en de \"micropolyfonie\", een componeertechniek die bestaat in het cre\u00EBren van dichte, microtonale klanktexturen. Hij componeerde in verschillende stijlen en muzieksoorten, waaronder kamermuziek, opera en elektronische muziek. Ligeti is de auteur van de opera Le grand Macabre. Sommige van zijn muziekstukken werden gebruikt als filmmuziek, onder andere door Stanley Kubrick voor diens '2001: A Space Odyssey' (1968), 'Eyes Wide Shut' (1999) en 'The Shining' (1980)." , "lang" : "nl" } ] ,
+    "http://dbpedia.org/ontology/thumbnail" : [ { "type" : "uri", "value" : "http://commons.wikimedia.org/wiki/Special:FilePath/Gy\u00F6rgy_Ligeti_(1984).jpg?width=300" } ] ,
+    "http://dbpedia.org/ontology/birthDate" : [ { "type" : "literal", "value" : "1923-5-28" , "datatype" : "http://www.w3.org/2001/XMLSchema#date" } ] ,
+    "http://dbpedia.org/ontology/deathDate" : [ { "type" : "literal", "value" : "2006-6-12" , "datatype" : "http://www.w3.org/2001/XMLSchema#date" } ] ,
+    "http://dbpedia.org/ontology/deathPlace" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Vienna" } ] ,
+    "http://dbpedia.org/ontology/wikiPageRevisionID" : [ { "type" : "literal", "value" : 741551846 , "datatype" : "http://www.w3.org/2001/XMLSchema#integer" } ] ,
+    "http://dbpedia.org/ontology/birthPlace" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/T\u00E2rn\u0103veni" } ] ,
+    "http://dbpedia.org/ontology/wikiPageID" : [ { "type" : "literal", "value" : 145255 , "datatype" : "http://www.w3.org/2001/XMLSchema#integer" } ] ,
+    "http://purl.org/linguistics/gold/hypernym" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Composer" } ] } ,
+  "http://dbpedia.org/resource/Denys_Bouliane" : { "http://dbpedia.org/ontology/influencedBy" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Gy\u00F6rgy_Ligeti" } ] } ,
+  "http://dbpedia.org/resource/Pletyk\u00E1z\u00F3_asszonyok" : { "http://dbpedia.org/property/composer" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Gy\u00F6rgy_Ligeti" } ] } ,
+  "http://dbpedia.org/resource/Magyar_Et\u00FCd\u00F6k" : { "http://dbpedia.org/property/composer" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Gy\u00F6rgy_Ligeti" } ] } ,
+  "http://dbpedia.org/resource/Hungarian_culture" : { "http://dbpedia.org/property/footer" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Gy\u00F6rgy_Ligeti" } ] } ,
+  "http://dbpedia.org/resource/Ligeti_Gy\u00F6rgy" : { "http://dbpedia.org/ontology/wikiPageRedirects" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Gy\u00F6rgy_Ligeti" } ] } ,
+  "http://dbpedia.org/resource/Gyorgyi_Ligeti" : { "http://dbpedia.org/ontology/wikiPageRedirects" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Gy\u00F6rgy_Ligeti" } ] } ,
+  "http://dbpedia.org/resource/Gyoergy_Ligeti" : { "http://dbpedia.org/ontology/wikiPageRedirects" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Gy\u00F6rgy_Ligeti" } ] } ,
+  "http://dbpedia.org/resource/Gyorgi_Ligeti" : { "http://dbpedia.org/ontology/wikiPageRedirects" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Gy\u00F6rgy_Ligeti" } ] }
+}
+;
+	var dataAuth = "http://dbpedia.org/resource/György_Ligeti";
+	var dataUrl = "gyorgy_ligeti.html";
+	var dataResourceType = "participant";
+	var dataName = "György Ligeti";
+ 	
+</script>
+
+
+
+
+
+<script type="text/javascript">
+
+
+	
+	
+	
+
+	$(document).ready(function($) {
+		
+		
+		padb.resource.initialize();
+			 
+		$( '.scrollable' ).
+		bind( 'mousewheel DOMMouseScroll', function ( e ) {
+			
+			if( e.originalEvent ) e = e.originalEvent;
+			
+			var delta = e.wheelDelta || -e.detail;
+			this.scrollTop += ( delta < 0 ? 1 : -1 ) * 30;
+			e.preventDefault();
+		});		 
+		
+		
+				
+		$.ajaxSetup ({
+			// Disable caching of AJAX responses
+			cache: false
+		});		
+		
+	});
+	
+
+	
+	
+	
+	
+	
+</script>
+
+
+
+
+ 
+<br />
+<div class="container"  style="position:relative;">
+	   
+      <div id="resourceLinks"></div> 
+       
+       
+       
+       
+              
+       
+           
+           
+           
+          <div class="row addSection">
+              <div class="span1 addSectionIconHolder">
+              
+                <i class="icon-user"></i>
+              
+              </div>
+          
+              <div class="span11">
+                <span>Performer</span>
+                <hr>
+                <br />
+              </div>
+        </div>
+        <div class="row">
+            <div class="span1">
+            </div>
+            <div class="span11" style="position:relative">
+                
+                
+                
+                
+               <div>
+                                       <div class="pull-right vignette">
+                            <img  src="../cache/media/gyorgy_ligeti.jpg" />
+                            
+                        </div>
+                        
+                                           
+                <div class="pull-left" style="width:80%;">
+                     
+                     <h5 id="resourceLDName">György Ligeti</h5>
+                     <h5 id="resourceLDAbstract"></h5>
+                     
+                     
+                     <div id="resourceSameAs">
+                        <h5>External Data:</h5>
+                        
+                        
+                     </div>
+                
+                </div>   
+                
+                <br style="clear:both;" />
+            </div>
+            
+            
+                
+            </div>
+        </div>    
+         
+    
+    
+    
+    
+    
+    
+       <div class="row addSection">
+			<div class="span1 addSectionIconHolder">              
+                <i class="icon-asterisk"></i>
+              
+              </div>
+          
+              <div class="span11">
+                <span>Events </span><span id="resourceEventCount"></span>
+                <hr>
+              </div>
+        </div>
+    
+    
+    
+    
+    
+    
+    
+        <div class="row">
+            <div class="span1"></div>
+            <div class="span11" style="position:relative">
+                  
+                 <div class="">
+                    <div id="resourceEventsEvents" class="scrollable">
+                           <table class="table table-condensed table-hover table-striped">
+                               <thead>
+                                <tr>
+                                  <th>Date</th>
+                                  
+                                  <th>Title</th>
+                                  <th>Location</th>
+                                  <th></th>
+                                </tr>
+                              </thead>
+                              <tbody id="resourceEventsEventsRows"> 
+                              </tbody>
+                            </table>
+                     
+                    </div>
+                    
+                    <div id="resourceEventsExport">
+                    
+                    	<input  name="resourceEventsSearch" class="span3" id="resourceEventsSearch"  type="text" placeholder="Filter: names, places, dates">
+                    	<button class="btn btn-mini btn-danger" id="resourceEventsClearFilter"><i class="icon-remove">&nbsp;Clear Filter</i></button>
+                   		<button class="btn btn-mini btn-info" title="Render the currently filitered data as a network" id="resourceRenderEventNetwork"> <img src="../img/icon-network-white.png" style="height:15px; width:auto" /> Two-Mode Event Network</button>
+                   		<button class="btn btn-mini btn-info" title="Render the currently filitered data as a network" id="resourceRenderEventMap"> <i class="icon-globe"></i> Map Event Locations</button>
+                   		<button class="btn btn-mini btn-success" title="Download network as Gephi File" id="resourceDownloadEventGephi"> <img src="../img/icon-gephi.png" style="height:15px; width:auto" /> Donwload Gephi Network</button>
+
+                 
+                    </div>                 
+                </div>
+                <br style="clear:both;" />
+            </div>
+            
+            
+                
+         </div>    
+    
+     
+       <div class="row addSection">
+              <div class="span1">
+              
+                <img src="../img/social-network.png" style=" margin-left:25px; margin-bottom:10px;" />
+              
+              </div>
+          
+              <div class="span11">
+                <span>Performance Network</span> 
+                <hr>
+              </div>
+        </div>
+        
+        <div class="row">
+            <div class="span1">
+            </div>
+            <div class="span11" style="position:relative">
+                
+               	<div style="width: 100%; height:500px;" id="egoNetwork">
+            
+                
+             	</div> 
+                <div class="well pull-left well-small" id="egoNetworkControls">
+                    <span class="rangeLabels">Node Charge</span>
+                    <input type="range" id="resourceEgoNetworkCharge" min="-1000" max="100" value="-120" data-def="-700" />
+                    <br /><span class="rangeLabels">Gravity</span>
+                    <input type="range" id="resourceEgoNetworkGravity" min="0" max="1" value="0.1" step="0.01" data-def="0.3" /> 
+                    <br /><span class="rangeLabels">Edge Length</span>
+                    <input type="range" id="resourceEgoNetworkDistance" min="0" max="300" value="50" data-def="50"  />      
+                    <br /><span class="rangeLabels">Edge Strength</span>
+                    <input type="range" id="resourceEgoNetworkStrength" min="0" max="3" value="1" data-def="0.15" step="0.1"  /> 
+                    <br /><br />
+                    <button type="button" id="resourceEgoNetworkLabelsButton" class="btn btn-mini" title="Show node labels." data-toggle="button">Show Labels</button>  
+                    <button type="button" id="resourceEgoNetworkLiveButton" class="btn btn-mini" title="Show realtime network rendering" data-toggle="button">Live Rendering</button>                     
+                </div>
+                
+                <div class="well pull-left well-small egoNetworkControls span7" style="margin-left:20px;" >
+                
+                	<input  name="resourceEgoNetworkSearch" class="span3" id="resourceEgoNetworkSearch"  type="text" placeholder="Filter: names, places, dates">
+					<button class="btn btn-mini btn-danger" id="resourceEgoClearFilter"><i class="icon-remove">&nbsp;Clear Filter</i></button>
+                    <button class="btn btn-mini btn-success" title="Download network as Gephi File" id="resourceDownloadEgoGephi"> <img src="../img/icon-gephi.png" style="height:15px; width:auto" /> Donwload Gephi Network</button>
+
+                </div>
+                
+            </div>
+        </div>           
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+	
+
+	
+
+
+	
+
+
+</div>
+
+
+
+
+    <div id="resourceEventNetworkModal" class="modal container hide fade" style="min-height:500px" tabindex="-1">
+ 
+      <div class="modal-body">
+      	
+        <div id="eventNetwork" style="height:400px; width:100%">
+        
+        </div>
+      
+      </div>
+      <div class="modal-footer" style="height:20px;">
+      	
+        <div class="well pull-left well-small">
+        	<span class="rangeLabels">Node Charge</span>
+        	<input type="range" id="resourceEventNetworkCharge" min="-800" max="200" value="-120" data-def="-120" />
+            <span class="rangeLabels">Gravity</span>
+        	<input type="range" id="resourceEventNetworkGravity" min="0" max="1" value="0.1" step="0.01" data-def="0.1" /> 
+            <span class="rangeLabels">Edge Length</span>
+        	<input type="range" id="resourceEventNetworkDistance" min="0" max="300" value="50" data-def="50"  />      
+            <span class="rangeLabels">Edge Strength</span>
+        	<input type="range" id="resourceEventNetworkStrength" min="0" max="5" value="1" data-def="1" step="0.1"  />    
+            <button type="button" id="resourceEventNetworkLabelsButton" class="btn btn-mini" data-toggle="button">Show Labels</button>                     
+		</div>
+        <div class="pull-right">
+        <button type="button" data-dismiss="modal" class="btn">Close</button>
+       	</div>
+       </div>
+    </div>
+    
+    
+    
+    
+     <div id="resourceEventMapModal" class="modal container hide fade" style="min-height:500px" tabindex="-1">
+ 
+      <div class="modal-body">
+      	
+        <div id="eventMap" style="height:400px; width:100%">
+        
+        </div>
+      
+      </div>
+      <div class="modal-footer" style="height:20px;">
+      	
+        <div class="well pull-left well-small">                  
+		</div>
+        <div class="pull-right">
+        <button type="button" data-dismiss="modal" class="btn">Close</button>
+       	</div>
+       </div>
+    </div>
+
+<br /><br /><br /><br /><br /><br />
+
+<script type="text/javascript">    var _gaq = _gaq || [];   _gaq.push(['_setAccount', 'UA-10371295-7']);   _gaq.push(['_trackPageview']);    (function() {     var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);   })();  </script>
+
+</body>
+
+<!-- Mirrored from padb.net/resource/gyorgy_ligeti by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 11 Jan 2020 22:18:23 GMT -->
+</html>

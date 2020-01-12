@@ -1,0 +1,519 @@
+<!doctype html>
+<html>
+
+<!-- Mirrored from padb.net/resource/earle_brown by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 11 Jan 2020 22:17:41 GMT -->
+<head>
+<meta charset="UTF-8">
+<title>padb.net</title>
+
+
+<link rel="stylesheet" href="../css/bootstrap.css">
+<link rel="stylesheet" href="../css/font-awesome.css">
+<link rel="stylesheet" href="../css/site.css">
+<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+<link rel="icon" type="image/png" href="../img/favicon.png">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/bootstrap-modal.js"></script>
+<script src="../js/bootstrap-modalmanager.js"></script>
+
+<script src="../js/d3.min.js"></script>
+<script src="../js/html5slider.js"></script>
+<script src="../js/topojson.js"></script>
+<script src="../js/padb.js"></script>
+
+
+</head>
+<body>
+    
+    
+	<div style="position:relative;">        
+
+ 		<div style=" border-bottom:solid 1px #ccc;">
+        	<div class="container">
+                
+                 <div id="header">
+                 	
+                     <div class="logo"><a href="../index.html"><span>|||</span>padb</a> </div>
+                    
+                      
+						 <div id="resourceName">Earle Brown</div>
+					 
+                 </div>
+                
+                
+        	</div>
+            
+    	</div>
+ 
+   </div>
+<script src="../js/countriesData.js"></script>
+
+<script type="text/javascript">
+	//preloaded json from the server
+
+	var dataSameAs = [
+  {
+    "uri": "http://wikidata.dbpedia.org/resource/Q1277459",
+    "numDuplicates": "31",
+    "duplicates": [
+      "http://dbpedia.org/resource/Earle_Brown",
+      "http://bbc.co.uk/music/artists/1263bb63-9533-4653-b4c8-51d2939ef34f#artist",
+      "http://d-nb.info/gnd/119484625",
+      "http://d-nb.info/gnd/119484625/about/rdf",
+      "http://da.dbpedia.org/resource/Earle_Brown",
+      "http://data.bibsys.no/data/notrbib/authorityentry/x05037926",
+      "http://dbpedialite.org/things/1574783#id",
+      "http://dbtune.org/classical/resource/composer/brown_earle",
+      "http://dbtune.org/musicbrainz/resource/artist/1263bb63-9533-4653-b4c8-51d2939ef34f",
+      "http://de.dbpedia.org/resource/Earle_Brown_(Komponist)",
+      "http://en.wikipedia.org/wiki/Earle_Brown",
+      "http://es.dbpedia.org/resource/Earle_Brown",
+      "http://fr.dbpedia.org/resource/Earle_Brown",
+      "http://freebase.com//m/01vt305",
+      "http://id.loc.gov/authorities/names/n87101852",
+      "http://it.dbpedia.org/resource/Earle_Brown",
+      "http://ja.dbpedia.org/resource/\u30A2\u30FC\u30EB\u30FB\u30D6\u30E9\u30A6\u30F3",
+      "http://libris.kb.se/resource/auth/171546",
+      "http://mpii.de/yago/resource/Earle_Brown",
+      "http://musicbrainz.org/artist/1263bb63-9533-4653-b4c8-51d2939ef34f",
+      "http://rdf.freebase.com/ns/m.01vt305",
+      "http://rdf.freebase.com/ns/en.earle_brown",
+      "http://rdf.freebase.com/ns/guid.9202a8c04000641f8000000003ac8c05",
+      "http://tr.dbpedia.org/resource/Earle_Brown",
+      "http://viaf.org/viaf/71435389",
+      "http://viaf.org/viaf/116415621",
+      "http://wikidata.dbpedia.org/resource/Q1277459",
+      "http://www.bbc.co.uk/music/artists/1263bb63-9533-4653-b4c8-51d2939ef34f",
+      "http://www.wikidata.org/entity/Q1277459",
+      "http://yago-knowledge.org/resource/Earle_Brown",
+      "http://zitgist.com/music/artist/1263bb63-9533-4653-b4c8-51d2939ef34f"
+    ]
+  }
+]
+;
+	var dataDbpedia = {
+  "http://dbpedia.org/resource/Earle_Brown" : { "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatRomePrizeWinners" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatTzadikRecordsArtists" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/PhysicalEntity100001930" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/YagoLegalActor" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/YagoLegalActorGeo" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatAmericanPeople" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Person100007846" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Object100002684" } ,
+      { "type" : "uri", "value" : "http://www.w3.org/2002/07/owl#Thing" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Associate109816771" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatPeopleFromMassachusetts" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Winner110782791" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Whole100003553" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatMusiciansFromMassachusetts" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/LivingThing100004258" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/PrizeWinner109627807" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/CausalAgent100007347" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Gambler110118844" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Peer109626238" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Colleague109935990" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatExperimentalMusicians" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Organism100004475" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Wikicat20th-centuryComposers" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/ontology/Person" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatAmericanComposers" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Composer109947232" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Wikicat20th-centuryClassicalComposers" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatGuggenheimFellows" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Musician110339966" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatPeopleFromLunenburg,Massachusetts" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Artist109812338" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Creator109614315" } ] ,
+    "http://www.w3.org/2000/01/rdf-schema#label" : [ { "type" : "literal", "value" : "Earle Brown" , "lang" : "en" } ,
+      { "type" : "literal", "value" : "Earle Brown (Komponist)" , "lang" : "de" } ,
+      { "type" : "literal", "value" : "Earle Brown" , "lang" : "fr" } ,
+      { "type" : "literal", "value" : "Earle Brown" , "lang" : "it" } ,
+      { "type" : "literal", "value" : "Earle Brown" , "lang" : "es" } ,
+      { "type" : "literal", "value" : "\u30A2\u30FC\u30EB\u30FB\u30D6\u30E9\u30A6\u30F3" , "lang" : "ja" } ] ,
+    "http://www.w3.org/2000/01/rdf-schema#comment" : [ { "type" : "literal", "value" : "Earle Brown, n\u00E9 le 26 d\u00E9cembre 1926 \u00E0 Lunenburg (Massachusetts) et mort le 3 juillet 2002 \u00E0 Rye (\u00C9tat de New York), est un compositeur am\u00E9ricain de musique contemporaine, improvis\u00E9e et avant-gardiste. Son \u0153uvre est caract\u00E9ris\u00E9e par ce qu\u2019il a appel\u00E9 la \u00AB forme ouverte \u00BB (open form). Ses compositions s\u2019articulent en plusieurs parties dont l\u2019ordre d\u2019interpr\u00E9tation est laiss\u00E9 \u00E0 la libert\u00E9 du chef d\u2019orchestre. Celui-ci indique de la main aux musiciens quelle partie jouer. Brown a invent\u00E9 son propre syst\u00E8me de notation musicale. L\u2019improvisation occupe une place pr\u00E9pond\u00E9rante dans son \u0153uvre." , "lang" : "fr" } ,
+      { "type" : "literal", "value" : "Earle Brown (Lunenburg, Massachusetts, 26 de diciembre de 1926 \u2013 Rye, Nueva York, 2 de julio de 2002) fue un compositor estadounidense relacionado con la vanguardia y las t\u00E9cnicas de improvisaci\u00F3n. Su obra est\u00E1 caracterizada por lo que \u00E9l denomin\u00F3 \u00ABopen form\u00BB (\u201Cforma abierta\u201D), un estilo de construcci\u00F3n musical que ha influenciado a muchos compositores, particularmente del \u201Cdowntown\u201D neoyorquino, desde los a\u00F1os 80, como John Zorn. En la \u00ABopen form\u00BB, las composiciones se articulan en varias partes cuyo orden de interpretaci\u00F3n se deja a la libertad del director de orquesta, el cual indica qu\u00E9 parte interpretar a los m\u00FAsicos con la mano." , "lang" : "es" } ,
+      { "type" : "literal", "value" : "\u30A2\u30FC\u30EB\u30FB\u30D6\u30E9\u30A6\u30F3\uFF08Earle Brown, 1926\u5E7412\u670826\u65E5 - 2002\u5E747\u67082\u65E5\uFF09\u306F\u30A2\u30E1\u30EA\u30AB\u5408\u8846\u56FD\u306E\u4F5C\u66F2\u5BB6\u3002 \u6570\u3005\u306E\u65B0\u6A5F\u8EF8\u306E\u3046\u3061\u3067\u3082\u3001\u72EC\u81EA\u306E\u697D\u5F0F\u89B3\u3084\u56F3\u5F62\u8A18\u8B5C\u6CD5\u306B\u3088\u3063\u3066\u3001\u307B\u3068\u3093\u3069\u4E00\u4EBA\u3067\u6226\u5F8C\u306E\u30AF\u30E9\u30B7\u30C3\u30AF\u97F3\u697D\u754C\u3092\u6D3B\u6C17\u3065\u3051\u305F\u3002\u300C\u958B\u304B\u308C\u305F\u5F62\u5F0F\u300D\u306E\u5275\u59CB\u8005\u3068\u3057\u3066\u30011980\u5E74\u4EE3\u30CB\u30E5\u30FC\u30E8\u30FC\u30AF\u306E\u30C0\u30A6\u30F3\u30BF\u30A6\u30F3\u697D\u6D3E\uFF08\u30B8\u30E7\u30F3\u30FB\u30BE\u30FC\u30F3\u3089\uFF09\u306B\u611F\u5316\u3092\u53CA\u307C\u3057\u305F\u3002\u697D\u66F2\u300C1952\u5E7412\u6708\uFF08\u539F\u984C: 'December 1952'\uFF09\u300D\u306F\u3001\u56F3\u5F62\u8A18\u8B5C\u6CD5\u306E\u629C\u672C\u7684\u306A\u7528\u6CD5\u3086\u3048\u306B\u3068\u308A\u308F\u3051\u540D\u9AD8\u3044\u3002" , "lang" : "ja" } ,
+      { "type" : "literal", "value" : "Earle Brown (* 26. Dezember 1926 in Lunenburg, Massachusetts; \u2020 2. Juli 2002 in Rye, New York) war ein US-amerikanischer Komponist. In den 1950er Jahren traf er John Cage, der ihn bewegte, nach New York zu ziehen. Dort galt er dann mit Morton Feldman, David Tudor und Christian Wolff (Komponist) als Mitglied der sogenannten New York School von Komponisten." , "lang" : "de" } ,
+      { "type" : "literal", "value" : "Earle Brown (December 26, 1926 \u2013 July 2, 2002) was an American composer who established his own formal and notational systems. Brown was the creator of open form, a style of musical construction that has influenced many composers since\u2014notably the downtown New York scene of the 1980s (see John Zorn) and generations of younger composers. Among his most famous works are December 1952, an entirely graphic score, and the open form pieces Available Forms I & II, Centering, and Cross Sections and Color Fields." , "lang" : "en" } ,
+      { "type" : "literal", "value" : "Noto per le sue collaborazioni con John Cage, Jackson Pollock e Alexander Calder, \u00E8 uno dei massimi protagonisti dell'avanguardia americana, caratterizzandosi per una scrittura parzialmente aleatoria, aperta alle istanze preformative. Tra i suoi lavori: Folio (1952) per esecutori non precisati; Light Music (1961) per luci elettriche, gruppo di strumenti elettronici e grande orchestra; Cross Sections and Color Fields (1975) e  Sounder Rounds (1983) per orchestra; Special Events (1998) per violoncello e pianoforte, uno degli ultimi lavori composti da Brown." , "lang" : "it" } ] ,
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Open_Form" } ] ,
+    "http://www.w3.org/2002/07/owl#sameAs" : [ { "type" : "uri", "value" : "http://rdf.freebase.com/ns/m.01vt305" } ,
+      { "type" : "uri", "value" : "http://www.wikidata.org/entity/Q1277459" } ,
+      { "type" : "uri", "value" : "http://zitgist.com/music/artist/1263bb63-9533-4653-b4c8-51d2939ef34f" } ,
+      { "type" : "uri", "value" : "http://viaf.org/viaf/116415621" } ,
+      { "type" : "uri", "value" : "http://it.dbpedia.org/resource/Earle_Brown" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Earle_Brown" } ,
+      { "type" : "uri", "value" : "http://d-nb.info/gnd/119484625" } ,
+      { "type" : "uri", "value" : "http://ja.dbpedia.org/resource/\u30A2\u30FC\u30EB\u30FB\u30D6\u30E9\u30A6\u30F3" } ,
+      { "type" : "uri", "value" : "http://wikidata.dbpedia.org/resource/Q1277459" } ,
+      { "type" : "uri", "value" : "http://fr.dbpedia.org/resource/Earle_Brown" } ,
+      { "type" : "uri", "value" : "http://de.dbpedia.org/resource/Earle_Brown_(Komponist)" } ,
+      { "type" : "uri", "value" : "http://yago-knowledge.org/resource/Earle_Brown" } ,
+      { "type" : "uri", "value" : "http://es.dbpedia.org/resource/Earle_Brown" } ] ,
+    "http://purl.org/dc/terms/subject" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Rome_Prize_winners" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:2002_deaths" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:1926_births" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:20th-century_American_musicians" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:20th-century_classical_composers" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Musicians_from_Massachusetts" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Tzadik_Records_artists" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Guggenheim_Fellows" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:American_male_classical_composers" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:American_classical_composers" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Deaths_from_cancer_in_New_York" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:People_from_Lunenburg,_Massachusetts" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Berklee_College_of_Music_alumni" } ] ,
+    "http://xmlns.com/foaf/0.1/name" : [ { "type" : "literal", "value" : "Earle Brown" , "lang" : "en" } ] ,
+    "http://xmlns.com/foaf/0.1/depiction" : [ { "type" : "uri", "value" : "http://commons.wikimedia.org/wiki/Special:FilePath/David_Arden_with_Earle_Brown_in_recording_session.jpg" } ] ,
+    "http://purl.org/dc/terms/description" : [ { "type" : "literal", "value" : "American composer" , "lang" : "en" } ] ,
+    "http://xmlns.com/foaf/0.1/givenName" : [ { "type" : "literal", "value" : "Earle" , "lang" : "en" } ] ,
+    "http://xmlns.com/foaf/0.1/gender" : [ { "type" : "literal", "value" : "male" , "lang" : "en" } ] ,
+    "http://xmlns.com/foaf/0.1/isPrimaryTopicOf" : [ { "type" : "uri", "value" : "http://en.wikipedia.org/wiki/Earle_Brown" } ] ,
+    "http://xmlns.com/foaf/0.1/surname" : [ { "type" : "literal", "value" : "Brown" , "lang" : "en" } ] ,
+    "http://www.w3.org/ns/prov#wasDerivedFrom" : [ { "type" : "uri", "value" : "http://en.wikipedia.org/wiki/Earle_Brown?oldid=736984014" } ] ,
+    "http://dbpedia.org/ontology/wikiPageExternalLink" : [ { "type" : "uri", "value" : "http://artofthestates.org/cgi-bin/composer.pl?comp=28" } ,
+      { "type" : "uri", "value" : "http://www.ubu.com/sound/brown.html" } ,
+      { "type" : "uri", "value" : "http://musicmavericks.publicradio.org/features/rafiles/interviews/interview_brown.ram" } ,
+      { "type" : "uri", "value" : "http://delsolquartet.com/sampletear.html" } ,
+      { "type" : "uri", "value" : "http://www.newalbion.com/artists/ardend/index.htm" } ,
+      { "type" : "uri", "value" : "http://www.wergo.de/shop/en_UK/3/show,269236.html" } ,
+      { "type" : "uri", "value" : "http://www.music.neu.edu/earlebrown/" } ,
+      { "type" : "uri", "value" : "http://www.johnyaffe.com" } ,
+      { "type" : "uri", "value" : "http://www.informaworld.com/smpp/title~db=all~content=g780693788" } ,
+      { "type" : "uri", "value" : "http://www.informaworld.com/smpp/content~db=all~content=a780680923~frm=titlelink" } ,
+      { "type" : "uri", "value" : "http://www.wergo.de/shop/en_UK/3/show,261751.html" } ,
+      { "type" : "uri", "value" : "http://www.dramonline.org/albums/earle-brown-selected-works-1952-1965/notes" } ,
+      { "type" : "uri", "value" : "http://www.earle-brown.org" } ,
+      { "type" : "uri", "value" : "http://www.wergo.de/shop/en_UK/3/show,269237.html" } ,
+      { "type" : "uri", "value" : "http://www.wergo.de/shop/en_UK/3/show,261752.html" } ,
+      { "type" : "uri", "value" : "http://www.wergo.de/shop/en_UK/3/show,269235.html" } ,
+      { "type" : "uri", "value" : "http://www.bruceduffie.com/brown.html" } ] ,
+    "http://dbpedia.org/ontology/abstract" : [ { "type" : "literal", "value" : "\u30A2\u30FC\u30EB\u30FB\u30D6\u30E9\u30A6\u30F3\uFF08Earle Brown, 1926\u5E7412\u670826\u65E5 - 2002\u5E747\u67082\u65E5\uFF09\u306F\u30A2\u30E1\u30EA\u30AB\u5408\u8846\u56FD\u306E\u4F5C\u66F2\u5BB6\u3002 \u6570\u3005\u306E\u65B0\u6A5F\u8EF8\u306E\u3046\u3061\u3067\u3082\u3001\u72EC\u81EA\u306E\u697D\u5F0F\u89B3\u3084\u56F3\u5F62\u8A18\u8B5C\u6CD5\u306B\u3088\u3063\u3066\u3001\u307B\u3068\u3093\u3069\u4E00\u4EBA\u3067\u6226\u5F8C\u306E\u30AF\u30E9\u30B7\u30C3\u30AF\u97F3\u697D\u754C\u3092\u6D3B\u6C17\u3065\u3051\u305F\u3002\u300C\u958B\u304B\u308C\u305F\u5F62\u5F0F\u300D\u306E\u5275\u59CB\u8005\u3068\u3057\u3066\u30011980\u5E74\u4EE3\u30CB\u30E5\u30FC\u30E8\u30FC\u30AF\u306E\u30C0\u30A6\u30F3\u30BF\u30A6\u30F3\u697D\u6D3E\uFF08\u30B8\u30E7\u30F3\u30FB\u30BE\u30FC\u30F3\u3089\uFF09\u306B\u611F\u5316\u3092\u53CA\u307C\u3057\u305F\u3002\u697D\u66F2\u300C1952\u5E7412\u6708\uFF08\u539F\u984C: 'December 1952'\uFF09\u300D\u306F\u3001\u56F3\u5F62\u8A18\u8B5C\u6CD5\u306E\u629C\u672C\u7684\u306A\u7528\u6CD5\u3086\u3048\u306B\u3068\u308A\u308F\u3051\u540D\u9AD8\u3044\u3002" , "lang" : "ja" } ,
+      { "type" : "literal", "value" : "Earle Brown (Lunenburg, Massachusetts, 26 de diciembre de 1926 \u2013 Rye, Nueva York, 2 de julio de 2002) fue un compositor estadounidense relacionado con la vanguardia y las t\u00E9cnicas de improvisaci\u00F3n. Su obra est\u00E1 caracterizada por lo que \u00E9l denomin\u00F3 \u00ABopen form\u00BB (\u201Cforma abierta\u201D), un estilo de construcci\u00F3n musical que ha influenciado a muchos compositores, particularmente del \u201Cdowntown\u201D neoyorquino, desde los a\u00F1os 80, como John Zorn. En la \u00ABopen form\u00BB, las composiciones se articulan en varias partes cuyo orden de interpretaci\u00F3n se deja a la libertad del director de orquesta, el cual indica qu\u00E9 parte interpretar a los m\u00FAsicos con la mano. Brown invent\u00F3 igualmente su propio sistema de notaci\u00F3n musical. Entre sus trabajos m\u00E1s famosos se encuentran \"December 1952\", con un uso de una partitura \u201Cradical\u201D, totalmente gr\u00E1fica, y las composiciones \u201Copen form\u201D tituladas \"Available Forms\" I & II." , "lang" : "es" } ,
+      { "type" : "literal", "value" : "Earle Brown (December 26, 1926 \u2013 July 2, 2002) was an American composer who established his own formal and notational systems. Brown was the creator of open form, a style of musical construction that has influenced many composers since\u2014notably the downtown New York scene of the 1980s (see John Zorn) and generations of younger composers. Among his most famous works are December 1952, an entirely graphic score, and the open form pieces Available Forms I & II, Centering, and Cross Sections and Color Fields." , "lang" : "en" } ,
+      { "type" : "literal", "value" : "Earle Brown, n\u00E9 le 26 d\u00E9cembre 1926 \u00E0 Lunenburg (Massachusetts) et mort le 3 juillet 2002 \u00E0 Rye (\u00C9tat de New York), est un compositeur am\u00E9ricain de musique contemporaine, improvis\u00E9e et avant-gardiste. Son \u0153uvre est caract\u00E9ris\u00E9e par ce qu\u2019il a appel\u00E9 la \u00AB forme ouverte \u00BB (open form). Ses compositions s\u2019articulent en plusieurs parties dont l\u2019ordre d\u2019interpr\u00E9tation est laiss\u00E9 \u00E0 la libert\u00E9 du chef d\u2019orchestre. Celui-ci indique de la main aux musiciens quelle partie jouer. Brown a invent\u00E9 son propre syst\u00E8me de notation musicale. L\u2019improvisation occupe une place pr\u00E9pond\u00E9rante dans son \u0153uvre." , "lang" : "fr" } ,
+      { "type" : "literal", "value" : "Noto per le sue collaborazioni con John Cage, Jackson Pollock e Alexander Calder, \u00E8 uno dei massimi protagonisti dell'avanguardia americana, caratterizzandosi per una scrittura parzialmente aleatoria, aperta alle istanze preformative. Tra i suoi lavori: Folio (1952) per esecutori non precisati; Light Music (1961) per luci elettriche, gruppo di strumenti elettronici e grande orchestra; Cross Sections and Color Fields (1975) e  Sounder Rounds (1983) per orchestra; Special Events (1998) per violoncello e pianoforte, uno degli ultimi lavori composti da Brown." , "lang" : "it" } ,
+      { "type" : "literal", "value" : "Earle Brown (* 26. Dezember 1926 in Lunenburg, Massachusetts; \u2020 2. Juli 2002 in Rye, New York) war ein US-amerikanischer Komponist. In den 1950er Jahren traf er John Cage, der ihn bewegte, nach New York zu ziehen. Dort galt er dann mit Morton Feldman, David Tudor und Christian Wolff (Komponist) als Mitglied der sogenannten New York School von Komponisten." , "lang" : "de" } ] ,
+    "http://dbpedia.org/ontology/thumbnail" : [ { "type" : "uri", "value" : "http://commons.wikimedia.org/wiki/Special:FilePath/David_Arden_with_Earle_Brown_in_recording_session.jpg?width=300" } ] ,
+    "http://dbpedia.org/ontology/birthDate" : [ { "type" : "literal", "value" : "1926-12-26" , "datatype" : "http://www.w3.org/2001/XMLSchema#date" } ] ,
+    "http://dbpedia.org/ontology/deathDate" : [ { "type" : "literal", "value" : "2002-7-2" , "datatype" : "http://www.w3.org/2001/XMLSchema#date" } ] ,
+    "http://dbpedia.org/ontology/deathPlace" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Rye_(city),_New_York" } ] ,
+    "http://dbpedia.org/ontology/wikiPageRevisionID" : [ { "type" : "literal", "value" : 736984014 , "datatype" : "http://www.w3.org/2001/XMLSchema#integer" } ] ,
+    "http://dbpedia.org/ontology/birthPlace" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Lunenburg,_Massachusetts" } ] ,
+    "http://dbpedia.org/ontology/wikiPageID" : [ { "type" : "literal", "value" : 1574783 , "datatype" : "http://www.w3.org/2001/XMLSchema#integer" } ] ,
+    "http://purl.org/linguistics/gold/hypernym" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Composer" } ] } ,
+  "http://en.wikipedia.org/wiki/Earle_Brown" : { "http://xmlns.com/foaf/0.1/primaryTopic" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Earle_Brown" } ] } ,
+  "http://dbpedia.org/resource/Open_Form" : { "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Earle_Brown" } ] }
+}
+;
+	var dataAuth = "http://dbpedia.org/resource/Earle_Brown";
+	var dataUrl = "earle_brown.html";
+	var dataResourceType = "participant";
+	var dataName = "Earle Brown";
+ 	
+</script>
+
+
+
+
+
+<script type="text/javascript">
+
+
+	
+	
+	
+
+	$(document).ready(function($) {
+		
+		
+		padb.resource.initialize();
+			 
+		$( '.scrollable' ).
+		bind( 'mousewheel DOMMouseScroll', function ( e ) {
+			
+			if( e.originalEvent ) e = e.originalEvent;
+			
+			var delta = e.wheelDelta || -e.detail;
+			this.scrollTop += ( delta < 0 ? 1 : -1 ) * 30;
+			e.preventDefault();
+		});		 
+		
+		
+				
+		$.ajaxSetup ({
+			// Disable caching of AJAX responses
+			cache: false
+		});		
+		
+	});
+	
+
+	
+	
+	
+	
+	
+</script>
+
+
+
+
+ 
+<br />
+<div class="container"  style="position:relative;">
+	   
+      <div id="resourceLinks"></div> 
+       
+       
+       
+       
+              
+       
+           
+           
+           
+          <div class="row addSection">
+              <div class="span1 addSectionIconHolder">
+              
+                <i class="icon-user"></i>
+              
+              </div>
+          
+              <div class="span11">
+                <span>Performer</span>
+                <hr>
+                <br />
+              </div>
+        </div>
+        <div class="row">
+            <div class="span1">
+            </div>
+            <div class="span11" style="position:relative">
+                
+                
+                
+                
+               <div>
+                                       <div class="pull-right vignette">
+                            <img  src="../cache/media/earle_brown.jpg" />
+                            
+                        </div>
+                        
+                                           
+                <div class="pull-left" style="width:80%;">
+                     
+                     <h5 id="resourceLDName">Earle Brown</h5>
+                     <h5 id="resourceLDAbstract"></h5>
+                     
+                     
+                     <div id="resourceSameAs">
+                        <h5>External Data:</h5>
+                        
+                        
+                     </div>
+                
+                </div>   
+                
+                <br style="clear:both;" />
+            </div>
+            
+            
+                
+            </div>
+        </div>    
+         
+    
+    
+    
+    
+    
+    
+       <div class="row addSection">
+			<div class="span1 addSectionIconHolder">              
+                <i class="icon-asterisk"></i>
+              
+              </div>
+          
+              <div class="span11">
+                <span>Events </span><span id="resourceEventCount"></span>
+                <hr>
+              </div>
+        </div>
+    
+    
+    
+    
+    
+    
+    
+        <div class="row">
+            <div class="span1"></div>
+            <div class="span11" style="position:relative">
+                  
+                 <div class="">
+                    <div id="resourceEventsEvents" class="scrollable">
+                           <table class="table table-condensed table-hover table-striped">
+                               <thead>
+                                <tr>
+                                  <th>Date</th>
+                                  
+                                  <th>Title</th>
+                                  <th>Location</th>
+                                  <th></th>
+                                </tr>
+                              </thead>
+                              <tbody id="resourceEventsEventsRows"> 
+                              </tbody>
+                            </table>
+                     
+                    </div>
+                    
+                    <div id="resourceEventsExport">
+                    
+                    	<input  name="resourceEventsSearch" class="span3" id="resourceEventsSearch"  type="text" placeholder="Filter: names, places, dates">
+                    	<button class="btn btn-mini btn-danger" id="resourceEventsClearFilter"><i class="icon-remove">&nbsp;Clear Filter</i></button>
+                   		<button class="btn btn-mini btn-info" title="Render the currently filitered data as a network" id="resourceRenderEventNetwork"> <img src="../img/icon-network-white.png" style="height:15px; width:auto" /> Two-Mode Event Network</button>
+                   		<button class="btn btn-mini btn-info" title="Render the currently filitered data as a network" id="resourceRenderEventMap"> <i class="icon-globe"></i> Map Event Locations</button>
+                   		<button class="btn btn-mini btn-success" title="Download network as Gephi File" id="resourceDownloadEventGephi"> <img src="../img/icon-gephi.png" style="height:15px; width:auto" /> Donwload Gephi Network</button>
+
+                 
+                    </div>                 
+                </div>
+                <br style="clear:both;" />
+            </div>
+            
+            
+                
+         </div>    
+    
+     
+       <div class="row addSection">
+              <div class="span1">
+              
+                <img src="../img/social-network.png" style=" margin-left:25px; margin-bottom:10px;" />
+              
+              </div>
+          
+              <div class="span11">
+                <span>Performance Network</span> 
+                <hr>
+              </div>
+        </div>
+        
+        <div class="row">
+            <div class="span1">
+            </div>
+            <div class="span11" style="position:relative">
+                
+               	<div style="width: 100%; height:500px;" id="egoNetwork">
+            
+                
+             	</div> 
+                <div class="well pull-left well-small" id="egoNetworkControls">
+                    <span class="rangeLabels">Node Charge</span>
+                    <input type="range" id="resourceEgoNetworkCharge" min="-1000" max="100" value="-120" data-def="-700" />
+                    <br /><span class="rangeLabels">Gravity</span>
+                    <input type="range" id="resourceEgoNetworkGravity" min="0" max="1" value="0.1" step="0.01" data-def="0.3" /> 
+                    <br /><span class="rangeLabels">Edge Length</span>
+                    <input type="range" id="resourceEgoNetworkDistance" min="0" max="300" value="50" data-def="50"  />      
+                    <br /><span class="rangeLabels">Edge Strength</span>
+                    <input type="range" id="resourceEgoNetworkStrength" min="0" max="3" value="1" data-def="0.15" step="0.1"  /> 
+                    <br /><br />
+                    <button type="button" id="resourceEgoNetworkLabelsButton" class="btn btn-mini" title="Show node labels." data-toggle="button">Show Labels</button>  
+                    <button type="button" id="resourceEgoNetworkLiveButton" class="btn btn-mini" title="Show realtime network rendering" data-toggle="button">Live Rendering</button>                     
+                </div>
+                
+                <div class="well pull-left well-small egoNetworkControls span7" style="margin-left:20px;" >
+                
+                	<input  name="resourceEgoNetworkSearch" class="span3" id="resourceEgoNetworkSearch"  type="text" placeholder="Filter: names, places, dates">
+					<button class="btn btn-mini btn-danger" id="resourceEgoClearFilter"><i class="icon-remove">&nbsp;Clear Filter</i></button>
+                    <button class="btn btn-mini btn-success" title="Download network as Gephi File" id="resourceDownloadEgoGephi"> <img src="../img/icon-gephi.png" style="height:15px; width:auto" /> Donwload Gephi Network</button>
+
+                </div>
+                
+            </div>
+        </div>           
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+	
+
+	
+
+
+	
+
+
+</div>
+
+
+
+
+    <div id="resourceEventNetworkModal" class="modal container hide fade" style="min-height:500px" tabindex="-1">
+ 
+      <div class="modal-body">
+      	
+        <div id="eventNetwork" style="height:400px; width:100%">
+        
+        </div>
+      
+      </div>
+      <div class="modal-footer" style="height:20px;">
+      	
+        <div class="well pull-left well-small">
+        	<span class="rangeLabels">Node Charge</span>
+        	<input type="range" id="resourceEventNetworkCharge" min="-800" max="200" value="-120" data-def="-120" />
+            <span class="rangeLabels">Gravity</span>
+        	<input type="range" id="resourceEventNetworkGravity" min="0" max="1" value="0.1" step="0.01" data-def="0.1" /> 
+            <span class="rangeLabels">Edge Length</span>
+        	<input type="range" id="resourceEventNetworkDistance" min="0" max="300" value="50" data-def="50"  />      
+            <span class="rangeLabels">Edge Strength</span>
+        	<input type="range" id="resourceEventNetworkStrength" min="0" max="5" value="1" data-def="1" step="0.1"  />    
+            <button type="button" id="resourceEventNetworkLabelsButton" class="btn btn-mini" data-toggle="button">Show Labels</button>                     
+		</div>
+        <div class="pull-right">
+        <button type="button" data-dismiss="modal" class="btn">Close</button>
+       	</div>
+       </div>
+    </div>
+    
+    
+    
+    
+     <div id="resourceEventMapModal" class="modal container hide fade" style="min-height:500px" tabindex="-1">
+ 
+      <div class="modal-body">
+      	
+        <div id="eventMap" style="height:400px; width:100%">
+        
+        </div>
+      
+      </div>
+      <div class="modal-footer" style="height:20px;">
+      	
+        <div class="well pull-left well-small">                  
+		</div>
+        <div class="pull-right">
+        <button type="button" data-dismiss="modal" class="btn">Close</button>
+       	</div>
+       </div>
+    </div>
+
+<br /><br /><br /><br /><br /><br />
+
+<script type="text/javascript">    var _gaq = _gaq || [];   _gaq.push(['_setAccount', 'UA-10371295-7']);   _gaq.push(['_trackPageview']);    (function() {     var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);   })();  </script>
+
+</body>
+
+<!-- Mirrored from padb.net/resource/earle_brown by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 11 Jan 2020 22:17:42 GMT -->
+</html>

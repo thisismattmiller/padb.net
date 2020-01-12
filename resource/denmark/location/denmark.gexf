@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<gexf version="1.2" xmlns="http://www.gexf.net/1.2draft">
+ <graph mode="static" defaultedgetype="undirected">
+  <nodes>
+   <node id="43" label="Wolf Vostell"/>
+   <node id="49" label="Robert Filliou"/>
+   <node id="67" label="Dieter Roth"/>
+  </nodes>
+  <edges>
+   <edge source="43" target="49"/>
+   <edge source="43" target="67"/>
+   <edge source="49" target="67"/>
+  </edges>
+ </graph>
+</gexf>

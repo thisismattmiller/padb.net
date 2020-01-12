@@ -1,0 +1,1 @@
+{"nodes": [{"name": "Fluxus Films and Concert", "type": "event", "year": "1966", "id": 0, "x": 100, "y": 100}, {"name": "Charles Yeager", "type": "person", "id": 1, "x": 100, "y": 100}, {"name": "Ken Friedman", "type": "person", "id": 2, "x": 100, "y": 100}], "edges": [{"source": 1, "target": 0, "value": 1}, {"source": 2, "target": 0, "value": 1}]}

@@ -1,0 +1,496 @@
+<!doctype html>
+<html>
+
+<!-- Mirrored from padb.net/resource/simone_forti by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 11 Jan 2020 22:18:01 GMT -->
+<head>
+<meta charset="UTF-8">
+<title>padb.net</title>
+
+
+<link rel="stylesheet" href="../css/bootstrap.css">
+<link rel="stylesheet" href="../css/font-awesome.css">
+<link rel="stylesheet" href="../css/site.css">
+<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+<link rel="icon" type="image/png" href="../img/favicon.png">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/bootstrap-modal.js"></script>
+<script src="../js/bootstrap-modalmanager.js"></script>
+
+<script src="../js/d3.min.js"></script>
+<script src="../js/html5slider.js"></script>
+<script src="../js/topojson.js"></script>
+<script src="../js/padb.js"></script>
+
+
+</head>
+<body>
+    
+    
+	<div style="position:relative;">        
+
+ 		<div style=" border-bottom:solid 1px #ccc;">
+        	<div class="container">
+                
+                 <div id="header">
+                 	
+                     <div class="logo"><a href="../index.html"><span>|||</span>padb</a> </div>
+                    
+                      
+						 <div id="resourceName">Simone Forti</div>
+					 
+                 </div>
+                
+                
+        	</div>
+            
+    	</div>
+ 
+   </div>
+<script src="../js/countriesData.js"></script>
+
+<script type="text/javascript">
+	//preloaded json from the server
+
+	var dataSameAs = [
+  {
+    "uri": "http://www.wikidata.org/entity/Q3484563",
+    "numDuplicates": "9",
+    "duplicates": [
+      "http://dbpedia.org/resource/Simone_Forti",
+      "http://dbpedialite.org/things/17106005#id",
+      "http://fr.dbpedia.org/resource/Simone_Forti",
+      "http://mpii.de/yago/resource/Simone_Forti",
+      "http://rdf.freebase.com/ns/m.0421mxk",
+      "http://rdf.freebase.com/ns/en.simone_forti",
+      "http://rdf.freebase.com/ns/guid.9202a8c04000641f800000000820cf91",
+      "http://www.wikidata.org/entity/Q3484563",
+      "http://yago-knowledge.org/resource/Simone_Forti"
+    ]
+  }
+]
+;
+	var dataDbpedia = {
+  "http://en.wikipedia.org/wiki/Simone_Forti" : { "http://xmlns.com/foaf/0.1/primaryTopic" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Simone_Forti" } ] } ,
+  "http://dbpedia.org/resource/Simone_Forti" : { "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Organism100004475" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/ontology/Person" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Performer110415638" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/CausalAgent100007347" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Whole100003553" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Scholar110557854" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/LivingThing100004258" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Entertainer109616922" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Creator109614315" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatAmericanPeopleOfItalianDescent" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Musician110339966" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Intellectual109621545" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatAmericanPainters" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatAmericanFemaleDancers" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Artist109812338" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Alumnus109786338" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/ontology/Agent" } ,
+      { "type" : "uri", "value" : "http://www.w3.org/2002/07/owl#Thing" } ,
+      { "type" : "uri", "value" : "http://www.wikidata.org/entity/Q24229398" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Composer109947232" } ,
+      { "type" : "uri", "value" : "http://www.wikidata.org/entity/Q215627" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatGuggenheimFellows" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatAmericanComposers" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Peer109626238" } ,
+      { "type" : "uri", "value" : "http://xmlns.com/foaf/0.1/Person" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Painter110391653" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Colleague109935990" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatReedCollegeAlumni" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Person100007846" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Object100002684" } ,
+      { "type" : "uri", "value" : "http://schema.org/Person" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/YagoLegalActor" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/YagoLegalActorGeo" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Associate109816771" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/PhysicalEntity100001930" } ,
+      { "type" : "uri", "value" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#NaturalPerson" } ,
+      { "type" : "uri", "value" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Dancer109989502" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatPeopleFromFlorence" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatAmericanChoreographers" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Choreographer109920283" } ,
+      { "type" : "uri", "value" : "http://www.wikidata.org/entity/Q5" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatLivingPeople" } ] ,
+    "http://www.w3.org/2000/01/rdf-schema#label" : [ { "type" : "literal", "value" : "Simone Forti" , "lang" : "fr" } ,
+      { "type" : "literal", "value" : "Simone Forti" , "lang" : "en" } ,
+      { "type" : "literal", "value" : "Simone Forti" , "lang" : "de" } ] ,
+    "http://www.w3.org/2000/01/rdf-schema#comment" : [ { "type" : "literal", "value" : "Simone Forti (born 1935), is an Italian American Postmodern artist, dancer, choreographer, and writer. Since the 1950's, Forti has exhibited, performed, and taught workshops all over the world, including performances at the Louvre in Paris, the Museum of Modern Art in New York, and the J. Paul Getty Museum in Los Angeles. Her innovations in Postmodern dance, including her seminal 1961 body of work, Dance Constructions, along with her contribution to the early Fluxus movement, have influenced many notable artists, including dancer/artist Yvonne Rainer and the Judson Dance Theater in New York. Forti first apprenticed with Anna Halprin in the 1950s and has since worked alongside artists and composers Nam June Paik, Steve Paxton, La Monte Young, Trisha Brown, Charlemagne Palestine, Peter Van R" , "lang" : "en" } ,
+      { "type" : "literal", "value" : "Simone Forti (geboren 1935 in Florenz) ist eine US-amerikanische T\u00E4nzerin und Choreografin des modernen Tanzes sowie expressionistische Malerin. Sie begr\u00FCndete den Minimalismus im Tanz und entwickelte ein neues K\u00F6rperbewusstsein. Ihre Tanzkonstruktion Huddle von 1961 wird als das bahnbrechende St\u00FCck f\u00FCr die Entwicklung der Performance angesehen." , "lang" : "de" } ,
+      { "type" : "literal", "value" : "Simone Forti, n\u00E9 en 1935 \u00E0 Florence en Italie, est une danseuse et chor\u00E9graphe am\u00E9ricaine d'origine italienne." , "lang" : "fr" } ] ,
+    "http://www.w3.org/2002/07/owl#sameAs" : [ { "type" : "uri", "value" : "http://viaf.org/viaf/20621264" } ,
+      { "type" : "uri", "value" : "http://yago-knowledge.org/resource/Simone_Forti" } ,
+      { "type" : "uri", "value" : "http://d-nb.info/gnd/124684963" } ,
+      { "type" : "uri", "value" : "http://wikidata.dbpedia.org/resource/Q3484563" } ,
+      { "type" : "uri", "value" : "http://www.wikidata.org/entity/Q3484563" } ,
+      { "type" : "uri", "value" : "http://rdf.freebase.com/ns/m.0421mxk" } ,
+      { "type" : "uri", "value" : "http://de.dbpedia.org/resource/Simone_Forti" } ,
+      { "type" : "uri", "value" : "http://fr.dbpedia.org/resource/Simone_Forti" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Simone_Forti" } ] ,
+    "http://purl.org/dc/terms/subject" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Women_performance_artists" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:1935_births" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:American_contemporary_artists" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:American_choreographers" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Pupils_of_Pran_Nath_(musician)" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:American_women_performance_artists" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Choreographers" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:American_women_artists" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Living_people" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Performance_art_in_Los_Angeles" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Reed_College_alumni" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Guggenheim_Fellows" } ] ,
+    "http://xmlns.com/foaf/0.1/name" : [ { "type" : "literal", "value" : "Simone Forti" , "lang" : "en" } ] ,
+    "http://xmlns.com/foaf/0.1/depiction" : [ { "type" : "uri", "value" : "http://commons.wikimedia.org/wiki/Special:FilePath/Forti_portrait_2004_Carol_Petersen_web.jpg" } ] ,
+    "http://purl.org/dc/terms/description" : [ { "type" : "literal", "value" : "American composer" , "lang" : "en" } ] ,
+    "http://xmlns.com/foaf/0.1/givenName" : [ { "type" : "literal", "value" : "Simone" , "lang" : "en" } ] ,
+    "http://xmlns.com/foaf/0.1/gender" : [ { "type" : "literal", "value" : "female" , "lang" : "en" } ] ,
+    "http://xmlns.com/foaf/0.1/isPrimaryTopicOf" : [ { "type" : "uri", "value" : "http://en.wikipedia.org/wiki/Simone_Forti" } ] ,
+    "http://xmlns.com/foaf/0.1/surname" : [ { "type" : "literal", "value" : "Forti" , "lang" : "en" } ] ,
+    "http://dbpedia.org/property/spouse" : [ { "type" : "literal", "value" : "Robert Morris" , "datatype" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString" } ,
+      { "type" : "literal", "value" : "Peter Van Riper" , "datatype" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString" } ,
+      { "type" : "literal", "value" : "Robert Whitman" , "datatype" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString" } ] ,
+    "http://www.w3.org/ns/prov#wasDerivedFrom" : [ { "type" : "uri", "value" : "http://en.wikipedia.org/wiki/Simone_Forti?oldid=742068696" } ] ,
+    "http://dbpedia.org/ontology/birthName" : [ { "type" : "literal", "value" : "Simone Forti" , "lang" : "en" } ] ,
+    "http://dbpedia.org/ontology/birthYear" : [ { "type" : "literal", "value" : "1935" , "datatype" : "http://www.w3.org/2001/XMLSchema#gYear" } ] ,
+    "http://dbpedia.org/ontology/knownFor" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Postmodern_dance" } ] ,
+    "http://dbpedia.org/ontology/religion" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Jews" } ] ,
+    "http://dbpedia.org/ontology/wikiPageExternalLink" : [ { "type" : "uri", "value" : "http://fluxusfoundation.com/fluxus-as-architecture/essays/the-fluxhouse-cooperatives-of-soho/" } ,
+      { "type" : "uri", "value" : "http://www.nytimes.com/2014/04/16/arts/dance/simone-forti-and-charlemagne-palestine-reunite-at-moma.html?_r=0" } ,
+      { "type" : "uri", "value" : "http://www.vdb.org/smackn.acgi$artistdetail?FORTIS" } ,
+      { "type" : "uri", "value" : "https://community.contactquarterly.com/journal/view/onallfours" } ,
+      { "type" : "uri", "value" : "http://www.wacd.ucla.edu/index.php" } ,
+      { "type" : "uri", "value" : "http://ciop4justice.org/" } ,
+      { "type" : "uri", "value" : "http://theboxla.com/" } ,
+      { "type" : "uri", "value" : "http://www.independentdance.co.uk/author/lisa-nelson/" } ,
+      { "type" : "uri", "value" : "http://www.vdb.org/" } ,
+      { "type" : "uri", "value" : "http://yellowsprings.org/" } ,
+      { "type" : "uri", "value" : "https://hammer.ucla.edu/exhibitions/2012/made-in-la-2012/" } ] ,
+    "http://dbpedia.org/ontology/occupation" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Artist" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Simone_Forti__1" } ] ,
+    "http://dbpedia.org/property/caption" : [ { "type" : "literal", "value" : "Simone Forti watches a performance of her Dance Constructions at the Geffen Contemporary in 2004" , "datatype" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString" } ] ,
+    "http://dbpedia.org/ontology/abstract" : [ { "type" : "literal", "value" : "Simone Forti (geboren 1935 in Florenz) ist eine US-amerikanische T\u00E4nzerin und Choreografin des modernen Tanzes sowie expressionistische Malerin. Sie begr\u00FCndete den Minimalismus im Tanz und entwickelte ein neues K\u00F6rperbewusstsein. Ihre Tanzkonstruktion Huddle von 1961 wird als das bahnbrechende St\u00FCck f\u00FCr die Entwicklung der Performance angesehen." , "lang" : "de" } ,
+      { "type" : "literal", "value" : "Simone Forti, n\u00E9 en 1935 \u00E0 Florence en Italie, est une danseuse et chor\u00E9graphe am\u00E9ricaine d'origine italienne." , "lang" : "fr" } ,
+      { "type" : "literal", "value" : "Simone Forti (born 1935), is an Italian American Postmodern artist, dancer, choreographer, and writer. Since the 1950's, Forti has exhibited, performed, and taught workshops all over the world, including performances at the Louvre in Paris, the Museum of Modern Art in New York, and the J. Paul Getty Museum in Los Angeles. Her innovations in Postmodern dance, including her seminal 1961 body of work, Dance Constructions, along with her contribution to the early Fluxus movement, have influenced many notable artists, including dancer/artist Yvonne Rainer and the Judson Dance Theater in New York. Forti first apprenticed with Anna Halprin in the 1950s and has since worked alongside artists and composers Nam June Paik, Steve Paxton, La Monte Young, Trisha Brown, Charlemagne Palestine, Peter Van Riper, Dan Graham, Yoshi Wada, and Robert Morris, among many others. Forti\u2019s published books include Handbook in Motion (1974, The Press of the Nova Scotia College of Art and Design), Angel (1978, self-published), and Oh Tongue (2003, Beyond Baroque Foundation, ed. Fred Dewey). She is currently represented by The Box L.A. in Los Angeles, CA, and has works in the permanent collections of the Museum of Modern Art (MOMA) in New York, the Stedelijk Museum in Amsterdam, the Generali Foundation in Vienna, the Whitney Museum of American Art in New York, and the Moderna Museet in Stockholm." , "lang" : "en" } ] ,
+    "http://dbpedia.org/ontology/thumbnail" : [ { "type" : "uri", "value" : "http://commons.wikimedia.org/wiki/Special:FilePath/Forti_portrait_2004_Carol_Petersen_web.jpg?width=300" } ] ,
+    "http://dbpedia.org/ontology/birthDate" : [ { "type" : "literal", "value" : "1935-3-25" , "datatype" : "http://www.w3.org/2001/XMLSchema#date" } ] ,
+    "http://dbpedia.org/ontology/wikiPageRevisionID" : [ { "type" : "literal", "value" : 742068696 , "datatype" : "http://www.w3.org/2001/XMLSchema#integer" } ] ,
+    "http://dbpedia.org/ontology/birthPlace" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Florence" } ] ,
+    "http://dbpedia.org/ontology/wikiPageID" : [ { "type" : "literal", "value" : 17106005 , "datatype" : "http://www.w3.org/2001/XMLSchema#integer" } ] ,
+    "http://dbpedia.org/ontology/residence" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Los_Angeles" } ] ,
+    "http://purl.org/linguistics/gold/hypernym" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Artist" } ] ,
+    "http://dbpedia.org/property/nationality" : [ { "type" : "literal", "value" : "Italian American" , "datatype" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString" } ] }
+}
+;
+	var dataAuth = "http://dbpedia.org/resource/Simone_Forti";
+	var dataUrl = "simone_forti.html";
+	var dataResourceType = "participant";
+	var dataName = "Simone Forti";
+ 	
+</script>
+
+
+
+
+
+<script type="text/javascript">
+
+
+	
+	
+	
+
+	$(document).ready(function($) {
+		
+		
+		padb.resource.initialize();
+			 
+		$( '.scrollable' ).
+		bind( 'mousewheel DOMMouseScroll', function ( e ) {
+			
+			if( e.originalEvent ) e = e.originalEvent;
+			
+			var delta = e.wheelDelta || -e.detail;
+			this.scrollTop += ( delta < 0 ? 1 : -1 ) * 30;
+			e.preventDefault();
+		});		 
+		
+		
+				
+		$.ajaxSetup ({
+			// Disable caching of AJAX responses
+			cache: false
+		});		
+		
+	});
+	
+
+	
+	
+	
+	
+	
+</script>
+
+
+
+
+ 
+<br />
+<div class="container"  style="position:relative;">
+	   
+      <div id="resourceLinks"></div> 
+       
+       
+       
+       
+              
+       
+           
+           
+           
+          <div class="row addSection">
+              <div class="span1 addSectionIconHolder">
+              
+                <i class="icon-user"></i>
+              
+              </div>
+          
+              <div class="span11">
+                <span>Performer</span>
+                <hr>
+                <br />
+              </div>
+        </div>
+        <div class="row">
+            <div class="span1">
+            </div>
+            <div class="span11" style="position:relative">
+                
+                
+                
+                
+               <div>
+                                       <div class="pull-right vignette">
+                            <img  src="../cache/media/simone_forti.jpg" />
+                            
+                        </div>
+                        
+                                           
+                <div class="pull-left" style="width:80%;">
+                     
+                     <h5 id="resourceLDName">Simone Forti</h5>
+                     <h5 id="resourceLDAbstract"></h5>
+                     
+                     
+                     <div id="resourceSameAs">
+                        <h5>External Data:</h5>
+                        
+                        
+                     </div>
+                
+                </div>   
+                
+                <br style="clear:both;" />
+            </div>
+            
+            
+                
+            </div>
+        </div>    
+         
+    
+    
+    
+    
+    
+    
+       <div class="row addSection">
+			<div class="span1 addSectionIconHolder">              
+                <i class="icon-asterisk"></i>
+              
+              </div>
+          
+              <div class="span11">
+                <span>Events </span><span id="resourceEventCount"></span>
+                <hr>
+              </div>
+        </div>
+    
+    
+    
+    
+    
+    
+    
+        <div class="row">
+            <div class="span1"></div>
+            <div class="span11" style="position:relative">
+                  
+                 <div class="">
+                    <div id="resourceEventsEvents" class="scrollable">
+                           <table class="table table-condensed table-hover table-striped">
+                               <thead>
+                                <tr>
+                                  <th>Date</th>
+                                  
+                                  <th>Title</th>
+                                  <th>Location</th>
+                                  <th></th>
+                                </tr>
+                              </thead>
+                              <tbody id="resourceEventsEventsRows"> 
+                              </tbody>
+                            </table>
+                     
+                    </div>
+                    
+                    <div id="resourceEventsExport">
+                    
+                    	<input  name="resourceEventsSearch" class="span3" id="resourceEventsSearch"  type="text" placeholder="Filter: names, places, dates">
+                    	<button class="btn btn-mini btn-danger" id="resourceEventsClearFilter"><i class="icon-remove">&nbsp;Clear Filter</i></button>
+                   		<button class="btn btn-mini btn-info" title="Render the currently filitered data as a network" id="resourceRenderEventNetwork"> <img src="../img/icon-network-white.png" style="height:15px; width:auto" /> Two-Mode Event Network</button>
+                   		<button class="btn btn-mini btn-info" title="Render the currently filitered data as a network" id="resourceRenderEventMap"> <i class="icon-globe"></i> Map Event Locations</button>
+                   		<button class="btn btn-mini btn-success" title="Download network as Gephi File" id="resourceDownloadEventGephi"> <img src="../img/icon-gephi.png" style="height:15px; width:auto" /> Donwload Gephi Network</button>
+
+                 
+                    </div>                 
+                </div>
+                <br style="clear:both;" />
+            </div>
+            
+            
+                
+         </div>    
+    
+     
+       <div class="row addSection">
+              <div class="span1">
+              
+                <img src="../img/social-network.png" style=" margin-left:25px; margin-bottom:10px;" />
+              
+              </div>
+          
+              <div class="span11">
+                <span>Performance Network</span> 
+                <hr>
+              </div>
+        </div>
+        
+        <div class="row">
+            <div class="span1">
+            </div>
+            <div class="span11" style="position:relative">
+                
+               	<div style="width: 100%; height:500px;" id="egoNetwork">
+            
+                
+             	</div> 
+                <div class="well pull-left well-small" id="egoNetworkControls">
+                    <span class="rangeLabels">Node Charge</span>
+                    <input type="range" id="resourceEgoNetworkCharge" min="-1000" max="100" value="-120" data-def="-700" />
+                    <br /><span class="rangeLabels">Gravity</span>
+                    <input type="range" id="resourceEgoNetworkGravity" min="0" max="1" value="0.1" step="0.01" data-def="0.3" /> 
+                    <br /><span class="rangeLabels">Edge Length</span>
+                    <input type="range" id="resourceEgoNetworkDistance" min="0" max="300" value="50" data-def="50"  />      
+                    <br /><span class="rangeLabels">Edge Strength</span>
+                    <input type="range" id="resourceEgoNetworkStrength" min="0" max="3" value="1" data-def="0.15" step="0.1"  /> 
+                    <br /><br />
+                    <button type="button" id="resourceEgoNetworkLabelsButton" class="btn btn-mini" title="Show node labels." data-toggle="button">Show Labels</button>  
+                    <button type="button" id="resourceEgoNetworkLiveButton" class="btn btn-mini" title="Show realtime network rendering" data-toggle="button">Live Rendering</button>                     
+                </div>
+                
+                <div class="well pull-left well-small egoNetworkControls span7" style="margin-left:20px;" >
+                
+                	<input  name="resourceEgoNetworkSearch" class="span3" id="resourceEgoNetworkSearch"  type="text" placeholder="Filter: names, places, dates">
+					<button class="btn btn-mini btn-danger" id="resourceEgoClearFilter"><i class="icon-remove">&nbsp;Clear Filter</i></button>
+                    <button class="btn btn-mini btn-success" title="Download network as Gephi File" id="resourceDownloadEgoGephi"> <img src="../img/icon-gephi.png" style="height:15px; width:auto" /> Donwload Gephi Network</button>
+
+                </div>
+                
+            </div>
+        </div>           
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+	
+
+	
+
+
+	
+
+
+</div>
+
+
+
+
+    <div id="resourceEventNetworkModal" class="modal container hide fade" style="min-height:500px" tabindex="-1">
+ 
+      <div class="modal-body">
+      	
+        <div id="eventNetwork" style="height:400px; width:100%">
+        
+        </div>
+      
+      </div>
+      <div class="modal-footer" style="height:20px;">
+      	
+        <div class="well pull-left well-small">
+        	<span class="rangeLabels">Node Charge</span>
+        	<input type="range" id="resourceEventNetworkCharge" min="-800" max="200" value="-120" data-def="-120" />
+            <span class="rangeLabels">Gravity</span>
+        	<input type="range" id="resourceEventNetworkGravity" min="0" max="1" value="0.1" step="0.01" data-def="0.1" /> 
+            <span class="rangeLabels">Edge Length</span>
+        	<input type="range" id="resourceEventNetworkDistance" min="0" max="300" value="50" data-def="50"  />      
+            <span class="rangeLabels">Edge Strength</span>
+        	<input type="range" id="resourceEventNetworkStrength" min="0" max="5" value="1" data-def="1" step="0.1"  />    
+            <button type="button" id="resourceEventNetworkLabelsButton" class="btn btn-mini" data-toggle="button">Show Labels</button>                     
+		</div>
+        <div class="pull-right">
+        <button type="button" data-dismiss="modal" class="btn">Close</button>
+       	</div>
+       </div>
+    </div>
+    
+    
+    
+    
+     <div id="resourceEventMapModal" class="modal container hide fade" style="min-height:500px" tabindex="-1">
+ 
+      <div class="modal-body">
+      	
+        <div id="eventMap" style="height:400px; width:100%">
+        
+        </div>
+      
+      </div>
+      <div class="modal-footer" style="height:20px;">
+      	
+        <div class="well pull-left well-small">                  
+		</div>
+        <div class="pull-right">
+        <button type="button" data-dismiss="modal" class="btn">Close</button>
+       	</div>
+       </div>
+    </div>
+
+<br /><br /><br /><br /><br /><br />
+
+<script type="text/javascript">    var _gaq = _gaq || [];   _gaq.push(['_setAccount', 'UA-10371295-7']);   _gaq.push(['_trackPageview']);    (function() {     var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);   })();  </script>
+
+</body>
+
+<!-- Mirrored from padb.net/resource/simone_forti by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 11 Jan 2020 22:18:02 GMT -->
+</html>

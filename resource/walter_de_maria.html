@@ -1,0 +1,529 @@
+<!doctype html>
+<html>
+
+<!-- Mirrored from padb.net/resource/walter_de_maria by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 11 Jan 2020 22:17:27 GMT -->
+<head>
+<meta charset="UTF-8">
+<title>padb.net</title>
+
+
+<link rel="stylesheet" href="../css/bootstrap.css">
+<link rel="stylesheet" href="../css/font-awesome.css">
+<link rel="stylesheet" href="../css/site.css">
+<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+<link rel="icon" type="image/png" href="../img/favicon.png">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/bootstrap-modal.js"></script>
+<script src="../js/bootstrap-modalmanager.js"></script>
+
+<script src="../js/d3.min.js"></script>
+<script src="../js/html5slider.js"></script>
+<script src="../js/topojson.js"></script>
+<script src="../js/padb.js"></script>
+
+
+</head>
+<body>
+    
+    
+	<div style="position:relative;">        
+
+ 		<div style=" border-bottom:solid 1px #ccc;">
+        	<div class="container">
+                
+                 <div id="header">
+                 	
+                     <div class="logo"><a href="../index.html"><span>|||</span>padb</a> </div>
+                    
+                      
+						 <div id="resourceName">Walter De Maria</div>
+					 
+                 </div>
+                
+                
+        	</div>
+            
+    	</div>
+ 
+   </div>
+<script src="../js/countriesData.js"></script>
+
+<script type="text/javascript">
+	//preloaded json from the server
+
+	var dataSameAs = [
+  {
+    "uri": "http://wikidata.dbpedia.org/resource/Q126506",
+    "numDuplicates": "32",
+    "duplicates": [
+      "http://dbpedia.org/resource/Walter_De_Maria",
+      "http://dbpedia.org/resource/Walter_de_Maria",
+      "http://cs.dbpedia.org/resource/Walter_De_Maria",
+      "http://d-nb.info/gnd/11890731X",
+      "http://d-nb.info/gnd/11890731X/about/rdf",
+      "http://data.bibsys.no/data/notrbib/authorityentry/x90171825",
+      "http://data.bnf.fr/12271428#foaf:Person",
+      "http://data.bnf.fr/12271428#skos:Concept",
+      "http://dbpedialite.org/things/4314428#id",
+      "http://dbpedialite.org/things/25057180#id",
+      "http://de.dbpedia.org/resource/Walter_De_Maria",
+      "http://fi.dbpedia.org/resource/Walter_De_Maria",
+      "http://fr.dbpedia.org/resource/Walter_De_Maria",
+      "http://freebase.com//m/0bwm4v",
+      "http://hu.dbpedia.org/resource/Walter_De_Maria",
+      "http://id.loc.gov/authorities/names/n85109502",
+      "http://id.ndl.go.jp/auth/ndla/00883921",
+      "http://it.dbpedia.org/resource/Walter_De_Maria",
+      "http://ja.dbpedia.org/resource/\u30A6\u30A9\u30EB\u30BF\u30FC\u30FB\u30C7\u30FB\u30DE\u30EA\u30A2",
+      "http://mpii.de/yago/resource/Walter_De_Maria",
+      "http://pl.dbpedia.org/resource/Walter_De_Maria",
+      "http://rdf.freebase.com/ns/m.0bwm4v",
+      "http://rdf.freebase.com/ns/en.walter_de_maria",
+      "http://rdf.freebase.com/ns/guid.9202a8c04000641f8000000000adcc9a",
+      "http://ru.dbpedia.org/resource/\u0414\u0435_\u041C\u0430\u0440\u0438\u044F,_\u0423\u043E\u043B\u0442\u0435\u0440",
+      "http://viaf.org/viaf/46820386",
+      "http://viaf.org/viaf/54946663",
+      "http://viaf.org/viaf/84632364",
+      "http://viaf.org/viaf/95953514",
+      "http://wikidata.dbpedia.org/resource/Q126506",
+      "http://www.wikidata.org/entity/Q126506",
+      "http://yago-knowledge.org/resource/Walter_De_Maria"
+    ]
+  }
+]
+;
+	var dataDbpedia = {
+  "http://en.wikipedia.org/wiki/Walter_De_Maria" : { "http://xmlns.com/foaf/0.1/primaryTopic" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Walter_De_Maria" } ] } ,
+  "http://dbpedia.org/resource/Walter_De_Maria" : { "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { "type" : "uri", "value" : "http://dbpedia.org/ontology/Person" } ,
+      { "type" : "uri", "value" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#NaturalPerson" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatAmericanArtists" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatLandArtists" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Artist109812338" } ,
+      { "type" : "uri", "value" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Creator109614315" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/ontology/Artist" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Associate109816771" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Peer109626238" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Colleague109935990" } ,
+      { "type" : "uri", "value" : "http://schema.org/Person" } ,
+      { "type" : "uri", "value" : "http://www.w3.org/2002/07/owl#Thing" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatAmericanContemporaryArtists" } ,
+      { "type" : "uri", "value" : "http://www.wikidata.org/entity/Q215627" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/PhysicalEntity100001930" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Sculptor110566072" } ,
+      { "type" : "uri", "value" : "http://www.wikidata.org/entity/Q24229398" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Person100007846" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Object100002684" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/YagoLegalActor" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/YagoLegalActorGeo" } ,
+      { "type" : "uri", "value" : "http://www.wikidata.org/entity/Q5" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatConceptualArtists" } ,
+      { "type" : "uri", "value" : "http://xmlns.com/foaf/0.1/Person" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatAmericanSculptors" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatAmericanConceptualArtists" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatGuggenheimFellows" } ,
+      { "type" : "uri", "value" : "http://www.wikidata.org/entity/Q483501" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/ontology/Agent" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/CausalAgent100007347" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Whole100003553" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/LivingThing100004258" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Organism100004475" } ] ,
+    "http://www.w3.org/2000/01/rdf-schema#label" : [ { "type" : "literal", "value" : "\u30A6\u30A9\u30EB\u30BF\u30FC\u30FB\u30C7\u30FB\u30DE\u30EA\u30A2" , "lang" : "ja" } ,
+      { "type" : "literal", "value" : "Walter De Maria" , "lang" : "it" } ,
+      { "type" : "literal", "value" : "Walter De Maria" , "lang" : "pl" } ,
+      { "type" : "literal", "value" : "\u0414\u0435 \u041C\u0430\u0440\u0438\u044F, \u0423\u043E\u043B\u0442\u0435\u0440" , "lang" : "ru" } ,
+      { "type" : "literal", "value" : "Walter De Maria" , "lang" : "fr" } ,
+      { "type" : "literal", "value" : "Walter De Maria" , "lang" : "de" } ,
+      { "type" : "literal", "value" : "Walter De Maria" , "lang" : "es" } ,
+      { "type" : "literal", "value" : "Walter De Maria" , "lang" : "en" } ] ,
+    "http://www.w3.org/2000/01/rdf-schema#comment" : [ { "type" : "literal", "value" : "Walter Joseph De Maria (October 1, 1935 \u2013 July 25, 2013) was an American artist, sculptor, illustrator and composer, who lived and worked in New York City. Walter de Maria's artistic practice is connected with Minimal art, Conceptual art, and Land art of the 1960s. LACMA director Michael Govan said that \"I think he's one of the greatest artists of our time.\" Govan, who worked with De Maria for a number of years, found De Maria's work \"singular, sublime and direct.\"" , "lang" : "en" } ,
+      { "type" : "literal", "value" : "Walter Joseph De Maria (1 de octubre de 1935 - 25 de julio de 2013) fue un artista estadounidense, escultor, ilustrador y compositor. Vivi\u00F3 y trabaj\u00F3 en la ciudad de Nueva York. La pr\u00E1ctica art\u00EDstica de Walter de Maria est\u00E1 conectada con el arte minimalista, el arte conceptual y el land arte de la d\u00E9cada de 1960. El director de LACMA Michael Govan, dijo que \"creo que es uno de los m\u00E1s grandes artistas de nuestro tiempo\". Govan, quien trabaj\u00F3 con De Maria por un n\u00FAmero de a\u00F1os, encontr\u00F3 el trabajo de De Maria \"singular, sublime y directo.\"" , "lang" : "es" } ,
+      { "type" : "literal", "value" : "Walter De Maria (eigentlich Walter Joseph De Maria; * 1. Oktober 1935 in Albany, Kalifornien; \u2020 25. Juli 2013 in Los Angeles) war ein US-amerikanischer K\u00FCnstler, ein wichtiger Vertreter des Minimalismus, der Konzeptkunst und der Land Art." , "lang" : "de" } ,
+      { "type" : "literal", "value" : "\u00C8 uno dei principali esponenti della corrente artistica detta Land Art alla quale \u00E8 passato dopo un'iniziale esperienza di scultore nell'ambito della Minimal Art (alcune sue opere di questo periodo, come \u201CBalldrop\u201D del 1961, si trovano al Guggenheim Museum di New York)." , "lang" : "it" } ,
+      { "type" : "literal", "value" : "\u0423\u043E\u043B\u0442\u0435\u0440 \u0414\u0435 \u041C\u0430\u0440\u0438\u044F (\u0430\u043D\u0433\u043B. Walter De Maria; 1 \u043E\u043A\u0442\u044F\u0431\u0440\u044F 1935, \u041E\u043B\u0431\u0430\u043D\u0438, \u041A\u0430\u043B\u0438\u0444\u043E\u0440\u043D\u0438\u044F \u2014 25 \u0438\u044E\u043B\u044F 2013, \u041D\u044C\u044E-\u0419\u043E\u0440\u043A) \u2014 \u0430\u043C\u0435\u0440\u0438\u043A\u0430\u043D\u0441\u043A\u0438\u0439 \u0441\u043A\u0443\u043B\u044C\u043F\u0442\u043E\u0440 \u0438 \u043A\u043E\u043C\u043F\u043E\u0437\u0438\u0442\u043E\u0440, \u0435\u0433\u043E \u0445\u0443\u0434\u043E\u0436\u0435\u0441\u0442\u0432\u0435\u043D\u043D\u0430\u044F \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430 \u0441\u0432\u044F\u0437\u0430\u043D\u0430 \u0441 \u0444\u043B\u0443\u043A\u0441\u0443\u0441\u043E\u043C, \u043C\u0438\u043D\u0438\u043C\u0430\u043B\u0438\u0437\u043C\u043E\u043C (\u043E\u0434\u0438\u043D \u0438\u0437 \u0441\u0430\u043C\u044B\u0445 \u0440\u0430\u043D\u043D\u0438\u0445 \u043F\u0440\u0435\u0434\u0441\u0442\u0430\u0432\u0438\u0442\u0435\u043B\u0435\u0439 \u0434\u0432\u0438\u0436\u0435\u043D\u0438\u044F, \u043E\u0431\u0440\u0430\u0437\u0446\u044B \u043A\u043E\u0442\u043E\u0440\u043E\u0433\u043E \u0441\u043E\u0437\u0434\u0430\u0432\u0430\u043B \u043E\u043A\u043E\u043B\u043E 1960), \u043A\u043E\u043D\u0446\u0435\u043F\u0442\u0443\u0430\u043B\u044C\u043D\u044B\u043C \u0438\u0441\u043A\u0443\u0441\u0441\u0442\u0432\u043E\u043C \u0438 \u043B\u044D\u043D\u0434-\u0430\u0440\u0442\u043E\u043C." , "lang" : "ru" } ,
+      { "type" : "literal", "value" : "Walter De Maria est un artiste am\u00E9ricain du Land art n\u00E9 le 1er octobre 1935 \u00E0 Albany en Californie et mort le 25 juillet 2013 \u00E0 New York." , "lang" : "fr" } ,
+      { "type" : "literal", "value" : "Walter De Maria (ur. 1 pa\u017Adziernika 1935 w Albany, zm. 25 lipca 2013 w Los Angeles) \u2013 ameryka\u0144ski artysta; zajmowa\u0142 si\u0119 rze\u017Ab\u0105, happeningiem, komponowaniem muzyki. Podczas studi\u00F3w w Kalifornii zajmowa\u0142 si\u0119 happeningiem i teatrem. W 1960 przeni\u00F3s\u0142 si\u0119 do Nowego Jorku, gdzie publikowa\u0142 swoje eseje, uczestniczy\u0142 w happeningach i multimedialnych prezentacjach, a tak\u017Ce tworzy\u0142 swoje pierwsze rze\u017Aby o prostych geometrycznych formach nawi\u0105zuj\u0105ce do minimal artu. W 1963 otworzy\u0142 wraz z Robertem Whitmanem galeri\u0119, gdzie w tym samym roku zaprezentowa\u0142 si\u0119 na swojej pierwszej indywidualnej wystawie. W tym czasie by\u0142 tak\u017Ce perkusist\u0105 grupy rockowej The Velvet Underground. W 1965 zacz\u0105\u0142 eksperymentowa\u0107 z nowym materia\u0142em rze\u017Abiarskim, jakim by\u0142 metal. Pod koniec lat sze\u015B\u0107dziesi\u0105tych zainteresowa\u0142 si\u0119 l" , "lang" : "pl" } ,
+      { "type" : "literal", "value" : "\u30A6\u30A9\u30EB\u30BF\u30FC\u30FB\u30C7\u30FB\u30DE\u30EA\u30A2 (Walter De Maria\u30011935\u5E7410\u67081\u65E5 - 2013\u5E747\u670825\u65E5\uFF09\u306F\u3001\u30A2\u30E1\u30EA\u30AB\u5408\u8846\u56FD\u306E\u5F6B\u523B\u5BB6\u30FB\u97F3\u697D\u5BB6\u3002\u30A4\u30F3\u30B9\u30BF\u30EC\u30FC\u30B7\u30E7\u30F3\u4F5C\u54C1\u306A\u3069\u3092\u591A\u6570\u5236\u4F5C\u30FB\u8A2D\u7F6E\u3057\u3066\u3044\u308B\u3002\u30A2\u30E1\u30EA\u30AB\u5408\u8846\u56FD\u30AB\u30EA\u30D5\u30A9\u30EB\u30CB\u30A2\u5DDE\u30AA\u30FC\u30EB\u30D0\u30CB\u751F\u307E\u308C\u3002 \u30C7\u30FB\u30DE\u30EA\u30A2\u306F1953\u5E74\u304B\u30891959\u5E74\u307E\u3067\u30AB\u30EA\u30D5\u30A9\u30EB\u30CB\u30A2\u5927\u5B66\u30D0\u30FC\u30AF\u30EC\u30FC\u6821\u3067\u6B74\u53F2\u5B66\u3068\u7F8E\u8853\u3092\u5B66\u3093\u3060\u30021960\u5E74\u306B\u30CB\u30E5\u30FC\u30E8\u30FC\u30AF\u306B\u79FB\u308A\u5236\u4F5C\u6D3B\u52D5\u3092\u59CB\u3081\u3001\u521D\u671F\u306F\u30C0\u30C0\u306A\u3069\u306E\u7F8E\u8853\u904B\u52D5\u306B\u5F71\u97FF\u3055\u308C\u305F\u5F6B\u523B\u3092\u4F5C\u3063\u305F\u3002\u3053\u3046\u3057\u305F\u5F71\u97FF\u306B\u3088\u308A\u3001\u7C21\u7D20\u306A\u5E7E\u4F55\u5B66\u7684\u5F62\u72B6\u3084\u3001\u30B9\u30C6\u30F3\u30EC\u30B9\u3084\u30A2\u30EB\u30DF\u30CB\u30A6\u30E0\u3068\u3044\u3063\u305F\u5927\u91CF\u751F\u7523\u3067\u4F5C\u3089\u308C\u305F\u7D20\u6750\u306A\u3069\u3001\u5F8C\u306B\u30DF\u30CB\u30DE\u30EB\u30FB\u30A2\u30FC\u30C8\u306E\u7279\u5FB4\u3068\u306A\u308B\u3082\u306E\u3092\u30C7\u30FB\u30DE\u30EA\u30A2\u306F\u4F7F\u3046\u3088\u3046\u306B\u306A\u308B\u3002 1960\u5E74\u4EE3\u534A\u3070\u4EE5\u964D\u3001\u30C7\u30FB\u30DE\u30EA\u30A2\u306F\u69D8\u3005\u306A\u82B8\u8853\u6D3B\u52D5\u306B\u95A2\u4E0E\u3059\u308B\u3002\u5F7C\u306F\u30CF\u30D7\u30CB\u30F3\u30B0\u306B\u53C2\u52A0\u3057\u3001\u4E8C\u3064\u306E\u30DF\u30E5\u30FC\u30B8\u30AB\u30EB\u3092\u4F5C\u66F2\u3057\uFF08\u300ECricket Music\u300F1964\u5E74\u3001\u300EOcean Music\u300F1968\u5E74\uFF09\u3001\u4E8C\u3064\u306E\u6620\u753B\u3092\u64AE\u3063\u305F\uFF08\u300EThree Circles and Two Lines in the Desert\u300F\u3001\u300EHardcore\u300F\u3001\u3044\u305A\u308C\u30821969\u5E74\uFF09\u3002\u307E\u305F\u3001\u30C7\u30FB\u30DE\u30EA\u30A2\u306F\u30CB\u30E5\u30FC\u30E8\u30FC\u30AF\u306E\u30ED\u30C3\u30AF\u30D0\u30F3\u30C9\u300C\u30B6\u30FB\u30D7\u30EA\u30DF\u30C6\u30A3\u30F4\u30B9\u300D\uFF08The Primitives\uFF09\u3084\u3001\u30F4\u30A7\u30EB\u30F4\u30A7\u30C3\u30C8\u30FB\u30A2\u30F3\u30C0\u30FC\u30B0\u30E9\u30A6\u30F3\u30C9\u306E\u5148\u99C6\u8005\u3068\u306A\u3063\u305F\u7F8E\u8853\u5BB6\u3068\u97F3\u697D\u5BB6\u306B\u3088\u308B\u30B0\u30EB\u30FC\u30D7\u300C\u30B6\u30FB\u30C9\u30E9\u30C3\u30BA\u300D\uFF08The Druds\uFF09\u306E\u30C9\u30E9\u30DE\u30FC\u3068\u306A\u3063\u305F\u3002" , "lang" : "ja" } ] ,
+    "http://www.w3.org/2002/07/owl#sameAs" : [ { "type" : "uri", "value" : "http://es.dbpedia.org/resource/Walter_De_Maria" } ,
+      { "type" : "uri", "value" : "http://yago-knowledge.org/resource/Walter_De_Maria" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Walter_De_Maria" } ,
+      { "type" : "uri", "value" : "http://ja.dbpedia.org/resource/\u30A6\u30A9\u30EB\u30BF\u30FC\u30FB\u30C7\u30FB\u30DE\u30EA\u30A2" } ,
+      { "type" : "uri", "value" : "http://rdf.freebase.com/ns/m.0bwm4v" } ,
+      { "type" : "uri", "value" : "http://d-nb.info/gnd/11890731X" } ,
+      { "type" : "uri", "value" : "http://cs.dbpedia.org/resource/Walter_De_Maria" } ,
+      { "type" : "uri", "value" : "http://www.wikidata.org/entity/Q126506" } ,
+      { "type" : "uri", "value" : "http://it.dbpedia.org/resource/Walter_De_Maria" } ,
+      { "type" : "uri", "value" : "http://wikidata.dbpedia.org/resource/Q126506" } ,
+      { "type" : "uri", "value" : "http://fr.dbpedia.org/resource/Walter_De_Maria" } ,
+      { "type" : "uri", "value" : "http://de.dbpedia.org/resource/Walter_De_Maria" } ,
+      { "type" : "uri", "value" : "http://pl.dbpedia.org/resource/Walter_De_Maria" } ] ,
+    "http://purl.org/dc/terms/subject" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:American_rock_drummers" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:American_conceptual_artists" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:American_rock_percussionists" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:2013_deaths" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Land_artists" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:The_Velvet_Underground" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:1935_births" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:American_contemporary_artists" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Guggenheim_Fellows" } ] ,
+    "http://xmlns.com/foaf/0.1/name" : [ { "type" : "literal", "value" : "Walter De Maria" , "lang" : "en" } ] ,
+    "http://xmlns.com/foaf/0.1/depiction" : [ { "type" : "uri", "value" : "http://commons.wikimedia.org/wiki/Special:FilePath/Benesse_house05s3200.jpg" } ] ,
+    "http://purl.org/dc/terms/description" : [ { "type" : "literal", "value" : "American sculptor" , "lang" : "en" } ] ,
+    "http://xmlns.com/foaf/0.1/givenName" : [ { "type" : "literal", "value" : "Walter" , "lang" : "en" } ] ,
+    "http://xmlns.com/foaf/0.1/gender" : [ { "type" : "literal", "value" : "male" , "lang" : "en" } ] ,
+    "http://xmlns.com/foaf/0.1/isPrimaryTopicOf" : [ { "type" : "uri", "value" : "http://en.wikipedia.org/wiki/Walter_De_Maria" } ] ,
+    "http://dbpedia.org/ontology/field" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Sculpture" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Installation_art" } ] ,
+    "http://dbpedia.org/ontology/movement" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Minimalist" } ] ,
+    "http://dbpedia.org/ontology/nationality" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/United_States" } ] ,
+    "http://www.w3.org/ns/prov#wasDerivedFrom" : [ { "type" : "uri", "value" : "http://en.wikipedia.org/wiki/Walter_De_Maria?oldid=733761282" } ] ,
+    "http://dbpedia.org/ontology/wikiPageExternalLink" : [ { "type" : "uri", "value" : "http://www.marioperniola.it/site/dettagliotext.asp?idtexts=78" } ,
+      { "type" : "uri", "value" : "http://www.tate.org.uk/context-comment/articles/thirty-years-eternity" } ,
+      { "type" : "uri", "value" : "https://secure.flickr.com/photos/92912701@N07/with/8656579698/" } ,
+      { "type" : "uri", "value" : "http://www.dasmaximum.com/de-maria" } ,
+      { "type" : "uri", "value" : "http://www.ubu.com/sound/demaria.html" } ,
+      { "type" : "uri", "value" : "http://www.aaa.si.edu/collections/interviews/oral-history-interview-walter-de-maria-12362" } ,
+      { "type" : "uri", "value" : "http://www.diaart.org/sites/main/lightningfield" } ,
+      { "type" : "uri", "value" : "http://www.galerie-lelong.com" } ,
+      { "type" : "uri", "value" : "http://www.benesse-artsite.jp/en/chichu/index.html" } ] ,
+    "http://dbpedia.org/property/caption" : [ { "type" : "literal", "value" : "Walter De Maria in 1968" , "datatype" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString" } ] ,
+    "http://dbpedia.org/ontology/abstract" : [ { "type" : "literal", "value" : "Walter De Maria (ur. 1 pa\u017Adziernika 1935 w Albany, zm. 25 lipca 2013 w Los Angeles) \u2013 ameryka\u0144ski artysta; zajmowa\u0142 si\u0119 rze\u017Ab\u0105, happeningiem, komponowaniem muzyki. Podczas studi\u00F3w w Kalifornii zajmowa\u0142 si\u0119 happeningiem i teatrem. W 1960 przeni\u00F3s\u0142 si\u0119 do Nowego Jorku, gdzie publikowa\u0142 swoje eseje, uczestniczy\u0142 w happeningach i multimedialnych prezentacjach, a tak\u017Ce tworzy\u0142 swoje pierwsze rze\u017Aby o prostych geometrycznych formach nawi\u0105zuj\u0105ce do minimal artu. W 1963 otworzy\u0142 wraz z Robertem Whitmanem galeri\u0119, gdzie w tym samym roku zaprezentowa\u0142 si\u0119 na swojej pierwszej indywidualnej wystawie. W tym czasie by\u0142 tak\u017Ce perkusist\u0105 grupy rockowej The Velvet Underground. W 1965 zacz\u0105\u0142 eksperymentowa\u0107 z nowym materia\u0142em rze\u017Abiarskim, jakim by\u0142 metal. Pod koniec lat sze\u015B\u0107dziesi\u0105tych zainteresowa\u0142 si\u0119 land artem i z dzia\u0142alno\u015Bci na tym polu jest najbardziej znany. W 1977 roku na r\u00F3wninie w zachodnim Nowym Meksyku stworzy\u0142 prac\u0119 zatytu\u0142owan\u0105 The Lightning Field (z ang. Pole b\u0142yskawic) sk\u0142adaj\u0105c\u0105 si\u0119 z czterystu wypolerowanych dr\u0105g\u00F3w ze stali nierdzewnej rozstawionych w odpowiednim szyku na powierzchni o wymiarach 1 km \u00D7 1 mil\u0119. W tym samym roku w Nowym Jorku zainstalowa\u0142 The New York Earth Room. Dzie\u0142o stanowi 197 metr\u00F3w sze\u015Bciennych ziemi zgromadzonej w pomieszczeniu galerii i jest trzecim tego rodzaju wykonanym przez artyst\u0119. Podobne instalacje znajdowa\u0142y si\u0119 w Monachium (1968) i Darmstadt (1974). Instalacja The Broken Kilometer stworzona w 1979 to kompozycja z pi\u0119ciuset wypolerowanych pr\u0119t\u00F3w mosi\u0119\u017Cnych o \u015Brednicy pi\u0119ciu centymetr\u00F3w i d\u0142ugo\u015Bci dw\u00F3ch metr\u00F3w u\u0142o\u017Conych w pi\u0119ciu r\u00F3wnoleg\u0142ych rz\u0119dach." , "lang" : "pl" } ,
+      { "type" : "literal", "value" : "\u30A6\u30A9\u30EB\u30BF\u30FC\u30FB\u30C7\u30FB\u30DE\u30EA\u30A2 (Walter De Maria\u30011935\u5E7410\u67081\u65E5 - 2013\u5E747\u670825\u65E5\uFF09\u306F\u3001\u30A2\u30E1\u30EA\u30AB\u5408\u8846\u56FD\u306E\u5F6B\u523B\u5BB6\u30FB\u97F3\u697D\u5BB6\u3002\u30A4\u30F3\u30B9\u30BF\u30EC\u30FC\u30B7\u30E7\u30F3\u4F5C\u54C1\u306A\u3069\u3092\u591A\u6570\u5236\u4F5C\u30FB\u8A2D\u7F6E\u3057\u3066\u3044\u308B\u3002\u30A2\u30E1\u30EA\u30AB\u5408\u8846\u56FD\u30AB\u30EA\u30D5\u30A9\u30EB\u30CB\u30A2\u5DDE\u30AA\u30FC\u30EB\u30D0\u30CB\u751F\u307E\u308C\u3002 \u30C7\u30FB\u30DE\u30EA\u30A2\u306F1953\u5E74\u304B\u30891959\u5E74\u307E\u3067\u30AB\u30EA\u30D5\u30A9\u30EB\u30CB\u30A2\u5927\u5B66\u30D0\u30FC\u30AF\u30EC\u30FC\u6821\u3067\u6B74\u53F2\u5B66\u3068\u7F8E\u8853\u3092\u5B66\u3093\u3060\u30021960\u5E74\u306B\u30CB\u30E5\u30FC\u30E8\u30FC\u30AF\u306B\u79FB\u308A\u5236\u4F5C\u6D3B\u52D5\u3092\u59CB\u3081\u3001\u521D\u671F\u306F\u30C0\u30C0\u306A\u3069\u306E\u7F8E\u8853\u904B\u52D5\u306B\u5F71\u97FF\u3055\u308C\u305F\u5F6B\u523B\u3092\u4F5C\u3063\u305F\u3002\u3053\u3046\u3057\u305F\u5F71\u97FF\u306B\u3088\u308A\u3001\u7C21\u7D20\u306A\u5E7E\u4F55\u5B66\u7684\u5F62\u72B6\u3084\u3001\u30B9\u30C6\u30F3\u30EC\u30B9\u3084\u30A2\u30EB\u30DF\u30CB\u30A6\u30E0\u3068\u3044\u3063\u305F\u5927\u91CF\u751F\u7523\u3067\u4F5C\u3089\u308C\u305F\u7D20\u6750\u306A\u3069\u3001\u5F8C\u306B\u30DF\u30CB\u30DE\u30EB\u30FB\u30A2\u30FC\u30C8\u306E\u7279\u5FB4\u3068\u306A\u308B\u3082\u306E\u3092\u30C7\u30FB\u30DE\u30EA\u30A2\u306F\u4F7F\u3046\u3088\u3046\u306B\u306A\u308B\u3002 1960\u5E74\u4EE3\u534A\u3070\u4EE5\u964D\u3001\u30C7\u30FB\u30DE\u30EA\u30A2\u306F\u69D8\u3005\u306A\u82B8\u8853\u6D3B\u52D5\u306B\u95A2\u4E0E\u3059\u308B\u3002\u5F7C\u306F\u30CF\u30D7\u30CB\u30F3\u30B0\u306B\u53C2\u52A0\u3057\u3001\u4E8C\u3064\u306E\u30DF\u30E5\u30FC\u30B8\u30AB\u30EB\u3092\u4F5C\u66F2\u3057\uFF08\u300ECricket Music\u300F1964\u5E74\u3001\u300EOcean Music\u300F1968\u5E74\uFF09\u3001\u4E8C\u3064\u306E\u6620\u753B\u3092\u64AE\u3063\u305F\uFF08\u300EThree Circles and Two Lines in the Desert\u300F\u3001\u300EHardcore\u300F\u3001\u3044\u305A\u308C\u30821969\u5E74\uFF09\u3002\u307E\u305F\u3001\u30C7\u30FB\u30DE\u30EA\u30A2\u306F\u30CB\u30E5\u30FC\u30E8\u30FC\u30AF\u306E\u30ED\u30C3\u30AF\u30D0\u30F3\u30C9\u300C\u30B6\u30FB\u30D7\u30EA\u30DF\u30C6\u30A3\u30F4\u30B9\u300D\uFF08The Primitives\uFF09\u3084\u3001\u30F4\u30A7\u30EB\u30F4\u30A7\u30C3\u30C8\u30FB\u30A2\u30F3\u30C0\u30FC\u30B0\u30E9\u30A6\u30F3\u30C9\u306E\u5148\u99C6\u8005\u3068\u306A\u3063\u305F\u7F8E\u8853\u5BB6\u3068\u97F3\u697D\u5BB6\u306B\u3088\u308B\u30B0\u30EB\u30FC\u30D7\u300C\u30B6\u30FB\u30C9\u30E9\u30C3\u30BA\u300D\uFF08The Druds\uFF09\u306E\u30C9\u30E9\u30DE\u30FC\u3068\u306A\u3063\u305F\u3002 1968\u5E74\u3088\u308A\u30C7\u30FB\u30DE\u30EA\u30A2\u306F\u300EErdraum\u300F\u306A\u3069\u30DF\u30CB\u30DE\u30EB\u306A\u5F6B\u523B\u3084\u30A4\u30F3\u30B9\u30BF\u30EC\u30FC\u30B7\u30E7\u30F3\u3092\u5236\u4F5C\u3059\u308B\u3088\u3046\u306B\u306A\u3063\u305F\u3002\u307E\u305F\u540C\u3058\u304F1968\u5E74\u306B\u30E2\u30CF\u30FC\u30F4\u30A7\u7802\u6F20\u3067\u5236\u4F5C\u3057\u305F1\u30DE\u30A4\u30EB\u306E\u9577\u3055\u306E\u5E73\u884C\u7DDA\u3092\u63CF\u304D\u7D9A\u3051\u308B\u4F5C\u54C1\u300E\u30DE\u30A4\u30EB\u30FB\u30ED\u30F3\u30B0\u30FB\u30C9\u30ED\u30FC\u30A4\u30F3\u30B0\u300F\uFF08Mile Long Parallel Walls In The Desert\uFF09\u306A\u3069\u3001\u30A2\u30E1\u30EA\u30AB\u5357\u897F\u90E8\u306E\u7802\u6F20\u3067\u30E9\u30F3\u30C9\u30FB\u30A2\u30FC\u30C8\u306E\u30D7\u30ED\u30B8\u30A7\u30AF\u30C8\u3092\u5B9F\u884C\u3059\u308B\u3088\u3046\u306B\u306A\u308B\u3002\u5F7C\u306F\u3053\u3046\u3057\u305F\u7802\u6F20\u3067\u3001\u98A8\u666F\u3068\u81EA\u7136\u3001\u5149\u3068\u5929\u5019\u304C\u3001\u731B\u70C8\u306A\u7269\u7406\u7684\u7CBE\u795E\u7684\u4F53\u9A13\u3068\u306A\u308B\u3088\u3046\u306A\u72B6\u6CC1\u3092\u4F5C\u308D\u3046\u3068\u3057\u3066\u304D\u305F\u30021977\u5E74\u306B\u30CB\u30E5\u30FC\u30E1\u30AD\u30B7\u30B3\u5DDE\u30AB\u30C8\u30ED\u30F3\u90E1\u306E\u7802\u6F20\u306E\u53EA\u4E2D\u306B\u4F5C\u3063\u305F\u300E\u30E9\u30A4\u30C8\u30CB\u30F3\u30B0\u30FB\u30D5\u30A3\u30FC\u30EB\u30C9\u300F\uFF08\u300E\u7A32\u59BB\u306E\u5E73\u539F\u300F\uFF09\u306F\u3001\u30C7\u30FB\u30DE\u30EA\u30A2\u306E\u4EE3\u8868\u4F5C\u3067\u3042\u308A\u30E9\u30F3\u30C9\u30FB\u30A2\u30FC\u30C8\u306E\u4EE3\u8868\u4F5C\u3067\u3082\u3042\u308B\u30021\u30DE\u30A4\u30EB\u00D71km\u306E\u7BC4\u56F2\u306B400\u672C\u306E\u30B9\u30C6\u30F3\u30EC\u30B9\u88FD\u306E\u30DD\u30FC\u30EB\u3092220\u30D5\u30A3\u30FC\u30C8\u9593\u9694\u3067\u683C\u5B50\u72B6\u306B\u5EFA\u3066\u305F\u4F5C\u54C1\u306F\u3001\u898B\u306B\u884C\u3063\u305F\u65E5\u3084\u5929\u5019\u3067\u72B6\u6CC1\u304C\u5909\u308F\u308B\u3002\u3053\u306E\u7802\u6F20\u3067\u306F\u96F7\u304C\u591A\u767A\u3059\u308B\u305F\u3081\u3001\u30DD\u30FC\u30EB\u306B\u843D\u96F7\u3059\u308B\u969B\u306E\u5149\u3084\u8F5F\u97F3\u3092\u89B3\u89A7\u8005\u306F\u4F53\u9A13\u3059\u308B\u3053\u3068\u306B\u306A\u308B\u3002 \u65E5\u672C\u3067\u306F\u9999\u5DDD\u770C\u306E\u5730\u4E2D\u7F8E\u8853\u9928\u306B\u5927\u898F\u6A21\u306A\u30A4\u30F3\u30B9\u30BF\u30EC\u30FC\u30B7\u30E7\u30F3\u304C\u5E38\u8A2D\u3055\u308C\u3066\u3044\u308B\u3002 2013\u5E747\u670825\u65E5\u3001\u30ED\u30B5\u30F3\u30BC\u30EB\u30B9\u3067\u6B7B\u53BB\u300277\u6B73\u6CA1\u3002\u8133\u5352\u4E2D\u306E\u6CBB\u7642\u4E2D\u3067\u3042\u3063\u305F\u3002" , "lang" : "ja" } ,
+      { "type" : "literal", "value" : "Walter De Maria est un artiste am\u00E9ricain du Land art n\u00E9 le 1er octobre 1935 \u00E0 Albany en Californie et mort le 25 juillet 2013 \u00E0 New York." , "lang" : "fr" } ,
+      { "type" : "literal", "value" : "\u00C8 uno dei principali esponenti della corrente artistica detta Land Art alla quale \u00E8 passato dopo un'iniziale esperienza di scultore nell'ambito della Minimal Art (alcune sue opere di questo periodo, come \u201CBalldrop\u201D del 1961, si trovano al Guggenheim Museum di New York). Tra gli anni sessanta e settanta del secolo scorso inizia a intervenire direttamente sul territorio con le sue monumentali earth sculptures: nel 1968, per esempio, disegna con la calce delle linee parallele all'interno del Mojave Desert, in California, mentre nel 1977, in occasione di documenta, la grande rassegna di arte contemporanea che si svolge a Kassel, in Germania, ogni cinque anni, fa penetrare nel terreno un'asta metallica per un chilometro. La sua opera pi\u00F9 famosa, per\u00F2, rimane The Lightning Field (1977): in questa monumentale installazione posta in un angolo remoto del deserto del Nuovo Messico De Maria cerca la complicit\u00E0 della natura per mettere in scena un evento sempre straordinario. Dopo aver conficcato in verticale nel terreno 400 pali metallici appuntiti su un'area di circa 3 chilometri quadrati, ne sfrutta l'effetto-parafulmine durante i temporali raccogliendo e moltiplicando la potenza dei fulmini a servizio di un grandioso spettacolo di luce. L'opera, destinata naturalmente a sparire col tempo, si offre alla fruizione solo mediante fotografie e video oppure direttamente, a coloro che desiderano assistere di persona all'evento. L'installazione, infatti, \u00E8 visitabile da maggio a ottobre e il flusso turistico \u00E8 regolato da norme molto rigide: dopo un viaggio di circa due ore, i pochi visitatori ammessi di volta in volta vengono sistemati in un ambiente di tre stanze a quaranta minuti dall'opera; all'altipiano si giunge su un fuoristrada ed \u00E8 vietato fare fotografie e riprese con la videocamera." , "lang" : "it" } ,
+      { "type" : "literal", "value" : "Walter Joseph De Maria (1 de octubre de 1935 - 25 de julio de 2013) fue un artista estadounidense, escultor, ilustrador y compositor. Vivi\u00F3 y trabaj\u00F3 en la ciudad de Nueva York. La pr\u00E1ctica art\u00EDstica de Walter de Maria est\u00E1 conectada con el arte minimalista, el arte conceptual y el land arte de la d\u00E9cada de 1960. El director de LACMA Michael Govan, dijo que \"creo que es uno de los m\u00E1s grandes artistas de nuestro tiempo\". Govan, quien trabaj\u00F3 con De Maria por un n\u00FAmero de a\u00F1os, encontr\u00F3 el trabajo de De Maria \"singular, sublime y directo.\"" , "lang" : "es" } ,
+      { "type" : "literal", "value" : "Walter Joseph De Maria (October 1, 1935 \u2013 July 25, 2013) was an American artist, sculptor, illustrator and composer, who lived and worked in New York City. Walter de Maria's artistic practice is connected with Minimal art, Conceptual art, and Land art of the 1960s. LACMA director Michael Govan said that \"I think he's one of the greatest artists of our time.\" Govan, who worked with De Maria for a number of years, found De Maria's work \"singular, sublime and direct.\"" , "lang" : "en" } ,
+      { "type" : "literal", "value" : "Walter De Maria (eigentlich Walter Joseph De Maria; * 1. Oktober 1935 in Albany, Kalifornien; \u2020 25. Juli 2013 in Los Angeles) war ein US-amerikanischer K\u00FCnstler, ein wichtiger Vertreter des Minimalismus, der Konzeptkunst und der Land Art." , "lang" : "de" } ,
+      { "type" : "literal", "value" : "\u0423\u043E\u043B\u0442\u0435\u0440 \u0414\u0435 \u041C\u0430\u0440\u0438\u044F (\u0430\u043D\u0433\u043B. Walter De Maria; 1 \u043E\u043A\u0442\u044F\u0431\u0440\u044F 1935, \u041E\u043B\u0431\u0430\u043D\u0438, \u041A\u0430\u043B\u0438\u0444\u043E\u0440\u043D\u0438\u044F \u2014 25 \u0438\u044E\u043B\u044F 2013, \u041D\u044C\u044E-\u0419\u043E\u0440\u043A) \u2014 \u0430\u043C\u0435\u0440\u0438\u043A\u0430\u043D\u0441\u043A\u0438\u0439 \u0441\u043A\u0443\u043B\u044C\u043F\u0442\u043E\u0440 \u0438 \u043A\u043E\u043C\u043F\u043E\u0437\u0438\u0442\u043E\u0440, \u0435\u0433\u043E \u0445\u0443\u0434\u043E\u0436\u0435\u0441\u0442\u0432\u0435\u043D\u043D\u0430\u044F \u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430 \u0441\u0432\u044F\u0437\u0430\u043D\u0430 \u0441 \u0444\u043B\u0443\u043A\u0441\u0443\u0441\u043E\u043C, \u043C\u0438\u043D\u0438\u043C\u0430\u043B\u0438\u0437\u043C\u043E\u043C (\u043E\u0434\u0438\u043D \u0438\u0437 \u0441\u0430\u043C\u044B\u0445 \u0440\u0430\u043D\u043D\u0438\u0445 \u043F\u0440\u0435\u0434\u0441\u0442\u0430\u0432\u0438\u0442\u0435\u043B\u0435\u0439 \u0434\u0432\u0438\u0436\u0435\u043D\u0438\u044F, \u043E\u0431\u0440\u0430\u0437\u0446\u044B \u043A\u043E\u0442\u043E\u0440\u043E\u0433\u043E \u0441\u043E\u0437\u0434\u0430\u0432\u0430\u043B \u043E\u043A\u043E\u043B\u043E 1960), \u043A\u043E\u043D\u0446\u0435\u043F\u0442\u0443\u0430\u043B\u044C\u043D\u044B\u043C \u0438\u0441\u043A\u0443\u0441\u0441\u0442\u0432\u043E\u043C \u0438 \u043B\u044D\u043D\u0434-\u0430\u0440\u0442\u043E\u043C." , "lang" : "ru" } ] ,
+    "http://dbpedia.org/ontology/thumbnail" : [ { "type" : "uri", "value" : "http://commons.wikimedia.org/wiki/Special:FilePath/Benesse_house05s3200.jpg?width=300" } ] ,
+    "http://dbpedia.org/ontology/birthDate" : [ { "type" : "literal", "value" : "1935-10-1" , "datatype" : "http://www.w3.org/2001/XMLSchema#date" } ,
+      { "type" : "literal", "value" : "1935-10-01" , "datatype" : "http://www.w3.org/2001/XMLSchema#date" } ] ,
+    "http://dbpedia.org/ontology/deathDate" : [ { "type" : "literal", "value" : "2013-7-25" , "datatype" : "http://www.w3.org/2001/XMLSchema#date" } ,
+      { "type" : "literal", "value" : "2013-07-25" , "datatype" : "http://www.w3.org/2001/XMLSchema#date" } ] ,
+    "http://dbpedia.org/ontology/deathPlace" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/United_States" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/California" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Los_Angeles" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/New_York_City" } ] ,
+    "http://dbpedia.org/ontology/wikiPageRevisionID" : [ { "type" : "literal", "value" : 733761282 , "datatype" : "http://www.w3.org/2001/XMLSchema#integer" } ] ,
+    "http://dbpedia.org/ontology/birthPlace" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Albany,_California" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/United_States" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/California" } ] ,
+    "http://dbpedia.org/ontology/wikiPageID" : [ { "type" : "literal", "value" : 4314428 , "datatype" : "http://www.w3.org/2001/XMLSchema#integer" } ] ,
+    "http://purl.org/linguistics/gold/hypernym" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Artist" } ] ,
+    "http://dbpedia.org/property/bgcolour" : [ { "type" : "literal", "value" : "#6495ED" , "datatype" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString" } ] } ,
+  "http://dbpedia.org/resource/Walter_de_Maria" : { "http://dbpedia.org/ontology/wikiPageRedirects" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Walter_De_Maria" } ] } ,
+  "http://dbpedia.org/resource/De_Maria" : { "http://dbpedia.org/ontology/wikiPageDisambiguates" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Walter_De_Maria" } ] } ,
+  "http://dbpedia.org/resource/Henry_Flynt_&_the_Insurrections" : { "http://dbpedia.org/ontology/formerBandMember" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Walter_De_Maria" } ] }
+}
+;
+	var dataAuth = "http://dbpedia.org/resource/Walter_De_Maria";
+	var dataUrl = "walter_de_maria.html";
+	var dataResourceType = "participant";
+	var dataName = "Walter De Maria";
+ 	
+</script>
+
+
+
+
+
+<script type="text/javascript">
+
+
+	
+	
+	
+
+	$(document).ready(function($) {
+		
+		
+		padb.resource.initialize();
+			 
+		$( '.scrollable' ).
+		bind( 'mousewheel DOMMouseScroll', function ( e ) {
+			
+			if( e.originalEvent ) e = e.originalEvent;
+			
+			var delta = e.wheelDelta || -e.detail;
+			this.scrollTop += ( delta < 0 ? 1 : -1 ) * 30;
+			e.preventDefault();
+		});		 
+		
+		
+				
+		$.ajaxSetup ({
+			// Disable caching of AJAX responses
+			cache: false
+		});		
+		
+	});
+	
+
+	
+	
+	
+	
+	
+</script>
+
+
+
+
+ 
+<br />
+<div class="container"  style="position:relative;">
+	   
+      <div id="resourceLinks"></div> 
+       
+       
+       
+       
+              
+       
+           
+           
+           
+          <div class="row addSection">
+              <div class="span1 addSectionIconHolder">
+              
+                <i class="icon-user"></i>
+              
+              </div>
+          
+              <div class="span11">
+                <span>Performer</span>
+                <hr>
+                <br />
+              </div>
+        </div>
+        <div class="row">
+            <div class="span1">
+            </div>
+            <div class="span11" style="position:relative">
+                
+                
+                
+                
+               <div>
+                                       <div class="pull-right vignette">
+                            <img  src="../cache/media/walter_de_maria.jpg" />
+                            
+                        </div>
+                        
+                                           
+                <div class="pull-left" style="width:80%;">
+                     
+                     <h5 id="resourceLDName">Walter De Maria</h5>
+                     <h5 id="resourceLDAbstract"></h5>
+                     
+                     
+                     <div id="resourceSameAs">
+                        <h5>External Data:</h5>
+                        
+                        
+                     </div>
+                
+                </div>   
+                
+                <br style="clear:both;" />
+            </div>
+            
+            
+                
+            </div>
+        </div>    
+         
+    
+    
+    
+    
+    
+    
+       <div class="row addSection">
+			<div class="span1 addSectionIconHolder">              
+                <i class="icon-asterisk"></i>
+              
+              </div>
+          
+              <div class="span11">
+                <span>Events </span><span id="resourceEventCount"></span>
+                <hr>
+              </div>
+        </div>
+    
+    
+    
+    
+    
+    
+    
+        <div class="row">
+            <div class="span1"></div>
+            <div class="span11" style="position:relative">
+                  
+                 <div class="">
+                    <div id="resourceEventsEvents" class="scrollable">
+                           <table class="table table-condensed table-hover table-striped">
+                               <thead>
+                                <tr>
+                                  <th>Date</th>
+                                  
+                                  <th>Title</th>
+                                  <th>Location</th>
+                                  <th></th>
+                                </tr>
+                              </thead>
+                              <tbody id="resourceEventsEventsRows"> 
+                              </tbody>
+                            </table>
+                     
+                    </div>
+                    
+                    <div id="resourceEventsExport">
+                    
+                    	<input  name="resourceEventsSearch" class="span3" id="resourceEventsSearch"  type="text" placeholder="Filter: names, places, dates">
+                    	<button class="btn btn-mini btn-danger" id="resourceEventsClearFilter"><i class="icon-remove">&nbsp;Clear Filter</i></button>
+                   		<button class="btn btn-mini btn-info" title="Render the currently filitered data as a network" id="resourceRenderEventNetwork"> <img src="../img/icon-network-white.png" style="height:15px; width:auto" /> Two-Mode Event Network</button>
+                   		<button class="btn btn-mini btn-info" title="Render the currently filitered data as a network" id="resourceRenderEventMap"> <i class="icon-globe"></i> Map Event Locations</button>
+                   		<button class="btn btn-mini btn-success" title="Download network as Gephi File" id="resourceDownloadEventGephi"> <img src="../img/icon-gephi.png" style="height:15px; width:auto" /> Donwload Gephi Network</button>
+
+                 
+                    </div>                 
+                </div>
+                <br style="clear:both;" />
+            </div>
+            
+            
+                
+         </div>    
+    
+     
+       <div class="row addSection">
+              <div class="span1">
+              
+                <img src="../img/social-network.png" style=" margin-left:25px; margin-bottom:10px;" />
+              
+              </div>
+          
+              <div class="span11">
+                <span>Performance Network</span> 
+                <hr>
+              </div>
+        </div>
+        
+        <div class="row">
+            <div class="span1">
+            </div>
+            <div class="span11" style="position:relative">
+                
+               	<div style="width: 100%; height:500px;" id="egoNetwork">
+            
+                
+             	</div> 
+                <div class="well pull-left well-small" id="egoNetworkControls">
+                    <span class="rangeLabels">Node Charge</span>
+                    <input type="range" id="resourceEgoNetworkCharge" min="-1000" max="100" value="-120" data-def="-700" />
+                    <br /><span class="rangeLabels">Gravity</span>
+                    <input type="range" id="resourceEgoNetworkGravity" min="0" max="1" value="0.1" step="0.01" data-def="0.3" /> 
+                    <br /><span class="rangeLabels">Edge Length</span>
+                    <input type="range" id="resourceEgoNetworkDistance" min="0" max="300" value="50" data-def="50"  />      
+                    <br /><span class="rangeLabels">Edge Strength</span>
+                    <input type="range" id="resourceEgoNetworkStrength" min="0" max="3" value="1" data-def="0.15" step="0.1"  /> 
+                    <br /><br />
+                    <button type="button" id="resourceEgoNetworkLabelsButton" class="btn btn-mini" title="Show node labels." data-toggle="button">Show Labels</button>  
+                    <button type="button" id="resourceEgoNetworkLiveButton" class="btn btn-mini" title="Show realtime network rendering" data-toggle="button">Live Rendering</button>                     
+                </div>
+                
+                <div class="well pull-left well-small egoNetworkControls span7" style="margin-left:20px;" >
+                
+                	<input  name="resourceEgoNetworkSearch" class="span3" id="resourceEgoNetworkSearch"  type="text" placeholder="Filter: names, places, dates">
+					<button class="btn btn-mini btn-danger" id="resourceEgoClearFilter"><i class="icon-remove">&nbsp;Clear Filter</i></button>
+                    <button class="btn btn-mini btn-success" title="Download network as Gephi File" id="resourceDownloadEgoGephi"> <img src="../img/icon-gephi.png" style="height:15px; width:auto" /> Donwload Gephi Network</button>
+
+                </div>
+                
+            </div>
+        </div>           
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+	
+
+	
+
+
+	
+
+
+</div>
+
+
+
+
+    <div id="resourceEventNetworkModal" class="modal container hide fade" style="min-height:500px" tabindex="-1">
+ 
+      <div class="modal-body">
+      	
+        <div id="eventNetwork" style="height:400px; width:100%">
+        
+        </div>
+      
+      </div>
+      <div class="modal-footer" style="height:20px;">
+      	
+        <div class="well pull-left well-small">
+        	<span class="rangeLabels">Node Charge</span>
+        	<input type="range" id="resourceEventNetworkCharge" min="-800" max="200" value="-120" data-def="-120" />
+            <span class="rangeLabels">Gravity</span>
+        	<input type="range" id="resourceEventNetworkGravity" min="0" max="1" value="0.1" step="0.01" data-def="0.1" /> 
+            <span class="rangeLabels">Edge Length</span>
+        	<input type="range" id="resourceEventNetworkDistance" min="0" max="300" value="50" data-def="50"  />      
+            <span class="rangeLabels">Edge Strength</span>
+        	<input type="range" id="resourceEventNetworkStrength" min="0" max="5" value="1" data-def="1" step="0.1"  />    
+            <button type="button" id="resourceEventNetworkLabelsButton" class="btn btn-mini" data-toggle="button">Show Labels</button>                     
+		</div>
+        <div class="pull-right">
+        <button type="button" data-dismiss="modal" class="btn">Close</button>
+       	</div>
+       </div>
+    </div>
+    
+    
+    
+    
+     <div id="resourceEventMapModal" class="modal container hide fade" style="min-height:500px" tabindex="-1">
+ 
+      <div class="modal-body">
+      	
+        <div id="eventMap" style="height:400px; width:100%">
+        
+        </div>
+      
+      </div>
+      <div class="modal-footer" style="height:20px;">
+      	
+        <div class="well pull-left well-small">                  
+		</div>
+        <div class="pull-right">
+        <button type="button" data-dismiss="modal" class="btn">Close</button>
+       	</div>
+       </div>
+    </div>
+
+<br /><br /><br /><br /><br /><br />
+
+<script type="text/javascript">    var _gaq = _gaq || [];   _gaq.push(['_setAccount', 'UA-10371295-7']);   _gaq.push(['_trackPageview']);    (function() {     var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);   })();  </script>
+
+</body>
+
+<!-- Mirrored from padb.net/resource/walter_de_maria by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 11 Jan 2020 22:17:28 GMT -->
+</html>

@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<gexf version="1.2" xmlns="http://www.gexf.net/1.2draft">
+ <graph mode="static" defaultedgetype="undirected">
+  <nodes>
+   <node id="151" label="Ben Vautier"/>
+   <node id="258" label="Peter Pontani"/>
+  </nodes>
+  <edges>
+   <edge source="151" target="258"/>
+  </edges>
+ </graph>
+</gexf>

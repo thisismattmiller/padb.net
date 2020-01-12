@@ -1,0 +1,544 @@
+<!doctype html>
+<html>
+
+<!-- Mirrored from padb.net/resource/quicksilver_messenger_service by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 11 Jan 2020 22:23:00 GMT -->
+<head>
+<meta charset="UTF-8">
+<title>padb.net</title>
+
+
+<link rel="stylesheet" href="../css/bootstrap.css">
+<link rel="stylesheet" href="../css/font-awesome.css">
+<link rel="stylesheet" href="../css/site.css">
+<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+<link rel="icon" type="image/png" href="../img/favicon.png">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/bootstrap-modal.js"></script>
+<script src="../js/bootstrap-modalmanager.js"></script>
+
+<script src="../js/d3.min.js"></script>
+<script src="../js/html5slider.js"></script>
+<script src="../js/topojson.js"></script>
+<script src="../js/padb.js"></script>
+
+
+</head>
+<body>
+    
+    
+	<div style="position:relative;">        
+
+ 		<div style=" border-bottom:solid 1px #ccc;">
+        	<div class="container">
+                
+                 <div id="header">
+                 	
+                     <div class="logo"><a href="../index.html"><span>|||</span>padb</a> </div>
+                    
+                     						<div id="resourceName" style="font-size:2em">Quicksilver Messenger Service</div>
+					
+                 </div>
+                
+                
+        	</div>
+            
+    	</div>
+ 
+   </div>
+<script src="../js/countriesData.js"></script>
+
+<script type="text/javascript">
+	//preloaded json from the server
+
+	var dataSameAs = [
+  {
+    "uri": "http://www.wikidata.org/entity/Q1382357",
+    "numDuplicates": "26",
+    "duplicates": [
+      "http://dbpedia.org/resource/Quicksilver_Messenger_Service",
+      "http://cs.dbpedia.org/resource/Quicksilver_Messenger_Service",
+      "http://dbpedialite.org/things/152435#id",
+      "http://de.dbpedia.org/resource/Quicksilver_Messenger_Service",
+      "http://en.wikipedia.org/wiki/Quicksilver_Messenger_Service",
+      "http://es.dbpedia.org/resource/Quicksilver_Messenger_Service",
+      "http://fr.dbpedia.org/resource/Quicksilver_Messenger_Service",
+      "http://id.dbpedia.org/resource/Quicksilver_Messenger_Service",
+      "http://it.dbpedia.org/resource/Quicksilver_Messenger_Service",
+      "http://ja.dbpedia.org/resource/\u30AF\u30A4\u30C3\u30AF\u30B7\u30EB\u30F4\u30A1\u30FC\u30FB\u30E1\u30C3\u30BB\u30F3\u30B8\u30E3\u30FC\u30FB\u30B5\u30FC\u30F4\u30A3\u30B9",
+      "http://mpii.de/yago/resource/Quicksilver_Messenger_Service",
+      "http://nl.dbpedia.org/resource/Quicksilver_Messenger_Service",
+      "http://no.dbpedia.org/resource/Quicksilver_Messenger_Service",
+      "http://pl.dbpedia.org/resource/Quicksilver_Messenger_Service",
+      "http://pt.dbpedia.org/resource/Quicksilver_Messenger_Service",
+      "http://rdf.freebase.com/ns/m.01ljr7z",
+      "http://rdf.freebase.com/ns/en.quicksilver_messenger_service",
+      "http://rdf.freebase.com/ns/guid.9202a8c04000641f8000000003285cfe",
+      "http://ru.dbpedia.org/resource/Quicksilver_Messenger_Service",
+      "http://sv.dbpedia.org/resource/Quicksilver_Messenger_Service",
+      "http://umbel.org/umbel/ne/wikipedia/Quicksilver_Messenger_Service",
+      "http://www.bbc.co.uk/music/artists/cbb5f92c-b4a3-4804-b57d-e14d2c0f95f5",
+      "http://www.bbc.co.uk/music/artists/cbb5f92c-b4a3-4804-b57d-e14d2c0f95f5#artist",
+      "http://www.discogs.com/artist/Quicksilver+Messenger+Service",
+      "http://www.wikidata.org/entity/Q1382357",
+      "http://yago-knowledge.org/resource/Quicksilver_Messenger_Service"
+    ]
+  }
+]
+;
+	var dataDbpedia = {
+  "http://dbpedia.org/resource/Nicky_Hopkins" : { "http://dbpedia.org/ontology/associatedBand" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Quicksilver_Messenger_Service" } ] ,
+    "http://dbpedia.org/ontology/associatedMusicalArtist" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Quicksilver_Messenger_Service" } ] } ,
+  "http://en.wikipedia.org/wiki/Quicksilver_Messenger_Service" : { "http://xmlns.com/foaf/0.1/primaryTopic" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Quicksilver_Messenger_Service" } ] } ,
+  "http://dbpedia.org/resource/Just_for_Love" : { "http://dbpedia.org/ontology/artist" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Quicksilver_Messenger_Service" } ] ,
+    "http://dbpedia.org/property/chronology" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Quicksilver_Messenger_Service" } ] } ,
+  "http://dbpedia.org/resource/What_About_Me_(Quicksilver_Messenger_Service_album)" : { "http://dbpedia.org/ontology/artist" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Quicksilver_Messenger_Service" } ] ,
+    "http://dbpedia.org/property/chronology" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Quicksilver_Messenger_Service" } ] } ,
+  "http://dbpedia.org/resource/QMS" : { "http://dbpedia.org/ontology/wikiPageDisambiguates" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Quicksilver_Messenger_Service" } ] } ,
+  "http://dbpedia.org/resource/Quicksilver_Messenger_Service" : { "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { "type" : "uri", "value" : "http://www.wikidata.org/entity/Q24229398" } ,
+      { "type" : "uri", "value" : "http://schema.org/Organization" } ,
+      { "type" : "uri", "value" : "http://www.w3.org/2002/07/owl#Thing" } ,
+      { "type" : "uri", "value" : "http://schema.org/MusicGroup" } ,
+      { "type" : "uri", "value" : "http://www.wikidata.org/entity/Q215380" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatMusicalGroupsFromCalifornia" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/SocialGroup107950920" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Group100031264" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Organization108008335" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/YagoPermanentlyLocatedEntity" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Abstraction100002137" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatPsychedelicMusicalGroups" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/ontology/Organisation" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatMusicalGroupsFromSanFrancisco,California" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/ontology/Band" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/MusicalOrganization108246613" } ,
+      { "type" : "uri", "value" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent" } ,
+      { "type" : "uri", "value" : "http://www.wikidata.org/entity/Q43229" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/YagoLegalActor" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/YagoLegalActorGeo" } ,
+      { "type" : "uri", "value" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#SocialPerson" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/ontology/Group" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/ontology/Agent" } ] ,
+    "http://www.w3.org/2000/01/rdf-schema#label" : [ { "type" : "literal", "value" : "Quicksilver Messenger Service" , "lang" : "ru" } ,
+      { "type" : "literal", "value" : "Quicksilver Messenger Service" , "lang" : "pt" } ,
+      { "type" : "literal", "value" : "Quicksilver Messenger Service" , "lang" : "es" } ,
+      { "type" : "literal", "value" : "Quicksilver Messenger Service" , "lang" : "de" } ,
+      { "type" : "literal", "value" : "Quicksilver Messenger Service" , "lang" : "nl" } ,
+      { "type" : "literal", "value" : "\u30AF\u30A4\u30C3\u30AF\u30B7\u30EB\u30F4\u30A1\u30FC\u30FB\u30E1\u30C3\u30BB\u30F3\u30B8\u30E3\u30FC\u30FB\u30B5\u30FC\u30F4\u30A3\u30B9" , "lang" : "ja" } ,
+      { "type" : "literal", "value" : "Quicksilver Messenger Service" , "lang" : "it" } ,
+      { "type" : "literal", "value" : "Quicksilver Messenger Service" , "lang" : "pl" } ,
+      { "type" : "literal", "value" : "Quicksilver Messenger Service" , "lang" : "fr" } ,
+      { "type" : "literal", "value" : "Quicksilver Messenger Service" , "lang" : "en" } ] ,
+    "http://www.w3.org/2000/01/rdf-schema#comment" : [ { "type" : "literal", "value" : "Quicksilver Messenger Service est un groupe de rock psych\u00E9d\u00E9lique am\u00E9ricain." , "lang" : "fr" } ,
+      { "type" : "literal", "value" : "Quicksilver Messenger Service was \u00E9\u00E9n van de bands die optraden bij de Gathering of the Tribes in het Golden Gate Park in San Francisco in 1967. Quicksilver was een psychedelische muziekgroep, opgericht door Dino Valente (artiestennaam van Chet Powers). De andere leden waren John Cipollina, Jim Murray, David Freiberg, Greg Elmore en Gary Duncan. Het opstappen en toetreden van bandleden werd zo'n beetje het handelsmerk van de groep en hij viel uiteen. In 1975 en 1986 werden pogingen ondernomen om de groep nieuw leven in te blazen, maar echt succesvol waren die pogingen niet." , "lang" : "nl" } ,
+      { "type" : "literal", "value" : "I Quicksilver Messenger Service sono stati una gruppo rock statunitense. Sono considerati (insieme ai Grateful Dead e ai Jefferson Airplane) una delle formazioni pi\u00F9 originali e innovative del rock psichedelico di San Francisco degli anni sessanta." , "lang" : "it" } ,
+      { "type" : "literal", "value" : "Quicksilver Messenger Service \u2013 ameryka\u0144ski zesp\u00F3\u0142 muzyczny graj\u0105cy psychodeliczny rock i acid rock zwi\u0105zany z ruchem hippisowskim. Grupa powsta\u0142a w 1965 w San Francisco. Zesp\u00F3\u0142 wypracowa\u0142 charakterystyczne transowe brzmienie z monotonn\u0105 perkusj\u0105 i niesko\u0144czenie improwizuj\u0105cymi gitarami, pochodami basowymi oraz mocno odrealnionymi partiami wokalnymi, jednak forma utwor\u00F3w zespo\u0142u niekiedy zbli\u017Ca\u0142a si\u0119 tak\u017Ce do klasycznie poj\u0119tych piosenek oddaj\u0105cych ducha swej epoki. Stylistyka zespo\u0142u przez wiele lat ewoluowa\u0142a. Du\u017Cy wp\u0142yw mia\u0142y na to ci\u0105g\u0142e poszukiwania artystyczne muzyk\u00F3w oraz cz\u0119ste zmiany (nawet jak na standardy grup rockowych) personalne." , "lang" : "pl" } ,
+      { "type" : "literal", "value" : "Quicksilver Messenger Service (sometimes credited as simply Quicksilver) is an American psychedelic rock band formed in 1965 in San Francisco. They were most famous for their biggest hit, the single \"Fresh Air\" (from the album Just for Love), which reached #49 in 1970." , "lang" : "en" } ,
+      { "type" : "literal", "value" : "Quicksilver Messenger Service es una banda de Rock psicod\u00E9lico formada en el a\u00F1o 1965 en la ciudad de San Francisco, EE.UU.. Alcanzan la popularidad principalmente a causa del sencillo Fresh Air, del \u00E1lbum Just for Love, el cual fue su mayor \u00E9xito, alcanzado el lugar 49 en las listas de \u00E9xito del a\u00F1o 1970." , "lang" : "es" } ,
+      { "type" : "literal", "value" : "Quicksilver Messenger Service foi uma das primeiras bandas de m\u00FAsica psicod\u00E9lica de S\u00E3o Francisco dos anos 1960, formada por Dino Valente, John Cipollina, Jim Murray, David Freiberg, Greg Elmore e Gary Duncan." , "lang" : "pt" } ,
+      { "type" : "literal", "value" : "Quicksilver Messenger Service (QMS) war eine psychedelische US-Rockband aus San Francisco in den sp\u00E4ten 1960er und den 1970er Jahren." , "lang" : "de" } ,
+      { "type" : "literal", "value" : "Quicksilver Messenger Service (\u00AB\u041C\u043E\u043B\u043D\u0438\u0435\u043D\u043E\u0441\u043D\u0430\u044F \u0441\u043B\u0443\u0436\u0431\u0430 \u0434\u043E\u0441\u0442\u0430\u0432\u043A\u0438\u00BB) \u2014 \u0430\u043C\u0435\u0440\u0438\u043A\u0430\u043D\u0441\u043A\u0430\u044F \u0440\u043E\u043A-\u0433\u0440\u0443\u043F\u043F\u0430, \u043E\u0431\u0440\u0430\u0437\u043E\u0432\u0430\u043D\u043D\u0430\u044F \u0432 \u0421\u0430\u043D-\u0424\u0440\u0430\u043D\u0446\u0438\u0441\u043A\u043E \u0432 1965 \u0433\u043E\u0434\u0443 \u0438 \u0441\u0442\u0430\u0432\u0448\u0430\u044F \u043E\u0434\u043D\u043E\u0439 \u0438\u0437 \u0432\u0435\u0434\u0443\u0449\u0438\u0445 \u043D\u0430 \u043F\u0441\u0438\u0445\u043E\u0434\u0435\u043B\u0438\u0447\u0435\u0441\u043A\u043E\u0439 \u0441\u0446\u0435\u043D\u0435 \u0432\u0442\u043E\u0440\u043E\u0439 \u043F\u043E\u043B\u043E\u0432\u0438\u043D\u044B 1960-\u0445 \u0433\u043E\u0434\u043E\u0432. \u0411\u0443\u0434\u0443\u0447\u0438 \u043F\u043E \u0441\u0443\u0442\u0438 \u0434\u0436\u044D\u043C-\u0431\u044D\u043D\u0434\u043E\u043C, Quicksilver Messenger Service \u043D\u0435 \u0434\u043E\u0441\u0442\u0438\u0433\u043B\u0438 \u043A\u043E\u043C\u043C\u0435\u0440\u0447\u0435\u0441\u043A\u043E\u0433\u043E \u0443\u0441\u043F\u0435\u0445\u0430, \u043A\u043E\u0442\u043E\u0440\u044B\u0439 \u0441\u043E\u043F\u0443\u0442\u0441\u0442\u0432\u043E\u0432\u0430\u043B Jefferson Airplane \u0438 The Grateful Dead, \u043D\u043E \u0441\u0442\u0430\u043B\u0438 \u0432\u0430\u0436\u043D\u043E\u0439 \u0441\u043E\u0441\u0442\u0430\u0432\u043B\u044F\u044E\u0449\u0435\u0439 \u0447\u0430\u0441\u0442\u044C\u044E \u0434\u0432\u0438\u0436\u0435\u043D\u0438\u044F \u0438 \u0435\u0433\u043E \u043D\u043E\u0432\u0430\u0442\u043E\u0440\u0441\u043A\u0438\u043C \u0437\u0432\u0435\u043D\u043E\u043C, \u0438\u0441\u043F\u043E\u043B\u044C\u0437\u0443\u044F \u0432 \u0441\u0432\u043E\u0438\u0445 \u0438\u043C\u043F\u0440\u043E\u0432\u0438\u0437\u0430\u0446\u0438\u044F\u0445 \u044D\u043B\u0435\u043C\u0435\u043D\u0442\u044B \u0444\u043E\u043B\u043A\u0430, \u0434\u0436\u0430\u0437\u0430 \u0438 \u043A\u043B\u0430\u0441\u0441\u0438\u0447\u0435\u0441\u043A\u043E\u0439 \u043C\u0443\u0437\u044B\u043A\u0438." , "lang" : "ru" } ,
+      { "type" : "literal", "value" : "\u30AF\u30A4\u30C3\u30AF\u30B7\u30EB\u30F4\u30A1\u30FC\u30FB\u30E1\u30C3\u30BB\u30F3\u30B8\u30E3\u30FC\u30FB\u30B5\u30FC\u30F4\u30A3\u30B9\uFF08Quicksilver Messenger Service)\u306F\u30A2\u30E1\u30EA\u30AB\u306E\u30D6\u30EB\u30FC\u30B9\u3001\u30D5\u30A9\u30FC\u30AF\u3001\u30ED\u30C3\u30AF\u30FB\u30D0\u30F3\u30C9\u3002\u30B0\u30EC\u30A4\u30C8\u30D5\u30EB\u30FB\u30C7\u30C3\u30C9\u3084\u30B8\u30A7\u30D5\u30A1\u30FC\u30BD\u30F3\u30FB\u30A8\u30A2\u30D7\u30EC\u30A4\u30F3\u3001\u30D3\u30C3\u30B0\u30FB\u30D6\u30E9\u30B6\u30FC\uFF06\u30DB\u30FC\u30EB\u30C7\u30A3\u30F3\u30B0\u30FB\u30AB\u30F3\u30D1\u30CB\u30FC\u306A\u3069\u3068\u5171\u306B\u3001\u30B5\u30F3\u30D5\u30E9\u30F3\u30B7\u30B9\u30B3\u306E\u30B5\u30A4\u30B1\u30C7\u30EA\u30C3\u30AF\u30FB\u30ED\u30C3\u30AF\u306E\u30B0\u30EB\u30FC\u30D7\u3068\u3057\u3066\u77E5\u3089\u308C\u3066\u3044\u308B\u3002\u30A2\u30EB\u30D0\u30E0\u300E\u30CF\u30C3\u30D4\u30FC\u30FB\u30C8\u30EC\u30A4\u30EB\u30BA (Happy Trails)\u300F\u306F\u3001\u300E\u30ED\u30FC\u30EA\u30F3\u30B0\u30FB\u30B9\u30C8\u30FC\u30F3\u8A8C\u304C\u9078\u3076\u30AA\u30FC\u30EB\u30BF\u30A4\u30E0\u30FB\u30D9\u30B9\u30C8\u30A2\u30EB\u30D0\u30E0500\u300F\u306B\u304A\u3044\u3066189\u4F4D\u306B\u30E9\u30F3\u30AF\u30A4\u30F3\u3002 \u30AE\u30BF\u30FC\u306E\u30B8\u30E7\u30F3\u30FB\u30B7\u30DD\u30EA\u30CA\u306F\u3001\u300C\u30ED\u30FC\u30EA\u30F3\u30B0\u30FB\u30B9\u30C8\u30FC\u30F3\u306E\u9078\u3076\u6B74\u53F2\u4E0A\u6700\u3082\u5049\u5927\u306A100\u4EBA\u306E\u30AE\u30BF\u30EA\u30B9\u30C8\u300D\u306B\u304A\u3044\u30662003\u5E74\u306F\u7B2C32\u4F4D\u30012011\u5E74\u306E\u6539\u8A02\u7248\u3067\u306F\u524A\u9664\u3055\u308C\u305F\u3002" , "lang" : "ja" } ] ,
+    "http://www.w3.org/2002/07/owl#sameAs" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Quicksilver_Messenger_Service" } ,
+      { "type" : "uri", "value" : "http://id.dbpedia.org/resource/Quicksilver_Messenger_Service" } ,
+      { "type" : "uri", "value" : "http://fr.dbpedia.org/resource/Quicksilver_Messenger_Service" } ,
+      { "type" : "uri", "value" : "http://nl.dbpedia.org/resource/Quicksilver_Messenger_Service" } ,
+      { "type" : "uri", "value" : "http://pl.dbpedia.org/resource/Quicksilver_Messenger_Service" } ,
+      { "type" : "uri", "value" : "http://pt.dbpedia.org/resource/Quicksilver_Messenger_Service" } ,
+      { "type" : "uri", "value" : "http://www.wikidata.org/entity/Q1382357" } ,
+      { "type" : "uri", "value" : "http://it.dbpedia.org/resource/Quicksilver_Messenger_Service" } ,
+      { "type" : "uri", "value" : "http://ja.dbpedia.org/resource/\u30AF\u30A4\u30C3\u30AF\u30B7\u30EB\u30F4\u30A1\u30FC\u30FB\u30E1\u30C3\u30BB\u30F3\u30B8\u30E3\u30FC\u30FB\u30B5\u30FC\u30F4\u30A3\u30B9" } ,
+      { "type" : "uri", "value" : "http://de.dbpedia.org/resource/Quicksilver_Messenger_Service" } ,
+      { "type" : "uri", "value" : "http://es.dbpedia.org/resource/Quicksilver_Messenger_Service" } ,
+      { "type" : "uri", "value" : "http://yago-knowledge.org/resource/Quicksilver_Messenger_Service" } ,
+      { "type" : "uri", "value" : "http://rdf.freebase.com/ns/m.01ljr7z" } ,
+      { "type" : "uri", "value" : "http://wikidata.dbpedia.org/resource/Q1382357" } ,
+      { "type" : "uri", "value" : "http://cs.dbpedia.org/resource/Quicksilver_Messenger_Service" } ] ,
+    "http://purl.org/dc/terms/subject" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Psychedelic_rock_music_groups_from_California" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Musical_groups_from_San_Francisco" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Jam_bands" } ] ,
+    "http://xmlns.com/foaf/0.1/name" : [ { "type" : "literal", "value" : "Quicksilver Messenger Service" , "lang" : "en" } ] ,
+    "http://xmlns.com/foaf/0.1/homepage" : [ { "type" : "uri", "value" : "http://quicksilvermessengerservice.com/" } ] ,
+    "http://xmlns.com/foaf/0.1/depiction" : [ { "type" : "uri", "value" : "http://commons.wikimedia.org/wiki/Special:FilePath/Quicksilver_Messenger_Service_1970.JPG" } ] ,
+    "http://xmlns.com/foaf/0.1/isPrimaryTopicOf" : [ { "type" : "uri", "value" : "http://en.wikipedia.org/wiki/Quicksilver_Messenger_Service" } ] ,
+    "http://www.w3.org/ns/prov#wasDerivedFrom" : [ { "type" : "uri", "value" : "http://en.wikipedia.org/wiki/Quicksilver_Messenger_Service?oldid=744698227" } ] ,
+    "http://dbpedia.org/ontology/bandMember" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/David_Freiberg" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Gary_Duncan" } ] ,
+    "http://dbpedia.org/ontology/formerBandMember" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Mark_Naftalin" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/John_Cipollina" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Greg_Elmore" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Jim_Murray_(musician)" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Nicky_Hopkins" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Dino_Valenti" } ] ,
+    "http://dbpedia.org/ontology/wikiPageExternalLink" : [ { "type" : "uri", "value" : "http://quicksilvermessengerservice.com/" } ] ,
+    "http://dbpedia.org/ontology/alias" : [ { "type" : "literal", "value" : "Quicksilver, QMS" , "lang" : "en" } ] ,
+    "http://dbpedia.org/ontology/activeYearsStartYear" : [ { "type" : "literal", "value" : "1965" , "datatype" : "http://www.w3.org/2001/XMLSchema#gYear" } ] ,
+    "http://dbpedia.org/ontology/associatedBand" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/The_Brogues" } ] ,
+    "http://dbpedia.org/ontology/associatedMusicalArtist" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/The_Brogues" } ] ,
+    "http://dbpedia.org/ontology/background" : [ { "type" : "literal", "value" : "group_or_band" } ] ,
+    "http://dbpedia.org/ontology/genre" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Acid_rock" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Jam_band" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Psychedelic_rock" } ] ,
+    "http://dbpedia.org/ontology/hometown" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/San_Francisco,_California" } ] ,
+    "http://dbpedia.org/ontology/recordLabel" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Edsel_Records" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Capitol_Records" } ] ,
+    "http://dbpedia.org/property/caption" : [ { "type" : "literal", "value" : "Quicksilver Messenger Service sometime before 1970" , "datatype" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString" } ] ,
+    "http://dbpedia.org/ontology/abstract" : [ { "type" : "literal", "value" : "Quicksilver Messenger Service \u2013 ameryka\u0144ski zesp\u00F3\u0142 muzyczny graj\u0105cy psychodeliczny rock i acid rock zwi\u0105zany z ruchem hippisowskim. Grupa powsta\u0142a w 1965 w San Francisco. Zesp\u00F3\u0142 wypracowa\u0142 charakterystyczne transowe brzmienie z monotonn\u0105 perkusj\u0105 i niesko\u0144czenie improwizuj\u0105cymi gitarami, pochodami basowymi oraz mocno odrealnionymi partiami wokalnymi, jednak forma utwor\u00F3w zespo\u0142u niekiedy zbli\u017Ca\u0142a si\u0119 tak\u017Ce do klasycznie poj\u0119tych piosenek oddaj\u0105cych ducha swej epoki. Stylistyka zespo\u0142u przez wiele lat ewoluowa\u0142a. Du\u017Cy wp\u0142yw mia\u0142y na to ci\u0105g\u0142e poszukiwania artystyczne muzyk\u00F3w oraz cz\u0119ste zmiany (nawet jak na standardy grup rockowych) personalne. Najwi\u0119ksze przeboje grupy to Mona, Who Do You Love, The Fool czy Pride of a Man.Grupa cz\u0119sto wsp\u00F3\u0142pracowa\u0142a z muzykami i zespo\u0142ami takimi jak: Jefferson Airplane, Grace Slick, Paul Kantner, Grateful Dead. Urz\u0105dza\u0142a r\u00F3wnie\u017C spektakularne jam sessions." , "lang" : "pl" } ,
+      { "type" : "literal", "value" : "Quicksilver Messenger Service was \u00E9\u00E9n van de bands die optraden bij de Gathering of the Tribes in het Golden Gate Park in San Francisco in 1967. Quicksilver was een psychedelische muziekgroep, opgericht door Dino Valente (artiestennaam van Chet Powers). De andere leden waren John Cipollina, Jim Murray, David Freiberg, Greg Elmore en Gary Duncan. Hoewel Quicksilver Messenger Service al snel in de problemen kwam door vermeend bezit van drugs begon de groep in 1965 aan een tour langs de westkust van de Verenigde Staten. In 1967 kwam hun eerste contact met de platenmaatschappij Capitol Records tot stand en werden de platen Quicksilver Messenger Service en Happy Trails uitgebracht. Murray en Duncan hadden de band toen al verlaten en Nicky Hopkins was toegetreden tot Quicksilver Messenger Service. Het opstappen en toetreden van bandleden werd zo'n beetje het handelsmerk van de groep en hij viel uiteen. In 1975 en 1986 werden pogingen ondernomen om de groep nieuw leven in te blazen, maar echt succesvol waren die pogingen niet. Quicksilver Messenger Service maakte vooral muziek die recht toe en recht aan was, als begeleiding van teksten die recht uit het hart kwamen. Bij optredens lag het accent veel op improvisatie en experimenten.Het bekendste werk van de groep is ongetwijfeld Happy Trails uit 1969, een elpee die in de muziekgeschiedenisboeken is terechtgekomen als \"the finest live album ever recorded\". Ruim de helft van deze plaat, zeven nummers, is gewijd aan een QMS-versie van de Bo Diddley-klassieker Who Do You Love? De gitaren van Cipollina en Duncan en het publiek van Bill Graham's Fillmore Auditorium proberen elkaar op deze legendarische opname te overtreffen met varianten op de typische Bo Diddley-riff." , "lang" : "nl" } ,
+      { "type" : "literal", "value" : "Quicksilver Messenger Service es una banda de Rock psicod\u00E9lico formada en el a\u00F1o 1965 en la ciudad de San Francisco, EE.UU.. Alcanzan la popularidad principalmente a causa del sencillo Fresh Air, del \u00E1lbum Just for Love, el cual fue su mayor \u00E9xito, alcanzado el lugar 49 en las listas de \u00E9xito del a\u00F1o 1970." , "lang" : "es" } ,
+      { "type" : "literal", "value" : "Quicksilver Messenger Service foi uma das primeiras bandas de m\u00FAsica psicod\u00E9lica de S\u00E3o Francisco dos anos 1960, formada por Dino Valente, John Cipollina, Jim Murray, David Freiberg, Greg Elmore e Gary Duncan. A partir de 1965 o grupo entrou em intensa turn\u00EA na regi\u00E3o da costa oeste dos Estados Unidos, finalmente conseguindo um contrato com a Capitol Records em 1967 e lan\u00E7ando o \u00E1lbum Quicksilver Messenger Service. Logo em seguida Murray e Duncan deixaram a banda, e Nicky Hopkins entrou bem a tempo de completar Shady Grove, de 1970; Duncan retornou pouco tempo depois. Esta forma\u00E7\u00E3o durou por mais um ano, at\u00E9 que o grupo finalmente se separou. O Quicksilver reuniu-se em 1975 e novamente em 1986." , "lang" : "pt" } ,
+      { "type" : "literal", "value" : "\u30AF\u30A4\u30C3\u30AF\u30B7\u30EB\u30F4\u30A1\u30FC\u30FB\u30E1\u30C3\u30BB\u30F3\u30B8\u30E3\u30FC\u30FB\u30B5\u30FC\u30F4\u30A3\u30B9\uFF08Quicksilver Messenger Service)\u306F\u30A2\u30E1\u30EA\u30AB\u306E\u30D6\u30EB\u30FC\u30B9\u3001\u30D5\u30A9\u30FC\u30AF\u3001\u30ED\u30C3\u30AF\u30FB\u30D0\u30F3\u30C9\u3002\u30B0\u30EC\u30A4\u30C8\u30D5\u30EB\u30FB\u30C7\u30C3\u30C9\u3084\u30B8\u30A7\u30D5\u30A1\u30FC\u30BD\u30F3\u30FB\u30A8\u30A2\u30D7\u30EC\u30A4\u30F3\u3001\u30D3\u30C3\u30B0\u30FB\u30D6\u30E9\u30B6\u30FC\uFF06\u30DB\u30FC\u30EB\u30C7\u30A3\u30F3\u30B0\u30FB\u30AB\u30F3\u30D1\u30CB\u30FC\u306A\u3069\u3068\u5171\u306B\u3001\u30B5\u30F3\u30D5\u30E9\u30F3\u30B7\u30B9\u30B3\u306E\u30B5\u30A4\u30B1\u30C7\u30EA\u30C3\u30AF\u30FB\u30ED\u30C3\u30AF\u306E\u30B0\u30EB\u30FC\u30D7\u3068\u3057\u3066\u77E5\u3089\u308C\u3066\u3044\u308B\u3002\u30A2\u30EB\u30D0\u30E0\u300E\u30CF\u30C3\u30D4\u30FC\u30FB\u30C8\u30EC\u30A4\u30EB\u30BA (Happy Trails)\u300F\u306F\u3001\u300E\u30ED\u30FC\u30EA\u30F3\u30B0\u30FB\u30B9\u30C8\u30FC\u30F3\u8A8C\u304C\u9078\u3076\u30AA\u30FC\u30EB\u30BF\u30A4\u30E0\u30FB\u30D9\u30B9\u30C8\u30A2\u30EB\u30D0\u30E0500\u300F\u306B\u304A\u3044\u3066189\u4F4D\u306B\u30E9\u30F3\u30AF\u30A4\u30F3\u3002 \u30AE\u30BF\u30FC\u306E\u30B8\u30E7\u30F3\u30FB\u30B7\u30DD\u30EA\u30CA\u306F\u3001\u300C\u30ED\u30FC\u30EA\u30F3\u30B0\u30FB\u30B9\u30C8\u30FC\u30F3\u306E\u9078\u3076\u6B74\u53F2\u4E0A\u6700\u3082\u5049\u5927\u306A100\u4EBA\u306E\u30AE\u30BF\u30EA\u30B9\u30C8\u300D\u306B\u304A\u3044\u30662003\u5E74\u306F\u7B2C32\u4F4D\u30012011\u5E74\u306E\u6539\u8A02\u7248\u3067\u306F\u524A\u9664\u3055\u308C\u305F\u3002" , "lang" : "ja" } ,
+      { "type" : "literal", "value" : "Quicksilver Messenger Service (QMS) war eine psychedelische US-Rockband aus San Francisco in den sp\u00E4ten 1960er und den 1970er Jahren." , "lang" : "de" } ,
+      { "type" : "literal", "value" : "Quicksilver Messenger Service (\u00AB\u041C\u043E\u043B\u043D\u0438\u0435\u043D\u043E\u0441\u043D\u0430\u044F \u0441\u043B\u0443\u0436\u0431\u0430 \u0434\u043E\u0441\u0442\u0430\u0432\u043A\u0438\u00BB) \u2014 \u0430\u043C\u0435\u0440\u0438\u043A\u0430\u043D\u0441\u043A\u0430\u044F \u0440\u043E\u043A-\u0433\u0440\u0443\u043F\u043F\u0430, \u043E\u0431\u0440\u0430\u0437\u043E\u0432\u0430\u043D\u043D\u0430\u044F \u0432 \u0421\u0430\u043D-\u0424\u0440\u0430\u043D\u0446\u0438\u0441\u043A\u043E \u0432 1965 \u0433\u043E\u0434\u0443 \u0438 \u0441\u0442\u0430\u0432\u0448\u0430\u044F \u043E\u0434\u043D\u043E\u0439 \u0438\u0437 \u0432\u0435\u0434\u0443\u0449\u0438\u0445 \u043D\u0430 \u043F\u0441\u0438\u0445\u043E\u0434\u0435\u043B\u0438\u0447\u0435\u0441\u043A\u043E\u0439 \u0441\u0446\u0435\u043D\u0435 \u0432\u0442\u043E\u0440\u043E\u0439 \u043F\u043E\u043B\u043E\u0432\u0438\u043D\u044B 1960-\u0445 \u0433\u043E\u0434\u043E\u0432. \u0411\u0443\u0434\u0443\u0447\u0438 \u043F\u043E \u0441\u0443\u0442\u0438 \u0434\u0436\u044D\u043C-\u0431\u044D\u043D\u0434\u043E\u043C, Quicksilver Messenger Service \u043D\u0435 \u0434\u043E\u0441\u0442\u0438\u0433\u043B\u0438 \u043A\u043E\u043C\u043C\u0435\u0440\u0447\u0435\u0441\u043A\u043E\u0433\u043E \u0443\u0441\u043F\u0435\u0445\u0430, \u043A\u043E\u0442\u043E\u0440\u044B\u0439 \u0441\u043E\u043F\u0443\u0442\u0441\u0442\u0432\u043E\u0432\u0430\u043B Jefferson Airplane \u0438 The Grateful Dead, \u043D\u043E \u0441\u0442\u0430\u043B\u0438 \u0432\u0430\u0436\u043D\u043E\u0439 \u0441\u043E\u0441\u0442\u0430\u0432\u043B\u044F\u044E\u0449\u0435\u0439 \u0447\u0430\u0441\u0442\u044C\u044E \u0434\u0432\u0438\u0436\u0435\u043D\u0438\u044F \u0438 \u0435\u0433\u043E \u043D\u043E\u0432\u0430\u0442\u043E\u0440\u0441\u043A\u0438\u043C \u0437\u0432\u0435\u043D\u043E\u043C, \u0438\u0441\u043F\u043E\u043B\u044C\u0437\u0443\u044F \u0432 \u0441\u0432\u043E\u0438\u0445 \u0438\u043C\u043F\u0440\u043E\u0432\u0438\u0437\u0430\u0446\u0438\u044F\u0445 \u044D\u043B\u0435\u043C\u0435\u043D\u0442\u044B \u0444\u043E\u043B\u043A\u0430, \u0434\u0436\u0430\u0437\u0430 \u0438 \u043A\u043B\u0430\u0441\u0441\u0438\u0447\u0435\u0441\u043A\u043E\u0439 \u043C\u0443\u0437\u044B\u043A\u0438." , "lang" : "ru" } ,
+      { "type" : "literal", "value" : "I Quicksilver Messenger Service sono stati una gruppo rock statunitense. Sono considerati (insieme ai Grateful Dead e ai Jefferson Airplane) una delle formazioni pi\u00F9 originali e innovative del rock psichedelico di San Francisco degli anni sessanta." , "lang" : "it" } ,
+      { "type" : "literal", "value" : "Quicksilver Messenger Service (sometimes credited as simply Quicksilver) is an American psychedelic rock band formed in 1965 in San Francisco. They were most famous for their biggest hit, the single \"Fresh Air\" (from the album Just for Love), which reached #49 in 1970." , "lang" : "en" } ,
+      { "type" : "literal", "value" : "Quicksilver Messenger Service est un groupe de rock psych\u00E9d\u00E9lique am\u00E9ricain." , "lang" : "fr" } ] ,
+    "http://dbpedia.org/ontology/thumbnail" : [ { "type" : "uri", "value" : "http://commons.wikimedia.org/wiki/Special:FilePath/Quicksilver_Messenger_Service_1970.JPG?width=300" } ] ,
+    "http://dbpedia.org/ontology/wikiPageRevisionID" : [ { "type" : "literal", "value" : 744698227 , "datatype" : "http://www.w3.org/2001/XMLSchema#integer" } ] ,
+    "http://dbpedia.org/ontology/wikiPageID" : [ { "type" : "literal", "value" : 152435 , "datatype" : "http://www.w3.org/2001/XMLSchema#integer" } ] ,
+    "http://dbpedia.org/property/wordnet_type" : [ { "type" : "uri", "value" : "http://www.w3.org/2006/03/wn/wn20/instances/synset-musician-noun-1" } ] ,
+    "http://dbpedia.org/ontology/activeYearsEndYear" : [ { "type" : "literal", "value" : "1979" , "datatype" : "http://www.w3.org/2001/XMLSchema#gYear" } ] ,
+    "http://dbpedia.org/property/imageSize" : [ { "type" : "literal", "value" : 250 , "datatype" : "http://www.w3.org/2001/XMLSchema#integer" } ] ,
+    "http://purl.org/linguistics/gold/hypernym" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Band" } ] } ,
+  "http://dbpedia.org/resource/Martin_Fierro_(saxophonist)" : { "http://dbpedia.org/ontology/associatedBand" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Quicksilver_Messenger_Service" } ] ,
+    "http://dbpedia.org/ontology/associatedMusicalArtist" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Quicksilver_Messenger_Service" } ] } ,
+  "http://dbpedia.org/resource/John_Cipollina" : { "http://dbpedia.org/ontology/associatedBand" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Quicksilver_Messenger_Service" } ] ,
+    "http://dbpedia.org/ontology/associatedMusicalArtist" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Quicksilver_Messenger_Service" } ] } ,
+  "http://dbpedia.org/resource/Jefferson_Starship" : { "http://dbpedia.org/ontology/associatedBand" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Quicksilver_Messenger_Service" } ] ,
+    "http://dbpedia.org/ontology/associatedMusicalArtist" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Quicksilver_Messenger_Service" } ] } ,
+  "http://dbpedia.org/resource/David_Freiberg" : { "http://dbpedia.org/ontology/associatedBand" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Quicksilver_Messenger_Service" } ] ,
+    "http://dbpedia.org/ontology/associatedMusicalArtist" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Quicksilver_Messenger_Service" } ] } ,
+  "http://dbpedia.org/resource/Shady_Grove_(Quicksilver_Messenger_Service_album)" : { "http://dbpedia.org/ontology/artist" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Quicksilver_Messenger_Service" } ] } ,
+  "http://dbpedia.org/resource/Fillmore_(film)" : { "http://dbpedia.org/ontology/starring" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Quicksilver_Messenger_Service" } ] } ,
+  "http://dbpedia.org/resource/Quicksilver_(album)" : { "http://dbpedia.org/ontology/artist" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Quicksilver_Messenger_Service" } ] ,
+    "http://dbpedia.org/property/chronology" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Quicksilver_Messenger_Service" } ] } ,
+  "http://dbpedia.org/resource/At_the_Kabuki_Theatre" : { "http://dbpedia.org/ontology/artist" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Quicksilver_Messenger_Service" } ] } ,
+  "http://dbpedia.org/resource/Comin'_Thru" : { "http://dbpedia.org/ontology/artist" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Quicksilver_Messenger_Service" } ] ,
+    "http://dbpedia.org/property/chronology" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Quicksilver_Messenger_Service" } ] } ,
+  "http://dbpedia.org/resource/Maiden_of_the_Cancer_Moon" : { "http://dbpedia.org/ontology/artist" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Quicksilver_Messenger_Service" } ] } ,
+  "http://dbpedia.org/resource/Peace_by_Piece" : { "http://dbpedia.org/ontology/artist" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Quicksilver_Messenger_Service" } ] ,
+    "http://dbpedia.org/property/chronology" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Quicksilver_Messenger_Service" } ] } ,
+  "http://dbpedia.org/resource/Solid_Silver" : { "http://dbpedia.org/ontology/artist" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Quicksilver_Messenger_Service" } ] ,
+    "http://dbpedia.org/property/chronology" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Quicksilver_Messenger_Service" } ] } ,
+  "http://dbpedia.org/resource/Unreleased_Quicksilver_Messenger_Service_\u2013_Lost_Gold_and_Silver" : { "http://dbpedia.org/ontology/artist" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Quicksilver_Messenger_Service" } ] } ,
+  "http://dbpedia.org/resource/Who_Do_You_Love%3F_(Bo_Diddley_song)" : { "http://dbpedia.org/ontology/musicalArtist" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Quicksilver_Messenger_Service" } ] ,
+    "http://dbpedia.org/ontology/musicalBand" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Quicksilver_Messenger_Service" } ] } ,
+  "http://dbpedia.org/resource/Quicksilver_Messenger_Service_(album)" : { "http://dbpedia.org/ontology/artist" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Quicksilver_Messenger_Service" } ] } ,
+  "http://dbpedia.org/resource/Happy_Trails_(album)" : { "http://dbpedia.org/ontology/artist" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Quicksilver_Messenger_Service" } ] } ,
+  "http://dbpedia.org/resource/Chet_Powers" : { "http://dbpedia.org/ontology/associatedBand" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Quicksilver_Messenger_Service" } ] ,
+    "http://dbpedia.org/ontology/associatedMusicalArtist" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Quicksilver_Messenger_Service" } ] } ,
+  "http://dbpedia.org/resource/The_Brogues" : { "http://dbpedia.org/ontology/associatedBand" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Quicksilver_Messenger_Service" } ] ,
+    "http://dbpedia.org/ontology/associatedMusicalArtist" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Quicksilver_Messenger_Service" } ] } ,
+  "http://dbpedia.org/resource/Skip_Spence" : { "http://dbpedia.org/ontology/associatedBand" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Quicksilver_Messenger_Service" } ] ,
+    "http://dbpedia.org/ontology/associatedMusicalArtist" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Quicksilver_Messenger_Service" } ] }
+}
+;
+	var dataAuth = "http://dbpedia.org/resource/Quicksilver_Messenger_Service";
+	var dataUrl = "quicksilver_messenger_service.html";
+	var dataResourceType = "participant";
+	var dataName = "Quicksilver Messenger Service";
+ 	
+</script>
+
+
+
+
+
+<script type="text/javascript">
+
+
+	
+	
+	
+
+	$(document).ready(function($) {
+		
+		
+		padb.resource.initialize();
+			 
+		$( '.scrollable' ).
+		bind( 'mousewheel DOMMouseScroll', function ( e ) {
+			
+			if( e.originalEvent ) e = e.originalEvent;
+			
+			var delta = e.wheelDelta || -e.detail;
+			this.scrollTop += ( delta < 0 ? 1 : -1 ) * 30;
+			e.preventDefault();
+		});		 
+		
+		
+				
+		$.ajaxSetup ({
+			// Disable caching of AJAX responses
+			cache: false
+		});		
+		
+	});
+	
+
+	
+	
+	
+	
+	
+</script>
+
+
+
+
+ 
+<br />
+<div class="container"  style="position:relative;">
+	   
+      <div id="resourceLinks"></div> 
+       
+       
+       
+       
+              
+       
+           
+           
+           
+          <div class="row addSection">
+              <div class="span1 addSectionIconHolder">
+              
+                <i class="icon-user"></i>
+              
+              </div>
+          
+              <div class="span11">
+                <span>Performer</span>
+                <hr>
+                <br />
+              </div>
+        </div>
+        <div class="row">
+            <div class="span1">
+            </div>
+            <div class="span11" style="position:relative">
+                
+                
+                
+                
+               <div>
+                                       <div class="pull-right vignette">
+                            <img  src="../cache/media/quicksilver_messenger_service.jpg" />
+                            
+                        </div>
+                        
+                                           
+                <div class="pull-left" style="width:80%;">
+                     
+                     <h5 id="resourceLDName">Quicksilver Messenger Service</h5>
+                     <h5 id="resourceLDAbstract"></h5>
+                     
+                     
+                     <div id="resourceSameAs">
+                        <h5>External Data:</h5>
+                        
+                        
+                     </div>
+                
+                </div>   
+                
+                <br style="clear:both;" />
+            </div>
+            
+            
+                
+            </div>
+        </div>    
+         
+    
+    
+    
+    
+    
+    
+       <div class="row addSection">
+			<div class="span1 addSectionIconHolder">              
+                <i class="icon-asterisk"></i>
+              
+              </div>
+          
+              <div class="span11">
+                <span>Events </span><span id="resourceEventCount"></span>
+                <hr>
+              </div>
+        </div>
+    
+    
+    
+    
+    
+    
+    
+        <div class="row">
+            <div class="span1"></div>
+            <div class="span11" style="position:relative">
+                  
+                 <div class="">
+                    <div id="resourceEventsEvents" class="scrollable">
+                           <table class="table table-condensed table-hover table-striped">
+                               <thead>
+                                <tr>
+                                  <th>Date</th>
+                                  
+                                  <th>Title</th>
+                                  <th>Location</th>
+                                  <th></th>
+                                </tr>
+                              </thead>
+                              <tbody id="resourceEventsEventsRows"> 
+                              </tbody>
+                            </table>
+                     
+                    </div>
+                    
+                    <div id="resourceEventsExport">
+                    
+                    	<input  name="resourceEventsSearch" class="span3" id="resourceEventsSearch"  type="text" placeholder="Filter: names, places, dates">
+                    	<button class="btn btn-mini btn-danger" id="resourceEventsClearFilter"><i class="icon-remove">&nbsp;Clear Filter</i></button>
+                   		<button class="btn btn-mini btn-info" title="Render the currently filitered data as a network" id="resourceRenderEventNetwork"> <img src="../img/icon-network-white.png" style="height:15px; width:auto" /> Two-Mode Event Network</button>
+                   		<button class="btn btn-mini btn-info" title="Render the currently filitered data as a network" id="resourceRenderEventMap"> <i class="icon-globe"></i> Map Event Locations</button>
+                   		<button class="btn btn-mini btn-success" title="Download network as Gephi File" id="resourceDownloadEventGephi"> <img src="../img/icon-gephi.png" style="height:15px; width:auto" /> Donwload Gephi Network</button>
+
+                 
+                    </div>                 
+                </div>
+                <br style="clear:both;" />
+            </div>
+            
+            
+                
+         </div>    
+    
+     
+       <div class="row addSection">
+              <div class="span1">
+              
+                <img src="../img/social-network.png" style=" margin-left:25px; margin-bottom:10px;" />
+              
+              </div>
+          
+              <div class="span11">
+                <span>Performance Network</span> 
+                <hr>
+              </div>
+        </div>
+        
+        <div class="row">
+            <div class="span1">
+            </div>
+            <div class="span11" style="position:relative">
+                
+               	<div style="width: 100%; height:500px;" id="egoNetwork">
+            
+                
+             	</div> 
+                <div class="well pull-left well-small" id="egoNetworkControls">
+                    <span class="rangeLabels">Node Charge</span>
+                    <input type="range" id="resourceEgoNetworkCharge" min="-1000" max="100" value="-120" data-def="-700" />
+                    <br /><span class="rangeLabels">Gravity</span>
+                    <input type="range" id="resourceEgoNetworkGravity" min="0" max="1" value="0.1" step="0.01" data-def="0.3" /> 
+                    <br /><span class="rangeLabels">Edge Length</span>
+                    <input type="range" id="resourceEgoNetworkDistance" min="0" max="300" value="50" data-def="50"  />      
+                    <br /><span class="rangeLabels">Edge Strength</span>
+                    <input type="range" id="resourceEgoNetworkStrength" min="0" max="3" value="1" data-def="0.15" step="0.1"  /> 
+                    <br /><br />
+                    <button type="button" id="resourceEgoNetworkLabelsButton" class="btn btn-mini" title="Show node labels." data-toggle="button">Show Labels</button>  
+                    <button type="button" id="resourceEgoNetworkLiveButton" class="btn btn-mini" title="Show realtime network rendering" data-toggle="button">Live Rendering</button>                     
+                </div>
+                
+                <div class="well pull-left well-small egoNetworkControls span7" style="margin-left:20px;" >
+                
+                	<input  name="resourceEgoNetworkSearch" class="span3" id="resourceEgoNetworkSearch"  type="text" placeholder="Filter: names, places, dates">
+					<button class="btn btn-mini btn-danger" id="resourceEgoClearFilter"><i class="icon-remove">&nbsp;Clear Filter</i></button>
+                    <button class="btn btn-mini btn-success" title="Download network as Gephi File" id="resourceDownloadEgoGephi"> <img src="../img/icon-gephi.png" style="height:15px; width:auto" /> Donwload Gephi Network</button>
+
+                </div>
+                
+            </div>
+        </div>           
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+	
+
+	
+
+
+	
+
+
+</div>
+
+
+
+
+    <div id="resourceEventNetworkModal" class="modal container hide fade" style="min-height:500px" tabindex="-1">
+ 
+      <div class="modal-body">
+      	
+        <div id="eventNetwork" style="height:400px; width:100%">
+        
+        </div>
+      
+      </div>
+      <div class="modal-footer" style="height:20px;">
+      	
+        <div class="well pull-left well-small">
+        	<span class="rangeLabels">Node Charge</span>
+        	<input type="range" id="resourceEventNetworkCharge" min="-800" max="200" value="-120" data-def="-120" />
+            <span class="rangeLabels">Gravity</span>
+        	<input type="range" id="resourceEventNetworkGravity" min="0" max="1" value="0.1" step="0.01" data-def="0.1" /> 
+            <span class="rangeLabels">Edge Length</span>
+        	<input type="range" id="resourceEventNetworkDistance" min="0" max="300" value="50" data-def="50"  />      
+            <span class="rangeLabels">Edge Strength</span>
+        	<input type="range" id="resourceEventNetworkStrength" min="0" max="5" value="1" data-def="1" step="0.1"  />    
+            <button type="button" id="resourceEventNetworkLabelsButton" class="btn btn-mini" data-toggle="button">Show Labels</button>                     
+		</div>
+        <div class="pull-right">
+        <button type="button" data-dismiss="modal" class="btn">Close</button>
+       	</div>
+       </div>
+    </div>
+    
+    
+    
+    
+     <div id="resourceEventMapModal" class="modal container hide fade" style="min-height:500px" tabindex="-1">
+ 
+      <div class="modal-body">
+      	
+        <div id="eventMap" style="height:400px; width:100%">
+        
+        </div>
+      
+      </div>
+      <div class="modal-footer" style="height:20px;">
+      	
+        <div class="well pull-left well-small">                  
+		</div>
+        <div class="pull-right">
+        <button type="button" data-dismiss="modal" class="btn">Close</button>
+       	</div>
+       </div>
+    </div>
+
+<br /><br /><br /><br /><br /><br />
+
+<script type="text/javascript">    var _gaq = _gaq || [];   _gaq.push(['_setAccount', 'UA-10371295-7']);   _gaq.push(['_trackPageview']);    (function() {     var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);   })();  </script>
+
+</body>
+
+<!-- Mirrored from padb.net/resource/quicksilver_messenger_service by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 11 Jan 2020 22:23:01 GMT -->
+</html>

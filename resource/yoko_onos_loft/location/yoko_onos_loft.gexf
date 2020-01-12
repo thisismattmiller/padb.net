@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<gexf version="1.2" xmlns="http://www.gexf.net/1.2draft">
+ <graph mode="static" defaultedgetype="undirected">
+  <nodes>
+   <node id="20" label="Richard Maxfield"/>
+   <node id="25" label="La Monte Young"/>
+   <node id="28" label="Jackson Mac Low"/>
+   <node id="52" label="Terry Jennings"/>
+   <node id="53" label="Toshi Ichiyanagi"/>
+   <node id="54" label="Henry Flynt"/>
+   <node id="55" label="Joseph Byrd"/>
+   <node id="56" label="Simone Forti"/>
+   <node id="57" label="Robert Morris"/>
+   <node id="58" label="Dennis Lindberg"/>
+  </nodes>
+  <edges>
+   <edge source="20" target="25"/>
+   <edge source="20" target="28"/>
+   <edge source="20" target="52"/>
+   <edge source="20" target="53"/>
+   <edge source="20" target="54"/>
+   <edge source="20" target="55"/>
+   <edge source="20" target="56"/>
+   <edge source="20" target="57"/>
+   <edge source="20" target="58"/>
+   <edge source="25" target="28"/>
+   <edge source="25" target="52"/>
+   <edge source="25" target="53"/>
+   <edge source="25" target="54"/>
+   <edge source="25" target="55"/>
+   <edge source="25" target="56"/>
+   <edge source="25" target="57"/>
+   <edge source="25" target="58"/>
+   <edge source="28" target="52"/>
+   <edge source="28" target="53"/>
+   <edge source="28" target="54"/>
+   <edge source="28" target="55"/>
+   <edge source="28" target="56"/>
+   <edge source="28" target="57"/>
+   <edge source="28" target="58"/>
+   <edge source="52" target="53"/>
+   <edge source="52" target="54"/>
+   <edge source="52" target="55"/>
+   <edge source="52" target="56"/>
+   <edge source="52" target="57"/>
+   <edge source="52" target="58"/>
+   <edge source="53" target="54"/>
+   <edge source="53" target="55"/>
+   <edge source="53" target="56"/>
+   <edge source="53" target="57"/>
+   <edge source="53" target="58"/>
+   <edge source="54" target="55"/>
+   <edge source="54" target="56"/>
+   <edge source="54" target="57"/>
+   <edge source="54" target="58"/>
+   <edge source="55" target="56"/>
+   <edge source="55" target="57"/>
+   <edge source="55" target="58"/>
+   <edge source="56" target="57"/>
+   <edge source="56" target="58"/>
+   <edge source="57" target="58"/>
+  </edges>
+ </graph>
+</gexf>

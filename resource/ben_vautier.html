@@ -1,0 +1,565 @@
+<!doctype html>
+<html>
+
+<!-- Mirrored from padb.net/resource/ben_vautier by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 11 Jan 2020 22:17:07 GMT -->
+<head>
+<meta charset="UTF-8">
+<title>padb.net</title>
+
+
+<link rel="stylesheet" href="../css/bootstrap.css">
+<link rel="stylesheet" href="../css/font-awesome.css">
+<link rel="stylesheet" href="../css/site.css">
+<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+<link rel="icon" type="image/png" href="../img/favicon.png">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/bootstrap-modal.js"></script>
+<script src="../js/bootstrap-modalmanager.js"></script>
+
+<script src="../js/d3.min.js"></script>
+<script src="../js/html5slider.js"></script>
+<script src="../js/topojson.js"></script>
+<script src="../js/padb.js"></script>
+
+
+</head>
+<body>
+    
+    
+	<div style="position:relative;">        
+
+ 		<div style=" border-bottom:solid 1px #ccc;">
+        	<div class="container">
+                
+                 <div id="header">
+                 	
+                     <div class="logo"><a href="../index.html"><span>|||</span>padb</a> </div>
+                    
+                      
+						 <div id="resourceName">Ben Vautier</div>
+					 
+                 </div>
+                
+                
+        	</div>
+            
+    	</div>
+ 
+   </div>
+<script src="../js/countriesData.js"></script>
+
+<script type="text/javascript">
+	//preloaded json from the server
+
+	var dataSameAs = [
+  {
+    "uri": "http://wikidata.dbpedia.org/resource/Q4886243",
+    "numDuplicates": "79",
+    "duplicates": [
+      "http://dbpedia.org/resource/Ben_Vautier",
+      "http://dbpedia.org/resource/BEN_(singer)",
+      "http://dbpedia.org/resource/Ben_(singer)",
+      "http://dbpedia.org/resource/BEN_(singer)",
+      "http://dbpedia.org/resource/Ben_(singer)",
+      "http://dbpedia.org/resource/Benjamin_Vautier",
+      "http://dbpedia.org/resource/Ben_(Sänger)",
+      "http://dbpedia.org/resource/Ben_Vautier_(French_artist)",
+      "http://bnb.data.bl.uk/id/person/VautierBen1935-",
+      "http://d-nb.info/gnd/119232502",
+      "http://d-nb.info/gnd/122212347",
+      "http://d-nb.info/gnd/135267536",
+      "http://d-nb.info/gnd/135341140",
+      "http://d-nb.info/gnd/186866143",
+      "http://d-nb.info/gnd/119232502/about/rdf",
+      "http://d-nb.info/gnd/135267536/about/rdf",
+      "http://data.bibsys.no/data/notrbib/authorityentry/x06030557",
+      "http://data.bibsys.no/data/notrbib/authorityentry/x08009601",
+      "http://data.bnf.fr/11930264",
+      "http://datos.bne.es/resource/XX1147830",
+      "http://dbpedialite.org/things/323498#id",
+      "http://dbpedialite.org/things/4359220#id",
+      "http://dbpedialite.org/things/10748894#id",
+      "http://dbpedialite.org/things/11160305#id",
+      "http://dbtune.org/myspace/uid/70934765",
+      "http://dbtune.org/bbc/peel/artist/092f2ba9f39fbc2876e64d12cd662f72",
+      "http://dbtune.org/musicbrainz/resource/artist/2160ff18-5774-4de9-b7b3-e18baf2b081b",
+      "http://de.dbpedia.org/resource/Ben_Vautier",
+      "http://de.dbpedia.org/resource/Ben_(S\u00E4nger)",
+      "http://de.wikipedia.org/wiki/Ben_(Sänger)",
+      "http://en.wikipedia.org/wiki/Ben_(singer)",
+      "http://eo.dbpedia.org/resource/Ben_Vautier",
+      "http://es.dbpedia.org/resource/Ben_Vautier",
+      "http://fr.dbpedia.org/resource/Ben_(Benjamin_Vautier)",
+      "http://freebase.com//m/01vvd7",
+      "http://freebase.com//m/01w4lz1",
+      "http://hu.dbpedia.org/resource/Ben_Vautier",
+      "http://id.loc.gov/authorities/names/n50053138",
+      "http://isni-url.oclc.nl/isni/0000000121441452",
+      "http://it.dbpedia.org/resource/Ben_Vautier",
+      "http://mpii.de/yago/resource/Ben_Vautier",
+      "http://mpii.de/yago/resource/Ben_(singer)",
+      "http://mpii.de/yago/resource/Ben_(singer)",
+      "http://musicbrainz.org/artist/2160ff18-5774-4de9-b7b3-e18baf2b081b",
+      "http://nl.dbpedia.org/resource/Ben_Vautier",
+      "http://oc.dbpedia.org/resource/Benjamin_Vautier",
+      "http://pl.dbpedia.org/resource/Ben_Vautier",
+      "http://pl.dbpedia.org/resource/Ben_(piosenkarz)",
+      "http://rdf.freebase.com/ns/m.01vvd7",
+      "http://rdf.freebase.com/ns/m.01w4lz1",
+      "http://rdf.freebase.com/ns/m.0sbp363",
+      "http://rdf.freebase.com/ns/en.ben_1981",
+      "http://rdf.freebase.com/ns/en.ben_vautier",
+      "http://rdf.freebase.com/ns/guid.9202a8c04000641f80000000001d6987",
+      "http://rdf.freebase.com/ns/guid.9202a8c04000641f8000000003b24bc1",
+      "http://rdf.freebase.com/ns/guid.9202a8c04000641f80000000056a78cb",
+      "http://ru.dbpedia.org/resource/\u0411\u0435\u043D_(\u043F\u0435\u0432\u0435\u0446)",
+      "http://umbel.org/umbel/ne/wikipedia/Ben_Vautier",
+      "http://umbel.org/umbel/ne/wikipedia/Ben_(singer)",
+      "http://viaf.org/viaf/42714094",
+      "http://viaf.org/viaf/44307025",
+      "http://viaf.org/viaf/80071249",
+      "http://viaf.org/viaf/80120334",
+      "http://viaf.org/viaf/86879800",
+      "http://viaf.org/viaf/95162549",
+      "http://viaf.org/viaf/95752271",
+      "http://wikidata.dbpedia.org/resource/Q76990",
+      "http://wikidata.dbpedia.org/resource/Q604546",
+      "http://wikidata.dbpedia.org/resource/Q4886243",
+      "http://www.bbc.co.uk/music/artists/2160ff18-5774-4de9-b7b3-e18baf2b081b",
+      "http://www.idref.fr/077263731",
+      "http://www.idref.fr/027211118/id",
+      "http://www.imdb.com/name/nm1349094/",
+      "http://www.pro-ben.de/",
+      "http://www.wikidata.org/entity/Q76990",
+      "http://www.wikidata.org/entity/Q604546",
+      "http://yago-knowledge.org/resource/Ben_Vautier",
+      "http://yago-knowledge.org/resource/Ben_(singer)",
+      "http://yi.dbpedia.org/resource/\u05D1\u05E2\u05DF"
+    ]
+  }
+]
+;
+	var dataDbpedia = {
+  "http://dbpedia.org/resource/Vautier" : { "http://dbpedia.org/ontology/wikiPageDisambiguates" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Ben_Vautier" } ] } ,
+  "http://dbpedia.org/resource/Ben_Vautier" : { "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { "type" : "uri", "value" : "http://www.wikidata.org/entity/Q5" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Specialist110631941" } ,
+      { "type" : "uri", "value" : "http://www.w3.org/2002/07/owl#Thing" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatContemporaryArtists" } ,
+      { "type" : "uri", "value" : "http://www.wikidata.org/entity/Q483501" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/InteriorDesigner110210648" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/PhysicalEntity100001930" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/ontology/Agent" } ,
+      { "type" : "uri", "value" : "http://schema.org/Person" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Artist109812338" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Creator109614315" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Person100007846" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Object100002684" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/YagoLegalActor" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/YagoLegalActorGeo" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatLivingPeople" } ,
+      { "type" : "uri", "value" : "http://www.wikidata.org/entity/Q215627" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatFrenchArtists" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatStampDesigners" } ,
+      { "type" : "uri", "value" : "http://www.wikidata.org/entity/Q24229398" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Wikicat21st-centuryFrenchPainters" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatPeopleFromVaud" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatItalianArtists" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Wikicat20th-centuryFrenchPainters" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/CausalAgent100007347" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Whole100003553" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/LivingThing100004258" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Painter110391653" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Organism100004475" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/ontology/Person" } ,
+      { "type" : "uri", "value" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#NaturalPerson" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatPeopleFromNaples" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatFrenchMixed-mediaArtists" } ,
+      { "type" : "uri", "value" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent" } ,
+      { "type" : "uri", "value" : "http://xmlns.com/foaf/0.1/Person" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Expert109617867" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/ontology/Artist" } ] ,
+    "http://www.w3.org/2000/01/rdf-schema#label" : [ { "type" : "literal", "value" : "Ben Vautier" , "lang" : "en" } ,
+      { "type" : "literal", "value" : "Ben Vautier" , "lang" : "it" } ,
+      { "type" : "literal", "value" : "Ben Vautier" , "lang" : "de" } ,
+      { "type" : "literal", "value" : "Ben Vautier" , "lang" : "es" } ,
+      { "type" : "literal", "value" : "Ben Vautier" , "lang" : "pl" } ,
+      { "type" : "literal", "value" : "Ben Vautier" , "lang" : "nl" } ,
+      { "type" : "literal", "value" : "Ben (Benjamin Vautier)" , "lang" : "fr" } ] ,
+    "http://www.w3.org/2000/01/rdf-schema#comment" : [ { "type" : "literal", "value" : "Ben Vautier (born on July 18, 1935 in Naples, Italy), also known simply as Ben, is a French artist. Vautier lives and works in Nice, where he ran a record shop called Magazin between 1958 and 1973. He discovered Yves Klein and the Nouveau R\u00E9alisme in the 1950s, but he became quickly interested in the French dada artist Marcel Duchamp, the music of John Cage and joined the Fluxus artistic movement in Octobre 1962.In 1959, Vautier founded the journal Ben Dieu. In 1960, he had his first one-man show, Rien et tout in Laboratoire 32." , "lang" : "en" } ,
+      { "type" : "literal", "value" : "Benjam\u00EDn Vautier, m\u00E1s conocido como BEN, es un artista pl\u00E1stico. Su actividad le ha llevado a ser agitador p\u00FAblico, cr\u00EDtico de arte, poeta, fot\u00F3grafo, pintor, decorador y editor de libros. Para \u00E9l no hay vanguardia sin novedad y no hay riqueza sin multiculturalismo. Ben propugna una m\u00E1xima art\u00EDstica que resume la [espina] dorsal de su est\u00E9tica: la importancia de la idea de que todo arte debe significar un choque y ser nuevo." , "lang" : "es" } ,
+      { "type" : "literal", "value" : "Benjamin Vautier (dit Ben) n\u00E9 le 18 juillet 1935 \u00E0 Naples en Italie, est un artiste fran\u00E7ais d'origine suisse. Il acquiert la notori\u00E9t\u00E9 aupr\u00E8s du public d\u00E8s la fin des ann\u00E9es 1960, \u00E0 travers notamment ses \u00AB \u00E9critures \u00BB d\u00E9clin\u00E9es sous diverses formes. Appartenant \u00E0 l'avant-garde artistique post-moderne, Ben appartient au groupe Fluxus et est proche du Lettrisme. Il est un artiste reconnu pour ses performances, installations et \u00E9critures." , "lang" : "fr" } ,
+      { "type" : "literal", "value" : "Ben Vautier (* 18. Juli 1935 in Neapel), eher nur als Ben bekannt, eigentlich Benjamin Vautier, ist ein franz\u00F6sischer K\u00FCnstler schweizerischer Herkunft und lebt heute in Nizza. Er geh\u00F6rte in den 1960er-Jahren zu den bedeutendsten Vertretern der Fluxus-Bewegung. Vautiers k\u00FCnstlerisches Schaffen folgt im Aufbau den Ready-mades, der Objektkunst und der Komposition." , "lang" : "de" } ,
+      { "type" : "literal", "value" : "Benjamin Vautier (Napels, 18 juli 1935), ook bekend als Ben, is een Franse Fluxus-kunstenaar die vooral taal als zijn medium gebruikt." , "lang" : "nl" } ,
+      { "type" : "literal", "value" : "Rodzina Bena Vautier cz\u0119sto si\u0119 przeprowadza\u0142a pomi\u0119dzy wieloma krajami, a\u017C ostatecznie osiad\u0142a w 1949 w Nicei. Vautier zaczyna\u0142 od osobistego stylu wywodz\u0105cego si\u0119 od dadaizmu. Inspirowany by\u0142 przez takich artyst\u00F3w, jak Yves Klein, Marcel Duchamp i artyst\u00F3w z kr\u0119gu nowego realizmu. W roku 1959 za\u0142o\u017Cy\u0142 czasopismo Ben Dieu. W nast\u0119pnym roku na pierwszym pi\u0119trze jego sklepu (tzw. Laboratoire 32) odby\u0142a si\u0119 wystawa pod nazw\u0105 \u201ERien et tout\u201C (pol.: Nic i wszystko)." , "lang" : "pl" } ] ,
+    "http://www.w3.org/2002/07/owl#sameAs" : [ { "type" : "uri", "value" : "http://es.dbpedia.org/resource/Ben_Vautier" } ,
+      { "type" : "uri", "value" : "http://www.wikidata.org/entity/Q604546" } ,
+      { "type" : "uri", "value" : "http://de.dbpedia.org/resource/Ben_Vautier" } ,
+      { "type" : "uri", "value" : "http://fr.dbpedia.org/resource/Ben_(Benjamin_Vautier)" } ,
+      { "type" : "uri", "value" : "http://yago-knowledge.org/resource/Ben_Vautier" } ,
+      { "type" : "uri", "value" : "http://nl.dbpedia.org/resource/Ben_Vautier" } ,
+      { "type" : "uri", "value" : "http://it.dbpedia.org/resource/Ben_Vautier" } ,
+      { "type" : "uri", "value" : "http://viaf.org/viaf/95162549" } ,
+      { "type" : "uri", "value" : "http://pl.dbpedia.org/resource/Ben_Vautier" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Ben_Vautier" } ,
+      { "type" : "uri", "value" : "http://d-nb.info/gnd/119232502" } ,
+      { "type" : "uri", "value" : "http://wikidata.dbpedia.org/resource/Q604546" } ,
+      { "type" : "uri", "value" : "http://eu.dbpedia.org/resource/Ben_Vautier" } ,
+      { "type" : "uri", "value" : "http://rdf.freebase.com/ns/m.01vvd7" } ] ,
+    "http://purl.org/dc/terms/subject" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:21st-century_French_painters" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:French_mixed-media_artists" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:People_from_Naples" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:1935_births" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Fluxus" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:20th-century_French_painters" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:French_male_painters" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:French_artists" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:French_contemporary_artists" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Living_people" } ] ,
+    "http://xmlns.com/foaf/0.1/name" : [ { "type" : "literal", "value" : "Ben Vautier" , "lang" : "en" } ] ,
+    "http://xmlns.com/foaf/0.1/depiction" : [ { "type" : "uri", "value" : "http://commons.wikimedia.org/wiki/Special:FilePath/BenVautier2013.jpg" } ] ,
+    "http://purl.org/dc/terms/description" : [ { "type" : "literal", "value" : "French artist" , "lang" : "en" } ] ,
+    "http://xmlns.com/foaf/0.1/givenName" : [ { "type" : "literal", "value" : "Ben" , "lang" : "en" } ] ,
+    "http://xmlns.com/foaf/0.1/gender" : [ { "type" : "literal", "value" : "male" , "lang" : "en" } ] ,
+    "http://xmlns.com/foaf/0.1/isPrimaryTopicOf" : [ { "type" : "uri", "value" : "http://en.wikipedia.org/wiki/Ben_Vautier" } ] ,
+    "http://xmlns.com/foaf/0.1/surname" : [ { "type" : "literal", "value" : "Vautier" , "lang" : "en" } ] ,
+    "http://dbpedia.org/property/bgcolour" : [ { "type" : "literal", "value" : "white" , "datatype" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString" } ] ,
+    "http://www.w3.org/ns/prov#wasDerivedFrom" : [ { "type" : "uri", "value" : "http://en.wikipedia.org/wiki/Ben_Vautier?oldid=743568875" } ] ,
+    "http://dbpedia.org/ontology/wikiPageExternalLink" : [ { "type" : "uri", "value" : "http://www.ben-vautier.com/" } ] ,
+    "http://dbpedia.org/property/caption" : [ { "type" : "literal", "value" : "Benjamin Vautier in 2013" , "datatype" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString" } ] ,
+    "http://dbpedia.org/ontology/birthName" : [ { "type" : "literal", "value" : "Benjamin Vautier" , "lang" : "en" } ] ,
+    "http://dbpedia.org/property/imagesize" : [ { "type" : "literal", "value" : 150 , "datatype" : "http://www.w3.org/2001/XMLSchema#integer" } ] ,
+    "http://dbpedia.org/ontology/influencedBy" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Jacques_Villegl\u00E9" } ] ,
+    "http://dbpedia.org/ontology/movement" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Zero_(art)" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Fluxus" } ] ,
+    "http://dbpedia.org/property/signature" : [ { "type" : "literal", "value" : "Ben Vautier .jpg" , "datatype" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString" } ] ,
+    "http://dbpedia.org/ontology/abstract" : [ { "type" : "literal", "value" : "Benjam\u00EDn Vautier, m\u00E1s conocido como BEN, es un artista pl\u00E1stico. Su actividad le ha llevado a ser agitador p\u00FAblico, cr\u00EDtico de arte, poeta, fot\u00F3grafo, pintor, decorador y editor de libros. Para \u00E9l no hay vanguardia sin novedad y no hay riqueza sin multiculturalismo. Ben propugna una m\u00E1xima art\u00EDstica que resume la [espina] dorsal de su est\u00E9tica: la importancia de la idea de que todo arte debe significar un choque y ser nuevo." , "lang" : "es" } ,
+      { "type" : "literal", "value" : "Ben Vautier (born on July 18, 1935 in Naples, Italy), also known simply as Ben, is a French artist. Vautier lives and works in Nice, where he ran a record shop called Magazin between 1958 and 1973. He discovered Yves Klein and the Nouveau R\u00E9alisme in the 1950s, but he became quickly interested in the French dada artist Marcel Duchamp, the music of John Cage and joined the Fluxus artistic movement in Octobre 1962.In 1959, Vautier founded the journal Ben Dieu. In 1960, he had his first one-man show, Rien et tout in Laboratoire 32. He is also active in Mail-Art and is mostly known for his text-based paintings or \u00AB \u00E9critures \u00BB begun in 1953 with his work \"Il faut manger. Il faut dormir\". Another example of the latter is \"L'art est inutile. Rentrez chez vous\" (Art is Useless, Go Home). He has long defended the rights of minorities in all countries, and he has been influenced by the theories of Fran\u00E7ois Fontan about ethnism. For example, he has defended the Occitan language (southern France). In 1981 he coined the name of the French art movement of the 1980s Figuration Libre (Free figuration)." , "lang" : "en" } ,
+      { "type" : "literal", "value" : "Benjamin Vautier (Napels, 18 juli 1935), ook bekend als Ben, is een Franse Fluxus-kunstenaar die vooral taal als zijn medium gebruikt." , "lang" : "nl" } ,
+      { "type" : "literal", "value" : "Rodzina Bena Vautier cz\u0119sto si\u0119 przeprowadza\u0142a pomi\u0119dzy wieloma krajami, a\u017C ostatecznie osiad\u0142a w 1949 w Nicei. Vautier zaczyna\u0142 od osobistego stylu wywodz\u0105cego si\u0119 od dadaizmu. Inspirowany by\u0142 przez takich artyst\u00F3w, jak Yves Klein, Marcel Duchamp i artyst\u00F3w z kr\u0119gu nowego realizmu. Pomi\u0119dzy latami 1958 a 1973 prowadzi\u0142 sklep z p\u0142ytami w Nicei \u201EMagasin\u201C. Sklep wzbudza\u0142 spore zainteresowanie przez swoj\u0105 fasad\u0119 i wyposa\u017Cenie wn\u0119trza, w kt\u00F3rych kszta\u0142towaniu Ben Vautier przejawia\u0142 sw\u00F3j typowy styl. Fasada by\u0142a pokrywana przez lata licznymi r\u00F3\u017Cnorakimi obiektami. Ca\u0142o\u015B\u0107 uzupe\u0142nia\u0142 charakterystycznymi odr\u0119cznymi kommentarzami w jaskrawych kolorach. Fasada jego sklepu by\u0142a w 1994 wystawiona w Centre Georges Pompidou. W roku 1959 za\u0142o\u017Cy\u0142 czasopismo Ben Dieu. W nast\u0119pnym roku na pierwszym pi\u0119trze jego sklepu (tzw. Laboratoire 32) odby\u0142a si\u0119 wystawa pod nazw\u0105 \u201ERien et tout\u201C (pol.: Nic i wszystko). Ben Vautier nale\u017Ca\u0142 poza Al Hansenem, Johnem Cage'em i innymi w latach 1962 do 1970 do wiod\u0105cych cz\u0142onk\u00F3w ruchu fluxus. Z tego powodu bywa\u0142 na mi\u0119dzynarodowych festiwalach tego ruchu i da\u0142 si\u0119 pozna\u0107 przez swoje wyst\u0119py. Przez to Nicea sta\u0142a si\u0119 jednym z centr\u00F3w ruchu fluxus we Francji. Ben Vautier sta\u0142 si\u0119 mentorem m\u0142odego ruchu w sztuce Figuration Libre, kt\u00F3ry w 1981 w artykule dla czasopisma Flash Art otrzymuje t\u0119 nazw\u0119 od niego. Bra\u0142 udzia\u0142 w wielu wystawach w kraju i za granic\u0105, zdobywaj\u0105c sukcesy artystyczne." , "lang" : "pl" } ,
+      { "type" : "literal", "value" : "Benjamin Vautier (dit Ben) n\u00E9 le 18 juillet 1935 \u00E0 Naples en Italie, est un artiste fran\u00E7ais d'origine suisse. Il acquiert la notori\u00E9t\u00E9 aupr\u00E8s du public d\u00E8s la fin des ann\u00E9es 1960, \u00E0 travers notamment ses \u00AB \u00E9critures \u00BB d\u00E9clin\u00E9es sous diverses formes. Appartenant \u00E0 l'avant-garde artistique post-moderne, Ben appartient au groupe Fluxus et est proche du Lettrisme. Il est un artiste reconnu pour ses performances, installations et \u00E9critures." , "lang" : "fr" } ,
+      { "type" : "literal", "value" : "Ben Vautier (* 18. Juli 1935 in Neapel), eher nur als Ben bekannt, eigentlich Benjamin Vautier, ist ein franz\u00F6sischer K\u00FCnstler schweizerischer Herkunft und lebt heute in Nizza. Er geh\u00F6rte in den 1960er-Jahren zu den bedeutendsten Vertretern der Fluxus-Bewegung. Vautiers k\u00FCnstlerisches Schaffen folgt im Aufbau den Ready-mades, der Objektkunst und der Komposition." , "lang" : "de" } ] ,
+    "http://dbpedia.org/ontology/thumbnail" : [ { "type" : "uri", "value" : "http://commons.wikimedia.org/wiki/Special:FilePath/BenVautier2013.jpg?width=300" } ] ,
+    "http://dbpedia.org/ontology/birthDate" : [ { "type" : "literal", "value" : "1935-7-18" , "datatype" : "http://www.w3.org/2001/XMLSchema#date" } ] ,
+    "http://dbpedia.org/ontology/wikiPageRevisionID" : [ { "type" : "literal", "value" : 743568875 , "datatype" : "http://www.w3.org/2001/XMLSchema#integer" } ] ,
+    "http://dbpedia.org/ontology/birthPlace" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Naples" } ] ,
+    "http://dbpedia.org/ontology/wikiPageID" : [ { "type" : "literal", "value" : 323498 , "datatype" : "http://www.w3.org/2001/XMLSchema#integer" } ] ,
+    "http://dbpedia.org/ontology/nationality" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/France" } ] ,
+    "http://dbpedia.org/ontology/country" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/France" } ] ,
+    "http://purl.org/linguistics/gold/hypernym" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Lives" } ] ,
+    "http://dbpedia.org/ontology/field" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Performance_art" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Lettrism" } ] } ,
+  "http://en.wikipedia.org/wiki/Ben_Vautier" : { "http://xmlns.com/foaf/0.1/primaryTopic" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Ben_Vautier" } ] } ,
+  "http://dbpedia.org/resource/Ben_Vautier_(French_artist)" : { "http://dbpedia.org/ontology/wikiPageRedirects" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Ben_Vautier" } ] }
+}
+;
+	var dataAuth = "http://dbpedia.org/resource/Ben_Vautier";
+	var dataUrl = "ben_vautier.html";
+	var dataResourceType = "participant";
+	var dataName = "Ben Vautier";
+ 	
+</script>
+
+
+
+
+
+<script type="text/javascript">
+
+
+	
+	
+	
+
+	$(document).ready(function($) {
+		
+		
+		padb.resource.initialize();
+			 
+		$( '.scrollable' ).
+		bind( 'mousewheel DOMMouseScroll', function ( e ) {
+			
+			if( e.originalEvent ) e = e.originalEvent;
+			
+			var delta = e.wheelDelta || -e.detail;
+			this.scrollTop += ( delta < 0 ? 1 : -1 ) * 30;
+			e.preventDefault();
+		});		 
+		
+		
+				
+		$.ajaxSetup ({
+			// Disable caching of AJAX responses
+			cache: false
+		});		
+		
+	});
+	
+
+	
+	
+	
+	
+	
+</script>
+
+
+
+
+ 
+<br />
+<div class="container"  style="position:relative;">
+	   
+      <div id="resourceLinks"></div> 
+       
+       
+       
+       
+              
+       
+           
+           
+           
+          <div class="row addSection">
+              <div class="span1 addSectionIconHolder">
+              
+                <i class="icon-user"></i>
+              
+              </div>
+          
+              <div class="span11">
+                <span>Performer</span>
+                <hr>
+                <br />
+              </div>
+        </div>
+        <div class="row">
+            <div class="span1">
+            </div>
+            <div class="span11" style="position:relative">
+                
+                
+                
+                
+               <div>
+                                       <div class="pull-right vignette">
+                            <img  src="../cache/media/ben_vautier.jpg" />
+                            
+                        </div>
+                        
+                                           
+                <div class="pull-left" style="width:80%;">
+                     
+                     <h5 id="resourceLDName">Ben Vautier</h5>
+                     <h5 id="resourceLDAbstract"></h5>
+                     
+                     
+                     <div id="resourceSameAs">
+                        <h5>External Data:</h5>
+                        
+                        
+                     </div>
+                
+                </div>   
+                
+                <br style="clear:both;" />
+            </div>
+            
+            
+                
+            </div>
+        </div>    
+         
+    
+    
+    
+    
+    
+    
+       <div class="row addSection">
+			<div class="span1 addSectionIconHolder">              
+                <i class="icon-asterisk"></i>
+              
+              </div>
+          
+              <div class="span11">
+                <span>Events </span><span id="resourceEventCount"></span>
+                <hr>
+              </div>
+        </div>
+    
+    
+    
+    
+    
+    
+    
+        <div class="row">
+            <div class="span1"></div>
+            <div class="span11" style="position:relative">
+                  
+                 <div class="">
+                    <div id="resourceEventsEvents" class="scrollable">
+                           <table class="table table-condensed table-hover table-striped">
+                               <thead>
+                                <tr>
+                                  <th>Date</th>
+                                  
+                                  <th>Title</th>
+                                  <th>Location</th>
+                                  <th></th>
+                                </tr>
+                              </thead>
+                              <tbody id="resourceEventsEventsRows"> 
+                              </tbody>
+                            </table>
+                     
+                    </div>
+                    
+                    <div id="resourceEventsExport">
+                    
+                    	<input  name="resourceEventsSearch" class="span3" id="resourceEventsSearch"  type="text" placeholder="Filter: names, places, dates">
+                    	<button class="btn btn-mini btn-danger" id="resourceEventsClearFilter"><i class="icon-remove">&nbsp;Clear Filter</i></button>
+                   		<button class="btn btn-mini btn-info" title="Render the currently filitered data as a network" id="resourceRenderEventNetwork"> <img src="../img/icon-network-white.png" style="height:15px; width:auto" /> Two-Mode Event Network</button>
+                   		<button class="btn btn-mini btn-info" title="Render the currently filitered data as a network" id="resourceRenderEventMap"> <i class="icon-globe"></i> Map Event Locations</button>
+                   		<button class="btn btn-mini btn-success" title="Download network as Gephi File" id="resourceDownloadEventGephi"> <img src="../img/icon-gephi.png" style="height:15px; width:auto" /> Donwload Gephi Network</button>
+
+                 
+                    </div>                 
+                </div>
+                <br style="clear:both;" />
+            </div>
+            
+            
+                
+         </div>    
+    
+     
+       <div class="row addSection">
+              <div class="span1">
+              
+                <img src="../img/social-network.png" style=" margin-left:25px; margin-bottom:10px;" />
+              
+              </div>
+          
+              <div class="span11">
+                <span>Performance Network</span> 
+                <hr>
+              </div>
+        </div>
+        
+        <div class="row">
+            <div class="span1">
+            </div>
+            <div class="span11" style="position:relative">
+                
+               	<div style="width: 100%; height:500px;" id="egoNetwork">
+            
+                
+             	</div> 
+                <div class="well pull-left well-small" id="egoNetworkControls">
+                    <span class="rangeLabels">Node Charge</span>
+                    <input type="range" id="resourceEgoNetworkCharge" min="-1000" max="100" value="-120" data-def="-700" />
+                    <br /><span class="rangeLabels">Gravity</span>
+                    <input type="range" id="resourceEgoNetworkGravity" min="0" max="1" value="0.1" step="0.01" data-def="0.3" /> 
+                    <br /><span class="rangeLabels">Edge Length</span>
+                    <input type="range" id="resourceEgoNetworkDistance" min="0" max="300" value="50" data-def="50"  />      
+                    <br /><span class="rangeLabels">Edge Strength</span>
+                    <input type="range" id="resourceEgoNetworkStrength" min="0" max="3" value="1" data-def="0.15" step="0.1"  /> 
+                    <br /><br />
+                    <button type="button" id="resourceEgoNetworkLabelsButton" class="btn btn-mini" title="Show node labels." data-toggle="button">Show Labels</button>  
+                    <button type="button" id="resourceEgoNetworkLiveButton" class="btn btn-mini" title="Show realtime network rendering" data-toggle="button">Live Rendering</button>                     
+                </div>
+                
+                <div class="well pull-left well-small egoNetworkControls span7" style="margin-left:20px;" >
+                
+                	<input  name="resourceEgoNetworkSearch" class="span3" id="resourceEgoNetworkSearch"  type="text" placeholder="Filter: names, places, dates">
+					<button class="btn btn-mini btn-danger" id="resourceEgoClearFilter"><i class="icon-remove">&nbsp;Clear Filter</i></button>
+                    <button class="btn btn-mini btn-success" title="Download network as Gephi File" id="resourceDownloadEgoGephi"> <img src="../img/icon-gephi.png" style="height:15px; width:auto" /> Donwload Gephi Network</button>
+
+                </div>
+                
+            </div>
+        </div>           
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+	
+
+	
+
+
+	
+
+
+</div>
+
+
+
+
+    <div id="resourceEventNetworkModal" class="modal container hide fade" style="min-height:500px" tabindex="-1">
+ 
+      <div class="modal-body">
+      	
+        <div id="eventNetwork" style="height:400px; width:100%">
+        
+        </div>
+      
+      </div>
+      <div class="modal-footer" style="height:20px;">
+      	
+        <div class="well pull-left well-small">
+        	<span class="rangeLabels">Node Charge</span>
+        	<input type="range" id="resourceEventNetworkCharge" min="-800" max="200" value="-120" data-def="-120" />
+            <span class="rangeLabels">Gravity</span>
+        	<input type="range" id="resourceEventNetworkGravity" min="0" max="1" value="0.1" step="0.01" data-def="0.1" /> 
+            <span class="rangeLabels">Edge Length</span>
+        	<input type="range" id="resourceEventNetworkDistance" min="0" max="300" value="50" data-def="50"  />      
+            <span class="rangeLabels">Edge Strength</span>
+        	<input type="range" id="resourceEventNetworkStrength" min="0" max="5" value="1" data-def="1" step="0.1"  />    
+            <button type="button" id="resourceEventNetworkLabelsButton" class="btn btn-mini" data-toggle="button">Show Labels</button>                     
+		</div>
+        <div class="pull-right">
+        <button type="button" data-dismiss="modal" class="btn">Close</button>
+       	</div>
+       </div>
+    </div>
+    
+    
+    
+    
+     <div id="resourceEventMapModal" class="modal container hide fade" style="min-height:500px" tabindex="-1">
+ 
+      <div class="modal-body">
+      	
+        <div id="eventMap" style="height:400px; width:100%">
+        
+        </div>
+      
+      </div>
+      <div class="modal-footer" style="height:20px;">
+      	
+        <div class="well pull-left well-small">                  
+		</div>
+        <div class="pull-right">
+        <button type="button" data-dismiss="modal" class="btn">Close</button>
+       	</div>
+       </div>
+    </div>
+
+<br /><br /><br /><br /><br /><br />
+
+<script type="text/javascript">    var _gaq = _gaq || [];   _gaq.push(['_setAccount', 'UA-10371295-7']);   _gaq.push(['_trackPageview']);    (function() {     var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);   })();  </script>
+
+</body>
+
+<!-- Mirrored from padb.net/resource/ben_vautier by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 11 Jan 2020 22:17:09 GMT -->
+</html>

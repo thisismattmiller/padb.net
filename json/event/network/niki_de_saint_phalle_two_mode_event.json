@@ -1,0 +1,1 @@
+{"nodes": [{"name": "Niki de St Phalle", "type": "event", "year": "1961", "id": 0, "x": 100, "y": 100}, {"name": "Niki de Saint Phalle", "type": "person", "id": 1, "x": 100, "y": 100}], "edges": [{"source": 1, "target": 0, "value": 1}]}

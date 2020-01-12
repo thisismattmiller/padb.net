@@ -1,0 +1,114 @@
+<?xml version="1.0"?>
+<gexf version="1.2" xmlns="http://www.gexf.net/1.2draft">
+ <graph mode="static" defaultedgetype="undirected">
+  <nodes>
+   <node id="55" label="Joseph Byrd"/>
+   <node id="70" label="Earle Brown"/>
+   <node id="91" label="Philip Corner"/>
+   <node id="95" label="Yvonne Rainer"/>
+   <node id="196" label="S Baron"/>
+   <node id="197" label="Gilbert Kalish"/>
+   <node id="198" label="Charlotte Moorman"/>
+   <node id="199" label="F Mills"/>
+   <node id="200" label="Max Neuhaus"/>
+   <node id="201" label="S Rhodes"/>
+   <node id="202" label="J Schor"/>
+   <node id="203" label="S Walden"/>
+   <node id="204" label="Paul Zukofsky"/>
+   <node id="205" label="N Zumbro"/>
+  </nodes>
+  <edges>
+   <edge source="55" target="70"/>
+   <edge source="55" target="91"/>
+   <edge source="55" target="95"/>
+   <edge source="55" target="196"/>
+   <edge source="55" target="197"/>
+   <edge source="55" target="198"/>
+   <edge source="55" target="199"/>
+   <edge source="55" target="200"/>
+   <edge source="55" target="201"/>
+   <edge source="55" target="202"/>
+   <edge source="55" target="203"/>
+   <edge source="55" target="204"/>
+   <edge source="55" target="205"/>
+   <edge source="70" target="91"/>
+   <edge source="70" target="95"/>
+   <edge source="70" target="196"/>
+   <edge source="70" target="197"/>
+   <edge source="70" target="198"/>
+   <edge source="70" target="199"/>
+   <edge source="70" target="200"/>
+   <edge source="70" target="201"/>
+   <edge source="70" target="202"/>
+   <edge source="70" target="203"/>
+   <edge source="70" target="204"/>
+   <edge source="70" target="205"/>
+   <edge source="91" target="95"/>
+   <edge source="91" target="196"/>
+   <edge source="91" target="197"/>
+   <edge source="91" target="198"/>
+   <edge source="91" target="199"/>
+   <edge source="91" target="200"/>
+   <edge source="91" target="201"/>
+   <edge source="91" target="202"/>
+   <edge source="91" target="203"/>
+   <edge source="91" target="204"/>
+   <edge source="91" target="205"/>
+   <edge source="95" target="196"/>
+   <edge source="95" target="197"/>
+   <edge source="95" target="198"/>
+   <edge source="95" target="199"/>
+   <edge source="95" target="200"/>
+   <edge source="95" target="201"/>
+   <edge source="95" target="202"/>
+   <edge source="95" target="203"/>
+   <edge source="95" target="204"/>
+   <edge source="95" target="205"/>
+   <edge source="196" target="197"/>
+   <edge source="196" target="198"/>
+   <edge source="196" target="199"/>
+   <edge source="196" target="200"/>
+   <edge source="196" target="201"/>
+   <edge source="196" target="202"/>
+   <edge source="196" target="203"/>
+   <edge source="196" target="204"/>
+   <edge source="196" target="205"/>
+   <edge source="197" target="198"/>
+   <edge source="197" target="199"/>
+   <edge source="197" target="200"/>
+   <edge source="197" target="201"/>
+   <edge source="197" target="202"/>
+   <edge source="197" target="203"/>
+   <edge source="197" target="204"/>
+   <edge source="197" target="205"/>
+   <edge source="198" target="199"/>
+   <edge source="198" target="200"/>
+   <edge source="198" target="201"/>
+   <edge source="198" target="202"/>
+   <edge source="198" target="203"/>
+   <edge source="198" target="204"/>
+   <edge source="198" target="205"/>
+   <edge source="199" target="200"/>
+   <edge source="199" target="201"/>
+   <edge source="199" target="202"/>
+   <edge source="199" target="203"/>
+   <edge source="199" target="204"/>
+   <edge source="199" target="205"/>
+   <edge source="200" target="201"/>
+   <edge source="200" target="202"/>
+   <edge source="200" target="203"/>
+   <edge source="200" target="204"/>
+   <edge source="200" target="205"/>
+   <edge source="201" target="202"/>
+   <edge source="201" target="203"/>
+   <edge source="201" target="204"/>
+   <edge source="201" target="205"/>
+   <edge source="202" target="203"/>
+   <edge source="202" target="204"/>
+   <edge source="202" target="205"/>
+   <edge source="203" target="204"/>
+   <edge source="203" target="205"/>
+   <edge source="204" target="205"/>
+  </edges>
+ </graph>
+</gexf>

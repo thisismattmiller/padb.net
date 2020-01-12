@@ -1,0 +1,549 @@
+<!doctype html>
+<html>
+
+<!-- Mirrored from padb.net/resource/per_kirkeby by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 11 Jan 2020 22:23:18 GMT -->
+<head>
+<meta charset="UTF-8">
+<title>padb.net</title>
+
+
+<link rel="stylesheet" href="../css/bootstrap.css">
+<link rel="stylesheet" href="../css/font-awesome.css">
+<link rel="stylesheet" href="../css/site.css">
+<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+<link rel="icon" type="image/png" href="../img/favicon.png">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/bootstrap-modal.js"></script>
+<script src="../js/bootstrap-modalmanager.js"></script>
+
+<script src="../js/d3.min.js"></script>
+<script src="../js/html5slider.js"></script>
+<script src="../js/topojson.js"></script>
+<script src="../js/padb.js"></script>
+
+
+</head>
+<body>
+    
+    
+	<div style="position:relative;">        
+
+ 		<div style=" border-bottom:solid 1px #ccc;">
+        	<div class="container">
+                
+                 <div id="header">
+                 	
+                     <div class="logo"><a href="../index.html"><span>|||</span>padb</a> </div>
+                    
+                      
+						 <div id="resourceName">Per Kirkeby</div>
+					 
+                 </div>
+                
+                
+        	</div>
+            
+    	</div>
+ 
+   </div>
+<script src="../js/countriesData.js"></script>
+
+<script type="text/javascript">
+	//preloaded json from the server
+
+	var dataSameAs = [
+  {
+    "uri": "http://wikidata.dbpedia.org/resource/Q467462",
+    "numDuplicates": "34",
+    "duplicates": [
+      "http://dbpedia.org/resource/Per_Kirkeby",
+      "http://bnb.data.bl.uk/id/person/KirkebyPer",
+      "http://ca.dbpedia.org/resource/Per_Kirkeby",
+      "http://d-nb.info/gnd/118562452",
+      "http://d-nb.info/gnd/118562452/about/rdf",
+      "http://da.dbpedia.org/resource/Per_Kirkeby",
+      "http://dbpedialite.org/things/2561320#id",
+      "http://de.dbpedia.org/resource/Per_Kirkeby",
+      "http://eo.dbpedia.org/resource/Per_Kirkeby",
+      "http://es.dbpedia.org/resource/Per_Kirkeby",
+      "http://eu.dbpedia.org/resource/Per_Kirkeby",
+      "http://fi.dbpedia.org/resource/Per_Kirkeby",
+      "http://fr.dbpedia.org/resource/Per_Kirkeby",
+      "http://freebase.com//m/07n4dj",
+      "http://id.loc.gov/authorities/names/n50000722",
+      "http://it.dbpedia.org/resource/Per_Kirkeby",
+      "http://libris.kb.se/resource/auth/193601",
+      "http://mpii.de/yago/resource/Per_Kirkeby",
+      "http://nl.dbpedia.org/resource/Per_Kirkeby",
+      "http://no.dbpedia.org/resource/Per_Kirkeby",
+      "http://pt.dbpedia.org/resource/Per_Kirkeby",
+      "http://rdf.freebase.com/ns/m.07n4dj",
+      "http://rdf.freebase.com/ns/en.per_kirkeby",
+      "http://rdf.freebase.com/ns/guid.9202a8c04000641f80000000007a1190",
+      "http://ru.dbpedia.org/resource/\u041A\u0438\u0440\u043A\u0435\u0431\u0438,_\u041F\u0435\u0440",
+      "http://sv.dbpedia.org/resource/Per_Kirkeby",
+      "http://umbel.org/umbel/ne/wikipedia/Per_Kirkeby",
+      "http://viaf.org/viaf/22187",
+      "http://viaf.org/viaf/95995444",
+      "http://viaf.org/viaf/161607157",
+      "http://viaf.org/viaf/199195105",
+      "http://wikidata.dbpedia.org/resource/Q467462",
+      "http://www.wikidata.org/entity/Q467462",
+      "http://yago-knowledge.org/resource/Per_Kirkeby"
+    ]
+  }
+]
+;
+	var dataDbpedia = {
+  "http://dbpedia.org/resource/Kirkeby" : { "http://dbpedia.org/ontology/wikiPageDisambiguates" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Per_Kirkeby" } ] } ,
+  "http://en.wikipedia.org/wiki/Per_Kirkeby" : { "http://xmlns.com/foaf/0.1/primaryTopic" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Per_Kirkeby" } ] } ,
+  "http://dbpedia.org/resource/Per_Kirkeby" : { "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatPeopleFromCopenhagen" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Watercolorist110770545" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatDanishFilmDirectors" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatAbstractPainters" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Wikicat20th-centuryDanishPainters" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Wikicat20th-centuryPainters" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatLivingPeople" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Wikicat21st-centuryPainters" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Abstractionist109758424" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatAbstractSculptors" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Sculptor110566072" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatAbstractArtists" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatDanishSculptors" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatDanishWatercolourists" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Aristocrat109807754" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Artist109812338" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Leader109623038" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatDanishGeologists" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Geologist110127689" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Wikicat20th-centurySculptors" } ,
+      { "type" : "uri", "value" : "http://www.w3.org/2002/07/owl#Thing" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Wikicat21st-centurySculptors" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Creator109614315" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Producer110480018" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Painter110391653" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/FilmDirector110088200" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/FilmMaker110088390" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatModernPainters" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/MaleAristocrat110285135" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Knight110238375" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Whole100003553" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatDanishPainters" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/LivingThing100004258" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/CausalAgent100007347" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatContemporaryArtists" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Wikicat21st-centuryDanishPainters" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatPopArtists" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Organism100004475" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/ontology/Person" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Scientist110560637" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/PhysicalEntity100001930" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/YagoLegalActor" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/YagoLegalActorGeo" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatContemporaryPainters" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatKnightsOfTheOrderOfTheDannebrog" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Person100007846" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Object100002684" } ] ,
+    "http://www.w3.org/2000/01/rdf-schema#label" : [ { "type" : "literal", "value" : "Per Kirkeby" , "lang" : "es" } ,
+      { "type" : "literal", "value" : "Per Kirkeby" , "lang" : "pt" } ,
+      { "type" : "literal", "value" : "Per Kirkeby" , "lang" : "en" } ,
+      { "type" : "literal", "value" : "Per Kirkeby" , "lang" : "de" } ,
+      { "type" : "literal", "value" : "Per Kirkeby" , "lang" : "it" } ,
+      { "type" : "literal", "value" : "Per Kirkeby" , "lang" : "nl" } ,
+      { "type" : "literal", "value" : "\u041A\u0438\u0440\u043A\u0435\u0431\u044E, \u041F\u0435\u0440" , "lang" : "ru" } ,
+      { "type" : "literal", "value" : "Per Kirkeby" , "lang" : "fr" } ] ,
+    "http://www.w3.org/2000/01/rdf-schema#comment" : [ { "type" : "literal", "value" : "\u041F\u0435\u0440 \u041A\u0438\u0440\u043A\u0435\u0431\u044E (\u0434\u0430\u0442. Per Kirkeby; \u0440\u043E\u0434. 1 \u0441\u0435\u043D\u0442\u044F\u0431\u0440\u044F 1938, \u041A\u043E\u043F\u0435\u043D\u0433\u0430\u0433\u0435\u043D, \u0414\u0430\u043D\u0438\u044F) \u2014 \u0441\u043E\u0432\u0440\u0435\u043C\u0435\u043D\u043D\u044B\u0439 \u0434\u0430\u0442\u0441\u043A\u0438\u0439 \u0445\u0443\u0434\u043E\u0436\u043D\u0438\u043A, \u0441\u043A\u0443\u043B\u044C\u043F\u0442\u043E\u0440, \u043F\u0438\u0441\u0430\u0442\u0435\u043B\u044C \u0438 \u0430\u0440\u0445\u0438\u0442\u0435\u043A\u0442\u043E\u0440." , "lang" : "ru" } ,
+      { "type" : "literal", "value" : "Per Kirkeby (*1 de septiembre de 1938 en Copenhague) es un pintor, escultor, realizador de pel\u00EDculas y escritor dan\u00E9s. Vive y pinta en un taller de Copenhague, y tiene su casa en la isla L\u00E6s\u00F8 situada entre Dinamarca y Suecia. Se le conoce especialmente en Alemania, Inglaterra y Espa\u00F1a, donde museos le consagraron retrospectivas y donde se reconoce como uno de los m\u00E1s importantes artistas europeos. En 1971, fue Comisario nacional representando Dinamarca a la Bienal de Par\u00EDs. Particip\u00F3 con esculturas en la nueva Opera de Copenhague inaugurada en 2005." , "lang" : "es" } ,
+      { "type" : "literal", "value" : "Per Kirkeby (born 1 September 1938, in Copenhagen) is a Danish painter, poet, film maker and sculptor." , "lang" : "en" } ,
+      { "type" : "literal", "value" : "Per Kirkeby, n\u00E9 le 1er septembre 1938 \u00E0 Copenhague, est un artiste danois, peintre, sculpteur, r\u00E9alisateur de films et \u00E9crivain, consid\u00E9r\u00E9 comme une figure majeure de l'art contemporain scandinave. Il vit et peint dans un atelier de Copenhague, et, l'\u00E9t\u00E9, dans sa maison de l'\u00EEle de L\u00E6s\u00F8 situ\u00E9e entre le Danemark et la Su\u00E8de." , "lang" : "fr" } ,
+      { "type" : "literal", "value" : "Per Kirkeby (Copenhaga, 1 de setembro de 1938) \u00E9 um pintor, poeta, cineasta e escultor dinamarqu\u00EAs" , "lang" : "pt" } ,
+      { "type" : "literal", "value" : "Per Kirkeby (Kopenhagen, 1 september 1938) is een Deense schilder, beeldhouwer en architect bekend van zijn geometrische architectonische sculpturen van baksteen. Van oorsprong is hij geoloog. Zijn schilderijen over de ontembare, verraderlijke natuur, bestaan uit verschillende, zacht gemoduleerde kleurlagen en -velden waarbij de invloed van zijn geologiestudie voelbaar is. Niet het geabstraheerde onderwerp, maar de schilderkunst staat centraal. Kirkeby leeft en werkt in Kopenhagen, op het eiland L\u00E6s\u00F8, in Frankfurt am Main en in Arnasco, Itali\u00EB. Thema's zijn het landschap en de aarde als oerkracht die hij tot uitdrukking wil brengen in schilderijen van aardlagen, grotten, fossielen, gletsjers, rotsformaties, telkens geschilderd op de grens van het abstracte en het figuratieve." , "lang" : "nl" } ,
+      { "type" : "literal", "value" : "Per Kirkeby (* 1. September 1938 in Kopenhagen) ist ein d\u00E4nischer Maler, Bildhauer, Architekt und Dichter." , "lang" : "de" } ] ,
+    "http://www.w3.org/2002/07/owl#sameAs" : [ { "type" : "uri", "value" : "http://es.dbpedia.org/resource/Per_Kirkeby" } ,
+      { "type" : "uri", "value" : "http://eu.dbpedia.org/resource/Per_Kirkeby" } ,
+      { "type" : "uri", "value" : "http://fr.dbpedia.org/resource/Per_Kirkeby" } ,
+      { "type" : "uri", "value" : "http://nl.dbpedia.org/resource/Per_Kirkeby" } ,
+      { "type" : "uri", "value" : "http://rdf.freebase.com/ns/m.07n4dj" } ,
+      { "type" : "uri", "value" : "http://pt.dbpedia.org/resource/Per_Kirkeby" } ,
+      { "type" : "uri", "value" : "http://wikidata.dbpedia.org/resource/Q467462" } ,
+      { "type" : "uri", "value" : "http://d-nb.info/gnd/118562452" } ,
+      { "type" : "uri", "value" : "http://www.wikidata.org/entity/Q467462" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Per_Kirkeby" } ,
+      { "type" : "uri", "value" : "http://de.dbpedia.org/resource/Per_Kirkeby" } ,
+      { "type" : "uri", "value" : "http://yago-knowledge.org/resource/Per_Kirkeby" } ,
+      { "type" : "uri", "value" : "http://it.dbpedia.org/resource/Per_Kirkeby" } ] ,
+    "http://purl.org/dc/terms/subject" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Sculptors_from_Copenhagen" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Abstract_painters" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Recipients_of_Ingenio_et_Arti" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:1938_births" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Knights_of_the_Order_of_the_Dannebrog" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Abstract_sculptors" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:21st-century_sculptors" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Pop_artists" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Goethe_University_Frankfurt_faculty" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Contemporary_painters" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Recipients_of_the_Prince_Eugen_Medal" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Abstract_artists" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Living_people" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:21st-century_Danish_painters" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Modern_painters" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:20th-century_sculptors" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Recipients_of_the_Thorvaldsen_Medal" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:20th-century_Danish_painters" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Members_of_the_Royal_Swedish_Academy_of_Arts" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Danish_watercolourists" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Danish_sculptors" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Artists_from_Copenhagen" } ] ,
+    "http://xmlns.com/foaf/0.1/name" : [ { "type" : "literal", "value" : "Per Kirkeby" , "lang" : "en" } ] ,
+    "http://xmlns.com/foaf/0.1/depiction" : [ { "type" : "uri", "value" : "http://commons.wikimedia.org/wiki/Special:FilePath/Kirkeby_Frankfurt_01.JPG" } ] ,
+    "http://purl.org/dc/terms/description" : [ { "type" : "literal", "value" : "Danish artist" , "lang" : "en" } ] ,
+    "http://xmlns.com/foaf/0.1/givenName" : [ { "type" : "literal", "value" : "Per" , "lang" : "en" } ] ,
+    "http://xmlns.com/foaf/0.1/gender" : [ { "type" : "literal", "value" : "male" , "lang" : "en" } ] ,
+    "http://xmlns.com/foaf/0.1/isPrimaryTopicOf" : [ { "type" : "uri", "value" : "http://en.wikipedia.org/wiki/Per_Kirkeby" } ] ,
+    "http://xmlns.com/foaf/0.1/surname" : [ { "type" : "literal", "value" : "Kirkeby" , "lang" : "en" } ] ,
+    "http://www.w3.org/ns/prov#wasDerivedFrom" : [ { "type" : "uri", "value" : "http://en.wikipedia.org/wiki/Per_Kirkeby?oldid=741758780" } ] ,
+    "http://dbpedia.org/ontology/wikiPageExternalLink" : [ { "type" : "uri", "value" : "http://www.smk.dk/smk.nsf/5a8a7f63d33b85d8c125697a007844f9/60a786a4ca9e9385c1256bc80025d86b!OpenDocument" } ,
+      { "type" : "uri", "value" : "http://www.smk.dk/smk.nsf/docs/Kirkeby" } ,
+      { "type" : "uri", "value" : "http://www.berlin-kopenhagen.de/pkmonotypien_2000.html" } ,
+      { "type" : "uri", "value" : "http://moma.org/" } ,
+      { "type" : "uri", "value" : "http://www.galerie-kugler.at/artists/per_kirkeby/works.html" } ,
+      { "type" : "uri", "value" : "http://www.michaelwerner.com/artist/per-kirkeby" } ,
+      { "type" : "uri", "value" : "http://www.museum-folkwang.de/" } ,
+      { "type" : "uri", "value" : "http://kunsthalle.conne.net/index.php3?hid=004" } ,
+      { "type" : "uri", "value" : "http://www.schaefergrafik.dk/per-kirkeby" } ,
+      { "type" : "uri", "value" : "http://www.berlin-kopenhagen.de/perkirkeby.html" } ,
+      { "type" : "uri", "value" : "http://www.peterlind.org#1985_Per_Kirkeby" } ,
+      { "type" : "uri", "value" : "http://www.peterlind.org#Per_Kirkeby_Valencia" } ,
+      { "type" : "uri", "value" : "http://www.lalouver.com/html/kirkeby.html" } ,
+      { "type" : "uri", "value" : "http://www.lalouver.com/html/artist.cfm?tArtist_id=128" } ,
+      { "type" : "uri", "value" : "http://www.uni-kiel.de/kunsthalle/" } ,
+      { "type" : "uri", "value" : "http://www.michaelwerner.net/index.htm," } ,
+      { "type" : "uri", "value" : "http://www.villamassimo.de/de/vrstltngn/2bfad095ee0c56b02/index.html" } ,
+      { "type" : "uri", "value" : "http://www.vidal-stphalle.com" } ,
+      { "type" : "uri", "value" : "http://www.guggenheim-bilbao.es/ingles/exposiciones/las_exposiciones.htm" } ] ,
+    "http://dbpedia.org/ontology/abstract" : [ { "type" : "literal", "value" : "Per Kirkeby (Kopenhagen, 1 september 1938) is een Deense schilder, beeldhouwer en architect bekend van zijn geometrische architectonische sculpturen van baksteen. Van oorsprong is hij geoloog. Zijn schilderijen over de ontembare, verraderlijke natuur, bestaan uit verschillende, zacht gemoduleerde kleurlagen en -velden waarbij de invloed van zijn geologiestudie voelbaar is. Niet het geabstraheerde onderwerp, maar de schilderkunst staat centraal. Kirkeby leeft en werkt in Kopenhagen, op het eiland L\u00E6s\u00F8, in Frankfurt am Main en in Arnasco, Itali\u00EB. Thema's zijn het landschap en de aarde als oerkracht die hij tot uitdrukking wil brengen in schilderijen van aardlagen, grotten, fossielen, gletsjers, rotsformaties, telkens geschilderd op de grens van het abstracte en het figuratieve." , "lang" : "nl" } ,
+      { "type" : "literal", "value" : "\u041F\u0435\u0440 \u041A\u0438\u0440\u043A\u0435\u0431\u044E (\u0434\u0430\u0442. Per Kirkeby; \u0440\u043E\u0434. 1 \u0441\u0435\u043D\u0442\u044F\u0431\u0440\u044F 1938, \u041A\u043E\u043F\u0435\u043D\u0433\u0430\u0433\u0435\u043D, \u0414\u0430\u043D\u0438\u044F) \u2014 \u0441\u043E\u0432\u0440\u0435\u043C\u0435\u043D\u043D\u044B\u0439 \u0434\u0430\u0442\u0441\u043A\u0438\u0439 \u0445\u0443\u0434\u043E\u0436\u043D\u0438\u043A, \u0441\u043A\u0443\u043B\u044C\u043F\u0442\u043E\u0440, \u043F\u0438\u0441\u0430\u0442\u0435\u043B\u044C \u0438 \u0430\u0440\u0445\u0438\u0442\u0435\u043A\u0442\u043E\u0440." , "lang" : "ru" } ,
+      { "type" : "literal", "value" : "Per Kirkeby, n\u00E9 le 1er septembre 1938 \u00E0 Copenhague, est un artiste danois, peintre, sculpteur, r\u00E9alisateur de films et \u00E9crivain, consid\u00E9r\u00E9 comme une figure majeure de l'art contemporain scandinave. Il vit et peint dans un atelier de Copenhague, et, l'\u00E9t\u00E9, dans sa maison de l'\u00EEle de L\u00E6s\u00F8 situ\u00E9e entre le Danemark et la Su\u00E8de." , "lang" : "fr" } ,
+      { "type" : "literal", "value" : "Per Kirkeby (Copenhaga, 1 de setembro de 1938) \u00E9 um pintor, poeta, cineasta e escultor dinamarqu\u00EAs" , "lang" : "pt" } ,
+      { "type" : "literal", "value" : "Per Kirkeby (*1 de septiembre de 1938 en Copenhague) es un pintor, escultor, realizador de pel\u00EDculas y escritor dan\u00E9s. Vive y pinta en un taller de Copenhague, y tiene su casa en la isla L\u00E6s\u00F8 situada entre Dinamarca y Suecia. Se le conoce especialmente en Alemania, Inglaterra y Espa\u00F1a, donde museos le consagraron retrospectivas y donde se reconoce como uno de los m\u00E1s importantes artistas europeos. Comienza la pintura a la edad de 14 a\u00F1os. Ligeramente disl\u00E9ctico, prefiere r\u00E1pidamente expresarse por el dibujo. Sigui\u00F3 estudios de ciencias naturales a la Universidad de Copenhague y particip\u00F3, de 1958 a 1965, en numerosas expediciones cient\u00EDficas como ge\u00F3logo. En 1971, fue Comisario nacional representando Dinamarca a la Bienal de Par\u00EDs. Particip\u00F3 con esculturas en la nueva Opera de Copenhague inaugurada en 2005. Public\u00F3 poemas y novelas, y entr\u00F3 a l' Academia danesa en 1982. Es un admirador de le arquitectura de los Mayas, C\u00E9zanne, Manet, Sra. de Sta\u00EBl, Eug\u00E8ne Leroy." , "lang" : "es" } ,
+      { "type" : "literal", "value" : "Per Kirkeby (* 1. September 1938 in Kopenhagen) ist ein d\u00E4nischer Maler, Bildhauer, Architekt und Dichter." , "lang" : "de" } ,
+      { "type" : "literal", "value" : "Per Kirkeby (born 1 September 1938, in Copenhagen) is a Danish painter, poet, film maker and sculptor." , "lang" : "en" } ] ,
+    "http://dbpedia.org/ontology/thumbnail" : [ { "type" : "uri", "value" : "http://commons.wikimedia.org/wiki/Special:FilePath/Kirkeby_Frankfurt_01.JPG?width=300" } ] ,
+    "http://dbpedia.org/ontology/birthDate" : [ { "type" : "literal", "value" : "1938-9-1" , "datatype" : "http://www.w3.org/2001/XMLSchema#date" } ] ,
+    "http://dbpedia.org/ontology/wikiPageRevisionID" : [ { "type" : "literal", "value" : 741758780 , "datatype" : "http://www.w3.org/2001/XMLSchema#integer" } ] ,
+    "http://dbpedia.org/ontology/birthPlace" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Copenhagen" } ] ,
+    "http://dbpedia.org/ontology/wikiPageID" : [ { "type" : "literal", "value" : 2561320 , "datatype" : "http://www.w3.org/2001/XMLSchema#integer" } ] ,
+    "http://purl.org/linguistics/gold/hypernym" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Painter" } ] }
+}
+;
+	var dataAuth = "http://dbpedia.org/resource/Per_Kirkeby";
+	var dataUrl = "per_kirkeby.html";
+	var dataResourceType = "participant";
+	var dataName = "Per Kirkeby";
+ 	
+</script>
+
+
+
+
+
+<script type="text/javascript">
+
+
+	
+	
+	
+
+	$(document).ready(function($) {
+		
+		
+		padb.resource.initialize();
+			 
+		$( '.scrollable' ).
+		bind( 'mousewheel DOMMouseScroll', function ( e ) {
+			
+			if( e.originalEvent ) e = e.originalEvent;
+			
+			var delta = e.wheelDelta || -e.detail;
+			this.scrollTop += ( delta < 0 ? 1 : -1 ) * 30;
+			e.preventDefault();
+		});		 
+		
+		
+				
+		$.ajaxSetup ({
+			// Disable caching of AJAX responses
+			cache: false
+		});		
+		
+	});
+	
+
+	
+	
+	
+	
+	
+</script>
+
+
+
+
+ 
+<br />
+<div class="container"  style="position:relative;">
+	   
+      <div id="resourceLinks"></div> 
+       
+       
+       
+       
+              
+       
+           
+           
+           
+          <div class="row addSection">
+              <div class="span1 addSectionIconHolder">
+              
+                <i class="icon-user"></i>
+              
+              </div>
+          
+              <div class="span11">
+                <span>Performer</span>
+                <hr>
+                <br />
+              </div>
+        </div>
+        <div class="row">
+            <div class="span1">
+            </div>
+            <div class="span11" style="position:relative">
+                
+                
+                
+                
+               <div>
+                                       <div class="pull-right vignette">
+                            <img  src="../cache/media/per_kirkeby.jpg" />
+                            
+                        </div>
+                        
+                                           
+                <div class="pull-left" style="width:80%;">
+                     
+                     <h5 id="resourceLDName">Per Kirkeby</h5>
+                     <h5 id="resourceLDAbstract"></h5>
+                     
+                     
+                     <div id="resourceSameAs">
+                        <h5>External Data:</h5>
+                        
+                        
+                     </div>
+                
+                </div>   
+                
+                <br style="clear:both;" />
+            </div>
+            
+            
+                
+            </div>
+        </div>    
+         
+    
+    
+    
+    
+    
+    
+       <div class="row addSection">
+			<div class="span1 addSectionIconHolder">              
+                <i class="icon-asterisk"></i>
+              
+              </div>
+          
+              <div class="span11">
+                <span>Events </span><span id="resourceEventCount"></span>
+                <hr>
+              </div>
+        </div>
+    
+    
+    
+    
+    
+    
+    
+        <div class="row">
+            <div class="span1"></div>
+            <div class="span11" style="position:relative">
+                  
+                 <div class="">
+                    <div id="resourceEventsEvents" class="scrollable">
+                           <table class="table table-condensed table-hover table-striped">
+                               <thead>
+                                <tr>
+                                  <th>Date</th>
+                                  
+                                  <th>Title</th>
+                                  <th>Location</th>
+                                  <th></th>
+                                </tr>
+                              </thead>
+                              <tbody id="resourceEventsEventsRows"> 
+                              </tbody>
+                            </table>
+                     
+                    </div>
+                    
+                    <div id="resourceEventsExport">
+                    
+                    	<input  name="resourceEventsSearch" class="span3" id="resourceEventsSearch"  type="text" placeholder="Filter: names, places, dates">
+                    	<button class="btn btn-mini btn-danger" id="resourceEventsClearFilter"><i class="icon-remove">&nbsp;Clear Filter</i></button>
+                   		<button class="btn btn-mini btn-info" title="Render the currently filitered data as a network" id="resourceRenderEventNetwork"> <img src="../img/icon-network-white.png" style="height:15px; width:auto" /> Two-Mode Event Network</button>
+                   		<button class="btn btn-mini btn-info" title="Render the currently filitered data as a network" id="resourceRenderEventMap"> <i class="icon-globe"></i> Map Event Locations</button>
+                   		<button class="btn btn-mini btn-success" title="Download network as Gephi File" id="resourceDownloadEventGephi"> <img src="../img/icon-gephi.png" style="height:15px; width:auto" /> Donwload Gephi Network</button>
+
+                 
+                    </div>                 
+                </div>
+                <br style="clear:both;" />
+            </div>
+            
+            
+                
+         </div>    
+    
+     
+       <div class="row addSection">
+              <div class="span1">
+              
+                <img src="../img/social-network.png" style=" margin-left:25px; margin-bottom:10px;" />
+              
+              </div>
+          
+              <div class="span11">
+                <span>Performance Network</span> 
+                <hr>
+              </div>
+        </div>
+        
+        <div class="row">
+            <div class="span1">
+            </div>
+            <div class="span11" style="position:relative">
+                
+               	<div style="width: 100%; height:500px;" id="egoNetwork">
+            
+                
+             	</div> 
+                <div class="well pull-left well-small" id="egoNetworkControls">
+                    <span class="rangeLabels">Node Charge</span>
+                    <input type="range" id="resourceEgoNetworkCharge" min="-1000" max="100" value="-120" data-def="-700" />
+                    <br /><span class="rangeLabels">Gravity</span>
+                    <input type="range" id="resourceEgoNetworkGravity" min="0" max="1" value="0.1" step="0.01" data-def="0.3" /> 
+                    <br /><span class="rangeLabels">Edge Length</span>
+                    <input type="range" id="resourceEgoNetworkDistance" min="0" max="300" value="50" data-def="50"  />      
+                    <br /><span class="rangeLabels">Edge Strength</span>
+                    <input type="range" id="resourceEgoNetworkStrength" min="0" max="3" value="1" data-def="0.15" step="0.1"  /> 
+                    <br /><br />
+                    <button type="button" id="resourceEgoNetworkLabelsButton" class="btn btn-mini" title="Show node labels." data-toggle="button">Show Labels</button>  
+                    <button type="button" id="resourceEgoNetworkLiveButton" class="btn btn-mini" title="Show realtime network rendering" data-toggle="button">Live Rendering</button>                     
+                </div>
+                
+                <div class="well pull-left well-small egoNetworkControls span7" style="margin-left:20px;" >
+                
+                	<input  name="resourceEgoNetworkSearch" class="span3" id="resourceEgoNetworkSearch"  type="text" placeholder="Filter: names, places, dates">
+					<button class="btn btn-mini btn-danger" id="resourceEgoClearFilter"><i class="icon-remove">&nbsp;Clear Filter</i></button>
+                    <button class="btn btn-mini btn-success" title="Download network as Gephi File" id="resourceDownloadEgoGephi"> <img src="../img/icon-gephi.png" style="height:15px; width:auto" /> Donwload Gephi Network</button>
+
+                </div>
+                
+            </div>
+        </div>           
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+	
+
+	
+
+
+	
+
+
+</div>
+
+
+
+
+    <div id="resourceEventNetworkModal" class="modal container hide fade" style="min-height:500px" tabindex="-1">
+ 
+      <div class="modal-body">
+      	
+        <div id="eventNetwork" style="height:400px; width:100%">
+        
+        </div>
+      
+      </div>
+      <div class="modal-footer" style="height:20px;">
+      	
+        <div class="well pull-left well-small">
+        	<span class="rangeLabels">Node Charge</span>
+        	<input type="range" id="resourceEventNetworkCharge" min="-800" max="200" value="-120" data-def="-120" />
+            <span class="rangeLabels">Gravity</span>
+        	<input type="range" id="resourceEventNetworkGravity" min="0" max="1" value="0.1" step="0.01" data-def="0.1" /> 
+            <span class="rangeLabels">Edge Length</span>
+        	<input type="range" id="resourceEventNetworkDistance" min="0" max="300" value="50" data-def="50"  />      
+            <span class="rangeLabels">Edge Strength</span>
+        	<input type="range" id="resourceEventNetworkStrength" min="0" max="5" value="1" data-def="1" step="0.1"  />    
+            <button type="button" id="resourceEventNetworkLabelsButton" class="btn btn-mini" data-toggle="button">Show Labels</button>                     
+		</div>
+        <div class="pull-right">
+        <button type="button" data-dismiss="modal" class="btn">Close</button>
+       	</div>
+       </div>
+    </div>
+    
+    
+    
+    
+     <div id="resourceEventMapModal" class="modal container hide fade" style="min-height:500px" tabindex="-1">
+ 
+      <div class="modal-body">
+      	
+        <div id="eventMap" style="height:400px; width:100%">
+        
+        </div>
+      
+      </div>
+      <div class="modal-footer" style="height:20px;">
+      	
+        <div class="well pull-left well-small">                  
+		</div>
+        <div class="pull-right">
+        <button type="button" data-dismiss="modal" class="btn">Close</button>
+       	</div>
+       </div>
+    </div>
+
+<br /><br /><br /><br /><br /><br />
+
+<script type="text/javascript">    var _gaq = _gaq || [];   _gaq.push(['_setAccount', 'UA-10371295-7']);   _gaq.push(['_trackPageview']);    (function() {     var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);   })();  </script>
+
+</body>
+
+<!-- Mirrored from padb.net/resource/per_kirkeby by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 11 Jan 2020 22:23:19 GMT -->
+</html>

@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<gexf version="1.2" xmlns="http://www.gexf.net/1.2draft">
+ <graph mode="static" defaultedgetype="undirected">
+  <nodes>
+   <node id="39" label="Nam-june Paik"/>
+   <node id="198" label="Charlotte Moorman"/>
+   <node id="282" label="Norman Seaman"/>
+  </nodes>
+  <edges>
+   <edge source="39" target="198"/>
+   <edge source="39" target="282"/>
+   <edge source="198" target="282"/>
+  </edges>
+ </graph>
+</gexf>

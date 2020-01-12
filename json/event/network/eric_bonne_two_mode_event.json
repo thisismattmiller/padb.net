@@ -1,0 +1,1 @@
+{"nodes": [{"name": "Bevaegelse I Kunsten Fire Damhatte af Eric Bonne", "type": "event", "year": "1961", "id": 0, "x": 100, "y": 100}, {"name": "Eric Bonne", "type": "person", "id": 1, "x": 100, "y": 100}], "edges": [{"source": 1, "target": 0, "value": 1}]}

@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<gexf version="1.2" xmlns="http://www.gexf.net/1.2draft">
+ <graph mode="static" defaultedgetype="undirected">
+  <nodes>
+   <node id="18" label="George Brecht"/>
+   <node id="19" label="Ray Johnson"/>
+   <node id="25" label="La Monte Young"/>
+  </nodes>
+  <edges>
+   <edge source="18" target="19"/>
+   <edge source="18" target="25"/>
+   <edge source="19" target="25"/>
+  </edges>
+ </graph>
+</gexf>

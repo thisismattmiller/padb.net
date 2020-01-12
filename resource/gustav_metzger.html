@@ -1,0 +1,499 @@
+<!doctype html>
+<html>
+
+<!-- Mirrored from padb.net/resource/gustav_metzger by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 11 Jan 2020 22:17:53 GMT -->
+<head>
+<meta charset="UTF-8">
+<title>padb.net</title>
+
+
+<link rel="stylesheet" href="../css/bootstrap.css">
+<link rel="stylesheet" href="../css/font-awesome.css">
+<link rel="stylesheet" href="../css/site.css">
+<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+<link rel="icon" type="image/png" href="../img/favicon.png">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/bootstrap-modal.js"></script>
+<script src="../js/bootstrap-modalmanager.js"></script>
+
+<script src="../js/d3.min.js"></script>
+<script src="../js/html5slider.js"></script>
+<script src="../js/topojson.js"></script>
+<script src="../js/padb.js"></script>
+
+
+</head>
+<body>
+    
+    
+	<div style="position:relative;">        
+
+ 		<div style=" border-bottom:solid 1px #ccc;">
+        	<div class="container">
+                
+                 <div id="header">
+                 	
+                     <div class="logo"><a href="../index.html"><span>|||</span>padb</a> </div>
+                    
+                      
+						 <div id="resourceName">Gustav Metzger</div>
+					 
+                 </div>
+                
+                
+        	</div>
+            
+    	</div>
+ 
+   </div>
+<script src="../js/countriesData.js"></script>
+
+<script type="text/javascript">
+	//preloaded json from the server
+
+	var dataSameAs = [
+  {
+    "uri": "http://www.wikidata.org/entity/Q214312",
+    "numDuplicates": "21",
+    "duplicates": [
+      "http://dbpedia.org/resource/Gustav_Metzger",
+      "http://bnb.data.bl.uk/id/person/MetzgerGustav",
+      "http://d-nb.info/gnd/120023989",
+      "http://da.dbpedia.org/resource/Selvdestruktiv_kunst",
+      "http://data.bibsys.no/data/notrbib/authorityentry/x00045226",
+      "http://dbpedialite.org/things/235679#id",
+      "http://de.dbpedia.org/resource/Gustav_Metzger",
+      "http://es.dbpedia.org/resource/Arte_autodestructivo",
+      "http://it.dbpedia.org/resource/Gustav_Metzger",
+      "http://mpii.de/yago/resource/Gustav_Metzger",
+      "http://no.dbpedia.org/resource/Gustav_Metzger",
+      "http://pt.dbpedia.org/resource/Gustav_Metzger",
+      "http://rdf.freebase.com/ns/m.01j76z",
+      "http://rdf.freebase.com/ns/en.gustav_metzger",
+      "http://rdf.freebase.com/ns/guid.9202a8c04000641f8000000000181cde",
+      "http://umbel.org/umbel/ne/wikipedia/Gustav_Metzger",
+      "http://viaf.org/viaf/32816837",
+      "http://viaf.org/viaf/84248485",
+      "http://viaf.org/viaf/96309380",
+      "http://www.wikidata.org/entity/Q214312",
+      "http://yago-knowledge.org/resource/Gustav_Metzger"
+    ]
+  }
+]
+;
+	var dataDbpedia = {
+  "http://dbpedia.org/resource/David_Bomberg" : { "http://dbpedia.org/ontology/influenced" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Gustav_Metzger" } ] } ,
+  "http://en.wikipedia.org/wiki/Gustav_Metzger" : { "http://xmlns.com/foaf/0.1/primaryTopic" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Gustav_Metzger" } ] } ,
+  "http://dbpedia.org/resource/Gustav_Metzger" : { "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatHolocaustSurvivors" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatPostmodernArtists" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Exile110071332" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Refugee110516016" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatGermanExpatriatesInTheUnitedKingdom" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Reformer110515194" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatStatelessPeople" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/DisplacedPerson110017890" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatEnglishActivists" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatPeopleFromNuremberg" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Artist109812338" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatConceptualArtists" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Creator109614315" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatContemporaryPainters" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Disputant109615465" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Militant110315837" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Absentee109757653" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatBritishPeopleOfJewishDescent" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatGermanArtists" } ,
+      { "type" : "uri", "value" : "http://www.w3.org/2002/07/owl#Thing" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatEnglishAnti\u2013nuclearWeaponsActivists" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatLivingPeople" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/PhysicalEntity100001930" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Person100007846" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Unfortunate109630641" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Object100002684" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatJewishActivists" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/YagoLegalActor" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/YagoLegalActorGeo" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Painter110391653" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatEnglishPeopleOfPolish-JewishDescent" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/CausalAgent100007347" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Whole100003553" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/LivingThing100004258" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Organism100004475" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/ontology/Person" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Survivor110681194" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Traveler109629752" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatKindertransportRefugees" } ] ,
+    "http://www.w3.org/2000/01/rdf-schema#label" : [ { "type" : "literal", "value" : "Gustav Metzger" , "lang" : "de" } ,
+      { "type" : "literal", "value" : "Arte autodestructivo" , "lang" : "es" } ,
+      { "type" : "literal", "value" : "Gustav Metzger" , "lang" : "en" } ,
+      { "type" : "literal", "value" : "Gustav Metzger" , "lang" : "pt" } ,
+      { "type" : "literal", "value" : "Gustav Metzger" , "lang" : "it" } ] ,
+    "http://www.w3.org/2000/01/rdf-schema#comment" : [ { "type" : "literal", "value" : "Gustav Metzger nasceu em Nuremberg (Alemanha) em 1926, descendente de judeus mais tarde se refugiando na Inglaterra. A partir de 1957, insatisfeito com a arte e os recursos utilizados para produz\u00ED-la, come\u00E7ou a inventar novas maneiras de fazer sua arte e novamente insatisfeito, em 1959 publicou o primeiro manifesto, do futuro movimento \"Arte Autodestrutiva\", proclamado \"Nova forma de arte\":" , "lang" : "pt" } ,
+      { "type" : "literal", "value" : "Gustav Metzger si rifugi\u00F2 in Inghilterra salvato dal Refugee Children Movement.Studi\u00F2 arte alla Cambridge School of Art di Londra." , "lang" : "it" } ,
+      { "type" : "literal", "value" : "Gustav Metzger (* 10. April 1926 in N\u00FCrnberg) ist ein deutscher K\u00FCnstler (Malerei, Fotografie, Installationen, Performances, Aktionen, Texte, Manifeste, politische Aktionen)." , "lang" : "de" } ,
+      { "type" : "literal", "value" : "Arte autodestructivo es un t\u00E9rmino inventado por el artista Gustav Metzger a principios de la d\u00E9cada de 1960 y puesto en circulaci\u00F3n en su art\u00EDculo \u00ABMachine, auto-creative and auto-destructive art\u00BB (\u2018M\u00E1quina, arte autocreativo y autodestructivo\u2019) en el n\u00FAmero de verano de 1962 del peri\u00F3dico Ark. En 1960, el artista suizo Jean Tinguely cre\u00F3 las primeras de sus esculturas vinculadas a esta corriente: Hommage a New York. Obras caracter\u00EDsticas: \n*  Demostraciones de arte explosivo \n*  Corte, de Y\u014Dko Ono \n*  Mutilaci\u00F3n de carnero" , "lang" : "es" } ,
+      { "type" : "literal", "value" : "Gustav Metzger (born 10 April 1926) is an artist and political activist who developed the concept of Auto-Destructive Art and the Art Strike. Together with John Sharkey, he initiated the Destruction in Art Symposium in 1966. Metzger is recognised for his protests in the political and artistic realms." , "lang" : "en" } ] ,
+    "http://www.w3.org/2002/07/owl#sameAs" : [ { "type" : "uri", "value" : "http://data.europa.eu/euodp/jrc-names/Gustav_Metzger" } ,
+      { "type" : "uri", "value" : "http://yago-knowledge.org/resource/Gustav_Metzger" } ,
+      { "type" : "uri", "value" : "http://wikidata.dbpedia.org/resource/Q214312" } ,
+      { "type" : "uri", "value" : "http://d-nb.info/gnd/120023989" } ,
+      { "type" : "uri", "value" : "http://es.dbpedia.org/resource/Arte_autodestructivo" } ,
+      { "type" : "uri", "value" : "http://rdf.freebase.com/ns/m.01j76z" } ,
+      { "type" : "uri", "value" : "http://de.dbpedia.org/resource/Gustav_Metzger" } ,
+      { "type" : "uri", "value" : "http://www.wikidata.org/entity/Q214312" } ,
+      { "type" : "uri", "value" : "http://pt.dbpedia.org/resource/Gustav_Metzger" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Gustav_Metzger" } ,
+      { "type" : "uri", "value" : "http://it.dbpedia.org/resource/Gustav_Metzger" } ] ,
+    "http://purl.org/dc/terms/subject" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:1926_births" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:English_activists" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:People_from_Nuremberg" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:German_Jews" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Stateless_people" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Contemporary_painters" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:German_emigrants_to_England" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:English_anti\u2013nuclear_weapons_activists" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:English_people_of_German-Jewish_descent" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Conceptual_artists" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Jewish_activists" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Fluxus" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Borough_Group" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Living_people" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:English_contemporary_artists" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Postmodern_artists" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:English_people_of_Polish-Jewish_descent" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:German_people_of_Polish-Jewish_descent" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Kindertransport_refugees" } ] ,
+    "http://xmlns.com/foaf/0.1/name" : [ { "type" : "literal", "value" : "Gustav Metzger" , "lang" : "en" } ] ,
+    "http://xmlns.com/foaf/0.1/depiction" : [ { "type" : "uri", "value" : "http://commons.wikimedia.org/wiki/Special:FilePath/Gustav_Metzger,_Manchester_International_Festival_2009_(3693540702).jpg" } ] ,
+    "http://purl.org/dc/terms/description" : [ { "type" : "literal", "value" : "Artist and political activist" , "lang" : "en" } ] ,
+    "http://xmlns.com/foaf/0.1/givenName" : [ { "type" : "literal", "value" : "Gustav" , "lang" : "en" } ] ,
+    "http://xmlns.com/foaf/0.1/gender" : [ { "type" : "literal", "value" : "male" , "lang" : "en" } ] ,
+    "http://xmlns.com/foaf/0.1/isPrimaryTopicOf" : [ { "type" : "uri", "value" : "http://en.wikipedia.org/wiki/Gustav_Metzger" } ] ,
+    "http://xmlns.com/foaf/0.1/surname" : [ { "type" : "literal", "value" : "Metzger" , "lang" : "en" } ] ,
+    "http://www.w3.org/ns/prov#wasDerivedFrom" : [ { "type" : "uri", "value" : "http://en.wikipedia.org/wiki/Gustav_Metzger?oldid=744310436" } ] ,
+    "http://dbpedia.org/ontology/abstract" : [ { "type" : "literal", "value" : "Gustav Metzger (* 10. April 1926 in N\u00FCrnberg) ist ein deutscher K\u00FCnstler (Malerei, Fotografie, Installationen, Performances, Aktionen, Texte, Manifeste, politische Aktionen)." , "lang" : "de" } ,
+      { "type" : "literal", "value" : "Gustav Metzger si rifugi\u00F2 in Inghilterra salvato dal Refugee Children Movement.Studi\u00F2 arte alla Cambridge School of Art di Londra." , "lang" : "it" } ,
+      { "type" : "literal", "value" : "Gustav Metzger (born 10 April 1926) is an artist and political activist who developed the concept of Auto-Destructive Art and the Art Strike. Together with John Sharkey, he initiated the Destruction in Art Symposium in 1966. Metzger is recognised for his protests in the political and artistic realms." , "lang" : "en" } ,
+      { "type" : "literal", "value" : "Gustav Metzger nasceu em Nuremberg (Alemanha) em 1926, descendente de judeus mais tarde se refugiando na Inglaterra. A partir de 1957, insatisfeito com a arte e os recursos utilizados para produz\u00ED-la, come\u00E7ou a inventar novas maneiras de fazer sua arte e novamente insatisfeito, em 1959 publicou o primeiro manifesto, do futuro movimento \"Arte Autodestrutiva\", proclamado \"Nova forma de arte\": Depois do 1\u00BA manifesto a AAD foi fundada, mas com toda a influ\u00EAncia de Metzger na arte, o \u00FAnico membro do grupo foi o pr\u00F3prio Metzger. Metzger participou tamb\u00E9m de outros grupos como Fluxus e de ocupa\u00E7\u00F5es e Happening durante a d\u00E9cada de 1960." , "lang" : "pt" } ,
+      { "type" : "literal", "value" : "Arte autodestructivo es un t\u00E9rmino inventado por el artista Gustav Metzger a principios de la d\u00E9cada de 1960 y puesto en circulaci\u00F3n en su art\u00EDculo \u00ABMachine, auto-creative and auto-destructive art\u00BB (\u2018M\u00E1quina, arte autocreativo y autodestructivo\u2019) en el n\u00FAmero de verano de 1962 del peri\u00F3dico Ark. En 1966, Metzger y otros organizaron el Destruction in Art Symposium, en Londres. Un evento similar fue desarrollado por otros en Nueva York en 1968. El simposio fue acompa\u00F1ado de demostraciones p\u00FAblicas de arte autodestructivo, incluyendo el incendio de las Skoob Towers, por John Latham; estas eran torres de libros (skoob es books invertido, \u2018libros\u2019 en ingl\u00E9s), y la intenci\u00F3n de Latham era mostrar directamente su visi\u00F3n sobre la cultura occidental. En 1960, el artista suizo Jean Tinguely cre\u00F3 las primeras de sus esculturas vinculadas a esta corriente: Hommage a New York. Obras caracter\u00EDsticas: \n*  Demostraciones de arte explosivo \n*  Corte, de Y\u014Dko Ono \n*  Mutilaci\u00F3n de carnero" , "lang" : "es" } ] ,
+    "http://dbpedia.org/ontology/thumbnail" : [ { "type" : "uri", "value" : "http://commons.wikimedia.org/wiki/Special:FilePath/Gustav_Metzger,_Manchester_International_Festival_2009_(3693540702).jpg?width=300" } ] ,
+    "http://dbpedia.org/ontology/birthDate" : [ { "type" : "literal", "value" : "1926-4-10" , "datatype" : "http://www.w3.org/2001/XMLSchema#date" } ] ,
+    "http://dbpedia.org/ontology/wikiPageRevisionID" : [ { "type" : "literal", "value" : 744310436 , "datatype" : "http://www.w3.org/2001/XMLSchema#integer" } ] ,
+    "http://dbpedia.org/ontology/birthPlace" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Nuremberg" } ] ,
+    "http://dbpedia.org/ontology/wikiPageID" : [ { "type" : "literal", "value" : 235679 , "datatype" : "http://www.w3.org/2001/XMLSchema#integer" } ] ,
+    "http://purl.org/linguistics/gold/hypernym" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Artist" } ] } ,
+  "http://dbpedia.org/resource/Arthur_Ted_Powell" : { "http://dbpedia.org/ontology/influencedBy" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Gustav_Metzger" } ] } ,
+  "http://dbpedia.org/resource/Metzger" : { "http://dbpedia.org/ontology/wikiPageDisambiguates" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Gustav_Metzger" } ] }
+}
+;
+	var dataAuth = "http://dbpedia.org/resource/Gustav_Metzger";
+	var dataUrl = "gustav_metzger.html";
+	var dataResourceType = "participant";
+	var dataName = "Gustav Metzger";
+ 	
+</script>
+
+
+
+
+
+<script type="text/javascript">
+
+
+	
+	
+	
+
+	$(document).ready(function($) {
+		
+		
+		padb.resource.initialize();
+			 
+		$( '.scrollable' ).
+		bind( 'mousewheel DOMMouseScroll', function ( e ) {
+			
+			if( e.originalEvent ) e = e.originalEvent;
+			
+			var delta = e.wheelDelta || -e.detail;
+			this.scrollTop += ( delta < 0 ? 1 : -1 ) * 30;
+			e.preventDefault();
+		});		 
+		
+		
+				
+		$.ajaxSetup ({
+			// Disable caching of AJAX responses
+			cache: false
+		});		
+		
+	});
+	
+
+	
+	
+	
+	
+	
+</script>
+
+
+
+
+ 
+<br />
+<div class="container"  style="position:relative;">
+	   
+      <div id="resourceLinks"></div> 
+       
+       
+       
+       
+              
+       
+           
+           
+           
+          <div class="row addSection">
+              <div class="span1 addSectionIconHolder">
+              
+                <i class="icon-user"></i>
+              
+              </div>
+          
+              <div class="span11">
+                <span>Performer</span>
+                <hr>
+                <br />
+              </div>
+        </div>
+        <div class="row">
+            <div class="span1">
+            </div>
+            <div class="span11" style="position:relative">
+                
+                
+                
+                
+               <div>
+                                       <div class="pull-right vignette">
+                            <img  src="../cache/media/gustav_metzger.jpg" />
+                            
+                        </div>
+                        
+                                           
+                <div class="pull-left" style="width:80%;">
+                     
+                     <h5 id="resourceLDName">Gustav Metzger</h5>
+                     <h5 id="resourceLDAbstract"></h5>
+                     
+                     
+                     <div id="resourceSameAs">
+                        <h5>External Data:</h5>
+                        
+                        
+                     </div>
+                
+                </div>   
+                
+                <br style="clear:both;" />
+            </div>
+            
+            
+                
+            </div>
+        </div>    
+         
+    
+    
+    
+    
+    
+    
+       <div class="row addSection">
+			<div class="span1 addSectionIconHolder">              
+                <i class="icon-asterisk"></i>
+              
+              </div>
+          
+              <div class="span11">
+                <span>Events </span><span id="resourceEventCount"></span>
+                <hr>
+              </div>
+        </div>
+    
+    
+    
+    
+    
+    
+    
+        <div class="row">
+            <div class="span1"></div>
+            <div class="span11" style="position:relative">
+                  
+                 <div class="">
+                    <div id="resourceEventsEvents" class="scrollable">
+                           <table class="table table-condensed table-hover table-striped">
+                               <thead>
+                                <tr>
+                                  <th>Date</th>
+                                  
+                                  <th>Title</th>
+                                  <th>Location</th>
+                                  <th></th>
+                                </tr>
+                              </thead>
+                              <tbody id="resourceEventsEventsRows"> 
+                              </tbody>
+                            </table>
+                     
+                    </div>
+                    
+                    <div id="resourceEventsExport">
+                    
+                    	<input  name="resourceEventsSearch" class="span3" id="resourceEventsSearch"  type="text" placeholder="Filter: names, places, dates">
+                    	<button class="btn btn-mini btn-danger" id="resourceEventsClearFilter"><i class="icon-remove">&nbsp;Clear Filter</i></button>
+                   		<button class="btn btn-mini btn-info" title="Render the currently filitered data as a network" id="resourceRenderEventNetwork"> <img src="../img/icon-network-white.png" style="height:15px; width:auto" /> Two-Mode Event Network</button>
+                   		<button class="btn btn-mini btn-info" title="Render the currently filitered data as a network" id="resourceRenderEventMap"> <i class="icon-globe"></i> Map Event Locations</button>
+                   		<button class="btn btn-mini btn-success" title="Download network as Gephi File" id="resourceDownloadEventGephi"> <img src="../img/icon-gephi.png" style="height:15px; width:auto" /> Donwload Gephi Network</button>
+
+                 
+                    </div>                 
+                </div>
+                <br style="clear:both;" />
+            </div>
+            
+            
+                
+         </div>    
+    
+     
+       <div class="row addSection">
+              <div class="span1">
+              
+                <img src="../img/social-network.png" style=" margin-left:25px; margin-bottom:10px;" />
+              
+              </div>
+          
+              <div class="span11">
+                <span>Performance Network</span> 
+                <hr>
+              </div>
+        </div>
+        
+        <div class="row">
+            <div class="span1">
+            </div>
+            <div class="span11" style="position:relative">
+                
+               	<div style="width: 100%; height:500px;" id="egoNetwork">
+            
+                
+             	</div> 
+                <div class="well pull-left well-small" id="egoNetworkControls">
+                    <span class="rangeLabels">Node Charge</span>
+                    <input type="range" id="resourceEgoNetworkCharge" min="-1000" max="100" value="-120" data-def="-700" />
+                    <br /><span class="rangeLabels">Gravity</span>
+                    <input type="range" id="resourceEgoNetworkGravity" min="0" max="1" value="0.1" step="0.01" data-def="0.3" /> 
+                    <br /><span class="rangeLabels">Edge Length</span>
+                    <input type="range" id="resourceEgoNetworkDistance" min="0" max="300" value="50" data-def="50"  />      
+                    <br /><span class="rangeLabels">Edge Strength</span>
+                    <input type="range" id="resourceEgoNetworkStrength" min="0" max="3" value="1" data-def="0.15" step="0.1"  /> 
+                    <br /><br />
+                    <button type="button" id="resourceEgoNetworkLabelsButton" class="btn btn-mini" title="Show node labels." data-toggle="button">Show Labels</button>  
+                    <button type="button" id="resourceEgoNetworkLiveButton" class="btn btn-mini" title="Show realtime network rendering" data-toggle="button">Live Rendering</button>                     
+                </div>
+                
+                <div class="well pull-left well-small egoNetworkControls span7" style="margin-left:20px;" >
+                
+                	<input  name="resourceEgoNetworkSearch" class="span3" id="resourceEgoNetworkSearch"  type="text" placeholder="Filter: names, places, dates">
+					<button class="btn btn-mini btn-danger" id="resourceEgoClearFilter"><i class="icon-remove">&nbsp;Clear Filter</i></button>
+                    <button class="btn btn-mini btn-success" title="Download network as Gephi File" id="resourceDownloadEgoGephi"> <img src="../img/icon-gephi.png" style="height:15px; width:auto" /> Donwload Gephi Network</button>
+
+                </div>
+                
+            </div>
+        </div>           
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+	
+
+	
+
+
+	
+
+
+</div>
+
+
+
+
+    <div id="resourceEventNetworkModal" class="modal container hide fade" style="min-height:500px" tabindex="-1">
+ 
+      <div class="modal-body">
+      	
+        <div id="eventNetwork" style="height:400px; width:100%">
+        
+        </div>
+      
+      </div>
+      <div class="modal-footer" style="height:20px;">
+      	
+        <div class="well pull-left well-small">
+        	<span class="rangeLabels">Node Charge</span>
+        	<input type="range" id="resourceEventNetworkCharge" min="-800" max="200" value="-120" data-def="-120" />
+            <span class="rangeLabels">Gravity</span>
+        	<input type="range" id="resourceEventNetworkGravity" min="0" max="1" value="0.1" step="0.01" data-def="0.1" /> 
+            <span class="rangeLabels">Edge Length</span>
+        	<input type="range" id="resourceEventNetworkDistance" min="0" max="300" value="50" data-def="50"  />      
+            <span class="rangeLabels">Edge Strength</span>
+        	<input type="range" id="resourceEventNetworkStrength" min="0" max="5" value="1" data-def="1" step="0.1"  />    
+            <button type="button" id="resourceEventNetworkLabelsButton" class="btn btn-mini" data-toggle="button">Show Labels</button>                     
+		</div>
+        <div class="pull-right">
+        <button type="button" data-dismiss="modal" class="btn">Close</button>
+       	</div>
+       </div>
+    </div>
+    
+    
+    
+    
+     <div id="resourceEventMapModal" class="modal container hide fade" style="min-height:500px" tabindex="-1">
+ 
+      <div class="modal-body">
+      	
+        <div id="eventMap" style="height:400px; width:100%">
+        
+        </div>
+      
+      </div>
+      <div class="modal-footer" style="height:20px;">
+      	
+        <div class="well pull-left well-small">                  
+		</div>
+        <div class="pull-right">
+        <button type="button" data-dismiss="modal" class="btn">Close</button>
+       	</div>
+       </div>
+    </div>
+
+<br /><br /><br /><br /><br /><br />
+
+<script type="text/javascript">    var _gaq = _gaq || [];   _gaq.push(['_setAccount', 'UA-10371295-7']);   _gaq.push(['_trackPageview']);    (function() {     var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);   })();  </script>
+
+</body>
+
+<!-- Mirrored from padb.net/resource/gustav_metzger by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 11 Jan 2020 22:17:54 GMT -->
+</html>

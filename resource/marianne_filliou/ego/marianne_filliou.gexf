@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<gexf version="1.2" xmlns="http://www.gexf.net/1.2draft">
+ <graph mode="static" defaultedgetype="undirected">
+  <nodes>
+   <node id="18" label="George Brecht"/>
+   <node id="49" label="Robert Filliou"/>
+   <node id="316" label="Donna Jo Brewer"/>
+   <node id="317" label="Marianne Filliou"/>
+  </nodes>
+  <edges>
+   <edge source="18" target="49"/>
+   <edge source="18" target="316"/>
+   <edge source="18" target="317"/>
+   <edge source="49" target="316"/>
+   <edge source="49" target="317"/>
+   <edge source="316" target="317"/>
+  </edges>
+ </graph>
+</gexf>

@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<gexf version="1.2" xmlns="http://www.gexf.net/1.2draft">
+ <graph mode="static" defaultedgetype="undirected">
+  <nodes>
+   <node id="8" label="Henk Peeters"/>
+   <node id="63" label="Stanley Brouwn"/>
+   <node id="105" label="Willem de Ridder"/>
+   <node id="251" label="Wim T. Schippers"/>
+   <node id="252" label="H de By"/>
+  </nodes>
+  <edges>
+   <edge source="8" target="63"/>
+   <edge source="8" target="105"/>
+   <edge source="8" target="251"/>
+   <edge source="8" target="252"/>
+   <edge source="63" target="105"/>
+   <edge source="63" target="251"/>
+   <edge source="63" target="252"/>
+   <edge source="105" target="251"/>
+   <edge source="105" target="252"/>
+   <edge source="251" target="252"/>
+  </edges>
+ </graph>
+</gexf>

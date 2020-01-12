@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<gexf version="1.2" xmlns="http://www.gexf.net/1.2draft">
+ <graph mode="static" defaultedgetype="undirected">
+  <nodes>
+   <node id="68" label="Eric Andersen"/>
+   <node id="183" label="J&#xF8;rgen Plaetner"/>
+   <node id="46" label="Arthur Koepcke"/>
+   <node id="167" label="Henning Christiansen"/>
+  </nodes>
+  <edges>
+   <edge source="68" target="183"/>
+   <edge source="46" target="68"/>
+   <edge source="46" target="167"/>
+   <edge source="46" target="183"/>
+   <edge source="68" target="167"/>
+   <edge source="167" target="183"/>
+  </edges>
+ </graph>
+</gexf>

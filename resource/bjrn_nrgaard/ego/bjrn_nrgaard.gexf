@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<gexf version="1.2" xmlns="http://www.gexf.net/1.2draft">
+ <graph mode="static" defaultedgetype="undirected">
+  <nodes>
+   <node id="161" label="Joseph Beuys"/>
+   <node id="167" label="Henning Christiansen"/>
+   <node id="446" label="Bj&#xF8;rn N&#xF8;rgaard"/>
+  </nodes>
+  <edges>
+   <edge source="161" target="167"/>
+   <edge source="161" target="446"/>
+   <edge source="167" target="446"/>
+  </edges>
+ </graph>
+</gexf>

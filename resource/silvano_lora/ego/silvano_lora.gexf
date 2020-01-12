@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<gexf version="1.2" xmlns="http://www.gexf.net/1.2draft">
+ <graph mode="static" defaultedgetype="undirected">
+  <nodes>
+   <node id="46" label="Arthur Koepcke"/>
+   <node id="47" label="Silvano Lora"/>
+   <node id="48" label="Christian Megert"/>
+  </nodes>
+  <edges>
+   <edge source="46" target="47"/>
+   <edge source="46" target="48"/>
+   <edge source="47" target="48"/>
+  </edges>
+ </graph>
+</gexf>

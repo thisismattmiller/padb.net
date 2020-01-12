@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<gexf version="1.2" xmlns="http://www.gexf.net/1.2draft">
+ <graph mode="static" defaultedgetype="undirected">
+  <nodes>
+   <node id="13" label="Dick Higgins"/>
+   <node id="88" label="Ay-O"/>
+   <node id="192" label="Letty Eisenhauer"/>
+   <node id="323" label="Florence Tarlow"/>
+  </nodes>
+  <edges>
+   <edge source="13" target="88"/>
+   <edge source="13" target="192"/>
+   <edge source="13" target="323"/>
+   <edge source="88" target="192"/>
+   <edge source="88" target="323"/>
+   <edge source="192" target="323"/>
+  </edges>
+ </graph>
+</gexf>

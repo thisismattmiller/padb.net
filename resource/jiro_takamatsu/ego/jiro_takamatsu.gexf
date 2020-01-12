@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<gexf version="1.2" xmlns="http://www.gexf.net/1.2draft">
+ <graph mode="static" defaultedgetype="undirected">
+  <nodes>
+   <node id="137" label="Genpei Akasegawa"/>
+   <node id="138" label="Natsuyuki Nakanishi"/>
+   <node id="139" label="Jiro Takamatsu"/>
+   <node id="140" label="Izumi Tatsu"/>
+   <node id="141" label="Kazakura Sho"/>
+   <node id="146" label="Hi Red Center"/>
+  </nodes>
+  <edges>
+   <edge source="137" target="138"/>
+   <edge source="137" target="139"/>
+   <edge source="137" target="140"/>
+   <edge source="137" target="141"/>
+   <edge source="137" target="146"/>
+   <edge source="138" target="139"/>
+   <edge source="138" target="140"/>
+   <edge source="138" target="141"/>
+   <edge source="138" target="146"/>
+   <edge source="139" target="140"/>
+   <edge source="139" target="141"/>
+   <edge source="139" target="146"/>
+   <edge source="140" target="141"/>
+   <edge source="140" target="146"/>
+   <edge source="141" target="146"/>
+  </edges>
+ </graph>
+</gexf>

@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<gexf version="1.2" xmlns="http://www.gexf.net/1.2draft">
+ <graph mode="static" defaultedgetype="undirected">
+  <nodes>
+   <node id="13" label="Dick Higgins"/>
+   <node id="25" label="La Monte Young"/>
+   <node id="26" label="Terry Riley"/>
+   <node id="27" label="Walter De Maria"/>
+  </nodes>
+  <edges>
+   <edge source="13" target="25"/>
+   <edge source="13" target="26"/>
+   <edge source="13" target="27"/>
+   <edge source="25" target="26"/>
+   <edge source="25" target="27"/>
+   <edge source="26" target="27"/>
+  </edges>
+ </graph>
+</gexf>

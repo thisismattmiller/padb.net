@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<gexf version="1.2" xmlns="http://www.gexf.net/1.2draft">
+ <graph mode="static" defaultedgetype="undirected">
+  <nodes>
+   <node id="1" label="John Cage"/>
+   <node id="13" label="Dick Higgins"/>
+   <node id="18" label="George Brecht"/>
+   <node id="304" label="D Bonset"/>
+   <node id="305" label="Giuseppe Chiari"/>
+   <node id="306" label="A Perille"/>
+  </nodes>
+  <edges>
+   <edge source="1" target="13"/>
+   <edge source="1" target="18"/>
+   <edge source="1" target="304"/>
+   <edge source="1" target="305"/>
+   <edge source="1" target="306"/>
+   <edge source="13" target="18"/>
+   <edge source="13" target="304"/>
+   <edge source="13" target="305"/>
+   <edge source="13" target="306"/>
+   <edge source="18" target="304"/>
+   <edge source="18" target="305"/>
+   <edge source="18" target="306"/>
+   <edge source="304" target="305"/>
+   <edge source="304" target="306"/>
+   <edge source="305" target="306"/>
+  </edges>
+ </graph>
+</gexf>

@@ -1,0 +1,541 @@
+<!doctype html>
+<html>
+
+<!-- Mirrored from padb.net/resource/james_tenney by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 11 Jan 2020 22:17:49 GMT -->
+<head>
+<meta charset="UTF-8">
+<title>padb.net</title>
+
+
+<link rel="stylesheet" href="../css/bootstrap.css">
+<link rel="stylesheet" href="../css/font-awesome.css">
+<link rel="stylesheet" href="../css/site.css">
+<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+<link rel="icon" type="image/png" href="../img/favicon.png">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/bootstrap-modal.js"></script>
+<script src="../js/bootstrap-modalmanager.js"></script>
+
+<script src="../js/d3.min.js"></script>
+<script src="../js/html5slider.js"></script>
+<script src="../js/topojson.js"></script>
+<script src="../js/padb.js"></script>
+
+
+</head>
+<body>
+    
+    
+	<div style="position:relative;">        
+
+ 		<div style=" border-bottom:solid 1px #ccc;">
+        	<div class="container">
+                
+                 <div id="header">
+                 	
+                     <div class="logo"><a href="../index.html"><span>|||</span>padb</a> </div>
+                    
+                      
+						 <div id="resourceName">James Tenney</div>
+					 
+                 </div>
+                
+                
+        	</div>
+            
+    	</div>
+ 
+   </div>
+<script src="../js/countriesData.js"></script>
+
+<script type="text/javascript">
+	//preloaded json from the server
+
+	var dataSameAs = [
+  {
+    "uri": "http://wikidata.dbpedia.org/resource/Q715379",
+    "numDuplicates": "28",
+    "duplicates": [
+      "http://dbpedia.org/resource/James_Tenney",
+      "http://d-nb.info/gnd/128957719",
+      "http://d-nb.info/gnd/128957719/about/rdf",
+      "http://data.bibsys.no/data/notrbib/authorityentry/x90623619",
+      "http://dbpedialite.org/things/292219#id",
+      "http://de.dbpedia.org/resource/James_Tenney",
+      "http://discogs.dataincubator.org/artist/james-tenney",
+      "http://el.dbpedia.org/resource/\u03A4\u03B6\u03AD\u03B9\u03BC\u03C2_\u03A4\u03AD\u03BD\u03BD\u03B9",
+      "http://en.wikipedia.org/wiki/James_Tenney",
+      "http://fr.dbpedia.org/resource/James_Tenney",
+      "http://freebase.com//m/01qr6l",
+      "http://id.loc.gov/authorities/names/n84148369",
+      "http://ja.dbpedia.org/resource/\u30B8\u30A7\u30FC\u30E0\u30BA\u30FB\u30C6\u30CB\u30FC",
+      "http://libris.kb.se/resource/auth/277191",
+      "http://mpii.de/yago/resource/James_Tenney",
+      "http://musicbrainz.org/artist/e42207a2-a5c6-400f-a8d0-9e30221c3518",
+      "http://rdf.freebase.com/ns/m.01qr6l",
+      "http://rdf.freebase.com/ns/en.james_tenney",
+      "http://rdf.freebase.com/ns/guid.9202a8c04000641f80000000001b5cd2",
+      "http://umbel.org/umbel/ne/wikipedia/James_Tenney",
+      "http://viaf.org/viaf/42036761",
+      "http://viaf.org/viaf/111155088",
+      "http://viaf.org/viaf/165181716",
+      "http://wikidata.dbpedia.org/resource/Q715379",
+      "http://www.bbc.co.uk/music/artists/e42207a2-a5c6-400f-a8d0-9e30221c3518",
+      "http://www.discogs.com/artist/James+Tenney",
+      "http://www.wikidata.org/entity/Q715379",
+      "http://yago-knowledge.org/resource/James_Tenney"
+    ]
+  }
+]
+;
+	var dataDbpedia = {
+  "http://dbpedia.org/resource/Allison_Cameron_(composer)" : { "http://dbpedia.org/ontology/influencedBy" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/James_Tenney" } ] } ,
+  "http://en.wikipedia.org/wiki/James_Tenney" : { "http://xmlns.com/foaf/0.1/primaryTopic" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/James_Tenney" } ] } ,
+  "http://dbpedia.org/resource/SYR4:_Goodbye_20th_Century" : { "http://dbpedia.org/property/writer" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/James_Tenney" } ] } ,
+  "http://dbpedia.org/resource/Tenney" : { "http://dbpedia.org/ontology/wikiPageDisambiguates" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/James_Tenney" } ] } ,
+  "http://dbpedia.org/resource/James_Tenney" : { "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatPupilsOfJohnCage" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatExperimentalMusicians" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Enrollee110059162" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Student110665698" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatAmericanMusicTheorists" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Composer109947232" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatMusiciansFromDenver,Colorado" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/PhysicalEntity100001930" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatAmericanComposers" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Person100007846" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Object100002684" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatPeopleFromGrantCounty,NewMexico" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatMusiciansFromNewMexico" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/YagoLegalActor" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/YagoLegalActorGeo" } ,
+      { "type" : "uri", "value" : "http://www.w3.org/2002/07/owl#Thing" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatBenningtonCollegeAlumni" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Scholar110557854" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatPupilsOfKennethGaburo" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatPupilsOfHenryBrant" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatPupilsOfEdgardVar\u00E8se" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/CausalAgent100007347" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatPupilsOfEduardSteuermann" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatPupilsOfHarryPartch" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Whole100003553" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Theorist110706812" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Artist109812338" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatMusicTheorists" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/LivingThing100004258" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatPupilsOfCarlRuggles" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Organism100004475" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Alumnus109786338" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatPupilsOfChouWen-chung" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/ontology/Person" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Creator109614315" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatMicrotonalComposers" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Musician110339966" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Wikicat20th-centuryClassicalComposers" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Intellectual109621545" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatPeopleFromNewMexico" } ] ,
+    "http://www.w3.org/2000/01/rdf-schema#label" : [ { "type" : "literal", "value" : "\u30B8\u30A7\u30FC\u30E0\u30BA\u30FB\u30C6\u30CB\u30FC" , "lang" : "ja" } ,
+      { "type" : "literal", "value" : "James Tenney" , "lang" : "de" } ,
+      { "type" : "literal", "value" : "James Tenney" , "lang" : "pl" } ,
+      { "type" : "literal", "value" : "James Tenney" , "lang" : "fr" } ,
+      { "type" : "literal", "value" : "James Tenney" , "lang" : "en" } ] ,
+    "http://www.w3.org/2000/01/rdf-schema#comment" : [ { "type" : "literal", "value" : "James Tenney (August 10, 1934 \u2013 August 24, 2006) was an American composer and influential music theorist." , "lang" : "en" } ,
+      { "type" : "literal", "value" : "\u30D6\u30EB\u30C3\u30AF\u30EA\u30F3\u30FB\u30DD\u30EA\u30C6\u30AF\u30CB\u30C3\u30AF\u3001\u30AB\u30EA\u30D5\u30A9\u30EB\u30CB\u30A2\u82B8\u8853\u5927\u5B66\u3001\u30AB\u30EA\u30D5\u30A9\u30EB\u30CB\u30A2\u5927\u5B66\u3001\u30E8\u30FC\u30AF\u5927\u5B66\u306A\u3069\u3067\u6559\u58C7\u306B\u7ACB\u3061\u3001\u30B8\u30E7\u30F3\u30FB\u30EB\u30FC\u30B5\u30FC\u30FB\u30A2\u30C0\u30E0\u30BA\u3084\u30E9\u30EA\u30FC\u30FB\u30DD\u30E9\u30F3\u30B9\u30AD\u30FC\u3089\u306E\u9580\u4EBA\u304C\u3044\u308B\u3002\u30A2\u30E1\u30EA\u30AB\u73FE\u4EE3\u97F3\u697D\u306E\u7406\u8AD6\u5BB6\u3068\u3057\u3066\u30B8\u30E7\u30F3\u30FB\u30B1\u30FC\u30B8\u304B\u3089\u3082\u7D76\u5927\u306A\u4FE1\u983C\u3092\u5F97\u3066\u3044\u305F\u3002 \u30CB\u30E5\u30FC\u30E1\u30AD\u30B7\u30B3\u5DDE\u30B7\u30EB\u30F4\u30A1\u30FC\u30B7\u30C6\u30A3\u3067\u751F\u307E\u308C\u3001\u30A2\u30EA\u30BE\u30CA\u5DDE\u3068\u30B3\u30ED\u30E9\u30C9\u5DDE\u3067\u80B2\u3063\u305F\u3002\u30C7\u30F3\u30F4\u30A1\u30FC\u5927\u5B66\u3084\u30B8\u30E5\u30EA\u30A2\u30FC\u30C9\u97F3\u697D\u5B66\u6821\u306B\u5B66\u3076\u304B\u305F\u308F\u3089\u30011958\u5E74\u306B\u30D9\u30CB\u30F3\u30C8\u30F3\u5927\u5B66\u3067\u6587\u5B66\u58EB\u53F7\u3092\u30011961\u5E74\u306B\u6587\u5B66\u4FEE\u58EB\u53F7\u3092\u53D6\u5F97\u3002\u30D4\u30A2\u30CE\u3092\u30A8\u30C9\u30A5\u30A2\u30EB\u30C8\u30FB\u30B7\u30E5\u30C8\u30A4\u30A2\u30FC\u30DE\u30F3\u306B\u3001\u4F5C\u66F2\u3092\u30AB\u30FC\u30EB\u30FB\u30E9\u30C3\u30B0\u30EB\u30BA\u3001\u30B8\u30E7\u30F3\u30FB\u30B1\u30FC\u30B8\u3001\u30CF\u30EA\u30FC\u30FB\u30D1\u30FC\u30C1\u3001\u30A8\u30C9\u30AC\u30FC\u30FB\u30F4\u30A1\u30EC\u30FC\u30BA\u3001\u5468\u6587\u4E2D\u3089\u306B\u5E2B\u4E8B\u3002\u60C5\u5831\u7406\u8AD6\u3068\u4F5C\u66F2\u3092\u30EA\u30FC\u30B8\u30E3\u30EC\u30F3\u30FB\u30D2\u30E9\u30FC\u306B\u5E2B\u4E8B\u3057\u3001\u78BA\u7387\u8AD6\u306B\u3088\u308B\u521D\u671F\u306E\u30B3\u30F3\u30D4\u30E5\u30FC\u30BF\u30FC\u97F3\u697D\u3092\u4F5C\u66F2\u3059\u308B\u304C\u3001\u305D\u306E\u5F8C\u306F\u30C6\u30FC\u30D7\u306E\u30C7\u30A3\u30EC\u30A4\u52B9\u679C\u3084\u5FAE\u5206\u97F3\u30FB\u7D14\u6B63\u5F8B\u3092\u7528\u3044\u305F\u5668\u697D\u66F2\u306E\u5275\u4F5C\u306B\u4E57\u308A\u63DB\u3048\u305F\u3002\u6F14\u594F\u5BB6\u3068\u3057\u3066\u306F\u30CF\u30EA\u30FC\u30FB\u30D1\u30FC\u30C1\u3084\u30B9\u30C6\u30A3\u30FC\u30F4\u30FB\u30E9\u30A4\u30D2\u3001\u30D5\u30A3\u30EA\u30C3\u30D7\u30FB\u30B0\u30E9\u30B9\u3089\u306E\u697D\u56E3\u3084\u3001\u30B8\u30E7\u30F3\u30FB\u30B1\u30FC\u30B8\u3068\u5171\u6F14\u3057\u3066\u3044\u308B\u3002 \u30C6\u30CB\u30FC\u306E\u4F5C\u54C1\u306F\u77E5\u899A\u3084\u7D14\u6B63\u5F8B\u3001\u30A8\u30EB\u30B4\u7406\u8AD6\uFF08\u30A8\u30EB\u30B4\u30FC\u30C9\u6027\uFF09\u3092\u53D6\u308A\u6271\u3063\u3066\u304A\u308A\u3001\u305D\u306E\u65B9\u6CD5\u306F\u5358\u7D14\u306A\u3082\u306E\u304B\u3089\u3001\u624B\u7DF4\u624B\u7BA1\u3092\u52B4\u3057\u305F\u3082\u306E\u307E\u3067\u3055\u307E\u3056\u307E\u3067\u3042\u308B\u3002\u300C\u30A2\u30F3\u306E\u305F\u3081\u306B\uFF08\u9AD8\u63DA\uFF09 For Ann (rising) \u300D\u306E\u3088\u3046\u306B\u3001\u3057\u3070\u3057\u3070\u732E\u8F9E\u304C\u305D\u306E\u307E\u307E\u4F5C\u54C1\u540D\u306B\u3055\u308C\u308B\u3053\u3068\u304C\u3042\u308B\u30022000\u5E74\u304B\u3089\u306F\u30AB\u30EA\u30D5\u30A9\u30EB\u30CB\u30A2\u82B8\u8853\u5927\u5B66\u306B\u547C\u3073\u623B\u3055\u308C\u6559\u6388\u8077\u306B\u3064\u3044\u305F\u3002" , "lang" : "ja" } ,
+      { "type" : "literal", "value" : "James Tenney (* 10. August 1934 in Silver City, New Mexico; \u2020 24. August 2006 in Valencia, Kalifornien) war ein US-amerikanischer Komponist und Musiktheoretiker." , "lang" : "de" } ,
+      { "type" : "literal", "value" : "James Tenney (n\u00E9 le 10 ao\u00FBt 1934 \u00E0 Silver City au Nouveau-Mexique \u2013 mort le 24 ao\u00FBt 2006 \u00E0 Valencia en Californie) est un compositeur et un th\u00E9oricien de la musique am\u00E9ricain, sp\u00E9cialiste de la musique de Conlon Nancarrow. Il a enseign\u00E9 dans plusieurs universit\u00E9s, dont l'universit\u00E9 de Californie." , "lang" : "fr" } ,
+      { "type" : "literal", "value" : "James Tenney (ur. 10 sierpnia 1934 r., Silver City; zm. 24 sierpnia 2006 r., Valencia, California) - ameryka\u0144ski kompozytor, wykonawca, teoretyk muzyki i wyk\u0142adowca. Za\u0142o\u017Cyciel grupy Tone Roads (wraz z Malcolmem Goldsteinem i Philipem Cornerem). Wsp\u00F3\u0142pracowa\u0142 m. in. z Johnem Cage'em, Steve'em Reichem, Philipem Glassem, Harrym Partchem." , "lang" : "pl" } ] ,
+    "http://www.w3.org/2002/07/owl#sameAs" : [ { "type" : "uri", "value" : "http://el.dbpedia.org/resource/\u03A4\u03B6\u03AD\u03B9\u03BC\u03C2_\u03A4\u03AD\u03BD\u03BD\u03B9" } ,
+      { "type" : "uri", "value" : "http://pl.dbpedia.org/resource/James_Tenney" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/James_Tenney" } ,
+      { "type" : "uri", "value" : "http://rdf.freebase.com/ns/m.01qr6l" } ,
+      { "type" : "uri", "value" : "http://yago-knowledge.org/resource/James_Tenney" } ,
+      { "type" : "uri", "value" : "http://fr.dbpedia.org/resource/James_Tenney" } ,
+      { "type" : "uri", "value" : "http://www.wikidata.org/entity/Q715379" } ,
+      { "type" : "uri", "value" : "http://cs.dbpedia.org/resource/James_Tenney" } ,
+      { "type" : "uri", "value" : "http://ja.dbpedia.org/resource/\u30B8\u30A7\u30FC\u30E0\u30BA\u30FB\u30C6\u30CB\u30FC" } ,
+      { "type" : "uri", "value" : "http://wikidata.dbpedia.org/resource/Q715379" } ,
+      { "type" : "uri", "value" : "http://d-nb.info/gnd/128957719" } ,
+      { "type" : "uri", "value" : "http://de.dbpedia.org/resource/James_Tenney" } ] ,
+    "http://purl.org/dc/terms/subject" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Pupils_of_Harry_Partch" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Microtonal_composers" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:20th-century_American_musicians" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:20th-century_classical_composers" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Pupils_of_Henry_Brant" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Pupils_of_Edgard_Var\u00E8se" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Musicians_from_New_Mexico" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:1934_births" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:American_music_theorists" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Bennington_College_alumni" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Deaths_from_cancer_in_California" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Musicians_from_Denver" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Pupils_of_Carl_Ruggles" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Pupils_of_Eduard_Steuermann" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:American_classical_composers" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Pupils_of_John_Cage" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Pupils_of_Kenneth_Gaburo" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Polytechnic_Institute_of_New_York_University_faculty" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:American_male_classical_composers" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:People_from_Grant_County,_New_Mexico" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:2006_deaths" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Pupils_of_Chou_Wen-chung" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Deaths_from_lung_cancer" } ] ,
+    "http://xmlns.com/foaf/0.1/name" : [ { "type" : "literal", "value" : "James Tenney" , "lang" : "en" } ] ,
+    "http://purl.org/dc/terms/description" : [ { "type" : "literal", "value" : "American composer and music theorist" , "lang" : "en" } ] ,
+    "http://xmlns.com/foaf/0.1/givenName" : [ { "type" : "literal", "value" : "James" , "lang" : "en" } ] ,
+    "http://xmlns.com/foaf/0.1/gender" : [ { "type" : "literal", "value" : "male" , "lang" : "en" } ] ,
+    "http://xmlns.com/foaf/0.1/isPrimaryTopicOf" : [ { "type" : "uri", "value" : "http://en.wikipedia.org/wiki/James_Tenney" } ] ,
+    "http://xmlns.com/foaf/0.1/surname" : [ { "type" : "literal", "value" : "Tenney" , "lang" : "en" } ] ,
+    "http://dbpedia.org/property/title" : [ { "type" : "literal", "value" : "Postcards from the Edge" , "datatype" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString" } ] ,
+    "http://www.w3.org/ns/prov#wasDerivedFrom" : [ { "type" : "uri", "value" : "http://en.wikipedia.org/wiki/James_Tenney?oldid=743433240" } ] ,
+    "http://dbpedia.org/property/author" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Frank_J._Oteri" } ] ,
+    "http://dbpedia.org/property/composer" : [ { "type" : "literal", "value" : "James Tenney" , "datatype" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString" } ] ,
+    "http://dbpedia.org/property/conducted" : [ { "type" : "literal", "value" : "--05-08" , "datatype" : "http://www.w3.org/2001/XMLSchema#gMonthDay" } ] ,
+    "http://dbpedia.org/ontology/wikiPageExternalLink" : [ { "type" : "uri", "value" : "http://www.rhizomecowboy.com/spectral_variations" } ,
+      { "type" : "uri", "value" : "http://www.artsjournal.com/postclassic/2006/08/james_tenney_19342006.html" } ,
+      { "type" : "uri", "value" : "http://www3.uakron.edu/ssma/composers/Tenney.shtml" } ,
+      { "type" : "uri", "value" : "http://www.informaworld.com/openurl?genre=issue&issn=0749-4467&volume=27&issue=1" } ,
+      { "type" : "uri", "value" : "http://www.artistshousemusic.com/alpert_dl/node/5369/163" } ,
+      { "type" : "uri", "value" : "http://www.artifact.com/bio.php?name=Tenney" } ,
+      { "type" : "uri", "value" : "http://kalvos.org/shows/kalv0802.ram" } ,
+      { "type" : "uri", "value" : "http://www.dnk-amsterdam.com/media/music/02Tenney-SpactralVariationsNo1.mp3" } ,
+      { "type" : "uri", "value" : "http://www.cdemusic.org/artists/tenney.html" } ,
+      { "type" : "uri", "value" : "http://www.plainsound.org" } ,
+      { "type" : "uri", "value" : "http://www.dramonline.org/albums/james-tenney-spectrum-pieces/notes" } ,
+      { "type" : "uri", "value" : "http://composers21.com/compdocs/tenneyj.htm" } ,
+      { "type" : "uri", "value" : "https://soundcloud.com/user1401258/chromatic-canon-by-james-tenney-just-intonation-versionromatic-canon" } ,
+      { "type" : "uri", "value" : "http://www.ubu.com/sound/tenney.html" } ,
+      { "type" : "uri", "value" : "http://www.quatuorbozzini.ca" } ,
+      { "type" : "uri", "value" : "http://muse.jhu.edu/journals/wide_angle/v020/20.1schneemann.html" } ,
+      { "type" : "uri", "value" : "http://www.rhizomecowboy.com/Maher_Tenney_A_Different_view.pdf" } ,
+      { "type" : "uri", "value" : "http://www.frogpeak.org/unbound/index.html" } ,
+      { "type" : "uri", "value" : "http://musicmavericks.publicradio.org/features/rafiles/interviews/interview_tenney.ram" } ,
+      { "type" : "uri", "value" : "http://music.calarts.edu/~rwannama/writings/rwannamaker_north_american_spectralism.pdf" } ,
+      { "type" : "uri", "value" : "http://musicmavericks.publicradio.org/" } ,
+      { "type" : "uri", "value" : "http://artboy.info/border/" } ,
+      { "type" : "uri", "value" : "http://web.inter.nl.net/users/BartonWorkshop" } ,
+      { "type" : "uri", "value" : "http://www.soundnet.org/concerts/mov_refs/2002.shtml#cage" } ,
+      { "type" : "uri", "value" : "http://www.motionensemble.com" } ,
+      { "type" : "uri", "value" : "http://www.calarts.edu/schools/music/faculty/tenney.html" } ,
+      { "type" : "uri", "value" : "http://mitpress2.mit.edu/e-journals/LEA/ARTICLES/TENNEY/kahn.html" } ] ,
+    "http://dbpedia.org/property/id" : [ { "type" : "literal", "value" : "james-tenney-postcards-from-the-edge" , "datatype" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString" } ] ,
+    "http://dbpedia.org/ontology/abstract" : [ { "type" : "literal", "value" : "James Tenney (n\u00E9 le 10 ao\u00FBt 1934 \u00E0 Silver City au Nouveau-Mexique \u2013 mort le 24 ao\u00FBt 2006 \u00E0 Valencia en Californie) est un compositeur et un th\u00E9oricien de la musique am\u00E9ricain, sp\u00E9cialiste de la musique de Conlon Nancarrow. Il a enseign\u00E9 dans plusieurs universit\u00E9s, dont l'universit\u00E9 de Californie." , "lang" : "fr" } ,
+      { "type" : "literal", "value" : "\u30D6\u30EB\u30C3\u30AF\u30EA\u30F3\u30FB\u30DD\u30EA\u30C6\u30AF\u30CB\u30C3\u30AF\u3001\u30AB\u30EA\u30D5\u30A9\u30EB\u30CB\u30A2\u82B8\u8853\u5927\u5B66\u3001\u30AB\u30EA\u30D5\u30A9\u30EB\u30CB\u30A2\u5927\u5B66\u3001\u30E8\u30FC\u30AF\u5927\u5B66\u306A\u3069\u3067\u6559\u58C7\u306B\u7ACB\u3061\u3001\u30B8\u30E7\u30F3\u30FB\u30EB\u30FC\u30B5\u30FC\u30FB\u30A2\u30C0\u30E0\u30BA\u3084\u30E9\u30EA\u30FC\u30FB\u30DD\u30E9\u30F3\u30B9\u30AD\u30FC\u3089\u306E\u9580\u4EBA\u304C\u3044\u308B\u3002\u30A2\u30E1\u30EA\u30AB\u73FE\u4EE3\u97F3\u697D\u306E\u7406\u8AD6\u5BB6\u3068\u3057\u3066\u30B8\u30E7\u30F3\u30FB\u30B1\u30FC\u30B8\u304B\u3089\u3082\u7D76\u5927\u306A\u4FE1\u983C\u3092\u5F97\u3066\u3044\u305F\u3002 \u30CB\u30E5\u30FC\u30E1\u30AD\u30B7\u30B3\u5DDE\u30B7\u30EB\u30F4\u30A1\u30FC\u30B7\u30C6\u30A3\u3067\u751F\u307E\u308C\u3001\u30A2\u30EA\u30BE\u30CA\u5DDE\u3068\u30B3\u30ED\u30E9\u30C9\u5DDE\u3067\u80B2\u3063\u305F\u3002\u30C7\u30F3\u30F4\u30A1\u30FC\u5927\u5B66\u3084\u30B8\u30E5\u30EA\u30A2\u30FC\u30C9\u97F3\u697D\u5B66\u6821\u306B\u5B66\u3076\u304B\u305F\u308F\u3089\u30011958\u5E74\u306B\u30D9\u30CB\u30F3\u30C8\u30F3\u5927\u5B66\u3067\u6587\u5B66\u58EB\u53F7\u3092\u30011961\u5E74\u306B\u6587\u5B66\u4FEE\u58EB\u53F7\u3092\u53D6\u5F97\u3002\u30D4\u30A2\u30CE\u3092\u30A8\u30C9\u30A5\u30A2\u30EB\u30C8\u30FB\u30B7\u30E5\u30C8\u30A4\u30A2\u30FC\u30DE\u30F3\u306B\u3001\u4F5C\u66F2\u3092\u30AB\u30FC\u30EB\u30FB\u30E9\u30C3\u30B0\u30EB\u30BA\u3001\u30B8\u30E7\u30F3\u30FB\u30B1\u30FC\u30B8\u3001\u30CF\u30EA\u30FC\u30FB\u30D1\u30FC\u30C1\u3001\u30A8\u30C9\u30AC\u30FC\u30FB\u30F4\u30A1\u30EC\u30FC\u30BA\u3001\u5468\u6587\u4E2D\u3089\u306B\u5E2B\u4E8B\u3002\u60C5\u5831\u7406\u8AD6\u3068\u4F5C\u66F2\u3092\u30EA\u30FC\u30B8\u30E3\u30EC\u30F3\u30FB\u30D2\u30E9\u30FC\u306B\u5E2B\u4E8B\u3057\u3001\u78BA\u7387\u8AD6\u306B\u3088\u308B\u521D\u671F\u306E\u30B3\u30F3\u30D4\u30E5\u30FC\u30BF\u30FC\u97F3\u697D\u3092\u4F5C\u66F2\u3059\u308B\u304C\u3001\u305D\u306E\u5F8C\u306F\u30C6\u30FC\u30D7\u306E\u30C7\u30A3\u30EC\u30A4\u52B9\u679C\u3084\u5FAE\u5206\u97F3\u30FB\u7D14\u6B63\u5F8B\u3092\u7528\u3044\u305F\u5668\u697D\u66F2\u306E\u5275\u4F5C\u306B\u4E57\u308A\u63DB\u3048\u305F\u3002\u6F14\u594F\u5BB6\u3068\u3057\u3066\u306F\u30CF\u30EA\u30FC\u30FB\u30D1\u30FC\u30C1\u3084\u30B9\u30C6\u30A3\u30FC\u30F4\u30FB\u30E9\u30A4\u30D2\u3001\u30D5\u30A3\u30EA\u30C3\u30D7\u30FB\u30B0\u30E9\u30B9\u3089\u306E\u697D\u56E3\u3084\u3001\u30B8\u30E7\u30F3\u30FB\u30B1\u30FC\u30B8\u3068\u5171\u6F14\u3057\u3066\u3044\u308B\u3002 \u30C6\u30CB\u30FC\u306E\u4F5C\u54C1\u306F\u77E5\u899A\u3084\u7D14\u6B63\u5F8B\u3001\u30A8\u30EB\u30B4\u7406\u8AD6\uFF08\u30A8\u30EB\u30B4\u30FC\u30C9\u6027\uFF09\u3092\u53D6\u308A\u6271\u3063\u3066\u304A\u308A\u3001\u305D\u306E\u65B9\u6CD5\u306F\u5358\u7D14\u306A\u3082\u306E\u304B\u3089\u3001\u624B\u7DF4\u624B\u7BA1\u3092\u52B4\u3057\u305F\u3082\u306E\u307E\u3067\u3055\u307E\u3056\u307E\u3067\u3042\u308B\u3002\u300C\u30A2\u30F3\u306E\u305F\u3081\u306B\uFF08\u9AD8\u63DA\uFF09 For Ann (rising) \u300D\u306E\u3088\u3046\u306B\u3001\u3057\u3070\u3057\u3070\u732E\u8F9E\u304C\u305D\u306E\u307E\u307E\u4F5C\u54C1\u540D\u306B\u3055\u308C\u308B\u3053\u3068\u304C\u3042\u308B\u30022000\u5E74\u304B\u3089\u306F\u30AB\u30EA\u30D5\u30A9\u30EB\u30CB\u30A2\u82B8\u8853\u5927\u5B66\u306B\u547C\u3073\u623B\u3055\u308C\u6559\u6388\u8077\u306B\u3064\u3044\u305F\u3002 \u30C6\u30CB\u30FC\u306F\u3001\u30F4\u30A7\u30EB\u30B4\u30FB\u30EC\u30FC\u30D9\u30EB\u306B\u3088\u308B\u30B3\u30F3\u30ED\u30F3\u30FB\u30CA\u30F3\u30AB\u30ED\u30A6\u30FB\u30A8\u30C7\u30A3\u30B7\u30E7\u30F3\uFF08\u300A\u81EA\u52D5\u30D4\u30A2\u30CE\u306E\u305F\u3081\u306E\u7FD2\u4F5C\u300B\u30B7\u30EA\u30FC\u30BA\uFF09\u306B\u5FB9\u5E95\u3057\u305F\u89E3\u8AAC\u6587\u3092\u5BC4\u305B\u3066\u304A\u308A\u3001\u30CA\u30F3\u30AB\u30ED\u30A6\u306F\u30C6\u30CB\u30FC\u306E\u300C\u30B3\u30F3\u30ED\u30F3\u30FB\u30CA\u30F3\u30AB\u30ED\u30A6\u306E\u305F\u3081\u306E\u5206\u5149\u30AB\u30CE\u30F3 Spectral Canon for Conlon Nancarrow \u300D\u3092\u304A\u6C17\u306B\u5165\u308A\u3068\u3057\u3066\u30D4\u30A2\u30CE\u30ED\u30FC\u30EB\u306B\u6B8B\u3057\u305F\u3002\u300C\u5909\u901F\uFF08\u8D85\u901F\u5EA6\uFF09 Meta (+) Hodos \u300D\u306F\u3001\u30B2\u30B7\u30E5\u30BF\u30EB\u30C8\u7406\u8AD6\u3084\u8A8D\u77E5\u79D1\u5B66\u3092\u9069\u7528\u3057\u305F\u6700\u521D\u671F\u306E\u4F5C\u54C1\u306E\u4E00\u4F8B\u3067\u3042\u308A\u3001\u9580\u4EBA\u30E9\u30EA\u30FC\u30FB\u30DD\u30E9\u30F3\u30B9\u30AD\u30FC\u306E\u4F5C\u98A8\u306B\u5148\u97AD\u3092\u3064\u3051\u305F\u30021980\u5E74\u4EE3\u304B\u3089\u300C\u30E6\u30D3\u30E5\u30C9\u3078\u306E\u9053\u300D\u3084\u300C\u30D6\u30EA\u30C3\u30B8\u300D\u3001\u300C\u30D4\u30AB\u30FB\u30C9\u30F3\u300D\u306A\u3069\u3067\u3001\u5275\u4F5C\u306E\u5168\u76DB\u671F\u3092\u8FCE\u3048\u3066\u3044\u305F\u3002 \u30C9\u30A4\u30C4\u3067\u306F1990\u5E74\u4EE3\u306B\u30C0\u30EB\u30E0\u30B7\u30E5\u30BF\u30C3\u30C8\u306B\u62DB\u304B\u308C\u3001\u8457\u540D\u306B\u306A\u3063\u305F\u3002\u305D\u306E\u5F8C\u3082\u30AA\u30FC\u30B9\u30C8\u30EA\u30A2\u306E\u30AF\u30EC\u30E0\u30B9\u7B49\u306B\u30E9\u30E2\u30F3\u30C6\u30FB\u30E4\u30F3\u30B0\u3068\u5171\u306B\u62DB\u5F85\u3055\u308C\u30B2\u30CD\u30D7\u30ED\u306A\u3069\u306E\u516C\u958B\u306A\u3069\u3092\u542B\u3080\u30EC\u30AF\u30C1\u30E3\u30FC\u3067\u591A\u304F\u306E\u8CDB\u540C\u8005\u3092\u30E8\u30FC\u30ED\u30C3\u30D1\u306B\u3082\u4F5C\u308A\u51FA\u3057\u3001\u591A\u304F\u306E\u7814\u7A76\u8AD6\u6587\u304C\u97F3\u697D\u5B66\u8005\u306B\u3088\u3063\u3066\u96D1\u8A8C\u306B\u516C\u8868\u3055\u308C\u305F\u3002\u6669\u5E74\u306F\u4E00\u9023\u306E\u30B1\u30EB\u30F3\u653E\u9001\u5C40\u304B\u3089\u306E\u59D4\u5631\u3082\u53D7\u3051\u3066\u3044\u308B\u3002 2006\u5E74\u3001\u80BA\u764C\u306B\u3088\u308A\u6B7B\u53BB\u300272\u6B73\u6CA1\u3002" , "lang" : "ja" } ,
+      { "type" : "literal", "value" : "James Tenney (* 10. August 1934 in Silver City, New Mexico; \u2020 24. August 2006 in Valencia, Kalifornien) war ein US-amerikanischer Komponist und Musiktheoretiker." , "lang" : "de" } ,
+      { "type" : "literal", "value" : "James Tenney (ur. 10 sierpnia 1934 r., Silver City; zm. 24 sierpnia 2006 r., Valencia, California) - ameryka\u0144ski kompozytor, wykonawca, teoretyk muzyki i wyk\u0142adowca. Za\u0142o\u017Cyciel grupy Tone Roads (wraz z Malcolmem Goldsteinem i Philipem Cornerem). Wsp\u00F3\u0142pracowa\u0142 m. in. z Johnem Cage'em, Steve'em Reichem, Philipem Glassem, Harrym Partchem." , "lang" : "pl" } ,
+      { "type" : "literal", "value" : "James Tenney (August 10, 1934 \u2013 August 24, 2006) was an American composer and influential music theorist." , "lang" : "en" } ] ,
+    "http://dbpedia.org/ontology/birthDate" : [ { "type" : "literal", "value" : "1934-8-10" , "datatype" : "http://www.w3.org/2001/XMLSchema#date" } ] ,
+    "http://dbpedia.org/ontology/deathDate" : [ { "type" : "literal", "value" : "2006-8-24" , "datatype" : "http://www.w3.org/2001/XMLSchema#date" } ] ,
+    "http://dbpedia.org/ontology/wikiPageRevisionID" : [ { "type" : "literal", "value" : 743433240 , "datatype" : "http://www.w3.org/2001/XMLSchema#integer" } ] ,
+    "http://dbpedia.org/ontology/wikiPageID" : [ { "type" : "literal", "value" : 292219 , "datatype" : "http://www.w3.org/2001/XMLSchema#integer" } ] ,
+    "http://purl.org/linguistics/gold/hypernym" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Composer" } ] ,
+    "http://dbpedia.org/property/published" : [ { "type" : "literal", "value" : "2005-06-01" , "datatype" : "http://www.w3.org/2001/XMLSchema#date" } ] } ,
+  "http://dbpedia.org/resource/Interim_(film)" : { "http://dbpedia.org/ontology/musicComposer" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/James_Tenney" } ] } ,
+  "http://dbpedia.org/resource/Cat's_Cradle_(film)" : { "http://dbpedia.org/ontology/starring" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/James_Tenney" } ] }
+}
+;
+	var dataAuth = "http://dbpedia.org/resource/James_Tenney";
+	var dataUrl = "james_tenney.html";
+	var dataResourceType = "participant";
+	var dataName = "James Tenney";
+ 	
+</script>
+
+
+
+
+
+<script type="text/javascript">
+
+
+	
+	
+	
+
+	$(document).ready(function($) {
+		
+		
+		padb.resource.initialize();
+			 
+		$( '.scrollable' ).
+		bind( 'mousewheel DOMMouseScroll', function ( e ) {
+			
+			if( e.originalEvent ) e = e.originalEvent;
+			
+			var delta = e.wheelDelta || -e.detail;
+			this.scrollTop += ( delta < 0 ? 1 : -1 ) * 30;
+			e.preventDefault();
+		});		 
+		
+		
+				
+		$.ajaxSetup ({
+			// Disable caching of AJAX responses
+			cache: false
+		});		
+		
+	});
+	
+
+	
+	
+	
+	
+	
+</script>
+
+
+
+
+ 
+<br />
+<div class="container"  style="position:relative;">
+	   
+      <div id="resourceLinks"></div> 
+       
+       
+       
+       
+              
+       
+           
+           
+           
+          <div class="row addSection">
+              <div class="span1 addSectionIconHolder">
+              
+                <i class="icon-user"></i>
+              
+              </div>
+          
+              <div class="span11">
+                <span>Performer</span>
+                <hr>
+                <br />
+              </div>
+        </div>
+        <div class="row">
+            <div class="span1">
+            </div>
+            <div class="span11" style="position:relative">
+                
+                
+                
+                
+               <div>
+                                       
+                                           
+                <div class="pull-left" style="width:80%;">
+                     
+                     <h5 id="resourceLDName">James Tenney</h5>
+                     <h5 id="resourceLDAbstract"></h5>
+                     
+                     
+                     <div id="resourceSameAs">
+                        <h5>External Data:</h5>
+                        
+                        
+                     </div>
+                
+                </div>   
+                
+                <br style="clear:both;" />
+            </div>
+            
+            
+                
+            </div>
+        </div>    
+         
+    
+    
+    
+    
+    
+    
+       <div class="row addSection">
+			<div class="span1 addSectionIconHolder">              
+                <i class="icon-asterisk"></i>
+              
+              </div>
+          
+              <div class="span11">
+                <span>Events </span><span id="resourceEventCount"></span>
+                <hr>
+              </div>
+        </div>
+    
+    
+    
+    
+    
+    
+    
+        <div class="row">
+            <div class="span1"></div>
+            <div class="span11" style="position:relative">
+                  
+                 <div class="">
+                    <div id="resourceEventsEvents" class="scrollable">
+                           <table class="table table-condensed table-hover table-striped">
+                               <thead>
+                                <tr>
+                                  <th>Date</th>
+                                  
+                                  <th>Title</th>
+                                  <th>Location</th>
+                                  <th></th>
+                                </tr>
+                              </thead>
+                              <tbody id="resourceEventsEventsRows"> 
+                              </tbody>
+                            </table>
+                     
+                    </div>
+                    
+                    <div id="resourceEventsExport">
+                    
+                    	<input  name="resourceEventsSearch" class="span3" id="resourceEventsSearch"  type="text" placeholder="Filter: names, places, dates">
+                    	<button class="btn btn-mini btn-danger" id="resourceEventsClearFilter"><i class="icon-remove">&nbsp;Clear Filter</i></button>
+                   		<button class="btn btn-mini btn-info" title="Render the currently filitered data as a network" id="resourceRenderEventNetwork"> <img src="../img/icon-network-white.png" style="height:15px; width:auto" /> Two-Mode Event Network</button>
+                   		<button class="btn btn-mini btn-info" title="Render the currently filitered data as a network" id="resourceRenderEventMap"> <i class="icon-globe"></i> Map Event Locations</button>
+                   		<button class="btn btn-mini btn-success" title="Download network as Gephi File" id="resourceDownloadEventGephi"> <img src="../img/icon-gephi.png" style="height:15px; width:auto" /> Donwload Gephi Network</button>
+
+                 
+                    </div>                 
+                </div>
+                <br style="clear:both;" />
+            </div>
+            
+            
+                
+         </div>    
+    
+     
+       <div class="row addSection">
+              <div class="span1">
+              
+                <img src="../img/social-network.png" style=" margin-left:25px; margin-bottom:10px;" />
+              
+              </div>
+          
+              <div class="span11">
+                <span>Performance Network</span> 
+                <hr>
+              </div>
+        </div>
+        
+        <div class="row">
+            <div class="span1">
+            </div>
+            <div class="span11" style="position:relative">
+                
+               	<div style="width: 100%; height:500px;" id="egoNetwork">
+            
+                
+             	</div> 
+                <div class="well pull-left well-small" id="egoNetworkControls">
+                    <span class="rangeLabels">Node Charge</span>
+                    <input type="range" id="resourceEgoNetworkCharge" min="-1000" max="100" value="-120" data-def="-700" />
+                    <br /><span class="rangeLabels">Gravity</span>
+                    <input type="range" id="resourceEgoNetworkGravity" min="0" max="1" value="0.1" step="0.01" data-def="0.3" /> 
+                    <br /><span class="rangeLabels">Edge Length</span>
+                    <input type="range" id="resourceEgoNetworkDistance" min="0" max="300" value="50" data-def="50"  />      
+                    <br /><span class="rangeLabels">Edge Strength</span>
+                    <input type="range" id="resourceEgoNetworkStrength" min="0" max="3" value="1" data-def="0.15" step="0.1"  /> 
+                    <br /><br />
+                    <button type="button" id="resourceEgoNetworkLabelsButton" class="btn btn-mini" title="Show node labels." data-toggle="button">Show Labels</button>  
+                    <button type="button" id="resourceEgoNetworkLiveButton" class="btn btn-mini" title="Show realtime network rendering" data-toggle="button">Live Rendering</button>                     
+                </div>
+                
+                <div class="well pull-left well-small egoNetworkControls span7" style="margin-left:20px;" >
+                
+                	<input  name="resourceEgoNetworkSearch" class="span3" id="resourceEgoNetworkSearch"  type="text" placeholder="Filter: names, places, dates">
+					<button class="btn btn-mini btn-danger" id="resourceEgoClearFilter"><i class="icon-remove">&nbsp;Clear Filter</i></button>
+                    <button class="btn btn-mini btn-success" title="Download network as Gephi File" id="resourceDownloadEgoGephi"> <img src="../img/icon-gephi.png" style="height:15px; width:auto" /> Donwload Gephi Network</button>
+
+                </div>
+                
+            </div>
+        </div>           
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+	
+
+	
+
+
+	
+
+
+</div>
+
+
+
+
+    <div id="resourceEventNetworkModal" class="modal container hide fade" style="min-height:500px" tabindex="-1">
+ 
+      <div class="modal-body">
+      	
+        <div id="eventNetwork" style="height:400px; width:100%">
+        
+        </div>
+      
+      </div>
+      <div class="modal-footer" style="height:20px;">
+      	
+        <div class="well pull-left well-small">
+        	<span class="rangeLabels">Node Charge</span>
+        	<input type="range" id="resourceEventNetworkCharge" min="-800" max="200" value="-120" data-def="-120" />
+            <span class="rangeLabels">Gravity</span>
+        	<input type="range" id="resourceEventNetworkGravity" min="0" max="1" value="0.1" step="0.01" data-def="0.1" /> 
+            <span class="rangeLabels">Edge Length</span>
+        	<input type="range" id="resourceEventNetworkDistance" min="0" max="300" value="50" data-def="50"  />      
+            <span class="rangeLabels">Edge Strength</span>
+        	<input type="range" id="resourceEventNetworkStrength" min="0" max="5" value="1" data-def="1" step="0.1"  />    
+            <button type="button" id="resourceEventNetworkLabelsButton" class="btn btn-mini" data-toggle="button">Show Labels</button>                     
+		</div>
+        <div class="pull-right">
+        <button type="button" data-dismiss="modal" class="btn">Close</button>
+       	</div>
+       </div>
+    </div>
+    
+    
+    
+    
+     <div id="resourceEventMapModal" class="modal container hide fade" style="min-height:500px" tabindex="-1">
+ 
+      <div class="modal-body">
+      	
+        <div id="eventMap" style="height:400px; width:100%">
+        
+        </div>
+      
+      </div>
+      <div class="modal-footer" style="height:20px;">
+      	
+        <div class="well pull-left well-small">                  
+		</div>
+        <div class="pull-right">
+        <button type="button" data-dismiss="modal" class="btn">Close</button>
+       	</div>
+       </div>
+    </div>
+
+<br /><br /><br /><br /><br /><br />
+
+<script type="text/javascript">    var _gaq = _gaq || [];   _gaq.push(['_setAccount', 'UA-10371295-7']);   _gaq.push(['_trackPageview']);    (function() {     var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);   })();  </script>
+
+</body>
+
+<!-- Mirrored from padb.net/resource/james_tenney by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 11 Jan 2020 22:17:49 GMT -->
+</html>

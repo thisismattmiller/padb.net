@@ -1,0 +1,1 @@
+{"nodes": [{"name": "Otto Olsen Exhibition", "type": "event", "year": "1962", "id": 0, "x": 100, "y": 100}, {"name": "Otto Olsen", "type": "person", "id": 1, "x": 100, "y": 100}], "edges": [{"source": 1, "target": 0, "value": 1}]}

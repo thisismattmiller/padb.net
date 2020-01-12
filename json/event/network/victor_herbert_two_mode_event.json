@@ -1,0 +1,1 @@
+{"nodes": [{"name": "IVth Festival de la libre Expression", "type": "event", "year": "1967", "id": 0, "x": 100, "y": 100}, {"name": "Jean-Jacques Lebel", "type": "person", "id": 1, "x": 100, "y": 100}, {"name": "Victor Herbert", "type": "person", "id": 2, "x": 100, "y": 100}], "edges": [{"source": 1, "target": 0, "value": 1}, {"source": 2, "target": 0, "value": 1}]}

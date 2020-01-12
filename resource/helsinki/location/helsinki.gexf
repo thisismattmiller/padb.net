@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<gexf version="1.2" xmlns="http://www.gexf.net/1.2draft">
+ <graph mode="static" defaultedgetype="undirected">
+  <nodes>
+   <node id="1" label="John Cage"/>
+   <node id="51" label="Merce Cunningham"/>
+  </nodes>
+  <edges>
+   <edge source="1" target="51"/>
+  </edges>
+ </graph>
+</gexf>

@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<gexf version="1.2" xmlns="http://www.gexf.net/1.2draft">
+ <graph mode="static" defaultedgetype="undirected">
+  <nodes>
+   <node id="12" label="Al Hansen"/>
+   <node id="14" label="Allan Kaprow"/>
+   <node id="28" label="Jackson Mac Low"/>
+   <node id="88" label="Ay-O"/>
+   <node id="91" label="Philip Corner"/>
+   <node id="186" label="Joe Jones"/>
+   <node id="198" label="Charlotte Moorman"/>
+   <node id="310" label="Geoffrey Hendricks"/>
+   <node id="352" label="Ken Dewey"/>
+   <node id="549" label="Taka Imura"/>
+  </nodes>
+  <edges>
+   <edge source="12" target="14"/>
+   <edge source="12" target="28"/>
+   <edge source="12" target="88"/>
+   <edge source="12" target="91"/>
+   <edge source="12" target="186"/>
+   <edge source="12" target="198"/>
+   <edge source="12" target="310"/>
+   <edge source="12" target="352"/>
+   <edge source="12" target="549"/>
+   <edge source="14" target="28"/>
+   <edge source="14" target="88"/>
+   <edge source="14" target="91"/>
+   <edge source="14" target="186"/>
+   <edge source="14" target="198"/>
+   <edge source="14" target="310"/>
+   <edge source="14" target="352"/>
+   <edge source="14" target="549"/>
+   <edge source="28" target="88"/>
+   <edge source="28" target="91"/>
+   <edge source="28" target="186"/>
+   <edge source="28" target="198"/>
+   <edge source="28" target="310"/>
+   <edge source="28" target="352"/>
+   <edge source="28" target="549"/>
+   <edge source="88" target="91"/>
+   <edge source="88" target="186"/>
+   <edge source="88" target="198"/>
+   <edge source="88" target="310"/>
+   <edge source="88" target="352"/>
+   <edge source="88" target="549"/>
+   <edge source="91" target="186"/>
+   <edge source="91" target="198"/>
+   <edge source="91" target="310"/>
+   <edge source="91" target="352"/>
+   <edge source="91" target="549"/>
+   <edge source="186" target="198"/>
+   <edge source="186" target="310"/>
+   <edge source="186" target="352"/>
+   <edge source="186" target="549"/>
+   <edge source="198" target="310"/>
+   <edge source="198" target="352"/>
+   <edge source="198" target="549"/>
+   <edge source="310" target="352"/>
+   <edge source="310" target="549"/>
+   <edge source="352" target="549"/>
+  </edges>
+ </graph>
+</gexf>

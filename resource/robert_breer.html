@@ -1,0 +1,496 @@
+<!doctype html>
+<html>
+
+<!-- Mirrored from padb.net/resource/robert_breer by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 11 Jan 2020 22:18:36 GMT -->
+<head>
+<meta charset="UTF-8">
+<title>padb.net</title>
+
+
+<link rel="stylesheet" href="../css/bootstrap.css">
+<link rel="stylesheet" href="../css/font-awesome.css">
+<link rel="stylesheet" href="../css/site.css">
+<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+<link rel="icon" type="image/png" href="../img/favicon.png">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/bootstrap-modal.js"></script>
+<script src="../js/bootstrap-modalmanager.js"></script>
+
+<script src="../js/d3.min.js"></script>
+<script src="../js/html5slider.js"></script>
+<script src="../js/topojson.js"></script>
+<script src="../js/padb.js"></script>
+
+
+</head>
+<body>
+    
+    
+	<div style="position:relative;">        
+
+ 		<div style=" border-bottom:solid 1px #ccc;">
+        	<div class="container">
+                
+                 <div id="header">
+                 	
+                     <div class="logo"><a href="../index.html"><span>|||</span>padb</a> </div>
+                    
+                      
+						 <div id="resourceName">Robert Breer</div>
+					 
+                 </div>
+                
+                
+        	</div>
+            
+    	</div>
+ 
+   </div>
+<script src="../js/countriesData.js"></script>
+
+<script type="text/javascript">
+	//preloaded json from the server
+
+	var dataSameAs = [
+  {
+    "uri": "http://wikidata.dbpedia.org/resource/Q526954",
+    "numDuplicates": "17",
+    "duplicates": [
+      "http://dbpedia.org/resource/Robert_Breer",
+      "http://d-nb.info/gnd/122126564",
+      "http://d-nb.info/gnd/122126564/about/rdf",
+      "http://data.bibsys.no/data/notrbib/authorityentry/x05080376",
+      "http://dbpedialite.org/things/32735042#id",
+      "http://de.dbpedia.org/resource/Robert_Breer",
+      "http://fr.dbpedia.org/resource/Robert_Breer",
+      "http://id.loc.gov/authorities/names/n81089190",
+      "http://it.dbpedia.org/resource/Robert_Breer",
+      "http://rdf.freebase.com/ns/m.0h3skj4",
+      "http://viaf.org/viaf/14937110",
+      "http://viaf.org/viaf/30411266",
+      "http://viaf.org/viaf/57939779",
+      "http://viaf.org/viaf/96086002",
+      "http://wikidata.dbpedia.org/resource/Q526954",
+      "http://www.wikidata.org/entity/Q526954",
+      "http://yago-knowledge.org/resource/Robert_Breer"
+    ]
+  }
+]
+;
+	var dataDbpedia = {
+  "http://dbpedia.org/resource/Robert_Carlton_Breer" : { "http://dbpedia.org/ontology/wikiPageRedirects" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Robert_Breer" } ] } ,
+  "http://en.wikipedia.org/wiki/Robert_Breer" : { "http://xmlns.com/foaf/0.1/primaryTopic" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Robert_Breer" } ] } ,
+  "http://dbpedia.org/resource/Robert_Breer" : { "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Organism100004475" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/ontology/Person" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Whole100003553" } ,
+      { "type" : "uri", "value" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/LivingThing100004258" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/CausalAgent100007347" } ,
+      { "type" : "uri", "value" : "http://www.w3.org/2002/07/owl#Thing" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Wikicat21st-centuryAmericanPainters" } ,
+      { "type" : "uri", "value" : "http://xmlns.com/foaf/0.1/Person" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatAnimators" } ,
+      { "type" : "uri", "value" : "http://www.wikidata.org/entity/Q5" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Wikicat20th-centuryAmericanPainters" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatAmericanFilmDirectors" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatAmericanSculptors" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Sculptor110566072" } ,
+      { "type" : "uri", "value" : "http://schema.org/Person" } ,
+      { "type" : "uri", "value" : "http://www.wikidata.org/entity/Q483501" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatGuggenheimFellows" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/YagoLegalActor" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/YagoLegalActorGeo" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Artist109812338" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatPeopleFromDetroit,Michigan" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Creator109614315" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Person100007846" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Object100002684" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatAmericanPeople" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/PhysicalEntity100001930" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatArtistsFromDetroit,Michigan" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatAmericanExperimentalFilmmakers" } ,
+      { "type" : "uri", "value" : "http://www.wikidata.org/entity/Q24229398" } ,
+      { "type" : "uri", "value" : "http://www.wikidata.org/entity/Q215627" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/ontology/Agent" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Peer109626238" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Colleague109935990" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/FilmDirector110088200" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/FilmMaker110088390" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Producer110480018" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatAmericanAnimators" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Associate109816771" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Energizer110056103" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Actor109767197" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Painter110391653" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/ontology/Artist" } ,
+      { "type" : "uri", "value" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#NaturalPerson" } ] ,
+    "http://www.w3.org/2000/01/rdf-schema#label" : [ { "type" : "literal", "value" : "Robert Breer" , "lang" : "fr" } ,
+      { "type" : "literal", "value" : "Robert Breer" , "lang" : "de" } ,
+      { "type" : "literal", "value" : "Robert Breer" , "lang" : "en" } ,
+      { "type" : "literal", "value" : "Robert Breer" , "lang" : "it" } ] ,
+    "http://www.w3.org/2000/01/rdf-schema#comment" : [ { "type" : "literal", "value" : "Robert Breer, n\u00E9 le 30 septembre 1926 \u00E0 D\u00E9troit dans le Michigan et mort le 11 ao\u00FBt 2011 \u00E0 Tucson, est un r\u00E9alisateur de films d'animation et un artiste am\u00E9ricain. D'abord peintre, il pratique l'abstraction g\u00E9om\u00E9trique dans les ann\u00E9es 1950 puis r\u00E9alise des films d'animation avant-gardistes dans la d\u00E9cennie suivante. Il a par ailleurs eu une importante activit\u00E9 de sculpteur." , "lang" : "fr" } ,
+      { "type" : "literal", "value" : "Robert Carlton Breer (September 30, 1926 \u2013 August 11, 2011) was an experimental filmmaker, painter, and sculptor. \"A founding member of the American avant-garde,\" Breer was best known for his films, which combine abstract and representational painting, hand-drawn rotoscoping, original 16mm and 8mm film footage, photographs, and other materials. His aesthetic philosophy and technique were influenced by an earlier generation of abstract filmmakers that included Hans Richter, Viking Eggeling, Walter Ruttmann, and Fernand L\u00E9ger, whose work he discovered while living in Europe. Breer was also influenced by the concept of Neo-plasticism as described by Piet Mondrian and Vasarely." , "lang" : "en" } ,
+      { "type" : "literal", "value" : "Robert Breer (* 30. September 1926 in Detroit, Michigan; \u2020 11. August 2011 in Tucson, Arizona) war ein US-amerikanischer Filmemacher und bildender K\u00FCnstler, dessen experimentelle Animationsfilme als Klassiker des amerikanischen Avantgardefilms gelten. Breer begann seine k\u00FCnstlerische Laufbahn als Maler und Bildhauer in Paris, bevor er sich dem Film zuwandte. Seine ersten Filme produzierte Breer Anfang der 1950er Jahre, bis 2003 entstanden mehr als 40 Kurzfilme." , "lang" : "de" } ] ,
+    "http://www.w3.org/2002/07/owl#sameAs" : [ { "type" : "uri", "value" : "http://www.wikidata.org/entity/Q526954" } ,
+      { "type" : "uri", "value" : "http://viaf.org/viaf/57939779" } ,
+      { "type" : "uri", "value" : "http://yago-knowledge.org/resource/Robert_Breer" } ,
+      { "type" : "uri", "value" : "http://d-nb.info/gnd/122126564" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Robert_Breer" } ,
+      { "type" : "uri", "value" : "http://de.dbpedia.org/resource/Robert_Breer" } ,
+      { "type" : "uri", "value" : "http://fr.dbpedia.org/resource/Robert_Breer" } ,
+      { "type" : "uri", "value" : "http://it.dbpedia.org/resource/Robert_Breer" } ,
+      { "type" : "uri", "value" : "http://wikidata.dbpedia.org/resource/Q526954" } ,
+      { "type" : "uri", "value" : "http://rdf.freebase.com/ns/m.0h3skj4" } ] ,
+    "http://purl.org/dc/terms/subject" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:21st-century_American_painters" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:2011_deaths" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:American_male_painters" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:American_experimental_filmmakers" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:20th-century_American_sculptors" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:American_male_sculptors" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Artists_from_Detroit" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:1926_births" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:20th-century_American_painters" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Guggenheim_Fellows" } ] ,
+    "http://xmlns.com/foaf/0.1/name" : [ { "type" : "literal", "value" : "Robert Breer" , "lang" : "en" } ] ,
+    "http://purl.org/dc/terms/description" : [ { "type" : "literal", "value" : "American artist" , "lang" : "en" } ] ,
+    "http://xmlns.com/foaf/0.1/givenName" : [ { "type" : "literal", "value" : "Robert" , "lang" : "en" } ] ,
+    "http://xmlns.com/foaf/0.1/gender" : [ { "type" : "literal", "value" : "male" , "lang" : "en" } ] ,
+    "http://xmlns.com/foaf/0.1/isPrimaryTopicOf" : [ { "type" : "uri", "value" : "http://en.wikipedia.org/wiki/Robert_Breer" } ] ,
+    "http://xmlns.com/foaf/0.1/surname" : [ { "type" : "literal", "value" : "Breer" , "lang" : "en" } ] ,
+    "http://dbpedia.org/property/bgcolour" : [ { "type" : "literal", "value" : "#6495ED" , "datatype" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString" } ] ,
+    "http://www.w3.org/ns/prov#wasDerivedFrom" : [ { "type" : "uri", "value" : "http://en.wikipedia.org/wiki/Robert_Breer?oldid=743446083" } ] ,
+    "http://dbpedia.org/ontology/wikiPageExternalLink" : [ { "type" : "uri", "value" : "http://www.academia.edu/3070109/Performing_a_Traumatic_Effect_The_Films_of_Robert_Breer" } ] ,
+    "http://dbpedia.org/ontology/influencedBy" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Constructivism_(art)" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Neo-Plasticism" } ] ,
+    "http://dbpedia.org/ontology/movement" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Post-Modernism" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Modernism" } ] ,
+    "http://dbpedia.org/property/text" : [ { "type" : "literal", "value" : "This was 1950 or '51... I was having trouble with a concept, a very rigid notion about painting that I was interested in, that I was involved with, and that was the school of Mondrian. [...] The notion that everything had to be reduced to the bare minimum, put in its place and kept there. It seemed to me overly rigid since I could, at least once a week, arrive at a new 'absolute.' I had a feeling there was something there that suggested change as being a kind of absolute. So that's how I got into film." , "datatype" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString" } ] ,
+    "http://dbpedia.org/ontology/abstract" : [ { "type" : "literal", "value" : "Robert Breer (* 30. September 1926 in Detroit, Michigan; \u2020 11. August 2011 in Tucson, Arizona) war ein US-amerikanischer Filmemacher und bildender K\u00FCnstler, dessen experimentelle Animationsfilme als Klassiker des amerikanischen Avantgardefilms gelten. Breer begann seine k\u00FCnstlerische Laufbahn als Maler und Bildhauer in Paris, bevor er sich dem Film zuwandte. Seine ersten Filme produzierte Breer Anfang der 1950er Jahre, bis 2003 entstanden mehr als 40 Kurzfilme." , "lang" : "de" } ,
+      { "type" : "literal", "value" : "Robert Carlton Breer (September 30, 1926 \u2013 August 11, 2011) was an experimental filmmaker, painter, and sculptor. \"A founding member of the American avant-garde,\" Breer was best known for his films, which combine abstract and representational painting, hand-drawn rotoscoping, original 16mm and 8mm film footage, photographs, and other materials. His aesthetic philosophy and technique were influenced by an earlier generation of abstract filmmakers that included Hans Richter, Viking Eggeling, Walter Ruttmann, and Fernand L\u00E9ger, whose work he discovered while living in Europe. Breer was also influenced by the concept of Neo-plasticism as described by Piet Mondrian and Vasarely. After experimenting with cartoon animation as a child, he started making his first abstract experimental films while living in Paris from 1949 to 1959, a period during which he also showed paintings and kinetic sculptures at galleries such as the renowned Galerie Denise Ren\u00E9. Breer explained some of the reasons behind his move from painting to filmmaking in a 1976 interview: This was 1950 or '51... I was having trouble with a concept, a very rigid notion about painting that I was interested in, that I was involved with, and that was the school of Mondrian. [...] The notion that everything had to be reduced to the bare minimum, put in its place and kept there. It seemed to me overly rigid since I could, at least once a week, arrive at a new 'absolute.' I had a feeling there was something there that suggested change as being a kind of absolute. So that's how I got into film.\u2014\u2009Robert Breer, Transcription of 'Screening Room with Robert Breer (1976) Breer also taught at Cooper Union in New York from 1971 to 2001. Breer died on August 11, 2011 at his home in Tucson. Scholarly publications on Breer's work and interviews with the artist can be found in Robert Breer, A Critical Cinema 2: Interviews with Independent Filmmakers by Scott MacDonald, An Introduction to the American Underground Film by Sheldon Renan, Animation in the Cinema by Ralph Stephenson, and Film Culture magazine. Breer won the 1987 Maya Deren Independent Film and Video Artists' Award, presented by the American Film Institute. His film \"Eyewash\" was included in Treasures IV: American Avant-Garde Film 1947-1986." , "lang" : "en" } ,
+      { "type" : "literal", "value" : "Robert Breer, n\u00E9 le 30 septembre 1926 \u00E0 D\u00E9troit dans le Michigan et mort le 11 ao\u00FBt 2011 \u00E0 Tucson, est un r\u00E9alisateur de films d'animation et un artiste am\u00E9ricain. D'abord peintre, il pratique l'abstraction g\u00E9om\u00E9trique dans les ann\u00E9es 1950 puis r\u00E9alise des films d'animation avant-gardistes dans la d\u00E9cennie suivante. Il a par ailleurs eu une importante activit\u00E9 de sculpteur." , "lang" : "fr" } ] ,
+    "http://dbpedia.org/ontology/birthDate" : [ { "type" : "literal", "value" : "1926-9-30" , "datatype" : "http://www.w3.org/2001/XMLSchema#date" } ,
+      { "type" : "literal", "value" : "1926-09-30" , "datatype" : "http://www.w3.org/2001/XMLSchema#date" } ] ,
+    "http://dbpedia.org/ontology/deathDate" : [ { "type" : "literal", "value" : "2011-8-11" , "datatype" : "http://www.w3.org/2001/XMLSchema#date" } ,
+      { "type" : "literal", "value" : "2011-08-13" , "datatype" : "http://www.w3.org/2001/XMLSchema#date" } ] ,
+    "http://dbpedia.org/ontology/deathPlace" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Tucson,_Arizona" } ] ,
+    "http://dbpedia.org/ontology/wikiPageRevisionID" : [ { "type" : "literal", "value" : 743446083 , "datatype" : "http://www.w3.org/2001/XMLSchema#integer" } ] ,
+    "http://dbpedia.org/ontology/birthPlace" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Detroit,_Michigan" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Detroit" } ] ,
+    "http://dbpedia.org/ontology/wikiPageID" : [ { "type" : "literal", "value" : 32735042 , "datatype" : "http://www.w3.org/2001/XMLSchema#integer" } ] ,
+    "http://dbpedia.org/ontology/nationality" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/United_States" } ] ,
+    "http://dbpedia.org/property/source" : [ { "type" : "literal", "value" : "Transcription of 'Screening Room with Robert Breer" , "datatype" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString" } ] ,
+    "http://purl.org/linguistics/gold/hypernym" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Filmmaker" } ] ,
+    "http://dbpedia.org/property/sign" : [ { "type" : "literal", "value" : "Robert Breer" , "datatype" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString" } ] ,
+    "http://dbpedia.org/ontology/field" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Sculpture" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Abstract_painting" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Experimental_film" } ] ,
+    "http://dbpedia.org/property/works" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Float_(parade)" } ] }
+}
+;
+	var dataAuth = "http://dbpedia.org/resource/Robert_Breer";
+	var dataUrl = "robert_breer.html";
+	var dataResourceType = "participant";
+	var dataName = "Robert Breer";
+ 	
+</script>
+
+
+
+
+
+<script type="text/javascript">
+
+
+	
+	
+	
+
+	$(document).ready(function($) {
+		
+		
+		padb.resource.initialize();
+			 
+		$( '.scrollable' ).
+		bind( 'mousewheel DOMMouseScroll', function ( e ) {
+			
+			if( e.originalEvent ) e = e.originalEvent;
+			
+			var delta = e.wheelDelta || -e.detail;
+			this.scrollTop += ( delta < 0 ? 1 : -1 ) * 30;
+			e.preventDefault();
+		});		 
+		
+		
+				
+		$.ajaxSetup ({
+			// Disable caching of AJAX responses
+			cache: false
+		});		
+		
+	});
+	
+
+	
+	
+	
+	
+	
+</script>
+
+
+
+
+ 
+<br />
+<div class="container"  style="position:relative;">
+	   
+      <div id="resourceLinks"></div> 
+       
+       
+       
+       
+              
+       
+           
+           
+           
+          <div class="row addSection">
+              <div class="span1 addSectionIconHolder">
+              
+                <i class="icon-user"></i>
+              
+              </div>
+          
+              <div class="span11">
+                <span>Performer</span>
+                <hr>
+                <br />
+              </div>
+        </div>
+        <div class="row">
+            <div class="span1">
+            </div>
+            <div class="span11" style="position:relative">
+                
+                
+                
+                
+               <div>
+                                       
+                                           
+                <div class="pull-left" style="width:80%;">
+                     
+                     <h5 id="resourceLDName">Robert Breer</h5>
+                     <h5 id="resourceLDAbstract"></h5>
+                     
+                     
+                     <div id="resourceSameAs">
+                        <h5>External Data:</h5>
+                        
+                        
+                     </div>
+                
+                </div>   
+                
+                <br style="clear:both;" />
+            </div>
+            
+            
+                
+            </div>
+        </div>    
+         
+    
+    
+    
+    
+    
+    
+       <div class="row addSection">
+			<div class="span1 addSectionIconHolder">              
+                <i class="icon-asterisk"></i>
+              
+              </div>
+          
+              <div class="span11">
+                <span>Events </span><span id="resourceEventCount"></span>
+                <hr>
+              </div>
+        </div>
+    
+    
+    
+    
+    
+    
+    
+        <div class="row">
+            <div class="span1"></div>
+            <div class="span11" style="position:relative">
+                  
+                 <div class="">
+                    <div id="resourceEventsEvents" class="scrollable">
+                           <table class="table table-condensed table-hover table-striped">
+                               <thead>
+                                <tr>
+                                  <th>Date</th>
+                                  
+                                  <th>Title</th>
+                                  <th>Location</th>
+                                  <th></th>
+                                </tr>
+                              </thead>
+                              <tbody id="resourceEventsEventsRows"> 
+                              </tbody>
+                            </table>
+                     
+                    </div>
+                    
+                    <div id="resourceEventsExport">
+                    
+                    	<input  name="resourceEventsSearch" class="span3" id="resourceEventsSearch"  type="text" placeholder="Filter: names, places, dates">
+                    	<button class="btn btn-mini btn-danger" id="resourceEventsClearFilter"><i class="icon-remove">&nbsp;Clear Filter</i></button>
+                   		<button class="btn btn-mini btn-info" title="Render the currently filitered data as a network" id="resourceRenderEventNetwork"> <img src="../img/icon-network-white.png" style="height:15px; width:auto" /> Two-Mode Event Network</button>
+                   		<button class="btn btn-mini btn-info" title="Render the currently filitered data as a network" id="resourceRenderEventMap"> <i class="icon-globe"></i> Map Event Locations</button>
+                   		<button class="btn btn-mini btn-success" title="Download network as Gephi File" id="resourceDownloadEventGephi"> <img src="../img/icon-gephi.png" style="height:15px; width:auto" /> Donwload Gephi Network</button>
+
+                 
+                    </div>                 
+                </div>
+                <br style="clear:both;" />
+            </div>
+            
+            
+                
+         </div>    
+    
+     
+       <div class="row addSection">
+              <div class="span1">
+              
+                <img src="../img/social-network.png" style=" margin-left:25px; margin-bottom:10px;" />
+              
+              </div>
+          
+              <div class="span11">
+                <span>Performance Network</span> 
+                <hr>
+              </div>
+        </div>
+        
+        <div class="row">
+            <div class="span1">
+            </div>
+            <div class="span11" style="position:relative">
+                
+               	<div style="width: 100%; height:500px;" id="egoNetwork">
+            
+                
+             	</div> 
+                <div class="well pull-left well-small" id="egoNetworkControls">
+                    <span class="rangeLabels">Node Charge</span>
+                    <input type="range" id="resourceEgoNetworkCharge" min="-1000" max="100" value="-120" data-def="-700" />
+                    <br /><span class="rangeLabels">Gravity</span>
+                    <input type="range" id="resourceEgoNetworkGravity" min="0" max="1" value="0.1" step="0.01" data-def="0.3" /> 
+                    <br /><span class="rangeLabels">Edge Length</span>
+                    <input type="range" id="resourceEgoNetworkDistance" min="0" max="300" value="50" data-def="50"  />      
+                    <br /><span class="rangeLabels">Edge Strength</span>
+                    <input type="range" id="resourceEgoNetworkStrength" min="0" max="3" value="1" data-def="0.15" step="0.1"  /> 
+                    <br /><br />
+                    <button type="button" id="resourceEgoNetworkLabelsButton" class="btn btn-mini" title="Show node labels." data-toggle="button">Show Labels</button>  
+                    <button type="button" id="resourceEgoNetworkLiveButton" class="btn btn-mini" title="Show realtime network rendering" data-toggle="button">Live Rendering</button>                     
+                </div>
+                
+                <div class="well pull-left well-small egoNetworkControls span7" style="margin-left:20px;" >
+                
+                	<input  name="resourceEgoNetworkSearch" class="span3" id="resourceEgoNetworkSearch"  type="text" placeholder="Filter: names, places, dates">
+					<button class="btn btn-mini btn-danger" id="resourceEgoClearFilter"><i class="icon-remove">&nbsp;Clear Filter</i></button>
+                    <button class="btn btn-mini btn-success" title="Download network as Gephi File" id="resourceDownloadEgoGephi"> <img src="../img/icon-gephi.png" style="height:15px; width:auto" /> Donwload Gephi Network</button>
+
+                </div>
+                
+            </div>
+        </div>           
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+	
+
+	
+
+
+	
+
+
+</div>
+
+
+
+
+    <div id="resourceEventNetworkModal" class="modal container hide fade" style="min-height:500px" tabindex="-1">
+ 
+      <div class="modal-body">
+      	
+        <div id="eventNetwork" style="height:400px; width:100%">
+        
+        </div>
+      
+      </div>
+      <div class="modal-footer" style="height:20px;">
+      	
+        <div class="well pull-left well-small">
+        	<span class="rangeLabels">Node Charge</span>
+        	<input type="range" id="resourceEventNetworkCharge" min="-800" max="200" value="-120" data-def="-120" />
+            <span class="rangeLabels">Gravity</span>
+        	<input type="range" id="resourceEventNetworkGravity" min="0" max="1" value="0.1" step="0.01" data-def="0.1" /> 
+            <span class="rangeLabels">Edge Length</span>
+        	<input type="range" id="resourceEventNetworkDistance" min="0" max="300" value="50" data-def="50"  />      
+            <span class="rangeLabels">Edge Strength</span>
+        	<input type="range" id="resourceEventNetworkStrength" min="0" max="5" value="1" data-def="1" step="0.1"  />    
+            <button type="button" id="resourceEventNetworkLabelsButton" class="btn btn-mini" data-toggle="button">Show Labels</button>                     
+		</div>
+        <div class="pull-right">
+        <button type="button" data-dismiss="modal" class="btn">Close</button>
+       	</div>
+       </div>
+    </div>
+    
+    
+    
+    
+     <div id="resourceEventMapModal" class="modal container hide fade" style="min-height:500px" tabindex="-1">
+ 
+      <div class="modal-body">
+      	
+        <div id="eventMap" style="height:400px; width:100%">
+        
+        </div>
+      
+      </div>
+      <div class="modal-footer" style="height:20px;">
+      	
+        <div class="well pull-left well-small">                  
+		</div>
+        <div class="pull-right">
+        <button type="button" data-dismiss="modal" class="btn">Close</button>
+       	</div>
+       </div>
+    </div>
+
+<br /><br /><br /><br /><br /><br />
+
+<script type="text/javascript">    var _gaq = _gaq || [];   _gaq.push(['_setAccount', 'UA-10371295-7']);   _gaq.push(['_trackPageview']);    (function() {     var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);   })();  </script>
+
+</body>
+
+<!-- Mirrored from padb.net/resource/robert_breer by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 11 Jan 2020 22:18:36 GMT -->
+</html>

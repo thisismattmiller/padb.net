@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<gexf version="1.2" xmlns="http://www.gexf.net/1.2draft">
+ <graph mode="static" defaultedgetype="undirected">
+  <nodes>
+   <node id="91" label="Philip Corner"/>
+   <node id="13" label="Dick Higgins"/>
+   <node id="25" label="La Monte Young"/>
+   <node id="30" label="Robert Watts"/>
+   <node id="34" label="Ben Patterson"/>
+   <node id="39" label="Nam-june Paik"/>
+   <node id="62" label="Emmett Williams"/>
+   <node id="96" label="Takehisa Kosugi"/>
+   <node id="97" label="Mieko Shiomi"/>
+   <node id="122" label="Alison Knowles"/>
+   <node id="134" label="Tomas Schmit"/>
+   <node id="151" label="Ben Vautier"/>
+   <node id="192" label="Letty Eisenhauer"/>
+   <node id="206" label="Robert Breer"/>
+   <node id="18" label="George Brecht"/>
+   <node id="123" label="George Maciunas"/>
+   <node id="262" label="Shigeko Kubota"/>
+   <node id="53" label="Toshi Ichiyanagi"/>
+   <node id="263" label="Gy&#xF6;rgy Ligeti"<html><head><title>Slim Application Error</title><style>body{margin:0;padding:30px;font:12px/1.5 Helvetica,Arial,Verdana,sans-serif;}h1{margin:0;font-size:48px;font-weight:normal;line-height:48px;}strong{display:inline-block;width:65px;}</style></head><body><h1>Slim Application Error</h1><p>The application could not run because of the following error:</p><h2>Details</h2><div><strong>Code:</strong> 2</div><div><strong>Message:</strong> XMLWriter::writeAttribute(): invalid character value</div><div><strong>File:</strong> /var/www/clients/client0/web5/web/db.php</div><div><strong>Line:</strong> 1775</div><h2>Trace</h2><pre>#0 [internal function]: Slim\Slim::handleErrors(2, 'XMLWriter::writ...', '/var/www/client...', 1775, Array)
+#1 /var/www/clients/client0/web5/web/db.php(1775): XMLWriter->writeAttribute('label', 'Gy?rgy Ligeti')
+#2 /var/www/clients/client0/web5/web/index.php(453): dataBase->returnLocationDetailsGephi('fluxhall', 'none')
+#3 [internal function]: {closure}('fluxhall', 'none')
+#4 /var/www/clients/client0/web5/web/vendor/slim/slim/Slim/Router.php(200): call_user_func_array(Object(Closure), Array)
+#5 /var/www/clients/client0/web5/web/vendor/slim/slim/Slim/Slim.php(1218): Slim\Router->dispatch(Object(Slim\Route))
+#6 /var/www/clients/client0/web5/web/vendor/slim/slim/Slim/Middleware/Flash.php(86): Slim\Slim->call()
+#7 /var/www/clients/client0/web5/web/vendor/slim/slim/Slim/Middleware/MethodOverride.php(94): Slim\Middleware\Flash->call()
+#8 /var/www/clients/client0/web5/web/vendor/slim/slim/Slim/Middleware/PrettyExceptions.php(67): Slim\Middleware\MethodOverride->call()
+#9 /var/www/clients/client0/web5/web/vendor/slim/slim/Slim/Slim.php(1167): Slim\Middleware\PrettyExceptions->call()
+#10 /var/www/clients/client0/web5/web/index.php(578): Slim\Slim->run()
+#11 {main}</pre></body></html>

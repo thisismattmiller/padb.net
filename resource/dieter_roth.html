@@ -1,0 +1,546 @@
+<!doctype html>
+<html>
+
+<!-- Mirrored from padb.net/resource/dieter_roth by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 11 Jan 2020 22:17:26 GMT -->
+<head>
+<meta charset="UTF-8">
+<title>padb.net</title>
+
+
+<link rel="stylesheet" href="../css/bootstrap.css">
+<link rel="stylesheet" href="../css/font-awesome.css">
+<link rel="stylesheet" href="../css/site.css">
+<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+<link rel="icon" type="image/png" href="../img/favicon.png">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/bootstrap-modal.js"></script>
+<script src="../js/bootstrap-modalmanager.js"></script>
+
+<script src="../js/d3.min.js"></script>
+<script src="../js/html5slider.js"></script>
+<script src="../js/topojson.js"></script>
+<script src="../js/padb.js"></script>
+
+
+</head>
+<body>
+    
+    
+	<div style="position:relative;">        
+
+ 		<div style=" border-bottom:solid 1px #ccc;">
+        	<div class="container">
+                
+                 <div id="header">
+                 	
+                     <div class="logo"><a href="../index.html"><span>|||</span>padb</a> </div>
+                    
+                      
+						 <div id="resourceName">Dieter Roth</div>
+					 
+                 </div>
+                
+                
+        	</div>
+            
+    	</div>
+ 
+   </div>
+<script src="../js/countriesData.js"></script>
+
+<script type="text/javascript">
+	//preloaded json from the server
+
+	var dataSameAs = [
+  {
+    "uri": "http://wikidata.dbpedia.org/resource/Q5275111",
+    "numDuplicates": "43",
+    "duplicates": [
+      "http://dbpedia.org/resource/Diter_Rot",
+      "http://dbpedia.org/resource/Dieter_Rot",
+      "http://dbpedia.org/resource/Dieter_Roth",
+      "http://bnb.data.bl.uk/id/person/RothDieter1930-1998",
+      "http://ca.dbpedia.org/resource/Dieter_Roth",
+      "http://d-nb.info/gnd/118603086",
+      "http://d-nb.info/gnd/124360106",
+      "http://d-nb.info/gnd/128556013",
+      "http://d-nb.info/gnd/132752565",
+      "http://d-nb.info/gnd/134502779",
+      "http://d-nb.info/gnd/140199063",
+      "http://d-nb.info/gnd/118603086/about/rdf",
+      "http://d-nb.info/gnd/128556013/about/rdf",
+      "http://data.bibsys.no/data/notrbib/authorityentry/x90766645",
+      "http://dbpedialite.org/things/3085782#id",
+      "http://dbpedialite.org/things/11255115#id",
+      "http://de.dbpedia.org/resource/Dieter_Roth",
+      "http://fr.dbpedia.org/resource/Dieter_Roth",
+      "http://freebase.com//m/08qdf6",
+      "http://id.loc.gov/authorities/names/n50049746",
+      "http://is.dbpedia.org/resource/Dieter_Roth",
+      "http://it.dbpedia.org/resource/Dieter_Roth",
+      "http://libris.kb.se/resource/auth/279332",
+      "http://mpii.de/yago/resource/Dieter_Roth",
+      "http://nl.dbpedia.org/resource/Dieter_Roth",
+      "http://rdf.freebase.com/ns/m.08qdf6",
+      "http://rdf.freebase.com/ns/en.dieter_roth",
+      "http://rdf.freebase.com/ns/guid.9202a8c04000641f80000000008b31a6",
+      "http://umbel.org/umbel/ne/wikipedia/Dieter_Roth",
+      "http://viaf.org/viaf/8556305",
+      "http://viaf.org/viaf/12432454",
+      "http://viaf.org/viaf/15702862",
+      "http://viaf.org/viaf/27358979",
+      "http://viaf.org/viaf/37369937",
+      "http://viaf.org/viaf/92493256",
+      "http://viaf.org/viaf/103654003",
+      "http://viaf.org/viaf/103742260",
+      "http://viaf.org/viaf/118476147",
+      "http://wikidata.dbpedia.org/resource/Q574709",
+      "http://wikidata.dbpedia.org/resource/Q5275111",
+      "http://www.idref.fr/028963636/id",
+      "http://www.wikidata.org/entity/Q574709",
+      "http://yago-knowledge.org/resource/Dieter_Roth"
+    ]
+  }
+]
+;
+	var dataDbpedia = {
+  "http://dbpedia.org/resource/Dieter_Roth" : { "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatIcelandicArtists" } ,
+      { "type" : "uri", "value" : "http://xmlns.com/foaf/0.1/Person" } ,
+      { "type" : "uri", "value" : "http://www.wikidata.org/entity/Q483501" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatGermanWriters" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/PhysicalEntity100001930" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatSwissSculptors" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatWriters" } ,
+      { "type" : "uri", "value" : "http://www.wikidata.org/entity/Q5" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Person100007846" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Object100002684" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/YagoLegalActor" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/YagoLegalActorGeo" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/ontology/Artist" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Writer110794014" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Sculptor110566072" } ,
+      { "type" : "uri", "value" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent" } ,
+      { "type" : "uri", "value" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#NaturalPerson" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatModernArtists" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatSwissPeople" } ,
+      { "type" : "uri", "value" : "http://www.w3.org/2002/07/owl#Thing" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/ontology/Agent" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Communicator109610660" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatPeopleFromHanover" } ,
+      { "type" : "uri", "value" : "http://schema.org/Person" } ,
+      { "type" : "uri", "value" : "http://www.wikidata.org/entity/Q215627" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/CausalAgent100007347" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Printmaker110475687" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Whole100003553" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatGermanArtists" } ,
+      { "type" : "uri", "value" : "http://www.wikidata.org/entity/Q24229398" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/LivingThing100004258" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Organism100004475" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/ontology/Person" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatSwissArtists" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatGermanPrintmakers" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Artist109812338" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Creator109614315" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatIcelandicPeopleOfGermanDescent" } ] ,
+    "http://www.w3.org/2000/01/rdf-schema#label" : [ { "type" : "literal", "value" : "Dieter Roth" , "lang" : "fr" } ,
+      { "type" : "literal", "value" : "Dieter Roth" , "lang" : "nl" } ,
+      { "type" : "literal", "value" : "Dieter Roth" , "lang" : "it" } ,
+      { "type" : "literal", "value" : "Dieter Roth" , "lang" : "de" } ,
+      { "type" : "literal", "value" : "Dieter Roth" , "lang" : "en" } ] ,
+    "http://www.w3.org/2000/01/rdf-schema#comment" : [ { "type" : "literal", "value" : "Dieter Roth, n\u00E9 le 21 avril 1930 \u00E0 Hanovre et mort le 5 juin 1998 \u00E0 B\u00E2le, est un imprimeur et artiste contemporain suisse d'origine allemande." , "lang" : "fr" } ,
+      { "type" : "literal", "value" : "Dieter Roth (April 21, 1930 \u2013 June 5, 1998) was a Swiss artist best known for his artist's books, editioned prints, sculptures, and works made of found materials, including rotting food stuffs. He was also known as Dieter Rot and Diter Rot." , "lang" : "en" } ,
+      { "type" : "literal", "value" : "Karl-Dietrich Roth (* 21. April 1930 in Hannover; \u2020 5. Juni 1998 in Basel) war ein Schweizer Dichter, Grafiker und intermedial arbeitender Aktions- und Objektk\u00FCnstler deutscher Abstammung. Er gilt als Vertreter der Konkreten Poesie. Als K\u00FCnstler signierte er zeitweise als Diter Rot, mit frei erfundenen anderen Namen und einfach als Dieter Roth." , "lang" : "de" } ,
+      { "type" : "literal", "value" : "Dieter Roth (Hannover, 21 april 1930 - Bazel, 5 juni 1998) was een Zwitsers dichter, beeldhouwer, graficus en interdisciplinair (performance en multiple) werkend beeldend kunstenaar van Duitse komaf. Hij is en vertegenwoordiger van de zogenaamde 'concrete po\u00EBzie'. Als nom de plume (pseudoniem) verkoos hij de naam \"Diter Roth\". Dieter Roth werd bekend met zijn aan schimmel en verval onderhevige beelden van chocolade en met kunstenaarsboeken." , "lang" : "nl" } ] ,
+    "http://www.w3.org/2002/07/owl#sameAs" : [ { "type" : "uri", "value" : "http://viaf.org/viaf/118476147" } ,
+      { "type" : "uri", "value" : "http://yago-knowledge.org/resource/Dieter_Roth" } ,
+      { "type" : "uri", "value" : "http://d-nb.info/gnd/118603086" } ,
+      { "type" : "uri", "value" : "http://wikidata.dbpedia.org/resource/Q574709" } ,
+      { "type" : "uri", "value" : "http://fr.dbpedia.org/resource/Dieter_Roth" } ,
+      { "type" : "uri", "value" : "http://de.dbpedia.org/resource/Dieter_Roth" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Dieter_Roth" } ,
+      { "type" : "uri", "value" : "http://rdf.freebase.com/ns/m.08qdf6" } ,
+      { "type" : "uri", "value" : "http://it.dbpedia.org/resource/Dieter_Roth" } ,
+      { "type" : "uri", "value" : "http://nl.dbpedia.org/resource/Dieter_Roth" } ,
+      { "type" : "uri", "value" : "http://www.wikidata.org/entity/Q574709" } ,
+      { "type" : "uri", "value" : "http://data.europa.eu/euodp/jrc-names/Dieter_Roth" } ] ,
+    "http://purl.org/dc/terms/subject" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:People_from_Hanover" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:1998_deaths" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Swiss_contemporary_artists" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:German_printmakers" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Icelandic_people_of_German_descent" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Fluxus" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Icelandic_artists" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Swiss_artists" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Modern_artists" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:1930_births" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:German_artists" } ] ,
+    "http://xmlns.com/foaf/0.1/name" : [ { "type" : "literal", "value" : "Dieter Roth" , "lang" : "en" } ] ,
+    "http://xmlns.com/foaf/0.1/depiction" : [ { "type" : "uri", "value" : "http://commons.wikimedia.org/wiki/Special:FilePath/Dieter_Roth-by_Lothar_Wolleh.jpg" } ] ,
+    "http://purl.org/dc/terms/description" : [ { "type" : "literal", "value" : "Swiss artist" , "lang" : "en" } ] ,
+    "http://xmlns.com/foaf/0.1/givenName" : [ { "type" : "literal", "value" : "Dieter" , "lang" : "en" } ] ,
+    "http://xmlns.com/foaf/0.1/gender" : [ { "type" : "literal", "value" : "male" , "lang" : "en" } ] ,
+    "http://xmlns.com/foaf/0.1/isPrimaryTopicOf" : [ { "type" : "uri", "value" : "http://en.wikipedia.org/wiki/Dieter_Roth" } ] ,
+    "http://xmlns.com/foaf/0.1/surname" : [ { "type" : "literal", "value" : "Roth" , "lang" : "en" } ] ,
+    "http://www.w3.org/ns/prov#wasDerivedFrom" : [ { "type" : "uri", "value" : "http://en.wikipedia.org/wiki/Dieter_Roth?oldid=742767911" } ] ,
+    "http://dbpedia.org/ontology/wikiPageExternalLink" : [ { "type" : "uri", "value" : "http://www.artnet.com/awc/dieter-roth.html" } ,
+      { "type" : "uri", "value" : "http://www.presenhuber.com/en/artists/ROTH_DIETER/works/overview.html" } ,
+      { "type" : "uri", "value" : "http://www.cosmopolis.ch/english/cosmo48/dieter_roth.htm" } ,
+      { "type" : "uri", "value" : "http://dieter-roth-academy.de/index.html" } ,
+      { "type" : "uri", "value" : "http://www.tate.org.uk/servlet/ArtistWorks?cgroupid=999999961&artistid=1870" } ,
+      { "type" : "uri", "value" : "http://www.dieter-roth-foundation.com/en" } ,
+      { "type" : "uri", "value" : "http://www.dieter-roth-academy.de" } ,
+      { "type" : "uri", "value" : "http://www.dieter-roth-museum.de/" } ,
+      { "type" : "uri", "value" : "http://query.nytimes.com/gst/fullpage.html?res=9E03E4DB123AF933A25755C0A96E958260" } ,
+      { "type" : "uri", "value" : "http://www.moma.org/collection/details.php?artist_id=5042" } ,
+      { "type" : "uri", "value" : "http://colophon.com/umbrella/emmet.html" } ,
+      { "type" : "uri", "value" : "http://www.moma.org/exhibitions/2004/dieterroth/flash.htm" } ,
+      { "type" : "uri", "value" : "http://www.boekiewoekie.com" } ] ,
+    "http://dbpedia.org/property/caption" : [ { "type" : "literal", "value" : "Rhode Island, USA, 1965" , "datatype" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString" } ] ,
+    "http://dbpedia.org/ontology/birthName" : [ { "type" : "literal", "value" : "Karl-Dietrich Roth" , "lang" : "en" } ] ,
+    "http://dbpedia.org/property/imagesize" : [ { "type" : "literal", "value" : 220 , "datatype" : "http://www.w3.org/2001/XMLSchema#integer" } ] ,
+    "http://dbpedia.org/ontology/movement" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Maximalism" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Op_Art" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Concrete_art" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Fluxus" } ] ,
+    "http://dbpedia.org/ontology/abstract" : [ { "type" : "literal", "value" : "Karl-Dietrich Roth (* 21. April 1930 in Hannover; \u2020 5. Juni 1998 in Basel) war ein Schweizer Dichter, Grafiker und intermedial arbeitender Aktions- und Objektk\u00FCnstler deutscher Abstammung. Er gilt als Vertreter der Konkreten Poesie. Als K\u00FCnstler signierte er zeitweise als Diter Rot, mit frei erfundenen anderen Namen und einfach als Dieter Roth." , "lang" : "de" } ,
+      { "type" : "literal", "value" : "Dieter Roth (April 21, 1930 \u2013 June 5, 1998) was a Swiss artist best known for his artist's books, editioned prints, sculptures, and works made of found materials, including rotting food stuffs. He was also known as Dieter Rot and Diter Rot. The dark undertone and furious, obsessive energy of his work ultimately separated him from many of the more lighthearted Fluxus artists. Perhaps despite himself, he was a fluent draftsman and expert printmaker, and his drawings and prints contained his wild energy within peculiarly virtuosic forms. Compared to the innumerable self-described artists of the last several decades who faked their way through his sort of work, Mr. Roth was the genuine item." , "lang" : "en" } ,
+      { "type" : "literal", "value" : "Dieter Roth, n\u00E9 le 21 avril 1930 \u00E0 Hanovre et mort le 5 juin 1998 \u00E0 B\u00E2le, est un imprimeur et artiste contemporain suisse d'origine allemande." , "lang" : "fr" } ,
+      { "type" : "literal", "value" : "Dieter Roth (Hannover, 21 april 1930 - Bazel, 5 juni 1998) was een Zwitsers dichter, beeldhouwer, graficus en interdisciplinair (performance en multiple) werkend beeldend kunstenaar van Duitse komaf. Hij is en vertegenwoordiger van de zogenaamde 'concrete po\u00EBzie'. Als nom de plume (pseudoniem) verkoos hij de naam \"Diter Roth\". Dieter Roth werd bekend met zijn aan schimmel en verval onderhevige beelden van chocolade en met kunstenaarsboeken." , "lang" : "nl" } ] ,
+    "http://dbpedia.org/ontology/thumbnail" : [ { "type" : "uri", "value" : "http://commons.wikimedia.org/wiki/Special:FilePath/Dieter_Roth-by_Lothar_Wolleh.jpg?width=300" } ] ,
+    "http://dbpedia.org/ontology/birthDate" : [ { "type" : "literal", "value" : "1930-04-21" , "datatype" : "http://www.w3.org/2001/XMLSchema#date" } ,
+      { "type" : "literal", "value" : "1930-4-21" , "datatype" : "http://www.w3.org/2001/XMLSchema#date" } ] ,
+    "http://dbpedia.org/ontology/deathDate" : [ { "type" : "literal", "value" : "1998-06-05" , "datatype" : "http://www.w3.org/2001/XMLSchema#date" } ,
+      { "type" : "literal", "value" : "1998-6-5" , "datatype" : "http://www.w3.org/2001/XMLSchema#date" } ] ,
+    "http://dbpedia.org/ontology/deathPlace" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Basel" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Switzerland" } ] ,
+    "http://dbpedia.org/ontology/wikiPageRevisionID" : [ { "type" : "literal", "value" : 742767911 , "datatype" : "http://www.w3.org/2001/XMLSchema#integer" } ] ,
+    "http://dbpedia.org/ontology/birthPlace" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Hanover" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Weimar_Germany" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Hannover" } ] ,
+    "http://dbpedia.org/ontology/wikiPageID" : [ { "type" : "literal", "value" : 3085782 , "datatype" : "http://www.w3.org/2001/XMLSchema#integer" } ] ,
+    "http://dbpedia.org/ontology/nationality" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Iceland" } ] ,
+    "http://dbpedia.org/property/wordnet_type" : [ { "type" : "uri", "value" : "http://www.w3.org/2006/03/wn/wn20/instances/synset-artist-noun-1" } ] ,
+    "http://purl.org/linguistics/gold/hypernym" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Artist" } ] ,
+    "http://dbpedia.org/ontology/field" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Sculpture" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Artist's_book" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Poetry" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Printmaking" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Installation_art" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Painting" } ] ,
+    "http://dbpedia.org/property/works" : [ { "type" : "literal", "value" : "Literaturwurst" , "datatype" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString" } ] } ,
+  "http://en.wikipedia.org/wiki/Dieter_Roth" : { "http://xmlns.com/foaf/0.1/primaryTopic" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Dieter_Roth" } ] } ,
+  "http://dbpedia.org/resource/Diter_Rot" : { "http://dbpedia.org/ontology/wikiPageRedirects" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Dieter_Roth" } ] } ,
+  "http://dbpedia.org/resource/Dieter_Rot" : { "http://dbpedia.org/ontology/wikiPageRedirects" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Dieter_Roth" } ] }
+}
+;
+	var dataAuth = "http://dbpedia.org/resource/Dieter_Roth";
+	var dataUrl = "dieter_roth.html";
+	var dataResourceType = "participant";
+	var dataName = "Dieter Roth";
+ 	
+</script>
+
+
+
+
+
+<script type="text/javascript">
+
+
+	
+	
+	
+
+	$(document).ready(function($) {
+		
+		
+		padb.resource.initialize();
+			 
+		$( '.scrollable' ).
+		bind( 'mousewheel DOMMouseScroll', function ( e ) {
+			
+			if( e.originalEvent ) e = e.originalEvent;
+			
+			var delta = e.wheelDelta || -e.detail;
+			this.scrollTop += ( delta < 0 ? 1 : -1 ) * 30;
+			e.preventDefault();
+		});		 
+		
+		
+				
+		$.ajaxSetup ({
+			// Disable caching of AJAX responses
+			cache: false
+		});		
+		
+	});
+	
+
+	
+	
+	
+	
+	
+</script>
+
+
+
+
+ 
+<br />
+<div class="container"  style="position:relative;">
+	   
+      <div id="resourceLinks"></div> 
+       
+       
+       
+       
+              
+       
+           
+           
+           
+          <div class="row addSection">
+              <div class="span1 addSectionIconHolder">
+              
+                <i class="icon-user"></i>
+              
+              </div>
+          
+              <div class="span11">
+                <span>Performer</span>
+                <hr>
+                <br />
+              </div>
+        </div>
+        <div class="row">
+            <div class="span1">
+            </div>
+            <div class="span11" style="position:relative">
+                
+                
+                
+                
+               <div>
+                                       <div class="pull-right vignette">
+                            <img  src="../cache/media/dieter_roth.jpg" />
+                            
+                        </div>
+                        
+                                           
+                <div class="pull-left" style="width:80%;">
+                     
+                     <h5 id="resourceLDName">Dieter Roth</h5>
+                     <h5 id="resourceLDAbstract"></h5>
+                     
+                     
+                     <div id="resourceSameAs">
+                        <h5>External Data:</h5>
+                        
+                        
+                     </div>
+                
+                </div>   
+                
+                <br style="clear:both;" />
+            </div>
+            
+            
+                
+            </div>
+        </div>    
+         
+    
+    
+    
+    
+    
+    
+       <div class="row addSection">
+			<div class="span1 addSectionIconHolder">              
+                <i class="icon-asterisk"></i>
+              
+              </div>
+          
+              <div class="span11">
+                <span>Events </span><span id="resourceEventCount"></span>
+                <hr>
+              </div>
+        </div>
+    
+    
+    
+    
+    
+    
+    
+        <div class="row">
+            <div class="span1"></div>
+            <div class="span11" style="position:relative">
+                  
+                 <div class="">
+                    <div id="resourceEventsEvents" class="scrollable">
+                           <table class="table table-condensed table-hover table-striped">
+                               <thead>
+                                <tr>
+                                  <th>Date</th>
+                                  
+                                  <th>Title</th>
+                                  <th>Location</th>
+                                  <th></th>
+                                </tr>
+                              </thead>
+                              <tbody id="resourceEventsEventsRows"> 
+                              </tbody>
+                            </table>
+                     
+                    </div>
+                    
+                    <div id="resourceEventsExport">
+                    
+                    	<input  name="resourceEventsSearch" class="span3" id="resourceEventsSearch"  type="text" placeholder="Filter: names, places, dates">
+                    	<button class="btn btn-mini btn-danger" id="resourceEventsClearFilter"><i class="icon-remove">&nbsp;Clear Filter</i></button>
+                   		<button class="btn btn-mini btn-info" title="Render the currently filitered data as a network" id="resourceRenderEventNetwork"> <img src="../img/icon-network-white.png" style="height:15px; width:auto" /> Two-Mode Event Network</button>
+                   		<button class="btn btn-mini btn-info" title="Render the currently filitered data as a network" id="resourceRenderEventMap"> <i class="icon-globe"></i> Map Event Locations</button>
+                   		<button class="btn btn-mini btn-success" title="Download network as Gephi File" id="resourceDownloadEventGephi"> <img src="../img/icon-gephi.png" style="height:15px; width:auto" /> Donwload Gephi Network</button>
+
+                 
+                    </div>                 
+                </div>
+                <br style="clear:both;" />
+            </div>
+            
+            
+                
+         </div>    
+    
+     
+       <div class="row addSection">
+              <div class="span1">
+              
+                <img src="../img/social-network.png" style=" margin-left:25px; margin-bottom:10px;" />
+              
+              </div>
+          
+              <div class="span11">
+                <span>Performance Network</span> 
+                <hr>
+              </div>
+        </div>
+        
+        <div class="row">
+            <div class="span1">
+            </div>
+            <div class="span11" style="position:relative">
+                
+               	<div style="width: 100%; height:500px;" id="egoNetwork">
+            
+                
+             	</div> 
+                <div class="well pull-left well-small" id="egoNetworkControls">
+                    <span class="rangeLabels">Node Charge</span>
+                    <input type="range" id="resourceEgoNetworkCharge" min="-1000" max="100" value="-120" data-def="-700" />
+                    <br /><span class="rangeLabels">Gravity</span>
+                    <input type="range" id="resourceEgoNetworkGravity" min="0" max="1" value="0.1" step="0.01" data-def="0.3" /> 
+                    <br /><span class="rangeLabels">Edge Length</span>
+                    <input type="range" id="resourceEgoNetworkDistance" min="0" max="300" value="50" data-def="50"  />      
+                    <br /><span class="rangeLabels">Edge Strength</span>
+                    <input type="range" id="resourceEgoNetworkStrength" min="0" max="3" value="1" data-def="0.15" step="0.1"  /> 
+                    <br /><br />
+                    <button type="button" id="resourceEgoNetworkLabelsButton" class="btn btn-mini" title="Show node labels." data-toggle="button">Show Labels</button>  
+                    <button type="button" id="resourceEgoNetworkLiveButton" class="btn btn-mini" title="Show realtime network rendering" data-toggle="button">Live Rendering</button>                     
+                </div>
+                
+                <div class="well pull-left well-small egoNetworkControls span7" style="margin-left:20px;" >
+                
+                	<input  name="resourceEgoNetworkSearch" class="span3" id="resourceEgoNetworkSearch"  type="text" placeholder="Filter: names, places, dates">
+					<button class="btn btn-mini btn-danger" id="resourceEgoClearFilter"><i class="icon-remove">&nbsp;Clear Filter</i></button>
+                    <button class="btn btn-mini btn-success" title="Download network as Gephi File" id="resourceDownloadEgoGephi"> <img src="../img/icon-gephi.png" style="height:15px; width:auto" /> Donwload Gephi Network</button>
+
+                </div>
+                
+            </div>
+        </div>           
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+	
+
+	
+
+
+	
+
+
+</div>
+
+
+
+
+    <div id="resourceEventNetworkModal" class="modal container hide fade" style="min-height:500px" tabindex="-1">
+ 
+      <div class="modal-body">
+      	
+        <div id="eventNetwork" style="height:400px; width:100%">
+        
+        </div>
+      
+      </div>
+      <div class="modal-footer" style="height:20px;">
+      	
+        <div class="well pull-left well-small">
+        	<span class="rangeLabels">Node Charge</span>
+        	<input type="range" id="resourceEventNetworkCharge" min="-800" max="200" value="-120" data-def="-120" />
+            <span class="rangeLabels">Gravity</span>
+        	<input type="range" id="resourceEventNetworkGravity" min="0" max="1" value="0.1" step="0.01" data-def="0.1" /> 
+            <span class="rangeLabels">Edge Length</span>
+        	<input type="range" id="resourceEventNetworkDistance" min="0" max="300" value="50" data-def="50"  />      
+            <span class="rangeLabels">Edge Strength</span>
+        	<input type="range" id="resourceEventNetworkStrength" min="0" max="5" value="1" data-def="1" step="0.1"  />    
+            <button type="button" id="resourceEventNetworkLabelsButton" class="btn btn-mini" data-toggle="button">Show Labels</button>                     
+		</div>
+        <div class="pull-right">
+        <button type="button" data-dismiss="modal" class="btn">Close</button>
+       	</div>
+       </div>
+    </div>
+    
+    
+    
+    
+     <div id="resourceEventMapModal" class="modal container hide fade" style="min-height:500px" tabindex="-1">
+ 
+      <div class="modal-body">
+      	
+        <div id="eventMap" style="height:400px; width:100%">
+        
+        </div>
+      
+      </div>
+      <div class="modal-footer" style="height:20px;">
+      	
+        <div class="well pull-left well-small">                  
+		</div>
+        <div class="pull-right">
+        <button type="button" data-dismiss="modal" class="btn">Close</button>
+       	</div>
+       </div>
+    </div>
+
+<br /><br /><br /><br /><br /><br />
+
+<script type="text/javascript">    var _gaq = _gaq || [];   _gaq.push(['_setAccount', 'UA-10371295-7']);   _gaq.push(['_trackPageview']);    (function() {     var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);   })();  </script>
+
+</body>
+
+<!-- Mirrored from padb.net/resource/dieter_roth by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 11 Jan 2020 22:17:27 GMT -->
+</html>

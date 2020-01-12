@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<gexf version="1.2" xmlns="http://www.gexf.net/1.2draft">
+ <graph mode="static" defaultedgetype="undirected">
+  <nodes>
+   <node id="18" label="George Brecht"/>
+   <node id="19" label="Ray Johnson"/>
+   <node id="22" label="Robert Rauschenberg"/>
+   <node id="57" label="Robert Morris"/>
+   <node id="95" label="Yvonne Rainer"/>
+   <node id="114" label="Freddie Herko"/>
+   <node id="188" label="Trisha Brown"/>
+   <node id="224" label="Jill Johnston"/>
+  </nodes>
+  <edges>
+   <edge source="18" target="19"/>
+   <edge source="18" target="22"/>
+   <edge source="18" target="57"/>
+   <edge source="18" target="95"/>
+   <edge source="18" target="114"/>
+   <edge source="18" target="188"/>
+   <edge source="18" target="224"/>
+   <edge source="19" target="22"/>
+   <edge source="19" target="57"/>
+   <edge source="19" target="95"/>
+   <edge source="19" target="114"/>
+   <edge source="19" target="188"/>
+   <edge source="19" target="224"/>
+   <edge source="22" target="57"/>
+   <edge source="22" target="95"/>
+   <edge source="22" target="114"/>
+   <edge source="22" target="188"/>
+   <edge source="22" target="224"/>
+   <edge source="57" target="95"/>
+   <edge source="57" target="114"/>
+   <edge source="57" target="188"/>
+   <edge source="57" target="224"/>
+   <edge source="95" target="114"/>
+   <edge source="95" target="188"/>
+   <edge source="95" target="224"/>
+   <edge source="114" target="188"/>
+   <edge source="114" target="224"/>
+   <edge source="188" target="224"/>
+  </edges>
+ </graph>
+</gexf>

@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<gexf version="1.2" xmlns="http://www.gexf.net/1.2draft">
+ <graph mode="static" defaultedgetype="undirected">
+  <nodes>
+   <node id="55" label="Joseph Byrd"/>
+   <node id="335" label="Frederick Lieberman"/>
+   <node id="361" label="Nancy Daniel"/>
+   <node id="362" label="Dorothy Moskowitz"/>
+   <node id="363" label="Lynda Burman"/>
+   <node id="364" label="Beverley Rychlak"/>
+   <node id="365" label="Joan Bradow"/>
+   <node id="366" label="Lee Crofton"/>
+   <node id="367" label="Chongni Ahn"/>
+   <node id="368" label="Annina Nosei"/>
+  </nodes>
+  <edges>
+   <edge source="55" target="335"/>
+   <edge source="55" target="361"/>
+   <edge source="55" target="362"/>
+   <edge source="55" target="363"/>
+   <edge source="55" target="364"/>
+   <edge source="55" target="365"/>
+   <edge source="55" target="366"/>
+   <edge source="55" target="367"/>
+   <edge source="55" target="368"/>
+   <edge source="335" target="361"/>
+   <edge source="335" target="362"/>
+   <edge source="335" target="363"/>
+   <edge source="335" target="364"/>
+   <edge source="335" target="365"/>
+   <edge source="335" target="366"/>
+   <edge source="335" target="367"/>
+   <edge source="335" target="368"/>
+   <edge source="361" target="362"/>
+   <edge source="361" target="363"/>
+   <edge source="361" target="364"/>
+   <edge source="361" target="365"/>
+   <edge source="361" target="366"/>
+   <edge source="361" target="367"/>
+   <edge source="361" target="368"/>
+   <edge source="362" target="363"/>
+   <edge source="362" target="364"/>
+   <edge source="362" target="365"/>
+   <edge source="362" target="366"/>
+   <edge source="362" target="367"/>
+   <edge source="362" target="368"/>
+   <edge source="363" target="364"/>
+   <edge source="363" target="365"/>
+   <edge source="363" target="366"/>
+   <edge source="363" target="367"/>
+   <edge source="363" target="368"/>
+   <edge source="364" target="365"/>
+   <edge source="364" target="366"/>
+   <edge source="364" target="367"/>
+   <edge source="364" target="368"/>
+   <edge source="365" target="366"/>
+   <edge source="365" target="367"/>
+   <edge source="365" target="368"/>
+   <edge source="366" target="367"/>
+   <edge source="366" target="368"/>
+   <edge source="367" target="368"/>
+  </edges>
+ </graph>
+</gexf>

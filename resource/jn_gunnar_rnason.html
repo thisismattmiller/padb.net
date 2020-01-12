@@ -1,0 +1,437 @@
+<!doctype html>
+<html>
+
+<!-- Mirrored from padb.net/resource/jn_gunnar_rnason by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 11 Jan 2020 22:22:38 GMT -->
+<head>
+<meta charset="UTF-8">
+<title>padb.net</title>
+
+
+<link rel="stylesheet" href="../css/bootstrap.css">
+<link rel="stylesheet" href="../css/font-awesome.css">
+<link rel="stylesheet" href="../css/site.css">
+<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+<link rel="icon" type="image/png" href="../img/favicon.png">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/bootstrap-modal.js"></script>
+<script src="../js/bootstrap-modalmanager.js"></script>
+
+<script src="../js/d3.min.js"></script>
+<script src="../js/html5slider.js"></script>
+<script src="../js/topojson.js"></script>
+<script src="../js/padb.js"></script>
+
+
+</head>
+<body>
+    
+    
+	<div style="position:relative;">        
+
+ 		<div style=" border-bottom:solid 1px #ccc;">
+        	<div class="container">
+                
+                 <div id="header">
+                 	
+                     <div class="logo"><a href="../index.html"><span>|||</span>padb</a> </div>
+                    
+                     						<div id="resourceName" style="font-size:2em">Jón Gunnar Árnason</div>
+					
+                 </div>
+                
+                
+        	</div>
+            
+    	</div>
+ 
+   </div>
+<script src="../js/countriesData.js"></script>
+
+<script type="text/javascript">
+	//preloaded json from the server
+
+	var dataSameAs = [
+  {
+    "uri": "http://dbpedia.org/resource/Jón_Gunnar_Árnason",
+    "numDuplicates": "1",
+    "duplicates": [
+      "http://dbpedia.org/resource/Jón_Gunnar_Árnason"
+    ]
+  }
+]
+;
+	var dataDbpedia = {
+  "http://dbpedia.org/resource/The_Sun_Voyager" : { "http://dbpedia.org/ontology/author" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/J\u00F3n_Gunnar_\u00C1rnason" } ] } ,
+  "http://dbpedia.org/resource/Jon_Gunnar_\u00C1rnason" : { "http://dbpedia.org/ontology/wikiPageRedirects" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/J\u00F3n_Gunnar_\u00C1rnason" } ] } ,
+  "http://dbpedia.org/resource/Jon_Gunnar_Arnason" : { "http://dbpedia.org/ontology/wikiPageRedirects" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/J\u00F3n_Gunnar_\u00C1rnason" } ] } ,
+  "http://en.wikipedia.org/wiki/J\u00F3n_Gunnar_\u00C1rnason" : { "http://xmlns.com/foaf/0.1/primaryTopic" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/J\u00F3n_Gunnar_\u00C1rnason" } ] } ,
+  "http://dbpedia.org/resource/\u00C1rnason" : { "http://dbpedia.org/ontology/wikiPageDisambiguates" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/J\u00F3n_Gunnar_\u00C1rnason" } ] } ,
+  "http://dbpedia.org/resource/J\u00F3n_Gunnar_\u00C1rnason" : { "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { "type" : "uri", "value" : "http://www.w3.org/2002/07/owl#Thing" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Creator109614315" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Artist109812338" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatPeopleFromReykjav\u00EDk" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Organism100004475" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/ontology/Person" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatIcelandicSculptors" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Whole100003553" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/LivingThing100004258" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/CausalAgent100007347" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Sculptor110566072" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/YagoLegalActor" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/YagoLegalActorGeo" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Person100007846" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Object100002684" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/PhysicalEntity100001930" } ] ,
+    "http://www.w3.org/2000/01/rdf-schema#label" : [ { "type" : "literal", "value" : "J\u00F3n Gunnar \u00C1rnason" , "lang" : "de" } ,
+      { "type" : "literal", "value" : "J\u00F3n Gunnar \u00C1rnason" , "lang" : "es" } ,
+      { "type" : "literal", "value" : "J\u00F3n Gunnar \u00C1rnason" , "lang" : "fr" } ,
+      { "type" : "literal", "value" : "J\u00F3n Gunnar \u00C1rnason" , "lang" : "en" } ,
+      { "type" : "literal", "value" : "J\u00F3n Gunnar \u00C1rnason" , "lang" : "nl" } ] ,
+    "http://www.w3.org/2000/01/rdf-schema#comment" : [ { "type" : "literal", "value" : "J\u00F3n Gunnar \u00C1rnason (Reikiavik, 1931\u2013 1989) fue un escultor island\u00E9s." , "lang" : "es" } ,
+      { "type" : "literal", "value" : "J\u00F3n Gunnar \u00C1rnason (* 15. Mai 1931 in Reykjav\u00EDk; \u2020 21. April 1989) war ein isl\u00E4ndischer Bildhauer. Von 1944 bis 1946 studierte er an der Isl\u00E4ndischen Kunstakademie in Reykjav\u00EDk. 1952 graduierte er als Ingenieur an der Technischen Universit\u00E4t von Reykjav\u00EDk. Von 1965 bis 1967 setzte er sein Studium der Bildenden K\u00FCnste Londoner Hornsey College of Art (heute ein Teil der Middlesex University) fort.Eines seiner ber\u00FChmtesten Werke ist die Skulptur \u201ESonnenfahrt\u201C in Reykjav\u00EDk." , "lang" : "de" } ,
+      { "type" : "literal", "value" : "J\u00F3n Gunnar \u00C1rnason (1931\u20131989 in Reykjav\u00EDk) was an Icelandic sculptor. After studying at the University of Iceland Reykjav\u00EDk Arts and Crafts from 1944 to 1946 and the School of Visual Arts, he graduated as an engineer from the Technical University of Reykjavik in 1952. From 1965 to 1967 he continued his studies of the Fine Arts at the University of Hornsey in London." , "lang" : "en" } ,
+      { "type" : "literal", "value" : "J\u00F3n Gunnar \u00C1rnason (Reykjavik, 15 mei 1931 - aldaar, 21 april 1989) was een IJslands beeldhouwer." , "lang" : "nl" } ,
+      { "type" : "literal", "value" : "J\u00F3n Gunnar \u00C1rnason est un sculpteur islandais n\u00E9 le 15 mai 1931 \u00E0 Reykjavik et mort le 21 avril 1989. Apr\u00E8s des \u00E9tudes \u00E0 l'universit\u00E9 islandaise des Arts et M\u00E9tiers de Reykjav\u00EDk de 1944 \u00E0 1946 et \u00E0 l'Ecole des Arts Visuels, il a obtenu un dipl\u00F4me de m\u00E9canicien de l'universit\u00E9 technique de Reykjav\u00EDk en 1952. De 1965 \u00E0 1967, il a poursuivi ses \u00E9tudes des Beaux-Arts \u00E0 l'universit\u00E9 de Hornsey \u00E0 Londres. Il est l'auteur d'une des sculptures les plus c\u00E9l\u00E8bres de Reykjav\u00EDk, S\u00F3lfar \"Le Voyageur du Soleil\", situ\u00E9e face \u00E0 la mer au bout de la rue Frakkastigur." , "lang" : "fr" } ] ,
+    "http://www.w3.org/2002/07/owl#sameAs" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/J\u00F3n_Gunnar_\u00C1rnason" } ,
+      { "type" : "uri", "value" : "http://es.dbpedia.org/resource/J\u00F3n_Gunnar_\u00C1rnason" } ,
+      { "type" : "uri", "value" : "http://nl.dbpedia.org/resource/J\u00F3n_Gunnar_\u00C1rnason" } ,
+      { "type" : "uri", "value" : "http://fr.dbpedia.org/resource/J\u00F3n_Gunnar_\u00C1rnason" } ,
+      { "type" : "uri", "value" : "http://de.dbpedia.org/resource/J\u00F3n_Gunnar_\u00C1rnason" } ,
+      { "type" : "uri", "value" : "http://d-nb.info/gnd/174177283" } ,
+      { "type" : "uri", "value" : "http://wikidata.dbpedia.org/resource/Q472983" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/J\u00F3n_Gunnar_\u00C1rnason" } ,
+      { "type" : "uri", "value" : "http://rdf.freebase.com/ns/m.0g5r77t" } ,
+      { "type" : "uri", "value" : "http://yago-knowledge.org/resource/J\u00F3n_Gunnar_\u00C1rnason" } ,
+      { "type" : "uri", "value" : "http://www.wikidata.org/entity/Q472983" } ] ,
+    "http://purl.org/dc/terms/subject" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:1931_births" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:1989_deaths" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:20th-century_Icelandic_sculptors" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Icelandic_sculptors" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:People_from_Reykjav\u00EDk" } ] ,
+    "http://xmlns.com/foaf/0.1/name" : [ { "type" : "literal", "value" : "J\u00F3n Gunnar \u00C1rnason" , "lang" : "en" } ] ,
+    "http://purl.org/dc/terms/description" : [ { "type" : "literal", "value" : "Icelandic sculptor" , "lang" : "en" } ] ,
+    "http://xmlns.com/foaf/0.1/givenName" : [ { "type" : "literal", "value" : "J\u00F3n" , "lang" : "en" } ] ,
+    "http://xmlns.com/foaf/0.1/gender" : [ { "type" : "literal", "value" : "male" , "lang" : "en" } ] ,
+    "http://xmlns.com/foaf/0.1/isPrimaryTopicOf" : [ { "type" : "uri", "value" : "http://en.wikipedia.org/wiki/J\u00F3n_Gunnar_\u00C1rnason" } ] ,
+    "http://www.w3.org/ns/prov#wasDerivedFrom" : [ { "type" : "uri", "value" : "http://en.wikipedia.org/wiki/J\u00F3n_Gunnar_\u00C1rnason?oldid=721265371" } ] ,
+    "http://dbpedia.org/ontology/wikiPageExternalLink" : [ { "type" : "uri", "value" : "https://secure.flickr.com/photos/ethomsen/42908114/" } ] ,
+    "http://dbpedia.org/ontology/abstract" : [ { "type" : "literal", "value" : "J\u00F3n Gunnar \u00C1rnason (1931\u20131989 in Reykjav\u00EDk) was an Icelandic sculptor. After studying at the University of Iceland Reykjav\u00EDk Arts and Crafts from 1944 to 1946 and the School of Visual Arts, he graduated as an engineer from the Technical University of Reykjavik in 1952. From 1965 to 1967 he continued his studies of the Fine Arts at the University of Hornsey in London. He is the author of one of the most famous sculptures of Reykjav\u00EDk, S\u00F3lfar (meaning \"The Traveler/Voyager of the Sun\"), located on the seafront at the end of the street Frakkastigur. His works have been exhibited in prestigious galleries in Iceland, Norway, the Netherlands and Germany. He was a member of the Icelandic Sculptors Society which he established in the Icelandic capital in 1972 along with Hallsteinn Sigur\u00F0sson, Ragnar Kjartansson, \u00DEorbj\u00F6rg P\u00E1lsd\u00F3ttir and others." , "lang" : "en" } ,
+      { "type" : "literal", "value" : "J\u00F3n Gunnar \u00C1rnason (Reikiavik, 1931\u2013 1989) fue un escultor island\u00E9s." , "lang" : "es" } ,
+      { "type" : "literal", "value" : "J\u00F3n Gunnar \u00C1rnason (Reykjavik, 15 mei 1931 - aldaar, 21 april 1989) was een IJslands beeldhouwer." , "lang" : "nl" } ,
+      { "type" : "literal", "value" : "J\u00F3n Gunnar \u00C1rnason (* 15. Mai 1931 in Reykjav\u00EDk; \u2020 21. April 1989) war ein isl\u00E4ndischer Bildhauer. Von 1944 bis 1946 studierte er an der Isl\u00E4ndischen Kunstakademie in Reykjav\u00EDk. 1952 graduierte er als Ingenieur an der Technischen Universit\u00E4t von Reykjav\u00EDk. Von 1965 bis 1967 setzte er sein Studium der Bildenden K\u00FCnste Londoner Hornsey College of Art (heute ein Teil der Middlesex University) fort.Eines seiner ber\u00FChmtesten Werke ist die Skulptur \u201ESonnenfahrt\u201C in Reykjav\u00EDk." , "lang" : "de" } ,
+      { "type" : "literal", "value" : "J\u00F3n Gunnar \u00C1rnason est un sculpteur islandais n\u00E9 le 15 mai 1931 \u00E0 Reykjavik et mort le 21 avril 1989. Apr\u00E8s des \u00E9tudes \u00E0 l'universit\u00E9 islandaise des Arts et M\u00E9tiers de Reykjav\u00EDk de 1944 \u00E0 1946 et \u00E0 l'Ecole des Arts Visuels, il a obtenu un dipl\u00F4me de m\u00E9canicien de l'universit\u00E9 technique de Reykjav\u00EDk en 1952. De 1965 \u00E0 1967, il a poursuivi ses \u00E9tudes des Beaux-Arts \u00E0 l'universit\u00E9 de Hornsey \u00E0 Londres. Il est l'auteur d'une des sculptures les plus c\u00E9l\u00E8bres de Reykjav\u00EDk, S\u00F3lfar \"Le Voyageur du Soleil\", situ\u00E9e face \u00E0 la mer au bout de la rue Frakkastigur. Ses \u0153uvres ont \u00E9t\u00E9 expos\u00E9es dans des galeries prestigieuses d'Islande, de Norv\u00E8ge, des Pays-Bas et d'Allemagne." , "lang" : "fr" } ] ,
+    "http://dbpedia.org/ontology/birthDate" : [ { "type" : "literal", "value" : "1931-5-15" , "datatype" : "http://www.w3.org/2001/XMLSchema#date" } ] ,
+    "http://dbpedia.org/ontology/deathDate" : [ { "type" : "literal", "value" : "1989-4-21" , "datatype" : "http://www.w3.org/2001/XMLSchema#date" } ] ,
+    "http://dbpedia.org/ontology/wikiPageRevisionID" : [ { "type" : "literal", "value" : 721265371 , "datatype" : "http://www.w3.org/2001/XMLSchema#integer" } ] ,
+    "http://dbpedia.org/ontology/birthPlace" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Reykjav\u00EDk" } ] ,
+    "http://dbpedia.org/ontology/wikiPageID" : [ { "type" : "literal", "value" : 30423541 , "datatype" : "http://www.w3.org/2001/XMLSchema#integer" } ] ,
+    "http://purl.org/linguistics/gold/hypernym" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Sculptor" } ] }
+}
+;
+	var dataAuth = "http://dbpedia.org/resource/Jón_Gunnar_Árnason";
+	var dataUrl = "jn_gunnar_rnason.html";
+	var dataResourceType = "participant";
+	var dataName = "Jón Gunnar Árnason";
+ 	
+</script>
+
+
+
+
+
+<script type="text/javascript">
+
+
+	
+	
+	
+
+	$(document).ready(function($) {
+		
+		
+		padb.resource.initialize();
+			 
+		$( '.scrollable' ).
+		bind( 'mousewheel DOMMouseScroll', function ( e ) {
+			
+			if( e.originalEvent ) e = e.originalEvent;
+			
+			var delta = e.wheelDelta || -e.detail;
+			this.scrollTop += ( delta < 0 ? 1 : -1 ) * 30;
+			e.preventDefault();
+		});		 
+		
+		
+				
+		$.ajaxSetup ({
+			// Disable caching of AJAX responses
+			cache: false
+		});		
+		
+	});
+	
+
+	
+	
+	
+	
+	
+</script>
+
+
+
+
+ 
+<br />
+<div class="container"  style="position:relative;">
+	   
+      <div id="resourceLinks"></div> 
+       
+       
+       
+       
+              
+       
+           
+           
+           
+          <div class="row addSection">
+              <div class="span1 addSectionIconHolder">
+              
+                <i class="icon-user"></i>
+              
+              </div>
+          
+              <div class="span11">
+                <span>Performer</span>
+                <hr>
+                <br />
+              </div>
+        </div>
+        <div class="row">
+            <div class="span1">
+            </div>
+            <div class="span11" style="position:relative">
+                
+                
+                
+                
+               <div>
+                                       
+                                           
+                <div class="pull-left" style="width:80%;">
+                     
+                     <h5 id="resourceLDName">Jón Gunnar Árnason</h5>
+                     <h5 id="resourceLDAbstract"></h5>
+                     
+                     
+                     <div id="resourceSameAs">
+                        <h5>External Data:</h5>
+                        
+                        
+                     </div>
+                
+                </div>   
+                
+                <br style="clear:both;" />
+            </div>
+            
+            
+                
+            </div>
+        </div>    
+         
+    
+    
+    
+    
+    
+    
+       <div class="row addSection">
+			<div class="span1 addSectionIconHolder">              
+                <i class="icon-asterisk"></i>
+              
+              </div>
+          
+              <div class="span11">
+                <span>Events </span><span id="resourceEventCount"></span>
+                <hr>
+              </div>
+        </div>
+    
+    
+    
+    
+    
+    
+    
+        <div class="row">
+            <div class="span1"></div>
+            <div class="span11" style="position:relative">
+                  
+                 <div class="">
+                    <div id="resourceEventsEvents" class="scrollable">
+                           <table class="table table-condensed table-hover table-striped">
+                               <thead>
+                                <tr>
+                                  <th>Date</th>
+                                  
+                                  <th>Title</th>
+                                  <th>Location</th>
+                                  <th></th>
+                                </tr>
+                              </thead>
+                              <tbody id="resourceEventsEventsRows"> 
+                              </tbody>
+                            </table>
+                     
+                    </div>
+                    
+                    <div id="resourceEventsExport">
+                    
+                    	<input  name="resourceEventsSearch" class="span3" id="resourceEventsSearch"  type="text" placeholder="Filter: names, places, dates">
+                    	<button class="btn btn-mini btn-danger" id="resourceEventsClearFilter"><i class="icon-remove">&nbsp;Clear Filter</i></button>
+                   		<button class="btn btn-mini btn-info" title="Render the currently filitered data as a network" id="resourceRenderEventNetwork"> <img src="../img/icon-network-white.png" style="height:15px; width:auto" /> Two-Mode Event Network</button>
+                   		<button class="btn btn-mini btn-info" title="Render the currently filitered data as a network" id="resourceRenderEventMap"> <i class="icon-globe"></i> Map Event Locations</button>
+                   		<button class="btn btn-mini btn-success" title="Download network as Gephi File" id="resourceDownloadEventGephi"> <img src="../img/icon-gephi.png" style="height:15px; width:auto" /> Donwload Gephi Network</button>
+
+                 
+                    </div>                 
+                </div>
+                <br style="clear:both;" />
+            </div>
+            
+            
+                
+         </div>    
+    
+     
+       <div class="row addSection">
+              <div class="span1">
+              
+                <img src="../img/social-network.png" style=" margin-left:25px; margin-bottom:10px;" />
+              
+              </div>
+          
+              <div class="span11">
+                <span>Performance Network</span> 
+                <hr>
+              </div>
+        </div>
+        
+        <div class="row">
+            <div class="span1">
+            </div>
+            <div class="span11" style="position:relative">
+                
+               	<div style="width: 100%; height:500px;" id="egoNetwork">
+            
+                
+             	</div> 
+                <div class="well pull-left well-small" id="egoNetworkControls">
+                    <span class="rangeLabels">Node Charge</span>
+                    <input type="range" id="resourceEgoNetworkCharge" min="-1000" max="100" value="-120" data-def="-700" />
+                    <br /><span class="rangeLabels">Gravity</span>
+                    <input type="range" id="resourceEgoNetworkGravity" min="0" max="1" value="0.1" step="0.01" data-def="0.3" /> 
+                    <br /><span class="rangeLabels">Edge Length</span>
+                    <input type="range" id="resourceEgoNetworkDistance" min="0" max="300" value="50" data-def="50"  />      
+                    <br /><span class="rangeLabels">Edge Strength</span>
+                    <input type="range" id="resourceEgoNetworkStrength" min="0" max="3" value="1" data-def="0.15" step="0.1"  /> 
+                    <br /><br />
+                    <button type="button" id="resourceEgoNetworkLabelsButton" class="btn btn-mini" title="Show node labels." data-toggle="button">Show Labels</button>  
+                    <button type="button" id="resourceEgoNetworkLiveButton" class="btn btn-mini" title="Show realtime network rendering" data-toggle="button">Live Rendering</button>                     
+                </div>
+                
+                <div class="well pull-left well-small egoNetworkControls span7" style="margin-left:20px;" >
+                
+                	<input  name="resourceEgoNetworkSearch" class="span3" id="resourceEgoNetworkSearch"  type="text" placeholder="Filter: names, places, dates">
+					<button class="btn btn-mini btn-danger" id="resourceEgoClearFilter"><i class="icon-remove">&nbsp;Clear Filter</i></button>
+                    <button class="btn btn-mini btn-success" title="Download network as Gephi File" id="resourceDownloadEgoGephi"> <img src="../img/icon-gephi.png" style="height:15px; width:auto" /> Donwload Gephi Network</button>
+
+                </div>
+                
+            </div>
+        </div>           
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+	
+
+	
+
+
+	
+
+
+</div>
+
+
+
+
+    <div id="resourceEventNetworkModal" class="modal container hide fade" style="min-height:500px" tabindex="-1">
+ 
+      <div class="modal-body">
+      	
+        <div id="eventNetwork" style="height:400px; width:100%">
+        
+        </div>
+      
+      </div>
+      <div class="modal-footer" style="height:20px;">
+      	
+        <div class="well pull-left well-small">
+        	<span class="rangeLabels">Node Charge</span>
+        	<input type="range" id="resourceEventNetworkCharge" min="-800" max="200" value="-120" data-def="-120" />
+            <span class="rangeLabels">Gravity</span>
+        	<input type="range" id="resourceEventNetworkGravity" min="0" max="1" value="0.1" step="0.01" data-def="0.1" /> 
+            <span class="rangeLabels">Edge Length</span>
+        	<input type="range" id="resourceEventNetworkDistance" min="0" max="300" value="50" data-def="50"  />      
+            <span class="rangeLabels">Edge Strength</span>
+        	<input type="range" id="resourceEventNetworkStrength" min="0" max="5" value="1" data-def="1" step="0.1"  />    
+            <button type="button" id="resourceEventNetworkLabelsButton" class="btn btn-mini" data-toggle="button">Show Labels</button>                     
+		</div>
+        <div class="pull-right">
+        <button type="button" data-dismiss="modal" class="btn">Close</button>
+       	</div>
+       </div>
+    </div>
+    
+    
+    
+    
+     <div id="resourceEventMapModal" class="modal container hide fade" style="min-height:500px" tabindex="-1">
+ 
+      <div class="modal-body">
+      	
+        <div id="eventMap" style="height:400px; width:100%">
+        
+        </div>
+      
+      </div>
+      <div class="modal-footer" style="height:20px;">
+      	
+        <div class="well pull-left well-small">                  
+		</div>
+        <div class="pull-right">
+        <button type="button" data-dismiss="modal" class="btn">Close</button>
+       	</div>
+       </div>
+    </div>
+
+<br /><br /><br /><br /><br /><br />
+
+<script type="text/javascript">    var _gaq = _gaq || [];   _gaq.push(['_setAccount', 'UA-10371295-7']);   _gaq.push(['_trackPageview']);    (function() {     var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);   })();  </script>
+
+</body>
+
+<!-- Mirrored from padb.net/resource/jn_gunnar_rnason by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 11 Jan 2020 22:22:38 GMT -->
+</html>

@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<gexf version="1.2" xmlns="http://www.gexf.net/1.2draft">
+ <graph mode="static" defaultedgetype="undirected">
+  <nodes>
+   <node id="62" label="Emmett Williams"/>
+   <node id="105" label="Willem de Ridder"/>
+   <node id="134" label="Tomas Schmit"/>
+   <node id="251" label="Wim T. Schippers"/>
+  </nodes>
+  <edges>
+   <edge source="62" target="105"/>
+   <edge source="62" target="134"/>
+   <edge source="62" target="251"/>
+   <edge source="105" target="134"/>
+   <edge source="105" target="251"/>
+   <edge source="134" target="251"/>
+  </edges>
+ </graph>
+</gexf>

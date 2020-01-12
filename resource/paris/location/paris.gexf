@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<gexf version="1.2" xmlns="http://www.gexf.net/1.2draft">
+ <graph mode="static" defaultedgetype="undirected">
+  <nodes>
+   <node id="49" label="Robert Filliou"/>
+   <node id="59" label="Peter Cohen"/>
+   <node id="34" label="Ben Patterson"/>
+   <node id="123" label="George Maciunas"/>
+   <node id="62" label="Emmett Williams"/>
+   <node id="253" label="Joachim Pfeufer"/>
+   <node id="24" label="Jean-Jacques Lebel"/>
+   <node id="2" label="Yoko Ono"/>
+  </nodes>
+  <edges>
+   <edge source="49" target="59"/>
+   <edge source="34" target="49"/>
+   <edge source="34" target="123"/>
+   <edge source="49" target="123"/>
+   <edge source="49" target="62"/>
+   <edge source="49" target="253"/>
+  </edges>
+ </graph>
+</gexf>

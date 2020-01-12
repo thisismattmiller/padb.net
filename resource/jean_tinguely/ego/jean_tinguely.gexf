@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<gexf version="1.2" xmlns="http://www.gexf.net/1.2draft">
+ <graph mode="static" defaultedgetype="undirected">
+  <nodes>
+   <node id="46" label="Arthur Koepcke"/>
+   <node id="62" label="Emmett Williams"/>
+   <node id="67" label="Dieter Roth"/>
+   <node id="68" label="Eric Andersen"/>
+   <node id="159" label="Jean Tinguely"/>
+  </nodes>
+  <edges>
+   <edge source="46" target="62"/>
+   <edge source="46" target="67"/>
+   <edge source="46" target="68"/>
+   <edge source="46" target="159"/>
+   <edge source="62" target="67"/>
+   <edge source="62" target="68"/>
+   <edge source="62" target="159"/>
+   <edge source="67" target="68"/>
+   <edge source="67" target="159"/>
+   <edge source="68" target="159"/>
+  </edges>
+ </graph>
+</gexf>

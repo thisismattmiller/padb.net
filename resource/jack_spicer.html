@@ -1,0 +1,478 @@
+<!doctype html>
+<html>
+
+<!-- Mirrored from padb.net/resource/jack_spicer by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 11 Jan 2020 22:22:53 GMT -->
+<head>
+<meta charset="UTF-8">
+<title>padb.net</title>
+
+
+<link rel="stylesheet" href="../css/bootstrap.css">
+<link rel="stylesheet" href="../css/font-awesome.css">
+<link rel="stylesheet" href="../css/site.css">
+<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+<link rel="icon" type="image/png" href="../img/favicon.png">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/bootstrap-modal.js"></script>
+<script src="../js/bootstrap-modalmanager.js"></script>
+
+<script src="../js/d3.min.js"></script>
+<script src="../js/html5slider.js"></script>
+<script src="../js/topojson.js"></script>
+<script src="../js/padb.js"></script>
+
+
+</head>
+<body>
+    
+    
+	<div style="position:relative;">        
+
+ 		<div style=" border-bottom:solid 1px #ccc;">
+        	<div class="container">
+                
+                 <div id="header">
+                 	
+                     <div class="logo"><a href="../index.html"><span>|||</span>padb</a> </div>
+                    
+                      
+						 <div id="resourceName">Jack Spicer</div>
+					 
+                 </div>
+                
+                
+        	</div>
+            
+    	</div>
+ 
+   </div>
+<script src="../js/countriesData.js"></script>
+
+<script type="text/javascript">
+	//preloaded json from the server
+
+	var dataSameAs = [
+  {
+    "uri": "http://www.wikidata.org/entity/Q3805658",
+    "numDuplicates": "14",
+    "duplicates": [
+      "http://dbpedia.org/resource/Jack_Spicer",
+      "http://dbpedia.org/resource/Jack_Spicer_(poet)",
+      "http://dbpedia.org/resource/Jack_Spicer_(poet)",
+      "http://dbpedialite.org/things/424340#id",
+      "http://dbpedialite.org/things/8153978#id",
+      "http://it.dbpedia.org/resource/Jack_Spicer_(poeta)",
+      "http://mpii.de/yago/resource/Jack_Spicer",
+      "http://pt.dbpedia.org/resource/Jack_Spicer_(poeta)",
+      "http://rdf.freebase.com/ns/m.026vc0",
+      "http://rdf.freebase.com/ns/en.jack_spicer",
+      "http://rdf.freebase.com/ns/guid.9202a8c04000641f8000000000236960",
+      "http://umbel.org/umbel/ne/wikipedia/Jack_Spicer",
+      "http://www.wikidata.org/entity/Q3805658",
+      "http://yago-knowledge.org/resource/Jack_Spicer"
+    ]
+  }
+]
+;
+	var dataDbpedia = {
+  "http://dbpedia.org/resource/Jack_Spicer" : { "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatAmericanPoets" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatBeatGenerationPoets" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/CausalAgent100007347" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Whole100003553" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/LivingThing100004258" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Organism100004475" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/ontology/Person" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Poet110444194" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatGayWriters" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Communicator109610660" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Writer110794014" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/PhysicalEntity100001930" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Person100007846" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatLGBTPoets" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Object100002684" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/YagoLegalActor" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/YagoLegalActorGeo" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatLGBTWriters" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatWritersFromLosAngeles,California" } ,
+      { "type" : "uri", "value" : "http://www.w3.org/2002/07/owl#Thing" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatBeatGenerationWriters" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatLGBTWritersFromTheUnitedStates" } ] ,
+    "http://www.w3.org/2000/01/rdf-schema#label" : [ { "type" : "literal", "value" : "Jack Spicer (poeta)" , "lang" : "it" } ,
+      { "type" : "literal", "value" : "Jack Spicer" , "lang" : "en" } ,
+      { "type" : "literal", "value" : "Jack Spicer" , "lang" : "fr" } ,
+      { "type" : "literal", "value" : "Jack Spicer (poeta)" , "lang" : "pt" } ] ,
+    "http://www.w3.org/2000/01/rdf-schema#comment" : [ { "type" : "literal", "value" : "Jack Spicer, n\u00E9 le 30 janvier 1925 \u00E0 Los Angeles et mort le 17 ao\u00FBt 1965 \u00E0 San Francisco, est un po\u00E8te am\u00E9ricain. Il est souvent associ\u00E9 avec la Renaissance de San Francisco. En 2009, My Vocabulary Did This to Me: The Collected Poetry of Jack Spicer a remport\u00E9 l'American Book Award de po\u00E9sie." , "lang" : "fr" } ,
+      { "type" : "literal", "value" : "Jack Spicer (Los Angeles, 30 de janeiro de 1925 - S\u00E3o Francisco, 17 de agosto de 1965) foi um poeta dos Estados Unidos muitas vezes identificado com a Renascen\u00E7a de S\u00E3o Francisco. Foi co-fundador da Six Gallery, famosa por abrigar leituras de poemas acompanhadas de Jazz, em 1954." , "lang" : "pt" } ,
+      { "type" : "literal", "value" : "Jack Spicer (January 30, 1925 \u2013 August 17, 1965) was an American poet often identified with the San Francisco Renaissance. In 2009, My Vocabulary Did This to Me: The Collected Poetry of Jack Spicer won the American Book Award for poetry." , "lang" : "en" } ,
+      { "type" : "literal", "value" : "La raccolta di sue opere My Vocabulary Did This to Me: The Collected Poetry of Jack Spicer ha vinto l'American Book Award per la poesia nel 2009." , "lang" : "it" } ] ,
+    "http://www.w3.org/2002/07/owl#sameAs" : [ { "type" : "uri", "value" : "http://pt.dbpedia.org/resource/Jack_Spicer_(poeta)" } ,
+      { "type" : "uri", "value" : "http://it.dbpedia.org/resource/Jack_Spicer_(poeta)" } ,
+      { "type" : "uri", "value" : "http://wikidata.dbpedia.org/resource/Q3805658" } ,
+      { "type" : "uri", "value" : "http://fr.dbpedia.org/resource/Jack_Spicer" } ,
+      { "type" : "uri", "value" : "http://d-nb.info/gnd/119108526" } ,
+      { "type" : "uri", "value" : "http://viaf.org/viaf/46807530" } ,
+      { "type" : "uri", "value" : "http://yago-knowledge.org/resource/Jack_Spicer" } ,
+      { "type" : "uri", "value" : "http://rdf.freebase.com/ns/m.026vc0" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Jack_Spicer" } ,
+      { "type" : "uri", "value" : "http://www.wikidata.org/entity/Q3805658" } ] ,
+    "http://purl.org/dc/terms/subject" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:1925_births" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:LGBT_writers_from_the_United_States" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Male_poets" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Writers_from_Los_Angeles" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Beat_Generation_writers" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:University_of_Redlands_alumni" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:20th-century_American_poets" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Gay_writers" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:LGBT_poets" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Beat_Generation_poets" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:1965_deaths" } ] ,
+    "http://xmlns.com/foaf/0.1/name" : [ { "type" : "literal", "value" : "Jack Spicer" , "lang" : "en" } ] ,
+    "http://purl.org/dc/terms/description" : [ { "type" : "literal", "value" : "American poet" , "lang" : "en" } ] ,
+    "http://xmlns.com/foaf/0.1/givenName" : [ { "type" : "literal", "value" : "Jack" , "lang" : "en" } ] ,
+    "http://xmlns.com/foaf/0.1/gender" : [ { "type" : "literal", "value" : "male" , "lang" : "en" } ] ,
+    "http://xmlns.com/foaf/0.1/isPrimaryTopicOf" : [ { "type" : "uri", "value" : "http://en.wikipedia.org/wiki/Jack_Spicer" } ] ,
+    "http://xmlns.com/foaf/0.1/surname" : [ { "type" : "literal", "value" : "Spicer" , "lang" : "en" } ] ,
+    "http://www.w3.org/ns/prov#wasDerivedFrom" : [ { "type" : "uri", "value" : "http://en.wikipedia.org/wiki/Jack_Spicer?oldid=743543673" } ] ,
+    "http://dbpedia.org/ontology/wikiPageExternalLink" : [ { "type" : "uri", "value" : "http://www.english.upenn.edu/~afilreis/88v/spicer-bio.html" } ,
+      { "type" : "uri", "value" : "http://www3.interscience.wiley.com/journal/122510628/abstract?CRETRY=1&SRETRY=0" } ,
+      { "type" : "uri", "value" : "http://www.poets.org/poet.php/prmPID/1656" } ,
+      { "type" : "uri", "value" : "http://www.bookmarksmagazine.com/book-review/my-vocabulary-did-me-collected-poetry-jack-spicer/jack-spicer" } ,
+      { "type" : "uri", "value" : "http://bostonreview.net/finch-on-what-my-vocabulary-did-to-me-jack-spicer" } ,
+      { "type" : "uri", "value" : "https://books.google.co.uk/books?id=GbRvAAAAQBAJ&printsec=frontcover&dq=the+poetry+of+jack+spicer,+katz&hl=en&sa=X&ved=0ahUKEwj_xcnMooDOAhWhCsAKHbONAvMQ6wEIHzAA#v=onepage&q&f=false" } ,
+      { "type" : "uri", "value" : "http://www.thevalve.org/go/valve/article/an_advertisement_for_jack_spicer/" } ,
+      { "type" : "uri", "value" : "http://writing.upenn.edu/pennsound/x/Spicer.html" } ,
+      { "type" : "uri", "value" : "http://www.oac.cdlib.org/findaid/ark:/13030/kt9199r33h/" } ,
+      { "type" : "uri", "value" : "http://jacketmagazine.com/07/spicer-chron.html" } ,
+      { "type" : "uri", "value" : "http://epc.buffalo.edu/authors/spicer/" } ,
+      { "type" : "uri", "value" : "http://katiepants.blogsome.com/2007/03/03/vocabulary-lesson/" } ,
+      { "type" : "uri", "value" : "http://www.nytimes.com/2008/12/24/books/24garn.html?_r=1&8dpc" } ] ,
+    "http://dbpedia.org/ontology/abstract" : [ { "type" : "literal", "value" : "La raccolta di sue opere My Vocabulary Did This to Me: The Collected Poetry of Jack Spicer ha vinto l'American Book Award per la poesia nel 2009." , "lang" : "it" } ,
+      { "type" : "literal", "value" : "Jack Spicer (January 30, 1925 \u2013 August 17, 1965) was an American poet often identified with the San Francisco Renaissance. In 2009, My Vocabulary Did This to Me: The Collected Poetry of Jack Spicer won the American Book Award for poetry." , "lang" : "en" } ,
+      { "type" : "literal", "value" : "Jack Spicer, n\u00E9 le 30 janvier 1925 \u00E0 Los Angeles et mort le 17 ao\u00FBt 1965 \u00E0 San Francisco, est un po\u00E8te am\u00E9ricain. Il est souvent associ\u00E9 avec la Renaissance de San Francisco. En 2009, My Vocabulary Did This to Me: The Collected Poetry of Jack Spicer a remport\u00E9 l'American Book Award de po\u00E9sie." , "lang" : "fr" } ,
+      { "type" : "literal", "value" : "Jack Spicer (Los Angeles, 30 de janeiro de 1925 - S\u00E3o Francisco, 17 de agosto de 1965) foi um poeta dos Estados Unidos muitas vezes identificado com a Renascen\u00E7a de S\u00E3o Francisco. Foi co-fundador da Six Gallery, famosa por abrigar leituras de poemas acompanhadas de Jazz, em 1954." , "lang" : "pt" } ] ,
+    "http://dbpedia.org/ontology/birthDate" : [ { "type" : "literal", "value" : "1925-1-30" , "datatype" : "http://www.w3.org/2001/XMLSchema#date" } ] ,
+    "http://dbpedia.org/ontology/deathDate" : [ { "type" : "literal", "value" : "1965-8-17" , "datatype" : "http://www.w3.org/2001/XMLSchema#date" } ] ,
+    "http://dbpedia.org/ontology/deathPlace" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/San_Francisco" } ] ,
+    "http://dbpedia.org/ontology/wikiPageRevisionID" : [ { "type" : "literal", "value" : 743543673 , "datatype" : "http://www.w3.org/2001/XMLSchema#integer" } ] ,
+    "http://dbpedia.org/ontology/birthPlace" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Los_Angeles" } ] ,
+    "http://dbpedia.org/ontology/wikiPageID" : [ { "type" : "literal", "value" : 424340 , "datatype" : "http://www.w3.org/2001/XMLSchema#integer" } ] ,
+    "http://purl.org/linguistics/gold/hypernym" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Poet" } ] } ,
+  "http://en.wikipedia.org/wiki/Jack_Spicer" : { "http://xmlns.com/foaf/0.1/primaryTopic" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Jack_Spicer" } ] } ,
+  "http://dbpedia.org/resource/Robin_Blaser" : { "http://dbpedia.org/ontology/influencedBy" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Jack_Spicer" } ] } ,
+  "http://dbpedia.org/resource/Jack_Spicer_(disambiguation)" : { "http://dbpedia.org/ontology/wikiPageDisambiguates" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Jack_Spicer" } ] } ,
+  "http://dbpedia.org/resource/Michael_Palmer_(poet)" : { "http://dbpedia.org/ontology/influencedBy" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Jack_Spicer" } ] } ,
+  "http://dbpedia.org/resource/The_Collected_Books_of_Jack_Spicer" : { "http://dbpedia.org/ontology/author" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Jack_Spicer" } ] } ,
+  "http://dbpedia.org/resource/Jack_Spicer_(poet)" : { "http://dbpedia.org/ontology/wikiPageRedirects" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Jack_Spicer" } ] }
+}
+;
+	var dataAuth = "http://dbpedia.org/resource/Jack_Spicer";
+	var dataUrl = "jack_spicer.html";
+	var dataResourceType = "participant";
+	var dataName = "Jack Spicer";
+ 	
+</script>
+
+
+
+
+
+<script type="text/javascript">
+
+
+	
+	
+	
+
+	$(document).ready(function($) {
+		
+		
+		padb.resource.initialize();
+			 
+		$( '.scrollable' ).
+		bind( 'mousewheel DOMMouseScroll', function ( e ) {
+			
+			if( e.originalEvent ) e = e.originalEvent;
+			
+			var delta = e.wheelDelta || -e.detail;
+			this.scrollTop += ( delta < 0 ? 1 : -1 ) * 30;
+			e.preventDefault();
+		});		 
+		
+		
+				
+		$.ajaxSetup ({
+			// Disable caching of AJAX responses
+			cache: false
+		});		
+		
+	});
+	
+
+	
+	
+	
+	
+	
+</script>
+
+
+
+
+ 
+<br />
+<div class="container"  style="position:relative;">
+	   
+      <div id="resourceLinks"></div> 
+       
+       
+       
+       
+              
+       
+           
+           
+           
+          <div class="row addSection">
+              <div class="span1 addSectionIconHolder">
+              
+                <i class="icon-user"></i>
+              
+              </div>
+          
+              <div class="span11">
+                <span>Performer</span>
+                <hr>
+                <br />
+              </div>
+        </div>
+        <div class="row">
+            <div class="span1">
+            </div>
+            <div class="span11" style="position:relative">
+                
+                
+                
+                
+               <div>
+                                       <div class="pull-right vignette">
+                            <img  src="../cache/media/jack_spicer.jpg" />
+                            
+                        </div>
+                        
+                                           
+                <div class="pull-left" style="width:80%;">
+                     
+                     <h5 id="resourceLDName">Jack Spicer</h5>
+                     <h5 id="resourceLDAbstract"></h5>
+                     
+                     
+                     <div id="resourceSameAs">
+                        <h5>External Data:</h5>
+                        
+                        
+                     </div>
+                
+                </div>   
+                
+                <br style="clear:both;" />
+            </div>
+            
+            
+                
+            </div>
+        </div>    
+         
+    
+    
+    
+    
+    
+    
+       <div class="row addSection">
+			<div class="span1 addSectionIconHolder">              
+                <i class="icon-asterisk"></i>
+              
+              </div>
+          
+              <div class="span11">
+                <span>Events </span><span id="resourceEventCount"></span>
+                <hr>
+              </div>
+        </div>
+    
+    
+    
+    
+    
+    
+    
+        <div class="row">
+            <div class="span1"></div>
+            <div class="span11" style="position:relative">
+                  
+                 <div class="">
+                    <div id="resourceEventsEvents" class="scrollable">
+                           <table class="table table-condensed table-hover table-striped">
+                               <thead>
+                                <tr>
+                                  <th>Date</th>
+                                  
+                                  <th>Title</th>
+                                  <th>Location</th>
+                                  <th></th>
+                                </tr>
+                              </thead>
+                              <tbody id="resourceEventsEventsRows"> 
+                              </tbody>
+                            </table>
+                     
+                    </div>
+                    
+                    <div id="resourceEventsExport">
+                    
+                    	<input  name="resourceEventsSearch" class="span3" id="resourceEventsSearch"  type="text" placeholder="Filter: names, places, dates">
+                    	<button class="btn btn-mini btn-danger" id="resourceEventsClearFilter"><i class="icon-remove">&nbsp;Clear Filter</i></button>
+                   		<button class="btn btn-mini btn-info" title="Render the currently filitered data as a network" id="resourceRenderEventNetwork"> <img src="../img/icon-network-white.png" style="height:15px; width:auto" /> Two-Mode Event Network</button>
+                   		<button class="btn btn-mini btn-info" title="Render the currently filitered data as a network" id="resourceRenderEventMap"> <i class="icon-globe"></i> Map Event Locations</button>
+                   		<button class="btn btn-mini btn-success" title="Download network as Gephi File" id="resourceDownloadEventGephi"> <img src="../img/icon-gephi.png" style="height:15px; width:auto" /> Donwload Gephi Network</button>
+
+                 
+                    </div>                 
+                </div>
+                <br style="clear:both;" />
+            </div>
+            
+            
+                
+         </div>    
+    
+     
+       <div class="row addSection">
+              <div class="span1">
+              
+                <img src="../img/social-network.png" style=" margin-left:25px; margin-bottom:10px;" />
+              
+              </div>
+          
+              <div class="span11">
+                <span>Performance Network</span> 
+                <hr>
+              </div>
+        </div>
+        
+        <div class="row">
+            <div class="span1">
+            </div>
+            <div class="span11" style="position:relative">
+                
+               	<div style="width: 100%; height:500px;" id="egoNetwork">
+            
+                
+             	</div> 
+                <div class="well pull-left well-small" id="egoNetworkControls">
+                    <span class="rangeLabels">Node Charge</span>
+                    <input type="range" id="resourceEgoNetworkCharge" min="-1000" max="100" value="-120" data-def="-700" />
+                    <br /><span class="rangeLabels">Gravity</span>
+                    <input type="range" id="resourceEgoNetworkGravity" min="0" max="1" value="0.1" step="0.01" data-def="0.3" /> 
+                    <br /><span class="rangeLabels">Edge Length</span>
+                    <input type="range" id="resourceEgoNetworkDistance" min="0" max="300" value="50" data-def="50"  />      
+                    <br /><span class="rangeLabels">Edge Strength</span>
+                    <input type="range" id="resourceEgoNetworkStrength" min="0" max="3" value="1" data-def="0.15" step="0.1"  /> 
+                    <br /><br />
+                    <button type="button" id="resourceEgoNetworkLabelsButton" class="btn btn-mini" title="Show node labels." data-toggle="button">Show Labels</button>  
+                    <button type="button" id="resourceEgoNetworkLiveButton" class="btn btn-mini" title="Show realtime network rendering" data-toggle="button">Live Rendering</button>                     
+                </div>
+                
+                <div class="well pull-left well-small egoNetworkControls span7" style="margin-left:20px;" >
+                
+                	<input  name="resourceEgoNetworkSearch" class="span3" id="resourceEgoNetworkSearch"  type="text" placeholder="Filter: names, places, dates">
+					<button class="btn btn-mini btn-danger" id="resourceEgoClearFilter"><i class="icon-remove">&nbsp;Clear Filter</i></button>
+                    <button class="btn btn-mini btn-success" title="Download network as Gephi File" id="resourceDownloadEgoGephi"> <img src="../img/icon-gephi.png" style="height:15px; width:auto" /> Donwload Gephi Network</button>
+
+                </div>
+                
+            </div>
+        </div>           
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+	
+
+	
+
+
+	
+
+
+</div>
+
+
+
+
+    <div id="resourceEventNetworkModal" class="modal container hide fade" style="min-height:500px" tabindex="-1">
+ 
+      <div class="modal-body">
+      	
+        <div id="eventNetwork" style="height:400px; width:100%">
+        
+        </div>
+      
+      </div>
+      <div class="modal-footer" style="height:20px;">
+      	
+        <div class="well pull-left well-small">
+        	<span class="rangeLabels">Node Charge</span>
+        	<input type="range" id="resourceEventNetworkCharge" min="-800" max="200" value="-120" data-def="-120" />
+            <span class="rangeLabels">Gravity</span>
+        	<input type="range" id="resourceEventNetworkGravity" min="0" max="1" value="0.1" step="0.01" data-def="0.1" /> 
+            <span class="rangeLabels">Edge Length</span>
+        	<input type="range" id="resourceEventNetworkDistance" min="0" max="300" value="50" data-def="50"  />      
+            <span class="rangeLabels">Edge Strength</span>
+        	<input type="range" id="resourceEventNetworkStrength" min="0" max="5" value="1" data-def="1" step="0.1"  />    
+            <button type="button" id="resourceEventNetworkLabelsButton" class="btn btn-mini" data-toggle="button">Show Labels</button>                     
+		</div>
+        <div class="pull-right">
+        <button type="button" data-dismiss="modal" class="btn">Close</button>
+       	</div>
+       </div>
+    </div>
+    
+    
+    
+    
+     <div id="resourceEventMapModal" class="modal container hide fade" style="min-height:500px" tabindex="-1">
+ 
+      <div class="modal-body">
+      	
+        <div id="eventMap" style="height:400px; width:100%">
+        
+        </div>
+      
+      </div>
+      <div class="modal-footer" style="height:20px;">
+      	
+        <div class="well pull-left well-small">                  
+		</div>
+        <div class="pull-right">
+        <button type="button" data-dismiss="modal" class="btn">Close</button>
+       	</div>
+       </div>
+    </div>
+
+<br /><br /><br /><br /><br /><br />
+
+<script type="text/javascript">    var _gaq = _gaq || [];   _gaq.push(['_setAccount', 'UA-10371295-7']);   _gaq.push(['_trackPageview']);    (function() {     var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);   })();  </script>
+
+</body>
+
+<!-- Mirrored from padb.net/resource/jack_spicer by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 11 Jan 2020 22:22:54 GMT -->
+</html>

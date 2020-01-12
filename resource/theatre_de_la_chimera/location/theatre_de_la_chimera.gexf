@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<gexf version="1.2" xmlns="http://www.gexf.net/1.2draft">
+ <graph mode="static" defaultedgetype="undirected">
+  <nodes>
+   <node id="24" label="Jean-Jacques Lebel"/>
+   <node id="34" label="Ben Patterson"/>
+   <node id="39" label="Nam-june Paik"/>
+   <node id="151" label="Ben Vautier"/>
+   <node id="157" label="Tetsumi Kudo"/>
+  </nodes>
+  <edges>
+   <edge source="24" target="34"/>
+   <edge source="24" target="39"/>
+   <edge source="24" target="151"/>
+   <edge source="24" target="157"/>
+   <edge source="34" target="39"/>
+   <edge source="34" target="151"/>
+   <edge source="34" target="157"/>
+   <edge source="39" target="151"/>
+   <edge source="39" target="157"/>
+   <edge source="151" target="157"/>
+  </edges>
+ </graph>
+</gexf>

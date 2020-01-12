@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<gexf version="1.2" xmlns="http://www.gexf.net/1.2draft">
+ <graph mode="static" defaultedgetype="undirected">
+  <nodes>
+   <node id="20" label="Richard Maxfield"/>
+   <node id="115" label="Aileen Passloff"/>
+  </nodes>
+  <edges>
+   <edge source="20" target="115"/>
+  </edges>
+ </graph>
+</gexf>

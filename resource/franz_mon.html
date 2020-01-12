@@ -1,0 +1,11 @@
+<html><head><title>Slim Application Error</title><style>body{margin:0;padding:30px;font:12px/1.5 Helvetica,Arial,Verdana,sans-serif;}h1{margin:0;font-size:48px;font-weight:normal;line-height:48px;}strong{display:inline-block;width:65px;}</style></head><body><h1>Slim Application Error</h1><p>The application could not run because of the following error:</p><h2>Details</h2><div><strong>Code:</strong> 8</div><div><strong>Message:</strong> Undefined offset: 1</div><div><strong>File:</strong> /var/www/clients/client0/web5/web/lod.php</div><div><strong>Line:</strong> 93</div><h2>Trace</h2><pre>#0 /var/www/clients/client0/web5/web/lod.php(93): Slim\Slim::handleErrors(8, 'Undefined offse...', '/var/www/client...', 93, Array)
+#1 /var/www/clients/client0/web5/web/index.php(128): LOD->downloadJsonDbpedia('http://de.dbped...', 'franz_mon')
+#2 [internal function]: {closure}('franz_mon')
+#3 /var/www/clients/client0/web5/web/vendor/slim/slim/Slim/Router.php(200): call_user_func_array(Object(Closure), Array)
+#4 /var/www/clients/client0/web5/web/vendor/slim/slim/Slim/Slim.php(1218): Slim\Router->dispatch(Object(Slim\Route))
+#5 /var/www/clients/client0/web5/web/vendor/slim/slim/Slim/Middleware/Flash.php(86): Slim\Slim->call()
+#6 /var/www/clients/client0/web5/web/vendor/slim/slim/Slim/Middleware/MethodOverride.php(94): Slim\Middleware\Flash->call()
+#7 /var/www/clients/client0/web5/web/vendor/slim/slim/Slim/Middleware/PrettyExceptions.php(67): Slim\Middleware\MethodOverride->call()
+#8 /var/www/clients/client0/web5/web/vendor/slim/slim/Slim/Slim.php(1167): Slim\Middleware\PrettyExceptions->call()
+#9 /var/www/clients/client0/web5/web/index.php(578): Slim\Slim->run()
+#10 {main}</pre></body></html>

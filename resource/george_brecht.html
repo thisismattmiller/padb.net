@@ -1,0 +1,548 @@
+<!doctype html>
+<html>
+
+<!-- Mirrored from padb.net/resource/george_brecht by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 11 Jan 2020 22:16:57 GMT -->
+<head>
+<meta charset="UTF-8">
+<title>padb.net</title>
+
+
+<link rel="stylesheet" href="../css/bootstrap.css">
+<link rel="stylesheet" href="../css/font-awesome.css">
+<link rel="stylesheet" href="../css/site.css">
+<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+<link rel="icon" type="image/png" href="../img/favicon.png">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/bootstrap-modal.js"></script>
+<script src="../js/bootstrap-modalmanager.js"></script>
+
+<script src="../js/d3.min.js"></script>
+<script src="../js/html5slider.js"></script>
+<script src="../js/topojson.js"></script>
+<script src="../js/padb.js"></script>
+
+
+</head>
+<body>
+    
+    
+	<div style="position:relative;">        
+
+ 		<div style=" border-bottom:solid 1px #ccc;">
+        	<div class="container">
+                
+                 <div id="header">
+                 	
+                     <div class="logo"><a href="../index.html"><span>|||</span>padb</a> </div>
+                    
+                      
+						 <div id="resourceName">George Brecht</div>
+					 
+                 </div>
+                
+                
+        	</div>
+            
+    	</div>
+ 
+   </div>
+<script src="../js/countriesData.js"></script>
+
+<script type="text/javascript">
+	//preloaded json from the server
+
+	var dataSameAs = [
+  {
+    "uri": "http://wikidata.dbpedia.org/resource/Q686321",
+    "numDuplicates": "32",
+    "duplicates": [
+      "http://dbpedia.org/resource/George_Brecht",
+      "http://bnb.data.bl.uk/id/person/BrechtGeorge",
+      "http://d-nb.info/gnd/119076802",
+      "http://d-nb.info/gnd/119076802/about/rdf",
+      "http://data.bnf.fr/13331109",
+      "http://data.bnf.fr/13331109#foaf:Person",
+      "http://data.bnf.fr/13331109#skos:Concept",
+      "http://datos.bne.es/resource/XX865550",
+      "http://dbpedialite.org/things/1629034#id",
+      "http://de.dbpedia.org/resource/George_Brecht",
+      "http://discogs.dataincubator.org/artist/george-brecht",
+      "http://fr.dbpedia.org/resource/George_Brecht",
+      "http://freebase.com//m/05hyh_",
+      "http://hu.dbpedia.org/resource/George_Brecht",
+      "http://id.loc.gov/authorities/names/n88617606",
+      "http://id.ndl.go.jp/auth/ndla/00434256",
+      "http://isni-url.oclc.nl/isni/0000000092702018",
+      "http://it.dbpedia.org/resource/George_Brecht",
+      "http://ja.dbpedia.org/resource/\u30B8\u30E7\u30FC\u30B8\u30FB\u30D6\u30EC\u30AF\u30C8",
+      "http://mpii.de/yago/resource/George_Brecht",
+      "http://nl.dbpedia.org/resource/George_Brecht",
+      "http://pl.dbpedia.org/resource/George_Brecht",
+      "http://rdf.freebase.com/ns/m.05hyh_",
+      "http://rdf.freebase.com/ns/en.george_brecht",
+      "http://rdf.freebase.com/ns/guid.9202a8c04000641f800000000057f5ff",
+      "http://ru.dbpedia.org/resource/\u0411\u0440\u0435\u0445\u0442,_\u0414\u0436\u043E\u0440\u0434\u0436",
+      "http://umbel.org/umbel/ne/wikipedia/George_Brecht",
+      "http://viaf.org/viaf/32144067",
+      "http://wikidata.dbpedia.org/resource/Q686321",
+      "http://www.idref.fr/061566500",
+      "http://www.wikidata.org/entity/Q686321",
+      "http://yago-knowledge.org/resource/George_Brecht"
+    ]
+  }
+]
+;
+	var dataDbpedia = {
+  "http://en.wikipedia.org/wiki/George_Brecht" : { "http://xmlns.com/foaf/0.1/primaryTopic" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/George_Brecht" } ] } ,
+  "http://dbpedia.org/resource/George_Brecht" : { "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatAmericanConceptualArtists" } ,
+      { "type" : "uri", "value" : "http://xmlns.com/foaf/0.1/Person" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatContemporaryArtists" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatArtistsFromNewYork" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Organism100004475" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/ontology/Person" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Chemist109913824" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Enrollee110059162" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Student110665698" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Whole100003553" } ,
+      { "type" : "uri", "value" : "http://www.w3.org/2002/07/owl#Thing" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatAmericanArtists" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/LivingThing100004258" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/CausalAgent100007347" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Traveler109629752" } ,
+      { "type" : "uri", "value" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#NaturalPerson" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Painter110391653" } ,
+      { "type" : "uri", "value" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Scientist110560637" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatAmericanChemists" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/ontology/Agent" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatPupilsOfJohnCage" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatAmericanInstallationArtists" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Creator109614315" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Artist109812338" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatAmericanContemporaryArtists" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatAmericanExpatriatesInGermany" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatPeopleFromNewYorkCity" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/ontology/Artist" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Exile110071332" } ,
+      { "type" : "uri", "value" : "http://www.wikidata.org/entity/Q24229398" } ,
+      { "type" : "uri", "value" : "http://schema.org/Person" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/YagoLegalActor" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/YagoLegalActorGeo" } ,
+      { "type" : "uri", "value" : "http://www.wikidata.org/entity/Q215627" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Person100007846" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Object100002684" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/PhysicalEntity100001930" } ,
+      { "type" : "uri", "value" : "http://www.wikidata.org/entity/Q5" } ,
+      { "type" : "uri", "value" : "http://www.wikidata.org/entity/Q483501" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatAmericanPainters" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Absentee109757653" } ] ,
+    "http://www.w3.org/2000/01/rdf-schema#label" : [ { "type" : "literal", "value" : "\u0411\u0440\u0435\u0445\u0442, \u0414\u0436\u043E\u0440\u0434\u0436" , "lang" : "ru" } ,
+      { "type" : "literal", "value" : "George Brecht" , "lang" : "fr" } ,
+      { "type" : "literal", "value" : "George Brecht" , "lang" : "nl" } ,
+      { "type" : "literal", "value" : "George Brecht" , "lang" : "pl" } ,
+      { "type" : "literal", "value" : "George Brecht" , "lang" : "de" } ,
+      { "type" : "literal", "value" : "George Brecht" , "lang" : "it" } ,
+      { "type" : "literal", "value" : "\u30B8\u30E7\u30FC\u30B8\u30FB\u30D6\u30EC\u30AF\u30C8" , "lang" : "ja" } ,
+      { "type" : "literal", "value" : "George Brecht" , "lang" : "en" } ] ,
+    "http://www.w3.org/2000/01/rdf-schema#comment" : [ { "type" : "literal", "value" : "George Brecht (August 27, 1926 \u2013 December 5, 2008), born George Ellis MacDiarmid, was an American conceptual artist and avant-garde composer, as well as a professional chemist who worked as a consultant for companies including Pfizer, Johnson & Johnson, and Mobil Oil. He was a key member of, and influence on, Fluxus, the international group of avant-garde artists centred on George Maciunas, having been involved with the group from the first performances in Wiesbaden 1962 until Maciunas' death in 1978." , "lang" : "en" } ,
+      { "type" : "literal", "value" : "George Brecht, w\u0142a\u015Bc. George Ellis MacDiarmid (ur. 27 sierpnia 1926, zm. 5 grudnia 2008) \u2013 ameryka\u0144ski artysta sztuki konceptualnej oraz awangardowy kompozytor. Z wykszta\u0142cenia by\u0142 chemikiem \u2013 pracowa\u0142 jako konsultant dla r\u00F3\u017Cnych firm mi\u0119dzy innymi Pfizer, Johnson & Johnson, oraz Mobil Oil. By\u0142 jednym z czo\u0142owych cz\u0142onk\u00F3w ruchu Fluxus, mi\u0119dzynarodowej grupy artyst\u00F3w zgromadzonych wok\u00F3\u0142 George'a Maciunasa, by\u0142 zaanga\u017Cowany w dzia\u0142alno\u015B\u0107 grupy od czasu pierwszego festiwalu \u201EFestum Fluxorum\u201D, kt\u00F3ry odby\u0142 si\u0119 w Wiesbaden w 1962 roku, a\u017C do \u015Bmierci Maciunasa w 1978." , "lang" : "pl" } ,
+      { "type" : "literal", "value" : "\u30B8\u30E7\u30FC\u30B8\u30FB\u30D6\u30EC\u30AF\u30C8\uFF08George Brecht, 1926\u5E748\u670827\u65E5 - 2008\u5E7412\u67085\u65E5\uFF09\u306F\u3001\u30DF\u30CB\u30DE\u30EB\u30FB\u30A2\u30FC\u30C6\u30A3\u30B9\u30C8\u3001\u73FE\u4EE3\u7F8E\u8853\u5BB6\u3002 \u30CB\u30E5\u30FC\u30E8\u30FC\u30AF\u3067\u3001\u30B8\u30E7\u30FC\u30B8\u30FB\u30DE\u30AF\u30C0\u30FC\u30DF\u30C3\u30C9\uFF08George MacDiarmid\uFF09\u3068\u3057\u3066\u751F\u307E\u308C\u308B\u3002 \u30D5\u30A1\u30A4\u30B6\u30FC\u3001\u30B8\u30E7\u30F3\u30BD\u30F3&\u30B8\u30E7\u30F3\u30BD\u30F3\u3001\u30E2\u30FC\u30D3\u30EB\u30FB\u30AA\u30A4\u30EB\u306A\u3069\u3067\u5316\u5B66\u8005\u306E\u30B3\u30F3\u30B5\u30EB\u30BF\u30F3\u30C8\u3068\u3057\u3066\u50CD\u3044\u3066\u3044\u305F\u3002\u3053\u308C\u306F\u5F7C\u306E\u82B8\u8853\u6D3B\u52D5\u3092\u30B5\u30DD\u30FC\u30C8\u3059\u308B\u305F\u3081\u306B\u5FC5\u8981\u306A\u3053\u3068\u3067\u3042\u3063\u305F\u3002\u5F7C\u306F\u521D\u671F\u306E\u30D5\u30EB\u30AF\u30B5\u30B9\u306E\u30A2\u30FC\u30C6\u30A3\u30B9\u30C8\u3067\u3042\u3063\u305F\u3002\u540D\u524D\u306E\u30D6\u30EC\u30AF\u30C8\u306F\u30D9\u30EB\u30C8\u30EB\u30C8\u30FB\u30D6\u30EC\u30D2\u30C8\u304B\u3089\u53D6\u3063\u3066\u3044\u308B\u3002 \u30D6\u30EC\u30AF\u30C8\u306F1958\u5E74\u304B\u30891959\u5E74\u306E\u30B8\u30E7\u30F3\u30FB\u30B1\u30FC\u30B8\u306E\u30CB\u30E5\u30FC\u30FB\u30B9\u30AF\u30FC\u30EB\u30FB\u30D5\u30A9\u30FC\u30FB\u30BD\u30FC\u30B7\u30E3\u30EB\u30FB\u30EA\u30B5\u30FC\u30C1\u3067\u7814\u7A76\u3057\u3066\u3044\u305F\u3002\u5F7C\u306F\u30D5\u30EB\u30AF\u30B5\u30B9\u306B\u3064\u3044\u3066\u3001Fluxus Newspaper\u306B\u5BC4\u7A3F\u3057\u3066\u3044\u308B\u3002 1965\u5E744\u6708\u3001\u5F7C\u306F\u30CB\u30E5\u30FC\u30E8\u30FC\u30AF\u3092\u51FA\u3066\u3001\u30ED\u30FC\u30DE\u3078\u6E21\u308A\u3001\u30E8\u30FC\u30ED\u30C3\u30D1\u3067\u6D3B\u52D5\u3057\u305F\u3002 2008\u5E7412\u67085\u65E5\u306B\u30C9\u30A4\u30C4\u306E\u30B1\u30EB\u30F3\u3067\u6B7B\u53BB\u3057\u305F\u3002" , "lang" : "ja" } ,
+      { "type" : "literal", "value" : "Artista minimalista, \u00E8 anche ricercatore chimico ed \u00E8 considerato tra le personalit\u00E0 determinanti del gruppo originario di Fluxus." , "lang" : "it" } ,
+      { "type" : "literal", "value" : " Pour les articles homonymes, voir Brecht. George Brecht (27 ao\u00FBt 1926 \u2013 5 d\u00E9cembre 2008), n\u00E9 George Ellis MacDiarmid, \u00E9tait un artiste d'avant-garde am\u00E9ricain faisant partie de l\u2019art conceptuel, mais aussi un chimiste travaillant comme chercheur pour des laboratoires pharmaceutiques et comme consultant pour des compagnies telles que Pfizer, Johnson & Johnson, et Mobil Oil. Il fut un membre important de Fluxus groupe international d'artistes d'avant-garde dont George Maciunas \u00E9tait le \"meneur\". George Brecht fit partie du groupe d\u00E8s la premi\u00E8re performance \u00E0 Wiesbaden en 1962 et ce jusqu'\u00E0 la mort de Maciunas en 1978." , "lang" : "fr" } ,
+      { "type" : "literal", "value" : "George Brecht, geboren als George MacDiarmid (Halfway (Oregon), 27 augustus 1926 - Keulen, 5 december 2008) was een minimalistisch kunstenaar en \"componist\". Hij was tevens scheikundige die als raadgever werkte voor maatschappijen als Pfizer, Johnson & Johnson en Mobil Oil, om zijn artistieke bezigheden te financieren. Hij was een vroege Fluxus-artiest. Zijn pseudoniem was een eerbetoon aan Bertolt Brecht. Brecht woonde sinds 1972 in Keulen en won in 2006 de prestigieuze \"Kunstpreis Berlin'. Hij was ook kunsttheoreticus, die talloze theoretische verhandelingen schreef over de relatie tussen aspecten van de nieuwe muziek en specifieke environments. Hij maakte ook kunstenaarsboeken. Brecht stierf in december 2008." , "lang" : "nl" } ,
+      { "type" : "literal", "value" : "George Brecht (* 7. M\u00E4rz 1926 in New York City; \u2020 5. Dezember 2008 in K\u00F6ln) war ein US-amerikanischer K\u00FCnstler der Fluxus-Bewegung." , "lang" : "de" } ,
+      { "type" : "literal", "value" : "\u0414\u0436\u043E\u0440\u0434\u0436 \u0411\u0440\u0435\u0445\u0442 (\u0430\u043D\u0433\u043B. \u0438 \u043D\u0435\u043C. George Brecht; 27 \u0430\u0432\u0433\u0443\u0441\u0442\u0430 1926, \u041D\u044C\u044E-\u0419\u043E\u0440\u043A, \u0421\u0428\u0410 \u2014 5 \u0434\u0435\u043A\u0430\u0431\u0440\u044F 2008, \u041A\u0435\u043B\u044C\u043D) \u2014 \u0445\u0443\u0434\u043E\u0436\u043D\u0438\u043A-\u043C\u0438\u043D\u0438\u043C\u0430\u043B\u0438\u0441\u0442 \u0438 \u043A\u043E\u043C\u043F\u043E\u0437\u0438\u0442\u043E\u0440, \u0431\u044B\u043B \u0443\u0447\u0430\u0441\u0442\u043D\u0438\u043A\u043E\u043C \u0424\u043B\u0443\u043A\u0441\u0443\u0441\u0430. \u0418\u0437\u0432\u0435\u0441\u0442\u0435\u043D \u0431\u043B\u0430\u0433\u043E\u0434\u0430\u0440\u044F event scores (\u0434\u043E\u0441\u043B\u043E\u0432\u043D\u043E \u043F\u0430\u0440\u0442\u0438\u0442\u0443\u0440\u0430 \u0441\u043E\u0431\u044B\u0442\u0438\u044F), \u0442\u0430\u043A\u0438\u043C \u043A\u0430\u043A \u0434\u043B\u044F Drip Music (1962). Event scores \u043F\u0440\u0435\u0434\u0441\u0442\u0430\u0432\u043B\u044F\u043B\u0438 \u0441\u043E\u0431\u043E\u0439 \u044D\u043A\u0441\u0446\u0435\u043D\u0442\u0440\u0438\u0447\u043D\u044B\u0435 \u0438\u043D\u0441\u0442\u0440\u0443\u043A\u0446\u0438\u0438, \u043A\u043E\u0442\u043E\u0440\u044B\u0435 \u043F\u0440\u0435\u0434\u043B\u0430\u0433\u0430\u043B\u0438\u0441\u044C \u0434\u043B\u044F \u0438\u0441\u043F\u043E\u043B\u043D\u0435\u043D\u0438\u044F \u0443\u0447\u0430\u0441\u0442\u043D\u0438\u043A\u0430\u043C. \u041F\u0441\u0435\u0432\u0434\u043E\u043D\u0438\u043C \u0432\u0437\u044F\u043B \u0432 \u0447\u0435\u0441\u0442\u044C \u0411\u0435\u0440\u0442\u043E\u043B\u044C\u0434\u0430 \u0411\u0440\u0435\u0445\u0442\u0430." , "lang" : "ru" } ] ,
+    "http://www.w3.org/2002/07/owl#sameAs" : [ { "type" : "uri", "value" : "http://yago-knowledge.org/resource/George_Brecht" } ,
+      { "type" : "uri", "value" : "http://wikidata.dbpedia.org/resource/Q686321" } ,
+      { "type" : "uri", "value" : "http://nl.dbpedia.org/resource/George_Brecht" } ,
+      { "type" : "uri", "value" : "http://de.dbpedia.org/resource/George_Brecht" } ,
+      { "type" : "uri", "value" : "http://it.dbpedia.org/resource/George_Brecht" } ,
+      { "type" : "uri", "value" : "http://ja.dbpedia.org/resource/\u30B8\u30E7\u30FC\u30B8\u30FB\u30D6\u30EC\u30AF\u30C8" } ,
+      { "type" : "uri", "value" : "http://fr.dbpedia.org/resource/George_Brecht" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/George_Brecht" } ,
+      { "type" : "uri", "value" : "http://www.wikidata.org/entity/Q686321" } ,
+      { "type" : "uri", "value" : "http://d-nb.info/gnd/119076802" } ,
+      { "type" : "uri", "value" : "http://rdf.freebase.com/ns/m.05hyh_" } ,
+      { "type" : "uri", "value" : "http://pl.dbpedia.org/resource/George_Brecht" } ,
+      { "type" : "uri", "value" : "http://viaf.org/viaf/32144067" } ] ,
+    "http://purl.org/dc/terms/subject" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Fluxus" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:2008_deaths" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Pupils_of_John_Cage" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:American_conceptual_artists" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:American_expatriates_in_Germany" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:American_contemporary_artists" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:1926_births" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:American_chemists" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:American_installation_artists" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Artists_from_New_York" } ] ,
+    "http://xmlns.com/foaf/0.1/name" : [ { "type" : "literal", "value" : "George Brecht" , "lang" : "en" } ] ,
+    "http://purl.org/dc/terms/description" : [ { "type" : "literal", "value" : "American artist and composer" , "lang" : "en" } ] ,
+    "http://xmlns.com/foaf/0.1/givenName" : [ { "type" : "literal", "value" : "George" , "lang" : "en" } ] ,
+    "http://xmlns.com/foaf/0.1/gender" : [ { "type" : "literal", "value" : "male" , "lang" : "en" } ] ,
+    "http://xmlns.com/foaf/0.1/isPrimaryTopicOf" : [ { "type" : "uri", "value" : "http://en.wikipedia.org/wiki/George_Brecht" } ] ,
+    "http://xmlns.com/foaf/0.1/surname" : [ { "type" : "literal", "value" : "Brecht" , "lang" : "en" } ] ,
+    "http://dbpedia.org/ontology/movement" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Conceptual_Art" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Fluxus" } ] ,
+    "http://dbpedia.org/ontology/training" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/New_School_for_Social_Research" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/University_of_the_Sciences_in_Philadelphia" } ] ,
+    "http://dbpedia.org/property/imagesize" : [ { "type" : "literal", "value" : 210 , "datatype" : "http://www.w3.org/2001/XMLSchema#integer" } ] ,
+    "http://www.w3.org/ns/prov#wasDerivedFrom" : [ { "type" : "uri", "value" : "http://en.wikipedia.org/wiki/George_Brecht?oldid=742238228" } ] ,
+    "http://dbpedia.org/ontology/birthName" : [ { "type" : "literal", "value" : "George Ellis MacDiarmid" , "lang" : "en" } ] ,
+    "http://dbpedia.org/ontology/wikiPageExternalLink" : [ { "type" : "uri", "value" : "http://www.theartwolf.com/brecht_macba.htm" } ,
+      { "type" : "uri", "value" : "http://www.kunstbus.nl/kunst/george+brecht.html" } ,
+      { "type" : "uri", "value" : "http://www.moma.org/collection/browse_results.php?criteria=O%3AAD%3AE%3A756&page_number=1&template_id=1&sort_order=1" } ,
+      { "type" : "uri", "value" : "http://the-artists.org/artist/George-Brecht" } ,
+      { "type" : "uri", "value" : "http://www.mailartist.com/johnheldjr/RobertWatts.html" } ,
+      { "type" : "uri", "value" : "http://www.ubu.com/concept/brecht_word.html" } ,
+      { "type" : "uri", "value" : "http://slangfromchaos.files.wordpress.com/2009/03/brecht_maciunas_puzzle.jpg" } ,
+      { "type" : "uri", "value" : "http://www.ubu.com/historical/brecht/index.html" } ,
+      { "type" : "uri", "value" : "http://www.ubu.com/historical/young/AnAnthologyOfChanceOperations.pdf" } ,
+      { "type" : "uri", "value" : "http://www.ubu.com/film/brecht.html" } ,
+      { "type" : "uri", "value" : "http://www.archiviobonotto.org/ita/progetti/images/maxi/CreativeRevolution_13.jpg" } ,
+      { "type" : "uri", "value" : "http://www.archiviofconz.org/artistes/gbrecht.htm" } ,
+      { "type" : "uri", "value" : "http://www.ubu.com/sound/tellus_24.html" } ,
+      { "type" : "uri", "value" : "http://www.l-m-c.org.uk/text/scratch/scores_material.pdf" } ,
+      { "type" : "uri", "value" : "http://1.bp.blogspot.com/__FSXbtt4Jv4/RyDip8DbmhI/AAAAAAAAAGU/oseRlklVgic/s320/brecht_exit.jpg" } ,
+      { "type" : "uri", "value" : "http://members.chello.nl/j.seegers1/flux_files/brecht.html" } ,
+      { "type" : "uri", "value" : "http://members.chello.nl/j.seegers1/flux_files/brecht_multiples.html" } ,
+      { "type" : "uri", "value" : "http://www.surrealismcentre.ac.uk/papersofsurrealism/journal4/acrobat%20files/dezeuzepdf.pdf" } ,
+      { "type" : "uri", "value" : "http://www.danceinsider.com/images/jj_Chair.jpg" } ,
+      { "type" : "uri", "value" : "http://www.danceinsider.com/jill_johnston/j041907.html" } ,
+      { "type" : "uri", "value" : "http://www.artnotart.com/fluxus/gbrecht-vtre.html" } ,
+      { "type" : "uri", "value" : "http://www.nytimes.com/2008/12/15/arts/music/15brecht.html?_r=1&ref=obituaries" } ,
+      { "type" : "uri", "value" : "http://findarticles.com/p/articles/mi_m0268/is_8_44/ai_n18764245/pg_2/" } ,
+      { "type" : "uri", "value" : "http://www.ubu.com/historical/young/index.html." } ] ,
+    "http://dbpedia.org/property/caption" : [ { "type" : "literal", "value" : "George Brecht, 1964, portrait by George Maciunas" , "datatype" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString" } ] ,
+    "http://dbpedia.org/ontology/abstract" : [ { "type" : "literal", "value" : "\u30B8\u30E7\u30FC\u30B8\u30FB\u30D6\u30EC\u30AF\u30C8\uFF08George Brecht, 1926\u5E748\u670827\u65E5 - 2008\u5E7412\u67085\u65E5\uFF09\u306F\u3001\u30DF\u30CB\u30DE\u30EB\u30FB\u30A2\u30FC\u30C6\u30A3\u30B9\u30C8\u3001\u73FE\u4EE3\u7F8E\u8853\u5BB6\u3002 \u30CB\u30E5\u30FC\u30E8\u30FC\u30AF\u3067\u3001\u30B8\u30E7\u30FC\u30B8\u30FB\u30DE\u30AF\u30C0\u30FC\u30DF\u30C3\u30C9\uFF08George MacDiarmid\uFF09\u3068\u3057\u3066\u751F\u307E\u308C\u308B\u3002 \u30D5\u30A1\u30A4\u30B6\u30FC\u3001\u30B8\u30E7\u30F3\u30BD\u30F3&\u30B8\u30E7\u30F3\u30BD\u30F3\u3001\u30E2\u30FC\u30D3\u30EB\u30FB\u30AA\u30A4\u30EB\u306A\u3069\u3067\u5316\u5B66\u8005\u306E\u30B3\u30F3\u30B5\u30EB\u30BF\u30F3\u30C8\u3068\u3057\u3066\u50CD\u3044\u3066\u3044\u305F\u3002\u3053\u308C\u306F\u5F7C\u306E\u82B8\u8853\u6D3B\u52D5\u3092\u30B5\u30DD\u30FC\u30C8\u3059\u308B\u305F\u3081\u306B\u5FC5\u8981\u306A\u3053\u3068\u3067\u3042\u3063\u305F\u3002\u5F7C\u306F\u521D\u671F\u306E\u30D5\u30EB\u30AF\u30B5\u30B9\u306E\u30A2\u30FC\u30C6\u30A3\u30B9\u30C8\u3067\u3042\u3063\u305F\u3002\u540D\u524D\u306E\u30D6\u30EC\u30AF\u30C8\u306F\u30D9\u30EB\u30C8\u30EB\u30C8\u30FB\u30D6\u30EC\u30D2\u30C8\u304B\u3089\u53D6\u3063\u3066\u3044\u308B\u3002 \u30D6\u30EC\u30AF\u30C8\u306F1958\u5E74\u304B\u30891959\u5E74\u306E\u30B8\u30E7\u30F3\u30FB\u30B1\u30FC\u30B8\u306E\u30CB\u30E5\u30FC\u30FB\u30B9\u30AF\u30FC\u30EB\u30FB\u30D5\u30A9\u30FC\u30FB\u30BD\u30FC\u30B7\u30E3\u30EB\u30FB\u30EA\u30B5\u30FC\u30C1\u3067\u7814\u7A76\u3057\u3066\u3044\u305F\u3002\u5F7C\u306F\u30D5\u30EB\u30AF\u30B5\u30B9\u306B\u3064\u3044\u3066\u3001Fluxus Newspaper\u306B\u5BC4\u7A3F\u3057\u3066\u3044\u308B\u3002 1965\u5E744\u6708\u3001\u5F7C\u306F\u30CB\u30E5\u30FC\u30E8\u30FC\u30AF\u3092\u51FA\u3066\u3001\u30ED\u30FC\u30DE\u3078\u6E21\u308A\u3001\u30E8\u30FC\u30ED\u30C3\u30D1\u3067\u6D3B\u52D5\u3057\u305F\u3002 2008\u5E7412\u67085\u65E5\u306B\u30C9\u30A4\u30C4\u306E\u30B1\u30EB\u30F3\u3067\u6B7B\u53BB\u3057\u305F\u3002" , "lang" : "ja" } ,
+      { "type" : "literal", "value" : "George Brecht (August 27, 1926 \u2013 December 5, 2008), born George Ellis MacDiarmid, was an American conceptual artist and avant-garde composer, as well as a professional chemist who worked as a consultant for companies including Pfizer, Johnson & Johnson, and Mobil Oil. He was a key member of, and influence on, Fluxus, the international group of avant-garde artists centred on George Maciunas, having been involved with the group from the first performances in Wiesbaden 1962 until Maciunas' death in 1978. One of the originators of 'participatory' art, in which the artwork can only be experienced by the active involvement of the viewer, he is most famous for his Event Scores such as Drip Music 1962, (see Video on YouTube) and is widely seen as an important precursor to conceptual art. He described his own art as a way of \u201Censuring that the details of everyday life, the random constellations of objects that surround us, stop going unnoticed.\u201D" , "lang" : "en" } ,
+      { "type" : "literal", "value" : "\u0414\u0436\u043E\u0440\u0434\u0436 \u0411\u0440\u0435\u0445\u0442 (\u0430\u043D\u0433\u043B. \u0438 \u043D\u0435\u043C. George Brecht; 27 \u0430\u0432\u0433\u0443\u0441\u0442\u0430 1926, \u041D\u044C\u044E-\u0419\u043E\u0440\u043A, \u0421\u0428\u0410 \u2014 5 \u0434\u0435\u043A\u0430\u0431\u0440\u044F 2008, \u041A\u0435\u043B\u044C\u043D) \u2014 \u0445\u0443\u0434\u043E\u0436\u043D\u0438\u043A-\u043C\u0438\u043D\u0438\u043C\u0430\u043B\u0438\u0441\u0442 \u0438 \u043A\u043E\u043C\u043F\u043E\u0437\u0438\u0442\u043E\u0440, \u0431\u044B\u043B \u0443\u0447\u0430\u0441\u0442\u043D\u0438\u043A\u043E\u043C \u0424\u043B\u0443\u043A\u0441\u0443\u0441\u0430. \u0418\u0437\u0432\u0435\u0441\u0442\u0435\u043D \u0431\u043B\u0430\u0433\u043E\u0434\u0430\u0440\u044F event scores (\u0434\u043E\u0441\u043B\u043E\u0432\u043D\u043E \u043F\u0430\u0440\u0442\u0438\u0442\u0443\u0440\u0430 \u0441\u043E\u0431\u044B\u0442\u0438\u044F), \u0442\u0430\u043A\u0438\u043C \u043A\u0430\u043A \u0434\u043B\u044F Drip Music (1962). Event scores \u043F\u0440\u0435\u0434\u0441\u0442\u0430\u0432\u043B\u044F\u043B\u0438 \u0441\u043E\u0431\u043E\u0439 \u044D\u043A\u0441\u0446\u0435\u043D\u0442\u0440\u0438\u0447\u043D\u044B\u0435 \u0438\u043D\u0441\u0442\u0440\u0443\u043A\u0446\u0438\u0438, \u043A\u043E\u0442\u043E\u0440\u044B\u0435 \u043F\u0440\u0435\u0434\u043B\u0430\u0433\u0430\u043B\u0438\u0441\u044C \u0434\u043B\u044F \u0438\u0441\u043F\u043E\u043B\u043D\u0435\u043D\u0438\u044F \u0443\u0447\u0430\u0441\u0442\u043D\u0438\u043A\u0430\u043C. \u041F\u0441\u0435\u0432\u0434\u043E\u043D\u0438\u043C \u0432\u0437\u044F\u043B \u0432 \u0447\u0435\u0441\u0442\u044C \u0411\u0435\u0440\u0442\u043E\u043B\u044C\u0434\u0430 \u0411\u0440\u0435\u0445\u0442\u0430." , "lang" : "ru" } ,
+      { "type" : "literal", "value" : "George Brecht (* 7. M\u00E4rz 1926 in New York City; \u2020 5. Dezember 2008 in K\u00F6ln) war ein US-amerikanischer K\u00FCnstler der Fluxus-Bewegung." , "lang" : "de" } ,
+      { "type" : "literal", "value" : "George Brecht, geboren als George MacDiarmid (Halfway (Oregon), 27 augustus 1926 - Keulen, 5 december 2008) was een minimalistisch kunstenaar en \"componist\". Hij was tevens scheikundige die als raadgever werkte voor maatschappijen als Pfizer, Johnson & Johnson en Mobil Oil, om zijn artistieke bezigheden te financieren. Hij was een vroege Fluxus-artiest. Zijn pseudoniem was een eerbetoon aan Bertolt Brecht. Brecht woonde sinds 1972 in Keulen en won in 2006 de prestigieuze \"Kunstpreis Berlin'. Hij was ook kunsttheoreticus, die talloze theoretische verhandelingen schreef over de relatie tussen aspecten van de nieuwe muziek en specifieke environments. Hij maakte ook kunstenaarsboeken. Brecht stierf in december 2008." , "lang" : "nl" } ,
+      { "type" : "literal", "value" : "Artista minimalista, \u00E8 anche ricercatore chimico ed \u00E8 considerato tra le personalit\u00E0 determinanti del gruppo originario di Fluxus." , "lang" : "it" } ,
+      { "type" : "literal", "value" : " Pour les articles homonymes, voir Brecht. George Brecht (27 ao\u00FBt 1926 \u2013 5 d\u00E9cembre 2008), n\u00E9 George Ellis MacDiarmid, \u00E9tait un artiste d'avant-garde am\u00E9ricain faisant partie de l\u2019art conceptuel, mais aussi un chimiste travaillant comme chercheur pour des laboratoires pharmaceutiques et comme consultant pour des compagnies telles que Pfizer, Johnson & Johnson, et Mobil Oil. Il fut un membre important de Fluxus groupe international d'artistes d'avant-garde dont George Maciunas \u00E9tait le \"meneur\". George Brecht fit partie du groupe d\u00E8s la premi\u00E8re performance \u00E0 Wiesbaden en 1962 et ce jusqu'\u00E0 la mort de Maciunas en 1978. D\u00E8s le d\u00E9but des ann\u00E9es 1950, il s'int\u00E9resse au th\u00E8me du hasard et de l'al\u00E9atoire. Ses recherches, aussi bien scientifiques qu'artistiques, le porteront \u00E0 \u00E9crire L'Imagerie du hasard (Chance Imagery).Disciple de John Cage, il sera son \u00E9l\u00E8ve \u00E0 la New School for Social Research en 1958 et 1959.En 1967, il collabore \u00E0 la r\u00E9daction d'un livre d\u2019enseignement avec Robert Filliou, Joseph Beuys, John Cage, Nam June Paik, Wolf Vostell, Charlotte Moorman et Allan Kaprow : Teaching and Learning as performing Arts. Parmi ses \u0153uvres \"Fluxus\" notables, bon nombre d'events de formulation lapidaire (Three Aqueous Events : \"Glace, Eau, Vapeur\" - \u00E9t\u00E9 1961) ou, au contraire, extr\u00EAmement d\u00E9taill\u00E9e (Card Piece for Voice, \u00E9t\u00E9 1959 : jeu pour jusqu'\u00E0 54 joueurs, comprenant un ensemble de cartes et d'instructions). Ses premi\u00E8res instructions pour event seront compil\u00E9es dans une bo\u00EEte nomm\u00E9e Water Yam, \u00E9dit\u00E9e avec l'aide de Maciunas. Entre 1965 et 1968 il dirige une galerie nomm\u00E9e La C\u00E9dille qui Sourit \u00E0 Villefranche-sur-Mer avec Robert Filliou Le lieu ne joue pas le r\u00F4le de vitrine d'une galerie traditionnelle, c'est l'atelier des artistes et de leurs compagnes, important comme lieu de contacts et d'\u00E9changes avec le groupe Fluxus local et les artistes de passage, et comme lieu symbolique pour les avant-gardes C\u00F4te d'Azur entre 1965 et 1968." , "lang" : "fr" } ,
+      { "type" : "literal", "value" : "George Brecht, w\u0142a\u015Bc. George Ellis MacDiarmid (ur. 27 sierpnia 1926, zm. 5 grudnia 2008) \u2013 ameryka\u0144ski artysta sztuki konceptualnej oraz awangardowy kompozytor. Z wykszta\u0142cenia by\u0142 chemikiem \u2013 pracowa\u0142 jako konsultant dla r\u00F3\u017Cnych firm mi\u0119dzy innymi Pfizer, Johnson & Johnson, oraz Mobil Oil. By\u0142 jednym z czo\u0142owych cz\u0142onk\u00F3w ruchu Fluxus, mi\u0119dzynarodowej grupy artyst\u00F3w zgromadzonych wok\u00F3\u0142 George'a Maciunasa, by\u0142 zaanga\u017Cowany w dzia\u0142alno\u015B\u0107 grupy od czasu pierwszego festiwalu \u201EFestum Fluxorum\u201D, kt\u00F3ry odby\u0142 si\u0119 w Wiesbaden w 1962 roku, a\u017C do \u015Bmierci Maciunasa w 1978. Brecht by\u0142 jednym z pierwszych tw\u00F3rc\u00F3w sztuki interaktywnej, w kt\u00F3rej dzie\u0142o sztuki mo\u017Ce zosta\u0107 do\u015Bwiadczone poprzez aktywne zaanga\u017Cowanie odbiorcy \u201Einteraktora\u201D. Zas\u0142yn\u0105\u0142 ze swoich \u201Ekompozycji\u201D Event Scores takich jak \u201Ekapi\u0105ca muzyka\u201D 1962. Jest powszechnie uwa\u017Cany za prekursora sztuki konceptualnej. Sam opisywa\u0142 swoj\u0105 tw\u00F3rczo\u015B\u0107 jako: spos\u00F3b na upewnienie si\u0119 \u017Ce szczeg\u00F3\u0142y \u017Cycia codziennego, oraz przypadkowe uk\u0142ady przedmiot\u00F3w nas otaczaj\u0105cych, przestan\u0105 uchodzi\u0107 niezauwa\u017Cone." , "lang" : "pl" } ] ,
+    "http://dbpedia.org/ontology/birthDate" : [ { "type" : "literal", "value" : "1926-08-27" , "datatype" : "http://www.w3.org/2001/XMLSchema#date" } ,
+      { "type" : "literal", "value" : "1926-8-27" , "datatype" : "http://www.w3.org/2001/XMLSchema#date" } ] ,
+    "http://dbpedia.org/ontology/deathDate" : [ { "type" : "literal", "value" : "2008-12-05" , "datatype" : "http://www.w3.org/2001/XMLSchema#date" } ,
+      { "type" : "literal", "value" : "2008-12-5" , "datatype" : "http://www.w3.org/2001/XMLSchema#date" } ] ,
+    "http://dbpedia.org/ontology/deathPlace" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Cologne" } ] ,
+    "http://dbpedia.org/ontology/wikiPageRevisionID" : [ { "type" : "literal", "value" : 742238228 , "datatype" : "http://www.w3.org/2001/XMLSchema#integer" } ] ,
+    "http://dbpedia.org/ontology/birthPlace" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/New_York_City" } ] ,
+    "http://dbpedia.org/ontology/wikiPageID" : [ { "type" : "literal", "value" : 1629034 , "datatype" : "http://www.w3.org/2001/XMLSchema#integer" } ] ,
+    "http://purl.org/linguistics/gold/hypernym" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Artist" } ] ,
+    "http://dbpedia.org/property/nationality" : [ { "type" : "literal", "value" : "American" , "datatype" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString" } ] ,
+    "http://dbpedia.org/property/bgcolour" : [ { "type" : "literal", "value" : "#6495ED" , "datatype" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString" } ] ,
+    "http://dbpedia.org/property/works" : [ { "type" : "literal", "value" : "Water Yam" , "datatype" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString" } ] }
+}
+;
+	var dataAuth = "http://dbpedia.org/resource/George_Brecht";
+	var dataUrl = "george_brecht.html";
+	var dataResourceType = "participant";
+	var dataName = "George Brecht";
+ 	
+</script>
+
+
+
+
+
+<script type="text/javascript">
+
+
+	
+	
+	
+
+	$(document).ready(function($) {
+		
+		
+		padb.resource.initialize();
+			 
+		$( '.scrollable' ).
+		bind( 'mousewheel DOMMouseScroll', function ( e ) {
+			
+			if( e.originalEvent ) e = e.originalEvent;
+			
+			var delta = e.wheelDelta || -e.detail;
+			this.scrollTop += ( delta < 0 ? 1 : -1 ) * 30;
+			e.preventDefault();
+		});		 
+		
+		
+				
+		$.ajaxSetup ({
+			// Disable caching of AJAX responses
+			cache: false
+		});		
+		
+	});
+	
+
+	
+	
+	
+	
+	
+</script>
+
+
+
+
+ 
+<br />
+<div class="container"  style="position:relative;">
+	   
+      <div id="resourceLinks"></div> 
+       
+       
+       
+       
+              
+       
+           
+           
+           
+          <div class="row addSection">
+              <div class="span1 addSectionIconHolder">
+              
+                <i class="icon-user"></i>
+              
+              </div>
+          
+              <div class="span11">
+                <span>Performer</span>
+                <hr>
+                <br />
+              </div>
+        </div>
+        <div class="row">
+            <div class="span1">
+            </div>
+            <div class="span11" style="position:relative">
+                
+                
+                
+                
+               <div>
+                                       <div class="pull-right vignette">
+                            <img  src="../cache/media/george_brecht.jpg" />
+                            
+                        </div>
+                        
+                                           
+                <div class="pull-left" style="width:80%;">
+                     
+                     <h5 id="resourceLDName">George Brecht</h5>
+                     <h5 id="resourceLDAbstract"></h5>
+                     
+                     
+                     <div id="resourceSameAs">
+                        <h5>External Data:</h5>
+                        
+                        
+                     </div>
+                
+                </div>   
+                
+                <br style="clear:both;" />
+            </div>
+            
+            
+                
+            </div>
+        </div>    
+         
+    
+    
+    
+    
+    
+    
+       <div class="row addSection">
+			<div class="span1 addSectionIconHolder">              
+                <i class="icon-asterisk"></i>
+              
+              </div>
+          
+              <div class="span11">
+                <span>Events </span><span id="resourceEventCount"></span>
+                <hr>
+              </div>
+        </div>
+    
+    
+    
+    
+    
+    
+    
+        <div class="row">
+            <div class="span1"></div>
+            <div class="span11" style="position:relative">
+                  
+                 <div class="">
+                    <div id="resourceEventsEvents" class="scrollable">
+                           <table class="table table-condensed table-hover table-striped">
+                               <thead>
+                                <tr>
+                                  <th>Date</th>
+                                  
+                                  <th>Title</th>
+                                  <th>Location</th>
+                                  <th></th>
+                                </tr>
+                              </thead>
+                              <tbody id="resourceEventsEventsRows"> 
+                              </tbody>
+                            </table>
+                     
+                    </div>
+                    
+                    <div id="resourceEventsExport">
+                    
+                    	<input  name="resourceEventsSearch" class="span3" id="resourceEventsSearch"  type="text" placeholder="Filter: names, places, dates">
+                    	<button class="btn btn-mini btn-danger" id="resourceEventsClearFilter"><i class="icon-remove">&nbsp;Clear Filter</i></button>
+                   		<button class="btn btn-mini btn-info" title="Render the currently filitered data as a network" id="resourceRenderEventNetwork"> <img src="../img/icon-network-white.png" style="height:15px; width:auto" /> Two-Mode Event Network</button>
+                   		<button class="btn btn-mini btn-info" title="Render the currently filitered data as a network" id="resourceRenderEventMap"> <i class="icon-globe"></i> Map Event Locations</button>
+                   		<button class="btn btn-mini btn-success" title="Download network as Gephi File" id="resourceDownloadEventGephi"> <img src="../img/icon-gephi.png" style="height:15px; width:auto" /> Donwload Gephi Network</button>
+
+                 
+                    </div>                 
+                </div>
+                <br style="clear:both;" />
+            </div>
+            
+            
+                
+         </div>    
+    
+     
+       <div class="row addSection">
+              <div class="span1">
+              
+                <img src="../img/social-network.png" style=" margin-left:25px; margin-bottom:10px;" />
+              
+              </div>
+          
+              <div class="span11">
+                <span>Performance Network</span> 
+                <hr>
+              </div>
+        </div>
+        
+        <div class="row">
+            <div class="span1">
+            </div>
+            <div class="span11" style="position:relative">
+                
+               	<div style="width: 100%; height:500px;" id="egoNetwork">
+            
+                
+             	</div> 
+                <div class="well pull-left well-small" id="egoNetworkControls">
+                    <span class="rangeLabels">Node Charge</span>
+                    <input type="range" id="resourceEgoNetworkCharge" min="-1000" max="100" value="-120" data-def="-700" />
+                    <br /><span class="rangeLabels">Gravity</span>
+                    <input type="range" id="resourceEgoNetworkGravity" min="0" max="1" value="0.1" step="0.01" data-def="0.3" /> 
+                    <br /><span class="rangeLabels">Edge Length</span>
+                    <input type="range" id="resourceEgoNetworkDistance" min="0" max="300" value="50" data-def="50"  />      
+                    <br /><span class="rangeLabels">Edge Strength</span>
+                    <input type="range" id="resourceEgoNetworkStrength" min="0" max="3" value="1" data-def="0.15" step="0.1"  /> 
+                    <br /><br />
+                    <button type="button" id="resourceEgoNetworkLabelsButton" class="btn btn-mini" title="Show node labels." data-toggle="button">Show Labels</button>  
+                    <button type="button" id="resourceEgoNetworkLiveButton" class="btn btn-mini" title="Show realtime network rendering" data-toggle="button">Live Rendering</button>                     
+                </div>
+                
+                <div class="well pull-left well-small egoNetworkControls span7" style="margin-left:20px;" >
+                
+                	<input  name="resourceEgoNetworkSearch" class="span3" id="resourceEgoNetworkSearch"  type="text" placeholder="Filter: names, places, dates">
+					<button class="btn btn-mini btn-danger" id="resourceEgoClearFilter"><i class="icon-remove">&nbsp;Clear Filter</i></button>
+                    <button class="btn btn-mini btn-success" title="Download network as Gephi File" id="resourceDownloadEgoGephi"> <img src="../img/icon-gephi.png" style="height:15px; width:auto" /> Donwload Gephi Network</button>
+
+                </div>
+                
+            </div>
+        </div>           
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+	
+
+	
+
+
+	
+
+
+</div>
+
+
+
+
+    <div id="resourceEventNetworkModal" class="modal container hide fade" style="min-height:500px" tabindex="-1">
+ 
+      <div class="modal-body">
+      	
+        <div id="eventNetwork" style="height:400px; width:100%">
+        
+        </div>
+      
+      </div>
+      <div class="modal-footer" style="height:20px;">
+      	
+        <div class="well pull-left well-small">
+        	<span class="rangeLabels">Node Charge</span>
+        	<input type="range" id="resourceEventNetworkCharge" min="-800" max="200" value="-120" data-def="-120" />
+            <span class="rangeLabels">Gravity</span>
+        	<input type="range" id="resourceEventNetworkGravity" min="0" max="1" value="0.1" step="0.01" data-def="0.1" /> 
+            <span class="rangeLabels">Edge Length</span>
+        	<input type="range" id="resourceEventNetworkDistance" min="0" max="300" value="50" data-def="50"  />      
+            <span class="rangeLabels">Edge Strength</span>
+        	<input type="range" id="resourceEventNetworkStrength" min="0" max="5" value="1" data-def="1" step="0.1"  />    
+            <button type="button" id="resourceEventNetworkLabelsButton" class="btn btn-mini" data-toggle="button">Show Labels</button>                     
+		</div>
+        <div class="pull-right">
+        <button type="button" data-dismiss="modal" class="btn">Close</button>
+       	</div>
+       </div>
+    </div>
+    
+    
+    
+    
+     <div id="resourceEventMapModal" class="modal container hide fade" style="min-height:500px" tabindex="-1">
+ 
+      <div class="modal-body">
+      	
+        <div id="eventMap" style="height:400px; width:100%">
+        
+        </div>
+      
+      </div>
+      <div class="modal-footer" style="height:20px;">
+      	
+        <div class="well pull-left well-small">                  
+		</div>
+        <div class="pull-right">
+        <button type="button" data-dismiss="modal" class="btn">Close</button>
+       	</div>
+       </div>
+    </div>
+
+<br /><br /><br /><br /><br /><br />
+
+<script type="text/javascript">    var _gaq = _gaq || [];   _gaq.push(['_setAccount', 'UA-10371295-7']);   _gaq.push(['_trackPageview']);    (function() {     var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);   })();  </script>
+
+</body>
+
+<!-- Mirrored from padb.net/resource/george_brecht by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 11 Jan 2020 22:16:58 GMT -->
+</html>

@@ -1,0 +1,75 @@
+<?xml version="1.0"?>
+<gexf version="1.2" xmlns="http://www.gexf.net/1.2draft">
+ <graph mode="static" defaultedgetype="undirected">
+  <nodes>
+   <node id="13" label="Dick Higgins"/>
+   <node id="15" label="Claes Oldenburg"/>
+   <node id="16" label="Robert Whitman"/>
+   <node id="22" label="Robert Rauschenberg"/>
+   <node id="25" label="La Monte Young"/>
+   <node id="39" label="Nam-june Paik"/>
+   <node id="121" label="Carolee Schneemann"/>
+   <node id="217" label="Marian Zazeela"/>
+   <node id="352" label="Ken Dewey"/>
+   <node id="353" label="Once Group"/>
+   <node id="354" label="USCO"/>
+  </nodes>
+  <edges>
+   <edge source="13" target="15"/>
+   <edge source="13" target="16"/>
+   <edge source="13" target="22"/>
+   <edge source="13" target="25"/>
+   <edge source="13" target="39"/>
+   <edge source="13" target="121"/>
+   <edge source="13" target="217"/>
+   <edge source="13" target="352"/>
+   <edge source="13" target="353"/>
+   <edge source="13" target="354"/>
+   <edge source="15" target="16"/>
+   <edge source="15" target="22"/>
+   <edge source="15" target="25"/>
+   <edge source="15" target="39"/>
+   <edge source="15" target="121"/>
+   <edge source="15" target="217"/>
+   <edge source="15" target="352"/>
+   <edge source="15" target="353"/>
+   <edge source="15" target="354"/>
+   <edge source="16" target="22"/>
+   <edge source="16" target="25"/>
+   <edge source="16" target="39"/>
+   <edge source="16" target="121"/>
+   <edge source="16" target="217"/>
+   <edge source="16" target="352"/>
+   <edge source="16" target="353"/>
+   <edge source="16" target="354"/>
+   <edge source="22" target="25"/>
+   <edge source="22" target="39"/>
+   <edge source="22" target="121"/>
+   <edge source="22" target="217"/>
+   <edge source="22" target="352"/>
+   <edge source="22" target="353"/>
+   <edge source="22" target="354"/>
+   <edge source="25" target="39"/>
+   <edge source="25" target="121"/>
+   <edge source="25" target="217"/>
+   <edge source="25" target="352"/>
+   <edge source="25" target="353"/>
+   <edge source="25" target="354"/>
+   <edge source="39" target="121"/>
+   <edge source="39" target="217"/>
+   <edge source="39" target="352"/>
+   <edge source="39" target="353"/>
+   <edge source="39" target="354"/>
+   <edge source="121" target="217"/>
+   <edge source="121" target="352"/>
+   <edge source="121" target="353"/>
+   <edge source="121" target="354"/>
+   <edge source="217" target="352"/>
+   <edge source="217" target="353"/>
+   <edge source="217" target="354"/>
+   <edge source="352" target="353"/>
+   <edge source="352" target="354"/>
+   <edge source="353" target="354"/>
+  </edges>
+ </graph>
+</gexf>

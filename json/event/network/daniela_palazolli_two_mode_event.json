@@ -1,0 +1,1 @@
+{"nodes": [{"name": "Petites idees DA AU-DELA", "type": "event", "year": "1967", "id": 0, "x": 100, "y": 100}, {"name": "Daniela Palazolli", "type": "person", "id": 1, "x": 100, "y": 100}, {"name": "Gian Emillio Simonetti", "type": "person", "id": 2, "x": 100, "y": 100}], "edges": [{"source": 1, "target": 0, "value": 1}, {"source": 2, "target": 0, "value": 1}]}

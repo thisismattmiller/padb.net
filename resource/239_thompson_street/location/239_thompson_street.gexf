@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<gexf version="1.2" xmlns="http://www.gexf.net/1.2draft">
+ <graph mode="static" defaultedgetype="undirected">
+  <nodes>
+   <node id="2" label="Yoko Ono"/>
+   <node id="319" label="Anthony Cox"/>
+   <node id="376" label="Michael Mason"/>
+   <node id="377" label="Jeff Perkins"/>
+  </nodes>
+  <edges>
+   <edge source="2" target="319"/>
+   <edge source="2" target="376"/>
+   <edge source="2" target="377"/>
+   <edge source="319" target="376"/>
+   <edge source="319" target="377"/>
+   <edge source="376" target="377"/>
+  </edges>
+ </graph>
+</gexf>

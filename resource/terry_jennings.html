@@ -1,0 +1,465 @@
+<!doctype html>
+<html>
+
+<!-- Mirrored from padb.net/resource/terry_jennings by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 11 Jan 2020 22:17:57 GMT -->
+<head>
+<meta charset="UTF-8">
+<title>padb.net</title>
+
+
+<link rel="stylesheet" href="../css/bootstrap.css">
+<link rel="stylesheet" href="../css/font-awesome.css">
+<link rel="stylesheet" href="../css/site.css">
+<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+<link rel="icon" type="image/png" href="../img/favicon.png">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/bootstrap-modal.js"></script>
+<script src="../js/bootstrap-modalmanager.js"></script>
+
+<script src="../js/d3.min.js"></script>
+<script src="../js/html5slider.js"></script>
+<script src="../js/topojson.js"></script>
+<script src="../js/padb.js"></script>
+
+
+</head>
+<body>
+    
+    
+	<div style="position:relative;">        
+
+ 		<div style=" border-bottom:solid 1px #ccc;">
+        	<div class="container">
+                
+                 <div id="header">
+                 	
+                     <div class="logo"><a href="../index.html"><span>|||</span>padb</a> </div>
+                    
+                      
+						 <div id="resourceName">Terry Jennings</div>
+					 
+                 </div>
+                
+                
+        	</div>
+            
+    	</div>
+ 
+   </div>
+<script src="../js/countriesData.js"></script>
+
+<script type="text/javascript">
+	//preloaded json from the server
+
+	var dataSameAs = [
+  {
+    "uri": "http://www.wikidata.org/entity/Q2405635",
+    "numDuplicates": "12",
+    "duplicates": [
+      "http://dbpedia.org/resource/Terry_Jennings",
+      "http://cs.dbpedia.org/resource/Terry_Jennings",
+      "http://dbpedialite.org/things/18634688#id",
+      "http://de.dbpedia.org/resource/Terry_Jennings",
+      "http://fr.dbpedia.org/resource/Terry_Jennings",
+      "http://mpii.de/yago/resource/Terry_Jennings",
+      "http://rdf.freebase.com/ns/m.04gpwnw",
+      "http://rdf.freebase.com/ns/m.0nhwhng",
+      "http://rdf.freebase.com/ns/en.terry_jennings",
+      "http://rdf.freebase.com/ns/guid.9202a8c04000641f8000000008eaee9b",
+      "http://www.wikidata.org/entity/Q2405635",
+      "http://yago-knowledge.org/resource/Terry_Jennings"
+    ]
+  }
+]
+;
+	var dataDbpedia = {
+  "http://dbpedia.org/resource/Escape_from_Jupiter" : { "http://dbpedia.org/ontology/producer" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Terry_Jennings" } ] } ,
+  "http://en.wikipedia.org/wiki/Terry_Jennings" : { "http://xmlns.com/foaf/0.1/primaryTopic" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Terry_Jennings" } ] } ,
+  "http://dbpedia.org/resource/Terry_Jennings" : { "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { "type" : "uri", "value" : "http://dbpedia.org/ontology/Artist" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Composer109947232" } ,
+      { "type" : "uri", "value" : "http://www.wikidata.org/entity/Q483501" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/ontology/MusicalArtist" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Person100007846" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Object100002684" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatMusiciansFromLosAngeles,California" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/PhysicalEntity100001930" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Wikicat20th-centuryClassicalComposers" } ,
+      { "type" : "uri", "value" : "http://xmlns.com/foaf/0.1/Person" } ,
+      { "type" : "uri", "value" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Musician110339966" } ,
+      { "type" : "uri", "value" : "http://www.wikidata.org/entity/Q5" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Creator109614315" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Artist109812338" } ,
+      { "type" : "uri", "value" : "http://schema.org/Person" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Organism100004475" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/ontology/Person" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatAmericanMusicians" } ,
+      { "type" : "uri", "value" : "http://schema.org/MusicGroup" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatAmericanComposers" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Whole100003553" } ,
+      { "type" : "uri", "value" : "http://www.wikidata.org/entity/Q24229398" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/LivingThing100004258" } ,
+      { "type" : "uri", "value" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#NaturalPerson" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/CausalAgent100007347" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Wikicat20th-centuryComposers" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatPupilsOfRobertErickson" } ,
+      { "type" : "uri", "value" : "http://www.wikidata.org/entity/Q215627" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/ontology/Agent" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Enrollee110059162" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Student110665698" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/YagoLegalActor" } ,
+      { "type" : "uri", "value" : "http://www.w3.org/2002/07/owl#Thing" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/YagoLegalActorGeo" } ] ,
+    "http://www.w3.org/2000/01/rdf-schema#label" : [ { "type" : "literal", "value" : "Terry Jennings" , "lang" : "en" } ,
+      { "type" : "literal", "value" : "Terry Jennings" , "lang" : "de" } ,
+      { "type" : "literal", "value" : "Terry Jennings" , "lang" : "fr" } ] ,
+    "http://www.w3.org/2000/01/rdf-schema#comment" : [ { "type" : "literal", "value" : "Terry Jennings (* 19. Juli 1940 in Eagle Rock (Kalifornien); \u2020 11. Dezember 1981 in San Pablo (Kalifornien)) war ein amerikanischer Komponist und Interpret der Minimal Music (Sopransaxophon, Klarinette). Er war einer der Pioniere dieser Musikrichtung; seine bekanntesten Werke sind Winter Trees und Winter Sun (1975)." , "lang" : "de" } ,
+      { "type" : "literal", "value" : "Terry Jennings (19 July 1940 \u2013 11 December 1981) was an American minimalist composer and performer." , "lang" : "en" } ,
+      { "type" : "literal", "value" : "Terry Jennings, n\u00E9 le 19 juillet 1940 \u00E0 Eagle Rock, un quartier de Los Angeles est un compositeur, clarinettiste et saxophoniste am\u00E9ricain, li\u00E9 au courant de la musique minimaliste. Terry Jennings est un enfant pr\u00E9coce, \u00E0 quatre ans il est capable de jouer du Beethoven \u00E0 quatre mains, \u00E0 12 ans les sonates pour piano de John Cage et des improvisations virtuoses au saxophone alto, \u00E0 13 ans transposer \u00E0 vue la suite op. 29 de Sch\u00F6nberg \u00E0 la clarinette Si\u266D la partie \u00E9crite en Mi\u266D. Des probl\u00E8mes de drogue seront \u00E0 l'origine de l'arr\u00EAt de sa carri\u00E8re et de son assassinat en 1981." , "lang" : "fr" } ] ,
+    "http://www.w3.org/2002/07/owl#sameAs" : [ { "type" : "uri", "value" : "http://www.wikidata.org/entity/Q2405635" } ,
+      { "type" : "uri", "value" : "http://fr.dbpedia.org/resource/Terry_Jennings" } ,
+      { "type" : "uri", "value" : "http://rdf.freebase.com/ns/m.0nhwhng" } ,
+      { "type" : "uri", "value" : "http://yago-knowledge.org/resource/Terry_Jennings" } ,
+      { "type" : "uri", "value" : "http://de.dbpedia.org/resource/Terry_Jennings" } ,
+      { "type" : "uri", "value" : "http://wikidata.dbpedia.org/resource/Q2405635" } ,
+      { "type" : "uri", "value" : "http://cs.dbpedia.org/resource/Terry_Jennings" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Terry_Jennings" } ] ,
+    "http://purl.org/dc/terms/subject" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:1940_births" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:1981_deaths" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Pupils_of_Robert_Erickson" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Musicians_from_Los_Angeles" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:20th-century_American_musicians" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:20th-century_classical_composers" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:American_male_classical_composers" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:American_classical_composers" } ] ,
+    "http://xmlns.com/foaf/0.1/name" : [ { "type" : "literal", "value" : "Terry Jennings" , "lang" : "en" } ] ,
+    "http://purl.org/dc/terms/description" : [ { "type" : "literal", "value" : "American composer" , "lang" : "en" } ] ,
+    "http://xmlns.com/foaf/0.1/givenName" : [ { "type" : "literal", "value" : "Terry" , "lang" : "en" } ] ,
+    "http://xmlns.com/foaf/0.1/gender" : [ { "type" : "literal", "value" : "male" , "lang" : "en" } ] ,
+    "http://xmlns.com/foaf/0.1/isPrimaryTopicOf" : [ { "type" : "uri", "value" : "http://en.wikipedia.org/wiki/Terry_Jennings" } ] ,
+    "http://xmlns.com/foaf/0.1/surname" : [ { "type" : "literal", "value" : "Jennings" , "lang" : "en" } ] ,
+    "http://www.w3.org/ns/prov#wasDerivedFrom" : [ { "type" : "uri", "value" : "http://en.wikipedia.org/wiki/Terry_Jennings?oldid=745002509" } ] ,
+    "http://dbpedia.org/ontology/abstract" : [ { "type" : "literal", "value" : "Terry Jennings, n\u00E9 le 19 juillet 1940 \u00E0 Eagle Rock, un quartier de Los Angeles est un compositeur, clarinettiste et saxophoniste am\u00E9ricain, li\u00E9 au courant de la musique minimaliste. Terry Jennings est un enfant pr\u00E9coce, \u00E0 quatre ans il est capable de jouer du Beethoven \u00E0 quatre mains, \u00E0 12 ans les sonates pour piano de John Cage et des improvisations virtuoses au saxophone alto, \u00E0 13 ans transposer \u00E0 vue la suite op. 29 de Sch\u00F6nberg \u00E0 la clarinette Si\u266D la partie \u00E9crite en Mi\u266D. Il \u00E9tudie le saxophone avec William Green au conservatoire de Los Angeles. Il rencontre tr\u00E8s t\u00F4t La Monte Young, et est un des rares \u00E0 comprendre l'int\u00E9r\u00EAt de la composition Trio for Strings (1958) de Young, consid\u00E9r\u00E9e comme l'une des premi\u00E8res \u0153uvres de la musique minimaliste. Jennings s'inspire de Young et compose des pi\u00E8ces \u00E0 base de bourdons et de longs sons soutenus. En 1960, sa composition Piece for Two Saxophones est pr\u00E9sent\u00E9e dans le loft de Yoko Ono. Des probl\u00E8mes de drogue seront \u00E0 l'origine de l'arr\u00EAt de sa carri\u00E8re et de son assassinat en 1981." , "lang" : "fr" } ,
+      { "type" : "literal", "value" : "Terry Jennings (19 July 1940 \u2013 11 December 1981) was an American minimalist composer and performer." , "lang" : "en" } ,
+      { "type" : "literal", "value" : "Terry Jennings (* 19. Juli 1940 in Eagle Rock (Kalifornien); \u2020 11. Dezember 1981 in San Pablo (Kalifornien)) war ein amerikanischer Komponist und Interpret der Minimal Music (Sopransaxophon, Klarinette). Er war einer der Pioniere dieser Musikrichtung; seine bekanntesten Werke sind Winter Trees und Winter Sun (1975)." , "lang" : "de" } ] ,
+    "http://dbpedia.org/ontology/birthDate" : [ { "type" : "literal", "value" : "1940-7-19" , "datatype" : "http://www.w3.org/2001/XMLSchema#date" } ] ,
+    "http://dbpedia.org/ontology/deathDate" : [ { "type" : "literal", "value" : "1981-12-11" , "datatype" : "http://www.w3.org/2001/XMLSchema#date" } ] ,
+    "http://dbpedia.org/ontology/wikiPageRevisionID" : [ { "type" : "literal", "value" : 745002509 , "datatype" : "http://www.w3.org/2001/XMLSchema#integer" } ] ,
+    "http://dbpedia.org/ontology/birthPlace" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Eagle_Rock,_Los_Angeles" } ] ,
+    "http://dbpedia.org/ontology/wikiPageID" : [ { "type" : "literal", "value" : 18634688 , "datatype" : "http://www.w3.org/2001/XMLSchema#integer" } ] ,
+    "http://dbpedia.org/ontology/country" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/United_States" } ] ,
+    "http://purl.org/linguistics/gold/hypernym" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Composer" } ] ,
+    "http://dbpedia.org/property/reference" : [ { "type" : "literal", "value" : "Garland, Peter, and La Monte Young. 2001. \"Jennings, Terry\". The New Grove Dictionary of Music and Musicians, edited by Stanley Sadie and John Tyrrell. London: Macmillan Publishers." , "datatype" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString" } ,
+      { "type" : "literal", "value" : "Young, La Monte . 1963. An Anthology of Chance Operations. Bronx, N.Y.: La Monte Young and Jackson Mac Low. Second edition, New York: H. Friedrich, 1970." , "datatype" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString" } ,
+      { "type" : "literal", "value" : "Patterson, Ben. 1968. \"Terry Jennings: Making of a Musician, 1968\". Village Voice ." , "datatype" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString" } ,
+      { "type" : "literal", "value" : "Cage, John. 1969. Notations. New York and West Glover, Vermont: Something Else Press. ISBN 0-87110-000-2." , "datatype" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString" } ] } ,
+  "http://dbpedia.org/resource/Theatre_of_Eternal_Music" : { "http://dbpedia.org/ontology/formerBandMember" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Terry_Jennings" } ] }
+}
+;
+	var dataAuth = "http://dbpedia.org/resource/Terry_Jennings";
+	var dataUrl = "terry_jennings.html";
+	var dataResourceType = "participant";
+	var dataName = "Terry Jennings";
+ 	
+</script>
+
+
+
+
+
+<script type="text/javascript">
+
+
+	
+	
+	
+
+	$(document).ready(function($) {
+		
+		
+		padb.resource.initialize();
+			 
+		$( '.scrollable' ).
+		bind( 'mousewheel DOMMouseScroll', function ( e ) {
+			
+			if( e.originalEvent ) e = e.originalEvent;
+			
+			var delta = e.wheelDelta || -e.detail;
+			this.scrollTop += ( delta < 0 ? 1 : -1 ) * 30;
+			e.preventDefault();
+		});		 
+		
+		
+				
+		$.ajaxSetup ({
+			// Disable caching of AJAX responses
+			cache: false
+		});		
+		
+	});
+	
+
+	
+	
+	
+	
+	
+</script>
+
+
+
+
+ 
+<br />
+<div class="container"  style="position:relative;">
+	   
+      <div id="resourceLinks"></div> 
+       
+       
+       
+       
+              
+       
+           
+           
+           
+          <div class="row addSection">
+              <div class="span1 addSectionIconHolder">
+              
+                <i class="icon-user"></i>
+              
+              </div>
+          
+              <div class="span11">
+                <span>Performer</span>
+                <hr>
+                <br />
+              </div>
+        </div>
+        <div class="row">
+            <div class="span1">
+            </div>
+            <div class="span11" style="position:relative">
+                
+                
+                
+                
+               <div>
+                                       
+                                           
+                <div class="pull-left" style="width:80%;">
+                     
+                     <h5 id="resourceLDName">Terry Jennings</h5>
+                     <h5 id="resourceLDAbstract"></h5>
+                     
+                     
+                     <div id="resourceSameAs">
+                        <h5>External Data:</h5>
+                        
+                        
+                     </div>
+                
+                </div>   
+                
+                <br style="clear:both;" />
+            </div>
+            
+            
+                
+            </div>
+        </div>    
+         
+    
+    
+    
+    
+    
+    
+       <div class="row addSection">
+			<div class="span1 addSectionIconHolder">              
+                <i class="icon-asterisk"></i>
+              
+              </div>
+          
+              <div class="span11">
+                <span>Events </span><span id="resourceEventCount"></span>
+                <hr>
+              </div>
+        </div>
+    
+    
+    
+    
+    
+    
+    
+        <div class="row">
+            <div class="span1"></div>
+            <div class="span11" style="position:relative">
+                  
+                 <div class="">
+                    <div id="resourceEventsEvents" class="scrollable">
+                           <table class="table table-condensed table-hover table-striped">
+                               <thead>
+                                <tr>
+                                  <th>Date</th>
+                                  
+                                  <th>Title</th>
+                                  <th>Location</th>
+                                  <th></th>
+                                </tr>
+                              </thead>
+                              <tbody id="resourceEventsEventsRows"> 
+                              </tbody>
+                            </table>
+                     
+                    </div>
+                    
+                    <div id="resourceEventsExport">
+                    
+                    	<input  name="resourceEventsSearch" class="span3" id="resourceEventsSearch"  type="text" placeholder="Filter: names, places, dates">
+                    	<button class="btn btn-mini btn-danger" id="resourceEventsClearFilter"><i class="icon-remove">&nbsp;Clear Filter</i></button>
+                   		<button class="btn btn-mini btn-info" title="Render the currently filitered data as a network" id="resourceRenderEventNetwork"> <img src="../img/icon-network-white.png" style="height:15px; width:auto" /> Two-Mode Event Network</button>
+                   		<button class="btn btn-mini btn-info" title="Render the currently filitered data as a network" id="resourceRenderEventMap"> <i class="icon-globe"></i> Map Event Locations</button>
+                   		<button class="btn btn-mini btn-success" title="Download network as Gephi File" id="resourceDownloadEventGephi"> <img src="../img/icon-gephi.png" style="height:15px; width:auto" /> Donwload Gephi Network</button>
+
+                 
+                    </div>                 
+                </div>
+                <br style="clear:both;" />
+            </div>
+            
+            
+                
+         </div>    
+    
+     
+       <div class="row addSection">
+              <div class="span1">
+              
+                <img src="../img/social-network.png" style=" margin-left:25px; margin-bottom:10px;" />
+              
+              </div>
+          
+              <div class="span11">
+                <span>Performance Network</span> 
+                <hr>
+              </div>
+        </div>
+        
+        <div class="row">
+            <div class="span1">
+            </div>
+            <div class="span11" style="position:relative">
+                
+               	<div style="width: 100%; height:500px;" id="egoNetwork">
+            
+                
+             	</div> 
+                <div class="well pull-left well-small" id="egoNetworkControls">
+                    <span class="rangeLabels">Node Charge</span>
+                    <input type="range" id="resourceEgoNetworkCharge" min="-1000" max="100" value="-120" data-def="-700" />
+                    <br /><span class="rangeLabels">Gravity</span>
+                    <input type="range" id="resourceEgoNetworkGravity" min="0" max="1" value="0.1" step="0.01" data-def="0.3" /> 
+                    <br /><span class="rangeLabels">Edge Length</span>
+                    <input type="range" id="resourceEgoNetworkDistance" min="0" max="300" value="50" data-def="50"  />      
+                    <br /><span class="rangeLabels">Edge Strength</span>
+                    <input type="range" id="resourceEgoNetworkStrength" min="0" max="3" value="1" data-def="0.15" step="0.1"  /> 
+                    <br /><br />
+                    <button type="button" id="resourceEgoNetworkLabelsButton" class="btn btn-mini" title="Show node labels." data-toggle="button">Show Labels</button>  
+                    <button type="button" id="resourceEgoNetworkLiveButton" class="btn btn-mini" title="Show realtime network rendering" data-toggle="button">Live Rendering</button>                     
+                </div>
+                
+                <div class="well pull-left well-small egoNetworkControls span7" style="margin-left:20px;" >
+                
+                	<input  name="resourceEgoNetworkSearch" class="span3" id="resourceEgoNetworkSearch"  type="text" placeholder="Filter: names, places, dates">
+					<button class="btn btn-mini btn-danger" id="resourceEgoClearFilter"><i class="icon-remove">&nbsp;Clear Filter</i></button>
+                    <button class="btn btn-mini btn-success" title="Download network as Gephi File" id="resourceDownloadEgoGephi"> <img src="../img/icon-gephi.png" style="height:15px; width:auto" /> Donwload Gephi Network</button>
+
+                </div>
+                
+            </div>
+        </div>           
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+	
+
+	
+
+
+	
+
+
+</div>
+
+
+
+
+    <div id="resourceEventNetworkModal" class="modal container hide fade" style="min-height:500px" tabindex="-1">
+ 
+      <div class="modal-body">
+      	
+        <div id="eventNetwork" style="height:400px; width:100%">
+        
+        </div>
+      
+      </div>
+      <div class="modal-footer" style="height:20px;">
+      	
+        <div class="well pull-left well-small">
+        	<span class="rangeLabels">Node Charge</span>
+        	<input type="range" id="resourceEventNetworkCharge" min="-800" max="200" value="-120" data-def="-120" />
+            <span class="rangeLabels">Gravity</span>
+        	<input type="range" id="resourceEventNetworkGravity" min="0" max="1" value="0.1" step="0.01" data-def="0.1" /> 
+            <span class="rangeLabels">Edge Length</span>
+        	<input type="range" id="resourceEventNetworkDistance" min="0" max="300" value="50" data-def="50"  />      
+            <span class="rangeLabels">Edge Strength</span>
+        	<input type="range" id="resourceEventNetworkStrength" min="0" max="5" value="1" data-def="1" step="0.1"  />    
+            <button type="button" id="resourceEventNetworkLabelsButton" class="btn btn-mini" data-toggle="button">Show Labels</button>                     
+		</div>
+        <div class="pull-right">
+        <button type="button" data-dismiss="modal" class="btn">Close</button>
+       	</div>
+       </div>
+    </div>
+    
+    
+    
+    
+     <div id="resourceEventMapModal" class="modal container hide fade" style="min-height:500px" tabindex="-1">
+ 
+      <div class="modal-body">
+      	
+        <div id="eventMap" style="height:400px; width:100%">
+        
+        </div>
+      
+      </div>
+      <div class="modal-footer" style="height:20px;">
+      	
+        <div class="well pull-left well-small">                  
+		</div>
+        <div class="pull-right">
+        <button type="button" data-dismiss="modal" class="btn">Close</button>
+       	</div>
+       </div>
+    </div>
+
+<br /><br /><br /><br /><br /><br />
+
+<script type="text/javascript">    var _gaq = _gaq || [];   _gaq.push(['_setAccount', 'UA-10371295-7']);   _gaq.push(['_trackPageview']);    (function() {     var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);   })();  </script>
+
+</body>
+
+<!-- Mirrored from padb.net/resource/terry_jennings by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 11 Jan 2020 22:17:57 GMT -->
+</html>

@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<gexf version="1.2" xmlns="http://www.gexf.net/1.2draft">
+ <graph mode="static" defaultedgetype="undirected">
+  <nodes>
+   <node id="1" label="John Cage"/>
+   <node id="20" label="Richard Maxfield"/>
+   <node id="91" label="Philip Corner"/>
+   <node id="234" label="Malcolm Goldstein"/>
+   <node id="322" label="J MacDowell"/>
+   <node id="12" label="Al Hansen"/>
+   <node id="300" label="NYC Audiovisual Group"/>
+  </nodes>
+  <edges>
+   <edge source="1" target="20"/>
+   <edge source="1" target="91"/>
+   <edge source="1" target="234"/>
+   <edge source="1" target="322"/>
+   <edge source="20" target="91"/>
+   <edge source="20" target="234"/>
+   <edge source="20" target="322"/>
+   <edge source="91" target="234"/>
+   <edge source="91" target="322"/>
+   <edge source="234" target="322"/>
+   <edge source="12" target="300"/>
+  </edges>
+ </graph>
+</gexf>

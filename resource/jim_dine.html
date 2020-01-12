@@ -1,0 +1,561 @@
+<!doctype html>
+<html>
+
+<!-- Mirrored from padb.net/resource/jim_dine by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 11 Jan 2020 22:18:25 GMT -->
+<head>
+<meta charset="UTF-8">
+<title>padb.net</title>
+
+
+<link rel="stylesheet" href="../css/bootstrap.css">
+<link rel="stylesheet" href="../css/font-awesome.css">
+<link rel="stylesheet" href="../css/site.css">
+<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+<link rel="icon" type="image/png" href="../img/favicon.png">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/bootstrap-modal.js"></script>
+<script src="../js/bootstrap-modalmanager.js"></script>
+
+<script src="../js/d3.min.js"></script>
+<script src="../js/html5slider.js"></script>
+<script src="../js/topojson.js"></script>
+<script src="../js/padb.js"></script>
+
+
+</head>
+<body>
+    
+    
+	<div style="position:relative;">        
+
+ 		<div style=" border-bottom:solid 1px #ccc;">
+        	<div class="container">
+                
+                 <div id="header">
+                 	
+                     <div class="logo"><a href="../index.html"><span>|||</span>padb</a> </div>
+                    
+                      
+						 <div id="resourceName">Jim Dine</div>
+					 
+                 </div>
+                
+                
+        	</div>
+            
+    	</div>
+ 
+   </div>
+<script src="../js/countriesData.js"></script>
+
+<script type="text/javascript">
+	//preloaded json from the server
+
+	var dataSameAs = [
+  {
+    "uri": "http://wikidata.dbpedia.org/resource/Q531234",
+    "numDuplicates": "37",
+    "duplicates": [
+      "http://dbpedia.org/resource/Jim_Dine",
+      "http://bnb.data.bl.uk/id/person/DineJim1935-",
+      "http://ca.dbpedia.org/resource/Jim_Dine",
+      "http://d-nb.info/gnd/118679546",
+      "http://d-nb.info/gnd/118679546/about/rdf",
+      "http://data.bibsys.no/data/notrbib/authorityentry/x98020248",
+      "http://dbpedialite.org/things/378325#id",
+      "http://de.dbpedia.org/resource/Jim_Dine",
+      "http://es.dbpedia.org/resource/Jim_Dine",
+      "http://et.dbpedia.org/resource/Jim_Dine",
+      "http://eu.dbpedia.org/resource/Jim_Dine",
+      "http://fr.dbpedia.org/resource/Jim_Dine",
+      "http://freebase.com//m/0218gc",
+      "http://hr.dbpedia.org/resource/Jim_Dine",
+      "http://id.loc.gov/authorities/names/n80040132",
+      "http://id.ndl.go.jp/auth/ndla/00543531",
+      "http://it.dbpedia.org/resource/Jim_Dine",
+      "http://ja.dbpedia.org/resource/\u30B8\u30E0\u30FB\u30C0\u30A4\u30F3",
+      "http://libris.kb.se/resource/auth/307164",
+      "http://mpii.de/yago/resource/Jim_Dine",
+      "http://nl.dbpedia.org/resource/Jim_Dine",
+      "http://rdf.freebase.com/ns/m.0218gc",
+      "http://rdf.freebase.com/ns/en.jim_dine",
+      "http://rdf.freebase.com/ns/guid.9202a8c04000641f800000000020a1cb",
+      "http://ru.dbpedia.org/resource/\u0414\u0430\u0439\u043D,_\u0414\u0436\u0438\u043C",
+      "http://sv.dbpedia.org/resource/Jim_Dine",
+      "http://sw.cyc.com/concept/Mx4rwBrqCJwpEbGdrcN5Y29ycA",
+      "http://sw.opencyc.org/concept/Mx4rwBrqCJwpEbGdrcN5Y29ycA",
+      "http://sw.opencyc.org/2008/06/10/concept/en/JimDine_TheArtist",
+      "http://sw.opencyc.org/2008/06/10/concept/Mx4rwBrqCJwpEbGdrcN5Y29ycA",
+      "http://umbel.org/umbel/ne/wikipedia/Jim_Dine",
+      "http://viaf.org/viaf/61562057",
+      "http://viaf.org/viaf/84977203",
+      "http://viaf.org/viaf/95857496",
+      "http://wikidata.dbpedia.org/resource/Q531234",
+      "http://www.wikidata.org/entity/Q531234",
+      "http://yago-knowledge.org/resource/Jim_Dine"
+    ]
+  }
+]
+;
+	var dataDbpedia = {
+  "http://en.wikipedia.org/wiki/Jim_Dine" : { "http://xmlns.com/foaf/0.1/primaryTopic" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Jim_Dine" } ] } ,
+  "http://dbpedia.org/resource/Tatyana_Grosman" : { "http://dbpedia.org/ontology/influenced" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Jim_Dine" } ] } ,
+  "http://dbpedia.org/resource/Dine" : { "http://dbpedia.org/ontology/wikiPageDisambiguates" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Jim_Dine" } ] } ,
+  "http://dbpedia.org/resource/Jim_Dine" : { "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Artist109812338" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Alumnus109786338" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Intellectual109621545" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/PhysicalEntity100001930" } ,
+      { "type" : "uri", "value" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Creator109614315" } ,
+      { "type" : "uri", "value" : "http://www.wikidata.org/entity/Q215627" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/YagoLegalActor" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/ontology/Agent" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/YagoLegalActorGeo" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Person100007846" } ,
+      { "type" : "uri", "value" : "http://www.wikidata.org/entity/Q24229398" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Object100002684" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/PrizeWinner109627807" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatArtistsFromCincinnati,Ohio" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Printmaker110475687" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Wikicat21st-centuryAmericanPainters" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Wikicat20th-centuryAmericanPainters" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatJewishPainters" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatJewishAmericanArtists" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatAmericanPrintmakers" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatOhioUniversityAlumni" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Sculptor110566072" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatPeopleFromCincinnati,Ohio" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatAmericanSculptors" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatLivingPeople" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatRomePrizeWinners" } ,
+      { "type" : "uri", "value" : "http://www.w3.org/2002/07/owl#Thing" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Painter110391653" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatAmericanPainters" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/ontology/Artist" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Gambler110118844" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Whole100003553" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/LivingThing100004258" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/CausalAgent100007347" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Winner110782791" } ,
+      { "type" : "uri", "value" : "http://schema.org/Person" } ,
+      { "type" : "uri", "value" : "http://www.wikidata.org/entity/Q5" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Organism100004475" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/ontology/Person" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatModernPainters" } ,
+      { "type" : "uri", "value" : "http://xmlns.com/foaf/0.1/Person" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Scholar110557854" } ,
+      { "type" : "uri", "value" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#NaturalPerson" } ,
+      { "type" : "uri", "value" : "http://www.wikidata.org/entity/Q483501" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatAmericanPopArtists" } ] ,
+    "http://www.w3.org/2000/01/rdf-schema#label" : [ { "type" : "literal", "value" : "Jim Dine" , "lang" : "en" } ,
+      { "type" : "literal", "value" : "Jim Dine" , "lang" : "pt" } ,
+      { "type" : "literal", "value" : "\u30B8\u30E0\u30FB\u30C0\u30A4\u30F3" , "lang" : "ja" } ,
+      { "type" : "literal", "value" : "Jim Dine" , "lang" : "de" } ,
+      { "type" : "literal", "value" : "Jim Dine" , "lang" : "fr" } ,
+      { "type" : "literal", "value" : "Jim Dine" , "lang" : "nl" } ,
+      { "type" : "literal", "value" : "Jim Dine" , "lang" : "es" } ,
+      { "type" : "literal", "value" : "Jim Dine" , "lang" : "it" } ,
+      { "type" : "literal", "value" : "\u0414\u0430\u0439\u043D, \u0414\u0436\u0438\u043C" , "lang" : "ru" } ] ,
+    "http://www.w3.org/2000/01/rdf-schema#comment" : [ { "type" : "literal", "value" : "Jim Dine (James Dine, Cincinnati, 16 de junio de 1935) es un pintor estadounidense. Su primer contacto con el arte lo constituyeron las visitas realizadas al museo de su ciudad. Tras la muerte de su madre, y cuando viv\u00EDa con sus abuelos maternos, el joven Jim se inscribi\u00F3 en las clases nocturnas de la Yeison Art Academy." , "lang" : "es" } ,
+      { "type" : "literal", "value" : "Jim Dine (* 16. Juni 1935 in Cincinnati, Ohio) ist ein US-amerikanischer K\u00FCnstler und ein Hauptvertreter der Pop Art." , "lang" : "de" } ,
+      { "type" : "literal", "value" : "\u0414\u0436\u0438\u043C \u0414\u0430\u0439\u043D (\u0430\u043D\u0433\u043B. Jim Dine; 1935, \u0426\u0438\u043D\u0446\u0438\u043D\u043D\u0430\u0442\u0438, \u0448\u0442\u0430\u0442 \u041E\u0433\u0430\u0439\u043E) \u2014 \u0430\u043C\u0435\u0440\u0438\u043A\u0430\u043D\u0441\u043A\u0438\u0439 \u0441\u043E\u0432\u0440\u0435\u043C\u0435\u043D\u043D\u044B\u0439 \u0445\u0443\u0434\u043E\u0436\u043D\u0438\u043A, \u043E\u0434\u0438\u043D \u0438\u0437 \u0441\u043E\u0437\u0434\u0430\u0442\u0435\u043B\u0435\u0439 \u043F\u043E\u043F-\u0430\u0440\u0442\u0430." , "lang" : "ru" } ,
+      { "type" : "literal", "value" : "I suoi lavori sono stati esposti anche a dOCUMENTA Kassel e alla Biennale di Venezia. Oltre a pittura e scenografia, si occupa di scultura, fotografia, scrive e concepisce degli happening." , "lang" : "it" } ,
+      { "type" : "literal", "value" : "Jim Dine (born June 16, 1935) is an American pop artist. He is sometimes considered to be a part of the Neo-Dada movement." , "lang" : "en" } ,
+      { "type" : "literal", "value" : "\u30B8\u30E0\u30FB\u30C0\u30A4\u30F3\uFF08Jim Dine, 1935\u5E746\u670816\u65E5 - \uFF09\u306F\u3001\u30A2\u30E1\u30EA\u30AB\u5408\u8846\u56FD\u306E\u30DD\u30C3\u30D7\u30A2\u30FC\u30C8\u7F8E\u8853\u5BB6\u3002\u30CD\u30AA\u30C0\u30C0\u904B\u52D5\u306E1\u4EBA\u3068\u898B\u306A\u3055\u308C\u308B\u3053\u3068\u3082\u3042\u308B\u3002" , "lang" : "ja" } ,
+      { "type" : "literal", "value" : "Jim Dine, n\u00E9 le 16 juin 1935 \u00E0 Cincinnati dans l'Ohio, est un artiste am\u00E9ricain, repr\u00E9sentant du pop art, bien qu'il se consid\u00E8re comme li\u00E9 \u00E0 tort \u00E0 ce mouvement. Peintre, sculpteur, illustrateur et po\u00E8te, on le consid\u00E8re parfois comme faisant partie du mouvement Neo-Dada." , "lang" : "fr" } ,
+      { "type" : "literal", "value" : "James Lewis (Jim) Dine (Cincinnati, 16 juni 1935) is een Amerikaans beeldhouwer en popartkunstenaar." , "lang" : "nl" } ,
+      { "type" : "literal", "value" : "Jim Dine (16 de junho de 1935) \u00E9 um artista pop norte-americano. Ele \u00E9 por vezes considerado parte do movimento neodada\u00EDsta." , "lang" : "pt" } ] ,
+    "http://www.w3.org/2002/07/owl#sameAs" : [ { "type" : "uri", "value" : "http://wikidata.dbpedia.org/resource/Q531234" } ,
+      { "type" : "uri", "value" : "http://sw.cyc.com/concept/Mx4rwBrqCJwpEbGdrcN5Y29ycA" } ,
+      { "type" : "uri", "value" : "http://pt.dbpedia.org/resource/Jim_Dine" } ,
+      { "type" : "uri", "value" : "http://ja.dbpedia.org/resource/\u30B8\u30E0\u30FB\u30C0\u30A4\u30F3" } ,
+      { "type" : "uri", "value" : "http://www.wikidata.org/entity/Q531234" } ,
+      { "type" : "uri", "value" : "http://es.dbpedia.org/resource/Jim_Dine" } ,
+      { "type" : "uri", "value" : "http://nl.dbpedia.org/resource/Jim_Dine" } ,
+      { "type" : "uri", "value" : "http://viaf.org/viaf/61562057" } ,
+      { "type" : "uri", "value" : "http://d-nb.info/gnd/118679546" } ,
+      { "type" : "uri", "value" : "http://data.europa.eu/euodp/jrc-names/Jim_Dine" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Jim_Dine" } ,
+      { "type" : "uri", "value" : "http://yago-knowledge.org/resource/Jim_Dine" } ,
+      { "type" : "uri", "value" : "http://eu.dbpedia.org/resource/Jim_Dine" } ,
+      { "type" : "uri", "value" : "http://de.dbpedia.org/resource/Jim_Dine" } ,
+      { "type" : "uri", "value" : "http://it.dbpedia.org/resource/Jim_Dine" } ,
+      { "type" : "uri", "value" : "http://rdf.freebase.com/ns/m.0218gc" } ,
+      { "type" : "uri", "value" : "http://fr.dbpedia.org/resource/Jim_Dine" } ] ,
+    "http://purl.org/dc/terms/subject" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Modern_painters" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:20th-century_American_painters" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Ohio_University_alumni" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:21st-century_American_painters" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:20th-century_American_sculptors" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Members_of_the_Academy_of_the_Arts,_Berlin" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:American_male_painters" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Artists_from_Cincinnati" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:University_of_Cincinnati_alumni" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Neo-Dada" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Rome_Prize_winners" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:American_male_sculptors" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:1935_births" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Members_of_the_American_Academy_of_Arts_and_Letters" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:20th-century_American_printmakers" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:American_pop_artists" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Jewish_American_artists" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Jewish_painters" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Living_people" } ] ,
+    "http://xmlns.com/foaf/0.1/name" : [ { "type" : "literal", "value" : "Jim Dine" , "lang" : "en" } ] ,
+    "http://xmlns.com/foaf/0.1/depiction" : [ { "type" : "uri", "value" : "http://commons.wikimedia.org/wiki/Special:FilePath/2008-05-16-Boras-Sweden-Jim-Dine-Pinocchio-Photo-by-David-Thast.-Diform.jpg" } ] ,
+    "http://purl.org/dc/terms/description" : [ { "type" : "literal", "value" : "American artist" , "lang" : "en" } ] ,
+    "http://xmlns.com/foaf/0.1/givenName" : [ { "type" : "literal", "value" : "Jim" , "lang" : "en" } ] ,
+    "http://xmlns.com/foaf/0.1/gender" : [ { "type" : "literal", "value" : "male" , "lang" : "en" } ] ,
+    "http://xmlns.com/foaf/0.1/isPrimaryTopicOf" : [ { "type" : "uri", "value" : "http://en.wikipedia.org/wiki/Jim_Dine" } ] ,
+    "http://xmlns.com/foaf/0.1/surname" : [ { "type" : "literal", "value" : "Dine" , "lang" : "en" } ] ,
+    "http://dbpedia.org/ontology/field" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Painting" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Sculpture" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Printmaking" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Drawing" } ] ,
+    "http://dbpedia.org/ontology/movement" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Neo-Dada" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Pop_Art" } ] ,
+    "http://dbpedia.org/ontology/training" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/University_of_Cincinnati" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Ohio_University" } ] ,
+    "http://dbpedia.org/property/imagesize" : [ { "type" : "literal", "value" : 300 , "datatype" : "http://www.w3.org/2001/XMLSchema#integer" } ] ,
+    "http://www.w3.org/ns/prov#wasDerivedFrom" : [ { "type" : "uri", "value" : "http://en.wikipedia.org/wiki/Jim_Dine?oldid=744310387" } ] ,
+    "http://dbpedia.org/ontology/birthName" : [ { "type" : "literal", "value" : "Jim Dine" , "lang" : "en" } ] ,
+    "http://dbpedia.org/ontology/wikiPageExternalLink" : [ { "type" : "uri", "value" : "http://www.richardgraygallery.com" } ,
+      { "type" : "uri", "value" : "https://web.archive.org/web/20130401200538/http:/www.nga.gov/past/data/exh825.shtm" } ,
+      { "type" : "uri", "value" : "http://www.nga.gov/exhibitions/2004/dine/dine_ss.shtm" } ,
+      { "type" : "uri", "value" : "http://www.artcyclopedia.com/artists/dine_jim.html" } ] ,
+    "http://dbpedia.org/property/caption" : [ { "type" : "literal", "value" : "Walking to Bor\u00E5s ," , "datatype" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString" } ,
+      { "type" : "literal", "value" : "--05-16" , "datatype" : "http://www.w3.org/2001/XMLSchema#gMonthDay" } ,
+      { "type" : "literal", "value" : "Jim Dine, surrounded by photographers," , "datatype" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString" } ,
+      { "type" : "literal", "value" : "at the inauguration of his work" , "datatype" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString" } ] ,
+    "http://dbpedia.org/ontology/abstract" : [ { "type" : "literal", "value" : "Jim Dine (* 16. Juni 1935 in Cincinnati, Ohio) ist ein US-amerikanischer K\u00FCnstler und ein Hauptvertreter der Pop Art." , "lang" : "de" } ,
+      { "type" : "literal", "value" : "Jim Dine (born June 16, 1935) is an American pop artist. He is sometimes considered to be a part of the Neo-Dada movement." , "lang" : "en" } ,
+      { "type" : "literal", "value" : "I suoi lavori sono stati esposti anche a dOCUMENTA Kassel e alla Biennale di Venezia. Oltre a pittura e scenografia, si occupa di scultura, fotografia, scrive e concepisce degli happening." , "lang" : "it" } ,
+      { "type" : "literal", "value" : "James Lewis (Jim) Dine (Cincinnati, 16 juni 1935) is een Amerikaans beeldhouwer en popartkunstenaar." , "lang" : "nl" } ,
+      { "type" : "literal", "value" : "Jim Dine (16 de junho de 1935) \u00E9 um artista pop norte-americano. Ele \u00E9 por vezes considerado parte do movimento neodada\u00EDsta." , "lang" : "pt" } ,
+      { "type" : "literal", "value" : "Jim Dine (James Dine, Cincinnati, 16 de junio de 1935) es un pintor estadounidense. Su primer contacto con el arte lo constituyeron las visitas realizadas al museo de su ciudad. Tras la muerte de su madre, y cuando viv\u00EDa con sus abuelos maternos, el joven Jim se inscribi\u00F3 en las clases nocturnas de la Yeison Art Academy. Posteriormente ampli\u00F3 sus estudios en la Universidad de Ohio, gradu\u00E1ndose en Bellas Artes en 1957. Establecido en Nueva York se puede considerar a Dine como el padre del happening, organizando en 1959 la representaci\u00F3n de El obrero sonriente, a la que pronto siguieron otras. Pronto alcanz\u00F3 importancia dentro del incipiente movimiento pop, aunque \u00E9l nunca lleg\u00F3 a sentirse integrado plenamente en esa catalogaci\u00F3n." , "lang" : "es" } ,
+      { "type" : "literal", "value" : "Jim Dine, n\u00E9 le 16 juin 1935 \u00E0 Cincinnati dans l'Ohio, est un artiste am\u00E9ricain, repr\u00E9sentant du pop art, bien qu'il se consid\u00E8re comme li\u00E9 \u00E0 tort \u00E0 ce mouvement. Peintre, sculpteur, illustrateur et po\u00E8te, on le consid\u00E8re parfois comme faisant partie du mouvement Neo-Dada." , "lang" : "fr" } ,
+      { "type" : "literal", "value" : "\u0414\u0436\u0438\u043C \u0414\u0430\u0439\u043D (\u0430\u043D\u0433\u043B. Jim Dine; 1935, \u0426\u0438\u043D\u0446\u0438\u043D\u043D\u0430\u0442\u0438, \u0448\u0442\u0430\u0442 \u041E\u0433\u0430\u0439\u043E) \u2014 \u0430\u043C\u0435\u0440\u0438\u043A\u0430\u043D\u0441\u043A\u0438\u0439 \u0441\u043E\u0432\u0440\u0435\u043C\u0435\u043D\u043D\u044B\u0439 \u0445\u0443\u0434\u043E\u0436\u043D\u0438\u043A, \u043E\u0434\u0438\u043D \u0438\u0437 \u0441\u043E\u0437\u0434\u0430\u0442\u0435\u043B\u0435\u0439 \u043F\u043E\u043F-\u0430\u0440\u0442\u0430." , "lang" : "ru" } ,
+      { "type" : "literal", "value" : "\u30B8\u30E0\u30FB\u30C0\u30A4\u30F3\uFF08Jim Dine, 1935\u5E746\u670816\u65E5 - \uFF09\u306F\u3001\u30A2\u30E1\u30EA\u30AB\u5408\u8846\u56FD\u306E\u30DD\u30C3\u30D7\u30A2\u30FC\u30C8\u7F8E\u8853\u5BB6\u3002\u30CD\u30AA\u30C0\u30C0\u904B\u52D5\u306E1\u4EBA\u3068\u898B\u306A\u3055\u308C\u308B\u3053\u3068\u3082\u3042\u308B\u3002" , "lang" : "ja" } ] ,
+    "http://dbpedia.org/ontology/thumbnail" : [ { "type" : "uri", "value" : "http://commons.wikimedia.org/wiki/Special:FilePath/2008-05-16-Boras-Sweden-Jim-Dine-Pinocchio-Photo-by-David-Thast.-Diform.jpg?width=300" } ] ,
+    "http://dbpedia.org/ontology/birthDate" : [ { "type" : "literal", "value" : "1935-6-16" , "datatype" : "http://www.w3.org/2001/XMLSchema#date" } ,
+      { "type" : "literal", "value" : "1935-06-16" , "datatype" : "http://www.w3.org/2001/XMLSchema#date" } ] ,
+    "http://dbpedia.org/ontology/wikiPageRevisionID" : [ { "type" : "literal", "value" : 744310387 , "datatype" : "http://www.w3.org/2001/XMLSchema#integer" } ] ,
+    "http://dbpedia.org/ontology/birthPlace" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Cincinnati,_Ohio" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Cincinnati" } ] ,
+    "http://dbpedia.org/ontology/wikiPageID" : [ { "type" : "literal", "value" : 378325 , "datatype" : "http://www.w3.org/2001/XMLSchema#integer" } ] ,
+    "http://purl.org/linguistics/gold/hypernym" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Artist" } ] ,
+    "http://dbpedia.org/property/nationality" : [ { "type" : "literal", "value" : "American" , "datatype" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString" } ] ,
+    "http://dbpedia.org/property/bgcolour" : [ { "type" : "literal", "value" : "#6495ED" , "datatype" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString" } ] }
+}
+;
+	var dataAuth = "http://dbpedia.org/resource/Jim_Dine";
+	var dataUrl = "jim_dine.html";
+	var dataResourceType = "participant";
+	var dataName = "Jim Dine";
+ 	
+</script>
+
+
+
+
+
+<script type="text/javascript">
+
+
+	
+	
+	
+
+	$(document).ready(function($) {
+		
+		
+		padb.resource.initialize();
+			 
+		$( '.scrollable' ).
+		bind( 'mousewheel DOMMouseScroll', function ( e ) {
+			
+			if( e.originalEvent ) e = e.originalEvent;
+			
+			var delta = e.wheelDelta || -e.detail;
+			this.scrollTop += ( delta < 0 ? 1 : -1 ) * 30;
+			e.preventDefault();
+		});		 
+		
+		
+				
+		$.ajaxSetup ({
+			// Disable caching of AJAX responses
+			cache: false
+		});		
+		
+	});
+	
+
+	
+	
+	
+	
+	
+</script>
+
+
+
+
+ 
+<br />
+<div class="container"  style="position:relative;">
+	   
+      <div id="resourceLinks"></div> 
+       
+       
+       
+       
+              
+       
+           
+           
+           
+          <div class="row addSection">
+              <div class="span1 addSectionIconHolder">
+              
+                <i class="icon-user"></i>
+              
+              </div>
+          
+              <div class="span11">
+                <span>Performer</span>
+                <hr>
+                <br />
+              </div>
+        </div>
+        <div class="row">
+            <div class="span1">
+            </div>
+            <div class="span11" style="position:relative">
+                
+                
+                
+                
+               <div>
+                                       <div class="pull-right vignette">
+                            <img  src="../cache/media/jim_dine.jpg" />
+                            
+                        </div>
+                        
+                                           
+                <div class="pull-left" style="width:80%;">
+                     
+                     <h5 id="resourceLDName">Jim Dine</h5>
+                     <h5 id="resourceLDAbstract"></h5>
+                     
+                     
+                     <div id="resourceSameAs">
+                        <h5>External Data:</h5>
+                        
+                        
+                     </div>
+                
+                </div>   
+                
+                <br style="clear:both;" />
+            </div>
+            
+            
+                
+            </div>
+        </div>    
+         
+    
+    
+    
+    
+    
+    
+       <div class="row addSection">
+			<div class="span1 addSectionIconHolder">              
+                <i class="icon-asterisk"></i>
+              
+              </div>
+          
+              <div class="span11">
+                <span>Events </span><span id="resourceEventCount"></span>
+                <hr>
+              </div>
+        </div>
+    
+    
+    
+    
+    
+    
+    
+        <div class="row">
+            <div class="span1"></div>
+            <div class="span11" style="position:relative">
+                  
+                 <div class="">
+                    <div id="resourceEventsEvents" class="scrollable">
+                           <table class="table table-condensed table-hover table-striped">
+                               <thead>
+                                <tr>
+                                  <th>Date</th>
+                                  
+                                  <th>Title</th>
+                                  <th>Location</th>
+                                  <th></th>
+                                </tr>
+                              </thead>
+                              <tbody id="resourceEventsEventsRows"> 
+                              </tbody>
+                            </table>
+                     
+                    </div>
+                    
+                    <div id="resourceEventsExport">
+                    
+                    	<input  name="resourceEventsSearch" class="span3" id="resourceEventsSearch"  type="text" placeholder="Filter: names, places, dates">
+                    	<button class="btn btn-mini btn-danger" id="resourceEventsClearFilter"><i class="icon-remove">&nbsp;Clear Filter</i></button>
+                   		<button class="btn btn-mini btn-info" title="Render the currently filitered data as a network" id="resourceRenderEventNetwork"> <img src="../img/icon-network-white.png" style="height:15px; width:auto" /> Two-Mode Event Network</button>
+                   		<button class="btn btn-mini btn-info" title="Render the currently filitered data as a network" id="resourceRenderEventMap"> <i class="icon-globe"></i> Map Event Locations</button>
+                   		<button class="btn btn-mini btn-success" title="Download network as Gephi File" id="resourceDownloadEventGephi"> <img src="../img/icon-gephi.png" style="height:15px; width:auto" /> Donwload Gephi Network</button>
+
+                 
+                    </div>                 
+                </div>
+                <br style="clear:both;" />
+            </div>
+            
+            
+                
+         </div>    
+    
+     
+       <div class="row addSection">
+              <div class="span1">
+              
+                <img src="../img/social-network.png" style=" margin-left:25px; margin-bottom:10px;" />
+              
+              </div>
+          
+              <div class="span11">
+                <span>Performance Network</span> 
+                <hr>
+              </div>
+        </div>
+        
+        <div class="row">
+            <div class="span1">
+            </div>
+            <div class="span11" style="position:relative">
+                
+               	<div style="width: 100%; height:500px;" id="egoNetwork">
+            
+                
+             	</div> 
+                <div class="well pull-left well-small" id="egoNetworkControls">
+                    <span class="rangeLabels">Node Charge</span>
+                    <input type="range" id="resourceEgoNetworkCharge" min="-1000" max="100" value="-120" data-def="-700" />
+                    <br /><span class="rangeLabels">Gravity</span>
+                    <input type="range" id="resourceEgoNetworkGravity" min="0" max="1" value="0.1" step="0.01" data-def="0.3" /> 
+                    <br /><span class="rangeLabels">Edge Length</span>
+                    <input type="range" id="resourceEgoNetworkDistance" min="0" max="300" value="50" data-def="50"  />      
+                    <br /><span class="rangeLabels">Edge Strength</span>
+                    <input type="range" id="resourceEgoNetworkStrength" min="0" max="3" value="1" data-def="0.15" step="0.1"  /> 
+                    <br /><br />
+                    <button type="button" id="resourceEgoNetworkLabelsButton" class="btn btn-mini" title="Show node labels." data-toggle="button">Show Labels</button>  
+                    <button type="button" id="resourceEgoNetworkLiveButton" class="btn btn-mini" title="Show realtime network rendering" data-toggle="button">Live Rendering</button>                     
+                </div>
+                
+                <div class="well pull-left well-small egoNetworkControls span7" style="margin-left:20px;" >
+                
+                	<input  name="resourceEgoNetworkSearch" class="span3" id="resourceEgoNetworkSearch"  type="text" placeholder="Filter: names, places, dates">
+					<button class="btn btn-mini btn-danger" id="resourceEgoClearFilter"><i class="icon-remove">&nbsp;Clear Filter</i></button>
+                    <button class="btn btn-mini btn-success" title="Download network as Gephi File" id="resourceDownloadEgoGephi"> <img src="../img/icon-gephi.png" style="height:15px; width:auto" /> Donwload Gephi Network</button>
+
+                </div>
+                
+            </div>
+        </div>           
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+	
+
+	
+
+
+	
+
+
+</div>
+
+
+
+
+    <div id="resourceEventNetworkModal" class="modal container hide fade" style="min-height:500px" tabindex="-1">
+ 
+      <div class="modal-body">
+      	
+        <div id="eventNetwork" style="height:400px; width:100%">
+        
+        </div>
+      
+      </div>
+      <div class="modal-footer" style="height:20px;">
+      	
+        <div class="well pull-left well-small">
+        	<span class="rangeLabels">Node Charge</span>
+        	<input type="range" id="resourceEventNetworkCharge" min="-800" max="200" value="-120" data-def="-120" />
+            <span class="rangeLabels">Gravity</span>
+        	<input type="range" id="resourceEventNetworkGravity" min="0" max="1" value="0.1" step="0.01" data-def="0.1" /> 
+            <span class="rangeLabels">Edge Length</span>
+        	<input type="range" id="resourceEventNetworkDistance" min="0" max="300" value="50" data-def="50"  />      
+            <span class="rangeLabels">Edge Strength</span>
+        	<input type="range" id="resourceEventNetworkStrength" min="0" max="5" value="1" data-def="1" step="0.1"  />    
+            <button type="button" id="resourceEventNetworkLabelsButton" class="btn btn-mini" data-toggle="button">Show Labels</button>                     
+		</div>
+        <div class="pull-right">
+        <button type="button" data-dismiss="modal" class="btn">Close</button>
+       	</div>
+       </div>
+    </div>
+    
+    
+    
+    
+     <div id="resourceEventMapModal" class="modal container hide fade" style="min-height:500px" tabindex="-1">
+ 
+      <div class="modal-body">
+      	
+        <div id="eventMap" style="height:400px; width:100%">
+        
+        </div>
+      
+      </div>
+      <div class="modal-footer" style="height:20px;">
+      	
+        <div class="well pull-left well-small">                  
+		</div>
+        <div class="pull-right">
+        <button type="button" data-dismiss="modal" class="btn">Close</button>
+       	</div>
+       </div>
+    </div>
+
+<br /><br /><br /><br /><br /><br />
+
+<script type="text/javascript">    var _gaq = _gaq || [];   _gaq.push(['_setAccount', 'UA-10371295-7']);   _gaq.push(['_trackPageview']);    (function() {     var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);   })();  </script>
+
+</body>
+
+<!-- Mirrored from padb.net/resource/jim_dine by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 11 Jan 2020 22:18:27 GMT -->
+</html>

@@ -1,0 +1,460 @@
+<!doctype html>
+<html>
+
+<!-- Mirrored from padb.net/resource/jacqueline_de_jong by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 11 Jan 2020 22:22:30 GMT -->
+<head>
+<meta charset="UTF-8">
+<title>padb.net</title>
+
+
+<link rel="stylesheet" href="../css/bootstrap.css">
+<link rel="stylesheet" href="../css/font-awesome.css">
+<link rel="stylesheet" href="../css/site.css">
+<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+<link rel="icon" type="image/png" href="../img/favicon.png">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/bootstrap-modal.js"></script>
+<script src="../js/bootstrap-modalmanager.js"></script>
+
+<script src="../js/d3.min.js"></script>
+<script src="../js/html5slider.js"></script>
+<script src="../js/topojson.js"></script>
+<script src="../js/padb.js"></script>
+
+
+</head>
+<body>
+    
+    
+	<div style="position:relative;">        
+
+ 		<div style=" border-bottom:solid 1px #ccc;">
+        	<div class="container">
+                
+                 <div id="header">
+                 	
+                     <div class="logo"><a href="../index.html"><span>|||</span>padb</a> </div>
+                    
+                     						<div id="resourceName" style="font-size:2em">Jacqueline de Jong</div>
+					
+                 </div>
+                
+                
+        	</div>
+            
+    	</div>
+ 
+   </div>
+<script src="../js/countriesData.js"></script>
+
+<script type="text/javascript">
+	//preloaded json from the server
+
+	var dataSameAs = [
+  {
+    "uri": "http://wikidata.dbpedia.org/resource/Q543582",
+    "numDuplicates": "17",
+    "duplicates": [
+      "http://dbpedia.org/resource/Jacqueline_de_Jong",
+      "http://d-nb.info/gnd/119048108",
+      "http://d-nb.info/gnd/119048108/about/rdf",
+      "http://dbpedialite.org/things/262847#id",
+      "http://de.dbpedia.org/resource/Jacqueline_de_Jong",
+      "http://freebase.com//m/01m_t0",
+      "http://it.dbpedia.org/resource/Jacqueline_de_Jong",
+      "http://mpii.de/yago/resource/Jacqueline_de_Jong",
+      "http://rdf.freebase.com/ns/m.01m_t0",
+      "http://rdf.freebase.com/ns/en.jacqueline_de_jong",
+      "http://rdf.freebase.com/ns/guid.9202a8c04000641f800000000019ff20",
+      "http://umbel.org/umbel/ne/wikipedia/Jacqueline_de_Jong",
+      "http://viaf.org/viaf/71530934",
+      "http://viaf.org/viaf/79140336",
+      "http://wikidata.dbpedia.org/resource/Q543582",
+      "http://www.wikidata.org/entity/Q543582",
+      "http://yago-knowledge.org/resource/Jacqueline_de_Jong"
+    ]
+  }
+]
+;
+	var dataDbpedia = {
+  "http://dbpedia.org/resource/De_Jong" : { "http://dbpedia.org/ontology/wikiPageDisambiguates" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Jacqueline_de_Jong" } ] } ,
+  "http://en.wikipedia.org/wiki/Jacqueline_de_Jong" : { "http://xmlns.com/foaf/0.1/primaryTopic" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Jacqueline_de_Jong" } ] } ,
+  "http://dbpedia.org/resource/Jacqueline_de_Jong" : { "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Whole100003553" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/LivingThing100004258" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Organism100004475" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/ontology/Person" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatWomenPainters" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatDutchPainters" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Painter110391653" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatArtistsFromAmsterdam" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatDutchActivists" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Reformer110515194" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/PhysicalEntity100001930" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Woman110787470" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatDutchPeople" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Adult109605289" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatLivingPeople" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Person100007846" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Object100002684" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Artist109812338" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/YagoLegalActor" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/YagoLegalActorGeo" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Female109619168" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Creator109614315" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Disputant109615465" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Militant110315837" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatWomen" } ,
+      { "type" : "uri", "value" : "http://www.w3.org/2002/07/owl#Thing" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatPeopleFromHengelo" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/CausalAgent100007347" } ] ,
+    "http://www.w3.org/2000/01/rdf-schema#label" : [ { "type" : "literal", "value" : "Jacqueline de Jong" , "lang" : "de" } ,
+      { "type" : "literal", "value" : "Jacqueline de Jong" , "lang" : "en" } ,
+      { "type" : "literal", "value" : "Jacqueline de Jong" , "lang" : "it" } ] ,
+    "http://www.w3.org/2000/01/rdf-schema#comment" : [ { "type" : "literal", "value" : "Jacqueline de Jong (* 1939 in Hengelo, Niederlande) ist eine niederl\u00E4ndische Malerin, Bildhauerin und Graphikerin. Sie war Tochter eines j\u00FCdischen Elternhauses. Auf Grund der deutschen Invasion im Zweiten Weltkrieg musste die Familie sich vor den Nazis verstecken. Jacqueline de Jong und ihre Mutter versuchten, in Begleitung des niederl\u00E4ndischen Malers Max van Dam in die Schweiz zu fliehen, wurden aber an der Grenze von franz\u00F6sischer Polizei aufgegriffen, sie sollten deportiert werden und wurden gerade noch rechtzeitig von der R\u00E9sistance befreit." , "lang" : "de" } ,
+      { "type" : "literal", "value" : "Jacqueline de Jong (born 1939) is a Dutch painter, sculptor and graphic artist. She was born in the Dutch town of Hengelo to Jewish parents. Faced with the German invasion, they went into hiding. After an abortive escape attempt to England, her father Hans remained in Amsterdam while her mother and she made for Switzerland, accompanied by the Dutch painter Max van Dam. At the border they were captured by the French police, but just as they were about to be deported to the Drancy deportation camp, they were rescued by the resistance, who helped them over the border. When they returned to the Netherlands following the war, Jacqueline could not speak Dutch. From 1947 on she went to school in Hengelo and Enschede (Gemeentelijk Lyceum)." , "lang" : "en" } ] ,
+    "http://www.w3.org/2002/07/owl#sameAs" : [ { "type" : "uri", "value" : "http://yago-knowledge.org/resource/Jacqueline_de_Jong" } ,
+      { "type" : "uri", "value" : "http://wikidata.dbpedia.org/resource/Q543582" } ,
+      { "type" : "uri", "value" : "http://www.wikidata.org/entity/Q543582" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Jacqueline_de_Jong" } ,
+      { "type" : "uri", "value" : "http://de.dbpedia.org/resource/Jacqueline_de_Jong" } ,
+      { "type" : "uri", "value" : "http://it.dbpedia.org/resource/Jacqueline_de_Jong" } ,
+      { "type" : "uri", "value" : "http://rdf.freebase.com/ns/m.01m_t0" } ,
+      { "type" : "uri", "value" : "http://d-nb.info/gnd/119048108" } ] ,
+    "http://purl.org/dc/terms/subject" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Dutch_painters" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Living_people" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Women_painters" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Artists_from_Amsterdam" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Dutch_activists" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:1939_births" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:People_from_Hengelo" } ] ,
+    "http://xmlns.com/foaf/0.1/name" : [ { "type" : "literal", "value" : "Jacqueline de Jong" , "lang" : "en" } ] ,
+    "http://xmlns.com/foaf/0.1/homepage" : [ { "type" : "uri", "value" : "http://www.jacquelinedejong.com" } ] ,
+    "http://xmlns.com/foaf/0.1/depiction" : [ { "type" : "uri", "value" : "http://commons.wikimedia.org/wiki/Special:FilePath/Jacqueline_de_Jong_(1982).jpg" } ] ,
+    "http://purl.org/dc/terms/description" : [ { "type" : "literal", "value" : "Dutch painter" , "lang" : "en" } ] ,
+    "http://xmlns.com/foaf/0.1/givenName" : [ { "type" : "literal", "value" : "Jacqueline" , "lang" : "en" } ] ,
+    "http://xmlns.com/foaf/0.1/gender" : [ { "type" : "literal", "value" : "female" , "lang" : "en" } ] ,
+    "http://xmlns.com/foaf/0.1/isPrimaryTopicOf" : [ { "type" : "uri", "value" : "http://en.wikipedia.org/wiki/Jacqueline_de_Jong" } ] ,
+    "http://xmlns.com/foaf/0.1/surname" : [ { "type" : "literal", "value" : "De Jong" , "lang" : "en" } ] ,
+    "http://www.w3.org/ns/prov#wasDerivedFrom" : [ { "type" : "uri", "value" : "http://en.wikipedia.org/wiki/Jacqueline_de_Jong?oldid=702789723" } ] ,
+    "http://dbpedia.org/ontology/wikiPageExternalLink" : [ { "type" : "uri", "value" : "http://www.jacquelinedejong.com" } ] ,
+    "http://dbpedia.org/ontology/abstract" : [ { "type" : "literal", "value" : "Jacqueline de Jong (born 1939) is a Dutch painter, sculptor and graphic artist. She was born in the Dutch town of Hengelo to Jewish parents. Faced with the German invasion, they went into hiding. After an abortive escape attempt to England, her father Hans remained in Amsterdam while her mother and she made for Switzerland, accompanied by the Dutch painter Max van Dam. At the border they were captured by the French police, but just as they were about to be deported to the Drancy deportation camp, they were rescued by the resistance, who helped them over the border. When they returned to the Netherlands following the war, Jacqueline could not speak Dutch. From 1947 on she went to school in Hengelo and Enschede (Gemeentelijk Lyceum). In 1957 she went to Paris and was employed in the boutique at Christian Dior in the meantime studying French and drama.After leaving for London spring 1958 studying drama at the Guildhall School of Music and Drama, she returned to Amsterdam September 1958-1961 and was employed by the Stedelijk Museum, the home of Modern Art there. She visited London in 1959 where she met Danish painter Asger Jorn, the founder of the CoBrA group, They became companions. He was forty-five years old, compared to her twenty years. She joined the Situationist International in 1960, and started to participate in conferences and the Central committee. After the expulsion of Constant Nieuwenhuys and his group, she became the Dutch Section of the organization. She did not accept the way the German section, also known as Gruppe SPUR, had been expelled and resigned. The cleft between the Debordists and the Second Situationist International grew, however she refused to join either faction, instead stating that people should act as situationists.Between 1962 and 1968 she edited and published the The Situationist Times involving Gaston Bachelard, Roberto Matta, Wifredo Lam and Jacques Pr\u00E9vert in this project. In 1968 she was in Paris, printing and distributing revolutionary posters. From starting her activities as a painter, sculptor and graphic artist she keeps on exhibiting all over Europe and the U.S.A. She realized wall paintings for the Amsterdam Town Hall and a separation installation for the Nederlandse Bank. In 1970 she left Asger Jorn and moved to Amsterdam with Hans Brinkman later on a gallery owner and organiser of exhibitions and international Fairs. They divorced in 1989. In 1990 she became the companion of lawyer Thomas H. Weyland (Tom 1931-2009). From 1995 Tom Weyland was on the editorial board of the International Journal of Cultural Property (de Gruyter Berlin- New York).They got married in 1998 in Airopolie (Greece). They gave several lectures on 'intellectual right, copyright, d\u00E9tournement and modification' in the Netherlands and U.K.In 1996 they bought their property in the Bourbonnais France where she has her vegetable garden and grows the potatoes which became Art (\"Potatoe language\" in 2003 van Abbe Museum Eindhoven invited by Jennifer Tee, \"Baked Potatoes\" 2006 Albisola Italy invited by Roberto Ohrt and the Golden and Platina jewellery \"Pommes de Jong\" 2008-2011. In 2003 a retrospective exhibition of her work was shown at the Cobra Museum for Contemporary Art in Amstelveen, the Netherlands and the KunstCentret Silkeborg Bad Denmark, whereas a monography was published 'Undercover in de Kunst/in Art' Edition Ludion, Belgium. Together with Tom she realized The Weyland de Jong Foundation early 2009. The main aim is to support avant-garde artists of all disciplines, architects and art-scientists having reached the age of 50 and over. Weyland died in May 2009. Lecture (Yale University, Beinecke Rare Book and Manuscript Library, May 7, 2012) and Exhibition (Moderna Museet Stockholm, February 25 - April 8, 2012) were planned and are realized 2009-2012.Her Archive was purchased by Beinecke Rare Book and Manuscript Library, Yale University USA ('The de Jong Papers') in 2011. An exhibition at the occasion on the 50th birthday of The Situationist Times (1962\u20132012) is planned in NYC at the Boo-Hooray Gallery, and at the Beinecke Library (Yale) and in Paris at Librairie Lecointre-Drouet in the year 2012." , "lang" : "en" } ,
+      { "type" : "literal", "value" : "Jacqueline de Jong (* 1939 in Hengelo, Niederlande) ist eine niederl\u00E4ndische Malerin, Bildhauerin und Graphikerin. Sie war Tochter eines j\u00FCdischen Elternhauses. Auf Grund der deutschen Invasion im Zweiten Weltkrieg musste die Familie sich vor den Nazis verstecken. Jacqueline de Jong und ihre Mutter versuchten, in Begleitung des niederl\u00E4ndischen Malers Max van Dam in die Schweiz zu fliehen, wurden aber an der Grenze von franz\u00F6sischer Polizei aufgegriffen, sie sollten deportiert werden und wurden gerade noch rechtzeitig von der R\u00E9sistance befreit. 1957 ging sie nach Paris, arbeitete zun\u00E4chst bei Dior, studierte Franz\u00F6sisch und besuchte eine Schauspielschule. 1958 ging sie nach London, wo sie an der Guildhall School of Music and Drama studierte. Nach ihrer R\u00FCckkehr nach Amsterdam arbeitete sie bis 1961 im Amsterdamer Stedelijk Museum. In Paris und London kam sie in Kontakt mit dem Maler Asger Jorn, dessen Lebensgesellin sie nach einigen Jahren wurde. Durch Jorn und andere bekam sie Kontakt zu den Situationisten, und schloss sich 1960 dieser Gruppe als Mitglied an, sie nahm an den Konferenzen teil und arbeitete im Zentral-Komitee mit. Nach dem Ausschluss von Constant Nieuwenhuys und seiner Gruppe wurde sie mit der niederl\u00E4ndischen Sektion der Situationisten betraut. Sie akzeptierte jedoch nicht, wie die deutsche Gruppe, bekannt als Spur, behandelt wurde, und zog sich zur\u00FCck. Als die Kluft zwischen den Debordisten und der Zweiten Situationistischen Internationalen wuchs, weigerte sie sich, sich einer der Fraktionen anzuschlie\u00DFen und vertrat stattdessen die Position, das man als Situationist handeln solle. Von 1962 bis 1968 gab sie die Situationist Times heraus, an der auch Gaston Bachelard, Roberto Matta, Wifredo Lam und Jacques Pr\u00E9vert mitarbeiteten. Bei den Mai-Unruhen 1968 druckte sie Poster und verteilte sie in Paris. Neben ihrer T\u00E4tigkeit im Rahmen der S.I. besch\u00E4ftigt de Jong sich mit figurativer Malerei und Action Painting. 1970 verlie\u00DF sie Paris und kehrte nach Amsterdam zur\u00FCck. Sie heiratete den Galeristen Hans Brinkman und organisierte Ausstellungen und Messen. Nach ihrer Scheidung von Brinkman 1989 lebte sie mit dem Rechtsanwalt Thomas Weyland zusammen, der u.a. im Herausgebergremium des International Journal of Cultural Property (de Gruyter Berlin- New York) t\u00E4tig war, und den sie 1995 in Areopoli heiratete. Beide hielten vielfach Vortr\u00E4ge \u00FCber Autorenrechte und Copyright. 1996 erwarben sie ein Anwesen in der Bourbonnais im Zentralmassiv von Frankreich. Dort z\u00FCchtete sie Gem\u00FCse und Kartoffeln, was sie dann in ihrer Kunst zur \u201EPotatoe language\u201C weiter entwickelte. 2003 wurde sie damit von Jennifer Tee zu einer Ausstellung im Van Abbemuseum in Eindhoven eingeladen, danach wurde sie 2006 von Roberto Ohrt zu einer Ausstellung Baked Potatoes und 2008 bis 2011 zu einer Design-Ausstellung Pommes de Jong in Albisola eingeladen. 2003 lie\u00DF das Cobra Museum in Amstelveen ihr Werk in einer retrospektiven Ausstellung sehen, die auch vom KunstCentret Silkeborg Bad in D\u00E4nemark \u00FCbernommen wurde. 2009 errichtete sie zusammen mit Thomas Weyland die Weyland De Jong Stiftung, deren Hauptziel es ist, avantgardistische K\u00FCnstler aus allen Disziplinen, von Architektur bis Kunstwissenschaft, die \u00FCber 50 sind, zu unterst\u00FCtzen. Thomas Weyland starb 2009. In den Jahren danach hielt sie weiter Vortr\u00E4ge und hatte 2012 eine Ausstellung im Moderna Museet in Stockholm. Ihr umfangreiches Archiv wurde 2011 von der Beinecke Rare Book and Manuscript Library, Yale University USA (\u201EThe de Jong Papers\u201C) gekauft." , "lang" : "de" } ] ,
+    "http://dbpedia.org/ontology/thumbnail" : [ { "type" : "uri", "value" : "http://commons.wikimedia.org/wiki/Special:FilePath/Jacqueline_de_Jong_(1982).jpg?width=300" } ] ,
+    "http://dbpedia.org/ontology/birthDate" : [ { "type" : "literal", "value" : "1939-1-1" , "datatype" : "http://www.w3.org/2001/XMLSchema#date" } ] ,
+    "http://dbpedia.org/ontology/wikiPageRevisionID" : [ { "type" : "literal", "value" : 702789723 , "datatype" : "http://www.w3.org/2001/XMLSchema#integer" } ] ,
+    "http://dbpedia.org/ontology/birthPlace" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Hengelo" } ] ,
+    "http://dbpedia.org/ontology/wikiPageID" : [ { "type" : "literal", "value" : 262847 , "datatype" : "http://www.w3.org/2001/XMLSchema#integer" } ] ,
+    "http://purl.org/linguistics/gold/hypernym" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Painter" } ] }
+}
+;
+	var dataAuth = "http://dbpedia.org/resource/Jacqueline_de_Jong";
+	var dataUrl = "jacqueline_de_jong.html";
+	var dataResourceType = "participant";
+	var dataName = "Jacqueline de Jong";
+ 	
+</script>
+
+
+
+
+
+<script type="text/javascript">
+
+
+	
+	
+	
+
+	$(document).ready(function($) {
+		
+		
+		padb.resource.initialize();
+			 
+		$( '.scrollable' ).
+		bind( 'mousewheel DOMMouseScroll', function ( e ) {
+			
+			if( e.originalEvent ) e = e.originalEvent;
+			
+			var delta = e.wheelDelta || -e.detail;
+			this.scrollTop += ( delta < 0 ? 1 : -1 ) * 30;
+			e.preventDefault();
+		});		 
+		
+		
+				
+		$.ajaxSetup ({
+			// Disable caching of AJAX responses
+			cache: false
+		});		
+		
+	});
+	
+
+	
+	
+	
+	
+	
+</script>
+
+
+
+
+ 
+<br />
+<div class="container"  style="position:relative;">
+	   
+      <div id="resourceLinks"></div> 
+       
+       
+       
+       
+              
+       
+           
+           
+           
+          <div class="row addSection">
+              <div class="span1 addSectionIconHolder">
+              
+                <i class="icon-user"></i>
+              
+              </div>
+          
+              <div class="span11">
+                <span>Performer</span>
+                <hr>
+                <br />
+              </div>
+        </div>
+        <div class="row">
+            <div class="span1">
+            </div>
+            <div class="span11" style="position:relative">
+                
+                
+                
+                
+               <div>
+                                       <div class="pull-right vignette">
+                            <img  src="../cache/media/jacqueline_de_jong.jpg" />
+                            
+                        </div>
+                        
+                                           
+                <div class="pull-left" style="width:80%;">
+                     
+                     <h5 id="resourceLDName">Jacqueline de Jong</h5>
+                     <h5 id="resourceLDAbstract"></h5>
+                     
+                     
+                     <div id="resourceSameAs">
+                        <h5>External Data:</h5>
+                        
+                        
+                     </div>
+                
+                </div>   
+                
+                <br style="clear:both;" />
+            </div>
+            
+            
+                
+            </div>
+        </div>    
+         
+    
+    
+    
+    
+    
+    
+       <div class="row addSection">
+			<div class="span1 addSectionIconHolder">              
+                <i class="icon-asterisk"></i>
+              
+              </div>
+          
+              <div class="span11">
+                <span>Events </span><span id="resourceEventCount"></span>
+                <hr>
+              </div>
+        </div>
+    
+    
+    
+    
+    
+    
+    
+        <div class="row">
+            <div class="span1"></div>
+            <div class="span11" style="position:relative">
+                  
+                 <div class="">
+                    <div id="resourceEventsEvents" class="scrollable">
+                           <table class="table table-condensed table-hover table-striped">
+                               <thead>
+                                <tr>
+                                  <th>Date</th>
+                                  
+                                  <th>Title</th>
+                                  <th>Location</th>
+                                  <th></th>
+                                </tr>
+                              </thead>
+                              <tbody id="resourceEventsEventsRows"> 
+                              </tbody>
+                            </table>
+                     
+                    </div>
+                    
+                    <div id="resourceEventsExport">
+                    
+                    	<input  name="resourceEventsSearch" class="span3" id="resourceEventsSearch"  type="text" placeholder="Filter: names, places, dates">
+                    	<button class="btn btn-mini btn-danger" id="resourceEventsClearFilter"><i class="icon-remove">&nbsp;Clear Filter</i></button>
+                   		<button class="btn btn-mini btn-info" title="Render the currently filitered data as a network" id="resourceRenderEventNetwork"> <img src="../img/icon-network-white.png" style="height:15px; width:auto" /> Two-Mode Event Network</button>
+                   		<button class="btn btn-mini btn-info" title="Render the currently filitered data as a network" id="resourceRenderEventMap"> <i class="icon-globe"></i> Map Event Locations</button>
+                   		<button class="btn btn-mini btn-success" title="Download network as Gephi File" id="resourceDownloadEventGephi"> <img src="../img/icon-gephi.png" style="height:15px; width:auto" /> Donwload Gephi Network</button>
+
+                 
+                    </div>                 
+                </div>
+                <br style="clear:both;" />
+            </div>
+            
+            
+                
+         </div>    
+    
+     
+       <div class="row addSection">
+              <div class="span1">
+              
+                <img src="../img/social-network.png" style=" margin-left:25px; margin-bottom:10px;" />
+              
+              </div>
+          
+              <div class="span11">
+                <span>Performance Network</span> 
+                <hr>
+              </div>
+        </div>
+        
+        <div class="row">
+            <div class="span1">
+            </div>
+            <div class="span11" style="position:relative">
+                
+               	<div style="width: 100%; height:500px;" id="egoNetwork">
+            
+                
+             	</div> 
+                <div class="well pull-left well-small" id="egoNetworkControls">
+                    <span class="rangeLabels">Node Charge</span>
+                    <input type="range" id="resourceEgoNetworkCharge" min="-1000" max="100" value="-120" data-def="-700" />
+                    <br /><span class="rangeLabels">Gravity</span>
+                    <input type="range" id="resourceEgoNetworkGravity" min="0" max="1" value="0.1" step="0.01" data-def="0.3" /> 
+                    <br /><span class="rangeLabels">Edge Length</span>
+                    <input type="range" id="resourceEgoNetworkDistance" min="0" max="300" value="50" data-def="50"  />      
+                    <br /><span class="rangeLabels">Edge Strength</span>
+                    <input type="range" id="resourceEgoNetworkStrength" min="0" max="3" value="1" data-def="0.15" step="0.1"  /> 
+                    <br /><br />
+                    <button type="button" id="resourceEgoNetworkLabelsButton" class="btn btn-mini" title="Show node labels." data-toggle="button">Show Labels</button>  
+                    <button type="button" id="resourceEgoNetworkLiveButton" class="btn btn-mini" title="Show realtime network rendering" data-toggle="button">Live Rendering</button>                     
+                </div>
+                
+                <div class="well pull-left well-small egoNetworkControls span7" style="margin-left:20px;" >
+                
+                	<input  name="resourceEgoNetworkSearch" class="span3" id="resourceEgoNetworkSearch"  type="text" placeholder="Filter: names, places, dates">
+					<button class="btn btn-mini btn-danger" id="resourceEgoClearFilter"><i class="icon-remove">&nbsp;Clear Filter</i></button>
+                    <button class="btn btn-mini btn-success" title="Download network as Gephi File" id="resourceDownloadEgoGephi"> <img src="../img/icon-gephi.png" style="height:15px; width:auto" /> Donwload Gephi Network</button>
+
+                </div>
+                
+            </div>
+        </div>           
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+	
+
+	
+
+
+	
+
+
+</div>
+
+
+
+
+    <div id="resourceEventNetworkModal" class="modal container hide fade" style="min-height:500px" tabindex="-1">
+ 
+      <div class="modal-body">
+      	
+        <div id="eventNetwork" style="height:400px; width:100%">
+        
+        </div>
+      
+      </div>
+      <div class="modal-footer" style="height:20px;">
+      	
+        <div class="well pull-left well-small">
+        	<span class="rangeLabels">Node Charge</span>
+        	<input type="range" id="resourceEventNetworkCharge" min="-800" max="200" value="-120" data-def="-120" />
+            <span class="rangeLabels">Gravity</span>
+        	<input type="range" id="resourceEventNetworkGravity" min="0" max="1" value="0.1" step="0.01" data-def="0.1" /> 
+            <span class="rangeLabels">Edge Length</span>
+        	<input type="range" id="resourceEventNetworkDistance" min="0" max="300" value="50" data-def="50"  />      
+            <span class="rangeLabels">Edge Strength</span>
+        	<input type="range" id="resourceEventNetworkStrength" min="0" max="5" value="1" data-def="1" step="0.1"  />    
+            <button type="button" id="resourceEventNetworkLabelsButton" class="btn btn-mini" data-toggle="button">Show Labels</button>                     
+		</div>
+        <div class="pull-right">
+        <button type="button" data-dismiss="modal" class="btn">Close</button>
+       	</div>
+       </div>
+    </div>
+    
+    
+    
+    
+     <div id="resourceEventMapModal" class="modal container hide fade" style="min-height:500px" tabindex="-1">
+ 
+      <div class="modal-body">
+      	
+        <div id="eventMap" style="height:400px; width:100%">
+        
+        </div>
+      
+      </div>
+      <div class="modal-footer" style="height:20px;">
+      	
+        <div class="well pull-left well-small">                  
+		</div>
+        <div class="pull-right">
+        <button type="button" data-dismiss="modal" class="btn">Close</button>
+       	</div>
+       </div>
+    </div>
+
+<br /><br /><br /><br /><br /><br />
+
+<script type="text/javascript">    var _gaq = _gaq || [];   _gaq.push(['_setAccount', 'UA-10371295-7']);   _gaq.push(['_trackPageview']);    (function() {     var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);   })();  </script>
+
+</body>
+
+<!-- Mirrored from padb.net/resource/jacqueline_de_jong by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 11 Jan 2020 22:22:31 GMT -->
+</html>

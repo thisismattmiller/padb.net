@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<gexf version="1.2" xmlns="http://www.gexf.net/1.2draft">
+ <graph mode="static" defaultedgetype="undirected">
+  <nodes>
+   <node id="12" label="Al Hansen"/>
+   <node id="13" label="Dick Higgins"/>
+   <node id="14" label="Allan Kaprow"/>
+   <node id="18" label="George Brecht"/>
+   <node id="30" label="Robert Watts"/>
+   <node id="122" label="Alison Knowles"/>
+   <node id="192" label="Letty Eisenhauer"/>
+  </nodes>
+  <edges>
+   <edge source="12" target="13"/>
+   <edge source="12" target="14"/>
+   <edge source="12" target="18"/>
+   <edge source="12" target="30"/>
+   <edge source="12" target="122"/>
+   <edge source="12" target="192"/>
+   <edge source="13" target="14"/>
+   <edge source="13" target="18"/>
+   <edge source="13" target="30"/>
+   <edge source="13" target="122"/>
+   <edge source="13" target="192"/>
+   <edge source="14" target="18"/>
+   <edge source="14" target="30"/>
+   <edge source="14" target="122"/>
+   <edge source="14" target="192"/>
+   <edge source="18" target="30"/>
+   <edge source="18" target="122"/>
+   <edge source="18" target="192"/>
+   <edge source="30" target="122"/>
+   <edge source="30" target="192"/>
+   <edge source="122" target="192"/>
+  </edges>
+ </graph>
+</gexf>

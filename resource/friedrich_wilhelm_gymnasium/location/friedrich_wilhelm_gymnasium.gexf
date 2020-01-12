@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<gexf version="1.2" xmlns="http://www.gexf.net/1.2draft">
+ <graph mode="static" defaultedgetype="undirected">
+  <nodes>
+   <node id="1" label="John Cage"/>
+   <node id="29" label="David Tudor"/>
+   <node id="50" label="Carolyn Brown"/>
+   <node id="51" label="Merce Cunningham"/>
+  </nodes>
+  <edges>
+   <edge source="1" target="29"/>
+   <edge source="1" target="50"/>
+   <edge source="1" target="51"/>
+   <edge source="29" target="50"/>
+   <edge source="29" target="51"/>
+   <edge source="50" target="51"/>
+  </edges>
+ </graph>
+</gexf>

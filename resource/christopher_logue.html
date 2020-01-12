@@ -1,0 +1,541 @@
+<!doctype html>
+<html>
+
+<!-- Mirrored from padb.net/resource/christopher_logue by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 11 Jan 2020 22:19:01 GMT -->
+<head>
+<meta charset="UTF-8">
+<title>padb.net</title>
+
+
+<link rel="stylesheet" href="../css/bootstrap.css">
+<link rel="stylesheet" href="../css/font-awesome.css">
+<link rel="stylesheet" href="../css/site.css">
+<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+<link rel="icon" type="image/png" href="../img/favicon.png">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/bootstrap-modal.js"></script>
+<script src="../js/bootstrap-modalmanager.js"></script>
+
+<script src="../js/d3.min.js"></script>
+<script src="../js/html5slider.js"></script>
+<script src="../js/topojson.js"></script>
+<script src="../js/padb.js"></script>
+
+
+</head>
+<body>
+    
+    
+	<div style="position:relative;">        
+
+ 		<div style=" border-bottom:solid 1px #ccc;">
+        	<div class="container">
+                
+                 <div id="header">
+                 	
+                     <div class="logo"><a href="../index.html"><span>|||</span>padb</a> </div>
+                    
+                     						<div id="resourceName" style="font-size:2em">Christopher Logue</div>
+					
+                 </div>
+                
+                
+        	</div>
+            
+    	</div>
+ 
+   </div>
+<script src="../js/countriesData.js"></script>
+
+<script type="text/javascript">
+	//preloaded json from the server
+
+	var dataSameAs = [
+  {
+    "uri": "http://wikidata.dbpedia.org/resource/Q542468",
+    "numDuplicates": "34",
+    "duplicates": [
+      "http://dbpedia.org/resource/Christopher_Logue",
+      "http://dbpedia.org/resource/Count_Palmiro_Vicarion",
+      "http://bnb.data.bl.uk/id/person/LogueChristopher1926-",
+      "http://bnb.data.bl.uk/id/person/LogueChristopher1926-2011",
+      "http://d-nb.info/gnd/121803112",
+      "http://d-nb.info/gnd/121803112/about/rdf",
+      "http://data.bibsys.no/data/notrbib/authorityentry/x90095862",
+      "http://dbpedialite.org/things/437623#id",
+      "http://dbpedialite.org/things/9952440#id",
+      "http://de.dbpedia.org/resource/Christopher_Logue",
+      "http://freebase.com//m/028h2v",
+      "http://id.loc.gov/authorities/names/n79128125",
+      "http://it.dbpedia.org/resource/Christopher_Logue",
+      "http://la.dbpedia.org/resource/Christophorus_Logue",
+      "http://lt.dbpedia.org/resource/Christopher_Logue",
+      "http://mpii.de/yago/resource/Christopher_Logue",
+      "http://rdf.freebase.com/ns/m.028h2v",
+      "http://rdf.freebase.com/ns/en.christopher_logue",
+      "http://rdf.freebase.com/ns/guid.9202a8c04000641f8000000000243c5a",
+      "http://ru.dbpedia.org/resource/\u041B\u043E\u0433,_\u041A\u0440\u0438\u0441\u0442\u043E\u0444\u0435\u0440",
+      "http://sw.cyc.com/concept/Mx4rwR2h1JwpEbGdrcN5Y29ycA",
+      "http://sw.opencyc.org/concept/Mx4rwR2h1JwpEbGdrcN5Y29ycA",
+      "http://sw.opencyc.org/2008/06/10/concept/en/ChristopherLogue",
+      "http://sw.opencyc.org/2009/04/07/concept/en/ChristopherLogue",
+      "http://sw.opencyc.org/2008/06/10/concept/Mx4rwR2h1JwpEbGdrcN5Y29ycA",
+      "http://sw.opencyc.org/2009/04/07/concept/Mx4rwR2h1JwpEbGdrcN5Y29ycA",
+      "http://umbel.org/umbel/ne/wikipedia/Christopher_Logue",
+      "http://viaf.org/viaf/36959706",
+      "http://viaf.org/viaf/84139948",
+      "http://viaf.org/viaf/101679175",
+      "http://viaf.org/viaf/111268555",
+      "http://wikidata.dbpedia.org/resource/Q542468",
+      "http://www.wikidata.org/entity/Q542468",
+      "http://yago-knowledge.org/resource/Christopher_Logue"
+    ]
+  }
+]
+;
+	var dataDbpedia = {
+  "http://dbpedia.org/resource/Savage_Messiah_(1972_film)" : { "http://dbpedia.org/ontology/writer" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Christopher_Logue" } ] } ,
+  "http://dbpedia.org/resource/Christopher_Logue" : { "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Communicator109610660" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/ontology/Writer" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Subscriber110670310" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/SkilledWorker110605985" } ,
+      { "type" : "uri", "value" : "http://xmlns.com/foaf/0.1/Person" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Actor109765278" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Serviceman110582746" } ,
+      { "type" : "uri", "value" : "http://www.wikidata.org/entity/Q24229398" } ,
+      { "type" : "uri", "value" : "http://schema.org/Person" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/ontology/Agent" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/MilitaryOfficer110317007" } ,
+      { "type" : "uri", "value" : "http://www.wikidata.org/entity/Q215627" } ,
+      { "type" : "uri", "value" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Screenwriter110564400" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatPeopleEducatedAtPortsmouthGrammarSchool" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatPeopleFromPortsmouth" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Scriptwriter110564905" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Organism100004475" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/ontology/Person" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Whole100003553" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/LivingThing100004258" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/CausalAgent100007347" } ,
+      { "type" : "uri", "value" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#NaturalPerson" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatBritishPeople" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatEnglishPoets" } ,
+      { "type" : "uri", "value" : "http://www.w3.org/2002/07/owl#Thing" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatPeopleEducatedAtPriorParkCollege" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatPrivateEyeContributors" } ,
+      { "type" : "uri", "value" : "http://www.wikidata.org/entity/Q5" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Donor110025730" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/GoodPerson110138767" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/YagoLegalActor" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/YagoLegalActorGeo" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatCommandersOfTheOrderOfTheBritishEmpire" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatEnglishPeople" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Person100007846" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Object100002684" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Performer110415638" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/CommandingOfficer109941964" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatWriters" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/PhysicalEntity100001930" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Benefactor109608709" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Entertainer109616922" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Worker109632518" } ,
+      { "type" : "uri", "value" : "http://www.wikidata.org/entity/Q36180" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Writer110794014" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatEnglishMaleFilmActors" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Poet110444194" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatEnglishScreenwriters" } ] ,
+    "http://www.w3.org/2000/01/rdf-schema#label" : [ { "type" : "literal", "value" : "Christopher Logue" , "lang" : "en" } ,
+      { "type" : "literal", "value" : "Christopher Logue" , "lang" : "de" } ,
+      { "type" : "literal", "value" : "\u041B\u043E\u0433, \u041A\u0440\u0438\u0441\u0442\u043E\u0444\u0435\u0440" , "lang" : "ru" } ,
+      { "type" : "literal", "value" : "Christopher Logue" , "lang" : "it" } ] ,
+    "http://www.w3.org/2000/01/rdf-schema#comment" : [ { "type" : "literal", "value" : "\u041A\u0440\u0438\u0441\u0442\u043E\u0444\u0435\u0440 \u041B\u043E\u0433 (\u0430\u043D\u0433\u043B. Christopher Logue; 23 \u043D\u043E\u044F\u0431\u0440\u044F 1926, \u041F\u043E\u0440\u0442\u0441\u043C\u0443\u0442 \u2014 2 \u0434\u0435\u043A\u0430\u0431\u0440\u044F 2011, \u041B\u043E\u043D\u0434\u043E\u043D) \u2014 \u0430\u043D\u0433\u043B\u0438\u0439\u0441\u043A\u0438\u0439 \u043F\u043E\u044D\u0442, \u043F\u0440\u043E\u0437\u0430\u0438\u043A, \u043F\u0435\u0440\u0435\u0432\u043E\u0434\u0447\u0438\u043A, \u0434\u0440\u0430\u043C\u0430\u0442\u0443\u0440\u0433, \u0441\u0446\u0435\u043D\u0430\u0440\u0438\u0441\u0442, \u043E\u0434\u0438\u043D \u0438\u0437 \u043F\u043E\u043F\u0443\u043B\u044F\u0440\u0438\u0437\u0430\u0442\u043E\u0440\u043E\u0432 \u0430\u043D\u0433\u043B\u0438\u0439\u0441\u043A\u043E\u0439 \u043F\u043E\u044D\u0437\u0438\u0438, \u0430\u0432\u0442\u043E\u0440 \u043F\u043E\u043B\u0438\u0442\u0438\u0437\u0438\u0440\u043E\u0432\u0430\u043D\u043D\u044B\u0445 \u0441\u0442\u0438\u0445\u043E\u0442\u0432\u043E\u0440\u0435\u043D\u0438\u0439, \u0441\u043E\u0447\u0435\u0442\u0430\u044E\u0449\u0438\u0445 \u0432 \u0441\u0435\u0431\u0435 \u0438\u0434\u0435\u0438 \u0411\u0440\u0435\u0445\u0442\u0430 \u0438 \u043D\u0430\u0440\u043E\u0434\u043D\u0443\u044E \u0431\u0430\u043B\u043B\u0430\u0434\u043D\u0443\u044E \u0442\u0440\u0430\u0434\u0438\u0446\u0438\u044E. \u0423\u0447\u0430\u0441\u0442\u043D\u0438\u043A \u0430\u043D\u0442\u0438\u0432\u043E\u0435\u043D\u043D\u043E\u0433\u043E \u0434\u0432\u0438\u0436\u0435\u043D\u0438\u044F 1950\u20141960-\u0445 \u0433\u043E\u0434\u043E\u0432." , "lang" : "ru" } ,
+      { "type" : "literal", "value" : "Ha anche scritto per il teatro e il cinema cos\u00EC come ha lavorato in un certo numero di film. Sono sue le sceneggiature di Messia selvaggio (1972) e The End of Arthur's Marriage." , "lang" : "it" } ,
+      { "type" : "literal", "value" : "Christopher Logue CBE (* 23. November 1926 in Portsmouth; \u2020 2. Dezember 2011 in London) war ein britischer Dichter, der vor allem durch seinen Epos War Music, einer starken modernen Wiedergabe von Homers antiker altgriechischer Darstellung der Belagerung Trojas im Trojanischen Krieg bekannt wurde, und unter anderem mit dem Whitbread Book Award, Cholmondeley Award und Griffin Poetry Prize ausgezeichnet wurde." , "lang" : "de" } ,
+      { "type" : "literal", "value" : "Christopher Logue, CBE (23 November 1926 \u2013 2 December 2011) was an English poet associated with the British Poetry Revival and a pacifist." , "lang" : "en" } ] ,
+    "http://www.w3.org/2002/07/owl#sameAs" : [ { "type" : "uri", "value" : "http://wikidata.dbpedia.org/resource/Q542468" } ,
+      { "type" : "uri", "value" : "http://de.dbpedia.org/resource/Christopher_Logue" } ,
+      { "type" : "uri", "value" : "http://viaf.org/viaf/111268555" } ,
+      { "type" : "uri", "value" : "http://www.wikidata.org/entity/Q542468" } ,
+      { "type" : "uri", "value" : "http://yago-knowledge.org/resource/Christopher_Logue" } ,
+      { "type" : "uri", "value" : "http://rdf.freebase.com/ns/m.028h2v" } ,
+      { "type" : "uri", "value" : "http://sw.cyc.com/concept/Mx4rwR2h1JwpEbGdrcN5Y29ycA" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Christopher_Logue" } ,
+      { "type" : "uri", "value" : "http://it.dbpedia.org/resource/Christopher_Logue" } ,
+      { "type" : "uri", "value" : "http://d-nb.info/gnd/121803112" } ] ,
+    "http://purl.org/dc/terms/subject" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:People_from_Portsmouth" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:1926_births" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:English_male_poets" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Private_Eye_contributors" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Costa_Book_Award_winners" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:20th-century_English_poets" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:People_educated_at_Portsmouth_Grammar_School" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Place_of_death_missing" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:People_educated_at_Prior_Park_College" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:British_Army_personnel_of_World_War_II" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:British_Poetry_Revival" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:2011_deaths" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Commanders_of_the_Order_of_the_British_Empire" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:English_male_film_actors" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Male_screenwriters" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:English_screenwriters" } ] ,
+    "http://xmlns.com/foaf/0.1/name" : [ { "type" : "literal", "value" : "Christopher Logue" , "lang" : "en" } ] ,
+    "http://purl.org/dc/terms/description" : [ { "type" : "literal", "value" : "Poet, screenwriter, actor" , "lang" : "en" } ] ,
+    "http://xmlns.com/foaf/0.1/givenName" : [ { "type" : "literal", "value" : "Christopher" , "lang" : "en" } ] ,
+    "http://xmlns.com/foaf/0.1/gender" : [ { "type" : "literal", "value" : "male" , "lang" : "en" } ] ,
+    "http://xmlns.com/foaf/0.1/isPrimaryTopicOf" : [ { "type" : "uri", "value" : "http://en.wikipedia.org/wiki/Christopher_Logue" } ] ,
+    "http://xmlns.com/foaf/0.1/surname" : [ { "type" : "literal", "value" : "Logue" , "lang" : "en" } ] ,
+    "http://dbpedia.org/ontology/genre" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Philosophy" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Parapsychology" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Literary_criticism" } ] ,
+    "http://dbpedia.org/ontology/almaMater" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/University_College_London" } ] ,
+    "http://www.w3.org/ns/prov#wasDerivedFrom" : [ { "type" : "uri", "value" : "http://en.wikipedia.org/wiki/Christopher_Logue?oldid=745153038" } ] ,
+    "http://dbpedia.org/ontology/wikiPageExternalLink" : [ { "type" : "uri", "value" : "http://telescoper.wordpress.com/2009/05/03/christopher-logue/" } ,
+      { "type" : "uri", "value" : "http://www.poemhunter.com/poem/come-to-the-edge" } ,
+      { "type" : "uri", "value" : "http://www.griffinpoetryprize.com/awards-and-poets/shortlists/2002-shortlist/christopher-logue/" } ,
+      { "type" : "uri", "value" : "http://www.cla.sc.edu/engl/LitCheck/logue.htm" } ,
+      { "type" : "uri", "value" : "http://enjoyment.independent.co.uk/books/interviews/story.jsp?story=642549" } ,
+      { "type" : "uri", "value" : "http://www.poets.org/poet.php/prmPID/24" } ,
+      { "type" : "uri", "value" : "http://www.imdb.com/name/nm0517787/" } ,
+      { "type" : "uri", "value" : "http://slate.msn.com/id/2082824/" } ] ,
+    "http://dbpedia.org/ontology/award" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Order_of_the_British_Empire" } ] ,
+    "http://dbpedia.org/ontology/birthName" : [ { "type" : "literal", "value" : "John Christopher Logue" , "lang" : "en" } ] ,
+    "http://dbpedia.org/ontology/occupation" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Playwright" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Screenwriter" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Actor" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Author" } ] ,
+    "http://dbpedia.org/ontology/activeYearsStartYear" : [ { "type" : "literal", "value" : "0020" , "datatype" : "http://www.w3.org/2001/XMLSchema#gYear" } ] ,
+    "http://dbpedia.org/ontology/activeYearsEndYear" : [ { "type" : "literal", "value" : "0020" , "datatype" : "http://www.w3.org/2001/XMLSchema#gYear" } ] ,
+    "http://dbpedia.org/ontology/citizenship" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/United_Kingdom" } ] ,
+    "http://dbpedia.org/ontology/education" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Portsmouth_Grammar_School" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/St_John's_College,_Portsmouth" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Prior_Park_College" } ] ,
+    "http://dbpedia.org/ontology/abstract" : [ { "type" : "literal", "value" : "Ha anche scritto per il teatro e il cinema cos\u00EC come ha lavorato in un certo numero di film. Sono sue le sceneggiature di Messia selvaggio (1972) e The End of Arthur's Marriage." , "lang" : "it" } ,
+      { "type" : "literal", "value" : "Christopher Logue, CBE (23 November 1926 \u2013 2 December 2011) was an English poet associated with the British Poetry Revival and a pacifist." , "lang" : "en" } ,
+      { "type" : "literal", "value" : "\u041A\u0440\u0438\u0441\u0442\u043E\u0444\u0435\u0440 \u041B\u043E\u0433 (\u0430\u043D\u0433\u043B. Christopher Logue; 23 \u043D\u043E\u044F\u0431\u0440\u044F 1926, \u041F\u043E\u0440\u0442\u0441\u043C\u0443\u0442 \u2014 2 \u0434\u0435\u043A\u0430\u0431\u0440\u044F 2011, \u041B\u043E\u043D\u0434\u043E\u043D) \u2014 \u0430\u043D\u0433\u043B\u0438\u0439\u0441\u043A\u0438\u0439 \u043F\u043E\u044D\u0442, \u043F\u0440\u043E\u0437\u0430\u0438\u043A, \u043F\u0435\u0440\u0435\u0432\u043E\u0434\u0447\u0438\u043A, \u0434\u0440\u0430\u043C\u0430\u0442\u0443\u0440\u0433, \u0441\u0446\u0435\u043D\u0430\u0440\u0438\u0441\u0442, \u043E\u0434\u0438\u043D \u0438\u0437 \u043F\u043E\u043F\u0443\u043B\u044F\u0440\u0438\u0437\u0430\u0442\u043E\u0440\u043E\u0432 \u0430\u043D\u0433\u043B\u0438\u0439\u0441\u043A\u043E\u0439 \u043F\u043E\u044D\u0437\u0438\u0438, \u0430\u0432\u0442\u043E\u0440 \u043F\u043E\u043B\u0438\u0442\u0438\u0437\u0438\u0440\u043E\u0432\u0430\u043D\u043D\u044B\u0445 \u0441\u0442\u0438\u0445\u043E\u0442\u0432\u043E\u0440\u0435\u043D\u0438\u0439, \u0441\u043E\u0447\u0435\u0442\u0430\u044E\u0449\u0438\u0445 \u0432 \u0441\u0435\u0431\u0435 \u0438\u0434\u0435\u0438 \u0411\u0440\u0435\u0445\u0442\u0430 \u0438 \u043D\u0430\u0440\u043E\u0434\u043D\u0443\u044E \u0431\u0430\u043B\u043B\u0430\u0434\u043D\u0443\u044E \u0442\u0440\u0430\u0434\u0438\u0446\u0438\u044E. \u0423\u0447\u0430\u0441\u0442\u043D\u0438\u043A \u0430\u043D\u0442\u0438\u0432\u043E\u0435\u043D\u043D\u043E\u0433\u043E \u0434\u0432\u0438\u0436\u0435\u043D\u0438\u044F 1950\u20141960-\u0445 \u0433\u043E\u0434\u043E\u0432." , "lang" : "ru" } ,
+      { "type" : "literal", "value" : "Christopher Logue CBE (* 23. November 1926 in Portsmouth; \u2020 2. Dezember 2011 in London) war ein britischer Dichter, der vor allem durch seinen Epos War Music, einer starken modernen Wiedergabe von Homers antiker altgriechischer Darstellung der Belagerung Trojas im Trojanischen Krieg bekannt wurde, und unter anderem mit dem Whitbread Book Award, Cholmondeley Award und Griffin Poetry Prize ausgezeichnet wurde." , "lang" : "de" } ] ,
+    "http://dbpedia.org/ontology/birthDate" : [ { "type" : "literal", "value" : "1926-11-23" , "datatype" : "http://www.w3.org/2001/XMLSchema#date" } ] ,
+    "http://dbpedia.org/ontology/deathDate" : [ { "type" : "literal", "value" : "2011-12-2" , "datatype" : "http://www.w3.org/2001/XMLSchema#date" } ,
+      { "type" : "literal", "value" : "2011-12-02" , "datatype" : "http://www.w3.org/2001/XMLSchema#date" } ] ,
+    "http://dbpedia.org/ontology/deathPlace" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/London" } ] ,
+    "http://dbpedia.org/ontology/wikiPageRevisionID" : [ { "type" : "literal", "value" : 745153038 , "datatype" : "http://www.w3.org/2001/XMLSchema#integer" } ] ,
+    "http://dbpedia.org/ontology/birthPlace" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/United_Kingdom" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Hampshire" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Portsmouth" } ] ,
+    "http://dbpedia.org/ontology/wikiPageID" : [ { "type" : "literal", "value" : 437623 , "datatype" : "http://www.w3.org/2001/XMLSchema#integer" } ] ,
+    "http://dbpedia.org/ontology/nationality" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/United_Kingdom" } ] ,
+    "http://dbpedia.org/ontology/spouse" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Rosemary_Hill" } ] ,
+    "http://purl.org/linguistics/gold/hypernym" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Poet" } ] ,
+    "http://dbpedia.org/ontology/ethnicity" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/White_people" } ] } ,
+  "http://en.wikipedia.org/wiki/Christopher_Logue" : { "http://xmlns.com/foaf/0.1/primaryTopic" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Christopher_Logue" } ] } ,
+  "http://dbpedia.org/resource/Count_Palmiro_Vicarion" : { "http://dbpedia.org/ontology/wikiPageRedirects" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Christopher_Logue" } ] } ,
+  "http://dbpedia.org/resource/Dante's_Inferno_(1967_film)" : { "http://dbpedia.org/ontology/starring" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Christopher_Logue" } ] } ,
+  "http://dbpedia.org/resource/Crusoe_(film)" : { "http://dbpedia.org/ontology/writer" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Christopher_Logue" } ] }
+}
+;
+	var dataAuth = "http://dbpedia.org/resource/Christopher_Logue";
+	var dataUrl = "christopher_logue.html";
+	var dataResourceType = "participant";
+	var dataName = "Christopher Logue";
+ 	
+</script>
+
+
+
+
+
+<script type="text/javascript">
+
+
+	
+	
+	
+
+	$(document).ready(function($) {
+		
+		
+		padb.resource.initialize();
+			 
+		$( '.scrollable' ).
+		bind( 'mousewheel DOMMouseScroll', function ( e ) {
+			
+			if( e.originalEvent ) e = e.originalEvent;
+			
+			var delta = e.wheelDelta || -e.detail;
+			this.scrollTop += ( delta < 0 ? 1 : -1 ) * 30;
+			e.preventDefault();
+		});		 
+		
+		
+				
+		$.ajaxSetup ({
+			// Disable caching of AJAX responses
+			cache: false
+		});		
+		
+	});
+	
+
+	
+	
+	
+	
+	
+</script>
+
+
+
+
+ 
+<br />
+<div class="container"  style="position:relative;">
+	   
+      <div id="resourceLinks"></div> 
+       
+       
+       
+       
+              
+       
+           
+           
+           
+          <div class="row addSection">
+              <div class="span1 addSectionIconHolder">
+              
+                <i class="icon-user"></i>
+              
+              </div>
+          
+              <div class="span11">
+                <span>Performer</span>
+                <hr>
+                <br />
+              </div>
+        </div>
+        <div class="row">
+            <div class="span1">
+            </div>
+            <div class="span11" style="position:relative">
+                
+                
+                
+                
+               <div>
+                                       
+                                           
+                <div class="pull-left" style="width:80%;">
+                     
+                     <h5 id="resourceLDName">Christopher Logue</h5>
+                     <h5 id="resourceLDAbstract"></h5>
+                     
+                     
+                     <div id="resourceSameAs">
+                        <h5>External Data:</h5>
+                        
+                        
+                     </div>
+                
+                </div>   
+                
+                <br style="clear:both;" />
+            </div>
+            
+            
+                
+            </div>
+        </div>    
+         
+    
+    
+    
+    
+    
+    
+       <div class="row addSection">
+			<div class="span1 addSectionIconHolder">              
+                <i class="icon-asterisk"></i>
+              
+              </div>
+          
+              <div class="span11">
+                <span>Events </span><span id="resourceEventCount"></span>
+                <hr>
+              </div>
+        </div>
+    
+    
+    
+    
+    
+    
+    
+        <div class="row">
+            <div class="span1"></div>
+            <div class="span11" style="position:relative">
+                  
+                 <div class="">
+                    <div id="resourceEventsEvents" class="scrollable">
+                           <table class="table table-condensed table-hover table-striped">
+                               <thead>
+                                <tr>
+                                  <th>Date</th>
+                                  
+                                  <th>Title</th>
+                                  <th>Location</th>
+                                  <th></th>
+                                </tr>
+                              </thead>
+                              <tbody id="resourceEventsEventsRows"> 
+                              </tbody>
+                            </table>
+                     
+                    </div>
+                    
+                    <div id="resourceEventsExport">
+                    
+                    	<input  name="resourceEventsSearch" class="span3" id="resourceEventsSearch"  type="text" placeholder="Filter: names, places, dates">
+                    	<button class="btn btn-mini btn-danger" id="resourceEventsClearFilter"><i class="icon-remove">&nbsp;Clear Filter</i></button>
+                   		<button class="btn btn-mini btn-info" title="Render the currently filitered data as a network" id="resourceRenderEventNetwork"> <img src="../img/icon-network-white.png" style="height:15px; width:auto" /> Two-Mode Event Network</button>
+                   		<button class="btn btn-mini btn-info" title="Render the currently filitered data as a network" id="resourceRenderEventMap"> <i class="icon-globe"></i> Map Event Locations</button>
+                   		<button class="btn btn-mini btn-success" title="Download network as Gephi File" id="resourceDownloadEventGephi"> <img src="../img/icon-gephi.png" style="height:15px; width:auto" /> Donwload Gephi Network</button>
+
+                 
+                    </div>                 
+                </div>
+                <br style="clear:both;" />
+            </div>
+            
+            
+                
+         </div>    
+    
+     
+       <div class="row addSection">
+              <div class="span1">
+              
+                <img src="../img/social-network.png" style=" margin-left:25px; margin-bottom:10px;" />
+              
+              </div>
+          
+              <div class="span11">
+                <span>Performance Network</span> 
+                <hr>
+              </div>
+        </div>
+        
+        <div class="row">
+            <div class="span1">
+            </div>
+            <div class="span11" style="position:relative">
+                
+               	<div style="width: 100%; height:500px;" id="egoNetwork">
+            
+                
+             	</div> 
+                <div class="well pull-left well-small" id="egoNetworkControls">
+                    <span class="rangeLabels">Node Charge</span>
+                    <input type="range" id="resourceEgoNetworkCharge" min="-1000" max="100" value="-120" data-def="-700" />
+                    <br /><span class="rangeLabels">Gravity</span>
+                    <input type="range" id="resourceEgoNetworkGravity" min="0" max="1" value="0.1" step="0.01" data-def="0.3" /> 
+                    <br /><span class="rangeLabels">Edge Length</span>
+                    <input type="range" id="resourceEgoNetworkDistance" min="0" max="300" value="50" data-def="50"  />      
+                    <br /><span class="rangeLabels">Edge Strength</span>
+                    <input type="range" id="resourceEgoNetworkStrength" min="0" max="3" value="1" data-def="0.15" step="0.1"  /> 
+                    <br /><br />
+                    <button type="button" id="resourceEgoNetworkLabelsButton" class="btn btn-mini" title="Show node labels." data-toggle="button">Show Labels</button>  
+                    <button type="button" id="resourceEgoNetworkLiveButton" class="btn btn-mini" title="Show realtime network rendering" data-toggle="button">Live Rendering</button>                     
+                </div>
+                
+                <div class="well pull-left well-small egoNetworkControls span7" style="margin-left:20px;" >
+                
+                	<input  name="resourceEgoNetworkSearch" class="span3" id="resourceEgoNetworkSearch"  type="text" placeholder="Filter: names, places, dates">
+					<button class="btn btn-mini btn-danger" id="resourceEgoClearFilter"><i class="icon-remove">&nbsp;Clear Filter</i></button>
+                    <button class="btn btn-mini btn-success" title="Download network as Gephi File" id="resourceDownloadEgoGephi"> <img src="../img/icon-gephi.png" style="height:15px; width:auto" /> Donwload Gephi Network</button>
+
+                </div>
+                
+            </div>
+        </div>           
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+	
+
+	
+
+
+	
+
+
+</div>
+
+
+
+
+    <div id="resourceEventNetworkModal" class="modal container hide fade" style="min-height:500px" tabindex="-1">
+ 
+      <div class="modal-body">
+      	
+        <div id="eventNetwork" style="height:400px; width:100%">
+        
+        </div>
+      
+      </div>
+      <div class="modal-footer" style="height:20px;">
+      	
+        <div class="well pull-left well-small">
+        	<span class="rangeLabels">Node Charge</span>
+        	<input type="range" id="resourceEventNetworkCharge" min="-800" max="200" value="-120" data-def="-120" />
+            <span class="rangeLabels">Gravity</span>
+        	<input type="range" id="resourceEventNetworkGravity" min="0" max="1" value="0.1" step="0.01" data-def="0.1" /> 
+            <span class="rangeLabels">Edge Length</span>
+        	<input type="range" id="resourceEventNetworkDistance" min="0" max="300" value="50" data-def="50"  />      
+            <span class="rangeLabels">Edge Strength</span>
+        	<input type="range" id="resourceEventNetworkStrength" min="0" max="5" value="1" data-def="1" step="0.1"  />    
+            <button type="button" id="resourceEventNetworkLabelsButton" class="btn btn-mini" data-toggle="button">Show Labels</button>                     
+		</div>
+        <div class="pull-right">
+        <button type="button" data-dismiss="modal" class="btn">Close</button>
+       	</div>
+       </div>
+    </div>
+    
+    
+    
+    
+     <div id="resourceEventMapModal" class="modal container hide fade" style="min-height:500px" tabindex="-1">
+ 
+      <div class="modal-body">
+      	
+        <div id="eventMap" style="height:400px; width:100%">
+        
+        </div>
+      
+      </div>
+      <div class="modal-footer" style="height:20px;">
+      	
+        <div class="well pull-left well-small">                  
+		</div>
+        <div class="pull-right">
+        <button type="button" data-dismiss="modal" class="btn">Close</button>
+       	</div>
+       </div>
+    </div>
+
+<br /><br /><br /><br /><br /><br />
+
+<script type="text/javascript">    var _gaq = _gaq || [];   _gaq.push(['_setAccount', 'UA-10371295-7']);   _gaq.push(['_trackPageview']);    (function() {     var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);   })();  </script>
+
+</body>
+
+<!-- Mirrored from padb.net/resource/christopher_logue by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 11 Jan 2020 22:19:01 GMT -->
+</html>

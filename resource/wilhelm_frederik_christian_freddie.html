@@ -1,0 +1,465 @@
+<!doctype html>
+<html>
+
+<!-- Mirrored from padb.net/resource/wilhelm_frederik_christian_freddie by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 11 Jan 2020 22:23:46 GMT -->
+<head>
+<meta charset="UTF-8">
+<title>padb.net</title>
+
+
+<link rel="stylesheet" href="../css/bootstrap.css">
+<link rel="stylesheet" href="../css/font-awesome.css">
+<link rel="stylesheet" href="../css/site.css">
+<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+<link rel="icon" type="image/png" href="../img/favicon.png">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/bootstrap-modal.js"></script>
+<script src="../js/bootstrap-modalmanager.js"></script>
+
+<script src="../js/d3.min.js"></script>
+<script src="../js/html5slider.js"></script>
+<script src="../js/topojson.js"></script>
+<script src="../js/padb.js"></script>
+
+
+</head>
+<body>
+    
+    
+	<div style="position:relative;">        
+
+ 		<div style=" border-bottom:solid 1px #ccc;">
+        	<div class="container">
+                
+                 <div id="header">
+                 	
+                     <div class="logo"><a href="../index.html"><span>|||</span>padb</a> </div>
+                    
+                     						<div id="resourceName" style="font-size:2em">Wilhelm Frederik Christian Freddie</div>
+					
+                 </div>
+                
+                
+        	</div>
+            
+    	</div>
+ 
+   </div>
+<script src="../js/countriesData.js"></script>
+
+<script type="text/javascript">
+	//preloaded json from the server
+
+	var dataSameAs = [
+  {
+    "uri": "http://wikidata.dbpedia.org/resource/Q1851487",
+    "numDuplicates": "24",
+    "duplicates": [
+      "http://dbpedia.org/resource/Wilhelm_Freddie",
+      "http://dbpedia.org/resource/Wilhelm_Frederik_Christian_Freddie",
+      "http://d-nb.info/gnd/119032155",
+      "http://d-nb.info/gnd/119032155/about/rdf",
+      "http://da.dbpedia.org/resource/Wilhelm_Freddie",
+      "http://data.bibsys.no/data/notrbib/authorityentry/x90393554",
+      "http://dbpedialite.org/things/5803663#id",
+      "http://dbpedialite.org/things/5803676#id",
+      "http://de.dbpedia.org/resource/Wilhelm_Freddie",
+      "http://eo.dbpedia.org/resource/Wilhelm_Freddie",
+      "http://es.dbpedia.org/resource/Wilhelm_Freddie",
+      "http://freebase.com//m/0f5rv1",
+      "http://id.loc.gov/authorities/names/n79103718",
+      "http://mpii.de/yago/resource/Wilhelm_Freddie",
+      "http://pl.dbpedia.org/resource/Wilhelm_Freddie",
+      "http://rdf.freebase.com/ns/m.0f5rv1",
+      "http://rdf.freebase.com/ns/en.wilhelm_freddie",
+      "http://rdf.freebase.com/ns/guid.9202a8c04000641f8000000000d2df41",
+      "http://sv.dbpedia.org/resource/Wilhelm_Freddie",
+      "http://viaf.org/viaf/47562780",
+      "http://wikidata.dbpedia.org/resource/Q1851487",
+      "http://www.idref.fr/030077028/id",
+      "http://www.wikidata.org/entity/Q1851487",
+      "http://yago-knowledge.org/resource/Wilhelm_Freddie"
+    ]
+  }
+]
+;
+	var dataDbpedia = {
+  "http://en.wikipedia.org/wiki/Wilhelm_Freddie" : { "http://xmlns.com/foaf/0.1/primaryTopic" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Wilhelm_Freddie" } ] } ,
+  "http://dbpedia.org/resource/Wilhelm_Freddie" : { "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Painter110391653" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Organism100004475" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/ontology/Person" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Sculptor110566072" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Whole100003553" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/LivingThing100004258" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatDanishPainters" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/CausalAgent100007347" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatSurrealistArtists" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatPeopleFromCopenhagen" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatDanishSculptors" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/YagoLegalActor" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/YagoLegalActorGeo" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Wikicat20th-centuryDanishPainters" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Specialist110631941" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Person100007846" } ,
+      { "type" : "uri", "value" : "http://www.w3.org/2002/07/owl#Thing" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Object100002684" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Expert109617867" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatScenicDesigners" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/PhysicalEntity100001930" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Artist109812338" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Creator109614315" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/InteriorDesigner110210648" } ] ,
+    "http://www.w3.org/2000/01/rdf-schema#label" : [ { "type" : "literal", "value" : "Wilhelm Freddie" , "lang" : "pl" } ,
+      { "type" : "literal", "value" : "Wilhelm Freddie" , "lang" : "de" } ,
+      { "type" : "literal", "value" : "Wilhelm Freddie" , "lang" : "en" } ,
+      { "type" : "literal", "value" : "Wilhelm Freddie" , "lang" : "es" } ] ,
+    "http://www.w3.org/2000/01/rdf-schema#comment" : [ { "type" : "literal", "value" : "Wilhelm Frederik Christian Carlsen Freddie (7 February 1909 \u2013 26 October 1995) was a Danish painter and sculptor. Initially working along a somewhat abstract line, he soon turned towards a more realistic surrealism, only to later return to abstract art. Some of his works were highly controversial and considered pornographic at their time, resulting in confiscation of the works and his imprisonment though his artistic merits were later recognized." , "lang" : "en" } ,
+      { "type" : "literal", "value" : "Wilhelm Freddie (eigentlich Frederik Wilhelm Christian Carlsen; * 7. Februar 1909; \u2020 26. Oktober 1995 in Kopenhagen) war ein d\u00E4nischer Allround-K\u00FCnstler, der vor allem als Maler und Bildhauer des Surrealismus bekannt wurde, aber auch in den Bereichen Film, Ballett und Schaufenstergestaltung aktiv war. Er tat sich auch als Happeningk\u00FCnstler hervor." , "lang" : "de" } ,
+      { "type" : "literal", "value" : "Wilhelm Frederik Christian Carlsen Freddie (n. 7 de febrero de 1909 - f. 26 de octubre de 1995 en Copenhague) fue un escultor grabador, artista objetual, profesor y pintor dan\u00E9s. Fue tambi\u00E9n conocido por sus intervenciones en el cine, el ballet y la escenograf\u00EDa. Tambi\u00E9n estuvo vinculado al Happening." , "lang" : "es" } ,
+      { "type" : "literal", "value" : "Wilhelm Freddie (ur. 7 stycznia 1909, zm. 26 pa\u017Adziernika 1995) - du\u0144ski malarz. Tworzy\u0142 w duchu konstruktywizmu, w 1927 odkry\u0142 surrealizm. By\u0142 pod wp\u0142ywem Salvadora Dalego, dzi\u0119ki kt\u00F3remu wypracowa\u0142 technik\u0119 drobiazgowego przekazu pozwalaj\u0105c\u0105 mu na przedstawienie swoich fantazji z w\u0142a\u015Bciw\u0105 sobie agresj\u0105. Zajmowa\u0142 si\u0119 r\u00F3wnie\u017C redagowaniem pism \u201ELenien\u201D i \u201EKonkretion\u201D." , "lang" : "pl" } ] ,
+    "http://www.w3.org/2002/07/owl#sameAs" : [ { "type" : "uri", "value" : "http://rdf.freebase.com/ns/m.0f5rv1" } ,
+      { "type" : "uri", "value" : "http://viaf.org/viaf/47562780" } ,
+      { "type" : "uri", "value" : "http://pl.dbpedia.org/resource/Wilhelm_Freddie" } ,
+      { "type" : "uri", "value" : "http://d-nb.info/gnd/119032155" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Wilhelm_Freddie" } ,
+      { "type" : "uri", "value" : "http://de.dbpedia.org/resource/Wilhelm_Freddie" } ,
+      { "type" : "uri", "value" : "http://data.europa.eu/euodp/jrc-names/Wilhelm_Freddie" } ,
+      { "type" : "uri", "value" : "http://wikidata.dbpedia.org/resource/Q1851487" } ,
+      { "type" : "uri", "value" : "http://es.dbpedia.org/resource/Wilhelm_Freddie" } ,
+      { "type" : "uri", "value" : "http://www.wikidata.org/entity/Q1851487" } ,
+      { "type" : "uri", "value" : "http://yago-knowledge.org/resource/Wilhelm_Freddie" } ] ,
+    "http://purl.org/dc/terms/subject" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:20th-century_Danish_sculptors" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:1995_deaths" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Danish_sculptors" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Recipients_of_the_Thorvaldsen_Medal" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:1909_births" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:20th-century_Danish_painters" } ] ,
+    "http://xmlns.com/foaf/0.1/name" : [ { "type" : "literal", "value" : "Wilhelm Freddie" , "lang" : "en" } ] ,
+    "http://purl.org/dc/terms/description" : [ { "type" : "literal", "value" : "Danish artist" , "lang" : "en" } ] ,
+    "http://xmlns.com/foaf/0.1/givenName" : [ { "type" : "literal", "value" : "Wilhelm" , "lang" : "en" } ] ,
+    "http://xmlns.com/foaf/0.1/gender" : [ { "type" : "literal", "value" : "male" , "lang" : "en" } ] ,
+    "http://xmlns.com/foaf/0.1/isPrimaryTopicOf" : [ { "type" : "uri", "value" : "http://en.wikipedia.org/wiki/Wilhelm_Freddie" } ] ,
+    "http://xmlns.com/foaf/0.1/surname" : [ { "type" : "literal", "value" : "Freddie" , "lang" : "en" } ] ,
+    "http://www.w3.org/ns/prov#wasDerivedFrom" : [ { "type" : "uri", "value" : "http://en.wikipedia.org/wiki/Wilhelm_Freddie?oldid=708115598" } ] ,
+    "http://dbpedia.org/ontology/wikiPageExternalLink" : [ { "type" : "uri", "value" : "https://www.kulturarv.dk/kid/VisKunstner.do?kunstnerId=48" } ] ,
+    "http://dbpedia.org/ontology/abstract" : [ { "type" : "literal", "value" : "Wilhelm Freddie (ur. 7 stycznia 1909, zm. 26 pa\u017Adziernika 1995) - du\u0144ski malarz. Tworzy\u0142 w duchu konstruktywizmu, w 1927 odkry\u0142 surrealizm. By\u0142 pod wp\u0142ywem Salvadora Dalego, dzi\u0119ki kt\u00F3remu wypracowa\u0142 technik\u0119 drobiazgowego przekazu pozwalaj\u0105c\u0105 mu na przedstawienie swoich fantazji z w\u0142a\u015Bciw\u0105 sobie agresj\u0105. Zajmowa\u0142 si\u0119 r\u00F3wnie\u017C redagowaniem pism \u201ELenien\u201D i \u201EKonkretion\u201D. W 1937 jego wystawa zosta\u0142a zamkni\u0119ta przez policj\u0119 pod zarzutem szerzenia pornografii. W 1942 schroni\u0142 si\u0119 do Szwecji, gdzie przebywa\u0142 8 lat. Po wojnie zacz\u0105\u0142 u\u017Cywa\u0107 geometrycznych form, jego prace przepojone by\u0142y erotyzmem i humorem." , "lang" : "pl" } ,
+      { "type" : "literal", "value" : "Wilhelm Frederik Christian Carlsen Freddie (n. 7 de febrero de 1909 - f. 26 de octubre de 1995 en Copenhague) fue un escultor grabador, artista objetual, profesor y pintor dan\u00E9s. Fue tambi\u00E9n conocido por sus intervenciones en el cine, el ballet y la escenograf\u00EDa. Tambi\u00E9n estuvo vinculado al Happening." , "lang" : "es" } ,
+      { "type" : "literal", "value" : "Wilhelm Freddie (eigentlich Frederik Wilhelm Christian Carlsen; * 7. Februar 1909; \u2020 26. Oktober 1995 in Kopenhagen) war ein d\u00E4nischer Allround-K\u00FCnstler, der vor allem als Maler und Bildhauer des Surrealismus bekannt wurde, aber auch in den Bereichen Film, Ballett und Schaufenstergestaltung aktiv war. Er tat sich auch als Happeningk\u00FCnstler hervor." , "lang" : "de" } ,
+      { "type" : "literal", "value" : "Wilhelm Frederik Christian Carlsen Freddie (7 February 1909 \u2013 26 October 1995) was a Danish painter and sculptor. Initially working along a somewhat abstract line, he soon turned towards a more realistic surrealism, only to later return to abstract art. Some of his works were highly controversial and considered pornographic at their time, resulting in confiscation of the works and his imprisonment though his artistic merits were later recognized." , "lang" : "en" } ] ,
+    "http://dbpedia.org/ontology/birthDate" : [ { "type" : "literal", "value" : "1909-2-7" , "datatype" : "http://www.w3.org/2001/XMLSchema#date" } ] ,
+    "http://dbpedia.org/ontology/deathDate" : [ { "type" : "literal", "value" : "1995-10-26" , "datatype" : "http://www.w3.org/2001/XMLSchema#date" } ] ,
+    "http://dbpedia.org/ontology/deathPlace" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Copenhagen" } ] ,
+    "http://dbpedia.org/ontology/wikiPageRevisionID" : [ { "type" : "literal", "value" : 708115598 , "datatype" : "http://www.w3.org/2001/XMLSchema#integer" } ] ,
+    "http://dbpedia.org/ontology/birthPlace" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Copenhagen" } ] ,
+    "http://dbpedia.org/ontology/wikiPageID" : [ { "type" : "literal", "value" : 5803663 , "datatype" : "http://www.w3.org/2001/XMLSchema#integer" } ] ,
+    "http://purl.org/linguistics/gold/hypernym" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Painter" } ] } ,
+  "http://dbpedia.org/resource/Wilhelm_Frederik_Christian_Freddie" : { "http://dbpedia.org/ontology/wikiPageRedirects" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Wilhelm_Freddie" } ] }
+}
+;
+	var dataAuth = "http://dbpedia.org/resource/Wilhelm_Freddie";
+	var dataUrl = "wilhelm_frederik_christian_freddie.html";
+	var dataResourceType = "participant";
+	var dataName = "Wilhelm Frederik Christian Freddie";
+ 	
+</script>
+
+
+
+
+
+<script type="text/javascript">
+
+
+	
+	
+	
+
+	$(document).ready(function($) {
+		
+		
+		padb.resource.initialize();
+			 
+		$( '.scrollable' ).
+		bind( 'mousewheel DOMMouseScroll', function ( e ) {
+			
+			if( e.originalEvent ) e = e.originalEvent;
+			
+			var delta = e.wheelDelta || -e.detail;
+			this.scrollTop += ( delta < 0 ? 1 : -1 ) * 30;
+			e.preventDefault();
+		});		 
+		
+		
+				
+		$.ajaxSetup ({
+			// Disable caching of AJAX responses
+			cache: false
+		});		
+		
+	});
+	
+
+	
+	
+	
+	
+	
+</script>
+
+
+
+
+ 
+<br />
+<div class="container"  style="position:relative;">
+	   
+      <div id="resourceLinks"></div> 
+       
+       
+       
+       
+              
+       
+           
+           
+           
+          <div class="row addSection">
+              <div class="span1 addSectionIconHolder">
+              
+                <i class="icon-user"></i>
+              
+              </div>
+          
+              <div class="span11">
+                <span>Performer</span>
+                <hr>
+                <br />
+              </div>
+        </div>
+        <div class="row">
+            <div class="span1">
+            </div>
+            <div class="span11" style="position:relative">
+                
+                
+                
+                
+               <div>
+                                       
+                                           
+                <div class="pull-left" style="width:80%;">
+                     
+                     <h5 id="resourceLDName">Wilhelm Frederik Christian Freddie</h5>
+                     <h5 id="resourceLDAbstract"></h5>
+                     
+                     
+                     <div id="resourceSameAs">
+                        <h5>External Data:</h5>
+                        
+                        
+                     </div>
+                
+                </div>   
+                
+                <br style="clear:both;" />
+            </div>
+            
+            
+                
+            </div>
+        </div>    
+         
+    
+    
+    
+    
+    
+    
+       <div class="row addSection">
+			<div class="span1 addSectionIconHolder">              
+                <i class="icon-asterisk"></i>
+              
+              </div>
+          
+              <div class="span11">
+                <span>Events </span><span id="resourceEventCount"></span>
+                <hr>
+              </div>
+        </div>
+    
+    
+    
+    
+    
+    
+    
+        <div class="row">
+            <div class="span1"></div>
+            <div class="span11" style="position:relative">
+                  
+                 <div class="">
+                    <div id="resourceEventsEvents" class="scrollable">
+                           <table class="table table-condensed table-hover table-striped">
+                               <thead>
+                                <tr>
+                                  <th>Date</th>
+                                  
+                                  <th>Title</th>
+                                  <th>Location</th>
+                                  <th></th>
+                                </tr>
+                              </thead>
+                              <tbody id="resourceEventsEventsRows"> 
+                              </tbody>
+                            </table>
+                     
+                    </div>
+                    
+                    <div id="resourceEventsExport">
+                    
+                    	<input  name="resourceEventsSearch" class="span3" id="resourceEventsSearch"  type="text" placeholder="Filter: names, places, dates">
+                    	<button class="btn btn-mini btn-danger" id="resourceEventsClearFilter"><i class="icon-remove">&nbsp;Clear Filter</i></button>
+                   		<button class="btn btn-mini btn-info" title="Render the currently filitered data as a network" id="resourceRenderEventNetwork"> <img src="../img/icon-network-white.png" style="height:15px; width:auto" /> Two-Mode Event Network</button>
+                   		<button class="btn btn-mini btn-info" title="Render the currently filitered data as a network" id="resourceRenderEventMap"> <i class="icon-globe"></i> Map Event Locations</button>
+                   		<button class="btn btn-mini btn-success" title="Download network as Gephi File" id="resourceDownloadEventGephi"> <img src="../img/icon-gephi.png" style="height:15px; width:auto" /> Donwload Gephi Network</button>
+
+                 
+                    </div>                 
+                </div>
+                <br style="clear:both;" />
+            </div>
+            
+            
+                
+         </div>    
+    
+     
+       <div class="row addSection">
+              <div class="span1">
+              
+                <img src="../img/social-network.png" style=" margin-left:25px; margin-bottom:10px;" />
+              
+              </div>
+          
+              <div class="span11">
+                <span>Performance Network</span> 
+                <hr>
+              </div>
+        </div>
+        
+        <div class="row">
+            <div class="span1">
+            </div>
+            <div class="span11" style="position:relative">
+                
+               	<div style="width: 100%; height:500px;" id="egoNetwork">
+            
+                
+             	</div> 
+                <div class="well pull-left well-small" id="egoNetworkControls">
+                    <span class="rangeLabels">Node Charge</span>
+                    <input type="range" id="resourceEgoNetworkCharge" min="-1000" max="100" value="-120" data-def="-700" />
+                    <br /><span class="rangeLabels">Gravity</span>
+                    <input type="range" id="resourceEgoNetworkGravity" min="0" max="1" value="0.1" step="0.01" data-def="0.3" /> 
+                    <br /><span class="rangeLabels">Edge Length</span>
+                    <input type="range" id="resourceEgoNetworkDistance" min="0" max="300" value="50" data-def="50"  />      
+                    <br /><span class="rangeLabels">Edge Strength</span>
+                    <input type="range" id="resourceEgoNetworkStrength" min="0" max="3" value="1" data-def="0.15" step="0.1"  /> 
+                    <br /><br />
+                    <button type="button" id="resourceEgoNetworkLabelsButton" class="btn btn-mini" title="Show node labels." data-toggle="button">Show Labels</button>  
+                    <button type="button" id="resourceEgoNetworkLiveButton" class="btn btn-mini" title="Show realtime network rendering" data-toggle="button">Live Rendering</button>                     
+                </div>
+                
+                <div class="well pull-left well-small egoNetworkControls span7" style="margin-left:20px;" >
+                
+                	<input  name="resourceEgoNetworkSearch" class="span3" id="resourceEgoNetworkSearch"  type="text" placeholder="Filter: names, places, dates">
+					<button class="btn btn-mini btn-danger" id="resourceEgoClearFilter"><i class="icon-remove">&nbsp;Clear Filter</i></button>
+                    <button class="btn btn-mini btn-success" title="Download network as Gephi File" id="resourceDownloadEgoGephi"> <img src="../img/icon-gephi.png" style="height:15px; width:auto" /> Donwload Gephi Network</button>
+
+                </div>
+                
+            </div>
+        </div>           
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+	
+
+	
+
+
+	
+
+
+</div>
+
+
+
+
+    <div id="resourceEventNetworkModal" class="modal container hide fade" style="min-height:500px" tabindex="-1">
+ 
+      <div class="modal-body">
+      	
+        <div id="eventNetwork" style="height:400px; width:100%">
+        
+        </div>
+      
+      </div>
+      <div class="modal-footer" style="height:20px;">
+      	
+        <div class="well pull-left well-small">
+        	<span class="rangeLabels">Node Charge</span>
+        	<input type="range" id="resourceEventNetworkCharge" min="-800" max="200" value="-120" data-def="-120" />
+            <span class="rangeLabels">Gravity</span>
+        	<input type="range" id="resourceEventNetworkGravity" min="0" max="1" value="0.1" step="0.01" data-def="0.1" /> 
+            <span class="rangeLabels">Edge Length</span>
+        	<input type="range" id="resourceEventNetworkDistance" min="0" max="300" value="50" data-def="50"  />      
+            <span class="rangeLabels">Edge Strength</span>
+        	<input type="range" id="resourceEventNetworkStrength" min="0" max="5" value="1" data-def="1" step="0.1"  />    
+            <button type="button" id="resourceEventNetworkLabelsButton" class="btn btn-mini" data-toggle="button">Show Labels</button>                     
+		</div>
+        <div class="pull-right">
+        <button type="button" data-dismiss="modal" class="btn">Close</button>
+       	</div>
+       </div>
+    </div>
+    
+    
+    
+    
+     <div id="resourceEventMapModal" class="modal container hide fade" style="min-height:500px" tabindex="-1">
+ 
+      <div class="modal-body">
+      	
+        <div id="eventMap" style="height:400px; width:100%">
+        
+        </div>
+      
+      </div>
+      <div class="modal-footer" style="height:20px;">
+      	
+        <div class="well pull-left well-small">                  
+		</div>
+        <div class="pull-right">
+        <button type="button" data-dismiss="modal" class="btn">Close</button>
+       	</div>
+       </div>
+    </div>
+
+<br /><br /><br /><br /><br /><br />
+
+<script type="text/javascript">    var _gaq = _gaq || [];   _gaq.push(['_setAccount', 'UA-10371295-7']);   _gaq.push(['_trackPageview']);    (function() {     var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);   })();  </script>
+
+</body>
+
+<!-- Mirrored from padb.net/resource/wilhelm_frederik_christian_freddie by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 11 Jan 2020 22:23:46 GMT -->
+</html>

@@ -1,0 +1,1 @@
+{"nodes": [{"name": "Copies of Confiscated Works at the Criminal Museum", "type": "event", "year": "1961", "id": 0, "x": 100, "y": 100}, {"name": "Wilhelm Frederik Christian Freddie", "type": "person", "id": 1, "x": 100, "y": 100}], "edges": [{"source": 1, "target": 0, "value": 1}]}

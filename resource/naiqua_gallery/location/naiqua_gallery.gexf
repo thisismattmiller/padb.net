@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<gexf version="1.2" xmlns="http://www.gexf.net/1.2draft">
+ <graph mode="static" defaultedgetype="undirected">
+  <nodes>
+   <node id="140" label="Izumi Tatsu"/>
+   <node id="146" label="Hi Red Center"/>
+  </nodes>
+  <edges>
+   <edge source="140" target="146"/>
+  </edges>
+ </graph>
+</gexf>

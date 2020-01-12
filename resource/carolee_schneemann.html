@@ -1,0 +1,537 @@
+<!doctype html>
+<html>
+
+<!-- Mirrored from padb.net/resource/carolee_schneemann by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 11 Jan 2020 22:17:30 GMT -->
+<head>
+<meta charset="UTF-8">
+<title>padb.net</title>
+
+
+<link rel="stylesheet" href="../css/bootstrap.css">
+<link rel="stylesheet" href="../css/font-awesome.css">
+<link rel="stylesheet" href="../css/site.css">
+<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+<link rel="icon" type="image/png" href="../img/favicon.png">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/bootstrap-modal.js"></script>
+<script src="../js/bootstrap-modalmanager.js"></script>
+
+<script src="../js/d3.min.js"></script>
+<script src="../js/html5slider.js"></script>
+<script src="../js/topojson.js"></script>
+<script src="../js/padb.js"></script>
+
+
+</head>
+<body>
+    
+    
+	<div style="position:relative;">        
+
+ 		<div style=" border-bottom:solid 1px #ccc;">
+        	<div class="container">
+                
+                 <div id="header">
+                 	
+                     <div class="logo"><a href="../index.html"><span>|||</span>padb</a> </div>
+                    
+                     						<div id="resourceName" style="font-size:2em">Carolee Schneemann</div>
+					
+                 </div>
+                
+                
+        	</div>
+            
+    	</div>
+ 
+   </div>
+<script src="../js/countriesData.js"></script>
+
+<script type="text/javascript">
+	//preloaded json from the server
+
+	var dataSameAs = [
+  {
+    "uri": "http://wikidata.dbpedia.org/resource/Q299662",
+    "numDuplicates": "32",
+    "duplicates": [
+      "http://dbpedia.org/resource/Interior_Scroll",
+      "http://dbpedia.org/resource/Carolee_Schneeman",
+      "http://dbpedia.org/resource/Carolee_Schneemann",
+      "http://dbpedia.org/resource/Carollee_Schneemann",
+      "http://bnb.data.bl.uk/id/person/SchneemannCarolee1939-",
+      "http://d-nb.info/gnd/11941323X",
+      "http://d-nb.info/gnd/11941323X/about/rdf",
+      "http://data.bibsys.no/data/notrbib/authorityentry/x90793995",
+      "http://dbpedialite.org/things/1870977#id",
+      "http://dbpedialite.org/things/1870986#id",
+      "http://dbpedialite.org/things/2144756#id",
+      "http://de.dbpedia.org/resource/Carolee_Schneemann",
+      "http://es.dbpedia.org/resource/Carolee_Schneemann",
+      "http://fr.dbpedia.org/resource/Carolee_Schneemann",
+      "http://freebase.com//m/062m8c",
+      "http://id.loc.gov/authorities/names/n78043895",
+      "http://it.dbpedia.org/resource/Carolee_Schneemann",
+      "http://mpii.de/yago/resource/Carolee_Schneemann",
+      "http://no.dbpedia.org/resource/Carolee_Schneemann",
+      "http://pl.dbpedia.org/resource/Carolee_Schneemann",
+      "http://rdf.freebase.com/ns/m.062m8c",
+      "http://rdf.freebase.com/ns/en.carolee_schneemann",
+      "http://rdf.freebase.com/ns/guid.9202a8c04000641f8000000000614d0b",
+      "http://sh.dbpedia.org/resource/Carolee_Schneemann",
+      "http://umbel.org/umbel/ne/wikipedia/Carolee_Schneemann",
+      "http://viaf.org/viaf/19907600",
+      "http://viaf.org/viaf/93535716",
+      "http://viaf.org/viaf/96354571",
+      "http://wikidata.dbpedia.org/resource/Q299662",
+      "http://www.idref.fr/070011893/id",
+      "http://www.wikidata.org/entity/Q299662",
+      "http://yago-knowledge.org/resource/Carolee_Schneemann"
+    ]
+  }
+]
+;
+	var dataDbpedia = {
+  "http://en.wikipedia.org/wiki/Carolee_Schneemann" : { "http://xmlns.com/foaf/0.1/primaryTopic" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Carolee_Schneemann" } ] } ,
+  "http://dbpedia.org/resource/Carolee_Schneemann" : { "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Peer109626238" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Colleague109935990" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatBardCollegeAlumni" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatPerformanceArtists" } ,
+      { "type" : "uri", "value" : "http://xmlns.com/foaf/0.1/Person" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatFeministArtists" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatGuggenheimFellows" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Associate109816771" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatArtistsFromPennsylvania" } ,
+      { "type" : "uri", "value" : "http://umbel.org/umbel/rc/Artist" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Organism100004475" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/ontology/Person" } ,
+      { "type" : "uri", "value" : "http://www.wikidata.org/entity/Q24229398" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatInstallationArtists" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Adult109605289" } ,
+      { "type" : "uri", "value" : "http://schema.org/Person" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Person100007846" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Object100002684" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/YagoLegalActor" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/YagoLegalActorGeo" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/CausalAgent100007347" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/PhysicalEntity100001930" } ,
+      { "type" : "uri", "value" : "http://www.wikidata.org/entity/Q215627" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatPeopleFromPennsylvania" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Whole100003553" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/LivingThing100004258" } ,
+      { "type" : "uri", "value" : "http://www.wikidata.org/entity/Q5" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatAmericanPainters" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/ontology/Agent" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatAmericanWomenWriters" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Woman110787470" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Writer110794014" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatLivingPeople" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatContemporaryArtists" } ,
+      { "type" : "uri", "value" : "http://www.wikidata.org/entity/Q483501" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Reformer110515194" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Scholar110557854" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatWomen" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Female109619168" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Creator109614315" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Disputant109615465" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatAmericanPerformanceArtists" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Communicator109610660" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Intellectual109621545" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Artist109812338" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatAmericanArtists" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Alumnus109786338" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/ontology/Artist" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatVideoArtists" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Painter110391653" } ,
+      { "type" : "uri", "value" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#NaturalPerson" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatAmericanFeminists" } ,
+      { "type" : "uri", "value" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent" } ,
+      { "type" : "uri", "value" : "http://www.w3.org/2002/07/owl#Thing" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Feminist110084635" } ] ,
+    "http://www.w3.org/2000/01/rdf-schema#label" : [ { "type" : "literal", "value" : "Carolee Schneemann" , "lang" : "pl" } ,
+      { "type" : "literal", "value" : "Carolee Schneemann" , "lang" : "en" } ,
+      { "type" : "literal", "value" : "Carolee Schneemann" , "lang" : "de" } ,
+      { "type" : "literal", "value" : "Carolee Schneemann" , "lang" : "it" } ,
+      { "type" : "literal", "value" : "Carolee Schneemann" , "lang" : "fr" } ,
+      { "type" : "literal", "value" : "Carolee Schneemann" , "lang" : "es" } ] ,
+    "http://www.w3.org/2000/01/rdf-schema#comment" : [ { "type" : "literal", "value" : "Carolee Schneemann est n\u00E9e le 12 octobre 1939 \u00E0 Fox Chase (en) en Pennsylvanie. Elle est une artiste plasticienne am\u00E9ricaine qui a beaucoup travaill\u00E9 avec le corps, s'int\u00E9ressant notamment \u00E0 la sexualit\u00E9 et au genre. Son \u0153uvre est principalement caract\u00E9ris\u00E9e par une recherche sur les traditions archa\u00EFques visuelles, les tabous, et le corps de l'artiste dans sa relation dynamique avec le corps social. Artiste multidisciplinaire, elle a produit des peintures, des films exp\u00E9rimentaux, des photographies, des performances et des installations, et \u00E9galement publi\u00E9 de nombreux articles. Elle a apport\u00E9 une contribution fondamentale \u00E0 divers mouvements artistiques am\u00E9ricains, notamment le Happening, le Body Art, le Judson Dance Theater et l'art f\u00E9ministe." , "lang" : "fr" } ,
+      { "type" : "literal", "value" : "Carolee Schneemann (born October 12, 1939) is an American visual artist, known for her discourses on the body, sexuality and gender. She received a B.A. from Bard College and a Master of Fine Arts from the University of Illinois. Her work is primarily characterized by research into visual traditions, taboos, and the body of the individual in relationship to social bodies. Her works have been shown at the Los Angeles Museum of Contemporary Art, the New York Museum of Modern Art, and the London National Film Theatre. Schneemann has taught at several universities, including the California Institute of the Arts, the School of the Art Institute of Chicago, Hunter College, and Rutgers University. Additionally, she has published widely, producing works such as C\u00E9zanne, She Was a Great Painter (19" , "lang" : "en" } ,
+      { "type" : "literal", "value" : "Carolee Schneemann (* 12. Oktober 1939 in Fox Chase, Pennsylvania), eine US-amerikanische K\u00FCnstlerin, wurde durch Beitr\u00E4ge zum gesellschaftlichen Diskurs \u00FCber K\u00F6rperlichkeit, Sexualit\u00E4t und Geschlechterrollen international bekannt. Aus Fragestellungen der Malerei entwickelte sie eine fundierte und bahnbrechende k\u00FCnstlerische Erforschung visueller Traditionen und Tabus. Besonders bekannt wurden Performances und Experimentalfilme, die das Verh\u00E4ltnis zwischen dem individuellen und dem gesellschaftlichen K\u00F6rper und die Unterschiede zwischen Erotik und Politik thematisieren. Das auf Grundlage breiten kunsthistorischen Wissens geschaffene \u0152uvre enth\u00E4lt kulturell pr\u00E4gende Arbeiten der Gattungen Assemblage, Experimentalfilm und Performance und gilt als bedeutend f\u00FCr die feministische \u00C4sthetik." , "lang" : "de" } ,
+      { "type" : "literal", "value" : "Carolee Schneemann (ur. 12 pa\u017Adziernika 1939), intermedialna ameryka\u0144ska artystka, zajmuje si\u0119 g\u0142\u00F3wnie malarstwem, fotografi\u0105, performance i instalacj\u0105 oraz wideo. Tw\u00F3rczo\u015B\u0107 artystki reprezentuje rozw\u00F3j sztuki XX wieku, pocz\u0105tkowo zajmuj\u0105ca si\u0119 malarstwem wprowadza do swoich prac dodatkowe obiekty, jak r\u00F3wnie\u017C swoje cia\u0142o jako element kompozycji. Tworzy w ten spos\u00F3b kola\u017Ce, instalacje i autorskie assemblages." , "lang" : "pl" } ,
+      { "type" : "literal", "value" : "Carolee Schneemann (Fox Chase, Pensilvania, 12 de octubre de 1939) es una artista visual estadounidense, conocida por sus discursos sobre el cuerpo, la sexualidad y de g\u00E9nero. Recibi\u00F3 un B.A. de la Bard College y un M.F.A de la Universidad de Illinois. Su obra se caracteriza principalmente por la investigaci\u00F3n de las tradiciones visuales, los tab\u00FAes, y el cuerpo del individuo en relaci\u00F3n a las entidades sociales. Sus obras se han exhibido en el Museo de Arte Contempor\u00E1neo de Los \u00C1ngeles, el Museo de Arte Moderno de Nueva York, y el London National Film Theatre. Schneemann ha ense\u00F1ado en varias universidades, incluyendo el California Institute of the Arts, la School of the Art Institute of Chicago, la Hunter College y la Universidad Rutgers, donde fue la primer profesora de arte contratada." , "lang" : "es" } ] ,
+    "http://www.w3.org/2002/07/owl#sameAs" : [ { "type" : "uri", "value" : "http://es.dbpedia.org/resource/Carolee_Schneemann" } ,
+      { "type" : "uri", "value" : "http://de.dbpedia.org/resource/Carolee_Schneemann" } ,
+      { "type" : "uri", "value" : "http://fr.dbpedia.org/resource/Carolee_Schneemann" } ,
+      { "type" : "uri", "value" : "http://it.dbpedia.org/resource/Carolee_Schneemann" } ,
+      { "type" : "uri", "value" : "http://pl.dbpedia.org/resource/Carolee_Schneemann" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Carolee_Schneemann" } ,
+      { "type" : "uri", "value" : "http://viaf.org/viaf/93535716" } ,
+      { "type" : "uri", "value" : "http://rdf.freebase.com/ns/m.062m8c" } ,
+      { "type" : "uri", "value" : "http://d-nb.info/gnd/11941323X" } ,
+      { "type" : "uri", "value" : "http://wikidata.dbpedia.org/resource/Q299662" } ,
+      { "type" : "uri", "value" : "http://www.wikidata.org/entity/Q299662" } ,
+      { "type" : "uri", "value" : "http://cs.dbpedia.org/resource/Carolee_Schneemann" } ,
+      { "type" : "uri", "value" : "http://yago-knowledge.org/resource/Carolee_Schneemann" } ] ,
+    "http://purl.org/dc/terms/subject" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:American_artists" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Living_people" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Rutgers_University_faculty" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Women_performance_artists" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:School_of_the_Art_Institute_of_Chicago_faculty" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:1939_births" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:American_choreographers" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:University_of_Illinois_alumni" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:California_Institute_of_the_Arts_faculty" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Bard_College_alumni" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Hunter_College_faculty" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Guggenheim_Fellows" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Artists_from_Philadelphia" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:American_performance_artists" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Feminist_artists" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:20th-century_women_artists" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:American_feminists" } ] ,
+    "http://xmlns.com/foaf/0.1/name" : [ { "type" : "literal", "value" : "Carolee Schneemann" , "lang" : "en" } ] ,
+    "http://purl.org/dc/terms/description" : [ { "type" : "literal", "value" : "American artist" , "lang" : "en" } ] ,
+    "http://xmlns.com/foaf/0.1/givenName" : [ { "type" : "literal", "value" : "Carolee" , "lang" : "en" } ] ,
+    "http://xmlns.com/foaf/0.1/gender" : [ { "type" : "literal", "value" : "female" , "lang" : "en" } ] ,
+    "http://xmlns.com/foaf/0.1/isPrimaryTopicOf" : [ { "type" : "uri", "value" : "http://en.wikipedia.org/wiki/Carolee_Schneemann" } ] ,
+    "http://xmlns.com/foaf/0.1/surname" : [ { "type" : "literal", "value" : "Schneemann" , "lang" : "en" } ] ,
+    "http://dbpedia.org/ontology/field" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Performance_art" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Visual_art" } ] ,
+    "http://dbpedia.org/ontology/movement" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Fluxus" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Neo-dada" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Feminist_art" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Happening" } ] ,
+    "http://dbpedia.org/ontology/training" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Bard_College" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/University_of_Illinois" } ] ,
+    "http://www.w3.org/ns/prov#wasDerivedFrom" : [ { "type" : "uri", "value" : "http://en.wikipedia.org/wiki/Carolee_Schneemann?oldid=743643432" } ] ,
+    "http://dbpedia.org/ontology/wikiPageExternalLink" : [ { "type" : "uri", "value" : "http://archives2.getty.edu:8082/xtf/view?docId=ead/950001/950001.xml;query=;brand=default" } ,
+      { "type" : "uri", "value" : "http://www.vdb.org/smackn.acgi$artistdetail?SCHNEEMANN" } ,
+      { "type" : "uri", "value" : "http://www.ubu.com/film/schneeman.html" } ,
+      { "type" : "uri", "value" : "http://www.vdb.org/" } ,
+      { "type" : "uri", "value" : "http://bombmagazine.org/article/3393617/carolee-schneemann" } ,
+      { "type" : "uri", "value" : "http://www.caroleeschneemann.com" } ] ,
+    "http://dbpedia.org/ontology/abstract" : [ { "type" : "literal", "value" : "Carolee Schneemann est n\u00E9e le 12 octobre 1939 \u00E0 Fox Chase (en) en Pennsylvanie. Elle est une artiste plasticienne am\u00E9ricaine qui a beaucoup travaill\u00E9 avec le corps, s'int\u00E9ressant notamment \u00E0 la sexualit\u00E9 et au genre. Son \u0153uvre est principalement caract\u00E9ris\u00E9e par une recherche sur les traditions archa\u00EFques visuelles, les tabous, et le corps de l'artiste dans sa relation dynamique avec le corps social. Artiste multidisciplinaire, elle a produit des peintures, des films exp\u00E9rimentaux, des photographies, des performances et des installations, et \u00E9galement publi\u00E9 de nombreux articles. Elle a apport\u00E9 une contribution fondamentale \u00E0 divers mouvements artistiques am\u00E9ricains, notamment le Happening, le Body Art, le Judson Dance Theater et l'art f\u00E9ministe." , "lang" : "fr" } ,
+      { "type" : "literal", "value" : "Carolee Schneemann (Fox Chase, Pensilvania, 12 de octubre de 1939) es una artista visual estadounidense, conocida por sus discursos sobre el cuerpo, la sexualidad y de g\u00E9nero. Recibi\u00F3 un B.A. de la Bard College y un M.F.A de la Universidad de Illinois. Su obra se caracteriza principalmente por la investigaci\u00F3n de las tradiciones visuales, los tab\u00FAes, y el cuerpo del individuo en relaci\u00F3n a las entidades sociales. Sus obras se han exhibido en el Museo de Arte Contempor\u00E1neo de Los \u00C1ngeles, el Museo de Arte Moderno de Nueva York, y el London National Film Theatre. Schneemann ha ense\u00F1ado en varias universidades, incluyendo el California Institute of the Arts, la School of the Art Institute of Chicago, la Hunter College y la Universidad Rutgers, donde fue la primer profesora de arte contratada. Adem\u00E1s, ha publicado ampliamente, produciendo obras, tales como C\u00E9zanne, She Was a Great Painter \"C\u00E9zanne, fue una gran pintora\" (1976) y More than Meat Joy: Performance Works and Selected Writings \"M\u00E1s de carne Alegr\u00EDa: Obras de rendimiento y Escritos seleccionados\" (1997). Las obras de Schneemann se han asociado con una variedad de clasificaciones de arte como Fluxus, Neo-Dada, Beat Generation, y Happening." , "lang" : "es" } ,
+      { "type" : "literal", "value" : "Carolee Schneemann (* 12. Oktober 1939 in Fox Chase, Pennsylvania), eine US-amerikanische K\u00FCnstlerin, wurde durch Beitr\u00E4ge zum gesellschaftlichen Diskurs \u00FCber K\u00F6rperlichkeit, Sexualit\u00E4t und Geschlechterrollen international bekannt. Aus Fragestellungen der Malerei entwickelte sie eine fundierte und bahnbrechende k\u00FCnstlerische Erforschung visueller Traditionen und Tabus. Besonders bekannt wurden Performances und Experimentalfilme, die das Verh\u00E4ltnis zwischen dem individuellen und dem gesellschaftlichen K\u00F6rper und die Unterschiede zwischen Erotik und Politik thematisieren. Das auf Grundlage breiten kunsthistorischen Wissens geschaffene \u0152uvre enth\u00E4lt kulturell pr\u00E4gende Arbeiten der Gattungen Assemblage, Experimentalfilm und Performance und gilt als bedeutend f\u00FCr die feministische \u00C4sthetik. Besonders in den 1960er und 1970er Jahren trug die K\u00FCnstlerin mit Happenings und Performances, in denen sie verschiedene Medien mit K\u00F6rper, Bewegung, Sprache und Text kombinierte, zur Entwicklung der Aktionsk\u00FCnste bei. Ihre Performance Interior Scroll (1975) wurde zu einem Leitbild k\u00FCnstlerischer Grenz\u00FCberschreitung und weiblicher Kunst. Das umfangreiche Gesamtwerk steht in Verbindung mit Neo-Dada, Beat Generation und Fluxus. Es wird in Institutionen wie dem Museum of Contemporary Art (MOCA), dem Museum of Modern Art (MoMA), dem Centre Georges Pompidou und dem National Film Theatre London gesammelt und pr\u00E4sentiert. Carolee Schneemann lehrte am California Institute of the Arts, dem School of the Art Institute of Chicago, dem Hunter College und der Rutgers University. 2011 wurde Carolee Schneemann in New York zum Mitglied (NA) der National Academy of Design gew\u00E4hlt." , "lang" : "de" } ,
+      { "type" : "literal", "value" : "Carolee Schneemann (born October 12, 1939) is an American visual artist, known for her discourses on the body, sexuality and gender. She received a B.A. from Bard College and a Master of Fine Arts from the University of Illinois. Her work is primarily characterized by research into visual traditions, taboos, and the body of the individual in relationship to social bodies. Her works have been shown at the Los Angeles Museum of Contemporary Art, the New York Museum of Modern Art, and the London National Film Theatre. Schneemann has taught at several universities, including the California Institute of the Arts, the School of the Art Institute of Chicago, Hunter College, and Rutgers University. Additionally, she has published widely, producing works such as C\u00E9zanne, She Was a Great Painter (1976) and More than Meat Joy: Performance Works and Selected Writings (1997). Schneemann's works have been associated with a variety of art classifications including Fluxus, Neo-Dada, Performance art, the Beat Generation, and happenings." , "lang" : "en" } ,
+      { "type" : "literal", "value" : "Carolee Schneemann (ur. 12 pa\u017Adziernika 1939), intermedialna ameryka\u0144ska artystka, zajmuje si\u0119 g\u0142\u00F3wnie malarstwem, fotografi\u0105, performance i instalacj\u0105 oraz wideo. Tw\u00F3rczo\u015B\u0107 artystki reprezentuje rozw\u00F3j sztuki XX wieku, pocz\u0105tkowo zajmuj\u0105ca si\u0119 malarstwem wprowadza do swoich prac dodatkowe obiekty, jak r\u00F3wnie\u017C swoje cia\u0142o jako element kompozycji. Tworzy w ten spos\u00F3b kola\u017Ce, instalacje i autorskie assemblages. W tym procesie coraz bardziej ogniskuje swoj\u0105 uwag\u0119 na ciele, kt\u00F3re ostatecznie staje si\u0119 g\u0142\u00F3wnym \"medium\" jej sztuki. Jako jedna z pierwszych artystek wypracowuje formu\u0142\u0119 performance (pierwsze pokazy ok. 1956-1958). Na przyk\u0142adzie jej tw\u00F3rczo\u015Bci mo\u017Cna prze\u015Bledzi\u0107 rozw\u00F3j tej formy sztuki z klasycznej tw\u00F3rczo\u015Bci plastycznej (malarstwo). Tematy jej prac: (sama tak grupuje swoje dzie\u0142a) koty, erotyka, ruch, marzenia/sny, wojna. Szczeg\u00F3lnie eksploruje tematy zwi\u0105zane z p\u0142ciowo\u015Bci\u0105, cia\u0142em, seksualno\u015Bci\u0105. Bierze te\u017C udzia\u0142 w ruchu Fluxus. Pokazy jej tw\u00F3rczo\u015Bci odbywa\u0142y si\u0119 mi\u0119dzy innymi w: Los Angeles Museum of Contemporary Art, Whitney Museum of American Art, Museum of Modern Art, Centre Georges Pompidou. Prowadzi r\u00F3wnie\u017C dzia\u0142alno\u015B\u0107 edukacyjn\u0105 w wielu uczelniach artystycznych." , "lang" : "pl" } ] ,
+    "http://dbpedia.org/ontology/birthDate" : [ { "type" : "literal", "value" : "1939-10-12" , "datatype" : "http://www.w3.org/2001/XMLSchema#date" } ] ,
+    "http://dbpedia.org/ontology/wikiPageRevisionID" : [ { "type" : "literal", "value" : 743643432 , "datatype" : "http://www.w3.org/2001/XMLSchema#integer" } ] ,
+    "http://dbpedia.org/ontology/birthPlace" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Fox_Chase,_Pennsylvania" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Fox_Chase,_Philadelphia" } ] ,
+    "http://dbpedia.org/ontology/wikiPageID" : [ { "type" : "literal", "value" : 1870977 , "datatype" : "http://www.w3.org/2001/XMLSchema#integer" } ] ,
+    "http://purl.org/linguistics/gold/hypernym" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Artist" } ] ,
+    "http://dbpedia.org/property/bgcolour" : [ { "type" : "literal", "value" : "#6495ED" , "datatype" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString" } ] } ,
+  "http://dbpedia.org/resource/Carollee_Schneemann" : { "http://dbpedia.org/ontology/wikiPageRedirects" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Carolee_Schneemann" } ] } ,
+  "http://dbpedia.org/resource/Carolee_Schneeman" : { "http://dbpedia.org/ontology/wikiPageRedirects" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Carolee_Schneemann" } ] } ,
+  "http://dbpedia.org/resource/Interior_Scroll" : { "http://dbpedia.org/ontology/wikiPageRedirects" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Carolee_Schneemann" } ] } ,
+  "http://dbpedia.org/resource/Cat's_Cradle_(film)" : { "http://dbpedia.org/ontology/starring" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Carolee_Schneemann" } ] }
+}
+;
+	var dataAuth = "http://dbpedia.org/resource/Carolee_Schneemann";
+	var dataUrl = "carolee_schneemann.html";
+	var dataResourceType = "participant";
+	var dataName = "Carolee Schneemann";
+ 	
+</script>
+
+
+
+
+
+<script type="text/javascript">
+
+
+	
+	
+	
+
+	$(document).ready(function($) {
+		
+		
+		padb.resource.initialize();
+			 
+		$( '.scrollable' ).
+		bind( 'mousewheel DOMMouseScroll', function ( e ) {
+			
+			if( e.originalEvent ) e = e.originalEvent;
+			
+			var delta = e.wheelDelta || -e.detail;
+			this.scrollTop += ( delta < 0 ? 1 : -1 ) * 30;
+			e.preventDefault();
+		});		 
+		
+		
+				
+		$.ajaxSetup ({
+			// Disable caching of AJAX responses
+			cache: false
+		});		
+		
+	});
+	
+
+	
+	
+	
+	
+	
+</script>
+
+
+
+
+ 
+<br />
+<div class="container"  style="position:relative;">
+	   
+      <div id="resourceLinks"></div> 
+       
+       
+       
+       
+              
+       
+           
+           
+           
+          <div class="row addSection">
+              <div class="span1 addSectionIconHolder">
+              
+                <i class="icon-user"></i>
+              
+              </div>
+          
+              <div class="span11">
+                <span>Performer</span>
+                <hr>
+                <br />
+              </div>
+        </div>
+        <div class="row">
+            <div class="span1">
+            </div>
+            <div class="span11" style="position:relative">
+                
+                
+                
+                
+               <div>
+                                       
+                                           
+                <div class="pull-left" style="width:80%;">
+                     
+                     <h5 id="resourceLDName">Carolee Schneemann</h5>
+                     <h5 id="resourceLDAbstract"></h5>
+                     
+                     
+                     <div id="resourceSameAs">
+                        <h5>External Data:</h5>
+                        
+                        
+                     </div>
+                
+                </div>   
+                
+                <br style="clear:both;" />
+            </div>
+            
+            
+                
+            </div>
+        </div>    
+         
+    
+    
+    
+    
+    
+    
+       <div class="row addSection">
+			<div class="span1 addSectionIconHolder">              
+                <i class="icon-asterisk"></i>
+              
+              </div>
+          
+              <div class="span11">
+                <span>Events </span><span id="resourceEventCount"></span>
+                <hr>
+              </div>
+        </div>
+    
+    
+    
+    
+    
+    
+    
+        <div class="row">
+            <div class="span1"></div>
+            <div class="span11" style="position:relative">
+                  
+                 <div class="">
+                    <div id="resourceEventsEvents" class="scrollable">
+                           <table class="table table-condensed table-hover table-striped">
+                               <thead>
+                                <tr>
+                                  <th>Date</th>
+                                  
+                                  <th>Title</th>
+                                  <th>Location</th>
+                                  <th></th>
+                                </tr>
+                              </thead>
+                              <tbody id="resourceEventsEventsRows"> 
+                              </tbody>
+                            </table>
+                     
+                    </div>
+                    
+                    <div id="resourceEventsExport">
+                    
+                    	<input  name="resourceEventsSearch" class="span3" id="resourceEventsSearch"  type="text" placeholder="Filter: names, places, dates">
+                    	<button class="btn btn-mini btn-danger" id="resourceEventsClearFilter"><i class="icon-remove">&nbsp;Clear Filter</i></button>
+                   		<button class="btn btn-mini btn-info" title="Render the currently filitered data as a network" id="resourceRenderEventNetwork"> <img src="../img/icon-network-white.png" style="height:15px; width:auto" /> Two-Mode Event Network</button>
+                   		<button class="btn btn-mini btn-info" title="Render the currently filitered data as a network" id="resourceRenderEventMap"> <i class="icon-globe"></i> Map Event Locations</button>
+                   		<button class="btn btn-mini btn-success" title="Download network as Gephi File" id="resourceDownloadEventGephi"> <img src="../img/icon-gephi.png" style="height:15px; width:auto" /> Donwload Gephi Network</button>
+
+                 
+                    </div>                 
+                </div>
+                <br style="clear:both;" />
+            </div>
+            
+            
+                
+         </div>    
+    
+     
+       <div class="row addSection">
+              <div class="span1">
+              
+                <img src="../img/social-network.png" style=" margin-left:25px; margin-bottom:10px;" />
+              
+              </div>
+          
+              <div class="span11">
+                <span>Performance Network</span> 
+                <hr>
+              </div>
+        </div>
+        
+        <div class="row">
+            <div class="span1">
+            </div>
+            <div class="span11" style="position:relative">
+                
+               	<div style="width: 100%; height:500px;" id="egoNetwork">
+            
+                
+             	</div> 
+                <div class="well pull-left well-small" id="egoNetworkControls">
+                    <span class="rangeLabels">Node Charge</span>
+                    <input type="range" id="resourceEgoNetworkCharge" min="-1000" max="100" value="-120" data-def="-700" />
+                    <br /><span class="rangeLabels">Gravity</span>
+                    <input type="range" id="resourceEgoNetworkGravity" min="0" max="1" value="0.1" step="0.01" data-def="0.3" /> 
+                    <br /><span class="rangeLabels">Edge Length</span>
+                    <input type="range" id="resourceEgoNetworkDistance" min="0" max="300" value="50" data-def="50"  />      
+                    <br /><span class="rangeLabels">Edge Strength</span>
+                    <input type="range" id="resourceEgoNetworkStrength" min="0" max="3" value="1" data-def="0.15" step="0.1"  /> 
+                    <br /><br />
+                    <button type="button" id="resourceEgoNetworkLabelsButton" class="btn btn-mini" title="Show node labels." data-toggle="button">Show Labels</button>  
+                    <button type="button" id="resourceEgoNetworkLiveButton" class="btn btn-mini" title="Show realtime network rendering" data-toggle="button">Live Rendering</button>                     
+                </div>
+                
+                <div class="well pull-left well-small egoNetworkControls span7" style="margin-left:20px;" >
+                
+                	<input  name="resourceEgoNetworkSearch" class="span3" id="resourceEgoNetworkSearch"  type="text" placeholder="Filter: names, places, dates">
+					<button class="btn btn-mini btn-danger" id="resourceEgoClearFilter"><i class="icon-remove">&nbsp;Clear Filter</i></button>
+                    <button class="btn btn-mini btn-success" title="Download network as Gephi File" id="resourceDownloadEgoGephi"> <img src="../img/icon-gephi.png" style="height:15px; width:auto" /> Donwload Gephi Network</button>
+
+                </div>
+                
+            </div>
+        </div>           
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+	
+
+	
+
+
+	
+
+
+</div>
+
+
+
+
+    <div id="resourceEventNetworkModal" class="modal container hide fade" style="min-height:500px" tabindex="-1">
+ 
+      <div class="modal-body">
+      	
+        <div id="eventNetwork" style="height:400px; width:100%">
+        
+        </div>
+      
+      </div>
+      <div class="modal-footer" style="height:20px;">
+      	
+        <div class="well pull-left well-small">
+        	<span class="rangeLabels">Node Charge</span>
+        	<input type="range" id="resourceEventNetworkCharge" min="-800" max="200" value="-120" data-def="-120" />
+            <span class="rangeLabels">Gravity</span>
+        	<input type="range" id="resourceEventNetworkGravity" min="0" max="1" value="0.1" step="0.01" data-def="0.1" /> 
+            <span class="rangeLabels">Edge Length</span>
+        	<input type="range" id="resourceEventNetworkDistance" min="0" max="300" value="50" data-def="50"  />      
+            <span class="rangeLabels">Edge Strength</span>
+        	<input type="range" id="resourceEventNetworkStrength" min="0" max="5" value="1" data-def="1" step="0.1"  />    
+            <button type="button" id="resourceEventNetworkLabelsButton" class="btn btn-mini" data-toggle="button">Show Labels</button>                     
+		</div>
+        <div class="pull-right">
+        <button type="button" data-dismiss="modal" class="btn">Close</button>
+       	</div>
+       </div>
+    </div>
+    
+    
+    
+    
+     <div id="resourceEventMapModal" class="modal container hide fade" style="min-height:500px" tabindex="-1">
+ 
+      <div class="modal-body">
+      	
+        <div id="eventMap" style="height:400px; width:100%">
+        
+        </div>
+      
+      </div>
+      <div class="modal-footer" style="height:20px;">
+      	
+        <div class="well pull-left well-small">                  
+		</div>
+        <div class="pull-right">
+        <button type="button" data-dismiss="modal" class="btn">Close</button>
+       	</div>
+       </div>
+    </div>
+
+<br /><br /><br /><br /><br /><br />
+
+<script type="text/javascript">    var _gaq = _gaq || [];   _gaq.push(['_setAccount', 'UA-10371295-7']);   _gaq.push(['_trackPageview']);    (function() {     var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);   })();  </script>
+
+</body>
+
+<!-- Mirrored from padb.net/resource/carolee_schneemann by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 11 Jan 2020 22:17:30 GMT -->
+</html>

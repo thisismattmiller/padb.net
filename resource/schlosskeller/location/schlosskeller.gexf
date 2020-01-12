@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<gexf version="1.2" xmlns="http://www.gexf.net/1.2draft">
+ <graph mode="static" defaultedgetype="undirected">
+  <nodes>
+   <node id="60" label="Claus Bremer"/>
+   <node id="61" label="Daniel Spoerri"/>
+   <node id="62" label="Emmett Williams"/>
+  </nodes>
+  <edges>
+   <edge source="60" target="61"/>
+   <edge source="60" target="62"/>
+   <edge source="61" target="62"/>
+  </edges>
+ </graph>
+</gexf>

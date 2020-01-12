@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<gexf version="1.2" xmlns="http://www.gexf.net/1.2draft">
+ <graph mode="static" defaultedgetype="undirected">
+  <nodes>
+   <node id="6" label="Kees Van Bohemen"/>
+   <node id="64" label="Bram Bogart"/>
+   <node id="65" label="Victor Vasarely"/>
+   <node id="66" label="Richard Winther"/>
+  </nodes>
+  <edges>
+   <edge source="6" target="64"/>
+   <edge source="6" target="65"/>
+   <edge source="6" target="66"/>
+   <edge source="64" target="65"/>
+   <edge source="64" target="66"/>
+   <edge source="65" target="66"/>
+  </edges>
+ </graph>
+</gexf>

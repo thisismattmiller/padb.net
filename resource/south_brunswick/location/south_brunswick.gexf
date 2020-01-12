@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<gexf version="1.2" xmlns="http://www.gexf.net/1.2draft">
+ <graph mode="static" defaultedgetype="undirected">
+  <nodes>
+   <node id="13" label="Dick Higgins"/>
+   <node id="14" label="Allan Kaprow"/>
+   <node id="25" label="La Monte Young"/>
+   <node id="43" label="Wolf Vostell"/>
+   <node id="95" label="Yvonne Rainer"/>
+   <node id="216" label="Charles Ginnever"/>
+   <node id="217" label="Marian Zazeela"/>
+  </nodes>
+  <edges>
+   <edge source="13" target="14"/>
+   <edge source="13" target="25"/>
+   <edge source="13" target="43"/>
+   <edge source="13" target="95"/>
+   <edge source="13" target="216"/>
+   <edge source="13" target="217"/>
+   <edge source="14" target="25"/>
+   <edge source="14" target="43"/>
+   <edge source="14" target="95"/>
+   <edge source="14" target="216"/>
+   <edge source="14" target="217"/>
+   <edge source="25" target="43"/>
+   <edge source="25" target="95"/>
+   <edge source="25" target="216"/>
+   <edge source="25" target="217"/>
+   <edge source="43" target="95"/>
+   <edge source="43" target="216"/>
+   <edge source="43" target="217"/>
+   <edge source="95" target="216"/>
+   <edge source="95" target="217"/>
+   <edge source="216" target="217"/>
+  </edges>
+ </graph>
+</gexf>

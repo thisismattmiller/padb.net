@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<gexf version="1.2" xmlns="http://www.gexf.net/1.2draft">
+ <graph mode="static" defaultedgetype="undirected">
+  <nodes>
+   <node id="39" label="Nam-june Paik"/>
+   <node id="144" label="Ludwig Gosewitz"/>
+   <node id="198" label="Charlotte Moorman"/>
+   <node id="379" label="Gerhard R&#xFC;hm"/>
+   <node id="469" label="L Bauer"/>
+   <node id="470" label="D Llewelyn"/>
+  </nodes>
+  <edges>
+   <edge source="39" target="144"/>
+   <edge source="39" target="198"/>
+   <edge source="39" target="379"/>
+   <edge source="39" target="469"/>
+   <edge source="39" target="470"/>
+   <edge source="144" target="198"/>
+   <edge source="144" target="379"/>
+   <edge source="144" target="469"/>
+   <edge source="144" target="470"/>
+   <edge source="198" target="379"/>
+   <edge source="198" target="469"/>
+   <edge source="198" target="470"/>
+   <edge source="379" target="469"/>
+   <edge source="379" target="470"/>
+   <edge source="469" target="470"/>
+  </edges>
+ </graph>
+</gexf>

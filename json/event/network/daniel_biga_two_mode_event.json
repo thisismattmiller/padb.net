@@ -1,0 +1,1 @@
+{"nodes": [{"name": "Toiles Idees Et Dessins", "type": "event", "year": "1967", "id": 0, "x": 100, "y": 100}, {"name": "Daniel Biga", "type": "person", "id": 1, "x": 100, "y": 100}], "edges": [{"source": 1, "target": 0, "value": 1}]}

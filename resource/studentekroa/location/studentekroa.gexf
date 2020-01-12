@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<gexf version="1.2" xmlns="http://www.gexf.net/1.2draft">
+ <graph mode="static" defaultedgetype="undirected">
+  <nodes>
+   <node id="13" label="Dick Higgins"/>
+   <node id="122" label="Alison Knowles"/>
+   <node id="160" label="Bengt af Klintberg"/>
+   <node id="178" label="S Hanson"/>
+   <node id="179" label="L Holm"/>
+   <node id="180" label="S Kvaloy"/>
+   <node id="181" label="FT Nielson"/>
+   <node id="182" label="R Weum"/>
+  </nodes>
+  <edges>
+   <edge source="13" target="122"/>
+   <edge source="13" target="160"/>
+   <edge source="13" target="178"/>
+   <edge source="13" target="179"/>
+   <edge source="13" target="180"/>
+   <edge source="13" target="181"/>
+   <edge source="13" target="182"/>
+   <edge source="122" target="160"/>
+   <edge source="122" target="178"/>
+   <edge source="122" target="179"/>
+   <edge source="122" target="180"/>
+   <edge source="122" target="181"/>
+   <edge source="122" target="182"/>
+   <edge source="160" target="178"/>
+   <edge source="160" target="179"/>
+   <edge source="160" target="180"/>
+   <edge source="160" target="181"/>
+   <edge source="160" target="182"/>
+   <edge source="178" target="179"/>
+   <edge source="178" target="180"/>
+   <edge source="178" target="181"/>
+   <edge source="178" target="182"/>
+   <edge source="179" target="180"/>
+   <edge source="179" target="181"/>
+   <edge source="179" target="182"/>
+   <edge source="180" target="181"/>
+   <edge source="180" target="182"/>
+   <edge source="181" target="182"/>
+  </edges>
+ </graph>
+</gexf>

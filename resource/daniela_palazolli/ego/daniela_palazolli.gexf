@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<gexf version="1.2" xmlns="http://www.gexf.net/1.2draft">
+ <graph mode="static" defaultedgetype="undirected">
+  <nodes>
+   <node id="432" label="Gian Emillio Simonetti"/>
+   <node id="539" label="Daniela Palazolli"/>
+  </nodes>
+  <edges>
+   <edge source="432" target="539"/>
+  </edges>
+ </graph>
+</gexf>

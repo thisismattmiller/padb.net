@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<gexf version="1.2" xmlns="http://www.gexf.net/1.2draft">
+ <graph mode="static" defaultedgetype="undirected">
+  <nodes>
+   <node id="439" label="Marcel Allocco"/>
+   <node id="542" label="Michel Asso"/>
+   <node id="543" label="Jean-Claude Moineau"/>
+  </nodes>
+  <edges>
+   <edge source="439" target="542"/>
+   <edge source="439" target="543"/>
+   <edge source="542" target="543"/>
+  </edges>
+ </graph>
+</gexf>

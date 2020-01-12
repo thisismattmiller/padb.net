@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<gexf version="1.2" xmlns="http://www.gexf.net/1.2draft">
+ <graph mode="static" defaultedgetype="undirected">
+  <nodes>
+   <node id="102" label="Louis Andriessen"/>
+   <node id="103" label="Govert Jurriaanse"/>
+   <node id="104" label="Misha Mengelberg"/>
+   <node id="105" label="Willem de Ridder"/>
+   <node id="106" label="Lancelot Samson"/>
+   <node id="107" label="Peter Schat"/>
+   <node id="108" label="Jaap Spek"/>
+  </nodes>
+  <edges>
+   <edge source="102" target="103"/>
+   <edge source="102" target="104"/>
+   <edge source="102" target="105"/>
+   <edge source="102" target="106"/>
+   <edge source="102" target="107"/>
+   <edge source="102" target="108"/>
+   <edge source="103" target="104"/>
+   <edge source="103" target="105"/>
+   <edge source="103" target="106"/>
+   <edge source="103" target="107"/>
+   <edge source="103" target="108"/>
+   <edge source="104" target="105"/>
+   <edge source="104" target="106"/>
+   <edge source="104" target="107"/>
+   <edge source="104" target="108"/>
+   <edge source="105" target="106"/>
+   <edge source="105" target="107"/>
+   <edge source="105" target="108"/>
+   <edge source="106" target="107"/>
+   <edge source="106" target="108"/>
+   <edge source="107" target="108"/>
+  </edges>
+ </graph>
+</gexf>

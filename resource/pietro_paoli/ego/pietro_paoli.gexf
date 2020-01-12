@@ -1,0 +1,126 @@
+<?xml version="1.0"?>
+<gexf version="1.2" xmlns="http://www.gexf.net/1.2draft">
+ <graph mode="static" defaultedgetype="undirected">
+  <nodes>
+   <node id="151" label="Ben Vautier"/>
+   <node id="230" label="Robert Bozzi"/>
+   <node id="369" label="Robert Erebo"/>
+   <node id="439" label="Marcel Allocco"/>
+   <node id="440" label="Pietro Paoli"/>
+   <node id="432" label="Gian Emillio Simonetti"/>
+   <node id="486" label="Bergamasco"/>
+   <node id="487" label="Boetti"/>
+   <node id="488" label="Diacono"/>
+   <node id="489" label="Ferrero"/>
+   <node id="490" label="Filippini"/>
+   <node id="491" label="Martelli"/>
+   <node id="492" label="Ugo Nespolo"/>
+   <node id="493" label="Porta"/>
+   <node id="494" label="Sanguineti"/>
+   <node id="495" label="Lora Totino"/>
+   <node id="496" label="Volpini"/>
+  </nodes>
+  <edges>
+   <edge source="151" target="230"/>
+   <edge source="151" target="369"/>
+   <edge source="151" target="439"/>
+   <edge source="151" target="440"/>
+   <edge source="230" target="369"/>
+   <edge source="230" target="439"/>
+   <edge source="230" target="440"/>
+   <edge source="369" target="439"/>
+   <edge source="369" target="440"/>
+   <edge source="439" target="440"/>
+   <edge source="151" target="432"/>
+   <edge source="151" target="486"/>
+   <edge source="151" target="487"/>
+   <edge source="151" target="488"/>
+   <edge source="151" target="489"/>
+   <edge source="151" target="490"/>
+   <edge source="151" target="491"/>
+   <edge source="151" target="492"/>
+   <edge source="151" target="493"/>
+   <edge source="151" target="494"/>
+   <edge source="151" target="495"/>
+   <edge source="151" target="496"/>
+   <edge source="432" target="440"/>
+   <edge source="432" target="486"/>
+   <edge source="432" target="487"/>
+   <edge source="432" target="488"/>
+   <edge source="432" target="489"/>
+   <edge source="432" target="490"/>
+   <edge source="432" target="491"/>
+   <edge source="432" target="492"/>
+   <edge source="432" target="493"/>
+   <edge source="432" target="494"/>
+   <edge source="432" target="495"/>
+   <edge source="432" target="496"/>
+   <edge source="440" target="486"/>
+   <edge source="440" target="487"/>
+   <edge source="440" target="488"/>
+   <edge source="440" target="489"/>
+   <edge source="440" target="490"/>
+   <edge source="440" target="491"/>
+   <edge source="440" target="492"/>
+   <edge source="440" target="493"/>
+   <edge source="440" target="494"/>
+   <edge source="440" target="495"/>
+   <edge source="440" target="496"/>
+   <edge source="486" target="487"/>
+   <edge source="486" target="488"/>
+   <edge source="486" target="489"/>
+   <edge source="486" target="490"/>
+   <edge source="486" target="491"/>
+   <edge source="486" target="492"/>
+   <edge source="486" target="493"/>
+   <edge source="486" target="494"/>
+   <edge source="486" target="495"/>
+   <edge source="486" target="496"/>
+   <edge source="487" target="488"/>
+   <edge source="487" target="489"/>
+   <edge source="487" target="490"/>
+   <edge source="487" target="491"/>
+   <edge source="487" target="492"/>
+   <edge source="487" target="493"/>
+   <edge source="487" target="494"/>
+   <edge source="487" target="495"/>
+   <edge source="487" target="496"/>
+   <edge source="488" target="489"/>
+   <edge source="488" target="490"/>
+   <edge source="488" target="491"/>
+   <edge source="488" target="492"/>
+   <edge source="488" target="493"/>
+   <edge source="488" target="494"/>
+   <edge source="488" target="495"/>
+   <edge source="488" target="496"/>
+   <edge source="489" target="490"/>
+   <edge source="489" target="491"/>
+   <edge source="489" target="492"/>
+   <edge source="489" target="493"/>
+   <edge source="489" target="494"/>
+   <edge source="489" target="495"/>
+   <edge source="489" target="496"/>
+   <edge source="490" target="491"/>
+   <edge source="490" target="492"/>
+   <edge source="490" target="493"/>
+   <edge source="490" target="494"/>
+   <edge source="490" target="495"/>
+   <edge source="490" target="496"/>
+   <edge source="491" target="492"/>
+   <edge source="491" target="493"/>
+   <edge source="491" target="494"/>
+   <edge source="491" target="495"/>
+   <edge source="491" target="496"/>
+   <edge source="492" target="493"/>
+   <edge source="492" target="494"/>
+   <edge source="492" target="495"/>
+   <edge source="492" target="496"/>
+   <edge source="493" target="494"/>
+   <edge source="493" target="495"/>
+   <edge source="493" target="496"/>
+   <edge source="494" target="495"/>
+   <edge source="494" target="496"/>
+   <edge source="495" target="496"/>
+  </edges>
+ </graph>
+</gexf>

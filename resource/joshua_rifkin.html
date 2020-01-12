@@ -1,0 +1,514 @@
+<!doctype html>
+<html>
+
+<!-- Mirrored from padb.net/resource/joshua_rifkin by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 11 Jan 2020 22:21:35 GMT -->
+<head>
+<meta charset="UTF-8">
+<title>padb.net</title>
+
+
+<link rel="stylesheet" href="../css/bootstrap.css">
+<link rel="stylesheet" href="../css/font-awesome.css">
+<link rel="stylesheet" href="../css/site.css">
+<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+<link rel="icon" type="image/png" href="../img/favicon.png">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/bootstrap-modal.js"></script>
+<script src="../js/bootstrap-modalmanager.js"></script>
+
+<script src="../js/d3.min.js"></script>
+<script src="../js/html5slider.js"></script>
+<script src="../js/topojson.js"></script>
+<script src="../js/padb.js"></script>
+
+
+</head>
+<body>
+    
+    
+	<div style="position:relative;">        
+
+ 		<div style=" border-bottom:solid 1px #ccc;">
+        	<div class="container">
+                
+                 <div id="header">
+                 	
+                     <div class="logo"><a href="../index.html"><span>|||</span>padb</a> </div>
+                    
+                      
+						 <div id="resourceName">Joshua Rifkin</div>
+					 
+                 </div>
+                
+                
+        	</div>
+            
+    	</div>
+ 
+   </div>
+<script src="../js/countriesData.js"></script>
+
+<script type="text/javascript">
+	//preloaded json from the server
+
+	var dataSameAs = [
+  {
+    "uri": "http://wikidata.dbpedia.org/resource/Q568455",
+    "numDuplicates": "31",
+    "duplicates": [
+      "http://dbpedia.org/resource/Josh_Rifkin",
+      "http://dbpedia.org/resource/Joshua_Rifkin",
+      "http://bnb.data.bl.uk/id/person/RifkinJoshua",
+      "http://cs.dbpedia.org/resource/Joshua_Rifkin",
+      "http://d-nb.info/gnd/134497945",
+      "http://d-nb.info/gnd/134497945/about/rdf",
+      "http://data.bibsys.no/data/notrbib/authorityentry/x04011049",
+      "http://dbpedialite.org/things/4152912#id",
+      "http://dbpedialite.org/things/11979362#id",
+      "http://dbtune.org/classical/resource/conductor/joshua_rifkin",
+      "http://de.dbpedia.org/resource/Joshua_Rifkin",
+      "http://en.wikipedia.org/wiki/Joshua_Rifkin",
+      "http://eo.dbpedia.org/resource/Joshua_Rifkin",
+      "http://fi.dbpedia.org/resource/Joshua_Rifkin",
+      "http://fr.dbpedia.org/resource/Joshua_Rifkin",
+      "http://freebase.com//m/0blzhs",
+      "http://id.loc.gov/authorities/names/n82010461",
+      "http://imdb.com/name/nm2671103/",
+      "http://musicbrainz.org/artist/d63cbb12-0d16-4fd5-8fbf-a57dc8ddfe83",
+      "http://pl.dbpedia.org/resource/Joshua_Rifkin",
+      "http://rdf.freebase.com/ns/m.0blzhs",
+      "http://rdf.freebase.com/ns/en.joshua_rifkin",
+      "http://rdf.freebase.com/ns/guid.9202a8c04000641f8000000000a979f8",
+      "http://viaf.org/viaf/42026486",
+      "http://wikidata.dbpedia.org/resource/Q568455",
+      "http://www.bbc.co.uk/music/artists/d63cbb12-0d16-4fd5-8fbf-a57dc8ddfe83",
+      "http://www.discogs.com/artist/Joshua+Rifkin",
+      "http://www.idref.fr/066883091/id",
+      "http://www.wikidata.org/entity/Q568455",
+      "http://yago-knowledge.org/resource/Joshua_Rifkin",
+      "http://zitgist.com/music/artist/d63cbb12-0d16-4fd5-8fbf-a57dc8ddfe83"
+    ]
+  }
+]
+;
+	var dataDbpedia = {
+  "http://dbpedia.org/resource/The_Baroque_Beatles_Book" : { "http://dbpedia.org/ontology/artist" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Joshua_Rifkin" } ] } ,
+  "http://en.wikipedia.org/wiki/Joshua_Rifkin" : { "http://xmlns.com/foaf/0.1/primaryTopic" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Joshua_Rifkin" } ] } ,
+  "http://dbpedia.org/resource/Joshua_Rifkin" : { "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Alumnus109786338" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Artist109812338" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Creator109614315" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Performer110415638" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Musician110339966" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Musician110340312" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Intellectual109621545" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatLivingPeople" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatMusicologists" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatBachMusicians" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatConductors" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Conductor109952539" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatElektraRecordsArtists" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatPeopleFromNewYorkCity" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatPerformersOfEarlyMusic" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatAmericanMusicians" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Harpsichordist110161047" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatHarpsichordists" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatChoralConductors" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Pianist110430665" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/CausalAgent100007347" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatFiorelloH.LaGuardiaHighSchoolAlumni" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/PhysicalEntity100001930" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Whole100003553" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatNewYorkUniversityAlumni" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/LivingThing100004258" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Organism100004475" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatPrincetonUniversityAlumni" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/ontology/Person" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatAmericanMusicologists" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Person100007846" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Object100002684" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/YagoLegalActor" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatRagtimePianists" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/YagoLegalActorGeo" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Scholar110557854" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatClassicalPianists" } ,
+      { "type" : "uri", "value" : "http://www.w3.org/2002/07/owl#Thing" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Musicologist110341243" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatJuilliardSchoolAlumni" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Entertainer109616922" } ] ,
+    "http://www.w3.org/2000/01/rdf-schema#label" : [ { "type" : "literal", "value" : "Joshua Rifkin" , "lang" : "de" } ,
+      { "type" : "literal", "value" : "Joshua Rifkin" , "lang" : "pl" } ,
+      { "type" : "literal", "value" : "Joshua Rifkin" , "lang" : "en" } ,
+      { "type" : "literal", "value" : "Joshua Rifkin" , "lang" : "fr" } ] ,
+    "http://www.w3.org/2000/01/rdf-schema#comment" : [ { "type" : "literal", "value" : " Pour les articles homonymes, voir Rifkin. Joshua Rifkin (n\u00E9 le 22 avril 1944) \u00E0 New York, est un musicologue et chef d'orchestre am\u00E9ricain. Il a fait ses \u00E9tudes avec Vincent Persichetti \u00E0 la Juilliard School, avec Gustave Reese de 1964\u20131966 \u00E0 la New York University et de 1966\u20131967 \u00E0 l'universit\u00E9 de G\u00F6ttingen, en plus il a travaill\u00E9 en 1961 et en 1965 avec Karlheinz Stockhausen \u00E0 Darmstadt.Apr\u00E8s il a fait des \u00E9tudes suppl\u00E9mentaires avec Arthur Mendel, Lewis Lockwood, Milton Babbitt und Ernst Oster \u00E0 la Princeton University. En 1968 il termina ses \u00E9tudes avec un dipl\u00F4me M.F.A. (Master of Fine Arts)." , "lang" : "fr" } ,
+      { "type" : "literal", "value" : "Joshua Rifkin (ur. 22 kwietnia 1944 w Nowym Jorku) \u2013 ameryka\u0144ski muzykolog, pianista i kompozytor. Studiowa\u0142 w Juillard School of music w Nowym Jorku, New York University pod kierunkiem Gustava Reese\u2019a (1964-1966), University of G\u00F6ttingen (1966-1967) oraz Princeton University (tytu\u0142 Master of Fine Arts w 1969). Uczestniczy\u0142 w kursach w Darmstadt w 1961 i 1965 r. pod kierunkiem Karlheinza Stockhausena. Wyk\u0142ada\u0142 na kilku uczelniach, w tym w Brandeis (1970-1982), Harvardzie, Nowym Jorku oraz Yale. W 1999 otrzyma\u0142 doktorat honoris causa Uniwersytetu w Dortmundzie." , "lang" : "pl" } ,
+      { "type" : "literal", "value" : "Joshua Rifkin (* 22. April 1944 in New York) ist ein US-amerikanischer Pianist, Cembalist, Dirigent und Musikwissenschaftler. Im Jahr 1978 gr\u00FCndete er die Formation The Bach Ensemble. Seit 2011 ist er K\u00FCnstlerischer Leiter des Bach:Sommers Arnstadt. Die Musik-Enzyklop\u00E4die Die Musik in Geschichte und Gegenwart (MGG) des B\u00E4renreiter/Metzler Verlags z\u00E4hlt ihn \u201Ezu den bedeutendsten Bach-Interpreten der Gegenwart\u201C." , "lang" : "de" } ,
+      { "type" : "literal", "value" : "Joshua Rifkin (born April 22, 1944 in New York) is an American conductor, keyboard player, and musicologist, and is currently a Professor of Music at Boston University. As a performer he has recorded music by composers from Antoine Busnois to Silvestre Revueltas, and as a scholar has published research on composers from the Renaissance to the 20th century. He is famed among classical musicians and aficionados for his increasingly influential theory that most of Bach's choral works were sung with only one singer per choral line. Rifkin argued: \"So long as we define 'chorus' in the conventional modern sense, then Bach's chorus, with few exceptions, simply did not exist.\" He is best known by the general public, however, for having played a central role in the ragtime revival in the 1970s, wit" , "lang" : "en" } ] ,
+    "http://www.w3.org/2002/07/owl#sameAs" : [ { "type" : "uri", "value" : "http://yago-knowledge.org/resource/Joshua_Rifkin" } ,
+      { "type" : "uri", "value" : "http://pl.dbpedia.org/resource/Joshua_Rifkin" } ,
+      { "type" : "uri", "value" : "http://de.dbpedia.org/resource/Joshua_Rifkin" } ,
+      { "type" : "uri", "value" : "http://wikidata.dbpedia.org/resource/Q568455" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Joshua_Rifkin" } ,
+      { "type" : "uri", "value" : "http://d-nb.info/gnd/134497945" } ,
+      { "type" : "uri", "value" : "http://fr.dbpedia.org/resource/Joshua_Rifkin" } ,
+      { "type" : "uri", "value" : "http://cs.dbpedia.org/resource/Joshua_Rifkin" } ,
+      { "type" : "uri", "value" : "http://www.wikidata.org/entity/Q568455" } ,
+      { "type" : "uri", "value" : "http://zitgist.com/music/artist/d63cbb12-0d16-4fd5-8fbf-a57dc8ddfe83" } ,
+      { "type" : "uri", "value" : "http://rdf.freebase.com/ns/m.0blzhs" } ] ,
+    "http://purl.org/dc/terms/subject" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Harvard_University_faculty" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Boston_University_faculty" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Fiorello_H._LaGuardia_High_School_alumni" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Elektra_Records_artists" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:New_York_University_alumni" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Living_people" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Princeton_University_alumni,_1960\u201369" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Ragtime_pianists" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:1944_births" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:American_musicologists" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Bach_musicians" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Bach_scholars" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Juilliard_School_alumni" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Brandeis_University_faculty" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:American_conductors_(music)" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Bach_conductors" } ] ,
+    "http://xmlns.com/foaf/0.1/name" : [ { "type" : "literal", "value" : "Joshua Rifkin" , "lang" : "en" } ] ,
+    "http://xmlns.com/foaf/0.1/depiction" : [ { "type" : "uri", "value" : "http://commons.wikimedia.org/wiki/Special:FilePath/PeacherineRagCover.jpg" } ] ,
+    "http://purl.org/dc/terms/description" : [ { "type" : "literal", "value" : "American conductor, keyboard player, and musicologist" , "lang" : "en" } ] ,
+    "http://xmlns.com/foaf/0.1/givenName" : [ { "type" : "literal", "value" : "Joshua" , "lang" : "en" } ] ,
+    "http://xmlns.com/foaf/0.1/gender" : [ { "type" : "literal", "value" : "male" , "lang" : "en" } ] ,
+    "http://xmlns.com/foaf/0.1/isPrimaryTopicOf" : [ { "type" : "uri", "value" : "http://en.wikipedia.org/wiki/Joshua_Rifkin" } ] ,
+    "http://xmlns.com/foaf/0.1/surname" : [ { "type" : "literal", "value" : "Rifkin" , "lang" : "en" } ] ,
+    "http://www.w3.org/ns/prov#wasDerivedFrom" : [ { "type" : "uri", "value" : "http://en.wikipedia.org/wiki/Joshua_Rifkin?oldid=719015871" } ] ,
+    "http://dbpedia.org/ontology/wikiPageExternalLink" : [ { "type" : "uri", "value" : "http://www.haaretz.co.il/hasen/pages/ShArt.jhtml?itemNo=115302&contrassID=2&subContrassID=11&sbSubContrassID=0&listSrc=Y&itemNo=115302" } ,
+      { "type" : "uri", "value" : "https://books.google.com/books?id=j-ECAAAAMBAJ&lpg=PA81&dq=new%20york%20magazine%201979%20joplin&pg=PA81#v=onepage&q=joplin&f=false" } ,
+      { "type" : "uri", "value" : "https://books.google.com/books?id=twcEAAAAMBAJ&pg=PT51&dq=billboard+1975+joplin+perlman&hl=en&ei=9gQmTsqZIcfPsgbzmanGCQ&sa=X&oi=book_result&ct=result&resnum=1&ved=0CCkQ6AEwADgK#v=onepage&q&f=false" } ,
+      { "type" : "uri", "value" : "http://www.bsherman.net/oneperpart.html" } ,
+      { "type" : "uri", "value" : "http://www.bsherman.net/rifkin.html" } ,
+      { "type" : "uri", "value" : "http://www.bsherman.net/Scherings.htm" } ,
+      { "type" : "uri", "value" : "http://www.bach-cantatas.com/Articles/Rifkin-Golomb.pdf" } ,
+      { "type" : "uri", "value" : "http://www.bach-cantatas.com/Bio/Rifkin-Joshua.htm" } ] ,
+    "http://dbpedia.org/ontology/abstract" : [ { "type" : "literal", "value" : "Joshua Rifkin (born April 22, 1944 in New York) is an American conductor, keyboard player, and musicologist, and is currently a Professor of Music at Boston University. As a performer he has recorded music by composers from Antoine Busnois to Silvestre Revueltas, and as a scholar has published research on composers from the Renaissance to the 20th century. He is famed among classical musicians and aficionados for his increasingly influential theory that most of Bach's choral works were sung with only one singer per choral line. Rifkin argued: \"So long as we define 'chorus' in the conventional modern sense, then Bach's chorus, with few exceptions, simply did not exist.\" He is best known by the general public, however, for having played a central role in the ragtime revival in the 1970s, with the three albums he recorded of Scott Joplin's works for Nonesuch Records." , "lang" : "en" } ,
+      { "type" : "literal", "value" : "Joshua Rifkin (ur. 22 kwietnia 1944 w Nowym Jorku) \u2013 ameryka\u0144ski muzykolog, pianista i kompozytor. Studiowa\u0142 w Juillard School of music w Nowym Jorku, New York University pod kierunkiem Gustava Reese\u2019a (1964-1966), University of G\u00F6ttingen (1966-1967) oraz Princeton University (tytu\u0142 Master of Fine Arts w 1969). Uczestniczy\u0142 w kursach w Darmstadt w 1961 i 1965 r. pod kierunkiem Karlheinza Stockhausena. Wyk\u0142ada\u0142 na kilku uczelniach, w tym w Brandeis (1970-1982), Harvardzie, Nowym Jorku oraz Yale. W 1999 otrzyma\u0142 doktorat honoris causa Uniwersytetu w Dortmundzie. Jest propagatorem wykonywania utwor\u00F3w Jana Sebastiana Bacha w pojedynczej obsadzie g\u0142os\u00F3w w ch\u00F3rze \u2013 tj. zast\u0119powania ch\u00F3ru solistami. Andrew Parrott przedstawia t\u0119 teori\u0119 w swojej ksi\u0105\u017Cce The Essential Bach Choir." , "lang" : "pl" } ,
+      { "type" : "literal", "value" : "Joshua Rifkin (* 22. April 1944 in New York) ist ein US-amerikanischer Pianist, Cembalist, Dirigent und Musikwissenschaftler. Im Jahr 1978 gr\u00FCndete er die Formation The Bach Ensemble. Seit 2011 ist er K\u00FCnstlerischer Leiter des Bach:Sommers Arnstadt. Die Musik-Enzyklop\u00E4die Die Musik in Geschichte und Gegenwart (MGG) des B\u00E4renreiter/Metzler Verlags z\u00E4hlt ihn \u201Ezu den bedeutendsten Bach-Interpreten der Gegenwart\u201C." , "lang" : "de" } ,
+      { "type" : "literal", "value" : " Pour les articles homonymes, voir Rifkin. Joshua Rifkin (n\u00E9 le 22 avril 1944) \u00E0 New York, est un musicologue et chef d'orchestre am\u00E9ricain. Il a fait ses \u00E9tudes avec Vincent Persichetti \u00E0 la Juilliard School, avec Gustave Reese de 1964\u20131966 \u00E0 la New York University et de 1966\u20131967 \u00E0 l'universit\u00E9 de G\u00F6ttingen, en plus il a travaill\u00E9 en 1961 et en 1965 avec Karlheinz Stockhausen \u00E0 Darmstadt.Apr\u00E8s il a fait des \u00E9tudes suppl\u00E9mentaires avec Arthur Mendel, Lewis Lockwood, Milton Babbitt und Ernst Oster \u00E0 la Princeton University. En 1968 il termina ses \u00E9tudes avec un dipl\u00F4me M.F.A. (Master of Fine Arts). Rifkin se fait surtout connaitre avec sa th\u00E8se, que Johann Sebastian Bach n'aurait eu pour ses cantates des chorales compos\u00E9es seulement d'un seul chanteur par voix. Entre temps des interpr\u00E8tes de musique ancienne comme Andrew Parrott, Paul McCreesh, Konrad Jungh\u00E4nel, Jeffrey Thomas, Eric Milnes et Sigiswald Kuijken ont enregistr\u00E9 avec grand succ\u00E8s de nombreuses \u0153uvres de Bach avec ces petites chorales. D'autres sp\u00E9cialistes de Bach comme Gustav Leonhardt, Ton Koopman, Masaaki Suzuki, John Eliot Gardiner ou Philippe Herreweghe se sont montr\u00E9s r\u00E9ticents ou oppos\u00E9s \u00E0 la th\u00E8se de Rifkin. Pour l'instant Kuijken enregistre d'apr\u00E8s les \u00E9tudes de Rifkin un cycle de cantates de Bach pour une ann\u00E9e liturgique compl\u00E8te, pour chaque dimanche et pour tous les jours de f\u00EAtes une cantate." , "lang" : "fr" } ] ,
+    "http://dbpedia.org/ontology/thumbnail" : [ { "type" : "uri", "value" : "http://commons.wikimedia.org/wiki/Special:FilePath/PeacherineRagCover.jpg?width=300" } ] ,
+    "http://dbpedia.org/ontology/birthDate" : [ { "type" : "literal", "value" : "1944-4-22" , "datatype" : "http://www.w3.org/2001/XMLSchema#date" } ] ,
+    "http://dbpedia.org/ontology/wikiPageRevisionID" : [ { "type" : "literal", "value" : 719015871 , "datatype" : "http://www.w3.org/2001/XMLSchema#integer" } ] ,
+    "http://dbpedia.org/ontology/birthPlace" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/New_York_City" } ] ,
+    "http://dbpedia.org/ontology/wikiPageID" : [ { "type" : "literal", "value" : 4152912 , "datatype" : "http://www.w3.org/2001/XMLSchema#integer" } ] ,
+    "http://purl.org/linguistics/gold/hypernym" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Conductor" } ] } ,
+  "http://dbpedia.org/resource/Rifkin" : { "http://dbpedia.org/ontology/wikiPageDisambiguates" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Joshua_Rifkin" } ] } ,
+  "http://dbpedia.org/resource/Josh_Rifkin" : { "http://dbpedia.org/ontology/wikiPageRedirects" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Joshua_Rifkin" } ] } ,
+  "http://dbpedia.org/resource/Scott_Joplin:_Piano_Rags" : { "http://dbpedia.org/ontology/artist" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Joshua_Rifkin" } ] }
+}
+;
+	var dataAuth = "http://dbpedia.org/resource/Joshua_Rifkin";
+	var dataUrl = "joshua_rifkin.html";
+	var dataResourceType = "participant";
+	var dataName = "Joshua Rifkin";
+ 	
+</script>
+
+
+
+
+
+<script type="text/javascript">
+
+
+	
+	
+	
+
+	$(document).ready(function($) {
+		
+		
+		padb.resource.initialize();
+			 
+		$( '.scrollable' ).
+		bind( 'mousewheel DOMMouseScroll', function ( e ) {
+			
+			if( e.originalEvent ) e = e.originalEvent;
+			
+			var delta = e.wheelDelta || -e.detail;
+			this.scrollTop += ( delta < 0 ? 1 : -1 ) * 30;
+			e.preventDefault();
+		});		 
+		
+		
+				
+		$.ajaxSetup ({
+			// Disable caching of AJAX responses
+			cache: false
+		});		
+		
+	});
+	
+
+	
+	
+	
+	
+	
+</script>
+
+
+
+
+ 
+<br />
+<div class="container"  style="position:relative;">
+	   
+      <div id="resourceLinks"></div> 
+       
+       
+       
+       
+              
+       
+           
+           
+           
+          <div class="row addSection">
+              <div class="span1 addSectionIconHolder">
+              
+                <i class="icon-user"></i>
+              
+              </div>
+          
+              <div class="span11">
+                <span>Performer</span>
+                <hr>
+                <br />
+              </div>
+        </div>
+        <div class="row">
+            <div class="span1">
+            </div>
+            <div class="span11" style="position:relative">
+                
+                
+                
+                
+               <div>
+                                       <div class="pull-right vignette">
+                            <img  src="../cache/media/joshua_rifkin.jpg" />
+                            
+                        </div>
+                        
+                                           
+                <div class="pull-left" style="width:80%;">
+                     
+                     <h5 id="resourceLDName">Joshua Rifkin</h5>
+                     <h5 id="resourceLDAbstract"></h5>
+                     
+                     
+                     <div id="resourceSameAs">
+                        <h5>External Data:</h5>
+                        
+                        
+                     </div>
+                
+                </div>   
+                
+                <br style="clear:both;" />
+            </div>
+            
+            
+                
+            </div>
+        </div>    
+         
+    
+    
+    
+    
+    
+    
+       <div class="row addSection">
+			<div class="span1 addSectionIconHolder">              
+                <i class="icon-asterisk"></i>
+              
+              </div>
+          
+              <div class="span11">
+                <span>Events </span><span id="resourceEventCount"></span>
+                <hr>
+              </div>
+        </div>
+    
+    
+    
+    
+    
+    
+    
+        <div class="row">
+            <div class="span1"></div>
+            <div class="span11" style="position:relative">
+                  
+                 <div class="">
+                    <div id="resourceEventsEvents" class="scrollable">
+                           <table class="table table-condensed table-hover table-striped">
+                               <thead>
+                                <tr>
+                                  <th>Date</th>
+                                  
+                                  <th>Title</th>
+                                  <th>Location</th>
+                                  <th></th>
+                                </tr>
+                              </thead>
+                              <tbody id="resourceEventsEventsRows"> 
+                              </tbody>
+                            </table>
+                     
+                    </div>
+                    
+                    <div id="resourceEventsExport">
+                    
+                    	<input  name="resourceEventsSearch" class="span3" id="resourceEventsSearch"  type="text" placeholder="Filter: names, places, dates">
+                    	<button class="btn btn-mini btn-danger" id="resourceEventsClearFilter"><i class="icon-remove">&nbsp;Clear Filter</i></button>
+                   		<button class="btn btn-mini btn-info" title="Render the currently filitered data as a network" id="resourceRenderEventNetwork"> <img src="../img/icon-network-white.png" style="height:15px; width:auto" /> Two-Mode Event Network</button>
+                   		<button class="btn btn-mini btn-info" title="Render the currently filitered data as a network" id="resourceRenderEventMap"> <i class="icon-globe"></i> Map Event Locations</button>
+                   		<button class="btn btn-mini btn-success" title="Download network as Gephi File" id="resourceDownloadEventGephi"> <img src="../img/icon-gephi.png" style="height:15px; width:auto" /> Donwload Gephi Network</button>
+
+                 
+                    </div>                 
+                </div>
+                <br style="clear:both;" />
+            </div>
+            
+            
+                
+         </div>    
+    
+     
+       <div class="row addSection">
+              <div class="span1">
+              
+                <img src="../img/social-network.png" style=" margin-left:25px; margin-bottom:10px;" />
+              
+              </div>
+          
+              <div class="span11">
+                <span>Performance Network</span> 
+                <hr>
+              </div>
+        </div>
+        
+        <div class="row">
+            <div class="span1">
+            </div>
+            <div class="span11" style="position:relative">
+                
+               	<div style="width: 100%; height:500px;" id="egoNetwork">
+            
+                
+             	</div> 
+                <div class="well pull-left well-small" id="egoNetworkControls">
+                    <span class="rangeLabels">Node Charge</span>
+                    <input type="range" id="resourceEgoNetworkCharge" min="-1000" max="100" value="-120" data-def="-700" />
+                    <br /><span class="rangeLabels">Gravity</span>
+                    <input type="range" id="resourceEgoNetworkGravity" min="0" max="1" value="0.1" step="0.01" data-def="0.3" /> 
+                    <br /><span class="rangeLabels">Edge Length</span>
+                    <input type="range" id="resourceEgoNetworkDistance" min="0" max="300" value="50" data-def="50"  />      
+                    <br /><span class="rangeLabels">Edge Strength</span>
+                    <input type="range" id="resourceEgoNetworkStrength" min="0" max="3" value="1" data-def="0.15" step="0.1"  /> 
+                    <br /><br />
+                    <button type="button" id="resourceEgoNetworkLabelsButton" class="btn btn-mini" title="Show node labels." data-toggle="button">Show Labels</button>  
+                    <button type="button" id="resourceEgoNetworkLiveButton" class="btn btn-mini" title="Show realtime network rendering" data-toggle="button">Live Rendering</button>                     
+                </div>
+                
+                <div class="well pull-left well-small egoNetworkControls span7" style="margin-left:20px;" >
+                
+                	<input  name="resourceEgoNetworkSearch" class="span3" id="resourceEgoNetworkSearch"  type="text" placeholder="Filter: names, places, dates">
+					<button class="btn btn-mini btn-danger" id="resourceEgoClearFilter"><i class="icon-remove">&nbsp;Clear Filter</i></button>
+                    <button class="btn btn-mini btn-success" title="Download network as Gephi File" id="resourceDownloadEgoGephi"> <img src="../img/icon-gephi.png" style="height:15px; width:auto" /> Donwload Gephi Network</button>
+
+                </div>
+                
+            </div>
+        </div>           
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+	
+
+	
+
+
+	
+
+
+</div>
+
+
+
+
+    <div id="resourceEventNetworkModal" class="modal container hide fade" style="min-height:500px" tabindex="-1">
+ 
+      <div class="modal-body">
+      	
+        <div id="eventNetwork" style="height:400px; width:100%">
+        
+        </div>
+      
+      </div>
+      <div class="modal-footer" style="height:20px;">
+      	
+        <div class="well pull-left well-small">
+        	<span class="rangeLabels">Node Charge</span>
+        	<input type="range" id="resourceEventNetworkCharge" min="-800" max="200" value="-120" data-def="-120" />
+            <span class="rangeLabels">Gravity</span>
+        	<input type="range" id="resourceEventNetworkGravity" min="0" max="1" value="0.1" step="0.01" data-def="0.1" /> 
+            <span class="rangeLabels">Edge Length</span>
+        	<input type="range" id="resourceEventNetworkDistance" min="0" max="300" value="50" data-def="50"  />      
+            <span class="rangeLabels">Edge Strength</span>
+        	<input type="range" id="resourceEventNetworkStrength" min="0" max="5" value="1" data-def="1" step="0.1"  />    
+            <button type="button" id="resourceEventNetworkLabelsButton" class="btn btn-mini" data-toggle="button">Show Labels</button>                     
+		</div>
+        <div class="pull-right">
+        <button type="button" data-dismiss="modal" class="btn">Close</button>
+       	</div>
+       </div>
+    </div>
+    
+    
+    
+    
+     <div id="resourceEventMapModal" class="modal container hide fade" style="min-height:500px" tabindex="-1">
+ 
+      <div class="modal-body">
+      	
+        <div id="eventMap" style="height:400px; width:100%">
+        
+        </div>
+      
+      </div>
+      <div class="modal-footer" style="height:20px;">
+      	
+        <div class="well pull-left well-small">                  
+		</div>
+        <div class="pull-right">
+        <button type="button" data-dismiss="modal" class="btn">Close</button>
+       	</div>
+       </div>
+    </div>
+
+<br /><br /><br /><br /><br /><br />
+
+<script type="text/javascript">    var _gaq = _gaq || [];   _gaq.push(['_setAccount', 'UA-10371295-7']);   _gaq.push(['_trackPageview']);    (function() {     var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);   })();  </script>
+
+</body>
+
+<!-- Mirrored from padb.net/resource/joshua_rifkin by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 11 Jan 2020 22:21:36 GMT -->
+</html>

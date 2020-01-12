@@ -1,0 +1,583 @@
+
+/*Global*/
+
+body{
+	font-family: 'Open Sans', sans-serif;
+	background-image: url(../img/bgnoise.png);
+	background-repeat:repeat;
+}
+
+
+
+
+
+::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 11px;
+    height: 11px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    border: 2px solid white; /* should match background, can't be transparent */
+    background-color: rgba(0, 0, 0, .5);
+}
+
+
+
+/*Header*/
+.logo{
+	color: #e53f13;
+ 	font-size:4.5em;
+	padding-top:20px;
+	padding-bottom:5px;
+	height:50px;
+	font-family:"Helvetica Neue", Helvetica, Arial, "sans serif";
+	text-decoration:none;
+	
+	
+	font-weight:bold;
+	text-shadow: 1px 2px 4px rgba(151, 35, 5, 0.25);
+
+}
+#header a, #header a:hover{
+	text-decoration:none;
+	color:#e53f13;
+	
+}
+.logo i, .logo span{
+	font-size:0.70em;
+	letter-spacing:0.2em;
+}
+
+#header{
+	
+	/*-moz-box-shadow: inset 0 0 5px #888;
+	-webkit-box-shadow: inset 0 0 5px#888;
+	box-shadow: inner 0 0 5px #888;
+	*/
+	position:relative;
+}
+
+
+#disambigForm .popover-content{
+	font-size:13px !important;
+	line-height:15px !important;
+}
+
+#disambigResultsURIs{
+	font-family:"Courier New", Courier, monospace;
+}
+
+/* Add new event section */
+
+.addSection{
+	margin-top: 30px;	
+}
+.addSection .span1{
+	text-align: right;	
+	font-size:120px;
+}
+.addSection hr{
+	border:0;
+	height:3px;
+	margin:0px;
+	background-color:#333;
+}
+.addSection .span11 span{
+	font-size:2.5em;
+	font-weight:bold;
+	
+}
+
+#eventLocation{
+	position:absolute; bottom:10px; left:300px;
+	opacity:0.99;
+}
+#eventNotes{
+	position:absolute;
+	bottom:10px;
+	right:0px;
+	
+}
+
+/* Overwrite bootstrap popover title */
+.popover-title{
+	display:none;
+} 
+
+
+
+
+
+/*Resource page */
+ 
+
+.vignette{
+	box-shadow:inset 0px 0px 85px rgba(0,0,0,.5);
+	-webkit-box-shadow:inset 0px 0px 85px rgba(0,0,0,.5);
+	moz-box-shadow:inset 0px 0px 85px rgba(0,0,0,.5);
+	border-radius: 5px;
+}
+
+.vignette img{
+	z-index: -1;
+	position: relative;
+	border-radius: 5px;
+	width: 200px;
+	heights:auto;	
+}
+
+
+
+#resourceName{
+	visibility:hidden;
+	visibility:visible;
+	font-size:7em;
+	position:absolute;
+	right:0px;
+	top:25px;
+	z-index:100;
+	
+	
+	
+}
+
+#resourceLinks{
+	position:absolute;
+	right:0px;
+	top:0px;
+	width:100px;
+	height:15px;
+}
+
+
+h5 {
+	margin-top:0px !important;
+	padding-top:0px !important;	
+}
+
+#resourceEventsYearList input{
+	width:93%;
+	margin:auto;
+	
+}
+
+#resourceEventsYearList{
+ 	background-color:#E6E6E6;
+	width:20%;
+	
+	
+	
+}
+#resourceEventsYearListHolder{
+	overflow:scroll;
+	max-height:270px;
+	height:270px;
+}
+ 
+#resourceEventsExport{
+	background-color:#E6E6E6;
+	padding:10px;
+	
+}
+
+#resourceEventsEvents{
+ 	overflow:scroll;
+	max-height:255px;
+	height:255px;
+	
+	
+}
+
+.resourceEventsYearListYear{
+ 	font-size: 2em;
+	padding-top: 5px;
+	display: block;
+	text-decoration: none;
+	border-bottom: solid 1px #eee;
+	padding-bottom: 5px;
+	text-align:center;
+}
+.resourceEventsYearListYear:hover{
+	text-decoration:none;
+	
+}
+
+
+.resourceEventsYearListYearInset{
+	box-shadow:inset 0 0 5px 0 #333;
+}
+
+
+
+
+
+
+#resourceEventsClearFilter, #resourceEgoClearFilter, #resourceLocationClearFilter, #resourceEntireNetworkClearFilter{
+	visibility:hidden;
+
+	
+}
+
+#resourceEventsExport button, .egoNetworkControls button{
+ 		font-size:1em;
+}
+#resourceEventsExport input{
+	margin:0px;
+
+}
+
+
+#resourceEventNetworkModal input{
+	width:150px;
+	
+}
+.rangeLabels{
+	font-size:.75em;
+}
+#egoNetworkControls, .egoNetworkControls{
+	background-color:#E6E6E6;
+}
+#egoNetworkControls span{
+	display:inline-block !important;
+	width:75px !important;
+}
+
+.modal-backdrop{
+	background-color:#000 !important;
+}
+
+.d3ToolTip{
+	position: absolute;
+	z-index: 90000;
+	visibility: hidden;
+	background-color:#fff;
+	border-radius:5px;
+}
+
+
+
+#resourceEgoNetworkSearch, #resourceLocationNetworkSearch{
+	margin-top:12px;
+}
+
+
+.addSectionIconHolder{
+	position:relative;
+}
+
+.addSectionIconHolder i{
+	position:absolute;
+	left:0px;
+	top:0px;
+	font-size:90px;
+	
+}
+
+
+.addSectionIconHolder .icon-asterisk, .addSectionIconHolder .icon-user, .addSectionIconHolder .icon-map-marker{
+	font-size:110px !important;
+	
+}
+
+
+
+
+
+/*SVG Styles*/
+
+
+.eventNetworkNode{
+	
+	fill:#333;	
+	stroke:#fff;		
+}
+
+
+.eventNetworkNodeEvent{
+	fill: #fff;
+	stroke: #333;
+	
+}
+.eventNetworkNodeRoot{
+	fill : #06F;
+	stroke : #333;	
+}
+
+
+.link {
+	
+	stroke: #333;
+}
+
+.egoLink{
+	stroke: #333;
+	opacity: 0.3;
+	fill: none;
+}
+.eventNetworkLabel{
+	font-size:8px;
+	fill: #333;
+	visibility:hidden;
+ 	background-color:#000;
+	 
+}
+  
+.background {
+  fill: #fff;
+}
+
+.foreground {
+  fill: none;
+  stroke: #333;
+  stroke-width: 1.5px;
+}
+
+.graticule {
+  fill: none;
+  stroke: #fff;
+  stroke-width: .5px;
+}
+
+.graticule :nth-child(2n) {
+  stroke-dasharray: 2,2;
+}
+
+.land {
+  fill: #A0A0A0;
+  stroke: #fff;
+}
+
+.boundary {
+  fill: none;
+  stroke: #fff;
+}
+
+.mapPoint{
+	fill : #00C;
+	opacity:0.50;
+	stroke: #fff;
+	
+}
+
+
+
+
+
+
+
+/*!
+ * Bootstrap Modal
+ *
+ * Copyright Jordan Schroter
+ * Licensed under the Apache License v2.0
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ */
+
+.modal-open {
+	overflow: hidden;
+}
+
+
+/* add a scroll bar to stop page from jerking around */
+.modal-open.page-overflow .page-container,
+.modal-open.page-overflow .page-container .navbar-fixed-top,
+.modal-open.page-overflow .page-container .navbar-fixed-bottom,
+.modal-open.page-overflow .modal-scrollable {
+	overflow-y: scroll;
+}
+
+@media (max-width: 979px) {
+	.modal-open.page-overflow .page-container .navbar-fixed-top,
+	.modal-open.page-overflow .page-container .navbar-fixed-bottom  {
+		overflow-y: visible;
+	}
+}
+
+
+.modal-scrollable {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	overflow: auto;
+}
+
+.modal {
+	outline: none;
+	position: absolute;
+	margin-top: 0;
+	top: 50%;
+	overflow: visible; /* allow content to popup out (i.e tooltips) */
+}
+
+.modal.fade {
+	top: -100%;
+	-webkit-transition: opacity 0.3s linear, top 0.3s ease-out, bottom 0.3s ease-out, margin-top 0.3s ease-out;	
+	   -moz-transition: opacity 0.3s linear, top 0.3s ease-out, bottom 0.3s ease-out, margin-top 0.3s ease-out;
+	     -o-transition: opacity 0.3s linear, top 0.3s ease-out, bottom 0.3s ease-out, margin-top 0.3s ease-out;
+	        transition: opacity 0.3s linear, top 0.3s ease-out, bottom 0.3s ease-out, margin-top 0.3s ease-out;
+}
+
+.modal.fade.in {
+	top: 50%;
+}
+
+.modal-body {
+	max-height: none;
+	overflow: visible;
+}
+
+.modal.modal-absolute {
+	position: absolute;
+	z-index: 950;
+}
+
+.modal .loading-mask {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: #fff;
+	border-radius: 6px;
+}
+
+.modal-backdrop.modal-absolute{
+	position: absolute;
+	z-index: 940;
+}
+
+.modal-backdrop, 
+.modal-backdrop.fade.in{
+	opacity: 0.7;
+	filter: alpha(opacity=70);
+	background: #fff;
+}
+
+.modal.container {
+  width: 940px;
+  margin-left: -470px;
+}
+
+/* Modal Overflow */
+
+.modal-overflow.modal {
+	top: 1%;
+}
+
+.modal-overflow.modal.fade {
+	top: -100%;
+}
+
+.modal-overflow.modal.fade.in {
+	top: 1%;
+}
+
+.modal-overflow .modal-body {
+	overflow: auto;
+	-webkit-overflow-scrolling: touch;
+}
+
+/* Responsive */
+
+@media (min-width: 1200px) {
+	.modal.container {
+		width: 1170px;
+		margin-left: -585px;
+	}
+}
+
+@media (max-width: 979px) {
+	.modal, 
+	.modal.container,
+	.modal.modal-overflow 	{
+		top: 1%;
+		right: 1%;
+		left: 1%;
+		bottom: auto;
+		width: auto !important;
+		height: auto !important;
+		margin: 0 !important;
+		padding: 0 !important;
+	}
+	
+	.modal.fade.in, 
+	.modal.container.fade.in,
+	.modal.modal-overflow.fade.in {
+		top: 1%;
+		bottom: auto;
+	}
+	
+	.modal-body,
+	.modal-overflow .modal-body {
+		position: static;
+		margin: 0;
+		height: auto !important;
+		max-height: none !important;
+		overflow: visible !important;
+	}
+	
+	.modal-footer,
+	.modal-overflow .modal-footer {
+		position: static;
+	}
+}
+
+.loading-spinner {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin: -12px 0 0 -12px;
+}
+
+/*
+Animate.css - http://daneden.me/animate
+Licensed under the ☺ license (http://licence.visualidiot.com/)
+
+Copyright (c) 2012 Dan Eden*/
+
+.animated {
+	-webkit-animation-duration: 1s;
+	   -moz-animation-duration: 1s;
+	     -o-animation-duration: 1s;
+	        animation-duration: 1s;
+	-webkit-animation-fill-mode: both;
+	   -moz-animation-fill-mode: both;
+	     -o-animation-fill-mode: both;
+	        animation-fill-mode: both;
+}
+
+@-webkit-keyframes shake {
+	0%, 100% {-webkit-transform: translateX(0);}
+	10%, 30%, 50%, 70%, 90% {-webkit-transform: translateX(-10px);}
+	20%, 40%, 60%, 80% {-webkit-transform: translateX(10px);}
+}
+
+@-moz-keyframes shake {
+	0%, 100% {-moz-transform: translateX(0);}
+	10%, 30%, 50%, 70%, 90% {-moz-transform: translateX(-10px);}
+	20%, 40%, 60%, 80% {-moz-transform: translateX(10px);}
+}
+
+@-o-keyframes shake {
+	0%, 100% {-o-transform: translateX(0);}
+	10%, 30%, 50%, 70%, 90% {-o-transform: translateX(-10px);}
+	20%, 40%, 60%, 80% {-o-transform: translateX(10px);}
+}
+
+@keyframes shake {
+	0%, 100% {transform: translateX(0);}
+	10%, 30%, 50%, 70%, 90% {transform: translateX(-10px);}
+	20%, 40%, 60%, 80% {transform: translateX(10px);}
+}
+
+.shake {
+	-webkit-animation-name: shake;
+	-moz-animation-name: shake;
+	-o-animation-name: shake;
+	animation-name: shake;
+}

@@ -1,0 +1,511 @@
+<!doctype html>
+<html>
+
+<!-- Mirrored from padb.net/resource/ay_o by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 11 Jan 2020 22:17:11 GMT -->
+<head>
+<meta charset="UTF-8">
+<title>padb.net</title>
+
+
+<link rel="stylesheet" href="../css/bootstrap.css">
+<link rel="stylesheet" href="../css/font-awesome.css">
+<link rel="stylesheet" href="../css/site.css">
+<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+<link rel="icon" type="image/png" href="../img/favicon.png">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/bootstrap-modal.js"></script>
+<script src="../js/bootstrap-modalmanager.js"></script>
+
+<script src="../js/d3.min.js"></script>
+<script src="../js/html5slider.js"></script>
+<script src="../js/topojson.js"></script>
+<script src="../js/padb.js"></script>
+
+
+</head>
+<body>
+    
+    
+	<div style="position:relative;">        
+
+ 		<div style=" border-bottom:solid 1px #ccc;">
+        	<div class="container">
+                
+                 <div id="header">
+                 	
+                     <div class="logo"><a href="../index.html"><span>|||</span>padb</a> </div>
+                    
+                      
+						 <div id="resourceName">Ay-O</div>
+					 
+                 </div>
+                
+                
+        	</div>
+            
+    	</div>
+ 
+   </div>
+<script src="../js/countriesData.js"></script>
+
+<script type="text/javascript">
+	//preloaded json from the server
+
+	var dataSameAs = [
+  {
+    "uri": "http://www.wikidata.org/entity/Q2874830",
+    "numDuplicates": "18",
+    "duplicates": [
+      "http://dbpedia.org/resource/Ai-o",
+      "http://dbpedia.org/resource/Ay-O",
+      "http://dbpedia.org/resource/Finger_box",
+      "http://dbpedia.org/resource/Finger_boxes",
+      "http://dbpedialite.org/things/8877804#id",
+      "http://dbpedialite.org/things/13398601#id",
+      "http://dbpedialite.org/things/30511941#id",
+      "http://dbpedialite.org/things/30821738#id",
+      "http://discogs.dataincubator.org/artist/ay-o",
+      "http://fr.dbpedia.org/resource/Ay-o",
+      "http://ja.dbpedia.org/resource/\u9749\u5614",
+      "http://mpii.de/yago/resource/Ay-O",
+      "http://rdf.freebase.com/ns/en.ay_o",
+      "http://rdf.freebase.com/ns/m.027m_xx",
+      "http://rdf.freebase.com/ns/guid.9202a8c04000641f800000000479ff9c",
+      "http://umbel.org/umbel/ne/wikipedia/Ay-O",
+      "http://www.wikidata.org/entity/Q2874830",
+      "http://yago-knowledge.org/resource/Ay-O"
+    ]
+  }
+]
+;
+	var dataDbpedia = {
+  "http://en.wikipedia.org/wiki/Ay-O" : { "http://xmlns.com/foaf/0.1/primaryTopic" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Ay-O" } ] } ,
+  "http://dbpedia.org/resource/Ay-O" : { "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Organism100004475" } ,
+      { "type" : "uri", "value" : "http://www.wikidata.org/entity/Q24229398" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/ontology/Person" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/ontology/Agent" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatJapanesePainters" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/CausalAgent100007347" } ,
+      { "type" : "uri", "value" : "http://www.wikidata.org/entity/Q215627" } ,
+      { "type" : "uri", "value" : "http://xmlns.com/foaf/0.1/Person" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Whole100003553" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/LivingThing100004258" } ,
+      { "type" : "uri", "value" : "http://www.wikidata.org/entity/Q5" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatJapaneseArtists" } ,
+      { "type" : "uri", "value" : "http://www.wikidata.org/entity/Q483501" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatLivingPeople" } ,
+      { "type" : "uri", "value" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#NaturalPerson" } ,
+      { "type" : "uri", "value" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Painter110391653" } ,
+      { "type" : "uri", "value" : "http://www.w3.org/2002/07/owl#Thing" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Creator109614315" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Person100007846" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Object100002684" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/YagoLegalActor" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/YagoLegalActorGeo" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/PhysicalEntity100001930" } ,
+      { "type" : "uri", "value" : "http://schema.org/Person" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Artist109812338" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/ontology/Artist" } ] ,
+    "http://www.w3.org/2000/01/rdf-schema#label" : [ { "type" : "literal", "value" : "\u9749\u5614" , "lang" : "ja" } ,
+      { "type" : "literal", "value" : "Ay-O" , "lang" : "en" } ,
+      { "type" : "literal", "value" : "Ay-o" , "lang" : "fr" } ] ,
+    "http://www.w3.org/2000/01/rdf-schema#comment" : [ { "type" : "literal", "value" : "Takao Iijima (born May 19, 1931), better known by his art name Ay-O, (\u9749\u5614) (Museum of Modern Art page ) is a Japanese artist who has been associated with Fluxus since its international beginnings in the 1960s." , "lang" : "en" } ,
+      { "type" : "literal", "value" : "\u9749\u5614\uFF08\u3042\u3044\u30FB\u304A\u3046\u3001\u82F1\u8A9E: Ay-O\u30011931\u5E745\u670819\u65E5 - \uFF09\u306F\u3001\u65E5\u672C\u306E\u7F8E\u8853\u5BB6\u30021960\u5E74\u4EE3\u306E\u30D5\u30EB\u30AF\u30B5\u30B9\u306B\u3001\u540C\u904B\u52D5\u306E\u56FD\u969B\u7684\u306A\u6D3B\u52D5\u306E\u521D\u671F\u304B\u3089\u95A2\u308F\u3063\u305F\u3053\u3068\u3067\u77E5\u3089\u308C\u308B\u3002\u672C\u540D\u306F\u98EF\u5CF6 \u5B5D\u96C4\uFF08\u3044\u3044\u3058\u307E \u305F\u304B\u304A\uFF09\u3002\u8328\u57CE\u770C\u884C\u65B9\u90E1\u7389\u9020\u753A\uFF08\u73FE\u30FB\u884C\u65B9\u5E02\uFF09\u51FA\u8EAB\u3002\u300C\u8679\u306E\u30A2\u30FC\u30C6\u30A3\u30B9\u30C8\u300D\u3068\u3057\u3066\u77E5\u3089\u308C\u3066\u3044\u308B\u3002" , "lang" : "ja" } ,
+      { "type" : "literal", "value" : "Ay-o (\u9749\u5614, A\u012B \u014D), de son vrai nom Takao Iijima (\u98EF\u5CF6 \u5B5D\u96C4, Iijima Takao), est un artiste japonais n\u00E9 en 1931. Comme Beuys il a \u00E9t\u00E9 associ\u00E9 au mouvement n\u00E9o-dada\u00EFste Fluxus depuis le d\u00E9but de sa carri\u00E8re internationale. Ay-o fut pr\u00E9sent\u00E9 \u00E0 George Maciunas en 1961 par un autre membre de Fluxus, Yoko Ono. Il devint formellement membre et rejoint Maciunas au sein de Fluxus en 1963. En France Fluxus a \u00E9t\u00E9 popularis\u00E9 par Benjamin Vautier ou Ben. Ay-o \u00E9tait connu pour ses Bo\u00EEtes \u00E0 doigts (Finger Boxes) et pour ses happenings comme membre actif de Fluxus. Il a collabor\u00E9 avec d'autre artistes membres de Fluxus, comme George Maciunas, Emmett Williams, Dick Higgins et le Cor\u00E9en Nam June Paik. Avant fluxus Ay-o a commenc\u00E9 sa carri\u00E8re au Japon au sein de l'Association d'Artistes Democrato (\u30C7\u30E2\u30AF\u30E9\u30FC\u30C8\u7F8E\u8853\u5BB6\u5354\u4F1A, Demo" , "lang" : "fr" } ] ,
+    "http://www.w3.org/2002/07/owl#sameAs" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Ay-O" } ,
+      { "type" : "uri", "value" : "http://ja.dbpedia.org/resource/\u9749\u5614" } ,
+      { "type" : "uri", "value" : "http://yago-knowledge.org/resource/Ay-O" } ,
+      { "type" : "uri", "value" : "http://rdf.freebase.com/ns/m.027m_xx" } ,
+      { "type" : "uri", "value" : "http://wikidata.dbpedia.org/resource/Q2874830" } ,
+      { "type" : "uri", "value" : "http://fr.dbpedia.org/resource/Ay-o" } ,
+      { "type" : "uri", "value" : "http://d-nb.info/gnd/1073466957" } ,
+      { "type" : "uri", "value" : "http://viaf.org/viaf/94669575" } ,
+      { "type" : "uri", "value" : "http://www.wikidata.org/entity/Q2874830" } ] ,
+    "http://purl.org/dc/terms/subject" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Japanese_painters" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:1931_births" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Fluxus" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Japanese_artists" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Living_people" } ] ,
+    "http://xmlns.com/foaf/0.1/name" : [ { "type" : "literal", "value" : "Ay-O" , "lang" : "en" } ] ,
+    "http://xmlns.com/foaf/0.1/depiction" : [ { "type" : "uri", "value" : "http://commons.wikimedia.org/wiki/Special:FilePath/Ay-O.jpg" } ] ,
+    "http://purl.org/dc/terms/description" : [ { "type" : "literal", "value" : "Japanese artist" , "lang" : "en" } ] ,
+    "http://xmlns.com/foaf/0.1/gender" : [ { "type" : "literal", "value" : "male" , "lang" : "en" } ] ,
+    "http://xmlns.com/foaf/0.1/isPrimaryTopicOf" : [ { "type" : "uri", "value" : "http://en.wikipedia.org/wiki/Ay-O" } ] ,
+    "http://dbpedia.org/ontology/field" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Painting" } ] ,
+    "http://dbpedia.org/property/imagesize" : [ { "type" : "literal", "value" : 220 , "datatype" : "http://www.w3.org/2001/XMLSchema#integer" } ] ,
+    "http://www.w3.org/ns/prov#wasDerivedFrom" : [ { "type" : "uri", "value" : "http://en.wikipedia.org/wiki/Ay-O?oldid=744479114" } ] ,
+    "http://dbpedia.org/ontology/birthName" : [ { "type" : "literal", "value" : "Takao Iijima" , "lang" : "en" } ] ,
+    "http://dbpedia.org/ontology/wikiPageExternalLink" : [ { "type" : "uri", "value" : "http://ilikethisart.net/?p=13736" } ,
+      { "type" : "uri", "value" : "http://www.moma.org/docs/publication_pdf/3166/Tokyo_PREVIEW.pdf?1352411640" } ,
+      { "type" : "uri", "value" : "https://historyofourworld.wordpress.com/2009/12/02/fluxus-fluxus-1995/" } ,
+      { "type" : "uri", "value" : "http://www.metalocus.es/sites/default/files/file-images/ml_moma_tokyo_ayo_pastoral_11_1200.jpg" } ,
+      { "type" : "uri", "value" : "http://epublishing.jp/epjp-shop/ay-o-over-the-rainbow-once-more/" } ,
+      { "type" : "uri", "value" : "http://www.kcua.ac.jp/arc/ar/ay-o-oral-history_en/" } ,
+      { "type" : "uri", "value" : "http://rogermc.blogs.com/tactical/2005/05/ayo_and_nam_jun.html#comment-83193947" } ,
+      { "type" : "uri", "value" : "http://archive.metropolis.co.jp/tokyo/450/art.asp" } ,
+      { "type" : "uri", "value" : "http://archive.metropolis.co.jp/tokyo/5612/art.asp" } ,
+      { "type" : "uri", "value" : "http://www.myjapanesehanga.com/home/artists/ay-o-b-1931" } ,
+      { "type" : "uri", "value" : "http://www.moma.org/interactives/exhibitions/2012/tokyo/" } ,
+      { "type" : "uri", "value" : "https://www.artelino.com/articles/ay-o.asp" } ,
+      { "type" : "uri", "value" : "http://piano-activities.de/englindex.html" } ,
+      { "type" : "uri", "value" : "https://www.youtube.com/watch?v=OOgK1lxxaJE" } ,
+      { "type" : "uri", "value" : "https://www.moma.org/interactives/exhibitions/2011/fluxus_editions/works/finger-box-from-fluxkit/index.html" } ,
+      { "type" : "uri", "value" : "https://www.youtube.com/watch?v=ThIexgXllyo" } ,
+      { "type" : "uri", "value" : "http://www.japantimes.co.jp/culture/2012/03/01/culture/the-varied-colors-of-artistic-process/#.V_tsr5N96wQ" } ,
+      { "type" : "uri", "value" : "http://www.timeout.jp/en/tokyo/event/3713/Ay-O-Over-the-Rainbow-Once-More" } ,
+      { "type" : "uri", "value" : "http://streetart.com/public-colorist-ay-o-once-more-over-the-rainbow-at-mot-tokyo/" } ,
+      { "type" : "uri", "value" : "http://www.fondazionebonotto.org/fluxus/ayo/edition/0383e.html" } ,
+      { "type" : "uri", "value" : "http://fluxfriends.blogspot.hk/2009/08/object-mandala-floor-pieces-with-words.html" } ,
+      { "type" : "uri", "value" : "http://www.mot-art-museum.jp/eng/2012/ay_o/" } ,
+      { "type" : "uri", "value" : "http://www.mot-art-museum.jp/eng/2012/ay_o/images/ay_o.pdf" } ,
+      { "type" : "uri", "value" : "http://en.fluxus50wiesbaden.de/" } ,
+      { "type" : "uri", "value" : "http://www.hiroshima-moca.jp/main_e/ayo.html" } ,
+      { "type" : "uri", "value" : "http://www.britishmuseum.org/research/collection_online/collection_object_details.aspx?objectId=3398808&partId=1&people=149157&peoA=149157-2-59&page=1" } ,
+      { "type" : "uri", "value" : "https://www.moma.org/collection/works/131753?locale=en" } ,
+      { "type" : "uri", "value" : "http://www.art-it.asia/u/admin_expht/xUndvzLRKV0Dfa1PC6e8/?lang=ja" } ,
+      { "type" : "uri", "value" : "https://www.moma.org/artists/255?locale=en&page=1&direction=" } ,
+      { "type" : "uri", "value" : "https://www.moma.org/calendar/exhibitions/1225#slideshow" } ,
+      { "type" : "uri", "value" : "http://info.pref.fukui.jp/bunka/bijutukan/dayori_vol110.pdf" } ,
+      { "type" : "uri", "value" : "http://www.fukuoka-art-museum.jp/english/ec/html/ec02/fs_ec02.htm" } ,
+      { "type" : "uri", "value" : "https://secure.flickr.com/photos/shinjinakai/7145888077/" } ,
+      { "type" : "uri", "value" : "http://post.at.moma.org/content_items/199-fluxus-nexus-fluxus-in-new-york-and-japan" } ,
+      { "type" : "uri", "value" : "http://post.at.moma.org/content_items/317-happening-for-sightseeing-bus-trip-in-tokyo" } ,
+      { "type" : "uri", "value" : "http://www.fondationdudoute.fr/artiste/24/1584-presentation.htm" } ,
+      { "type" : "uri", "value" : "http://www.ubu.com/historical/gb/manifestos.pdf" } ,
+      { "type" : "uri", "value" : "https://www.youtube.com/watch?v=ADX5KnWGZDo" } ,
+      { "type" : "uri", "value" : "http://www.mori.art.museum/english/contents/tokyo-berlin/about/img/The_New_Japan.pdf" } ,
+      { "type" : "uri", "value" : "https://www.hiroshima-moca.jp/ayo/pic/works_815_l.jpg" } ,
+      { "type" : "uri", "value" : "http://www.wiesbaden.de/kultur/bildende-kunst/kunstprojekte/fluxus/fluxus-50.php" } ,
+      { "type" : "uri", "value" : "http://www.tokyoartbeat.com/event/2004/5C97" } ,
+      { "type" : "uri", "value" : "http://www.tokyoartbeat.com/event/2012/ABA2.en" } ,
+      { "type" : "uri", "value" : "http://www.japantimes.co.jp/wp-content/uploads/2013/01/fa20120301a1a.jpg" } ,
+      { "type" : "uri", "value" : "https://www.hiroshima-moca.jp/ayo/" } ] ,
+    "http://dbpedia.org/property/caption" : [ { "type" : "literal", "value" : "Ay-O at Gallery Itsutsuji" , "datatype" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString" } ] ,
+    "http://dbpedia.org/ontology/abstract" : [ { "type" : "literal", "value" : "Takao Iijima (born May 19, 1931), better known by his art name Ay-O, (\u9749\u5614) (Museum of Modern Art page ) is a Japanese artist who has been associated with Fluxus since its international beginnings in the 1960s." , "lang" : "en" } ,
+      { "type" : "literal", "value" : "Ay-o (\u9749\u5614, A\u012B \u014D), de son vrai nom Takao Iijima (\u98EF\u5CF6 \u5B5D\u96C4, Iijima Takao), est un artiste japonais n\u00E9 en 1931. Comme Beuys il a \u00E9t\u00E9 associ\u00E9 au mouvement n\u00E9o-dada\u00EFste Fluxus depuis le d\u00E9but de sa carri\u00E8re internationale. Ay-o fut pr\u00E9sent\u00E9 \u00E0 George Maciunas en 1961 par un autre membre de Fluxus, Yoko Ono. Il devint formellement membre et rejoint Maciunas au sein de Fluxus en 1963. En France Fluxus a \u00E9t\u00E9 popularis\u00E9 par Benjamin Vautier ou Ben. Ay-o \u00E9tait connu pour ses Bo\u00EEtes \u00E0 doigts (Finger Boxes) et pour ses happenings comme membre actif de Fluxus. Il a collabor\u00E9 avec d'autre artistes membres de Fluxus, comme George Maciunas, Emmett Williams, Dick Higgins et le Cor\u00E9en Nam June Paik. Avant fluxus Ay-o a commenc\u00E9 sa carri\u00E8re au Japon au sein de l'Association d'Artistes Democrato (\u30C7\u30E2\u30AF\u30E9\u30FC\u30C8\u7F8E\u8853\u5BB6\u5354\u4F1A, Demokur\u0101to bijutsuka ky\u014Dkai). Cette association japonaise, fond\u00E9e par Ei-Q, a pour but de sortir du mod\u00E8le confucianique ma\u00EEtre-\u00E9l\u00E8ve pour l'art, afin de promouvoir des valeurs d'ind\u00E9pendance et de libert\u00E9 artistique. L'influence de ces valeurs chez Ay-o se retrouve par exemple quand Ay-o, dans un geste symbolique d'\u00E9mancipation, peint une immense croix / X sur une s\u00E9rie de tableaux dont il jugea qu'ils n'\u00E9taient pas assez originaux. Un autre mouvement ind\u00E9pendant est affili\u00E9 \u00E0 Democrato au Japan : S\u014Dz\u014D Biiku (\u5275\u9020\u7F8E\u80B2)\u3000cr\u00E9\u00E9 par le collectionneur Kubo Sadajiro (\u4E45\u4FDD\u3000\u8C9E\u6B21\u90DE) dont l'objet est de promouvoir la libert\u00E9 d'enseignement de l'art. Ces deux mouvement lient Ay-o \u00E0 la pr\u00E9fecture de Fukui au Japon dont ils proviennent. Sozo Biiku va parfois naturellement promouvoir certaines formes d'art na\u00EFf. Kubo cr\u00E9e simultan\u00E9ment la Soci\u00E9t\u00E9 des petits collectionneurs (\u5C0F\u30B3\u30EC\u30AF\u30BF\u30FC\u306E\u4F1A) dont l'objet est de promouvoir la collection d'art dans toutes les strates de la soci\u00E9t\u00E9." , "lang" : "fr" } ,
+      { "type" : "literal", "value" : "\u9749\u5614\uFF08\u3042\u3044\u30FB\u304A\u3046\u3001\u82F1\u8A9E: Ay-O\u30011931\u5E745\u670819\u65E5 - \uFF09\u306F\u3001\u65E5\u672C\u306E\u7F8E\u8853\u5BB6\u30021960\u5E74\u4EE3\u306E\u30D5\u30EB\u30AF\u30B5\u30B9\u306B\u3001\u540C\u904B\u52D5\u306E\u56FD\u969B\u7684\u306A\u6D3B\u52D5\u306E\u521D\u671F\u304B\u3089\u95A2\u308F\u3063\u305F\u3053\u3068\u3067\u77E5\u3089\u308C\u308B\u3002\u672C\u540D\u306F\u98EF\u5CF6 \u5B5D\u96C4\uFF08\u3044\u3044\u3058\u307E \u305F\u304B\u304A\uFF09\u3002\u8328\u57CE\u770C\u884C\u65B9\u90E1\u7389\u9020\u753A\uFF08\u73FE\u30FB\u884C\u65B9\u5E02\uFF09\u51FA\u8EAB\u3002\u300C\u8679\u306E\u30A2\u30FC\u30C6\u30A3\u30B9\u30C8\u300D\u3068\u3057\u3066\u77E5\u3089\u308C\u3066\u3044\u308B\u3002" , "lang" : "ja" } ] ,
+    "http://dbpedia.org/ontology/thumbnail" : [ { "type" : "uri", "value" : "http://commons.wikimedia.org/wiki/Special:FilePath/Ay-O.jpg?width=300" } ] ,
+    "http://dbpedia.org/ontology/birthDate" : [ { "type" : "literal", "value" : "1931-05-19" , "datatype" : "http://www.w3.org/2001/XMLSchema#date" } ,
+      { "type" : "literal", "value" : "1931-1-1" , "datatype" : "http://www.w3.org/2001/XMLSchema#date" } ] ,
+    "http://dbpedia.org/ontology/wikiPageRevisionID" : [ { "type" : "literal", "value" : 744479114 , "datatype" : "http://www.w3.org/2001/XMLSchema#integer" } ] ,
+    "http://dbpedia.org/ontology/wikiPageID" : [ { "type" : "literal", "value" : 8877804 , "datatype" : "http://www.w3.org/2001/XMLSchema#integer" } ] ,
+    "http://purl.org/linguistics/gold/hypernym" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Artist" } ] ,
+    "http://dbpedia.org/property/nationality" : [ { "type" : "literal", "value" : "Japanese" , "datatype" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString" } ] ,
+    "http://dbpedia.org/property/bgcolour" : [ { "type" : "literal", "value" : "silver" , "datatype" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString" } ] } ,
+  "http://dbpedia.org/resource/Ai-o" : { "http://dbpedia.org/ontology/wikiPageRedirects" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Ay-O" } ] } ,
+  "http://dbpedia.org/resource/Finger_box" : { "http://dbpedia.org/ontology/wikiPageRedirects" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Ay-O" } ] } ,
+  "http://dbpedia.org/resource/Finger_boxes" : { "http://dbpedia.org/ontology/wikiPageRedirects" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Ay-O" } ] }
+}
+;
+	var dataAuth = "http://dbpedia.org/resource/Ay-O";
+	var dataUrl = "ay_o.html";
+	var dataResourceType = "participant";
+	var dataName = "Ay-O";
+ 	
+</script>
+
+
+
+
+
+<script type="text/javascript">
+
+
+	
+	
+	
+
+	$(document).ready(function($) {
+		
+		
+		padb.resource.initialize();
+			 
+		$( '.scrollable' ).
+		bind( 'mousewheel DOMMouseScroll', function ( e ) {
+			
+			if( e.originalEvent ) e = e.originalEvent;
+			
+			var delta = e.wheelDelta || -e.detail;
+			this.scrollTop += ( delta < 0 ? 1 : -1 ) * 30;
+			e.preventDefault();
+		});		 
+		
+		
+				
+		$.ajaxSetup ({
+			// Disable caching of AJAX responses
+			cache: false
+		});		
+		
+	});
+	
+
+	
+	
+	
+	
+	
+</script>
+
+
+
+
+ 
+<br />
+<div class="container"  style="position:relative;">
+	   
+      <div id="resourceLinks"></div> 
+       
+       
+       
+       
+              
+       
+           
+           
+           
+          <div class="row addSection">
+              <div class="span1 addSectionIconHolder">
+              
+                <i class="icon-user"></i>
+              
+              </div>
+          
+              <div class="span11">
+                <span>Performer</span>
+                <hr>
+                <br />
+              </div>
+        </div>
+        <div class="row">
+            <div class="span1">
+            </div>
+            <div class="span11" style="position:relative">
+                
+                
+                
+                
+               <div>
+                                       <div class="pull-right vignette">
+                            <img  src="../cache/media/ay_o.jpg" />
+                            
+                        </div>
+                        
+                                           
+                <div class="pull-left" style="width:80%;">
+                     
+                     <h5 id="resourceLDName">Ay-O</h5>
+                     <h5 id="resourceLDAbstract"></h5>
+                     
+                     
+                     <div id="resourceSameAs">
+                        <h5>External Data:</h5>
+                        
+                        
+                     </div>
+                
+                </div>   
+                
+                <br style="clear:both;" />
+            </div>
+            
+            
+                
+            </div>
+        </div>    
+         
+    
+    
+    
+    
+    
+    
+       <div class="row addSection">
+			<div class="span1 addSectionIconHolder">              
+                <i class="icon-asterisk"></i>
+              
+              </div>
+          
+              <div class="span11">
+                <span>Events </span><span id="resourceEventCount"></span>
+                <hr>
+              </div>
+        </div>
+    
+    
+    
+    
+    
+    
+    
+        <div class="row">
+            <div class="span1"></div>
+            <div class="span11" style="position:relative">
+                  
+                 <div class="">
+                    <div id="resourceEventsEvents" class="scrollable">
+                           <table class="table table-condensed table-hover table-striped">
+                               <thead>
+                                <tr>
+                                  <th>Date</th>
+                                  
+                                  <th>Title</th>
+                                  <th>Location</th>
+                                  <th></th>
+                                </tr>
+                              </thead>
+                              <tbody id="resourceEventsEventsRows"> 
+                              </tbody>
+                            </table>
+                     
+                    </div>
+                    
+                    <div id="resourceEventsExport">
+                    
+                    	<input  name="resourceEventsSearch" class="span3" id="resourceEventsSearch"  type="text" placeholder="Filter: names, places, dates">
+                    	<button class="btn btn-mini btn-danger" id="resourceEventsClearFilter"><i class="icon-remove">&nbsp;Clear Filter</i></button>
+                   		<button class="btn btn-mini btn-info" title="Render the currently filitered data as a network" id="resourceRenderEventNetwork"> <img src="../img/icon-network-white.png" style="height:15px; width:auto" /> Two-Mode Event Network</button>
+                   		<button class="btn btn-mini btn-info" title="Render the currently filitered data as a network" id="resourceRenderEventMap"> <i class="icon-globe"></i> Map Event Locations</button>
+                   		<button class="btn btn-mini btn-success" title="Download network as Gephi File" id="resourceDownloadEventGephi"> <img src="../img/icon-gephi.png" style="height:15px; width:auto" /> Donwload Gephi Network</button>
+
+                 
+                    </div>                 
+                </div>
+                <br style="clear:both;" />
+            </div>
+            
+            
+                
+         </div>    
+    
+     
+       <div class="row addSection">
+              <div class="span1">
+              
+                <img src="../img/social-network.png" style=" margin-left:25px; margin-bottom:10px;" />
+              
+              </div>
+          
+              <div class="span11">
+                <span>Performance Network</span> 
+                <hr>
+              </div>
+        </div>
+        
+        <div class="row">
+            <div class="span1">
+            </div>
+            <div class="span11" style="position:relative">
+                
+               	<div style="width: 100%; height:500px;" id="egoNetwork">
+            
+                
+             	</div> 
+                <div class="well pull-left well-small" id="egoNetworkControls">
+                    <span class="rangeLabels">Node Charge</span>
+                    <input type="range" id="resourceEgoNetworkCharge" min="-1000" max="100" value="-120" data-def="-700" />
+                    <br /><span class="rangeLabels">Gravity</span>
+                    <input type="range" id="resourceEgoNetworkGravity" min="0" max="1" value="0.1" step="0.01" data-def="0.3" /> 
+                    <br /><span class="rangeLabels">Edge Length</span>
+                    <input type="range" id="resourceEgoNetworkDistance" min="0" max="300" value="50" data-def="50"  />      
+                    <br /><span class="rangeLabels">Edge Strength</span>
+                    <input type="range" id="resourceEgoNetworkStrength" min="0" max="3" value="1" data-def="0.15" step="0.1"  /> 
+                    <br /><br />
+                    <button type="button" id="resourceEgoNetworkLabelsButton" class="btn btn-mini" title="Show node labels." data-toggle="button">Show Labels</button>  
+                    <button type="button" id="resourceEgoNetworkLiveButton" class="btn btn-mini" title="Show realtime network rendering" data-toggle="button">Live Rendering</button>                     
+                </div>
+                
+                <div class="well pull-left well-small egoNetworkControls span7" style="margin-left:20px;" >
+                
+                	<input  name="resourceEgoNetworkSearch" class="span3" id="resourceEgoNetworkSearch"  type="text" placeholder="Filter: names, places, dates">
+					<button class="btn btn-mini btn-danger" id="resourceEgoClearFilter"><i class="icon-remove">&nbsp;Clear Filter</i></button>
+                    <button class="btn btn-mini btn-success" title="Download network as Gephi File" id="resourceDownloadEgoGephi"> <img src="../img/icon-gephi.png" style="height:15px; width:auto" /> Donwload Gephi Network</button>
+
+                </div>
+                
+            </div>
+        </div>           
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+	
+
+	
+
+
+	
+
+
+</div>
+
+
+
+
+    <div id="resourceEventNetworkModal" class="modal container hide fade" style="min-height:500px" tabindex="-1">
+ 
+      <div class="modal-body">
+      	
+        <div id="eventNetwork" style="height:400px; width:100%">
+        
+        </div>
+      
+      </div>
+      <div class="modal-footer" style="height:20px;">
+      	
+        <div class="well pull-left well-small">
+        	<span class="rangeLabels">Node Charge</span>
+        	<input type="range" id="resourceEventNetworkCharge" min="-800" max="200" value="-120" data-def="-120" />
+            <span class="rangeLabels">Gravity</span>
+        	<input type="range" id="resourceEventNetworkGravity" min="0" max="1" value="0.1" step="0.01" data-def="0.1" /> 
+            <span class="rangeLabels">Edge Length</span>
+        	<input type="range" id="resourceEventNetworkDistance" min="0" max="300" value="50" data-def="50"  />      
+            <span class="rangeLabels">Edge Strength</span>
+        	<input type="range" id="resourceEventNetworkStrength" min="0" max="5" value="1" data-def="1" step="0.1"  />    
+            <button type="button" id="resourceEventNetworkLabelsButton" class="btn btn-mini" data-toggle="button">Show Labels</button>                     
+		</div>
+        <div class="pull-right">
+        <button type="button" data-dismiss="modal" class="btn">Close</button>
+       	</div>
+       </div>
+    </div>
+    
+    
+    
+    
+     <div id="resourceEventMapModal" class="modal container hide fade" style="min-height:500px" tabindex="-1">
+ 
+      <div class="modal-body">
+      	
+        <div id="eventMap" style="height:400px; width:100%">
+        
+        </div>
+      
+      </div>
+      <div class="modal-footer" style="height:20px;">
+      	
+        <div class="well pull-left well-small">                  
+		</div>
+        <div class="pull-right">
+        <button type="button" data-dismiss="modal" class="btn">Close</button>
+       	</div>
+       </div>
+    </div>
+
+<br /><br /><br /><br /><br /><br />
+
+<script type="text/javascript">    var _gaq = _gaq || [];   _gaq.push(['_setAccount', 'UA-10371295-7']);   _gaq.push(['_trackPageview']);    (function() {     var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);   })();  </script>
+
+</body>
+
+<!-- Mirrored from padb.net/resource/ay_o by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 11 Jan 2020 22:17:13 GMT -->
+</html>

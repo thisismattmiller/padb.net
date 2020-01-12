@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<gexf version="1.2" xmlns="http://www.gexf.net/1.2draft">
+ <graph mode="static" defaultedgetype="undirected">
+  <nodes>
+   <node id="14" label="Allan Kaprow"/>
+   <node id="109" label="Peter Forakis"/>
+   <node id="110" label="Phyllis Yampolsky"/>
+  </nodes>
+  <edges>
+   <edge source="14" target="109"/>
+   <edge source="14" target="110"/>
+   <edge source="109" target="110"/>
+  </edges>
+ </graph>
+</gexf>

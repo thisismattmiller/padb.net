@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<gexf version="1.2" xmlns="http://www.gexf.net/1.2draft">
+ <graph mode="static" defaultedgetype="undirected">
+  <nodes>
+   <node id="13" label="Dick Higgins"/>
+   <node id="18" label="George Brecht"/>
+   <node id="43" label="Wolf Vostell"/>
+   <node id="46" label="Arthur Koepcke"/>
+   <node id="68" label="Eric Andersen"/>
+   <node id="161" label="Joseph Beuys"/>
+   <node id="62" label="Emmett Williams"/>
+   <node id="77" label="Bazon Brock"/>
+   <node id="134" label="Tomas Schmit"/>
+  </nodes>
+  <edges>
+   <edge source="13" target="18"/>
+   <edge source="13" target="43"/>
+   <edge source="13" target="46"/>
+   <edge source="13" target="68"/>
+   <edge source="18" target="43"/>
+   <edge source="18" target="46"/>
+   <edge source="18" target="68"/>
+   <edge source="43" target="46"/>
+   <edge source="43" target="68"/>
+   <edge source="46" target="68"/>
+   <edge source="43" target="161"/>
+   <edge source="77" target="134"/>
+  </edges>
+ </graph>
+</gexf>

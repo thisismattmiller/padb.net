@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<gexf version="1.2" xmlns="http://www.gexf.net/1.2draft">
+ <graph mode="static" defaultedgetype="undirected">
+  <nodes>
+   <node id="34" label="Ben Patterson"/>
+   <node id="43" label="Wolf Vostell"/>
+   <node id="84" label="William Pearson"/>
+  </nodes>
+  <edges>
+   <edge source="34" target="43"/>
+   <edge source="34" target="84"/>
+   <edge source="43" target="84"/>
+  </edges>
+ </graph>
+</gexf>

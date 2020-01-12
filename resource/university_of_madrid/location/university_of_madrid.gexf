@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<gexf version="1.2" xmlns="http://www.gexf.net/1.2draft">
+ <graph mode="static" defaultedgetype="undirected">
+  <nodes>
+   <node id="43" label="Wolf Vostell"/>
+   <node id="200" label="Max Neuhaus"/>
+   <node id="329" label="Walter Marchetti"/>
+   <node id="357" label="Jose Cortes"/>
+   <node id="358" label="Manuel Cortes"/>
+   <node id="359" label="Juan Hidalgo"/>
+   <node id="360" label="Tomas Marco"/>
+   <node id="382" label="DiVicent"/>
+   <node id="383" label="Alberto Schommer"/>
+  </nodes>
+  <edges>
+   <edge source="43" target="200"/>
+   <edge source="43" target="329"/>
+   <edge source="43" target="357"/>
+   <edge source="43" target="358"/>
+   <edge source="43" target="359"/>
+   <edge source="43" target="360"/>
+   <edge source="200" target="329"/>
+   <edge source="200" target="357"/>
+   <edge source="200" target="358"/>
+   <edge source="200" target="359"/>
+   <edge source="200" target="360"/>
+   <edge source="329" target="357"/>
+   <edge source="329" target="358"/>
+   <edge source="329" target="359"/>
+   <edge source="329" target="360"/>
+   <edge source="357" target="358"/>
+   <edge source="357" target="359"/>
+   <edge source="357" target="360"/>
+   <edge source="358" target="359"/>
+   <edge source="358" target="360"/>
+   <edge source="359" target="360"/>
+   <edge source="329" target="382"/>
+   <edge source="329" target="383"/>
+   <edge source="357" target="382"/>
+   <edge source="357" target="383"/>
+   <edge source="358" target="382"/>
+   <edge source="358" target="383"/>
+   <edge source="359" target="382"/>
+   <edge source="359" target="383"/>
+   <edge source="360" target="382"/>
+   <edge source="360" target="383"/>
+   <edge source="382" target="383"/>
+  </edges>
+ </graph>
+</gexf>

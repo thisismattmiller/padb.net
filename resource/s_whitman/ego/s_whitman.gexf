@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<gexf version="1.2" xmlns="http://www.gexf.net/1.2draft">
+ <graph mode="static" defaultedgetype="undirected">
+  <nodes>
+   <node id="16" label="Robert Whitman"/>
+   <node id="27" label="Walter De Maria"/>
+   <node id="122" label="Alison Knowles"/>
+   <node id="321" label="S Whitman"/>
+  </nodes>
+  <edges>
+   <edge source="16" target="27"/>
+   <edge source="16" target="122"/>
+   <edge source="16" target="321"/>
+   <edge source="27" target="122"/>
+   <edge source="27" target="321"/>
+   <edge source="122" target="321"/>
+  </edges>
+ </graph>
+</gexf>

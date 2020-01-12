@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<gexf version="1.2" xmlns="http://www.gexf.net/1.2draft">
+ <graph mode="static" defaultedgetype="undirected">
+  <nodes>
+   <node id="39" label="Nam-june Paik"/>
+   <node id="96" label="Takehisa Kosugi"/>
+   <node id="198" label="Charlotte Moorman"/>
+   <node id="346" label="Linda Sampson"/>
+   <node id="355" label="Dunham"/>
+  </nodes>
+  <edges>
+   <edge source="39" target="96"/>
+   <edge source="39" target="198"/>
+   <edge source="39" target="346"/>
+   <edge source="39" target="355"/>
+   <edge source="96" target="198"/>
+   <edge source="96" target="346"/>
+   <edge source="96" target="355"/>
+   <edge source="198" target="346"/>
+   <edge source="198" target="355"/>
+   <edge source="346" target="355"/>
+  </edges>
+ </graph>
+</gexf>

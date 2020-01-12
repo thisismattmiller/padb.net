@@ -1,0 +1,499 @@
+<!doctype html>
+<html>
+
+<!-- Mirrored from padb.net/resource/richard_huelsenbeck by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 11 Jan 2020 22:23:30 GMT -->
+<head>
+<meta charset="UTF-8">
+<title>padb.net</title>
+
+
+<link rel="stylesheet" href="../css/bootstrap.css">
+<link rel="stylesheet" href="../css/font-awesome.css">
+<link rel="stylesheet" href="../css/site.css">
+<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+<link rel="icon" type="image/png" href="../img/favicon.png">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/bootstrap-modal.js"></script>
+<script src="../js/bootstrap-modalmanager.js"></script>
+
+<script src="../js/d3.min.js"></script>
+<script src="../js/html5slider.js"></script>
+<script src="../js/topojson.js"></script>
+<script src="../js/padb.js"></script>
+
+
+</head>
+<body>
+    
+    
+	<div style="position:relative;">        
+
+ 		<div style=" border-bottom:solid 1px #ccc;">
+        	<div class="container">
+                
+                 <div id="header">
+                 	
+                     <div class="logo"><a href="../index.html"><span>|||</span>padb</a> </div>
+                    
+                     						<div id="resourceName" style="font-size:2em">Richard Huelsenbeck</div>
+					
+                 </div>
+                
+                
+        	</div>
+            
+    	</div>
+ 
+   </div>
+<script src="../js/countriesData.js"></script>
+
+<script type="text/javascript">
+	//preloaded json from the server
+
+	var dataSameAs = [
+  {
+    "uri": "http://wikidata.dbpedia.org/resource/Q76853",
+    "numDuplicates": "32",
+    "duplicates": [
+      "http://dbpedia.org/resource/Richard_Hulbeck",
+      "http://dbpedia.org/resource/Charles_R._Hulbeck",
+      "http://dbpedia.org/resource/Richard_Huelsenbeck",
+      "http://br.dbpedia.org/resource/Richard_Huelsenbeck",
+      "http://ca.dbpedia.org/resource/Richard_Huelsenbeck",
+      "http://d-nb.info/gnd/118554387",
+      "http://d-nb.info/gnd/118554387/about/rdf",
+      "http://data.bibsys.no/data/notrbib/authorityentry/x90190182",
+      "http://dbpedialite.org/things/614463#id",
+      "http://dbpedialite.org/things/2845479#id",
+      "http://dbpedialite.org/things/3540457#id",
+      "http://de.dbpedia.org/resource/Richard_Huelsenbeck",
+      "http://el.dbpedia.org/resource/\u03A1\u03AF\u03C7\u03B1\u03C1\u03BD\u03C4_\u03A7\u03CD\u03BB\u03B6\u03B5\u03BD\u03BC\u03C0\u03B5\u03BA",
+      "http://eo.dbpedia.org/resource/Richard_Huelsenbeck",
+      "http://es.dbpedia.org/resource/Richard_H\u00FClsenbeck",
+      "http://fr.dbpedia.org/resource/Richard_Huelsenbeck",
+      "http://freebase.com//m/02wrgs",
+      "http://id.loc.gov/authorities/names/n82230661",
+      "http://id.ndl.go.jp/auth/ndla/00934783",
+      "http://it.dbpedia.org/resource/Richard_Huelsenbeck",
+      "http://libris.kb.se/resource/auth/287385",
+      "http://mpii.de/yago/resource/Richard_Huelsenbeck",
+      "http://nl.dbpedia.org/resource/Richard_H\u00FClsenbeck",
+      "http://pt.dbpedia.org/resource/Richard_Huelsenbeck",
+      "http://rdf.freebase.com/ns/m.02wrgs",
+      "http://rdf.freebase.com/ns/en.richard_huelsenbeck",
+      "http://rdf.freebase.com/ns/guid.9202a8c04000641f80000000002dddd8",
+      "http://viaf.org/viaf/54345151",
+      "http://wikidata.dbpedia.org/resource/Q76853",
+      "http://www.wikidata.org/entity/Q76853",
+      "http://yago-knowledge.org/resource/Richard_Huelsenbeck",
+      "http://zh-min-nan.dbpedia.org/resource/Richard_Huelsenbeck"
+    ]
+  }
+]
+;
+	var dataDbpedia = {
+  "http://en.wikipedia.org/wiki/Richard_Huelsenbeck" : { "http://xmlns.com/foaf/0.1/primaryTopic" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Richard_Huelsenbeck" } ] } ,
+  "http://dbpedia.org/resource/Charles_R._Hulbeck" : { "http://dbpedia.org/ontology/wikiPageRedirects" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Richard_Huelsenbeck" } ] } ,
+  "http://dbpedia.org/resource/Richard_Huelsenbeck" : { "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatPeopleFromHesse-Nassau" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatPeopleFromDortmund" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatWriters" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Wikicat20th-centuryGermanWriters" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatGermanPoets" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Organism100004475" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/ontology/Person" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatGermanPhysicians" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/MedicalPractitioner110305802" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/CausalAgent100007347" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Professional110480253" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Whole100003553" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/LivingThing100004258" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Poet110444194" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Wikicat20th-centuryPhysicians" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatEthnicGermanPeople" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Psychiatrist110488016" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Specialist110632576" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Communicator109610660" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Analyst109790278" } ,
+      { "type" : "uri", "value" : "http://www.w3.org/2002/07/owl#Thing" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Adult109605289" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Person100007846" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Object100002684" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatPsychoanalysts" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Doctor110020890" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/YagoLegalActor" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/YagoLegalActorGeo" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatPsychiatrists" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatPeopleFromFrankenau" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/PhysicalEntity100001930" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Writer110794014" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/HealthProfessional110165109" } ] ,
+    "http://www.w3.org/2000/01/rdf-schema#label" : [ { "type" : "literal", "value" : "Richard Huelsenbeck" , "lang" : "fr" } ,
+      { "type" : "literal", "value" : "Richard Huelsenbeck" , "lang" : "it" } ,
+      { "type" : "literal", "value" : "Richard Huelsenbeck" , "lang" : "pt" } ,
+      { "type" : "literal", "value" : "Richard Huelsenbeck" , "lang" : "de" } ,
+      { "type" : "literal", "value" : "Richard Huelsenbeck" , "lang" : "pl" } ,
+      { "type" : "literal", "value" : "Richard H\u00FClsenbeck" , "lang" : "nl" } ,
+      { "type" : "literal", "value" : "Richard Huelsenbeck" , "lang" : "en" } ,
+      { "type" : "literal", "value" : "Richard H\u00FClsenbeck" , "lang" : "es" } ] ,
+    "http://www.w3.org/2000/01/rdf-schema#comment" : [ { "type" : "literal", "value" : "Richard Huelsenbeck, n\u00E9 Carl Wilhelm Richard H\u00FClsenbeck, le 23 avril 1892 \u00E0 Frankenau en Allemagne et mort le 30 avril 1974 \u00E0 Minusio en Suisse, est un \u00E9crivain et po\u00E8te allemand et l'un des fondateurs de Dada." , "lang" : "fr" } ,
+      { "type" : "literal", "value" : "Richard Huelsenbeck (Frankenau, Hesse-Nassau, 23 de abril de 1892 - 30 de abril de 1974) fue un poeta, escritor y baterista alem\u00E1n. Huelsenbeck fue un estudiante de medicina en v\u00EDsperas de la Primera Guerra Mundial. Fue declarado inv\u00E1lido por el ej\u00E9rcito y emigr\u00F3 a Z\u00FArich, Suiza en febrero de 1916, donde se enamor\u00F3 del Cabaret Voltaire. En enero de 1917, se traslad\u00F3 a Berl\u00EDn, llevando consigo ideas y t\u00E9cnicas que le ayudaron a fundar el grupo dada\u00EDsta de Berl\u00EDn. \u00ABHacer literatura con una pistola en la mano ha sido durante alg\u00FAn tiempo mi sue\u00F1o\u00BB, escribi\u00F3 en 1920.Sus ideas se ajustaban a la corriente pol\u00EDtica de izquierdas que predominaba en aquella \u00E9poca en Berl\u00EDn. Sin embargo, el idealista Huelsenbeck y sus compa\u00F1eros del desaf\u00EDo \u00ABDad\u00E1 es el bolchevismo alem\u00E1n\u00BB tuvo desafortunadas repercu" , "lang" : "es" } ,
+      { "type" : "literal", "value" : "Richard H\u00FClsenbeck (Frankenau, 23 april 1892 - Muralto, 20 april 1974) was een Duits arts. Hij bracht zijn jeugd door in Dortmund en studeerde medicijnen in Z\u00FCrich en Parijs. Later studeerde hij filosofie, kunstgeschiedenis en germanistiek. H\u00FClsenbeck vluchtte in februari 1916 als dienstweigeraar naar Zwitserland. Hij speelde een belangrijke rol in het oprichten van het Dada\u00EFsme in Z\u00FCrich en later, in Berlijn. In Z\u00FCrich had Huelsenbeck contact met het befaamde 'Cabaret Voltaire' en hij schreef er de dichtbundel Phantastische Gebete (1916)." , "lang" : "nl" } ,
+      { "type" : "literal", "value" : "Carl Wilhelm Richard H\u00FClsenbeck (ur. 23 kwietnia 1892 w Frankenau, zm. 20 kwietnia 1974 w Muralto) \u2013 niemiecki psychoanalityk, poeta, pisarz i muzyk. W wieku dziewi\u0119tnastu lat wyjecha\u0142 do Monachium. Przez rok studiowa\u0142 medycyn\u0119, a nast\u0119pnie literatur\u0119 niemieck\u0105 i histori\u0119 sztuki. W Monachium pozna\u0142 Huga Balla (pisarza i p\u00F3\u017Aniejszego wydawcy jego kilku prac), kt\u00F3ry wywar\u0142 wp\u0142yw na rozw\u00F3j intelektualny Huelsenbecka; by\u0142 cz\u0119stym bywalcem kawiarni, w kt\u00F3rej spotykali si\u0119 arty\u015Bci i pisarze zwi\u0105zani z ekspresjonizmem. W latach 1912-1913 studiowa\u0142 filozofi\u0119 na paryskiej Sorbonie. W 1914 roku powr\u00F3ci\u0142 do Berlina, gdzie kontynuowa\u0142 nauk\u0119 literatury niemieckiej. Tu publikowa\u0142 swoje wierze, eseje i recenzje ksi\u0105\u017Cek w czasopi\u015Bmie \u201EDie Aktion\u201D, wydawanym przez Franza Pfemferta. W 1914 roku, jako ochotn" , "lang" : "pl" } ,
+      { "type" : "literal", "value" : "Richard Huelsenbeck (born Carl Wilhelm Richard H\u00FClsenbeck; April 23, 1892 \u2013 April 20, 1974) was a German psychoanalyst, poet, writer and drummer born in Frankenau, Hessen-Nassau. Huelsenbeck was a medical student on the eve of World War I. He was invalided out of the army and emigrated to Z\u00FCrich, Switzerland in February 1916, where he fell in with the Cabaret Voltaire. In January 1917, he moved to Berlin, taking with him the ideas and techniques which helped him found the Berlin Dada group. 'To make literature with a gun in my hand had for a time been my dream,' he wrote in 1920. His ideas fitted in with left-wing politics current at the time in Berlin. However idealistic Huelsenbeck and his companions were, their challenge 'Dada is German Bolshevism' had unfortunate repercussions later, w" , "lang" : "en" } ,
+      { "type" : "literal", "value" : "Richard Huelsenbeck (Frankenau, Alemanha, 23 de abril de 1892 - Minusio, Sui\u00E7a, 20 de abril de 1974) foi um poeta, escritor de relatos de viagens, baterista, m\u00E9dico e psicanalista alem\u00E3o, participante do grupo fundador do Dada\u00EDsmo que atuou no Cabaret Voltaire de Zurique, onde praticou a poesia simultane\u00EDsta. Como outros dada\u00EDstas, sua arte foi declarada bolchevista e o poeta teve que exilar-se da Alemanha, posteriormente, quando o Nazismo ascendeu ao poder." , "lang" : "pt" } ,
+      { "type" : "literal", "value" : "Richard Huelsenbeck (eigentlich Carl Wilhelm Richard H\u00FClsenbeck, im angels\u00E4chsischen Sprachbereich bezeichnete er sich sp\u00E4ter als Charles R. Hulbeck; * 23. April 1892 in Frankenau; \u2020 20. April 1974 in Muralto, Schweiz) war ein deutscher Schriftsteller, Lyriker, Erz\u00E4hler, Essayist, Dramatiker, Arzt und Psychoanalytiker. Sein st\u00E4rkstes Echo erregte er als Mitbegr\u00FCnder und wichtiger Chronist des Dadaismus." , "lang" : "de" } ] ,
+    "http://www.w3.org/2002/07/owl#sameAs" : [ { "type" : "uri", "value" : "http://es.dbpedia.org/resource/Richard_H\u00FClsenbeck" } ,
+      { "type" : "uri", "value" : "http://www.wikidata.org/entity/Q76853" } ,
+      { "type" : "uri", "value" : "http://nl.dbpedia.org/resource/Richard_H\u00FClsenbeck" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Richard_Huelsenbeck" } ,
+      { "type" : "uri", "value" : "http://el.dbpedia.org/resource/\u03A1\u03AF\u03C7\u03B1\u03C1\u03BD\u03C4_\u03A7\u03CD\u03BB\u03B6\u03B5\u03BD\u03BC\u03C0\u03B5\u03BA" } ,
+      { "type" : "uri", "value" : "http://yago-knowledge.org/resource/Richard_Huelsenbeck" } ,
+      { "type" : "uri", "value" : "http://rdf.freebase.com/ns/m.02wrgs" } ,
+      { "type" : "uri", "value" : "http://pl.dbpedia.org/resource/Richard_Huelsenbeck" } ,
+      { "type" : "uri", "value" : "http://pt.dbpedia.org/resource/Richard_Huelsenbeck" } ,
+      { "type" : "uri", "value" : "http://fr.dbpedia.org/resource/Richard_Huelsenbeck" } ,
+      { "type" : "uri", "value" : "http://wikidata.dbpedia.org/resource/Q76853" } ,
+      { "type" : "uri", "value" : "http://it.dbpedia.org/resource/Richard_Huelsenbeck" } ,
+      { "type" : "uri", "value" : "http://d-nb.info/gnd/118554387" } ,
+      { "type" : "uri", "value" : "http://de.dbpedia.org/resource/Richard_Huelsenbeck" } ] ,
+    "http://purl.org/dc/terms/subject" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:German_male_poets" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Dada" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:People_from_Hesse-Nassau" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:1892_births" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:20th-century_German_poets" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:People_from_Frankenau" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:German-language_poets" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:1974_deaths" } ] ,
+    "http://xmlns.com/foaf/0.1/name" : [ { "type" : "literal", "value" : "Richard Huelsenbeck" , "lang" : "en" } ] ,
+    "http://purl.org/dc/terms/description" : [ { "type" : "literal", "value" : "German poet" , "lang" : "en" } ] ,
+    "http://xmlns.com/foaf/0.1/givenName" : [ { "type" : "literal", "value" : "Richard" , "lang" : "en" } ] ,
+    "http://xmlns.com/foaf/0.1/gender" : [ { "type" : "literal", "value" : "male" , "lang" : "en" } ] ,
+    "http://xmlns.com/foaf/0.1/isPrimaryTopicOf" : [ { "type" : "uri", "value" : "http://en.wikipedia.org/wiki/Richard_Huelsenbeck" } ] ,
+    "http://xmlns.com/foaf/0.1/surname" : [ { "type" : "literal", "value" : "Huelsenbeck" , "lang" : "en" } ] ,
+    "http://www.w3.org/ns/prov#wasDerivedFrom" : [ { "type" : "uri", "value" : "http://en.wikipedia.org/wiki/Richard_Huelsenbeck?oldid=741428972" } ] ,
+    "http://dbpedia.org/ontology/wikiPageExternalLink" : [ { "type" : "uri", "value" : "http://www.ubu.com/sound/hulsenbeck.html" } ,
+      { "type" : "uri", "value" : "http://archives2.getty.edu:8082/xtf/view?docId=ead/910082/910082.xml;chunk.id=headerlink;brand=default" } ] ,
+    "http://dbpedia.org/ontology/abstract" : [ { "type" : "literal", "value" : "Richard Huelsenbeck (Frankenau, Hesse-Nassau, 23 de abril de 1892 - 30 de abril de 1974) fue un poeta, escritor y baterista alem\u00E1n. Huelsenbeck fue un estudiante de medicina en v\u00EDsperas de la Primera Guerra Mundial. Fue declarado inv\u00E1lido por el ej\u00E9rcito y emigr\u00F3 a Z\u00FArich, Suiza en febrero de 1916, donde se enamor\u00F3 del Cabaret Voltaire. En enero de 1917, se traslad\u00F3 a Berl\u00EDn, llevando consigo ideas y t\u00E9cnicas que le ayudaron a fundar el grupo dada\u00EDsta de Berl\u00EDn. \u00ABHacer literatura con una pistola en la mano ha sido durante alg\u00FAn tiempo mi sue\u00F1o\u00BB, escribi\u00F3 en 1920.Sus ideas se ajustaban a la corriente pol\u00EDtica de izquierdas que predominaba en aquella \u00E9poca en Berl\u00EDn. Sin embargo, el idealista Huelsenbeck y sus compa\u00F1eros del desaf\u00EDo \u00ABDad\u00E1 es el bolchevismo alem\u00E1n\u00BB tuvo desafortunadas repercusiones m\u00E1s adelante, cuando los nazis denunciaron todos los aspectos del arte moderno como Kunstbolschewismus. M\u00E1s tarde, se traslad\u00F3 a la ciudad de Nueva York, donde practic\u00F3 el psicoan\u00E1lisis Jungiano con el nombre de Charles R. Hulbeck. En 1970 regres\u00F3 a la regi\u00F3n de Ticino en Suiza. Huelsenbeck fue el editor del Dada Almanach, y escribi\u00F3 Dada Sieght, En Avant Dada y otras obras dada\u00EDstas. Hasta el final de su vida, Huelsenbeck insisiti\u00F3 en que \u00ABDad\u00E1 a\u00FAn existe\u00BB, aunque los otros fundadores del movimiento puede que no estuvieran de acuerdo." , "lang" : "es" } ,
+      { "type" : "literal", "value" : "Richard H\u00FClsenbeck (Frankenau, 23 april 1892 - Muralto, 20 april 1974) was een Duits arts. Hij bracht zijn jeugd door in Dortmund en studeerde medicijnen in Z\u00FCrich en Parijs. Later studeerde hij filosofie, kunstgeschiedenis en germanistiek. H\u00FClsenbeck vluchtte in februari 1916 als dienstweigeraar naar Zwitserland. Hij speelde een belangrijke rol in het oprichten van het Dada\u00EFsme in Z\u00FCrich en later, in Berlijn. In Z\u00FCrich had Huelsenbeck contact met het befaamde 'Cabaret Voltaire' en hij schreef er de dichtbundel Phantastische Gebete (1916). Huelsenbeck schreef in Berlijn - waar hij vanaf 1917 weer woonde - meerdere werken over de Dada-beweging en was daar de centrale figuur. Zijn belangrijkste werk was het concipi\u00EBren van de 'Dada Almanach' in 1920, een poging de Dada-beweging in een standaardwerk te omvatten. Hij schreef een geschiedenis van het dada\u00EFsme in En avant Dada (1920, Ned. vert. 2001) en de roman De ondergang van Dr. Billig (1921, Ned. vert. 1996). Na de neergang van Dada werd H\u00FClsenbeck scheepsarts en voer op Afrika, Amerika en het Verre Oosten. Hij was in die tijd tevens correspondent en schreef een aantal reisboeken. In 1936 emigreerde H\u00FClsenbeck naar New York en werd Amerikaans staatsburger. Hij was daar de rest van zijn leven psychiater. Hij woonde de laatste jaren in Zwitserland, waar hij overleed." , "lang" : "nl" } ,
+      { "type" : "literal", "value" : "Carl Wilhelm Richard H\u00FClsenbeck (ur. 23 kwietnia 1892 w Frankenau, zm. 20 kwietnia 1974 w Muralto) \u2013 niemiecki psychoanalityk, poeta, pisarz i muzyk. W wieku dziewi\u0119tnastu lat wyjecha\u0142 do Monachium. Przez rok studiowa\u0142 medycyn\u0119, a nast\u0119pnie literatur\u0119 niemieck\u0105 i histori\u0119 sztuki. W Monachium pozna\u0142 Huga Balla (pisarza i p\u00F3\u017Aniejszego wydawcy jego kilku prac), kt\u00F3ry wywar\u0142 wp\u0142yw na rozw\u00F3j intelektualny Huelsenbecka; by\u0142 cz\u0119stym bywalcem kawiarni, w kt\u00F3rej spotykali si\u0119 arty\u015Bci i pisarze zwi\u0105zani z ekspresjonizmem. W latach 1912-1913 studiowa\u0142 filozofi\u0119 na paryskiej Sorbonie. W 1914 roku powr\u00F3ci\u0142 do Berlina, gdzie kontynuowa\u0142 nauk\u0119 literatury niemieckiej. Tu publikowa\u0142 swoje wierze, eseje i recenzje ksi\u0105\u017Cek w czasopi\u015Bmie \u201EDie Aktion\u201D, wydawanym przez Franza Pfemferta. W 1914 roku, jako ochotnik, wst\u0105pi\u0142 do wojska; s\u0142u\u017Cy\u0142 w jednostce artylerii polowej. Zanim trafi\u0142 na front, zosta\u0142 zwolniony ze s\u0142u\u017Cby z powodu neuralgii. Wraz z Ballem coraz ostrzej sprzeciwia\u0142 si\u0119 wojnie. W 1915 roku zorganizowa\u0142 spotkania, na kt\u00F3rych manifestowa\u0142 sw\u00F3j sprzeciw wobec dzia\u0142a\u0144 wojennych, a tak\u017Ce pragnienie upami\u0119tnienia poleg\u0142ych poet\u00F3w. W lutym 1916 wyemigrowa\u0142 do Zurychu, gdzie odwiedza\u0142 klub \u201ECabaret Voltaire\u201D, kolebk\u0119 dadaizmu. W styczniu 1917 przeni\u00F3s\u0142 si\u0119 do Berlina, gdzie pomys\u0142y i techniki wyniesione z \u201ECabaret Voltaire\u201D pomog\u0142y mu za\u0142o\u017Cy\u0107 berli\u0144sk\u0105 grup\u0119 dadaistyczn\u0105. W 1936 roku uzyska\u0142 wiz\u0119 do USA, gdzie wyemigrowa\u0142 wraz z rodzin\u0105. Zmieni\u0142 nazwisko na Charles R. Hulbeck i praktykowa\u0142 psychoanaliz\u0119 w Karen Horney Clinic na Long Island w Nowym Jorku. W 1970 roku przeni\u00F3s\u0142 si\u0119 do Muralto w kantonie Ticino, gdzie przebywa\u0142 do ko\u0144ca \u017Cycia. Huelsenbeck by\u0142 redaktorem \u201EAlmanachu dada\u201D, napisa\u0142 m. in. prace \u201EDada siegt\u201D i \u201EEn Avant Dada\u201D." , "lang" : "pl" } ,
+      { "type" : "literal", "value" : "Richard Huelsenbeck (eigentlich Carl Wilhelm Richard H\u00FClsenbeck, im angels\u00E4chsischen Sprachbereich bezeichnete er sich sp\u00E4ter als Charles R. Hulbeck; * 23. April 1892 in Frankenau; \u2020 20. April 1974 in Muralto, Schweiz) war ein deutscher Schriftsteller, Lyriker, Erz\u00E4hler, Essayist, Dramatiker, Arzt und Psychoanalytiker. Sein st\u00E4rkstes Echo erregte er als Mitbegr\u00FCnder und wichtiger Chronist des Dadaismus." , "lang" : "de" } ,
+      { "type" : "literal", "value" : "Richard Huelsenbeck (born Carl Wilhelm Richard H\u00FClsenbeck; April 23, 1892 \u2013 April 20, 1974) was a German psychoanalyst, poet, writer and drummer born in Frankenau, Hessen-Nassau. Huelsenbeck was a medical student on the eve of World War I. He was invalided out of the army and emigrated to Z\u00FCrich, Switzerland in February 1916, where he fell in with the Cabaret Voltaire. In January 1917, he moved to Berlin, taking with him the ideas and techniques which helped him found the Berlin Dada group. 'To make literature with a gun in my hand had for a time been my dream,' he wrote in 1920. His ideas fitted in with left-wing politics current at the time in Berlin. However idealistic Huelsenbeck and his companions were, their challenge 'Dada is German Bolshevism' had unfortunate repercussions later, when the National Socialists denounced all aspects of modern art as Kunstbolschewismus. Beginning in 1933, Huelsenbeck was repeatedly investigated by the Nazi authorities. He was forbidden to write and rather than remaining in 'internal exile', he managed to get an immigration visa to the United States in 1936. He changed his name to Charles R. Hulbeck and practiced medicine and psychoanalysis at the Karen Horney Clinic in Long Island, New York. In 1970 he returned to the Ticino region of Switzerland. Huelsenbeck was the editor of the Dada Almanach, and wrote Dada siegt, En Avant Dada and other Dadaist works. Huelsenbeck's autobiography Memoirs of a Dada Drummer gives detailed accounts of his interactions with many key figures of the movement. Of his music, Hugo Ball wrote, \"Huelsenbeck has arrived. He pleads for an intensification of rhythm (Negro rhythm). He would best love to drum literature & to perdition.\" Until the end of his life, Huelsenbeck insisted, \"Dada is still existing,\" although the movement's other founders might not have agreed." , "lang" : "en" } ,
+      { "type" : "literal", "value" : "Richard Huelsenbeck (Frankenau, Alemanha, 23 de abril de 1892 - Minusio, Sui\u00E7a, 20 de abril de 1974) foi um poeta, escritor de relatos de viagens, baterista, m\u00E9dico e psicanalista alem\u00E3o, participante do grupo fundador do Dada\u00EDsmo que atuou no Cabaret Voltaire de Zurique, onde praticou a poesia simultane\u00EDsta. Quando, a partir de 1917 o grupo dada\u00EDsta da Su\u00ED\u00E7a come\u00E7a a se dispersar, Huelsenbeck estabelece o Movimiento Dada\u00EDsta com George Grosz e Raoul Hausmann em Berlim, onde fundar\u00E1 o \"Clube Dada\", trazendo \u00E0 Alemania uma forma de Dada\u00EDsmo que adquire um car\u00E1ter mais marcadamente pol\u00EDtico, aproximado do radicalismo espartaquista. Em 1918 Huelsenbeck faz o primeiro discurso Dad\u00E1 na Alemanha e, pouco depois, elaborando o primeiro manifesto dada\u00EDsta daquele pa\u00EDs, passa a promover com o poeta Raoul Hausmann declara\u00E7\u00F5es contundentes e novos manifestos, bem como confer\u00EAncias itinerantes pela Alemanha. O radicalismo do Dada\u00EDsmo alem\u00E3o de Huelsenbeck se volta contra a Rep\u00FAblica de Weimar e tamb\u00E9m, contra os movimentos de vanguarda que o precederam (Cubismo, Expresionismo e Futurismo). Como outros dada\u00EDstas, sua arte foi declarada bolchevista e o poeta teve que exilar-se da Alemanha, posteriormente, quando o Nazismo ascendeu ao poder." , "lang" : "pt" } ,
+      { "type" : "literal", "value" : "Richard Huelsenbeck, n\u00E9 Carl Wilhelm Richard H\u00FClsenbeck, le 23 avril 1892 \u00E0 Frankenau en Allemagne et mort le 30 avril 1974 \u00E0 Minusio en Suisse, est un \u00E9crivain et po\u00E8te allemand et l'un des fondateurs de Dada." , "lang" : "fr" } ] ,
+    "http://dbpedia.org/ontology/birthDate" : [ { "type" : "literal", "value" : "1892-4-23" , "datatype" : "http://www.w3.org/2001/XMLSchema#date" } ] ,
+    "http://dbpedia.org/ontology/deathDate" : [ { "type" : "literal", "value" : "1974-4-30" , "datatype" : "http://www.w3.org/2001/XMLSchema#date" } ] ,
+    "http://dbpedia.org/ontology/deathPlace" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Minusio" } ] ,
+    "http://dbpedia.org/ontology/wikiPageRevisionID" : [ { "type" : "literal", "value" : 741428972 , "datatype" : "http://www.w3.org/2001/XMLSchema#integer" } ] ,
+    "http://dbpedia.org/ontology/birthPlace" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Frankenau" } ] ,
+    "http://dbpedia.org/ontology/wikiPageID" : [ { "type" : "literal", "value" : 614463 , "datatype" : "http://www.w3.org/2001/XMLSchema#integer" } ] ,
+    "http://purl.org/linguistics/gold/hypernym" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Psychoanalyst" } ] } ,
+  "http://dbpedia.org/resource/Richard_Hulbeck" : { "http://dbpedia.org/ontology/wikiPageRedirects" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Richard_Huelsenbeck" } ] }
+}
+;
+	var dataAuth = "http://dbpedia.org/resource/Richard_Huelsenbeck";
+	var dataUrl = "richard_huelsenbeck.html";
+	var dataResourceType = "participant";
+	var dataName = "Richard Huelsenbeck";
+ 	
+</script>
+
+
+
+
+
+<script type="text/javascript">
+
+
+	
+	
+	
+
+	$(document).ready(function($) {
+		
+		
+		padb.resource.initialize();
+			 
+		$( '.scrollable' ).
+		bind( 'mousewheel DOMMouseScroll', function ( e ) {
+			
+			if( e.originalEvent ) e = e.originalEvent;
+			
+			var delta = e.wheelDelta || -e.detail;
+			this.scrollTop += ( delta < 0 ? 1 : -1 ) * 30;
+			e.preventDefault();
+		});		 
+		
+		
+				
+		$.ajaxSetup ({
+			// Disable caching of AJAX responses
+			cache: false
+		});		
+		
+	});
+	
+
+	
+	
+	
+	
+	
+</script>
+
+
+
+
+ 
+<br />
+<div class="container"  style="position:relative;">
+	   
+      <div id="resourceLinks"></div> 
+       
+       
+       
+       
+              
+       
+           
+           
+           
+          <div class="row addSection">
+              <div class="span1 addSectionIconHolder">
+              
+                <i class="icon-user"></i>
+              
+              </div>
+          
+              <div class="span11">
+                <span>Performer</span>
+                <hr>
+                <br />
+              </div>
+        </div>
+        <div class="row">
+            <div class="span1">
+            </div>
+            <div class="span11" style="position:relative">
+                
+                
+                
+                
+               <div>
+                                       
+                                           
+                <div class="pull-left" style="width:80%;">
+                     
+                     <h5 id="resourceLDName">Richard Huelsenbeck</h5>
+                     <h5 id="resourceLDAbstract"></h5>
+                     
+                     
+                     <div id="resourceSameAs">
+                        <h5>External Data:</h5>
+                        
+                        
+                     </div>
+                
+                </div>   
+                
+                <br style="clear:both;" />
+            </div>
+            
+            
+                
+            </div>
+        </div>    
+         
+    
+    
+    
+    
+    
+    
+       <div class="row addSection">
+			<div class="span1 addSectionIconHolder">              
+                <i class="icon-asterisk"></i>
+              
+              </div>
+          
+              <div class="span11">
+                <span>Events </span><span id="resourceEventCount"></span>
+                <hr>
+              </div>
+        </div>
+    
+    
+    
+    
+    
+    
+    
+        <div class="row">
+            <div class="span1"></div>
+            <div class="span11" style="position:relative">
+                  
+                 <div class="">
+                    <div id="resourceEventsEvents" class="scrollable">
+                           <table class="table table-condensed table-hover table-striped">
+                               <thead>
+                                <tr>
+                                  <th>Date</th>
+                                  
+                                  <th>Title</th>
+                                  <th>Location</th>
+                                  <th></th>
+                                </tr>
+                              </thead>
+                              <tbody id="resourceEventsEventsRows"> 
+                              </tbody>
+                            </table>
+                     
+                    </div>
+                    
+                    <div id="resourceEventsExport">
+                    
+                    	<input  name="resourceEventsSearch" class="span3" id="resourceEventsSearch"  type="text" placeholder="Filter: names, places, dates">
+                    	<button class="btn btn-mini btn-danger" id="resourceEventsClearFilter"><i class="icon-remove">&nbsp;Clear Filter</i></button>
+                   		<button class="btn btn-mini btn-info" title="Render the currently filitered data as a network" id="resourceRenderEventNetwork"> <img src="../img/icon-network-white.png" style="height:15px; width:auto" /> Two-Mode Event Network</button>
+                   		<button class="btn btn-mini btn-info" title="Render the currently filitered data as a network" id="resourceRenderEventMap"> <i class="icon-globe"></i> Map Event Locations</button>
+                   		<button class="btn btn-mini btn-success" title="Download network as Gephi File" id="resourceDownloadEventGephi"> <img src="../img/icon-gephi.png" style="height:15px; width:auto" /> Donwload Gephi Network</button>
+
+                 
+                    </div>                 
+                </div>
+                <br style="clear:both;" />
+            </div>
+            
+            
+                
+         </div>    
+    
+     
+       <div class="row addSection">
+              <div class="span1">
+              
+                <img src="../img/social-network.png" style=" margin-left:25px; margin-bottom:10px;" />
+              
+              </div>
+          
+              <div class="span11">
+                <span>Performance Network</span> 
+                <hr>
+              </div>
+        </div>
+        
+        <div class="row">
+            <div class="span1">
+            </div>
+            <div class="span11" style="position:relative">
+                
+               	<div style="width: 100%; height:500px;" id="egoNetwork">
+            
+                
+             	</div> 
+                <div class="well pull-left well-small" id="egoNetworkControls">
+                    <span class="rangeLabels">Node Charge</span>
+                    <input type="range" id="resourceEgoNetworkCharge" min="-1000" max="100" value="-120" data-def="-700" />
+                    <br /><span class="rangeLabels">Gravity</span>
+                    <input type="range" id="resourceEgoNetworkGravity" min="0" max="1" value="0.1" step="0.01" data-def="0.3" /> 
+                    <br /><span class="rangeLabels">Edge Length</span>
+                    <input type="range" id="resourceEgoNetworkDistance" min="0" max="300" value="50" data-def="50"  />      
+                    <br /><span class="rangeLabels">Edge Strength</span>
+                    <input type="range" id="resourceEgoNetworkStrength" min="0" max="3" value="1" data-def="0.15" step="0.1"  /> 
+                    <br /><br />
+                    <button type="button" id="resourceEgoNetworkLabelsButton" class="btn btn-mini" title="Show node labels." data-toggle="button">Show Labels</button>  
+                    <button type="button" id="resourceEgoNetworkLiveButton" class="btn btn-mini" title="Show realtime network rendering" data-toggle="button">Live Rendering</button>                     
+                </div>
+                
+                <div class="well pull-left well-small egoNetworkControls span7" style="margin-left:20px;" >
+                
+                	<input  name="resourceEgoNetworkSearch" class="span3" id="resourceEgoNetworkSearch"  type="text" placeholder="Filter: names, places, dates">
+					<button class="btn btn-mini btn-danger" id="resourceEgoClearFilter"><i class="icon-remove">&nbsp;Clear Filter</i></button>
+                    <button class="btn btn-mini btn-success" title="Download network as Gephi File" id="resourceDownloadEgoGephi"> <img src="../img/icon-gephi.png" style="height:15px; width:auto" /> Donwload Gephi Network</button>
+
+                </div>
+                
+            </div>
+        </div>           
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+	
+
+	
+
+
+	
+
+
+</div>
+
+
+
+
+    <div id="resourceEventNetworkModal" class="modal container hide fade" style="min-height:500px" tabindex="-1">
+ 
+      <div class="modal-body">
+      	
+        <div id="eventNetwork" style="height:400px; width:100%">
+        
+        </div>
+      
+      </div>
+      <div class="modal-footer" style="height:20px;">
+      	
+        <div class="well pull-left well-small">
+        	<span class="rangeLabels">Node Charge</span>
+        	<input type="range" id="resourceEventNetworkCharge" min="-800" max="200" value="-120" data-def="-120" />
+            <span class="rangeLabels">Gravity</span>
+        	<input type="range" id="resourceEventNetworkGravity" min="0" max="1" value="0.1" step="0.01" data-def="0.1" /> 
+            <span class="rangeLabels">Edge Length</span>
+        	<input type="range" id="resourceEventNetworkDistance" min="0" max="300" value="50" data-def="50"  />      
+            <span class="rangeLabels">Edge Strength</span>
+        	<input type="range" id="resourceEventNetworkStrength" min="0" max="5" value="1" data-def="1" step="0.1"  />    
+            <button type="button" id="resourceEventNetworkLabelsButton" class="btn btn-mini" data-toggle="button">Show Labels</button>                     
+		</div>
+        <div class="pull-right">
+        <button type="button" data-dismiss="modal" class="btn">Close</button>
+       	</div>
+       </div>
+    </div>
+    
+    
+    
+    
+     <div id="resourceEventMapModal" class="modal container hide fade" style="min-height:500px" tabindex="-1">
+ 
+      <div class="modal-body">
+      	
+        <div id="eventMap" style="height:400px; width:100%">
+        
+        </div>
+      
+      </div>
+      <div class="modal-footer" style="height:20px;">
+      	
+        <div class="well pull-left well-small">                  
+		</div>
+        <div class="pull-right">
+        <button type="button" data-dismiss="modal" class="btn">Close</button>
+       	</div>
+       </div>
+    </div>
+
+<br /><br /><br /><br /><br /><br />
+
+<script type="text/javascript">    var _gaq = _gaq || [];   _gaq.push(['_setAccount', 'UA-10371295-7']);   _gaq.push(['_trackPageview']);    (function() {     var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);   })();  </script>
+
+</body>
+
+<!-- Mirrored from padb.net/resource/richard_huelsenbeck by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 11 Jan 2020 22:23:30 GMT -->
+</html>

@@ -1,0 +1,543 @@
+<!doctype html>
+<html>
+
+<!-- Mirrored from padb.net/resource/otto_muehl by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 11 Jan 2020 22:21:59 GMT -->
+<head>
+<meta charset="UTF-8">
+<title>padb.net</title>
+
+
+<link rel="stylesheet" href="../css/bootstrap.css">
+<link rel="stylesheet" href="../css/font-awesome.css">
+<link rel="stylesheet" href="../css/site.css">
+<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+<link rel="icon" type="image/png" href="../img/favicon.png">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/bootstrap-modal.js"></script>
+<script src="../js/bootstrap-modalmanager.js"></script>
+
+<script src="../js/d3.min.js"></script>
+<script src="../js/html5slider.js"></script>
+<script src="../js/topojson.js"></script>
+<script src="../js/padb.js"></script>
+
+
+</head>
+<body>
+    
+    
+	<div style="position:relative;">        
+
+ 		<div style=" border-bottom:solid 1px #ccc;">
+        	<div class="container">
+                
+                 <div id="header">
+                 	
+                     <div class="logo"><a href="../index.html"><span>|||</span>padb</a> </div>
+                    
+                      
+						 <div id="resourceName">Otto Muehl</div>
+					 
+                 </div>
+                
+                
+        	</div>
+            
+    	</div>
+ 
+   </div>
+<script src="../js/countriesData.js"></script>
+
+<script type="text/javascript">
+	//preloaded json from the server
+
+	var dataSameAs = [
+  {
+    "uri": "http://wikidata.dbpedia.org/resource/Q78663",
+    "numDuplicates": "38",
+    "duplicates": [
+      "http://dbpedia.org/resource/Otto_Muhl",
+      "http://dbpedia.org/resource/Otto_muhl",
+      "http://dbpedia.org/resource/Otto_Muehl",
+      "http://dbpedia.org/resource/Otto_muehl",
+      "http://dbpedia.org/resource/Otto_Mühl",
+      "http://dbpedia.org/resource/Otto_mühl",
+      "http://d-nb.info/gnd/118584715",
+      "http://d-nb.info/gnd/118584715/about/rdf",
+      "http://data.bibsys.no/data/notrbib/authorityentry/x05022513",
+      "http://dbpedialite.org/things/922689#id",
+      "http://dbpedialite.org/things/16466625#id",
+      "http://dbpedialite.org/things/16510341#id",
+      "http://dbpedialite.org/things/16610906#id",
+      "http://de.dbpedia.org/resource/Otto_Muehl",
+      "http://es.dbpedia.org/resource/Otto_Muehl",
+      "http://fr.dbpedia.org/resource/Otto_Muehl",
+      "http://freebase.com//m/03q6xn",
+      "http://hu.dbpedia.org/resource/Otto_Muehl",
+      "http://id.loc.gov/authorities/names/n93025687",
+      "http://it.dbpedia.org/resource/Otto_M\u00FChl",
+      "http://libris.kb.se/resource/auth/277863",
+      "http://mpii.de/yago/resource/Otto_Muehl",
+      "http://nl.dbpedia.org/resource/Otto_Muehl",
+      "http://no.dbpedia.org/resource/Otto_Muehl",
+      "http://pl.dbpedia.org/resource/Otto_Muehl",
+      "http://rdf.freebase.com/ns/m.03q6xn",
+      "http://rdf.freebase.com/ns/en.otto_muehl",
+      "http://rdf.freebase.com/ns/guid.9202a8c04000641f80000000003b1b94",
+      "http://ru.dbpedia.org/resource/\u041C\u044E\u043B\u044C,_\u041E\u0442\u0442\u043E",
+      "http://sv.dbpedia.org/resource/Otto_Muehl",
+      "http://umbel.org/umbel/ne/wikipedia/Otto_Muehl",
+      "http://viaf.org/viaf/64186970",
+      "http://viaf.org/viaf/85053719",
+      "http://viaf.org/viaf/96061828",
+      "http://viaf.org/viaf/214153274",
+      "http://wikidata.dbpedia.org/resource/Q78663",
+      "http://www.wikidata.org/entity/Q78663",
+      "http://yago-knowledge.org/resource/Otto_Muehl"
+    ]
+  }
+]
+;
+	var dataDbpedia = {
+  "http://en.wikipedia.org/wiki/Otto_Muehl" : { "http://xmlns.com/foaf/0.1/primaryTopic" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Otto_Muehl" } ] } ,
+  "http://dbpedia.org/resource/Otto_Muehl" : { "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Wrongdoer109633969" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/SexOffender110584973" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Principal110474950" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Convict109963159" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Criminal109977660" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/BadPerson109831962" } ,
+      { "type" : "uri", "value" : "http://www.wikidata.org/entity/Q24229398" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Painter110391653" } ,
+      { "type" : "uri", "value" : "http://www.w3.org/2002/07/owl#Thing" } ,
+      { "type" : "uri", "value" : "http://www.wikidata.org/entity/Q215627" } ,
+      { "type" : "uri", "value" : "http://umbel.org/umbel/rc/Artist" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Wikicat21st-centuryAustrianPainters" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatAustrianFilmDirectors" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Creator109614315" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatPeopleConvictedOfDrugOffenses" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatAustrianArtists" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Artist109812338" } ,
+      { "type" : "uri", "value" : "http://www.wikidata.org/entity/Q5" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatGerman-languageFilmDirectors" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/ontology/Artist" } ,
+      { "type" : "uri", "value" : "http://xmlns.com/foaf/0.1/Person" } ,
+      { "type" : "uri", "value" : "http://schema.org/Person" } ,
+      { "type" : "uri", "value" : "http://www.wikidata.org/entity/Q483501" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatAustrianPainters" } ,
+      { "type" : "uri", "value" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#NaturalPerson" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatAustrianCriminals" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatAustrianSexOffenders" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatPeopleFromOberwartDistrict" } ,
+      { "type" : "uri", "value" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/YagoLegalActor" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/YagoLegalActorGeo" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Organism100004475" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatAustrianPeople" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/ontology/Person" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Person100007846" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Object100002684" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Whole100003553" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/LivingThing100004258" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/CausalAgent100007347" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/PhysicalEntity100001930" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/WikicatModernPainters" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/ontology/Agent" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Producer110480018" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/Wikicat20th-centuryAustrianPainters" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/FilmDirector110088200" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/class/yago/FilmMaker110088390" } ] ,
+    "http://www.w3.org/2000/01/rdf-schema#label" : [ { "type" : "literal", "value" : "Otto Muehl" , "lang" : "fr" } ,
+      { "type" : "literal", "value" : "Otto Muehl" , "lang" : "en" } ,
+      { "type" : "literal", "value" : "Otto M\u00FChl" , "lang" : "it" } ,
+      { "type" : "literal", "value" : "\u041C\u044E\u043B\u044C, \u041E\u0442\u0442\u043E" , "lang" : "ru" } ,
+      { "type" : "literal", "value" : "Otto Muehl" , "lang" : "nl" } ,
+      { "type" : "literal", "value" : "Otto Muehl" , "lang" : "pl" } ,
+      { "type" : "literal", "value" : "Otto Muehl" , "lang" : "es" } ,
+      { "type" : "literal", "value" : "Otto Muehl" , "lang" : "de" } ] ,
+    "http://www.w3.org/2000/01/rdf-schema#comment" : [ { "type" : "literal", "value" : "Otto Muehl (ur. 16 czerwca 1925 w Grodnau, Burgenland w Austrii zm. 26 maja 2013 w Moncarapacho, Olh\u00E3o, Portugalia) \u2013 austriacki artysta, g\u0142\u00F3wny uczestnik i za\u0142o\u017Cyciel nurtu artystycznego znanego jako akcjonizm wiede\u0144ski." , "lang" : "pl" } ,
+      { "type" : "literal", "value" : "Otto Muehl (16 June 1925 \u2013 26 May 2013) was an Austrian artist, who was known as one of the co-founders as well as a main participant of Viennese Actionism and for founding the Friedrichshof Commune. In 1943, Muehl had to serve in the German Wehrmacht. There he registered for officer training. He was promoted to lieutenant and in 1944 he took part on infantry battles in the course of the Ardennes Offensive. After the war, he studied teaching German and History, and Pedagogy of Art at the Wiener Akademie der bildenden K\u00FCnste." , "lang" : "en" } ,
+      { "type" : "literal", "value" : "\u041E\u0442\u0442\u043E \u041C\u044E\u043B\u044C (\u043D\u0435\u043C. Otto Muehl; 16 \u0438\u044E\u043D\u044F 1925, Grodnau, \u041C\u0430\u0440\u0438\u0430\u0441\u0434\u043E\u0440\u0444 \u2014 26 \u043C\u0430\u044F 2013, \u041C\u043E\u043D\u043A\u0430\u0440\u0430\u043F\u0430\u0448\u0443) \u2014 \u0430\u0432\u0441\u0442\u0440\u0438\u0439\u0441\u043A\u0438\u0439 \u0445\u0443\u0434\u043E\u0436\u043D\u0438\u043A, \u043E\u0434\u0438\u043D \u0438\u0437 \u043E\u0441\u043D\u043E\u0432\u0430\u0442\u0435\u043B\u0435\u0439 \u0432\u0435\u043D\u0441\u043A\u043E\u0433\u043E \u0430\u043A\u0446\u0438\u043E\u043D\u0438\u0437\u043C\u0430." , "lang" : "ru" } ,
+      { "type" : "literal", "value" : "Otto Muehl (Grodnau, Burgenland, Austria, 16 de junio de 1925 - Moncarapacho, Portugal, 26 de mayo de 2013) fue un artista austriaco, conocido como uno de los cofundadores y mayores exponentes del movimiento accionismo vien\u00E9s. Fue el fundador de la Comuna en Friedrichshof (Austria). En 1943, Muehl tuvo que servir en la Wehrmacht, las fuerzas armadas unificadas de la Alemania nazi. All\u00ED se registr\u00F3 para la formaci\u00F3n de oficiales. Fue ascendido a teniente y en 1944 fue enviado al frente donde particip\u00F3 en los combates de infanter\u00EDa en el curso de la ofensiva de las Ardenas." , "lang" : "es" } ,
+      { "type" : "literal", "value" : "Otto Muehl (n\u00E9 le 16 juin 1925, \u00E0 Grodnau, au Burgenland, Autriche et mort le 26 mai 2013 \u00E0 Moncarapacho, Olh\u00E3o, Portugal) est un des cofondateurs, et un membre important, du Wiener Aktionismus ou actionnisme viennois. En 1972, il fonde la fameuse communaut\u00E9 Friedrichshof qui existera pendant plusieurs ann\u00E9es avant de se dissoudre dans les ann\u00E9es 1990." , "lang" : "fr" } ,
+      { "type" : "literal", "value" : "Otto Muehl (* 16. Juni 1925 geboren als Otto M\u00FChl in Grodnau (Mariasdorf), Burgenland; \u2020 26. Mai 2013 in Moncarapacho, Olh\u00E3o, Portugal) war ein \u00F6sterreichischer Aktionsk\u00FCnstler und ein Vertreter des Wiener Aktionismus." , "lang" : "de" } ,
+      { "type" : "literal", "value" : "Otto Muehl (ook M\u00FChl) (Grodnau, Oostenrijk, 16 juni 1925 \u2013 Moncarapacho, Portugal, 26 mei 2013) was een Oostenrijkse kunstenaar en een van de vertegenwoordigers van het Weense Aktionisme. Tijdens de jaren 70 en 80 was hij berucht als spiritueel leider van de Friedrichshof-commune. In 1991 werd de commune opgeheven en Muehl zelf gearresteerd en veroordeeld wegens verkrachting en misbruik van minderjarigen." , "lang" : "nl" } ] ,
+    "http://www.w3.org/2002/07/owl#sameAs" : [ { "type" : "uri", "value" : "http://pl.dbpedia.org/resource/Otto_Muehl" } ,
+      { "type" : "uri", "value" : "http://www.wikidata.org/entity/Q78663" } ,
+      { "type" : "uri", "value" : "http://es.dbpedia.org/resource/Otto_Muehl" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Otto_Muehl" } ,
+      { "type" : "uri", "value" : "http://nl.dbpedia.org/resource/Otto_Muehl" } ,
+      { "type" : "uri", "value" : "http://de.dbpedia.org/resource/Otto_Muehl" } ,
+      { "type" : "uri", "value" : "http://d-nb.info/gnd/118584715" } ,
+      { "type" : "uri", "value" : "http://wikidata.dbpedia.org/resource/Q78663" } ,
+      { "type" : "uri", "value" : "http://rdf.freebase.com/ns/m.03q6xn" } ,
+      { "type" : "uri", "value" : "http://it.dbpedia.org/resource/Otto_M\u00FChl" } ,
+      { "type" : "uri", "value" : "http://data.europa.eu/euodp/jrc-names/Otto_M%C3%BChl" } ,
+      { "type" : "uri", "value" : "http://data.europa.eu/euodp/jrc-names/Otto_Muehl" } ,
+      { "type" : "uri", "value" : "http://fr.dbpedia.org/resource/Otto_Muehl" } ,
+      { "type" : "uri", "value" : "http://yago-knowledge.org/resource/Otto_Muehl" } ] ,
+    "http://purl.org/dc/terms/subject" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Modern_painters" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:German-language_film_directors" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:21st-century_Austrian_painters" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Austrian_contemporary_artists" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Austrian_artists" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:People_convicted_of_drug_offenses" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:1925_births" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:20th-century_Austrian_painters" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Austrian_film_directors" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Austrian_sex_offenders" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:People_from_Oberwart_District" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:2013_deaths" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Category:Obscenity_controversies_in_film" } ] ,
+    "http://xmlns.com/foaf/0.1/name" : [ { "type" : "literal", "value" : "Otto Muehl" , "lang" : "en" } ] ,
+    "http://purl.org/dc/terms/description" : [ { "type" : "literal", "value" : "Austrian artist" , "lang" : "en" } ] ,
+    "http://xmlns.com/foaf/0.1/givenName" : [ { "type" : "literal", "value" : "Otto" , "lang" : "en" } ] ,
+    "http://xmlns.com/foaf/0.1/gender" : [ { "type" : "literal", "value" : "male" , "lang" : "en" } ] ,
+    "http://xmlns.com/foaf/0.1/isPrimaryTopicOf" : [ { "type" : "uri", "value" : "http://en.wikipedia.org/wiki/Otto_Muehl" } ] ,
+    "http://xmlns.com/foaf/0.1/surname" : [ { "type" : "literal", "value" : "Muehl" , "lang" : "en" } ] ,
+    "http://dbpedia.org/ontology/movement" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Viennese_Actionism" } ] ,
+    "http://dbpedia.org/property/inspiredBy" : [ { "type" : "literal", "value" : "Van Gogh, C\u00E9zanne" , "datatype" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString" } ] ,
+    "http://www.w3.org/ns/prov#wasDerivedFrom" : [ { "type" : "uri", "value" : "http://en.wikipedia.org/wiki/Otto_Muehl?oldid=712906927" } ] ,
+    "http://dbpedia.org/property/field" : [ { "type" : "literal", "value" : "Painting, actions" , "datatype" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString" } ] ,
+    "http://dbpedia.org/ontology/wikiPageExternalLink" : [ { "type" : "uri", "value" : "http://dreher.netzliteratur.net/2_Performance_Muehl.html" } ,
+      { "type" : "uri", "value" : "http://d-sites.net/english/muhl.htm" } ,
+      { "type" : "uri", "value" : "http://www.atlaspress.co.uk/index.cgi?action=view_arkhive&number=7" } ,
+      { "type" : "uri", "value" : "http://www.archivesmuehl.org" } ,
+      { "type" : "uri", "value" : "http://brightlightsfilm.com/38/muhl1.php#.VACdcfl_unE" } ,
+      { "type" : "uri", "value" : "http://www.ubu.com/film/muehl.html" } ] ,
+    "http://dbpedia.org/ontology/abstract" : [ { "type" : "literal", "value" : "Otto Muehl (ur. 16 czerwca 1925 w Grodnau, Burgenland w Austrii zm. 26 maja 2013 w Moncarapacho, Olh\u00E3o, Portugalia) \u2013 austriacki artysta, g\u0142\u00F3wny uczestnik i za\u0142o\u017Cyciel nurtu artystycznego znanego jako akcjonizm wiede\u0144ski." , "lang" : "pl" } ,
+      { "type" : "literal", "value" : "Otto Muehl (n\u00E9 le 16 juin 1925, \u00E0 Grodnau, au Burgenland, Autriche et mort le 26 mai 2013 \u00E0 Moncarapacho, Olh\u00E3o, Portugal) est un des cofondateurs, et un membre important, du Wiener Aktionismus ou actionnisme viennois. En 1972, il fonde la fameuse communaut\u00E9 Friedrichshof qui existera pendant plusieurs ann\u00E9es avant de se dissoudre dans les ann\u00E9es 1990." , "lang" : "fr" } ,
+      { "type" : "literal", "value" : "Otto Muehl (* 16. Juni 1925 geboren als Otto M\u00FChl in Grodnau (Mariasdorf), Burgenland; \u2020 26. Mai 2013 in Moncarapacho, Olh\u00E3o, Portugal) war ein \u00F6sterreichischer Aktionsk\u00FCnstler und ein Vertreter des Wiener Aktionismus. Ab 1970 machte er durch die Gr\u00FCndung einer reichianisch inspirierten Kommune, der Aktionsanalytischen Organisation (AAO), von sich reden, in der Zweierbeziehungen und Kleinfamilien abgeschafft wurden. Sie hatte bis zu 600 Mitglieder, durch sein autorit\u00E4res Auftreten verlie\u00DFen danach immer mehr Kommunarden die Gruppe. 1991 wurde Otto Muehl in \u00D6sterreich wegen Kindesmissbrauch und Versto\u00DF gegen das Suchtgiftgesetz zu sieben Jahren Haft verurteilt. Nach seiner Freilassung lebte er an der Algarve in Portugal." , "lang" : "de" } ,
+      { "type" : "literal", "value" : "\u041E\u0442\u0442\u043E \u041C\u044E\u043B\u044C (\u043D\u0435\u043C. Otto Muehl; 16 \u0438\u044E\u043D\u044F 1925, Grodnau, \u041C\u0430\u0440\u0438\u0430\u0441\u0434\u043E\u0440\u0444 \u2014 26 \u043C\u0430\u044F 2013, \u041C\u043E\u043D\u043A\u0430\u0440\u0430\u043F\u0430\u0448\u0443) \u2014 \u0430\u0432\u0441\u0442\u0440\u0438\u0439\u0441\u043A\u0438\u0439 \u0445\u0443\u0434\u043E\u0436\u043D\u0438\u043A, \u043E\u0434\u0438\u043D \u0438\u0437 \u043E\u0441\u043D\u043E\u0432\u0430\u0442\u0435\u043B\u0435\u0439 \u0432\u0435\u043D\u0441\u043A\u043E\u0433\u043E \u0430\u043A\u0446\u0438\u043E\u043D\u0438\u0437\u043C\u0430." , "lang" : "ru" } ,
+      { "type" : "literal", "value" : "Otto Muehl (16 June 1925 \u2013 26 May 2013) was an Austrian artist, who was known as one of the co-founders as well as a main participant of Viennese Actionism and for founding the Friedrichshof Commune. In 1943, Muehl had to serve in the German Wehrmacht. There he registered for officer training. He was promoted to lieutenant and in 1944 he took part on infantry battles in the course of the Ardennes Offensive. After the war, he studied teaching German and History, and Pedagogy of Art at the Wiener Akademie der bildenden K\u00FCnste. In 1972 he founded the Friedrichshof Commune, which has been viewed by some as an authoritarian sect, and that existed for several years before falling apart in the 1990s. In 1991, Muehl was convicted of sexual offences with minors and drugs offences and sentenced to 7 years imprisonment. He was released in 1997, after serving six and a half years, and set up a smaller commune in Portugal. After his release, he also published his memoirs from the prison (Aus dem Gef\u00E4ngnis)." , "lang" : "en" } ,
+      { "type" : "literal", "value" : "Otto Muehl (ook M\u00FChl) (Grodnau, Oostenrijk, 16 juni 1925 \u2013 Moncarapacho, Portugal, 26 mei 2013) was een Oostenrijkse kunstenaar en een van de vertegenwoordigers van het Weense Aktionisme. Tijdens de jaren 70 en 80 was hij berucht als spiritueel leider van de Friedrichshof-commune. In 1991 werd de commune opgeheven en Muehl zelf gearresteerd en veroordeeld wegens verkrachting en misbruik van minderjarigen." , "lang" : "nl" } ,
+      { "type" : "literal", "value" : "Otto Muehl (Grodnau, Burgenland, Austria, 16 de junio de 1925 - Moncarapacho, Portugal, 26 de mayo de 2013) fue un artista austriaco, conocido como uno de los cofundadores y mayores exponentes del movimiento accionismo vien\u00E9s. Fue el fundador de la Comuna en Friedrichshof (Austria). En 1943, Muehl tuvo que servir en la Wehrmacht, las fuerzas armadas unificadas de la Alemania nazi. All\u00ED se registr\u00F3 para la formaci\u00F3n de oficiales. Fue ascendido a teniente y en 1944 fue enviado al frente donde particip\u00F3 en los combates de infanter\u00EDa en el curso de la ofensiva de las Ardenas. Despu\u00E9s de la guerra, estudi\u00F3 para la ense\u00F1anza del alem\u00E1n e historia en la Universidad de Viena y educaci\u00F3n art\u00EDstica en la Academia de Bellas Artes de Viena. En 1972 fund\u00F3 la Comuna en Friedrichshof en la provincia de Burgenland, que ha sido vista por algunos como una secta autoritaria. En cuesti\u00F3n de pocos a\u00F1os, el proyecto creci\u00F3 de manera excepcional, convirti\u00E9ndose en una de las mayores comunas contraculturales en la Europa del siglo XX. Con m\u00E1s de 500 integrantes, la comunidad se expand\u00EDa por Austria, Alemania, Francia, Suiza, Noruega y Holanda. Su ideario estaba basado en la sexualidad libre, la propiedad colectiva, la democracia directa o asamblearia y una modalidad de emancipaci\u00F3n individual o de autoayuda llamada Acci\u00F3n Anal\u00EDtica. Esta \u00FAltima se sustentaba tanto en las ideas del te\u00F3rico de la Sexpol Wilhelm Reich, como en la recuperaci\u00F3n de los gestos art\u00EDsticos procedentes del Accionismo Vien\u00E9s. A principios de los a\u00F1os ochenta la comuna se desvincul\u00F3, en gran medida, de su ideolog\u00EDa social-revolucionaria para centrar desde entonces su inter\u00E9s en el mundo de los negocios financieros. La dedicaci\u00F3n a un trabajo alienante y la creciente jerarquizaci\u00F3n interna puso en contradicci\u00F3n, para una gran mayor\u00EDa de sus miembros, la v\u00EDa hedonista hacia la emancipaci\u00F3n en la que se basaba la comuna. En un intento por recuperar el esp\u00EDritu inicial, decidieron comprar en 1987 un territorio del ocio, una finca abandonada de m\u00E1s de 300 hect\u00E1reas en el suroeste de la isla de La Gomera denominado El Cabrito. El arte jugar\u00EDa un papel central en la nueva sede vacacional: se estableci\u00F3 un centro art\u00EDstico-residencial de car\u00E1cter internacional, el Atelier del Sur, en referencia al famoso proyecto que inspir\u00F3 a Van Gogh en su viaje a tierras meridionales. Sin embargo, una serie de conflictos no resueltos llevaron al desmoronamiento del proyecto comunal. En 1990 la comuna ut\u00F3pica se transform\u00F3 en una pragm\u00E1tica Sociedad Cooperativa compuesta por socios con derecho a voz y voto. En 1991, Muehl fue declarado culpable de delitos sexuales con menores y de drogas, siendo condenado a 7 a\u00F1os de prisi\u00F3n. Fue puesto en libertad en 1997, tras cumplir seis a\u00F1os y medio, y estableci\u00F3 una comuna peque\u00F1a en Portugal. Despu\u00E9s de su liberaci\u00F3n, public\u00F3 sus memorias de la c\u00E1rcel (Aus dem Gef\u00E4ngnis)." , "lang" : "es" } ] ,
+    "http://dbpedia.org/ontology/birthDate" : [ { "type" : "literal", "value" : "1925-06-16" , "datatype" : "http://www.w3.org/2001/XMLSchema#date" } ,
+      { "type" : "literal", "value" : "1925-6-16" , "datatype" : "http://www.w3.org/2001/XMLSchema#date" } ] ,
+    "http://dbpedia.org/ontology/deathDate" : [ { "type" : "literal", "value" : "2013-5-26" , "datatype" : "http://www.w3.org/2001/XMLSchema#date" } ,
+      { "type" : "literal", "value" : "2013-05-26" , "datatype" : "http://www.w3.org/2001/XMLSchema#date" } ] ,
+    "http://dbpedia.org/ontology/deathPlace" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Moncarapacho" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Portugal" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Olh\u00E3o" } ] ,
+    "http://dbpedia.org/ontology/wikiPageRevisionID" : [ { "type" : "literal", "value" : 712906927 , "datatype" : "http://www.w3.org/2001/XMLSchema#integer" } ] ,
+    "http://dbpedia.org/ontology/birthPlace" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Grodnau" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/Mariasdorf" } ,
+      { "type" : "uri", "value" : "http://wikidata.dbpedia.org/resource/Q252822" } ,
+      { "type" : "uri", "value" : "http://dbpedia.org/resource/First_Austrian_Republic" } ] ,
+    "http://dbpedia.org/ontology/wikiPageID" : [ { "type" : "literal", "value" : 922689 , "datatype" : "http://www.w3.org/2001/XMLSchema#integer" } ] ,
+    "http://purl.org/linguistics/gold/hypernym" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Artist" } ] ,
+    "http://dbpedia.org/property/nationality" : [ { "type" : "literal", "value" : "Austrian" , "datatype" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString" } ] ,
+    "http://dbpedia.org/property/bgcolour" : [ { "type" : "literal", "value" : "#6495ED" , "datatype" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString" } ] } ,
+  "http://dbpedia.org/resource/Otto_muhl" : { "http://dbpedia.org/ontology/wikiPageRedirects" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Otto_Muehl" } ] } ,
+  "http://dbpedia.org/resource/Otto_M\u00FChl" : { "http://dbpedia.org/ontology/wikiPageRedirects" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Otto_Muehl" } ] } ,
+  "http://dbpedia.org/resource/Otto_m\u00FChl" : { "http://dbpedia.org/ontology/wikiPageRedirects" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Otto_Muehl" } ] } ,
+  "http://dbpedia.org/resource/Otto_Muhl" : { "http://dbpedia.org/ontology/wikiPageRedirects" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Otto_Muehl" } ] } ,
+  "http://dbpedia.org/resource/Otto_muehl" : { "http://dbpedia.org/ontology/wikiPageRedirects" : [ { "type" : "uri", "value" : "http://dbpedia.org/resource/Otto_Muehl" } ] }
+}
+;
+	var dataAuth = "http://dbpedia.org/resource/Otto_Muehl";
+	var dataUrl = "otto_muehl.html";
+	var dataResourceType = "participant";
+	var dataName = "Otto Muehl";
+ 	
+</script>
+
+
+
+
+
+<script type="text/javascript">
+
+
+	
+	
+	
+
+	$(document).ready(function($) {
+		
+		
+		padb.resource.initialize();
+			 
+		$( '.scrollable' ).
+		bind( 'mousewheel DOMMouseScroll', function ( e ) {
+			
+			if( e.originalEvent ) e = e.originalEvent;
+			
+			var delta = e.wheelDelta || -e.detail;
+			this.scrollTop += ( delta < 0 ? 1 : -1 ) * 30;
+			e.preventDefault();
+		});		 
+		
+		
+				
+		$.ajaxSetup ({
+			// Disable caching of AJAX responses
+			cache: false
+		});		
+		
+	});
+	
+
+	
+	
+	
+	
+	
+</script>
+
+
+
+
+ 
+<br />
+<div class="container"  style="position:relative;">
+	   
+      <div id="resourceLinks"></div> 
+       
+       
+       
+       
+              
+       
+           
+           
+           
+          <div class="row addSection">
+              <div class="span1 addSectionIconHolder">
+              
+                <i class="icon-user"></i>
+              
+              </div>
+          
+              <div class="span11">
+                <span>Performer</span>
+                <hr>
+                <br />
+              </div>
+        </div>
+        <div class="row">
+            <div class="span1">
+            </div>
+            <div class="span11" style="position:relative">
+                
+                
+                
+                
+               <div>
+                                       
+                                           
+                <div class="pull-left" style="width:80%;">
+                     
+                     <h5 id="resourceLDName">Otto Muehl</h5>
+                     <h5 id="resourceLDAbstract"></h5>
+                     
+                     
+                     <div id="resourceSameAs">
+                        <h5>External Data:</h5>
+                        
+                        
+                     </div>
+                
+                </div>   
+                
+                <br style="clear:both;" />
+            </div>
+            
+            
+                
+            </div>
+        </div>    
+         
+    
+    
+    
+    
+    
+    
+       <div class="row addSection">
+			<div class="span1 addSectionIconHolder">              
+                <i class="icon-asterisk"></i>
+              
+              </div>
+          
+              <div class="span11">
+                <span>Events </span><span id="resourceEventCount"></span>
+                <hr>
+              </div>
+        </div>
+    
+    
+    
+    
+    
+    
+    
+        <div class="row">
+            <div class="span1"></div>
+            <div class="span11" style="position:relative">
+                  
+                 <div class="">
+                    <div id="resourceEventsEvents" class="scrollable">
+                           <table class="table table-condensed table-hover table-striped">
+                               <thead>
+                                <tr>
+                                  <th>Date</th>
+                                  
+                                  <th>Title</th>
+                                  <th>Location</th>
+                                  <th></th>
+                                </tr>
+                              </thead>
+                              <tbody id="resourceEventsEventsRows"> 
+                              </tbody>
+                            </table>
+                     
+                    </div>
+                    
+                    <div id="resourceEventsExport">
+                    
+                    	<input  name="resourceEventsSearch" class="span3" id="resourceEventsSearch"  type="text" placeholder="Filter: names, places, dates">
+                    	<button class="btn btn-mini btn-danger" id="resourceEventsClearFilter"><i class="icon-remove">&nbsp;Clear Filter</i></button>
+                   		<button class="btn btn-mini btn-info" title="Render the currently filitered data as a network" id="resourceRenderEventNetwork"> <img src="../img/icon-network-white.png" style="height:15px; width:auto" /> Two-Mode Event Network</button>
+                   		<button class="btn btn-mini btn-info" title="Render the currently filitered data as a network" id="resourceRenderEventMap"> <i class="icon-globe"></i> Map Event Locations</button>
+                   		<button class="btn btn-mini btn-success" title="Download network as Gephi File" id="resourceDownloadEventGephi"> <img src="../img/icon-gephi.png" style="height:15px; width:auto" /> Donwload Gephi Network</button>
+
+                 
+                    </div>                 
+                </div>
+                <br style="clear:both;" />
+            </div>
+            
+            
+                
+         </div>    
+    
+     
+       <div class="row addSection">
+              <div class="span1">
+              
+                <img src="../img/social-network.png" style=" margin-left:25px; margin-bottom:10px;" />
+              
+              </div>
+          
+              <div class="span11">
+                <span>Performance Network</span> 
+                <hr>
+              </div>
+        </div>
+        
+        <div class="row">
+            <div class="span1">
+            </div>
+            <div class="span11" style="position:relative">
+                
+               	<div style="width: 100%; height:500px;" id="egoNetwork">
+            
+                
+             	</div> 
+                <div class="well pull-left well-small" id="egoNetworkControls">
+                    <span class="rangeLabels">Node Charge</span>
+                    <input type="range" id="resourceEgoNetworkCharge" min="-1000" max="100" value="-120" data-def="-700" />
+                    <br /><span class="rangeLabels">Gravity</span>
+                    <input type="range" id="resourceEgoNetworkGravity" min="0" max="1" value="0.1" step="0.01" data-def="0.3" /> 
+                    <br /><span class="rangeLabels">Edge Length</span>
+                    <input type="range" id="resourceEgoNetworkDistance" min="0" max="300" value="50" data-def="50"  />      
+                    <br /><span class="rangeLabels">Edge Strength</span>
+                    <input type="range" id="resourceEgoNetworkStrength" min="0" max="3" value="1" data-def="0.15" step="0.1"  /> 
+                    <br /><br />
+                    <button type="button" id="resourceEgoNetworkLabelsButton" class="btn btn-mini" title="Show node labels." data-toggle="button">Show Labels</button>  
+                    <button type="button" id="resourceEgoNetworkLiveButton" class="btn btn-mini" title="Show realtime network rendering" data-toggle="button">Live Rendering</button>                     
+                </div>
+                
+                <div class="well pull-left well-small egoNetworkControls span7" style="margin-left:20px;" >
+                
+                	<input  name="resourceEgoNetworkSearch" class="span3" id="resourceEgoNetworkSearch"  type="text" placeholder="Filter: names, places, dates">
+					<button class="btn btn-mini btn-danger" id="resourceEgoClearFilter"><i class="icon-remove">&nbsp;Clear Filter</i></button>
+                    <button class="btn btn-mini btn-success" title="Download network as Gephi File" id="resourceDownloadEgoGephi"> <img src="../img/icon-gephi.png" style="height:15px; width:auto" /> Donwload Gephi Network</button>
+
+                </div>
+                
+            </div>
+        </div>           
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+	
+
+	
+
+
+	
+
+
+</div>
+
+
+
+
+    <div id="resourceEventNetworkModal" class="modal container hide fade" style="min-height:500px" tabindex="-1">
+ 
+      <div class="modal-body">
+      	
+        <div id="eventNetwork" style="height:400px; width:100%">
+        
+        </div>
+      
+      </div>
+      <div class="modal-footer" style="height:20px;">
+      	
+        <div class="well pull-left well-small">
+        	<span class="rangeLabels">Node Charge</span>
+        	<input type="range" id="resourceEventNetworkCharge" min="-800" max="200" value="-120" data-def="-120" />
+            <span class="rangeLabels">Gravity</span>
+        	<input type="range" id="resourceEventNetworkGravity" min="0" max="1" value="0.1" step="0.01" data-def="0.1" /> 
+            <span class="rangeLabels">Edge Length</span>
+        	<input type="range" id="resourceEventNetworkDistance" min="0" max="300" value="50" data-def="50"  />      
+            <span class="rangeLabels">Edge Strength</span>
+        	<input type="range" id="resourceEventNetworkStrength" min="0" max="5" value="1" data-def="1" step="0.1"  />    
+            <button type="button" id="resourceEventNetworkLabelsButton" class="btn btn-mini" data-toggle="button">Show Labels</button>                     
+		</div>
+        <div class="pull-right">
+        <button type="button" data-dismiss="modal" class="btn">Close</button>
+       	</div>
+       </div>
+    </div>
+    
+    
+    
+    
+     <div id="resourceEventMapModal" class="modal container hide fade" style="min-height:500px" tabindex="-1">
+ 
+      <div class="modal-body">
+      	
+        <div id="eventMap" style="height:400px; width:100%">
+        
+        </div>
+      
+      </div>
+      <div class="modal-footer" style="height:20px;">
+      	
+        <div class="well pull-left well-small">                  
+		</div>
+        <div class="pull-right">
+        <button type="button" data-dismiss="modal" class="btn">Close</button>
+       	</div>
+       </div>
+    </div>
+
+<br /><br /><br /><br /><br /><br />
+
+<script type="text/javascript">    var _gaq = _gaq || [];   _gaq.push(['_setAccount', 'UA-10371295-7']);   _gaq.push(['_trackPageview']);    (function() {     var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);   })();  </script>
+
+</body>
+
+<!-- Mirrored from padb.net/resource/otto_muehl by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 11 Jan 2020 22:21:59 GMT -->
+</html>

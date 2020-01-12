@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<gexf version="1.2" xmlns="http://www.gexf.net/1.2draft">
+ <graph mode="static" defaultedgetype="undirected">
+  <nodes>
+   <node id="13" label="Dick Higgins"/>
+   <node id="23" label="Jack Spicer"/>
+  </nodes>
+  <edges>
+   <edge source="13" target="23"/>
+  </edges>
+ </graph>
+</gexf>

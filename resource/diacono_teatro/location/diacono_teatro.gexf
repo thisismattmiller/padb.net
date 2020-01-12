@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<gexf version="1.2" xmlns="http://www.gexf.net/1.2draft">
+ <graph mode="static" defaultedgetype="undirected">
+  <nodes>
+   <node id="123" label="George Maciunas"/>
+   <node id="151" label="Ben Vautier"/>
+   <node id="329" label="Walter Marchetti"/>
+   <node id="359" label="Juan Hidalgo"/>
+  </nodes>
+  <edges>
+   <edge source="123" target="151"/>
+   <edge source="123" target="329"/>
+   <edge source="123" target="359"/>
+   <edge source="151" target="329"/>
+   <edge source="151" target="359"/>
+   <edge source="329" target="359"/>
+  </edges>
+ </graph>
+</gexf>

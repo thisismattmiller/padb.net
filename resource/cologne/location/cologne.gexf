@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<gexf version="1.2" xmlns="http://www.gexf.net/1.2draft">
+ <graph mode="static" defaultedgetype="undirected">
+  <nodes>
+   <node id="1" label="John Cage"/>
+   <node id="25" label="La Monte Young"/>
+   <node id="39" label="Nam-june Paik"/>
+   <node id="161" label="Joseph Beuys"/>
+   <node id="43" label="Wolf Vostell"/>
+  </nodes>
+  <edges>
+   <edge source="1" target="25"/>
+   <edge source="1" target="39"/>
+   <edge source="25" target="39"/>
+   <edge source="39" target="43"/>
+  </edges>
+ </graph>
+</gexf>

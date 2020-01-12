@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<gexf version="1.2" xmlns="http://www.gexf.net/1.2draft">
+ <graph mode="static" defaultedgetype="undirected">
+  <nodes>
+   <node id="26" label="Terry Riley"/>
+   <node id="68" label="Eric Andersen"/>
+   <node id="124" label="Jed Curtis"/>
+  </nodes>
+  <edges>
+   <edge source="26" target="68"/>
+   <edge source="26" target="124"/>
+   <edge source="68" target="124"/>
+  </edges>
+ </graph>
+</gexf>

@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<gexf version="1.2" xmlns="http://www.gexf.net/1.2draft">
+ <graph mode="static" defaultedgetype="undirected">
+  <nodes>
+   <node id="151" label="Ben Vautier"/>
+   <node id="232" label="Rene Pietropaoli"/>
+   <node id="255" label="Dany Gobert"/>
+   <node id="256" label="Serge Oldenbourg"/>
+   <node id="257" label="Mercier"/>
+   <node id="258" label="Peter Pontani"/>
+   <node id="259" label="Vescovi"/>
+  </nodes>
+  <edges>
+   <edge source="151" target="232"/>
+   <edge source="151" target="255"/>
+   <edge source="151" target="256"/>
+   <edge source="151" target="257"/>
+   <edge source="151" target="258"/>
+   <edge source="151" target="259"/>
+   <edge source="232" target="255"/>
+   <edge source="232" target="256"/>
+   <edge source="232" target="257"/>
+   <edge source="232" target="258"/>
+   <edge source="232" target="259"/>
+   <edge source="255" target="256"/>
+   <edge source="255" target="257"/>
+   <edge source="255" target="258"/>
+   <edge source="255" target="259"/>
+   <edge source="256" target="257"/>
+   <edge source="256" target="258"/>
+   <edge source="256" target="259"/>
+   <edge source="257" target="258"/>
+   <edge source="257" target="259"/>
+   <edge source="258" target="259"/>
+  </edges>
+ </graph>
+</gexf>

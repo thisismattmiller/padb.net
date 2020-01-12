@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<gexf version="1.2" xmlns="http://www.gexf.net/1.2draft">
+ <graph mode="static" defaultedgetype="undirected">
+  <nodes>
+   <node id="160" label="Bengt af Klintberg"/>
+   <node id="15" label="Claes Oldenburg"/>
+  </nodes>
+  <edges/>
+ </graph>
+</gexf>

@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<gexf version="1.2" xmlns="http://www.gexf.net/1.2draft">
+ <graph mode="static" defaultedgetype="undirected">
+  <nodes>
+   <node id="24" label="Jean-Jacques Lebel"/>
+   <node id="153" label="Gian-Franco Baruchello"/>
+   <node id="154" label="Ferro"/>
+   <node id="155" label="Jacques Gabriel"/>
+   <node id="156" label="Philippe Hiquilly"/>
+   <node id="157" label="Tetsumi Kudo"/>
+   <node id="158" label="Robert Malaval"/>
+  </nodes>
+  <edges>
+   <edge source="24" target="153"/>
+   <edge source="24" target="154"/>
+   <edge source="24" target="155"/>
+   <edge source="24" target="156"/>
+   <edge source="24" target="157"/>
+   <edge source="24" target="158"/>
+   <edge source="153" target="154"/>
+   <edge source="153" target="155"/>
+   <edge source="153" target="156"/>
+   <edge source="153" target="157"/>
+   <edge source="153" target="158"/>
+   <edge source="154" target="155"/>
+   <edge source="154" target="156"/>
+   <edge source="154" target="157"/>
+   <edge source="154" target="158"/>
+   <edge source="155" target="156"/>
+   <edge source="155" target="157"/>
+   <edge source="155" target="158"/>
+   <edge source="156" target="157"/>
+   <edge source="156" target="158"/>
+   <edge source="157" target="158"/>
+  </edges>
+ </graph>
+</gexf>
